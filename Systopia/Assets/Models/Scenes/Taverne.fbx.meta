@@ -1,824 +1,984 @@
 fileFormatVersion: 2
-guid: a5a4fb74fa403434091807cb610c92fe
-timeCreated: 1525354259
+guid: e2b1cebb9139f9c468e511a61c3e25b0
+timeCreated: 1525456630
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: alterManSessel
     100002: alterManTisch
-    100004: BackUp
-    100006: BackUp1
-    100008: BackUp2
-    100010: Bar
-    100012: BarHocker
-    100014: BarHocker1
-    100016: BarHocker10
-    100018: BarHocker11
-    100020: BarHocker2
-    100022: BarHocker3
-    100024: BarHocker4
-    100026: BarHocker5
-    100028: BarHocker5 1
-    100030: BarHocker6
-    100032: BarHocker7
-    100034: BarHocker8
-    100036: BarHocker8 1
-    100038: BarHocker9
-    100040: BarRegal
-    100042: BilderRahmen:pCube1
-    100044: BilderRahmen:pCube2
-    100046: BilderRahmen:pCube3
-    100048: Boden1
-    100050: Character1_Head
-    100052: Character1_Head 1
-    100054: Character1_Hips
-    100056: Character1_Hips 1
-    100058: Character1_LeftArm
-    100060: Character1_LeftArm 1
-    100062: Character1_LeftFoot
-    100064: Character1_LeftFoot 1
-    100066: Character1_LeftForeArm
-    100068: Character1_LeftForeArm 1
-    100070: Character1_LeftHand
-    100072: Character1_LeftHand 1
-    100074: Character1_LeftHandIndex1
-    100076: Character1_LeftHandIndex1 1
-    100078: Character1_LeftHandIndex2
-    100080: Character1_LeftHandIndex2 1
-    100082: Character1_LeftHandIndex3
-    100084: Character1_LeftHandIndex3 1
-    100086: Character1_LeftHandIndex4
-    100088: Character1_LeftHandIndex4 1
-    100090: Character1_LeftHandMiddle1
-    100092: Character1_LeftHandMiddle1 1
-    100094: Character1_LeftHandMiddle2
-    100096: Character1_LeftHandMiddle2 1
-    100098: Character1_LeftHandMiddle3
-    100100: Character1_LeftHandMiddle3 1
-    100102: Character1_LeftHandMiddle4
-    100104: Character1_LeftHandMiddle4 1
-    100106: Character1_LeftHandRing1
-    100108: Character1_LeftHandRing1 1
-    100110: Character1_LeftHandRing2
-    100112: Character1_LeftHandRing2 1
-    100114: Character1_LeftHandRing3
-    100116: Character1_LeftHandRing3 1
-    100118: Character1_LeftHandRing4
-    100120: Character1_LeftHandRing4 1
-    100122: Character1_LeftHandThumb1
-    100124: Character1_LeftHandThumb1 1
-    100126: Character1_LeftHandThumb2
-    100128: Character1_LeftHandThumb2 1
-    100130: Character1_LeftHandThumb3
-    100132: Character1_LeftHandThumb3 1
-    100134: Character1_LeftHandThumb4
-    100136: Character1_LeftHandThumb4 1
-    100138: Character1_LeftLeg
-    100140: Character1_LeftLeg 1
-    100142: Character1_LeftShoulder
-    100144: Character1_LeftShoulder 1
-    100146: Character1_LeftToeBase
-    100148: Character1_LeftToeBase 1
-    100150: Character1_LeftUpLeg
-    100152: Character1_LeftUpLeg 1
-    100154: Character1_Neck
-    100156: Character1_Neck 1
-    100158: Character1_Reference
-    100160: Character1_Reference 1
-    100162: Character1_RightArm
-    100164: Character1_RightArm 1
-    100166: Character1_RightFoot
-    100168: Character1_RightFoot 1
-    100170: Character1_RightForeArm
-    100172: Character1_RightForeArm 1
-    100174: Character1_RightHand
-    100176: Character1_RightHand 1
-    100178: Character1_RightHandIndex1
-    100180: Character1_RightHandIndex1 1
-    100182: Character1_RightHandIndex2
-    100184: Character1_RightHandIndex2 1
-    100186: Character1_RightHandIndex3
-    100188: Character1_RightHandIndex3 1
-    100190: Character1_RightHandIndex4
-    100192: Character1_RightHandIndex4 1
-    100194: Character1_RightHandMiddle1
-    100196: Character1_RightHandMiddle1 1
-    100198: Character1_RightHandMiddle2
-    100200: Character1_RightHandMiddle2 1
-    100202: Character1_RightHandMiddle3
-    100204: Character1_RightHandMiddle3 1
-    100206: Character1_RightHandMiddle4
-    100208: Character1_RightHandMiddle4 1
-    100210: Character1_RightHandRing1
-    100212: Character1_RightHandRing1 1
-    100214: Character1_RightHandRing2
-    100216: Character1_RightHandRing2 1
-    100218: Character1_RightHandRing3
-    100220: Character1_RightHandRing3 1
-    100222: Character1_RightHandRing4
-    100224: Character1_RightHandRing4 1
-    100226: Character1_RightHandThumb1
-    100228: Character1_RightHandThumb1 1
-    100230: Character1_RightHandThumb2
-    100232: Character1_RightHandThumb2 1
-    100234: Character1_RightHandThumb3
-    100236: Character1_RightHandThumb3 1
-    100238: Character1_RightHandThumb4
-    100240: Character1_RightHandThumb4 1
-    100242: Character1_RightLeg
-    100244: Character1_RightLeg 1
-    100246: Character1_RightShoulder
-    100248: Character1_RightShoulder 1
-    100250: Character1_RightToeBase
-    100252: Character1_RightToeBase 1
-    100254: Character1_RightUpLeg
-    100256: Character1_RightUpLeg 1
-    100258: Character1_Spine
-    100260: Character1_Spine 1
-    100262: Character1_Spine1
-    100264: Character1_Spine1 1
-    100266: Character1_Spine2
-    100268: Character1_Spine2 1
-    100270: Couch
-    100272: Fernseher
-    100274: "Fu\xDFmatte"
-    100276: "Geb\xE4ude"
-    100278: kleinerTisch
-    100280: kleinerTisch1
-    100282: kleinerTisch2
-    100284: "KunstH\xE4ndlerBilder"
-    100286: "KunstH\xE4ndlerEcke"
-    100288: "K\xFCchenT\xFCr"
-    100290: "M\xFClleimer"
-    100292: pCube1
-    100294: pCube2
-    100296: pCube2 1
-    100298: pCube3
-    100300: pCube4
-    100302: pCube5
-    100304: pCube6
-    100306: pCylinder1
-    100308: pCylinder3
+    100004: BackUp1
+    100006: BackUp2
+    100008: Bar
+    100010: BarRegal
+    100012: BilderRahmen:pCube1
+    100014: BilderRahmen:pCube2
+    100016: BilderRahmen:pCube3
+    100018: Boden1
+    100020: Character1_Head
+    100022: Character1_Hips
+    100024: Character1_LeftArm
+    100026: Character1_LeftFoot
+    100028: Character1_LeftForeArm
+    100030: Character1_LeftHand
+    100032: Character1_LeftHandIndex1
+    100034: Character1_LeftHandIndex2
+    100036: Character1_LeftHandIndex3
+    100038: Character1_LeftHandIndex4
+    100040: Character1_LeftHandMiddle1
+    100042: Character1_LeftHandMiddle2
+    100044: Character1_LeftHandMiddle3
+    100046: Character1_LeftHandMiddle4
+    100048: Character1_LeftHandRing1
+    100050: Character1_LeftHandRing2
+    100052: Character1_LeftHandRing3
+    100054: Character1_LeftHandRing4
+    100056: Character1_LeftHandThumb1
+    100058: Character1_LeftHandThumb2
+    100060: Character1_LeftHandThumb3
+    100062: Character1_LeftHandThumb4
+    100064: Character1_LeftLeg
+    100066: Character1_LeftShoulder
+    100068: Character1_LeftToeBase
+    100070: Character1_LeftUpLeg
+    100072: Character1_Neck
+    100074: Character1_Reference
+    100076: Character1_RightArm
+    100078: Character1_RightFoot
+    100080: Character1_RightForeArm
+    100082: Character1_RightHand
+    100084: Character1_RightHandIndex1
+    100086: Character1_RightHandIndex2
+    100088: Character1_RightHandIndex3
+    100090: Character1_RightHandIndex4
+    100092: Character1_RightHandMiddle1
+    100094: Character1_RightHandMiddle2
+    100096: Character1_RightHandMiddle3
+    100098: Character1_RightHandMiddle4
+    100100: Character1_RightHandRing1
+    100102: Character1_RightHandRing2
+    100104: Character1_RightHandRing3
+    100106: Character1_RightHandRing4
+    100108: Character1_RightHandThumb1
+    100110: Character1_RightHandThumb2
+    100112: Character1_RightHandThumb3
+    100114: Character1_RightHandThumb4
+    100116: Character1_RightLeg
+    100118: Character1_RightShoulder
+    100120: Character1_RightToeBase
+    100122: Character1_RightUpLeg
+    100124: Character1_Spine
+    100126: Character1_Spine1
+    100128: Character1_Spine2
+    100130: Couch
+    100132: Fass
+    100134: Fass1
+    100136: Fernseher
+    100138: Flasche
+    100140: Flasche1
+    100142: Flasche10
+    100144: Flasche11
+    100146: Flasche12
+    100148: Flasche13
+    100150: Flasche14
+    100152: Flasche15
+    100154: Flasche16
+    100156: Flasche17
+    100158: Flasche18
+    100160: Flasche19
+    100162: Flasche2
+    100164: Flasche20
+    100166: Flasche21
+    100168: Flasche22
+    100170: Flasche23
+    100172: Flasche24
+    100174: Flasche25
+    100176: Flasche26
+    100178: Flasche27
+    100180: Flasche28
+    100182: Flasche29
+    100184: Flasche3
+    100186: Flasche30
+    100188: Flasche31
+    100190: Flasche5
+    100192: Flasche6
+    100194: Flasche7
+    100196: Flasche8
+    100198: Flasche9
+    100200: "Fu\xDFmatte"
+    100202: "Geb\xE4ude"
+    100204: Glas
+    100206: Glas1
+    100208: Glas2
+    100210: Glas3
+    100212: Glas4
+    100214: Glas7
+    100216: Glas8
+    100218: Hocker
+    100220: Hocker1
+    100222: Hocker10
+    100224: Hocker11
+    100226: Hocker2
+    100228: Hocker3
+    100230: Hocker4
+    100232: Hocker5
+    100234: Hocker6
+    100236: Hocker7
+    100238: Hocker8
+    100240: Hocker9
+    100242: kleinerTisch
+    100244: kleinerTisch1
+    100246: kleinerTisch2
+    100248: "KunstH\xE4ndlerBilder"
+    100250: "KunstH\xE4ndlerEcke"
+    100252: "K\xFCchenT\xFCr"
+    100254: Licht
+    100256: Licht10
+    100258: Licht11
+    100260: Licht3
+    100262: Licht4
+    100264: Licht5
+    100266: Licht6
+    100268: Licht7
+    100270: Licht8
+    100272: Licht9
+    100274: "M\xFClleimer"
+    100276: pCube1
+    100278: pCube2
+    100280: pCube2 1
+    100282: pCube3
+    100284: pCube4
+    100286: pCube5
+    100288: pCube6
+    100290: pCube7
+    100292: pCube7 1
+    100294: pCube8
+    100296: pCube8 1
+    100298: pCylinder1
+    100300: pCylinder3
+    100302: pCylinder4
+    100304: pCylinder4 1
+    100306: pCylinder5
+    100308: pCylinder5 1
     100310: polySurface11
     100312: polySurface11 1
     100314: polySurface11 10
     100316: polySurface11 11
-    100318: polySurface11 12
-    100320: polySurface11 2
-    100322: polySurface11 3
-    100324: polySurface11 4
-    100326: polySurface11 5
-    100328: polySurface11 6
-    100330: polySurface11 7
-    100332: polySurface11 8
-    100334: polySurface11 9
-    100336: polySurface12
-    100338: polySurface12 1
-    100340: polySurface12 10
-    100342: polySurface12 11
-    100344: polySurface12 12
-    100346: polySurface12 2
-    100348: polySurface12 3
-    100350: polySurface12 4
-    100352: polySurface12 5
-    100354: polySurface12 6
-    100356: polySurface12 7
-    100358: polySurface12 8
-    100360: polySurface12 9
-    100362: polySurface13
-    100364: polySurface13 1
-    100366: polySurface13 10
-    100368: polySurface13 11
-    100370: polySurface13 12
-    100372: polySurface13 2
-    100374: polySurface13 3
-    100376: polySurface13 4
-    100378: polySurface13 5
-    100380: polySurface13 6
-    100382: polySurface13 7
-    100384: polySurface13 8
-    100386: polySurface13 9
-    100388: polySurface14
-    100390: polySurface14 1
-    100392: polySurface14 10
-    100394: polySurface14 11
-    100396: polySurface14 12
-    100398: polySurface14 2
-    100400: polySurface14 3
-    100402: polySurface14 4
-    100404: polySurface14 5
-    100406: polySurface14 6
-    100408: polySurface14 7
-    100410: polySurface14 8
-    100412: polySurface14 9
-    100414: polySurface15
-    100416: polySurface16
-    100418: polySurface17
-    100420: polySurface18
-    100422: polySurface19
-    100424: polySurface20
-    100426: polySurface21
-    100428: polySurface22
-    100430: polySurface23
-    100432: polySurface6
-    100434: polySurface7
-    100436: polySurface7 1
-    100438: polySurface7 10
-    100440: polySurface7 11
-    100442: polySurface7 12
-    100444: polySurface7 2
-    100446: polySurface7 3
-    100448: polySurface7 4
-    100450: polySurface7 5
-    100452: polySurface7 6
-    100454: polySurface7 7
-    100456: polySurface7 8
-    100458: polySurface7 9
-    100460: polySurface8
-    100462: polySurface8 1
-    100464: polySurface8 10
-    100466: polySurface8 11
-    100468: polySurface8 12
-    100470: polySurface8 2
-    100472: polySurface8 3
-    100474: polySurface8 4
-    100476: polySurface8 5
-    100478: polySurface8 6
-    100480: polySurface8 7
-    100482: polySurface8 8
-    100484: polySurface8 9
-    100486: polySurface9
-    100488: polySurface9 1
-    100490: polySurface9 10
-    100492: polySurface9 11
-    100494: polySurface9 12
-    100496: polySurface9 2
-    100498: polySurface9 3
-    100500: polySurface9 4
-    100502: polySurface9 5
-    100504: polySurface9 6
-    100506: polySurface9 7
-    100508: polySurface9 8
-    100510: polySurface9 9
-    100512: Referenzen
-    100514: Sitzecke
-    100516: Sitzecke2
-    100518: Sitzecke3
-    100520: Stuhl
-    100522: Stuhl 1
-    100524: Stuhl 2
-    100526: Stuhl1
-    100528: Stuhl1 1
-    100530: Stuhl2
-    100532: Stuhl2 1
-    100534: Stuhl5
-    100536: Stuhl5 1
-    100538: Stuhl6
-    100540: Stuhl6 1
-    100542: Stuhl7
-    100544: Stuhl7 1
-    100546: Stuhl8
-    100548: Stuhl9
-    100550: Taverne
-    100552: //RootNode
-    100554: Tisch
-    100556: Tisch 1
-    100558: Tisch 2
-    100560: tresen
-    100562: Wand1
-    100564: Wand2
+    100318: polySurface11 2
+    100320: polySurface11 3
+    100322: polySurface11 4
+    100324: polySurface11 5
+    100326: polySurface11 6
+    100328: polySurface11 7
+    100330: polySurface11 8
+    100332: polySurface11 9
+    100334: polySurface12
+    100336: polySurface12 1
+    100338: polySurface12 10
+    100340: polySurface12 11
+    100342: polySurface12 2
+    100344: polySurface12 3
+    100346: polySurface12 4
+    100348: polySurface12 5
+    100350: polySurface12 6
+    100352: polySurface12 7
+    100354: polySurface12 8
+    100356: polySurface12 9
+    100358: polySurface13
+    100360: polySurface13 1
+    100362: polySurface13 10
+    100364: polySurface13 11
+    100366: polySurface13 2
+    100368: polySurface13 3
+    100370: polySurface13 4
+    100372: polySurface13 5
+    100374: polySurface13 6
+    100376: polySurface13 7
+    100378: polySurface13 8
+    100380: polySurface13 9
+    100382: polySurface14
+    100384: polySurface14 1
+    100386: polySurface14 10
+    100388: polySurface14 11
+    100390: polySurface14 2
+    100392: polySurface14 3
+    100394: polySurface14 4
+    100396: polySurface14 5
+    100398: polySurface14 6
+    100400: polySurface14 7
+    100402: polySurface14 8
+    100404: polySurface14 9
+    100406: polySurface15
+    100408: polySurface16
+    100410: polySurface17
+    100412: polySurface18
+    100414: polySurface19
+    100416: polySurface20
+    100418: polySurface21
+    100420: polySurface22
+    100422: polySurface23
+    100424: polySurface6
+    100426: polySurface7
+    100428: polySurface7 1
+    100430: polySurface7 10
+    100432: polySurface7 11
+    100434: polySurface7 2
+    100436: polySurface7 3
+    100438: polySurface7 4
+    100440: polySurface7 5
+    100442: polySurface7 6
+    100444: polySurface7 7
+    100446: polySurface7 8
+    100448: polySurface7 9
+    100450: polySurface8
+    100452: polySurface8 1
+    100454: polySurface8 10
+    100456: polySurface8 11
+    100458: polySurface8 2
+    100460: polySurface8 3
+    100462: polySurface8 4
+    100464: polySurface8 5
+    100466: polySurface8 6
+    100468: polySurface8 7
+    100470: polySurface8 8
+    100472: polySurface8 9
+    100474: polySurface9
+    100476: polySurface9 1
+    100478: polySurface9 10
+    100480: polySurface9 11
+    100482: polySurface9 2
+    100484: polySurface9 3
+    100486: polySurface9 4
+    100488: polySurface9 5
+    100490: polySurface9 6
+    100492: polySurface9 7
+    100494: polySurface9 8
+    100496: polySurface9 9
+    100498: Referenzen
+    100500: "Sch\xFCssel"
+    100502: "Sch\xFCssel1"
+    100504: "Sch\xFCssel2"
+    100506: "Sch\xFCssel3"
+    100508: ShotGlas1
+    100510: ShotGlas10
+    100512: ShotGlas12
+    100514: ShotGlas2
+    100516: ShotGlas3
+    100518: ShotGlas4
+    100520: ShotGlas5
+    100522: ShotGlas6
+    100524: Sitzecke
+    100526: Sitzecke2
+    100528: Sitzecke3
+    100530: Stuhl
+    100532: Stuhl 1
+    100534: Stuhl 2
+    100536: Stuhl1
+    100538: Stuhl1 1
+    100540: Stuhl2
+    100542: Stuhl2 1
+    100544: Stuhl5
+    100546: Stuhl5 1
+    100548: Stuhl6
+    100550: Stuhl6 1
+    100552: Stuhl7
+    100554: Stuhl7 1
+    100556: Stuhl8
+    100558: Stuhl9
+    100560: //RootNode
+    100562: Taverne
+    100564: Teller
+    100566: Teller1
+    100568: Tisch
+    100570: Tisch 1
+    100572: Tisch 2
+    100574: tresen
+    100576: Wand1
+    100578: Wand2
     400000: alterManSessel
     400002: alterManTisch
-    400004: BackUp
-    400006: BackUp1
-    400008: BackUp2
-    400010: Bar
-    400012: BarHocker
-    400014: BarHocker1
-    400016: BarHocker10
-    400018: BarHocker11
-    400020: BarHocker2
-    400022: BarHocker3
-    400024: BarHocker4
-    400026: BarHocker5
-    400028: BarHocker5 1
-    400030: BarHocker6
-    400032: BarHocker7
-    400034: BarHocker8
-    400036: BarHocker8 1
-    400038: BarHocker9
-    400040: BarRegal
-    400042: BilderRahmen:pCube1
-    400044: BilderRahmen:pCube2
-    400046: BilderRahmen:pCube3
-    400048: Boden1
-    400050: Character1_Head
-    400052: Character1_Head 1
-    400054: Character1_Hips
-    400056: Character1_Hips 1
-    400058: Character1_LeftArm
-    400060: Character1_LeftArm 1
-    400062: Character1_LeftFoot
-    400064: Character1_LeftFoot 1
-    400066: Character1_LeftForeArm
-    400068: Character1_LeftForeArm 1
-    400070: Character1_LeftHand
-    400072: Character1_LeftHand 1
-    400074: Character1_LeftHandIndex1
-    400076: Character1_LeftHandIndex1 1
-    400078: Character1_LeftHandIndex2
-    400080: Character1_LeftHandIndex2 1
-    400082: Character1_LeftHandIndex3
-    400084: Character1_LeftHandIndex3 1
-    400086: Character1_LeftHandIndex4
-    400088: Character1_LeftHandIndex4 1
-    400090: Character1_LeftHandMiddle1
-    400092: Character1_LeftHandMiddle1 1
-    400094: Character1_LeftHandMiddle2
-    400096: Character1_LeftHandMiddle2 1
-    400098: Character1_LeftHandMiddle3
-    400100: Character1_LeftHandMiddle3 1
-    400102: Character1_LeftHandMiddle4
-    400104: Character1_LeftHandMiddle4 1
-    400106: Character1_LeftHandRing1
-    400108: Character1_LeftHandRing1 1
-    400110: Character1_LeftHandRing2
-    400112: Character1_LeftHandRing2 1
-    400114: Character1_LeftHandRing3
-    400116: Character1_LeftHandRing3 1
-    400118: Character1_LeftHandRing4
-    400120: Character1_LeftHandRing4 1
-    400122: Character1_LeftHandThumb1
-    400124: Character1_LeftHandThumb1 1
-    400126: Character1_LeftHandThumb2
-    400128: Character1_LeftHandThumb2 1
-    400130: Character1_LeftHandThumb3
-    400132: Character1_LeftHandThumb3 1
-    400134: Character1_LeftHandThumb4
-    400136: Character1_LeftHandThumb4 1
-    400138: Character1_LeftLeg
-    400140: Character1_LeftLeg 1
-    400142: Character1_LeftShoulder
-    400144: Character1_LeftShoulder 1
-    400146: Character1_LeftToeBase
-    400148: Character1_LeftToeBase 1
-    400150: Character1_LeftUpLeg
-    400152: Character1_LeftUpLeg 1
-    400154: Character1_Neck
-    400156: Character1_Neck 1
-    400158: Character1_Reference
-    400160: Character1_Reference 1
-    400162: Character1_RightArm
-    400164: Character1_RightArm 1
-    400166: Character1_RightFoot
-    400168: Character1_RightFoot 1
-    400170: Character1_RightForeArm
-    400172: Character1_RightForeArm 1
-    400174: Character1_RightHand
-    400176: Character1_RightHand 1
-    400178: Character1_RightHandIndex1
-    400180: Character1_RightHandIndex1 1
-    400182: Character1_RightHandIndex2
-    400184: Character1_RightHandIndex2 1
-    400186: Character1_RightHandIndex3
-    400188: Character1_RightHandIndex3 1
-    400190: Character1_RightHandIndex4
-    400192: Character1_RightHandIndex4 1
-    400194: Character1_RightHandMiddle1
-    400196: Character1_RightHandMiddle1 1
-    400198: Character1_RightHandMiddle2
-    400200: Character1_RightHandMiddle2 1
-    400202: Character1_RightHandMiddle3
-    400204: Character1_RightHandMiddle3 1
-    400206: Character1_RightHandMiddle4
-    400208: Character1_RightHandMiddle4 1
-    400210: Character1_RightHandRing1
-    400212: Character1_RightHandRing1 1
-    400214: Character1_RightHandRing2
-    400216: Character1_RightHandRing2 1
-    400218: Character1_RightHandRing3
-    400220: Character1_RightHandRing3 1
-    400222: Character1_RightHandRing4
-    400224: Character1_RightHandRing4 1
-    400226: Character1_RightHandThumb1
-    400228: Character1_RightHandThumb1 1
-    400230: Character1_RightHandThumb2
-    400232: Character1_RightHandThumb2 1
-    400234: Character1_RightHandThumb3
-    400236: Character1_RightHandThumb3 1
-    400238: Character1_RightHandThumb4
-    400240: Character1_RightHandThumb4 1
-    400242: Character1_RightLeg
-    400244: Character1_RightLeg 1
-    400246: Character1_RightShoulder
-    400248: Character1_RightShoulder 1
-    400250: Character1_RightToeBase
-    400252: Character1_RightToeBase 1
-    400254: Character1_RightUpLeg
-    400256: Character1_RightUpLeg 1
-    400258: Character1_Spine
-    400260: Character1_Spine 1
-    400262: Character1_Spine1
-    400264: Character1_Spine1 1
-    400266: Character1_Spine2
-    400268: Character1_Spine2 1
-    400270: Couch
-    400272: Fernseher
-    400274: "Fu\xDFmatte"
-    400276: "Geb\xE4ude"
-    400278: kleinerTisch
-    400280: kleinerTisch1
-    400282: kleinerTisch2
-    400284: "KunstH\xE4ndlerBilder"
-    400286: "KunstH\xE4ndlerEcke"
-    400288: "K\xFCchenT\xFCr"
-    400290: "M\xFClleimer"
-    400292: pCube1
-    400294: pCube2
-    400296: pCube2 1
-    400298: pCube3
-    400300: pCube4
-    400302: pCube5
-    400304: pCube6
-    400306: pCylinder1
-    400308: pCylinder3
+    400004: BackUp1
+    400006: BackUp2
+    400008: Bar
+    400010: BarRegal
+    400012: BilderRahmen:pCube1
+    400014: BilderRahmen:pCube2
+    400016: BilderRahmen:pCube3
+    400018: Boden1
+    400020: Character1_Head
+    400022: Character1_Hips
+    400024: Character1_LeftArm
+    400026: Character1_LeftFoot
+    400028: Character1_LeftForeArm
+    400030: Character1_LeftHand
+    400032: Character1_LeftHandIndex1
+    400034: Character1_LeftHandIndex2
+    400036: Character1_LeftHandIndex3
+    400038: Character1_LeftHandIndex4
+    400040: Character1_LeftHandMiddle1
+    400042: Character1_LeftHandMiddle2
+    400044: Character1_LeftHandMiddle3
+    400046: Character1_LeftHandMiddle4
+    400048: Character1_LeftHandRing1
+    400050: Character1_LeftHandRing2
+    400052: Character1_LeftHandRing3
+    400054: Character1_LeftHandRing4
+    400056: Character1_LeftHandThumb1
+    400058: Character1_LeftHandThumb2
+    400060: Character1_LeftHandThumb3
+    400062: Character1_LeftHandThumb4
+    400064: Character1_LeftLeg
+    400066: Character1_LeftShoulder
+    400068: Character1_LeftToeBase
+    400070: Character1_LeftUpLeg
+    400072: Character1_Neck
+    400074: Character1_Reference
+    400076: Character1_RightArm
+    400078: Character1_RightFoot
+    400080: Character1_RightForeArm
+    400082: Character1_RightHand
+    400084: Character1_RightHandIndex1
+    400086: Character1_RightHandIndex2
+    400088: Character1_RightHandIndex3
+    400090: Character1_RightHandIndex4
+    400092: Character1_RightHandMiddle1
+    400094: Character1_RightHandMiddle2
+    400096: Character1_RightHandMiddle3
+    400098: Character1_RightHandMiddle4
+    400100: Character1_RightHandRing1
+    400102: Character1_RightHandRing2
+    400104: Character1_RightHandRing3
+    400106: Character1_RightHandRing4
+    400108: Character1_RightHandThumb1
+    400110: Character1_RightHandThumb2
+    400112: Character1_RightHandThumb3
+    400114: Character1_RightHandThumb4
+    400116: Character1_RightLeg
+    400118: Character1_RightShoulder
+    400120: Character1_RightToeBase
+    400122: Character1_RightUpLeg
+    400124: Character1_Spine
+    400126: Character1_Spine1
+    400128: Character1_Spine2
+    400130: Couch
+    400132: Fass
+    400134: Fass1
+    400136: Fernseher
+    400138: Flasche
+    400140: Flasche1
+    400142: Flasche10
+    400144: Flasche11
+    400146: Flasche12
+    400148: Flasche13
+    400150: Flasche14
+    400152: Flasche15
+    400154: Flasche16
+    400156: Flasche17
+    400158: Flasche18
+    400160: Flasche19
+    400162: Flasche2
+    400164: Flasche20
+    400166: Flasche21
+    400168: Flasche22
+    400170: Flasche23
+    400172: Flasche24
+    400174: Flasche25
+    400176: Flasche26
+    400178: Flasche27
+    400180: Flasche28
+    400182: Flasche29
+    400184: Flasche3
+    400186: Flasche30
+    400188: Flasche31
+    400190: Flasche5
+    400192: Flasche6
+    400194: Flasche7
+    400196: Flasche8
+    400198: Flasche9
+    400200: "Fu\xDFmatte"
+    400202: "Geb\xE4ude"
+    400204: Glas
+    400206: Glas1
+    400208: Glas2
+    400210: Glas3
+    400212: Glas4
+    400214: Glas7
+    400216: Glas8
+    400218: Hocker
+    400220: Hocker1
+    400222: Hocker10
+    400224: Hocker11
+    400226: Hocker2
+    400228: Hocker3
+    400230: Hocker4
+    400232: Hocker5
+    400234: Hocker6
+    400236: Hocker7
+    400238: Hocker8
+    400240: Hocker9
+    400242: kleinerTisch
+    400244: kleinerTisch1
+    400246: kleinerTisch2
+    400248: "KunstH\xE4ndlerBilder"
+    400250: "KunstH\xE4ndlerEcke"
+    400252: "K\xFCchenT\xFCr"
+    400254: Licht
+    400256: Licht10
+    400258: Licht11
+    400260: Licht3
+    400262: Licht4
+    400264: Licht5
+    400266: Licht6
+    400268: Licht7
+    400270: Licht8
+    400272: Licht9
+    400274: "M\xFClleimer"
+    400276: pCube1
+    400278: pCube2
+    400280: pCube2 1
+    400282: pCube3
+    400284: pCube4
+    400286: pCube5
+    400288: pCube6
+    400290: pCube7
+    400292: pCube7 1
+    400294: pCube8
+    400296: pCube8 1
+    400298: pCylinder1
+    400300: pCylinder3
+    400302: pCylinder4
+    400304: pCylinder4 1
+    400306: pCylinder5
+    400308: pCylinder5 1
     400310: polySurface11
     400312: polySurface11 1
     400314: polySurface11 10
     400316: polySurface11 11
-    400318: polySurface11 12
-    400320: polySurface11 2
-    400322: polySurface11 3
-    400324: polySurface11 4
-    400326: polySurface11 5
-    400328: polySurface11 6
-    400330: polySurface11 7
-    400332: polySurface11 8
-    400334: polySurface11 9
-    400336: polySurface12
-    400338: polySurface12 1
-    400340: polySurface12 10
-    400342: polySurface12 11
-    400344: polySurface12 12
-    400346: polySurface12 2
-    400348: polySurface12 3
-    400350: polySurface12 4
-    400352: polySurface12 5
-    400354: polySurface12 6
-    400356: polySurface12 7
-    400358: polySurface12 8
-    400360: polySurface12 9
-    400362: polySurface13
-    400364: polySurface13 1
-    400366: polySurface13 10
-    400368: polySurface13 11
-    400370: polySurface13 12
-    400372: polySurface13 2
-    400374: polySurface13 3
-    400376: polySurface13 4
-    400378: polySurface13 5
-    400380: polySurface13 6
-    400382: polySurface13 7
-    400384: polySurface13 8
-    400386: polySurface13 9
-    400388: polySurface14
-    400390: polySurface14 1
-    400392: polySurface14 10
-    400394: polySurface14 11
-    400396: polySurface14 12
-    400398: polySurface14 2
-    400400: polySurface14 3
-    400402: polySurface14 4
-    400404: polySurface14 5
-    400406: polySurface14 6
-    400408: polySurface14 7
-    400410: polySurface14 8
-    400412: polySurface14 9
-    400414: polySurface15
-    400416: polySurface16
-    400418: polySurface17
-    400420: polySurface18
-    400422: polySurface19
-    400424: polySurface20
-    400426: polySurface21
-    400428: polySurface22
-    400430: polySurface23
-    400432: polySurface6
-    400434: polySurface7
-    400436: polySurface7 1
-    400438: polySurface7 10
-    400440: polySurface7 11
-    400442: polySurface7 12
-    400444: polySurface7 2
-    400446: polySurface7 3
-    400448: polySurface7 4
-    400450: polySurface7 5
-    400452: polySurface7 6
-    400454: polySurface7 7
-    400456: polySurface7 8
-    400458: polySurface7 9
-    400460: polySurface8
-    400462: polySurface8 1
-    400464: polySurface8 10
-    400466: polySurface8 11
-    400468: polySurface8 12
-    400470: polySurface8 2
-    400472: polySurface8 3
-    400474: polySurface8 4
-    400476: polySurface8 5
-    400478: polySurface8 6
-    400480: polySurface8 7
-    400482: polySurface8 8
-    400484: polySurface8 9
-    400486: polySurface9
-    400488: polySurface9 1
-    400490: polySurface9 10
-    400492: polySurface9 11
-    400494: polySurface9 12
-    400496: polySurface9 2
-    400498: polySurface9 3
-    400500: polySurface9 4
-    400502: polySurface9 5
-    400504: polySurface9 6
-    400506: polySurface9 7
-    400508: polySurface9 8
-    400510: polySurface9 9
-    400512: Referenzen
-    400514: Sitzecke
-    400516: Sitzecke2
-    400518: Sitzecke3
-    400520: Stuhl
-    400522: Stuhl 1
-    400524: Stuhl 2
-    400526: Stuhl1
-    400528: Stuhl1 1
-    400530: Stuhl2
-    400532: Stuhl2 1
-    400534: Stuhl5
-    400536: Stuhl5 1
-    400538: Stuhl6
-    400540: Stuhl6 1
-    400542: Stuhl7
-    400544: Stuhl7 1
-    400546: Stuhl8
-    400548: Stuhl9
-    400550: Taverne
-    400552: //RootNode
-    400554: Tisch
-    400556: Tisch 1
-    400558: Tisch 2
-    400560: tresen
-    400562: Wand1
-    400564: Wand2
+    400318: polySurface11 2
+    400320: polySurface11 3
+    400322: polySurface11 4
+    400324: polySurface11 5
+    400326: polySurface11 6
+    400328: polySurface11 7
+    400330: polySurface11 8
+    400332: polySurface11 9
+    400334: polySurface12
+    400336: polySurface12 1
+    400338: polySurface12 10
+    400340: polySurface12 11
+    400342: polySurface12 2
+    400344: polySurface12 3
+    400346: polySurface12 4
+    400348: polySurface12 5
+    400350: polySurface12 6
+    400352: polySurface12 7
+    400354: polySurface12 8
+    400356: polySurface12 9
+    400358: polySurface13
+    400360: polySurface13 1
+    400362: polySurface13 10
+    400364: polySurface13 11
+    400366: polySurface13 2
+    400368: polySurface13 3
+    400370: polySurface13 4
+    400372: polySurface13 5
+    400374: polySurface13 6
+    400376: polySurface13 7
+    400378: polySurface13 8
+    400380: polySurface13 9
+    400382: polySurface14
+    400384: polySurface14 1
+    400386: polySurface14 10
+    400388: polySurface14 11
+    400390: polySurface14 2
+    400392: polySurface14 3
+    400394: polySurface14 4
+    400396: polySurface14 5
+    400398: polySurface14 6
+    400400: polySurface14 7
+    400402: polySurface14 8
+    400404: polySurface14 9
+    400406: polySurface15
+    400408: polySurface16
+    400410: polySurface17
+    400412: polySurface18
+    400414: polySurface19
+    400416: polySurface20
+    400418: polySurface21
+    400420: polySurface22
+    400422: polySurface23
+    400424: polySurface6
+    400426: polySurface7
+    400428: polySurface7 1
+    400430: polySurface7 10
+    400432: polySurface7 11
+    400434: polySurface7 2
+    400436: polySurface7 3
+    400438: polySurface7 4
+    400440: polySurface7 5
+    400442: polySurface7 6
+    400444: polySurface7 7
+    400446: polySurface7 8
+    400448: polySurface7 9
+    400450: polySurface8
+    400452: polySurface8 1
+    400454: polySurface8 10
+    400456: polySurface8 11
+    400458: polySurface8 2
+    400460: polySurface8 3
+    400462: polySurface8 4
+    400464: polySurface8 5
+    400466: polySurface8 6
+    400468: polySurface8 7
+    400470: polySurface8 8
+    400472: polySurface8 9
+    400474: polySurface9
+    400476: polySurface9 1
+    400478: polySurface9 10
+    400480: polySurface9 11
+    400482: polySurface9 2
+    400484: polySurface9 3
+    400486: polySurface9 4
+    400488: polySurface9 5
+    400490: polySurface9 6
+    400492: polySurface9 7
+    400494: polySurface9 8
+    400496: polySurface9 9
+    400498: Referenzen
+    400500: "Sch\xFCssel"
+    400502: "Sch\xFCssel1"
+    400504: "Sch\xFCssel2"
+    400506: "Sch\xFCssel3"
+    400508: ShotGlas1
+    400510: ShotGlas10
+    400512: ShotGlas12
+    400514: ShotGlas2
+    400516: ShotGlas3
+    400518: ShotGlas4
+    400520: ShotGlas5
+    400522: ShotGlas6
+    400524: Sitzecke
+    400526: Sitzecke2
+    400528: Sitzecke3
+    400530: Stuhl
+    400532: Stuhl 1
+    400534: Stuhl 2
+    400536: Stuhl1
+    400538: Stuhl1 1
+    400540: Stuhl2
+    400542: Stuhl2 1
+    400544: Stuhl5
+    400546: Stuhl5 1
+    400548: Stuhl6
+    400550: Stuhl6 1
+    400552: Stuhl7
+    400554: Stuhl7 1
+    400556: Stuhl8
+    400558: Stuhl9
+    400560: //RootNode
+    400562: Taverne
+    400564: Teller
+    400566: Teller1
+    400568: Tisch
+    400570: Tisch 1
+    400572: Tisch 2
+    400574: tresen
+    400576: Wand1
+    400578: Wand2
     2100000: lambert17
     2100002: lambert24
     2100004: lambert25
     2100006: lambert27
-    2100008: lambert19
+    2100008: SitzBezug
     2100010: lambert1
     2100012: lambert26
-    2100014: lambert20
-    2100016: lambert21
-    2100018: lambert18
-    2100020: lambert22
-    2100022: lambert28
-    2100024: lambert29
-    2100026: Boden
-    2100028: lambert16
-    2100030: lambert23
-    2100032: lambert31
-    2100034: lambert30
-    2100036: lambert32
-    2100038: lambert33
-    2100040: lambert3
-    2100042: lambert11
-    2100044: lambert14
-    2100046: lambert13
-    2100048: lambert12
-    2100050: lambert10
+    2100014: HockerBein
+    2100016: lambert40
+    2100018: lambert34
+    2100020: lambert38
+    2100022: lambert41
+    2100024: lambert21
+    2100026: lambert18
+    2100028: lambert35
+    2100030: lambert36
+    2100032: lambert46
+    2100034: lambert42
+    2100036: lambert43
+    2100038: lambert45
+    2100040: lambert44
+    2100042: lambert47
+    2100044: lambert37
+    2100046: lambert22
+    2100048: lambert28
+    2100050: lambert29
+    2100052: Boden
+    2100054: lambert16
+    2100056: lambert23
+    2100058: lambert31
+    2100060: lambert30
+    2100062: lambert39
+    2100064: lambert32
+    2100066: lambert33
+    2100068: lambert3
+    2100070: lambert11
+    2100072: lambert14
+    2100074: lambert13
+    2100076: lambert12
+    2100078: lambert10
     2300000: alterManSessel
     2300002: alterManTisch
-    2300004: BarHocker
-    2300006: BarHocker1
-    2300008: BarHocker10
-    2300010: BarHocker11
-    2300012: BarHocker2
-    2300014: BarHocker3
-    2300016: BarHocker4
-    2300018: BarHocker5
-    2300020: BarHocker5 1
-    2300022: BarHocker6
-    2300024: BarHocker7
-    2300026: BarHocker8
-    2300028: BarHocker8 1
-    2300030: BarHocker9
-    2300032: BarRegal
-    2300034: BilderRahmen:pCube1
-    2300036: BilderRahmen:pCube2
-    2300038: BilderRahmen:pCube3
-    2300040: Boden1
-    2300042: Couch
-    2300044: Fernseher
-    2300046: "Fu\xDFmatte"
-    2300048: kleinerTisch
-    2300050: kleinerTisch1
-    2300052: kleinerTisch2
-    2300054: "K\xFCchenT\xFCr"
-    2300056: "M\xFClleimer"
-    2300058: pCube1
-    2300060: pCube2
-    2300062: pCube2 1
-    2300064: pCube3
-    2300066: pCube4
-    2300068: pCube5
-    2300070: pCube6
-    2300072: pCylinder1
-    2300074: pCylinder3
-    2300076: polySurface12
-    2300078: polySurface12 1
-    2300080: polySurface12 10
-    2300082: polySurface12 11
-    2300084: polySurface12 12
-    2300086: polySurface12 2
-    2300088: polySurface12 3
-    2300090: polySurface12 4
-    2300092: polySurface12 5
-    2300094: polySurface12 6
-    2300096: polySurface12 7
-    2300098: polySurface12 8
-    2300100: polySurface12 9
-    2300102: polySurface13
-    2300104: polySurface13 1
-    2300106: polySurface13 10
-    2300108: polySurface13 11
-    2300110: polySurface13 12
-    2300112: polySurface13 2
-    2300114: polySurface13 3
-    2300116: polySurface13 4
-    2300118: polySurface13 5
-    2300120: polySurface13 6
-    2300122: polySurface13 7
-    2300124: polySurface13 8
-    2300126: polySurface13 9
-    2300128: polySurface14
-    2300130: polySurface14 1
-    2300132: polySurface14 10
-    2300134: polySurface14 11
-    2300136: polySurface14 12
-    2300138: polySurface14 2
-    2300140: polySurface14 3
-    2300142: polySurface14 4
-    2300144: polySurface14 5
-    2300146: polySurface14 6
-    2300148: polySurface14 7
-    2300150: polySurface14 8
-    2300152: polySurface14 9
-    2300154: polySurface8
-    2300156: polySurface8 1
-    2300158: polySurface8 10
-    2300160: polySurface8 11
-    2300162: polySurface8 12
-    2300164: polySurface8 2
-    2300166: polySurface8 3
-    2300168: polySurface8 4
-    2300170: polySurface8 5
-    2300172: polySurface8 6
-    2300174: polySurface8 7
-    2300176: polySurface8 8
-    2300178: polySurface8 9
-    2300180: Stuhl
-    2300182: Stuhl 1
-    2300184: Stuhl 2
-    2300186: Stuhl1
-    2300188: Stuhl1 1
-    2300190: Stuhl2
-    2300192: Stuhl2 1
-    2300194: Stuhl5
-    2300196: Stuhl5 1
-    2300198: Stuhl6
-    2300200: Stuhl6 1
-    2300202: Stuhl7
-    2300204: Stuhl7 1
-    2300206: Stuhl8
-    2300208: Stuhl9
-    2300210: Tisch
-    2300212: Tisch 1
-    2300214: Tisch 2
-    2300216: tresen
-    2300218: Wand1
-    2300220: Wand2
+    2300004: BarRegal
+    2300006: BilderRahmen:pCube1
+    2300008: BilderRahmen:pCube2
+    2300010: BilderRahmen:pCube3
+    2300012: Boden1
+    2300014: Couch
+    2300016: Fass
+    2300018: Fass1
+    2300020: Fernseher
+    2300022: Flasche
+    2300024: Flasche1
+    2300026: Flasche10
+    2300028: Flasche11
+    2300030: Flasche12
+    2300032: Flasche13
+    2300034: Flasche14
+    2300036: Flasche15
+    2300038: Flasche16
+    2300040: Flasche17
+    2300042: Flasche18
+    2300044: Flasche19
+    2300046: Flasche2
+    2300048: Flasche20
+    2300050: Flasche21
+    2300052: Flasche22
+    2300054: Flasche23
+    2300056: Flasche24
+    2300058: Flasche25
+    2300060: Flasche26
+    2300062: Flasche27
+    2300064: Flasche28
+    2300066: Flasche29
+    2300068: Flasche3
+    2300070: Flasche30
+    2300072: Flasche31
+    2300074: Flasche5
+    2300076: Flasche6
+    2300078: Flasche7
+    2300080: Flasche8
+    2300082: Flasche9
+    2300084: "Fu\xDFmatte"
+    2300086: Glas
+    2300088: Glas1
+    2300090: Glas2
+    2300092: Glas3
+    2300094: Glas4
+    2300096: Glas7
+    2300098: Glas8
+    2300100: Hocker
+    2300102: Hocker1
+    2300104: Hocker10
+    2300106: Hocker11
+    2300108: Hocker2
+    2300110: Hocker3
+    2300112: Hocker4
+    2300114: Hocker5
+    2300116: Hocker6
+    2300118: Hocker7
+    2300120: Hocker8
+    2300122: Hocker9
+    2300124: kleinerTisch
+    2300126: kleinerTisch1
+    2300128: kleinerTisch2
+    2300130: "K\xFCchenT\xFCr"
+    2300132: Licht
+    2300134: Licht10
+    2300136: Licht11
+    2300138: Licht3
+    2300140: Licht4
+    2300142: Licht5
+    2300144: Licht6
+    2300146: Licht7
+    2300148: Licht8
+    2300150: Licht9
+    2300152: "M\xFClleimer"
+    2300154: pCube1
+    2300156: pCube2
+    2300158: pCube2 1
+    2300160: pCube3
+    2300162: pCube4
+    2300164: pCube5
+    2300166: pCube6
+    2300168: pCube7
+    2300170: pCube7 1
+    2300172: pCube8
+    2300174: pCube8 1
+    2300176: pCylinder1
+    2300178: pCylinder3
+    2300180: pCylinder4
+    2300182: pCylinder4 1
+    2300184: pCylinder5
+    2300186: pCylinder5 1
+    2300188: polySurface12
+    2300190: polySurface12 1
+    2300192: polySurface12 10
+    2300194: polySurface12 11
+    2300196: polySurface12 2
+    2300198: polySurface12 3
+    2300200: polySurface12 4
+    2300202: polySurface12 5
+    2300204: polySurface12 6
+    2300206: polySurface12 7
+    2300208: polySurface12 8
+    2300210: polySurface12 9
+    2300212: polySurface13
+    2300214: polySurface13 1
+    2300216: polySurface13 10
+    2300218: polySurface13 11
+    2300220: polySurface13 2
+    2300222: polySurface13 3
+    2300224: polySurface13 4
+    2300226: polySurface13 5
+    2300228: polySurface13 6
+    2300230: polySurface13 7
+    2300232: polySurface13 8
+    2300234: polySurface13 9
+    2300236: polySurface14
+    2300238: polySurface14 1
+    2300240: polySurface14 10
+    2300242: polySurface14 11
+    2300244: polySurface14 2
+    2300246: polySurface14 3
+    2300248: polySurface14 4
+    2300250: polySurface14 5
+    2300252: polySurface14 6
+    2300254: polySurface14 7
+    2300256: polySurface14 8
+    2300258: polySurface14 9
+    2300260: polySurface8
+    2300262: polySurface8 1
+    2300264: polySurface8 10
+    2300266: polySurface8 11
+    2300268: polySurface8 2
+    2300270: polySurface8 3
+    2300272: polySurface8 4
+    2300274: polySurface8 5
+    2300276: polySurface8 6
+    2300278: polySurface8 7
+    2300280: polySurface8 8
+    2300282: polySurface8 9
+    2300284: "Sch\xFCssel"
+    2300286: "Sch\xFCssel1"
+    2300288: "Sch\xFCssel2"
+    2300290: "Sch\xFCssel3"
+    2300292: ShotGlas1
+    2300294: ShotGlas10
+    2300296: ShotGlas12
+    2300298: ShotGlas2
+    2300300: ShotGlas3
+    2300302: ShotGlas4
+    2300304: ShotGlas5
+    2300306: ShotGlas6
+    2300308: Stuhl
+    2300310: Stuhl 1
+    2300312: Stuhl 2
+    2300314: Stuhl1
+    2300316: Stuhl1 1
+    2300318: Stuhl2
+    2300320: Stuhl2 1
+    2300322: Stuhl5
+    2300324: Stuhl5 1
+    2300326: Stuhl6
+    2300328: Stuhl6 1
+    2300330: Stuhl7
+    2300332: Stuhl7 1
+    2300334: Stuhl8
+    2300336: Stuhl9
+    2300338: Teller
+    2300340: Teller1
+    2300342: Tisch
+    2300344: Tisch 1
+    2300346: Tisch 2
+    2300348: tresen
+    2300350: Wand1
+    2300352: Wand2
     3300000: alterManSessel
     3300002: alterManTisch
-    3300004: BarHocker
-    3300006: BarHocker1
-    3300008: BarHocker10
-    3300010: BarHocker11
-    3300012: BarHocker2
-    3300014: BarHocker3
-    3300016: BarHocker4
-    3300018: BarHocker5
-    3300020: BarHocker5 1
-    3300022: BarHocker6
-    3300024: BarHocker7
-    3300026: BarHocker8
-    3300028: BarHocker8 1
-    3300030: BarHocker9
-    3300032: BarRegal
-    3300034: BilderRahmen:pCube1
-    3300036: BilderRahmen:pCube2
-    3300038: BilderRahmen:pCube3
-    3300040: Boden1
-    3300042: Couch
-    3300044: Fernseher
-    3300046: "Fu\xDFmatte"
-    3300048: kleinerTisch
-    3300050: kleinerTisch1
-    3300052: kleinerTisch2
-    3300054: "K\xFCchenT\xFCr"
-    3300056: "M\xFClleimer"
-    3300058: pCube1
-    3300060: pCube2
-    3300062: pCube2 1
-    3300064: pCube3
-    3300066: pCube4
-    3300068: pCube5
-    3300070: pCube6
-    3300072: pCylinder1
-    3300074: pCylinder3
-    3300076: polySurface12
-    3300078: polySurface12 1
-    3300080: polySurface12 10
-    3300082: polySurface12 11
-    3300084: polySurface12 12
-    3300086: polySurface12 2
-    3300088: polySurface12 3
-    3300090: polySurface12 4
-    3300092: polySurface12 5
-    3300094: polySurface12 6
-    3300096: polySurface12 7
-    3300098: polySurface12 8
-    3300100: polySurface12 9
-    3300102: polySurface13
-    3300104: polySurface13 1
-    3300106: polySurface13 10
-    3300108: polySurface13 11
-    3300110: polySurface13 12
-    3300112: polySurface13 2
-    3300114: polySurface13 3
-    3300116: polySurface13 4
-    3300118: polySurface13 5
-    3300120: polySurface13 6
-    3300122: polySurface13 7
-    3300124: polySurface13 8
-    3300126: polySurface13 9
-    3300128: polySurface14
-    3300130: polySurface14 1
-    3300132: polySurface14 10
-    3300134: polySurface14 11
-    3300136: polySurface14 12
-    3300138: polySurface14 2
-    3300140: polySurface14 3
-    3300142: polySurface14 4
-    3300144: polySurface14 5
-    3300146: polySurface14 6
-    3300148: polySurface14 7
-    3300150: polySurface14 8
-    3300152: polySurface14 9
-    3300154: polySurface8
-    3300156: polySurface8 1
-    3300158: polySurface8 10
-    3300160: polySurface8 11
-    3300162: polySurface8 12
-    3300164: polySurface8 2
-    3300166: polySurface8 3
-    3300168: polySurface8 4
-    3300170: polySurface8 5
-    3300172: polySurface8 6
-    3300174: polySurface8 7
-    3300176: polySurface8 8
-    3300178: polySurface8 9
-    3300180: Stuhl
-    3300182: Stuhl 1
-    3300184: Stuhl 2
-    3300186: Stuhl1
-    3300188: Stuhl1 1
-    3300190: Stuhl2
-    3300192: Stuhl2 1
-    3300194: Stuhl5
-    3300196: Stuhl5 1
-    3300198: Stuhl6
-    3300200: Stuhl6 1
-    3300202: Stuhl7
-    3300204: Stuhl7 1
-    3300206: Stuhl8
-    3300208: Stuhl9
-    3300210: Tisch
-    3300212: Tisch 1
-    3300214: Tisch 2
-    3300216: tresen
-    3300218: Wand1
-    3300220: Wand2
+    3300004: BarRegal
+    3300006: BilderRahmen:pCube1
+    3300008: BilderRahmen:pCube2
+    3300010: BilderRahmen:pCube3
+    3300012: Boden1
+    3300014: Couch
+    3300016: Fass
+    3300018: Fass1
+    3300020: Fernseher
+    3300022: Flasche
+    3300024: Flasche1
+    3300026: Flasche10
+    3300028: Flasche11
+    3300030: Flasche12
+    3300032: Flasche13
+    3300034: Flasche14
+    3300036: Flasche15
+    3300038: Flasche16
+    3300040: Flasche17
+    3300042: Flasche18
+    3300044: Flasche19
+    3300046: Flasche2
+    3300048: Flasche20
+    3300050: Flasche21
+    3300052: Flasche22
+    3300054: Flasche23
+    3300056: Flasche24
+    3300058: Flasche25
+    3300060: Flasche26
+    3300062: Flasche27
+    3300064: Flasche28
+    3300066: Flasche29
+    3300068: Flasche3
+    3300070: Flasche30
+    3300072: Flasche31
+    3300074: Flasche5
+    3300076: Flasche6
+    3300078: Flasche7
+    3300080: Flasche8
+    3300082: Flasche9
+    3300084: "Fu\xDFmatte"
+    3300086: Glas
+    3300088: Glas1
+    3300090: Glas2
+    3300092: Glas3
+    3300094: Glas4
+    3300096: Glas7
+    3300098: Glas8
+    3300100: Hocker
+    3300102: Hocker1
+    3300104: Hocker10
+    3300106: Hocker11
+    3300108: Hocker2
+    3300110: Hocker3
+    3300112: Hocker4
+    3300114: Hocker5
+    3300116: Hocker6
+    3300118: Hocker7
+    3300120: Hocker8
+    3300122: Hocker9
+    3300124: kleinerTisch
+    3300126: kleinerTisch1
+    3300128: kleinerTisch2
+    3300130: "K\xFCchenT\xFCr"
+    3300132: Licht
+    3300134: Licht10
+    3300136: Licht11
+    3300138: Licht3
+    3300140: Licht4
+    3300142: Licht5
+    3300144: Licht6
+    3300146: Licht7
+    3300148: Licht8
+    3300150: Licht9
+    3300152: "M\xFClleimer"
+    3300154: pCube1
+    3300156: pCube2
+    3300158: pCube2 1
+    3300160: pCube3
+    3300162: pCube4
+    3300164: pCube5
+    3300166: pCube6
+    3300168: pCube7
+    3300170: pCube7 1
+    3300172: pCube8
+    3300174: pCube8 1
+    3300176: pCylinder1
+    3300178: pCylinder3
+    3300180: pCylinder4
+    3300182: pCylinder4 1
+    3300184: pCylinder5
+    3300186: pCylinder5 1
+    3300188: polySurface12
+    3300190: polySurface12 1
+    3300192: polySurface12 10
+    3300194: polySurface12 11
+    3300196: polySurface12 2
+    3300198: polySurface12 3
+    3300200: polySurface12 4
+    3300202: polySurface12 5
+    3300204: polySurface12 6
+    3300206: polySurface12 7
+    3300208: polySurface12 8
+    3300210: polySurface12 9
+    3300212: polySurface13
+    3300214: polySurface13 1
+    3300216: polySurface13 10
+    3300218: polySurface13 11
+    3300220: polySurface13 2
+    3300222: polySurface13 3
+    3300224: polySurface13 4
+    3300226: polySurface13 5
+    3300228: polySurface13 6
+    3300230: polySurface13 7
+    3300232: polySurface13 8
+    3300234: polySurface13 9
+    3300236: polySurface14
+    3300238: polySurface14 1
+    3300240: polySurface14 10
+    3300242: polySurface14 11
+    3300244: polySurface14 2
+    3300246: polySurface14 3
+    3300248: polySurface14 4
+    3300250: polySurface14 5
+    3300252: polySurface14 6
+    3300254: polySurface14 7
+    3300256: polySurface14 8
+    3300258: polySurface14 9
+    3300260: polySurface8
+    3300262: polySurface8 1
+    3300264: polySurface8 10
+    3300266: polySurface8 11
+    3300268: polySurface8 2
+    3300270: polySurface8 3
+    3300272: polySurface8 4
+    3300274: polySurface8 5
+    3300276: polySurface8 6
+    3300278: polySurface8 7
+    3300280: polySurface8 8
+    3300282: polySurface8 9
+    3300284: "Sch\xFCssel"
+    3300286: "Sch\xFCssel1"
+    3300288: "Sch\xFCssel2"
+    3300290: "Sch\xFCssel3"
+    3300292: ShotGlas1
+    3300294: ShotGlas10
+    3300296: ShotGlas12
+    3300298: ShotGlas2
+    3300300: ShotGlas3
+    3300302: ShotGlas4
+    3300304: ShotGlas5
+    3300306: ShotGlas6
+    3300308: Stuhl
+    3300310: Stuhl 1
+    3300312: Stuhl 2
+    3300314: Stuhl1
+    3300316: Stuhl1 1
+    3300318: Stuhl2
+    3300320: Stuhl2 1
+    3300322: Stuhl5
+    3300324: Stuhl5 1
+    3300326: Stuhl6
+    3300328: Stuhl6 1
+    3300330: Stuhl7
+    3300332: Stuhl7 1
+    3300334: Stuhl8
+    3300336: Stuhl9
+    3300338: Teller
+    3300340: Teller1
+    3300342: Tisch
+    3300344: Tisch 1
+    3300346: Tisch 2
+    3300348: tresen
+    3300350: Wand1
+    3300352: Wand2
     4300000: "Fu\xDFmatte"
     4300002: "K\xFCchenT\xFCr"
     4300004: pCylinder1
@@ -828,108 +988,174 @@ ModelImporter:
     4300012: Stuhl2
     4300014: Stuhl5
     4300016: Stuhl6
-    4300018: BarHocker8
-    4300020: BarRegal
-    4300022: BarHocker
-    4300024: tresen
-    4300026: "M\xFClleimer"
-    4300028: BarHocker1
-    4300030: BarHocker2
-    4300032: BarHocker3
-    4300034: BarHocker4
-    4300036: alterManTisch
-    4300038: BarHocker5
-    4300040: alterManSessel
-    4300042: Boden1
-    4300044: Wand2
-    4300046: Wand1
-    4300048: Stuhl
-    4300050: Tisch
-    4300052: BarHocker6
-    4300054: BarHocker7
-    4300056: BarHocker9
-    4300058: Couch
-    4300060: Fernseher
-    4300062: pCylinder3
-    4300064: pCube1
-    4300066: pCube2
-    4300068: kleinerTisch
-    4300070: BarHocker5
-    4300072: Stuhl8
-    4300074: kleinerTisch1
-    4300076: BarHocker10
-    4300078: Stuhl7
-    4300080: kleinerTisch2
-    4300082: Stuhl7
-    4300084: pCube5
-    4300086: pCube6
-    4300088: BilderRahmen:pCube1
-    4300090: BilderRahmen:pCube2
-    4300092: BilderRahmen:pCube3
-    4300094: pCube3
-    4300096: pCube4
-    4300098: pCube2
-    4300100: BarHocker11
-    4300102: Stuhl
-    4300104: Tisch
-    4300106: Stuhl1
-    4300108: Stuhl2
-    4300110: Stuhl5
-    4300112: Stuhl6
-    4300114: BarHocker8
-    4300116: Stuhl9
-    4300118: polySurface13
-    4300120: polySurface14
-    4300122: polySurface12
-    4300124: polySurface8
-    4300126: polySurface13
-    4300128: polySurface14
-    4300130: polySurface12
-    4300132: polySurface8
-    4300134: polySurface13
-    4300136: polySurface14
-    4300138: polySurface12
-    4300140: polySurface8
-    4300142: polySurface13
-    4300144: polySurface14
-    4300146: polySurface12
-    4300148: polySurface8
-    4300150: polySurface13
-    4300152: polySurface14
-    4300154: polySurface12
-    4300156: polySurface8
-    4300158: polySurface13
-    4300160: polySurface14
-    4300162: polySurface12
-    4300164: polySurface8
-    4300166: polySurface13
-    4300168: polySurface14
-    4300170: polySurface12
-    4300172: polySurface8
-    4300174: polySurface13
-    4300176: polySurface14
-    4300178: polySurface12
-    4300180: polySurface8
-    4300182: polySurface13
-    4300184: polySurface14
-    4300186: polySurface12
-    4300188: polySurface8
-    4300190: polySurface13
-    4300192: polySurface14
-    4300194: polySurface12
-    4300196: polySurface8
-    4300198: polySurface13
-    4300200: polySurface14
-    4300202: polySurface12
-    4300204: polySurface8
-    4300206: polySurface13
-    4300208: polySurface14
-    4300210: polySurface12
-    4300212: polySurface8
-    4300214: polySurface13
-    4300216: polySurface14
-    4300218: polySurface12
-    4300220: polySurface8
+    4300018: Hocker7
+    4300020: "Sch\xFCssel2"
+    4300022: Licht8
+    4300024: Glas7
+    4300026: Teller1
+    4300028: "Sch\xFCssel3"
+    4300030: Licht11
+    4300032: BarRegal
+    4300034: tresen
+    4300036: Fass1
+    4300038: pCube7
+    4300040: pCube8
+    4300042: pCylinder4
+    4300044: pCylinder5
+    4300046: Fass
+    4300048: pCube7
+    4300050: pCube8
+    4300052: pCylinder4
+    4300054: pCylinder5
+    4300056: Flasche19
+    4300058: Flasche16
+    4300060: Flasche17
+    4300062: Flasche15
+    4300064: Flasche18
+    4300066: Flasche11
+    4300068: Flasche13
+    4300070: Flasche12
+    4300072: Flasche10
+    4300074: Flasche14
+    4300076: Flasche5
+    4300078: Flasche3
+    4300080: Flasche
+    4300082: Flasche1
+    4300084: Flasche2
+    4300086: Flasche6
+    4300088: Flasche7
+    4300090: Flasche9
+    4300092: Flasche8
+    4300094: Flasche28
+    4300096: Flasche27
+    4300098: Flasche26
+    4300100: Flasche21
+    4300102: Flasche20
+    4300104: Flasche22
+    4300106: Flasche23
+    4300108: Flasche24
+    4300110: Flasche25
+    4300112: Licht4
+    4300114: Licht3
+    4300116: Glas
+    4300118: "Sch\xFCssel"
+    4300120: Glas1
+    4300122: Licht
+    4300124: Hocker
+    4300126: Hocker1
+    4300128: Hocker2
+    4300130: Hocker3
+    4300132: "M\xFClleimer"
+    4300134: alterManTisch
+    4300136: alterManSessel
+    4300138: Teller
+    4300140: Licht5
+    4300142: Hocker4
+    4300144: Flasche30
+    4300146: Boden1
+    4300148: Wand2
+    4300150: Wand1
+    4300152: Stuhl
+    4300154: Tisch
+    4300156: Couch
+    4300158: Hocker10
+    4300160: Hocker11
+    4300162: Fernseher
+    4300164: pCylinder3
+    4300166: pCube1
+    4300168: pCube2
+    4300170: kleinerTisch
+    4300172: Stuhl8
+    4300174: Licht9
+    4300176: ShotGlas10
+    4300178: ShotGlas12
+    4300180: Hocker6
+    4300182: Flasche29
+    4300184: kleinerTisch1
+    4300186: Stuhl7
+    4300188: Hocker5
+    4300190: Licht10
+    4300192: kleinerTisch2
+    4300194: Stuhl7
+    4300196: pCube5
+    4300198: pCube6
+    4300200: BilderRahmen:pCube1
+    4300202: BilderRahmen:pCube2
+    4300204: BilderRahmen:pCube3
+    4300206: pCube3
+    4300208: pCube4
+    4300210: pCube2
+    4300212: Hocker9
+    4300214: Stuhl
+    4300216: Tisch
+    4300218: Stuhl1
+    4300220: Stuhl2
+    4300222: Stuhl5
+    4300224: Stuhl6
+    4300226: Stuhl9
+    4300228: ShotGlas6
+    4300230: ShotGlas5
+    4300232: ShotGlas4
+    4300234: ShotGlas2
+    4300236: ShotGlas3
+    4300238: ShotGlas1
+    4300240: "Sch\xFCssel1"
+    4300242: Glas2
+    4300244: Glas3
+    4300246: Glas4
+    4300248: Licht6
+    4300250: Licht7
+    4300252: Hocker8
+    4300254: Flasche31
+    4300256: Glas8
+    4300258: polySurface13
+    4300260: polySurface14
+    4300262: polySurface12
+    4300264: polySurface8
+    4300266: polySurface13
+    4300268: polySurface14
+    4300270: polySurface12
+    4300272: polySurface8
+    4300274: polySurface13
+    4300276: polySurface14
+    4300278: polySurface12
+    4300280: polySurface8
+    4300282: polySurface13
+    4300284: polySurface14
+    4300286: polySurface12
+    4300288: polySurface8
+    4300290: polySurface13
+    4300292: polySurface14
+    4300294: polySurface12
+    4300296: polySurface8
+    4300298: polySurface13
+    4300300: polySurface14
+    4300302: polySurface12
+    4300304: polySurface8
+    4300306: polySurface13
+    4300308: polySurface14
+    4300310: polySurface12
+    4300312: polySurface8
+    4300314: polySurface13
+    4300316: polySurface14
+    4300318: polySurface12
+    4300320: polySurface8
+    4300322: polySurface13
+    4300324: polySurface14
+    4300326: polySurface12
+    4300328: polySurface8
+    4300330: polySurface13
+    4300332: polySurface14
+    4300334: polySurface12
+    4300336: polySurface8
+    4300338: polySurface13
+    4300340: polySurface14
+    4300342: polySurface12
+    4300344: polySurface8
+    4300346: polySurface13
+    4300348: polySurface14
+    4300350: polySurface12
+    4300352: polySurface8
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
