@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 
 public class ItemEditor : EditorWindow {
@@ -10,8 +11,10 @@ public class ItemEditor : EditorWindow {
 	private GUIStyle labelStyle = new GUIStyle ();
 	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Other" };
 	private int selectedItemType = 0;
-	private InventoryItem[] itemList;
+	private List <InventoryItem> allItems;
+	private List<InventoryItem> itemList;
 	private List <bool> collapse = new List<bool> ();
+	private string newItemName = "newItem";
 
 	[MenuItem ("My Tools/Item Editor")]
 	static void Init () {
@@ -24,6 +27,7 @@ public class ItemEditor : EditorWindow {
 		labelStyle.fontStyle = FontStyle.Bold;
 		labelStyle.normal.textColor = Color.black;
 		labelStyle.alignment = TextAnchor.MiddleCenter;
+		allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
 	}
 
 	void OnGUI () {
@@ -35,56 +39,102 @@ public class ItemEditor : EditorWindow {
 		GUILayout.BeginHorizontal ("Box");
 		selectedItemType = GUILayout.SelectionGrid (selectedItemType, itemTypes, 4);
 		GUILayout.EndHorizontal ();
-
+		newItemName = EditorGUILayout.TextField ("New Item Name", newItemName);
 		if (GUILayout.Button ("Create Item")) {
 			CreateItem ();
 		}
 		GUILayout.Space (10f);
 
 		if (selectedItemType == 0) {
-			itemList = Resources.LoadAll<InventoryItem> ("Items");
-			while (collapse.Count < itemList.Length) {
-				collapse.Add (true);
+			itemList = allItems;
+			DisplayItemProperties ();
+		} else if (selectedItemType == 1) {
+			itemList = new List<InventoryItem> ();
+			for (int i = 0; i < allItems.Count; i++) {
+				if (allItems [i].itemType == InventoryItem.ItemTypes.Consumable) {
+					itemList.Add (allItems[i]);
+				} 
 			}
-			for (int i = 0; i < itemList.Length; i++) {
-				GUILayout.BeginHorizontal ();
-				collapse[i] = EditorGUILayout.Foldout (collapse[i], itemList[i].itemName);
-				if (GUILayout.Button ("Delete Item", GUILayout.MaxWidth (100f))) {
+			DisplayItemProperties ();
+		} else if (selectedItemType == 2) {
+			itemList = new List<InventoryItem> ();
+			for (int i = 0; i < allItems.Count; i++) {
+				if (allItems [i].itemType == InventoryItem.ItemTypes.Weapon) {
+					itemList.Add (allItems[i]);
+				} 
+			}
+			DisplayItemProperties ();
+		} else if (selectedItemType == 3) {
+			itemList = new List<InventoryItem> ();
+			for (int i = 0; i < allItems.Count; i++) {
+				if (allItems [i].itemType == InventoryItem.ItemTypes.Other) {
+					itemList.Add (allItems[i]);
+				}
+			}
+			DisplayItemProperties ();
+		}
+	}
+
+	private void CreateItem () {
+		InventoryItem newItem = ScriptableObject.CreateInstance <InventoryItem> ();
+		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/" + newItemName + ".asset");
+		AssetDatabase.SaveAssets ();
+		EditorUtility.FocusProjectWindow ();
+		Selection.activeObject = newItem;
+		allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
+		newItemName = "newItem";
+		Repaint ();
+	}
+
+	private void DisplayItemProperties () {
+		while (collapse.Count < itemList.Count) {
+			collapse.Add (true);
+		}
+		for (int i = 0; i < itemList.Count; i++) {
+			GUILayout.BeginHorizontal ();
+			collapse[i] = EditorGUILayout.Foldout (collapse[i], itemList[i].itemName);
+			if (GUILayout.Button ("Delete Item", GUILayout.MaxWidth (100f))) {
+				if (EditorUtility.DisplayDialog ("Delete " + itemList[i].name, "Are you sure you want to delete " + itemList[i].name + "?", "Yes", "No")) {
 					FileUtil.DeleteFileOrDirectory (Application.dataPath + "/Resources/Items/" + itemList[i].name + ".asset");
 					#if UNITY_EDITOR
 					UnityEditor.AssetDatabase.Refresh ();
 					#endif
+					allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
 				}
-				GUILayout.EndHorizontal ();
-				if (collapse[i]) {
-					GUILayout.BeginHorizontal ();
-					GUILayout.Space (30f);
-					itemList[i].itemName = EditorGUILayout.TextField ("Item Name", itemList[i].itemName, GUILayout.MaxWidth(450f));
-					itemList [i].itemValue = EditorGUILayout.IntField ("Item Value", itemList [i].itemValue, GUILayout.MaxWidth(450f));
-					GUILayout.EndHorizontal ();
-					GUILayout.BeginHorizontal ();
-					GUILayout.Space (30f);
-					itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));
-					EditorGUILayout.PrefixLabel ("Item Description");
-					itemList [i].itemDescription = EditorGUILayout.TextArea (itemList [i].itemDescription, GUILayout.MaxWidth(300f), GUILayout.Height (64f));
-					GUILayout.EndHorizontal ();
-				}
-
-				GUILayout.Space (5f);
 			}
-		} else if (selectedItemType == 1) {
-			
-		} else if (selectedItemType == 2) {
-			
-		} else if (selectedItemType == 3) {
+			GUILayout.EndHorizontal ();
+			if (collapse[i]) {
+				GUILayout.BeginHorizontal ();
+				GUILayout.Space (30f);
+				itemList[i].itemName = EditorGUILayout.TextField ("Item Name", itemList[i].itemName, GUILayout.MaxWidth(450f));
+				GUILayout.Space (10f);
+				itemList [i].itemValue = EditorGUILayout.IntField ("Item Value", itemList [i].itemValue, GUILayout.MaxWidth(450f));
+				GUILayout.EndHorizontal ();
+				GUILayout.BeginHorizontal ();
+				GUILayout.Space (30f);
+				itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));
+				GUILayout.Space (10f);
+				EditorGUILayout.PrefixLabel ("Item Description");
+				itemList [i].itemDescription = EditorGUILayout.TextArea (itemList [i].itemDescription, GUILayout.MaxWidth(300f), GUILayout.Height (64f));
+				GUILayout.EndHorizontal ();
+				GUILayout.BeginHorizontal ();
+				GUILayout.Space (30f);
+				itemList [i].itemObject = (Rigidbody)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(Rigidbody), true, GUILayout.MaxWidth(450f));
+				GUILayout.Space (10f);
+				itemList [i].itemType = (InventoryItem.ItemTypes) EditorGUILayout.EnumPopup ("Item Type", itemList[i].itemType, GUILayout.MaxWidth(450f));
+				GUILayout.EndHorizontal ();
+				GUILayout.BeginHorizontal ();
+				GUILayout.Space (30f);
+				itemList [i].isQuestItem = EditorGUILayout.Toggle ("Is Quest Item", itemList[i].isQuestItem, GUILayout.MaxWidth (450f));
+				GUILayout.Space (10f);
+				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (450f));
+				GUILayout.EndHorizontal ();
+			}
 
+			GUILayout.Space (5f);
 		}
-		Debug.Log (position.width);
 	}
-
-	private void CreateItem () {
-		Debug.Log ("create item");
-	}
+		
 
 
 }
