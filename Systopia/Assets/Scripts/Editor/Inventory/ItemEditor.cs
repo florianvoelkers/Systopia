@@ -77,6 +77,9 @@ public class ItemEditor : EditorWindow {
 
 	private void CreateItem () {
 		InventoryItem newItem = ScriptableObject.CreateInstance <InventoryItem> ();
+		if (selectedItemType != 0) {
+			newItem.itemType = (InventoryItem.ItemTypes) (selectedItemType - 1);
+		}
 		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();
 		EditorUtility.FocusProjectWindow ();
@@ -88,7 +91,7 @@ public class ItemEditor : EditorWindow {
 
 	private void DisplayItemProperties () {
 		while (collapse.Count < itemList.Count) {
-			collapse.Add (true);
+			collapse.Add (false);
 		}
 		for (int i = 0; i < itemList.Count; i++) {
 			GUILayout.BeginHorizontal ();
