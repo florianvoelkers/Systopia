@@ -1,16 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ConditionReaction : MonoBehaviour {
+// references one condition in the AllCondition asset
+public class ConditionReaction : Reaction {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public Condition condition;
+	public bool satisfied;
+
+	protected override void ImmediateReaction () {
+		condition.satisfied = satisfied;
 	}
 }

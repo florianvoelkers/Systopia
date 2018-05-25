@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7632bd4c9b0924f8cfd2dd56565bb7, type: 3}
   m_Name: ManaPotion
   m_EditorClassIdentifier: 
-  itemName: new item
+  itemName: ManaPotion
   itemDescription: describe it here
   itemValue: 0
   itemType: 2

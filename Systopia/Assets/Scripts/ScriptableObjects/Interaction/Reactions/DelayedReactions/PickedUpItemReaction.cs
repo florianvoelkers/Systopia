@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 // to add item to inventory
-public class PickedUpItemReaction : MonoBehaviour {
+public class PickedUpItemReaction : DelayedReaction {
 
 	public InventoryItem item;
 	private Inventory inventory;

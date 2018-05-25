@@ -11,7 +11,7 @@ public class AnimationReaction : DelayedReaction {
 		triggerHash = Animator.StringToHash (trigger);
 	}
 
-	protected override void ImmediaReaction () {
+	protected override void ImmediateReaction () {
 		animator.SetTrigger (triggerHash);
 	}
 }

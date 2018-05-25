@@ -77,8 +77,10 @@ public class ItemEditor : EditorWindow {
 
 	private void CreateItem () {
 		InventoryItem newItem = ScriptableObject.CreateInstance <InventoryItem> ();
+		newItem.itemName = newItemName;
 		if (selectedItemType != 0) {
 			newItem.itemType = (InventoryItem.ItemTypes) (selectedItemType - 1);
+
 		}
 		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();

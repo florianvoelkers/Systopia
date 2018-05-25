@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class DelayedReaction : Reaction {
+public abstract class DelayedReaction : Reaction {
 
 	public float delay;
 	protected WaitForSeconds wait;
