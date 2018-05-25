@@ -7,7 +7,7 @@ public class ReactionCollection : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < reactions.Length; i++) {
-			reactions [i].Init ();
+			reactions [i].Init ();	
 		}
 	}
 	

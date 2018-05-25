@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-[CreateAssetMenu (menuName = "Interaction/Reaction")]
 public abstract class Reaction : ScriptableObject {
 
 	public void Init () {

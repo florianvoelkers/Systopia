@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu (menuName = "Interaction/ConditionCollection")]
 public class ConditionCollection : ScriptableObject {
 
 	public string description;
