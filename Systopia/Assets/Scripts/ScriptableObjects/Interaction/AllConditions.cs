@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-[CreateAssetMenu (menuName = "Interaction/AllConditions")]
 public class AllConditions : ScriptableObject {
 
 	public Condition [] conditions;
 	private static AllConditions instance;
-	private const string loadPath = "Interaction/AllConditions";
+	private const string loadPath = "Conditions/AllConditions";
 
 	public static AllConditions Instance {
 		get {
