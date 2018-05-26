@@ -16,6 +16,8 @@ public class ItemEditor : EditorWindow {
 	private List <bool> collapse = new List<bool> ();
 	private string newItemName = "newItem";
 
+	private PlayerInventory playerInventory;
+
 	[MenuItem ("My Tools/Item Editor")]
 	static void Init () {
 		EditorWindow.GetWindow (typeof(ItemEditor));
@@ -28,6 +30,7 @@ public class ItemEditor : EditorWindow {
 		labelStyle.normal.textColor = Color.black;
 		labelStyle.alignment = TextAnchor.MiddleCenter;
 		allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
+		playerInventory = Resources.Load <PlayerInventory> ("Player/PlayerInventory");
 	}
 
 	void OnGUI () {
@@ -98,6 +101,11 @@ public class ItemEditor : EditorWindow {
 		for (int i = 0; i < itemList.Count; i++) {
 			GUILayout.BeginHorizontal ();
 			collapse[i] = EditorGUILayout.Foldout (collapse[i], itemList[i].itemName);
+			if (GUILayout.Button ("Add to Inventory", GUILayout.MaxWidth (120f))) {
+				if (EditorUtility.DisplayDialog ("Add " + itemList[i].name, "Are you sure you want to add " + itemList[i].name + " to the PlayerInventory?", "Yes", "No")) {
+					playerInventory.AddItem (itemList[i]);
+				}
+			}
 			if (GUILayout.Button ("Delete Item", GUILayout.MaxWidth (100f))) {
 				if (EditorUtility.DisplayDialog ("Delete " + itemList[i].name, "Are you sure you want to delete " + itemList[i].name + "?", "Yes", "No")) {
 					FileUtil.DeleteFileOrDirectory (Application.dataPath + "/Resources/Items/" + itemList[i].name + ".asset");
