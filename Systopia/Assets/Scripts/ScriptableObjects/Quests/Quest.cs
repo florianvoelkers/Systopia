@@ -11,4 +11,13 @@ public class Quest : ScriptableObject {
 	public Faction fromFaction;
 	public List <State> states;
 	public List <ScriptableObject> rewards;
+
+	public void AddState (State state) {
+		states.Add (state);
+	}
+
+	public void AddReward (ScriptableObject newReward) {
+		rewards.Add (newReward);
+	}
+
 }

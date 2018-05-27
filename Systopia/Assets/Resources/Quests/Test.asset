@@ -9,16 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
-  m_Name: Test
+  m_Name: test
   m_EditorClassIdentifier: 
   questTitle: 
   questDescription: 
   isQuestFinished: 0
   fromFaction: {fileID: 0}
   states: []
-  rewards:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  rewards: []

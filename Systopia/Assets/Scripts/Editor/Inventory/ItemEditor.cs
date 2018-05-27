@@ -39,7 +39,7 @@ public class ItemEditor : EditorWindow {
 		GUILayout.Label ("Item Editor", labelStyle);
 		GUILayout.EndHorizontal ();
 
-		GUILayout.BeginHorizontal ("Box");
+		GUILayout.BeginHorizontal ();
 		selectedItemType = GUILayout.SelectionGrid (selectedItemType, itemTypes, itemTypes.Length);
 		GUILayout.EndHorizontal ();
 		newItemName = EditorGUILayout.TextField ("New Item Name", newItemName);
@@ -58,7 +58,6 @@ public class ItemEditor : EditorWindow {
 
 		if (selectedItemType == 0) {
 			itemList = allItems;
-			DisplayItemProperties ();
 		} else if (selectedItemType == 1) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
@@ -66,7 +65,6 @@ public class ItemEditor : EditorWindow {
 					itemList.Add (allItems [i]);
 				} 
 			}
-			DisplayItemProperties ();
 		} else if (selectedItemType == 2) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
@@ -74,7 +72,6 @@ public class ItemEditor : EditorWindow {
 					itemList.Add (allItems [i]);
 				} 
 			}
-			DisplayItemProperties ();
 		} else if (selectedItemType == 3) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
@@ -82,8 +79,9 @@ public class ItemEditor : EditorWindow {
 					itemList.Add (allItems [i]);
 				}
 			}
-			DisplayItemProperties ();
 		} 
+
+		DisplayItemProperties ();
 	}
 
 	private void CreateConsumable () {

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adafd9defbf22124c98ac134e4b9a216, type: 3}
-  m_Name: None
+  m_Name: NoFaction
   m_EditorClassIdentifier: 
-  factionName: None
+  factionName: No Faction
   factionDescription: 
   factionIcon: {fileID: 0}
