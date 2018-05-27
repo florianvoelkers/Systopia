@@ -9,10 +9,10 @@ public class ItemEditor : EditorWindow {
 	//private Color darkModeBlack = new Color (0.75f, 0.75f, 0.75f);
 	//private Color darkModeOrange = new Color (0.9921f, 0.4588f, 0.1294f);
 	private GUIStyle labelStyle = new GUIStyle ();
-	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Other" };
+	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Wearables" };
 	private int selectedItemType = 0;
 	private List <Item> allItems;
-	private List<Item> itemList;
+	private List <Item> itemList;
 	private List <bool> collapse = new List<bool> ();
 	private string newItemName = "newItem";
 
@@ -40,11 +40,19 @@ public class ItemEditor : EditorWindow {
 		GUILayout.EndHorizontal ();
 
 		GUILayout.BeginHorizontal ("Box");
-		selectedItemType = GUILayout.SelectionGrid (selectedItemType, itemTypes, 4);
+		selectedItemType = GUILayout.SelectionGrid (selectedItemType, itemTypes, itemTypes.Length);
 		GUILayout.EndHorizontal ();
 		newItemName = EditorGUILayout.TextField ("New Item Name", newItemName);
 		if (GUILayout.Button ("Create Item")) {
-			CreateItem ();
+			if (selectedItemType == 0) {
+				Debug.LogWarning ("Select Item Category first");
+			} else if (selectedItemType == 1) {
+				CreateConsumable ();
+			} else if (selectedItemType == 2) {
+				CreateWeapon ();
+			} else if (selectedItemType == 3) {
+				CreateWearable ();
+			}
 		}
 		GUILayout.Space (10f);
 
@@ -54,41 +62,61 @@ public class ItemEditor : EditorWindow {
 		} else if (selectedItemType == 1) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == Item.ItemTypes.Consumable) {
-					itemList.Add (allItems[i]);
+				if (allItems [i] is Consumable) {
+					itemList.Add (allItems [i]);
 				} 
 			}
 			DisplayItemProperties ();
 		} else if (selectedItemType == 2) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == Item.ItemTypes.Weapon) {
-					itemList.Add (allItems[i]);
+				if (allItems [i] is Weapon) {
+					itemList.Add (allItems [i]);
 				} 
 			}
 			DisplayItemProperties ();
 		} else if (selectedItemType == 3) {
 			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == Item.ItemTypes.Other) {
-					itemList.Add (allItems[i]);
+				if (allItems [i] is Wearable) {
+					itemList.Add (allItems [i]);
 				}
 			}
 			DisplayItemProperties ();
-		}
+		} 
 	}
 
-	private void CreateItem () {
-		Item newItem = ScriptableObject.CreateInstance <Item> ();
+	private void CreateConsumable () {
+		Item newItem = ScriptableObject.CreateInstance <Consumable> ();
 		newItem.itemName = newItemName;
-		if (selectedItemType != 0) {
-			newItem.itemType = (Item.ItemTypes) (selectedItemType - 1);
-
-		}
-		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/" + newItemName + ".asset");
+		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/Consumables/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();
 		EditorUtility.FocusProjectWindow ();
 		Selection.activeObject = newItem;
+		RefreshItemEditor ();
+	}
+
+	private void CreateWeapon () {
+		Item newItem = ScriptableObject.CreateInstance <Weapon> ();
+		newItem.itemName = newItemName;
+		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/Weapons/" + newItemName + ".asset");
+		AssetDatabase.SaveAssets ();
+		EditorUtility.FocusProjectWindow ();
+		Selection.activeObject = newItem;
+		RefreshItemEditor ();
+	}
+
+	private void CreateWearable () {
+		Item newItem = ScriptableObject.CreateInstance <Wearable> ();
+		newItem.itemName = newItemName;
+		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/Wearables/" + newItemName + ".asset");
+		AssetDatabase.SaveAssets ();
+		EditorUtility.FocusProjectWindow ();
+		Selection.activeObject = newItem;
+		RefreshItemEditor ();
+	}
+
+	private void RefreshItemEditor () {
 		allItems = Resources.LoadAll<Item> ("Items").ToList();
 		newItemName = "newItem";
 		Repaint ();
@@ -108,7 +136,15 @@ public class ItemEditor : EditorWindow {
 			}
 			if (GUILayout.Button ("Delete Item", GUILayout.MaxWidth (100f))) {
 				if (EditorUtility.DisplayDialog ("Delete " + itemList[i].name, "Are you sure you want to delete " + itemList[i].name + "?", "Yes", "No")) {
-					FileUtil.DeleteFileOrDirectory (Application.dataPath + "/Resources/Items/" + itemList[i].name + ".asset");
+					string assetPath = Application.dataPath + "/Resources/Items/";
+					if (itemList [i] is Consumable) {
+						assetPath += "Consumables/";
+					} else if (itemList [i] is Weapon) {
+						assetPath += "Weapons/";
+					} else if (itemList [i] is Wearable) {
+						assetPath += "Wearable/";
+					}
+					FileUtil.DeleteFileOrDirectory (assetPath + itemList[i].name + ".asset");
 					#if UNITY_EDITOR
 					UnityEditor.AssetDatabase.Refresh ();
 					#endif
@@ -125,22 +161,30 @@ public class ItemEditor : EditorWindow {
 				GUILayout.EndHorizontal ();
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);
-				itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));
-				GUILayout.Space (10f);
+				// check for special values of item subclasses
+				Consumable itemAsConsumable = itemList [i] as Consumable;
+				if (itemAsConsumable) {
+					itemAsConsumable.recoveryValue = EditorGUILayout.IntField ("Recovery Value", itemAsConsumable.recoveryValue, GUILayout.MaxWidth (250f));
+				}
+				Weapon itemAsWeapon = itemList [i] as Weapon;
+				if (itemAsWeapon) {
+					itemAsWeapon.damage = EditorGUILayout.IntField ("Damage", itemAsWeapon.damage, GUILayout.MaxWidth (250f));
+				}
+				Wearable itemAsWearable = itemList [i] as Wearable;
+				if (itemAsWearable) {
+					itemAsWearable.armor = EditorGUILayout.IntField ("Armor", itemAsWearable.armor, GUILayout.MaxWidth (250f));
+				}
+				GUILayout.Space (33f);
+				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (150f));
+				GUILayout.Space (23f);
+				itemList [i].itemObject = (Rigidbody)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(Rigidbody), true, GUILayout.MaxWidth(450f));
+				GUILayout.EndHorizontal ();
+				GUILayout.BeginHorizontal ();
+				GUILayout.Space (30f);
 				EditorGUILayout.PrefixLabel ("Item Description");
 				itemList [i].itemDescription = EditorGUILayout.TextArea (itemList [i].itemDescription, GUILayout.MaxWidth(300f), GUILayout.Height (64f));
-				GUILayout.EndHorizontal ();
-				GUILayout.BeginHorizontal ();
-				GUILayout.Space (30f);
-				itemList [i].itemObject = (Rigidbody)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(Rigidbody), true, GUILayout.MaxWidth(450f));
 				GUILayout.Space (10f);
-				itemList [i].itemType = (Item.ItemTypes) EditorGUILayout.EnumPopup ("Item Type", itemList[i].itemType, GUILayout.MaxWidth(450f));
-				GUILayout.EndHorizontal ();
-				GUILayout.BeginHorizontal ();
-				GUILayout.Space (30f);
-				itemList [i].isQuestItem = EditorGUILayout.Toggle ("Is Quest Item", itemList[i].isQuestItem, GUILayout.MaxWidth (450f));
-				GUILayout.Space (10f);
-				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (450f));
+				itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));			
 				GUILayout.EndHorizontal ();
 			}
 
