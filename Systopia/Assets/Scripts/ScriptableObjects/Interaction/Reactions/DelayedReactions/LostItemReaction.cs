@@ -3,7 +3,7 @@
 // to remove items from the inventory
 public class LostItemReaction : DelayedReaction {
 
-	public InventoryItem item;
+	public Item item;
 	private PlayerInventory inventory;
 
 	protected override void SpecificInit () {

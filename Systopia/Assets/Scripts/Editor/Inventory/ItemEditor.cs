@@ -11,8 +11,8 @@ public class ItemEditor : EditorWindow {
 	private GUIStyle labelStyle = new GUIStyle ();
 	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Other" };
 	private int selectedItemType = 0;
-	private List <InventoryItem> allItems;
-	private List<InventoryItem> itemList;
+	private List <Item> allItems;
+	private List<Item> itemList;
 	private List <bool> collapse = new List<bool> ();
 	private string newItemName = "newItem";
 
@@ -29,7 +29,7 @@ public class ItemEditor : EditorWindow {
 		labelStyle.fontStyle = FontStyle.Bold;
 		labelStyle.normal.textColor = Color.black;
 		labelStyle.alignment = TextAnchor.MiddleCenter;
-		allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
+		allItems = Resources.LoadAll<Item> ("Items").ToList();
 		playerInventory = Resources.Load <PlayerInventory> ("Player/PlayerInventory");
 	}
 
@@ -52,25 +52,25 @@ public class ItemEditor : EditorWindow {
 			itemList = allItems;
 			DisplayItemProperties ();
 		} else if (selectedItemType == 1) {
-			itemList = new List<InventoryItem> ();
+			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == InventoryItem.ItemTypes.Consumable) {
+				if (allItems [i].itemType == Item.ItemTypes.Consumable) {
 					itemList.Add (allItems[i]);
 				} 
 			}
 			DisplayItemProperties ();
 		} else if (selectedItemType == 2) {
-			itemList = new List<InventoryItem> ();
+			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == InventoryItem.ItemTypes.Weapon) {
+				if (allItems [i].itemType == Item.ItemTypes.Weapon) {
 					itemList.Add (allItems[i]);
 				} 
 			}
 			DisplayItemProperties ();
 		} else if (selectedItemType == 3) {
-			itemList = new List<InventoryItem> ();
+			itemList = new List<Item> ();
 			for (int i = 0; i < allItems.Count; i++) {
-				if (allItems [i].itemType == InventoryItem.ItemTypes.Other) {
+				if (allItems [i].itemType == Item.ItemTypes.Other) {
 					itemList.Add (allItems[i]);
 				}
 			}
@@ -79,17 +79,17 @@ public class ItemEditor : EditorWindow {
 	}
 
 	private void CreateItem () {
-		InventoryItem newItem = ScriptableObject.CreateInstance <InventoryItem> ();
+		Item newItem = ScriptableObject.CreateInstance <Item> ();
 		newItem.itemName = newItemName;
 		if (selectedItemType != 0) {
-			newItem.itemType = (InventoryItem.ItemTypes) (selectedItemType - 1);
+			newItem.itemType = (Item.ItemTypes) (selectedItemType - 1);
 
 		}
 		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();
 		EditorUtility.FocusProjectWindow ();
 		Selection.activeObject = newItem;
-		allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
+		allItems = Resources.LoadAll<Item> ("Items").ToList();
 		newItemName = "newItem";
 		Repaint ();
 	}
@@ -112,7 +112,7 @@ public class ItemEditor : EditorWindow {
 					#if UNITY_EDITOR
 					UnityEditor.AssetDatabase.Refresh ();
 					#endif
-					allItems = Resources.LoadAll<InventoryItem> ("Items").ToList();
+					allItems = Resources.LoadAll<Item> ("Items").ToList();
 				}
 			}
 			GUILayout.EndHorizontal ();
@@ -134,7 +134,7 @@ public class ItemEditor : EditorWindow {
 				GUILayout.Space (30f);
 				itemList [i].itemObject = (Rigidbody)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(Rigidbody), true, GUILayout.MaxWidth(450f));
 				GUILayout.Space (10f);
-				itemList [i].itemType = (InventoryItem.ItemTypes) EditorGUILayout.EnumPopup ("Item Type", itemList[i].itemType, GUILayout.MaxWidth(450f));
+				itemList [i].itemType = (Item.ItemTypes) EditorGUILayout.EnumPopup ("Item Type", itemList[i].itemType, GUILayout.MaxWidth(450f));
 				GUILayout.EndHorizontal ();
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);

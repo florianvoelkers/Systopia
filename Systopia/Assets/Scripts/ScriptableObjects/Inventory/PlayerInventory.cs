@@ -2,16 +2,16 @@
 using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu (menuName = "PlayerInventory")]
+[CreateAssetMenu (menuName = "Player/Inventory")]
 public class PlayerInventory : ScriptableObject {
 
-	public List <InventoryItem> items;
+	public List <Item> items;
 
-	public void AddItem (InventoryItem item) {
+	public void AddItem (Item item) {
 		items.Add (item);
 	}
 
-	public void RemoveItem (InventoryItem item) {
+	public void RemoveItem (Item item) {
 		items.Remove (item);
 	}
 }

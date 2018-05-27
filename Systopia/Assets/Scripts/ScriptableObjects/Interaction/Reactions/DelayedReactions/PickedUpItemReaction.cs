@@ -3,7 +3,7 @@
 // to add item to inventory
 public class PickedUpItemReaction : DelayedReaction {
 
-	public InventoryItem item;
+	public Item item;
 	private PlayerInventory inventory;
 
 	protected override void SpecificInit () {

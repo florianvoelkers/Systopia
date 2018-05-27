@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerQuests : MonoBehaviour {
+[System.Serializable]
+[CreateAssetMenu (menuName = "Player/All Quests")]
+public class PlayerQuests : ScriptableObject {
 
-	// Use this for initialization
-	void Start () {
-		
+	public List <Quest> quests;
+
+	public void AddQuest (Quest quest) {
+		quests.Add (quest);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void RemoveQuest (Quest quest) {
+		quests.Remove (quest);
 	}
 }

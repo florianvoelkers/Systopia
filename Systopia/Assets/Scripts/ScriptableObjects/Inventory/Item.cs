@@ -2,7 +2,7 @@
 
 [System.Serializable]
 [CreateAssetMenu (menuName = "Item")]
-public class InventoryItem : ScriptableObject {
+public class Item : ScriptableObject {
 
 	public enum ItemTypes {Consumable, Weapon, Other};
 
