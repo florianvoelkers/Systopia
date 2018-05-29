@@ -9,7 +9,7 @@ public class ItemEditor : EditorWindow {
 	//private Color darkModeBlack = new Color (0.75f, 0.75f, 0.75f);
 	//private Color darkModeOrange = new Color (0.9921f, 0.4588f, 0.1294f);
 	private GUIStyle labelStyle = new GUIStyle ();
-	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Wearables" };
+	private string[] itemTypes = { "All Items", "Consumables", "Weapons", "Wearables", "Quest" };
 	private int selectedItemType = 0;
 	private List <Item> allItems;
 	private List <Item> itemList;
@@ -20,7 +20,8 @@ public class ItemEditor : EditorWindow {
 
 	[MenuItem ("My Tools/Item Editor")]
 	static void Init () {
-		EditorWindow.GetWindow (typeof(ItemEditor));
+		EditorWindow window = EditorWindow.GetWindow (typeof(ItemEditor));
+		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
 	void OnEnable () {
@@ -52,6 +53,8 @@ public class ItemEditor : EditorWindow {
 				CreateWeapon ();
 			} else if (selectedItemType == 3) {
 				CreateWearable ();
+			} else if (selectedItemType == 4) {
+				CreateQuestItem ();
 			}
 		}
 		GUILayout.Space (10f);
@@ -79,7 +82,14 @@ public class ItemEditor : EditorWindow {
 					itemList.Add (allItems [i]);
 				}
 			}
-		} 
+		} else if (selectedItemType == 4) {
+			itemList = new List <Item> ();
+			for (int i = 0; i < allItems.Count; i++) {
+				if (allItems [i] is QuestItem) {
+					itemList.Add (allItems [i]);
+				}
+			}
+		}
 
 		DisplayItemProperties ();
 	}
@@ -114,6 +124,16 @@ public class ItemEditor : EditorWindow {
 		RefreshItemEditor ();
 	}
 
+	private void CreateQuestItem () {
+		Item newItem = ScriptableObject.CreateInstance <QuestItem> ();
+		newItem.itemName = newItemName;
+		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/QuestItems/" + newItemName + ".asset");
+		AssetDatabase.SaveAssets ();
+		EditorUtility.FocusProjectWindow ();
+		Selection.activeObject = newItem;
+		RefreshItemEditor ();
+	}
+
 	private void RefreshItemEditor () {
 		allItems = Resources.LoadAll<Item> ("Items").ToList();
 		newItemName = "newItem";
@@ -141,6 +161,8 @@ public class ItemEditor : EditorWindow {
 						assetPath += "Weapons/";
 					} else if (itemList [i] is Wearable) {
 						assetPath += "Wearable/";
+					} else if (itemList [i] is QuestItem) {
+						assetPath += "QuestItems/";
 					}
 					FileUtil.DeleteFileOrDirectory (assetPath + itemList[i].name + ".asset");
 					#if UNITY_EDITOR
@@ -172,10 +194,14 @@ public class ItemEditor : EditorWindow {
 				if (itemAsWearable) {
 					itemAsWearable.armor = EditorGUILayout.IntField ("Armor", itemAsWearable.armor, GUILayout.MaxWidth (250f));
 				}
+				QuestItem itemAsQuestItem = itemList [i] as QuestItem;
+				if (itemAsQuestItem) {
+					itemAsQuestItem.correspondingCondition = (Condition)EditorGUILayout.ObjectField ("Condition", itemAsQuestItem.correspondingCondition, typeof(Condition), true, GUILayout.MaxWidth (250f));
+				}
 				GUILayout.Space (33f);
 				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (150f));
 				GUILayout.Space (23f);
-				itemList [i].itemObject = (Rigidbody)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(Rigidbody), true, GUILayout.MaxWidth(450f));
+				itemList [i].itemObject = (GameObject)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(GameObject), true, GUILayout.MaxWidth(450f));
 				GUILayout.EndHorizontal ();
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);

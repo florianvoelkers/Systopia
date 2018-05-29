@@ -13,7 +13,8 @@ public class FactionEditor : EditorWindow {
 
 	[MenuItem ("My Tools/Faction Editor")]
 	static void Init () {
-		EditorWindow.GetWindow (typeof(FactionEditor));
+		EditorWindow window = EditorWindow.GetWindow (typeof(FactionEditor));
+		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
 	void OnEnable () {

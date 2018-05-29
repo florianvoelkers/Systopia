@@ -12,7 +12,8 @@ public class ConditionEditor : EditorWindow {
 
 	[MenuItem ("My Tools/Condition Editor")]
 	static void Init () {
-		EditorWindow.GetWindow (typeof(ConditionEditor));
+		EditorWindow window = EditorWindow.GetWindow (typeof(ConditionEditor));
+		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
 	void OnEnable () {
