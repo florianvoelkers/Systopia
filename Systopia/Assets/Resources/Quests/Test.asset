@@ -11,9 +11,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
   m_Name: test
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: test
+  questDescription: fasfasfasfawf
   isQuestFinished: 0
-  fromFaction: {fileID: 0}
-  states: []
-  rewards: []
+  fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
+  states:
+  - {fileID: 114052903265329920}
+  - {fileID: 114499746832596620}
+  rewards:
+  - {fileID: 114469282872254208}
+  - {fileID: 114774000219507488}
+  - {fileID: 114801443835791168}
+--- !u!114 &114052903265329920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: start
+  m_EditorClassIdentifier: 
+  stateName: start
+  stateDescription: describe it here
+  isStateFinished: 0
+--- !u!114 &114469282872254208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a520839475b55b94fa4225fbc0ff9904, type: 3}
+  m_Name: item
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 716bbb181b85b53449d5d235c4721e3d, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
+--- !u!114 &114499746832596620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: end
+  m_EditorClassIdentifier: 
+  stateName: end
+  stateDescription: describe it here
+  isStateFinished: 0
+--- !u!114 &114774000219507488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ff99db9387ce84281179d07899f5e9, type: 3}
+  m_Name: money
+  m_EditorClassIdentifier: 
+  moneyRewarded: 100
+  playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+--- !u!114 &114801443835791168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 42
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}

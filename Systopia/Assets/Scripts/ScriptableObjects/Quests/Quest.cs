@@ -10,13 +10,13 @@ public class Quest : ScriptableObject {
 	public bool isQuestFinished;
 	public Faction fromFaction;
 	public List <State> states;
-	public List <ScriptableObject> rewards;
+	public List <Reward> rewards;
 
 	public void AddState (State state) {
 		states.Add (state);
 	}
 
-	public void AddReward (ScriptableObject newReward) {
+	public void AddReward (Reward newReward) {
 		rewards.Add (newReward);
 	}
 

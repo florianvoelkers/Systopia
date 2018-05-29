@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[System.Serializable]
 public abstract class Reaction : ScriptableObject {
 
 	public void Init () {
