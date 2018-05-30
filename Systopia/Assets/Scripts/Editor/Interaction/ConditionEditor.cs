@@ -1,96 +1,118 @@
-﻿using UnityEngine;
-using UnityEditor;
-using System.Collections.Generic;
+﻿using UnityEditor;
+using UnityEngine;
 
-public class ConditionEditor : EditorWindow {
+[CustomEditor(typeof (Condition))]
+public class ConditionEditor : Editor {
 
-	private GUIStyle labelStyle = new GUIStyle ();
-	private string newConditionName = "newCondition";
+	public enum EditorType { ConditionAsset, AllConditionAsset, ConditionCollection }
 
-	private AllConditions allConditions;
-	private bool showConditions = true;
+	public EditorType editorType;
+	public SerializedProperty conditionsProperty;
 
-	[MenuItem ("My Tools/Condition Editor")]
-	static void Init () {
-		EditorWindow window = EditorWindow.GetWindow (typeof(ConditionEditor));
-		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
-	}
+	private SerializedProperty descriptionProperty;
+	private SerializedProperty satisfiedProperty;
+	private SerializedProperty hashProperty;
+	private Condition condition;
 
-	void OnEnable () {
-		labelStyle.padding = new RectOffset (10, 10, 10, 10);
-		labelStyle.fontSize = 31;
-		labelStyle.fontStyle = FontStyle.Bold;
-		labelStyle.normal.textColor = Color.black;
-		labelStyle.alignment = TextAnchor.MiddleCenter;
+	private const float conditionButtonWidth = 30f;
+	private const float toggleOffset = 30f;
+	private const string conditionPropDescriptionName = "description";
+	private const string conditionPropSatisfiedName = "satisfied";
+	private const string conditionPropHashName = "hash";
+	private const string blankDescription = "No conditions set.";
 
-		allConditions = AllConditions.Instance;
-	}
+	private void OnEnable () {
+		condition = (Condition)target;
 
-	void OnGUI () {
-
-		GUILayout.BeginHorizontal ();
-		GUILayout.Label ("Condition Editor", labelStyle);
-		GUILayout.EndHorizontal ();
-
-		GUILayout.BeginHorizontal ();
-		newConditionName = EditorGUILayout.TextField ("New Condition Name", newConditionName);
-		if (GUILayout.Button ("Add new condition")) {
-			AddNewCondition ();
-		}
-		GUILayout.EndHorizontal ();
-		GUILayout.Space (30f);
-
-		showConditions = EditorGUILayout.Foldout (showConditions, "All Conditions");
-		if (showConditions) {
-			for (int i = 0; i < allConditions.conditions.Length; i++) {
-				GUILayout.BeginHorizontal ();
-				GUILayout.Space (30f);
-				EditorGUILayout.LabelField (allConditions.conditions[i].name, GUILayout.MaxWidth (200f));
-				allConditions.conditions [i].description = EditorGUILayout.TextField ("Description", allConditions.conditions [i].description, GUILayout.MinWidth(200f));
-				allConditions.conditions [i].satisfied = EditorGUILayout.Toggle ("Satisfied", allConditions.conditions[i].satisfied, GUILayout.MaxWidth (200f));
-				if (GUILayout.Button ("Delete", GUILayout.MaxWidth (100f))) {
-					if (EditorUtility.DisplayDialog ("Delete " + allConditions.conditions [i].description, "Are you sure you want to delete " + allConditions.conditions [i].description + "?", "Yes", "No")) {
-						Condition conditionToRemove = allConditions.conditions [i];
-						ArrayUtility.Remove (ref AllConditions.Instance.conditions, conditionToRemove);
-						DestroyImmediate (conditionToRemove, true);
-						AssetDatabase.SaveAssets ();
-						EditorUtility.SetDirty (AllConditions.Instance);
-					}
-				}
-				GUILayout.EndHorizontal ();
-			}
-		}
-	}
-
-	private void AddNewCondition () {
-		Condition newCondition = CreateInstance<Condition> ();
-		newCondition.name = newConditionName;
-		newCondition.description = "describe it here";
-		newCondition.hash = Animator.StringToHash (newCondition.name);
-
-		AssetDatabase.AddObjectToAsset (newCondition, AllConditions.Instance);
-
-		// import asset so it is recognised as a joined asset
-		AssetDatabase.ImportAsset (AssetDatabase.GetAssetPath (newCondition));
-
-		// add the condition to the AllConditions list
-		ArrayUtility.Add (ref AllConditions.Instance.conditions, newCondition);
-
-		// mark AllConditions as dirty so editor knows to save changes to it when a project save happens
-		EditorUtility.SetDirty (AllConditions.Instance);
-		newConditionName = "newConditionName";
-		Repaint ();
-	}
-
-	[MenuItem("Assets/Create/AllConditions")]
-	private static void CreateAllConditionsAsset () {
-		if (AllConditions.Instance)
+		if (target == null) {
+			DestroyImmediate (this);
 			return;
+		}
 
-		AllConditions instance = CreateInstance<AllConditions> ();
-		AssetDatabase.CreateAsset (instance, "Assets/Resources/Conditions/AllConditions.asset");
+		descriptionProperty = serializedObject.FindProperty (conditionPropDescriptionName);
+		satisfiedProperty = serializedObject.FindProperty (conditionPropSatisfiedName);
+		hashProperty = serializedObject.FindProperty (conditionPropHashName);
+	}
 
-		AllConditions.Instance = instance;
-		instance.conditions = new Condition[0];;
+	public override void OnInspectorGUI () {
+		switch (editorType) {
+		case EditorType.AllConditionAsset:
+			AllConditionsAssetGUI ();
+			break;
+		case EditorType.ConditionAsset:
+			ConditionAssetGUI ();
+			break;
+		case EditorType.ConditionCollection: 
+			InteractableGUI ();
+			break;
+		default:
+			throw new UnityException ("Unknown ConditionEditor.EditorType.");
+		}
+	}
+
+	private void AllConditionsAssetGUI () {
+		EditorGUILayout.BeginHorizontal (GUI.skin.box);
+		EditorGUI.indentLevel++;
+
+		EditorGUILayout.LabelField (condition.description);
+
+		if (GUILayout.Button ("-", GUILayout.Width (conditionButtonWidth)))
+			AllConditionsEditor.RemoveCondition (condition);
+
+		EditorGUI.indentLevel--;
+		EditorGUILayout.EndHorizontal ();
+	}
+
+	private void ConditionAssetGUI () {
+		EditorGUILayout.BeginHorizontal (GUI.skin.box);
+		EditorGUI.indentLevel++;
+
+		EditorGUILayout.LabelField (condition.description);
+
+		EditorGUI.indentLevel--;
+		EditorGUILayout.EndHorizontal ();
+	}
+
+	private void InteractableGUI () {
+		serializedObject.Update ();
+		float width = EditorGUIUtility.currentViewWidth / 3f;
+
+		EditorGUILayout.BeginHorizontal ();
+
+		int conditionIndex = AllConditionsEditor.TryGetConditionIndex (condition);
+		if (conditionIndex == -1)
+			conditionIndex = 0;
+		conditionIndex = EditorGUILayout.Popup (conditionIndex, AllConditionsEditor.AllConditionDescriptions, GUILayout.Width (width));
+
+		Condition globalCondition = AllConditionsEditor.TryGetConditionAt (conditionIndex);
+		descriptionProperty.stringValue = globalCondition != null ? globalCondition.description : blankDescription;
+		hashProperty.intValue = Animator.StringToHash (descriptionProperty.stringValue);
+		EditorGUILayout.PropertyField (satisfiedProperty, GUIContent.none, GUILayout.Width (width + toggleOffset));
+		if (GUILayout.Button ("-", GUILayout.Width (conditionButtonWidth))) {
+			conditionsProperty.RemoveFromObjectArray (condition);
+		}
+
+		EditorGUILayout.EndHorizontal ();
+		serializedObject.ApplyModifiedProperties ();
+	}
+
+	public static Condition CreateCondition () {
+		Condition newCondition = CreateInstance <Condition> ();
+		string blankDescription = "No conditions set.";
+		Condition globalCondition = AllConditionsEditor.TryGetConditionAt (0);
+		newCondition.description = globalCondition != null ? globalCondition.description : blankDescription;
+		SetHash (newCondition);
+		return newCondition;
+	}
+
+	public static Condition CreateCondition (string description) {
+		Condition newCondition = CreateInstance <Condition> ();
+		newCondition.description = description;
+		SetHash (newCondition);
+		return newCondition;
+	}
+
+	private static void SetHash (Condition condition) {
+		condition.hash = Animator.StringToHash (condition.description);
 	}
 }
