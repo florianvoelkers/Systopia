@@ -1,0 +1,2229 @@
+fileFormatVersion: 2
+guid: 745ad0e1311a1a145a0979b35355094a
+timeCreated: 1527683553
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AbtropfStand
+    100002: AlkoholFlasche
+    100004: AlkoholFlasche1
+    100006: AlterMannSitzEcke
+    100008: "Antiquit\xE4tenH\xE4ndler"
+    100010: Bar
+    100012: BarLampe
+    100014: BarLampe10
+    100016: BarLampe2
+    100018: BarLampe3
+    100020: BarLampe4
+    100022: BarLampe5
+    100024: BarLampe6
+    100026: BarLampe7
+    100028: BarLampe8
+    100030: BarLampe9
+    100032: BarRegal
+    100034: Bier
+    100036: Bier 1
+    100038: Bier 10
+    100040: Bier 2
+    100042: Bier 3
+    100044: Bier 4
+    100046: Bier 5
+    100048: Bier 6
+    100050: Bier 7
+    100052: Bier 8
+    100054: Bier 9
+    100056: Bierflasche
+    100058: Bierflasche1
+    100060: Bierflasche2
+    100062: BierKrug
+    100064: BierKrug1
+    100066: BierKrug10
+    100068: BierKrug11
+    100070: BierKrug12
+    100072: BierKrug13
+    100074: BierKrug14
+    100076: BierKrug15
+    100078: BierKrug16
+    100080: BierKrug17
+    100082: BierKrug18
+    100084: BierKrug19
+    100086: BierKrug2
+    100088: BierKrug20
+    100090: BierKrug3
+    100092: BierKrug4
+    100094: BierKrug5
+    100096: BierKrug6
+    100098: BierKrug7
+    100100: BierKrug7 1
+    100102: BierKrug8
+    100104: BierKrug8 1
+    100106: BierKrug9
+    100108: BierKrug9 1
+    100110: "BierKr\xFCgeImRegal"
+    100112: "BierKr\xFCgeImRegal1"
+    100114: Bilder
+    100116: BilderRahmenBreit
+    100118: "BilderRahmenGro\xDF"
+    100120: BilderRahmenKlein1
+    100122: BilderRahmenKlein2
+    100124: Boden1
+    100126: Cola
+    100128: Cola 1
+    100130: Cola 2
+    100132: Fernseher
+    100134: Fernseher1
+    100136: FernseherHalterung
+    100138: FernseherKombo
+    100140: FernseherLampe
+    100142: FlaschenAufTresen
+    100144: "Fu\xDFmatte"
+    100146: "Gel\xE4nder"
+    100148: "Gel\xE4nderAblage"
+    100150: Glas
+    100152: Glas1
+    100154: Glas2
+    100156: Glas2 1
+    100158: Glas3
+    100160: Glas3 1
+    100162: Glas4
+    100164: Glas4 1
+    100166: Glas5
+    100168: Glas5 1
+    100170: Glas6
+    100172: Glas6 1
+    100174: Glas7
+    100176: Glas7 1
+    100178: Glas8
+    100180: Glas9
+    100182: "Gl\xE4serImRegal"
+    100184: "Gl\xE4serImRegal1"
+    100186: Hocker
+    100188: Hocker 1
+    100190: Hocker1
+    100192: Hocker10
+    100194: Hocker2
+    100196: Hocker3
+    100198: Hocker4
+    100200: Hocker6
+    100202: Hocker7
+    100204: Hocker8
+    100206: Hocker9
+    100208: "HockerSitzFl\xE4che"
+    100210: "HockerSitzFl\xE4che 1"
+    100212: "HockerSitzFl\xE4che 2"
+    100214: "HockerSitzFl\xE4che 3"
+    100216: "HockerSitzFl\xE4che 4"
+    100218: "HockerSitzFl\xE4che 5"
+    100220: "HockerSitzFl\xE4che 6"
+    100222: "HockerSitzFl\xE4che 7"
+    100224: "HockerSitzFl\xE4che 8"
+    100226: "HockerSitzFl\xE4che 9"
+    100228: HoheSitzEcke
+    100230: HumanReferences
+    100232: HumanReferenz
+    100234: HumanReferenz1
+    100236: HumanReferenz10
+    100238: HumanReferenz11
+    100240: HumanReferenz12
+    100242: HumanReferenz13
+    100244: HumanReferenz14
+    100246: HumanReferenz15
+    100248: HumanReferenz16
+    100250: HumanReferenz17
+    100252: HumanReferenz2
+    100254: HumanReferenz3
+    100256: HumanReferenz4
+    100258: HumanReferenz5
+    100260: HumanReferenz6
+    100262: HumanReferenz7
+    100264: HumanReferenz8
+    100266: HumanReferenz9
+    100268: "KloT\xFCr"
+    100270: KreisSofa
+    100272: KreisSofa1
+    100274: "K\xFChlschrank"
+    100276: Laptop
+    100278: LautscprecherCluster
+    100280: LautscprecherCluster1
+    100282: Lautsprecher
+    100284: Lautsprecher 1
+    100286: Lautsprecher1
+    100288: Lautsprecher1 1
+    100290: Lautsprecher2
+    100292: Lautsprecher2 1
+    100294: Lautsprecher3
+    100296: Lautsprecher3 1
+    100298: Monitor
+    100300: "M\xFClleimer1"
+    100302: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface4
+    100304: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface5
+    100306: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface9
+    100308: pCylinder1
+    100310: pCylinder10
+    100312: pCylinder10 1
+    100314: pCylinder10 2
+    100316: pCylinder10 3
+    100318: pCylinder10 4
+    100320: pCylinder10 5
+    100322: pCylinder13
+    100324: pCylinder13 1
+    100326: pCylinder14
+    100328: pCylinder15
+    100330: pCylinder16
+    100332: pCylinder17
+    100334: pCylinder18
+    100336: pCylinder19
+    100338: pCylinder2
+    100340: pCylinder3
+    100342: pCylinder4
+    100344: pCylinder5
+    100346: pCylinder6
+    100348: pCylinder6 1
+    100350: pCylinder6 2
+    100352: pCylinder6 3
+    100354: pCylinder6 4
+    100356: pCylinder6 5
+    100358: pCylinder6 6
+    100360: pCylinder6 7
+    100362: pCylinder7
+    100364: pCylinder7 1
+    100366: pCylinder7 2
+    100368: pCylinder7 3
+    100370: pCylinder7 4
+    100372: pCylinder7 5
+    100374: pCylinder7 6
+    100376: pCylinder7 7
+    100378: pCylinder9
+    100380: "PersonalT\xFCr"
+    100382: "PersonalT\xFCr1"
+    100384: Pinchen
+    100386: Pinchen1
+    100388: Pinchen10
+    100390: Pinchen11
+    100392: Pinchen12
+    100394: Pinchen13
+    100396: Pinchen14
+    100398: Pinchen15
+    100400: Pinchen16
+    100402: Pinchen17
+    100404: Pinchen18
+    100406: Pinchen19
+    100408: Pinchen2
+    100410: Pinchen20
+    100412: Pinchen21
+    100414: Pinchen22
+    100416: Pinchen23
+    100418: Pinchen24
+    100420: Pinchen25
+    100422: Pinchen26
+    100424: Pinchen27
+    100426: Pinchen28
+    100428: Pinchen29
+    100430: Pinchen3
+    100432: Pinchen30
+    100434: Pinchen31
+    100436: Pinchen32
+    100438: Pinchen33
+    100440: Pinchen34
+    100442: Pinchen4
+    100444: Pinchen5
+    100446: Pinchen6
+    100448: Pinchen7
+    100450: Pinchen8
+    100452: Pinchen9
+    100454: PinchenImRegal
+    100456: Plateau
+    100458: polySurface1
+    100460: polySurface1 1
+    100462: polySurface1 10
+    100464: polySurface1 11
+    100466: polySurface1 12
+    100468: polySurface1 13
+    100470: polySurface1 14
+    100472: polySurface1 15
+    100474: polySurface1 2
+    100476: polySurface1 3
+    100478: polySurface1 4
+    100480: polySurface1 5
+    100482: polySurface1 6
+    100484: polySurface1 7
+    100486: polySurface1 8
+    100488: polySurface1 9
+    100490: polySurface2
+    100492: polySurface2 1
+    100494: polySurface2 10
+    100496: polySurface2 11
+    100498: polySurface2 12
+    100500: polySurface2 13
+    100502: polySurface2 14
+    100504: polySurface2 15
+    100506: polySurface2 2
+    100508: polySurface2 3
+    100510: polySurface2 4
+    100512: polySurface2 5
+    100514: polySurface2 6
+    100516: polySurface2 7
+    100518: polySurface2 8
+    100520: polySurface2 9
+    100522: polySurface4
+    100524: polySurface4 1
+    100526: polySurface4 10
+    100528: polySurface4 11
+    100530: polySurface4 12
+    100532: polySurface4 13
+    100534: polySurface4 14
+    100536: polySurface4 15
+    100538: polySurface4 16
+    100540: polySurface4 2
+    100542: polySurface4 3
+    100544: polySurface4 4
+    100546: polySurface4 5
+    100548: polySurface4 6
+    100550: polySurface4 7
+    100552: polySurface4 8
+    100554: polySurface4 9
+    100556: polySurface5
+    100558: polySurface5 1
+    100560: polySurface5 10
+    100562: polySurface5 11
+    100564: polySurface5 12
+    100566: polySurface5 13
+    100568: polySurface5 14
+    100570: polySurface5 15
+    100572: polySurface5 16
+    100574: polySurface5 2
+    100576: polySurface5 3
+    100578: polySurface5 4
+    100580: polySurface5 5
+    100582: polySurface5 6
+    100584: polySurface5 7
+    100586: polySurface5 8
+    100588: polySurface5 9
+    100590: polySurface9
+    100592: polySurface9 1
+    100594: polySurface9 10
+    100596: polySurface9 11
+    100598: polySurface9 12
+    100600: polySurface9 13
+    100602: polySurface9 14
+    100604: polySurface9 15
+    100606: polySurface9 16
+    100608: polySurface9 2
+    100610: polySurface9 3
+    100612: polySurface9 4
+    100614: polySurface9 5
+    100616: polySurface9 6
+    100618: polySurface9 7
+    100620: polySurface9 8
+    100622: polySurface9 9
+    100624: pSphere1
+    100626: pSphere1 1
+    100628: pSphere1 2
+    100630: pSphere1 3
+    100632: pSphere1 4
+    100634: pSphere1 5
+    100636: pTorus1
+    100638: pTorus1 1
+    100640: pTorus1 2
+    100642: pTorus1 3
+    100644: pTorus1 4
+    100646: pTorus1 5
+    100648: pTorus1 6
+    100650: pTorus1 7
+    100652: pTorus1 8
+    100654: pTorus1 9
+    100656: pTorus2
+    100658: pTorus2 1
+    100660: pTorus2 2
+    100662: pTorus2 3
+    100664: pTorus2 4
+    100666: pTorus2 5
+    100668: pTorus2 6
+    100670: pTorus2 7
+    100672: pTorus2 8
+    100674: pTorus2 9
+    100676: pTorus3
+    100678: pTorus3 1
+    100680: pTorus3 2
+    100682: pTorus3 3
+    100684: pTorus3 4
+    100686: pTorus3 5
+    100688: pTorus3 6
+    100690: pTorus3 7
+    100692: pTorus3 8
+    100694: pTorus3 9
+    100696: pTorus4
+    100698: pTorus5
+    100700: pTorus6
+    100702: pTorus7
+    100704: Raum
+    100706: RechteSitzEcke1
+    100708: RechteSitzEcke2
+    100710: RechteSitzEcke3
+    100712: Regal
+    100714: RunderTisch
+    100716: RunderTisch1
+    100718: RunderTisch1 1
+    100720: RunderTisch1 2
+    100722: RunderTisch1 3
+    100724: RunderTisch2
+    100726: Shot
+    100728: Shot1
+    100730: SitzKreisCouch
+    100732: SodaFlasche
+    100734: SodaFlasche1
+    100736: SodaFlasche2
+    100738: SodaFlasche3
+    100740: SodaFlasche4
+    100742: SodaFlasche5
+    100744: SodaFlasche6
+    100746: SodaFlasche7
+    100748: SodaFlasche8
+    100750: Stuhl1
+    100752: Stuhl2
+    100754: Stuhl3
+    100756: Stuhl5
+    100758: Stuhl5 1
+    100760: Stuhl5 2
+    100762: Stuhl5 3
+    100764: Stuhl6
+    100766: Stuhl6 1
+    100768: Stuhl6 2
+    100770: Stuhl7
+    100772: Stuhl7 1
+    100774: Stuhl7 2
+    100776: Stuhl8
+    100778: Stuhl8 1
+    100780: Stuhl8 2
+    100782: //RootNode
+    100784: Tisch
+    100786: Tresen
+    100788: typeMesh1
+    100790: typeMesh2
+    100792: typeMesh2 1
+    100794: "T\xFCrGriff"
+    100796: "T\xFCrGriff 1"
+    100798: "T\xFCrGriff 2"
+    100800: VodkaFlasche
+    100802: VodkaFlasche1
+    100804: VodkaFlasche2
+    100806: VodkaFlasche3
+    100808: VodkaFlasche4
+    100810: VodkaFlasche5
+    100812: WaffenKiste
+    100814: WaffenKiste1
+    100816: WaffenKiste2
+    100818: WandLinks
+    100820: WandRechts
+    100822: ZapfAnlage
+    100824: ZapfFlasche
+    100826: ZapfFlasche1
+    100828: ZapfFlasche10
+    100830: ZapfFlasche11
+    100832: ZapfFlasche2
+    100834: ZapfFlasche3
+    100836: ZapfFlasche4
+    100838: ZapfFlasche5
+    100840: ZapfFlasche6
+    100842: ZapfFlasche7
+    100844: ZapfFlasche8
+    100846: ZapfFlasche9
+    100848: ZapfHahn
+    100850: ZapfHahn1
+    100852: ZapfHahn2
+    100854: ZapfHahn3
+    100856: ZapfHahn4
+    100858: ZapfHahn5
+    100860: ZapfMaschiene
+    400000: AbtropfStand
+    400002: AlkoholFlasche
+    400004: AlkoholFlasche1
+    400006: AlterMannSitzEcke
+    400008: "Antiquit\xE4tenH\xE4ndler"
+    400010: Bar
+    400012: BarLampe
+    400014: BarLampe10
+    400016: BarLampe2
+    400018: BarLampe3
+    400020: BarLampe4
+    400022: BarLampe5
+    400024: BarLampe6
+    400026: BarLampe7
+    400028: BarLampe8
+    400030: BarLampe9
+    400032: BarRegal
+    400034: Bier
+    400036: Bier 1
+    400038: Bier 10
+    400040: Bier 2
+    400042: Bier 3
+    400044: Bier 4
+    400046: Bier 5
+    400048: Bier 6
+    400050: Bier 7
+    400052: Bier 8
+    400054: Bier 9
+    400056: Bierflasche
+    400058: Bierflasche1
+    400060: Bierflasche2
+    400062: BierKrug
+    400064: BierKrug1
+    400066: BierKrug10
+    400068: BierKrug11
+    400070: BierKrug12
+    400072: BierKrug13
+    400074: BierKrug14
+    400076: BierKrug15
+    400078: BierKrug16
+    400080: BierKrug17
+    400082: BierKrug18
+    400084: BierKrug19
+    400086: BierKrug2
+    400088: BierKrug20
+    400090: BierKrug3
+    400092: BierKrug4
+    400094: BierKrug5
+    400096: BierKrug6
+    400098: BierKrug7
+    400100: BierKrug7 1
+    400102: BierKrug8
+    400104: BierKrug8 1
+    400106: BierKrug9
+    400108: BierKrug9 1
+    400110: "BierKr\xFCgeImRegal"
+    400112: "BierKr\xFCgeImRegal1"
+    400114: Bilder
+    400116: BilderRahmenBreit
+    400118: "BilderRahmenGro\xDF"
+    400120: BilderRahmenKlein1
+    400122: BilderRahmenKlein2
+    400124: Boden1
+    400126: Cola
+    400128: Cola 1
+    400130: Cola 2
+    400132: Fernseher
+    400134: Fernseher1
+    400136: FernseherHalterung
+    400138: FernseherKombo
+    400140: FernseherLampe
+    400142: FlaschenAufTresen
+    400144: "Fu\xDFmatte"
+    400146: "Gel\xE4nder"
+    400148: "Gel\xE4nderAblage"
+    400150: Glas
+    400152: Glas1
+    400154: Glas2
+    400156: Glas2 1
+    400158: Glas3
+    400160: Glas3 1
+    400162: Glas4
+    400164: Glas4 1
+    400166: Glas5
+    400168: Glas5 1
+    400170: Glas6
+    400172: Glas6 1
+    400174: Glas7
+    400176: Glas7 1
+    400178: Glas8
+    400180: Glas9
+    400182: "Gl\xE4serImRegal"
+    400184: "Gl\xE4serImRegal1"
+    400186: Hocker
+    400188: Hocker 1
+    400190: Hocker1
+    400192: Hocker10
+    400194: Hocker2
+    400196: Hocker3
+    400198: Hocker4
+    400200: Hocker6
+    400202: Hocker7
+    400204: Hocker8
+    400206: Hocker9
+    400208: "HockerSitzFl\xE4che"
+    400210: "HockerSitzFl\xE4che 1"
+    400212: "HockerSitzFl\xE4che 2"
+    400214: "HockerSitzFl\xE4che 3"
+    400216: "HockerSitzFl\xE4che 4"
+    400218: "HockerSitzFl\xE4che 5"
+    400220: "HockerSitzFl\xE4che 6"
+    400222: "HockerSitzFl\xE4che 7"
+    400224: "HockerSitzFl\xE4che 8"
+    400226: "HockerSitzFl\xE4che 9"
+    400228: HoheSitzEcke
+    400230: HumanReferences
+    400232: HumanReferenz
+    400234: HumanReferenz1
+    400236: HumanReferenz10
+    400238: HumanReferenz11
+    400240: HumanReferenz12
+    400242: HumanReferenz13
+    400244: HumanReferenz14
+    400246: HumanReferenz15
+    400248: HumanReferenz16
+    400250: HumanReferenz17
+    400252: HumanReferenz2
+    400254: HumanReferenz3
+    400256: HumanReferenz4
+    400258: HumanReferenz5
+    400260: HumanReferenz6
+    400262: HumanReferenz7
+    400264: HumanReferenz8
+    400266: HumanReferenz9
+    400268: "KloT\xFCr"
+    400270: KreisSofa
+    400272: KreisSofa1
+    400274: "K\xFChlschrank"
+    400276: Laptop
+    400278: LautscprecherCluster
+    400280: LautscprecherCluster1
+    400282: Lautsprecher
+    400284: Lautsprecher 1
+    400286: Lautsprecher1
+    400288: Lautsprecher1 1
+    400290: Lautsprecher2
+    400292: Lautsprecher2 1
+    400294: Lautsprecher3
+    400296: Lautsprecher3 1
+    400298: Monitor
+    400300: "M\xFClleimer1"
+    400302: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface4
+    400304: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface5
+    400306: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface9
+    400308: pCylinder1
+    400310: pCylinder10
+    400312: pCylinder10 1
+    400314: pCylinder10 2
+    400316: pCylinder10 3
+    400318: pCylinder10 4
+    400320: pCylinder10 5
+    400322: pCylinder13
+    400324: pCylinder13 1
+    400326: pCylinder14
+    400328: pCylinder15
+    400330: pCylinder16
+    400332: pCylinder17
+    400334: pCylinder18
+    400336: pCylinder19
+    400338: pCylinder2
+    400340: pCylinder3
+    400342: pCylinder4
+    400344: pCylinder5
+    400346: pCylinder6
+    400348: pCylinder6 1
+    400350: pCylinder6 2
+    400352: pCylinder6 3
+    400354: pCylinder6 4
+    400356: pCylinder6 5
+    400358: pCylinder6 6
+    400360: pCylinder6 7
+    400362: pCylinder7
+    400364: pCylinder7 1
+    400366: pCylinder7 2
+    400368: pCylinder7 3
+    400370: pCylinder7 4
+    400372: pCylinder7 5
+    400374: pCylinder7 6
+    400376: pCylinder7 7
+    400378: pCylinder9
+    400380: "PersonalT\xFCr"
+    400382: "PersonalT\xFCr1"
+    400384: Pinchen
+    400386: Pinchen1
+    400388: Pinchen10
+    400390: Pinchen11
+    400392: Pinchen12
+    400394: Pinchen13
+    400396: Pinchen14
+    400398: Pinchen15
+    400400: Pinchen16
+    400402: Pinchen17
+    400404: Pinchen18
+    400406: Pinchen19
+    400408: Pinchen2
+    400410: Pinchen20
+    400412: Pinchen21
+    400414: Pinchen22
+    400416: Pinchen23
+    400418: Pinchen24
+    400420: Pinchen25
+    400422: Pinchen26
+    400424: Pinchen27
+    400426: Pinchen28
+    400428: Pinchen29
+    400430: Pinchen3
+    400432: Pinchen30
+    400434: Pinchen31
+    400436: Pinchen32
+    400438: Pinchen33
+    400440: Pinchen34
+    400442: Pinchen4
+    400444: Pinchen5
+    400446: Pinchen6
+    400448: Pinchen7
+    400450: Pinchen8
+    400452: Pinchen9
+    400454: PinchenImRegal
+    400456: Plateau
+    400458: polySurface1
+    400460: polySurface1 1
+    400462: polySurface1 10
+    400464: polySurface1 11
+    400466: polySurface1 12
+    400468: polySurface1 13
+    400470: polySurface1 14
+    400472: polySurface1 15
+    400474: polySurface1 2
+    400476: polySurface1 3
+    400478: polySurface1 4
+    400480: polySurface1 5
+    400482: polySurface1 6
+    400484: polySurface1 7
+    400486: polySurface1 8
+    400488: polySurface1 9
+    400490: polySurface2
+    400492: polySurface2 1
+    400494: polySurface2 10
+    400496: polySurface2 11
+    400498: polySurface2 12
+    400500: polySurface2 13
+    400502: polySurface2 14
+    400504: polySurface2 15
+    400506: polySurface2 2
+    400508: polySurface2 3
+    400510: polySurface2 4
+    400512: polySurface2 5
+    400514: polySurface2 6
+    400516: polySurface2 7
+    400518: polySurface2 8
+    400520: polySurface2 9
+    400522: polySurface4
+    400524: polySurface4 1
+    400526: polySurface4 10
+    400528: polySurface4 11
+    400530: polySurface4 12
+    400532: polySurface4 13
+    400534: polySurface4 14
+    400536: polySurface4 15
+    400538: polySurface4 16
+    400540: polySurface4 2
+    400542: polySurface4 3
+    400544: polySurface4 4
+    400546: polySurface4 5
+    400548: polySurface4 6
+    400550: polySurface4 7
+    400552: polySurface4 8
+    400554: polySurface4 9
+    400556: polySurface5
+    400558: polySurface5 1
+    400560: polySurface5 10
+    400562: polySurface5 11
+    400564: polySurface5 12
+    400566: polySurface5 13
+    400568: polySurface5 14
+    400570: polySurface5 15
+    400572: polySurface5 16
+    400574: polySurface5 2
+    400576: polySurface5 3
+    400578: polySurface5 4
+    400580: polySurface5 5
+    400582: polySurface5 6
+    400584: polySurface5 7
+    400586: polySurface5 8
+    400588: polySurface5 9
+    400590: polySurface9
+    400592: polySurface9 1
+    400594: polySurface9 10
+    400596: polySurface9 11
+    400598: polySurface9 12
+    400600: polySurface9 13
+    400602: polySurface9 14
+    400604: polySurface9 15
+    400606: polySurface9 16
+    400608: polySurface9 2
+    400610: polySurface9 3
+    400612: polySurface9 4
+    400614: polySurface9 5
+    400616: polySurface9 6
+    400618: polySurface9 7
+    400620: polySurface9 8
+    400622: polySurface9 9
+    400624: pSphere1
+    400626: pSphere1 1
+    400628: pSphere1 2
+    400630: pSphere1 3
+    400632: pSphere1 4
+    400634: pSphere1 5
+    400636: pTorus1
+    400638: pTorus1 1
+    400640: pTorus1 2
+    400642: pTorus1 3
+    400644: pTorus1 4
+    400646: pTorus1 5
+    400648: pTorus1 6
+    400650: pTorus1 7
+    400652: pTorus1 8
+    400654: pTorus1 9
+    400656: pTorus2
+    400658: pTorus2 1
+    400660: pTorus2 2
+    400662: pTorus2 3
+    400664: pTorus2 4
+    400666: pTorus2 5
+    400668: pTorus2 6
+    400670: pTorus2 7
+    400672: pTorus2 8
+    400674: pTorus2 9
+    400676: pTorus3
+    400678: pTorus3 1
+    400680: pTorus3 2
+    400682: pTorus3 3
+    400684: pTorus3 4
+    400686: pTorus3 5
+    400688: pTorus3 6
+    400690: pTorus3 7
+    400692: pTorus3 8
+    400694: pTorus3 9
+    400696: pTorus4
+    400698: pTorus5
+    400700: pTorus6
+    400702: pTorus7
+    400704: Raum
+    400706: RechteSitzEcke1
+    400708: RechteSitzEcke2
+    400710: RechteSitzEcke3
+    400712: Regal
+    400714: RunderTisch
+    400716: RunderTisch1
+    400718: RunderTisch1 1
+    400720: RunderTisch1 2
+    400722: RunderTisch1 3
+    400724: RunderTisch2
+    400726: Shot
+    400728: Shot1
+    400730: SitzKreisCouch
+    400732: SodaFlasche
+    400734: SodaFlasche1
+    400736: SodaFlasche2
+    400738: SodaFlasche3
+    400740: SodaFlasche4
+    400742: SodaFlasche5
+    400744: SodaFlasche6
+    400746: SodaFlasche7
+    400748: SodaFlasche8
+    400750: Stuhl1
+    400752: Stuhl2
+    400754: Stuhl3
+    400756: Stuhl5
+    400758: Stuhl5 1
+    400760: Stuhl5 2
+    400762: Stuhl5 3
+    400764: Stuhl6
+    400766: Stuhl6 1
+    400768: Stuhl6 2
+    400770: Stuhl7
+    400772: Stuhl7 1
+    400774: Stuhl7 2
+    400776: Stuhl8
+    400778: Stuhl8 1
+    400780: Stuhl8 2
+    400782: //RootNode
+    400784: Tisch
+    400786: Tresen
+    400788: typeMesh1
+    400790: typeMesh2
+    400792: typeMesh2 1
+    400794: "T\xFCrGriff"
+    400796: "T\xFCrGriff 1"
+    400798: "T\xFCrGriff 2"
+    400800: VodkaFlasche
+    400802: VodkaFlasche1
+    400804: VodkaFlasche2
+    400806: VodkaFlasche3
+    400808: VodkaFlasche4
+    400810: VodkaFlasche5
+    400812: WaffenKiste
+    400814: WaffenKiste1
+    400816: WaffenKiste2
+    400818: WandLinks
+    400820: WandRechts
+    400822: ZapfAnlage
+    400824: ZapfFlasche
+    400826: ZapfFlasche1
+    400828: ZapfFlasche10
+    400830: ZapfFlasche11
+    400832: ZapfFlasche2
+    400834: ZapfFlasche3
+    400836: ZapfFlasche4
+    400838: ZapfFlasche5
+    400840: ZapfFlasche6
+    400842: ZapfFlasche7
+    400844: ZapfFlasche8
+    400846: ZapfFlasche9
+    400848: ZapfHahn
+    400850: ZapfHahn1
+    400852: ZapfHahn2
+    400854: ZapfHahn3
+    400856: ZapfHahn4
+    400858: ZapfHahn5
+    400860: ZapfMaschiene
+    2100000: KreisSofaFarbe
+    2100002: "RundSofaSitzFl\xE4chen"
+    2100004: runderTischFarbe
+    2100006: TVFarbe
+    2100008: TvBild
+    2100010: BoxFarbe
+    2100012: BoxLautsprecher
+    2100014: FernsehHalterung
+    2100016: RunderTischLampenFarbe
+    2100018: RunderTischBirnenFarbe
+    2100020: BierKrugFarbe
+    2100022: BierFarbe
+    2100024: GlasFarbe
+    2100026: ColaFarbe
+    2100028: StuhlBeine
+    2100030: "StuhlSitzFl\xE4che"
+    2100032: "BildGro\xDF"
+    2100034: "Gro\xDFesBildInhalt"
+    2100036: BildKlein
+    2100038: KleinesBild1Inhalt
+    2100040: BildBreit
+    2100042: BreitesBildInhalt
+    2100044: KleinesBild2Inhalt
+    2100046: AntiqueTisch
+    2100048: "Antiquit\xE4tenTischMuster"
+    2100050: "Antiquit\xE4tenTischLampe"
+    2100052: "Antiquit\xE4tentischTastatur"
+    2100054: "Antiquit\xE4tenTischDisplay"
+    2100056: RegalFarbe
+    2100058: WaffenKisteEcken
+    2100060: WaffenKisteFarbe
+    2100062: WaffenKisteLogo
+    2100064: WaffenKisteLogoRot
+    2100066: "StuhlR\xFCckenPolster"
+    2100068: BarLampe1
+    2100070: BarLampenKabel
+    2100072: BarLampenRinge
+    2100074: PinchenFarbe
+    2100076: ShotFarbe
+    2100078: VodkaFlascheFarbe
+    2100080: VodkaFlaschenDeckel
+    2100082: LaptopFarbe
+    2100084: LaptopBildschirm
+    2100086: LaptopTastatur
+    2100088: Boden
+    2100090: BodenMuster
+    2100092: "Gel\xE4nderPfostenFarbe"
+    2100094: "Gel\xE4nderAblageFarbe"
+    2100096: HockerBeinFarbe
+    2100098: "HockerSitzFl\xE4cheFarbe"
+    2100100: Monitor1
+    2100102: MonitorAnzeige
+    2100104: newStyleHeadAndBodyRemakeClothesSmoothed_lambert5
+    2100106: newStyleHeadAndBodyRemakeClothesSmoothed_lambert8
+    2100108: newStyleHeadAndBodyRemakeClothesSmoothed_lambert9
+    2100110: newStyleHeadAndBodyRemakeClothesSmoothed_lambert10
+    2100112: newStyleHeadAndBodyRemakeClothesSmoothed_lambert11
+    2100114: newStyleHeadAndBodyRemakeClothesSmoothed_lambert7
+    2100116: "WCT\xFCr"
+    2100118: "T\xFCrSpalt"
+    2100120: WCFarbe
+    2100122: "T\xFCrGriffFarbe"
+    2100124: RechteWand
+    2100126: EingangsTeppich
+    2100128: "PersonalT\xFCrFarbe"
+    2100130: PersonalSchriftFarbe
+    2100132: TresenFarbe
+    2100134: BarRegal1
+    2100136: "M\xFClleimerFarbe"
+    2100138: "M\xFClleimerKlappe"
+    2100140: ZapfFlaschenLogo
+    2100142: ZapfFlaschenFarbe
+    2100144: ZapfflaschenDeckel
+    2100146: ZapfMaschienenFarbe
+    2100148: ZapfAnlagenLogo
+    2100150: ZampfAnlagenEinsatz
+    2100152: "ZapfAnlagenSt\xE4nder"
+    2100154: ZapfanlagenStange
+    2100156: ZapfhahnKreis
+    2100158: ZapfhahnGelenk
+    2100160: "ZapfhahnD\xFCse"
+    2100162: ZapfhahnGriff
+    2100164: AbtropfStand1
+    2100166: AbtropfRiffel
+    2100168: AbtropfGitter
+    2100170: "K\xFChlschrankFarbe"
+    2100172: "K\xFChlschrankGummi"
+    2100174: "K\xFChlschrankGlasReflektion"
+    2100176: "K\xFChlschrankGriff"
+    2100178: "K\xFChlschrankGlas"
+    2100180: SodaFlaschenFarbe
+    2100182: SodaLabel
+    2100184: SodaDeckel
+    2100186: Vodka2Farbe
+    2100188: BierFlaschenFarbe
+    2100190: BierVerschluss
+    2100192: BierFlaschenEttiket
+    2100194: AlkoholFlaschenFarbe
+    2100196: AlkoholFlaschenDeckel
+    2100198: lambert1
+    2300000: AbtropfStand
+    2300002: AlkoholFlasche
+    2300004: AlkoholFlasche1
+    2300006: BarLampe
+    2300008: BarLampe10
+    2300010: BarLampe2
+    2300012: BarLampe3
+    2300014: BarLampe4
+    2300016: BarLampe5
+    2300018: BarLampe6
+    2300020: BarLampe7
+    2300022: BarLampe8
+    2300024: BarLampe9
+    2300026: BarRegal
+    2300028: Bier
+    2300030: Bier 1
+    2300032: Bier 10
+    2300034: Bier 2
+    2300036: Bier 3
+    2300038: Bier 4
+    2300040: Bier 5
+    2300042: Bier 6
+    2300044: Bier 7
+    2300046: Bier 8
+    2300048: Bier 9
+    2300050: Bierflasche
+    2300052: Bierflasche1
+    2300054: Bierflasche2
+    2300056: BierKrug
+    2300058: BierKrug1
+    2300060: BierKrug10
+    2300062: BierKrug11
+    2300064: BierKrug12
+    2300066: BierKrug13
+    2300068: BierKrug14
+    2300070: BierKrug15
+    2300072: BierKrug16
+    2300074: BierKrug17
+    2300076: BierKrug18
+    2300078: BierKrug19
+    2300080: BierKrug2
+    2300082: BierKrug20
+    2300084: BierKrug3
+    2300086: BierKrug4
+    2300088: BierKrug5
+    2300090: BierKrug6
+    2300092: BierKrug7
+    2300094: BierKrug7 1
+    2300096: BierKrug8
+    2300098: BierKrug8 1
+    2300100: BierKrug9
+    2300102: BierKrug9 1
+    2300104: BilderRahmenBreit
+    2300106: "BilderRahmenGro\xDF"
+    2300108: BilderRahmenKlein1
+    2300110: BilderRahmenKlein2
+    2300112: Boden1
+    2300114: Cola
+    2300116: Cola 1
+    2300118: Cola 2
+    2300120: Fernseher
+    2300122: Fernseher1
+    2300124: FernseherHalterung
+    2300126: FernseherLampe
+    2300128: "Fu\xDFmatte"
+    2300130: "Gel\xE4nderAblage"
+    2300132: Glas
+    2300134: Glas1
+    2300136: Glas2
+    2300138: Glas2 1
+    2300140: Glas3
+    2300142: Glas3 1
+    2300144: Glas4
+    2300146: Glas4 1
+    2300148: Glas5
+    2300150: Glas5 1
+    2300152: Glas6
+    2300154: Glas6 1
+    2300156: Glas7
+    2300158: Glas7 1
+    2300160: Glas8
+    2300162: Glas9
+    2300164: Hocker
+    2300166: Hocker 1
+    2300168: Hocker1
+    2300170: Hocker10
+    2300172: Hocker2
+    2300174: Hocker3
+    2300176: Hocker4
+    2300178: Hocker6
+    2300180: Hocker7
+    2300182: Hocker8
+    2300184: Hocker9
+    2300186: "HockerSitzFl\xE4che"
+    2300188: "HockerSitzFl\xE4che 1"
+    2300190: "HockerSitzFl\xE4che 2"
+    2300192: "HockerSitzFl\xE4che 3"
+    2300194: "HockerSitzFl\xE4che 4"
+    2300196: "HockerSitzFl\xE4che 5"
+    2300198: "HockerSitzFl\xE4che 6"
+    2300200: "HockerSitzFl\xE4che 7"
+    2300202: "HockerSitzFl\xE4che 8"
+    2300204: "HockerSitzFl\xE4che 9"
+    2300206: HumanReferenz
+    2300208: HumanReferenz1
+    2300210: HumanReferenz10
+    2300212: HumanReferenz11
+    2300214: HumanReferenz12
+    2300216: HumanReferenz13
+    2300218: HumanReferenz14
+    2300220: HumanReferenz15
+    2300222: HumanReferenz16
+    2300224: HumanReferenz17
+    2300226: HumanReferenz2
+    2300228: HumanReferenz3
+    2300230: HumanReferenz4
+    2300232: HumanReferenz5
+    2300234: HumanReferenz6
+    2300236: HumanReferenz7
+    2300238: HumanReferenz8
+    2300240: HumanReferenz9
+    2300242: "KloT\xFCr"
+    2300244: KreisSofa
+    2300246: KreisSofa1
+    2300248: "K\xFChlschrank"
+    2300250: Laptop
+    2300252: Lautsprecher
+    2300254: Lautsprecher 1
+    2300256: Lautsprecher1
+    2300258: Lautsprecher1 1
+    2300260: Lautsprecher2
+    2300262: Lautsprecher2 1
+    2300264: Lautsprecher3
+    2300266: Lautsprecher3 1
+    2300268: Monitor
+    2300270: "M\xFClleimer1"
+    2300272: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface4
+    2300274: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface5
+    2300276: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface9
+    2300278: pCylinder1
+    2300280: pCylinder10
+    2300282: pCylinder10 1
+    2300284: pCylinder10 2
+    2300286: pCylinder10 3
+    2300288: pCylinder10 4
+    2300290: pCylinder10 5
+    2300292: pCylinder13
+    2300294: pCylinder13 1
+    2300296: pCylinder14
+    2300298: pCylinder15
+    2300300: pCylinder16
+    2300302: pCylinder17
+    2300304: pCylinder18
+    2300306: pCylinder19
+    2300308: pCylinder2
+    2300310: pCylinder3
+    2300312: pCylinder4
+    2300314: pCylinder5
+    2300316: pCylinder6
+    2300318: pCylinder6 1
+    2300320: pCylinder6 2
+    2300322: pCylinder6 3
+    2300324: pCylinder6 4
+    2300326: pCylinder6 5
+    2300328: pCylinder6 6
+    2300330: pCylinder6 7
+    2300332: pCylinder7
+    2300334: pCylinder7 1
+    2300336: pCylinder7 2
+    2300338: pCylinder7 3
+    2300340: pCylinder7 4
+    2300342: pCylinder7 5
+    2300344: pCylinder7 6
+    2300346: pCylinder7 7
+    2300348: pCylinder9
+    2300350: "PersonalT\xFCr"
+    2300352: "PersonalT\xFCr1"
+    2300354: Pinchen
+    2300356: Pinchen1
+    2300358: Pinchen10
+    2300360: Pinchen11
+    2300362: Pinchen12
+    2300364: Pinchen13
+    2300366: Pinchen14
+    2300368: Pinchen15
+    2300370: Pinchen16
+    2300372: Pinchen17
+    2300374: Pinchen18
+    2300376: Pinchen19
+    2300378: Pinchen2
+    2300380: Pinchen20
+    2300382: Pinchen21
+    2300384: Pinchen22
+    2300386: Pinchen23
+    2300388: Pinchen24
+    2300390: Pinchen25
+    2300392: Pinchen26
+    2300394: Pinchen27
+    2300396: Pinchen28
+    2300398: Pinchen29
+    2300400: Pinchen3
+    2300402: Pinchen30
+    2300404: Pinchen31
+    2300406: Pinchen32
+    2300408: Pinchen33
+    2300410: Pinchen34
+    2300412: Pinchen4
+    2300414: Pinchen5
+    2300416: Pinchen6
+    2300418: Pinchen7
+    2300420: Pinchen8
+    2300422: Pinchen9
+    2300424: Plateau
+    2300426: polySurface1
+    2300428: polySurface1 1
+    2300430: polySurface1 10
+    2300432: polySurface1 11
+    2300434: polySurface1 12
+    2300436: polySurface1 13
+    2300438: polySurface1 14
+    2300440: polySurface1 15
+    2300442: polySurface1 2
+    2300444: polySurface1 3
+    2300446: polySurface1 4
+    2300448: polySurface1 5
+    2300450: polySurface1 6
+    2300452: polySurface1 7
+    2300454: polySurface1 8
+    2300456: polySurface1 9
+    2300458: polySurface2
+    2300460: polySurface2 1
+    2300462: polySurface2 10
+    2300464: polySurface2 11
+    2300466: polySurface2 12
+    2300468: polySurface2 13
+    2300470: polySurface2 14
+    2300472: polySurface2 15
+    2300474: polySurface2 2
+    2300476: polySurface2 3
+    2300478: polySurface2 4
+    2300480: polySurface2 5
+    2300482: polySurface2 6
+    2300484: polySurface2 7
+    2300486: polySurface2 8
+    2300488: polySurface2 9
+    2300490: polySurface4
+    2300492: polySurface4 1
+    2300494: polySurface4 10
+    2300496: polySurface4 11
+    2300498: polySurface4 12
+    2300500: polySurface4 13
+    2300502: polySurface4 14
+    2300504: polySurface4 15
+    2300506: polySurface4 16
+    2300508: polySurface4 2
+    2300510: polySurface4 3
+    2300512: polySurface4 4
+    2300514: polySurface4 5
+    2300516: polySurface4 6
+    2300518: polySurface4 7
+    2300520: polySurface4 8
+    2300522: polySurface4 9
+    2300524: polySurface5
+    2300526: polySurface5 1
+    2300528: polySurface5 10
+    2300530: polySurface5 11
+    2300532: polySurface5 12
+    2300534: polySurface5 13
+    2300536: polySurface5 14
+    2300538: polySurface5 15
+    2300540: polySurface5 16
+    2300542: polySurface5 2
+    2300544: polySurface5 3
+    2300546: polySurface5 4
+    2300548: polySurface5 5
+    2300550: polySurface5 6
+    2300552: polySurface5 7
+    2300554: polySurface5 8
+    2300556: polySurface5 9
+    2300558: polySurface9
+    2300560: polySurface9 1
+    2300562: polySurface9 10
+    2300564: polySurface9 11
+    2300566: polySurface9 12
+    2300568: polySurface9 13
+    2300570: polySurface9 14
+    2300572: polySurface9 15
+    2300574: polySurface9 16
+    2300576: polySurface9 2
+    2300578: polySurface9 3
+    2300580: polySurface9 4
+    2300582: polySurface9 5
+    2300584: polySurface9 6
+    2300586: polySurface9 7
+    2300588: polySurface9 8
+    2300590: polySurface9 9
+    2300592: pSphere1
+    2300594: pSphere1 1
+    2300596: pSphere1 2
+    2300598: pSphere1 3
+    2300600: pSphere1 4
+    2300602: pSphere1 5
+    2300604: pTorus1
+    2300606: pTorus1 1
+    2300608: pTorus1 2
+    2300610: pTorus1 3
+    2300612: pTorus1 4
+    2300614: pTorus1 5
+    2300616: pTorus1 6
+    2300618: pTorus1 7
+    2300620: pTorus1 8
+    2300622: pTorus1 9
+    2300624: pTorus2
+    2300626: pTorus2 1
+    2300628: pTorus2 2
+    2300630: pTorus2 3
+    2300632: pTorus2 4
+    2300634: pTorus2 5
+    2300636: pTorus2 6
+    2300638: pTorus2 7
+    2300640: pTorus2 8
+    2300642: pTorus2 9
+    2300644: pTorus3
+    2300646: pTorus3 1
+    2300648: pTorus3 2
+    2300650: pTorus3 3
+    2300652: pTorus3 4
+    2300654: pTorus3 5
+    2300656: pTorus3 6
+    2300658: pTorus3 7
+    2300660: pTorus3 8
+    2300662: pTorus3 9
+    2300664: pTorus4
+    2300666: pTorus5
+    2300668: pTorus6
+    2300670: pTorus7
+    2300672: Regal
+    2300674: RunderTisch
+    2300676: RunderTisch1
+    2300678: RunderTisch1 1
+    2300680: RunderTisch1 2
+    2300682: RunderTisch1 3
+    2300684: RunderTisch2
+    2300686: Shot
+    2300688: Shot1
+    2300690: SodaFlasche
+    2300692: SodaFlasche1
+    2300694: SodaFlasche2
+    2300696: SodaFlasche3
+    2300698: SodaFlasche4
+    2300700: SodaFlasche5
+    2300702: SodaFlasche6
+    2300704: SodaFlasche7
+    2300706: SodaFlasche8
+    2300708: Tisch
+    2300710: Tresen
+    2300712: typeMesh1
+    2300714: typeMesh2
+    2300716: typeMesh2 1
+    2300718: "T\xFCrGriff"
+    2300720: "T\xFCrGriff 1"
+    2300722: "T\xFCrGriff 2"
+    2300724: VodkaFlasche
+    2300726: VodkaFlasche1
+    2300728: VodkaFlasche2
+    2300730: VodkaFlasche3
+    2300732: VodkaFlasche4
+    2300734: VodkaFlasche5
+    2300736: WaffenKiste
+    2300738: WaffenKiste1
+    2300740: WaffenKiste2
+    2300742: WandLinks
+    2300744: WandRechts
+    2300746: ZapfAnlage
+    2300748: ZapfFlasche
+    2300750: ZapfFlasche1
+    2300752: ZapfFlasche10
+    2300754: ZapfFlasche11
+    2300756: ZapfFlasche2
+    2300758: ZapfFlasche3
+    2300760: ZapfFlasche4
+    2300762: ZapfFlasche5
+    2300764: ZapfFlasche6
+    2300766: ZapfFlasche7
+    2300768: ZapfFlasche8
+    2300770: ZapfFlasche9
+    2300772: ZapfHahn
+    2300774: ZapfHahn1
+    2300776: ZapfHahn2
+    2300778: ZapfHahn3
+    2300780: ZapfHahn4
+    2300782: ZapfHahn5
+    2300784: ZapfMaschiene
+    3300000: AbtropfStand
+    3300002: AlkoholFlasche
+    3300004: AlkoholFlasche1
+    3300006: BarLampe
+    3300008: BarLampe10
+    3300010: BarLampe2
+    3300012: BarLampe3
+    3300014: BarLampe4
+    3300016: BarLampe5
+    3300018: BarLampe6
+    3300020: BarLampe7
+    3300022: BarLampe8
+    3300024: BarLampe9
+    3300026: BarRegal
+    3300028: Bier
+    3300030: Bier 1
+    3300032: Bier 10
+    3300034: Bier 2
+    3300036: Bier 3
+    3300038: Bier 4
+    3300040: Bier 5
+    3300042: Bier 6
+    3300044: Bier 7
+    3300046: Bier 8
+    3300048: Bier 9
+    3300050: Bierflasche
+    3300052: Bierflasche1
+    3300054: Bierflasche2
+    3300056: BierKrug
+    3300058: BierKrug1
+    3300060: BierKrug10
+    3300062: BierKrug11
+    3300064: BierKrug12
+    3300066: BierKrug13
+    3300068: BierKrug14
+    3300070: BierKrug15
+    3300072: BierKrug16
+    3300074: BierKrug17
+    3300076: BierKrug18
+    3300078: BierKrug19
+    3300080: BierKrug2
+    3300082: BierKrug20
+    3300084: BierKrug3
+    3300086: BierKrug4
+    3300088: BierKrug5
+    3300090: BierKrug6
+    3300092: BierKrug7
+    3300094: BierKrug7 1
+    3300096: BierKrug8
+    3300098: BierKrug8 1
+    3300100: BierKrug9
+    3300102: BierKrug9 1
+    3300104: BilderRahmenBreit
+    3300106: "BilderRahmenGro\xDF"
+    3300108: BilderRahmenKlein1
+    3300110: BilderRahmenKlein2
+    3300112: Boden1
+    3300114: Cola
+    3300116: Cola 1
+    3300118: Cola 2
+    3300120: Fernseher
+    3300122: Fernseher1
+    3300124: FernseherHalterung
+    3300126: FernseherLampe
+    3300128: "Fu\xDFmatte"
+    3300130: "Gel\xE4nderAblage"
+    3300132: Glas
+    3300134: Glas1
+    3300136: Glas2
+    3300138: Glas2 1
+    3300140: Glas3
+    3300142: Glas3 1
+    3300144: Glas4
+    3300146: Glas4 1
+    3300148: Glas5
+    3300150: Glas5 1
+    3300152: Glas6
+    3300154: Glas6 1
+    3300156: Glas7
+    3300158: Glas7 1
+    3300160: Glas8
+    3300162: Glas9
+    3300164: Hocker
+    3300166: Hocker 1
+    3300168: Hocker1
+    3300170: Hocker10
+    3300172: Hocker2
+    3300174: Hocker3
+    3300176: Hocker4
+    3300178: Hocker6
+    3300180: Hocker7
+    3300182: Hocker8
+    3300184: Hocker9
+    3300186: "HockerSitzFl\xE4che"
+    3300188: "HockerSitzFl\xE4che 1"
+    3300190: "HockerSitzFl\xE4che 2"
+    3300192: "HockerSitzFl\xE4che 3"
+    3300194: "HockerSitzFl\xE4che 4"
+    3300196: "HockerSitzFl\xE4che 5"
+    3300198: "HockerSitzFl\xE4che 6"
+    3300200: "HockerSitzFl\xE4che 7"
+    3300202: "HockerSitzFl\xE4che 8"
+    3300204: "HockerSitzFl\xE4che 9"
+    3300206: HumanReferenz
+    3300208: HumanReferenz1
+    3300210: HumanReferenz10
+    3300212: HumanReferenz11
+    3300214: HumanReferenz12
+    3300216: HumanReferenz13
+    3300218: HumanReferenz14
+    3300220: HumanReferenz15
+    3300222: HumanReferenz16
+    3300224: HumanReferenz17
+    3300226: HumanReferenz2
+    3300228: HumanReferenz3
+    3300230: HumanReferenz4
+    3300232: HumanReferenz5
+    3300234: HumanReferenz6
+    3300236: HumanReferenz7
+    3300238: HumanReferenz8
+    3300240: HumanReferenz9
+    3300242: "KloT\xFCr"
+    3300244: KreisSofa
+    3300246: KreisSofa1
+    3300248: "K\xFChlschrank"
+    3300250: Laptop
+    3300252: Lautsprecher
+    3300254: Lautsprecher 1
+    3300256: Lautsprecher1
+    3300258: Lautsprecher1 1
+    3300260: Lautsprecher2
+    3300262: Lautsprecher2 1
+    3300264: Lautsprecher3
+    3300266: Lautsprecher3 1
+    3300268: Monitor
+    3300270: "M\xFClleimer1"
+    3300272: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface4
+    3300274: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface5
+    3300276: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface9
+    3300278: pCylinder1
+    3300280: pCylinder10
+    3300282: pCylinder10 1
+    3300284: pCylinder10 2
+    3300286: pCylinder10 3
+    3300288: pCylinder10 4
+    3300290: pCylinder10 5
+    3300292: pCylinder13
+    3300294: pCylinder13 1
+    3300296: pCylinder14
+    3300298: pCylinder15
+    3300300: pCylinder16
+    3300302: pCylinder17
+    3300304: pCylinder18
+    3300306: pCylinder19
+    3300308: pCylinder2
+    3300310: pCylinder3
+    3300312: pCylinder4
+    3300314: pCylinder5
+    3300316: pCylinder6
+    3300318: pCylinder6 1
+    3300320: pCylinder6 2
+    3300322: pCylinder6 3
+    3300324: pCylinder6 4
+    3300326: pCylinder6 5
+    3300328: pCylinder6 6
+    3300330: pCylinder6 7
+    3300332: pCylinder7
+    3300334: pCylinder7 1
+    3300336: pCylinder7 2
+    3300338: pCylinder7 3
+    3300340: pCylinder7 4
+    3300342: pCylinder7 5
+    3300344: pCylinder7 6
+    3300346: pCylinder7 7
+    3300348: pCylinder9
+    3300350: "PersonalT\xFCr"
+    3300352: "PersonalT\xFCr1"
+    3300354: Pinchen
+    3300356: Pinchen1
+    3300358: Pinchen10
+    3300360: Pinchen11
+    3300362: Pinchen12
+    3300364: Pinchen13
+    3300366: Pinchen14
+    3300368: Pinchen15
+    3300370: Pinchen16
+    3300372: Pinchen17
+    3300374: Pinchen18
+    3300376: Pinchen19
+    3300378: Pinchen2
+    3300380: Pinchen20
+    3300382: Pinchen21
+    3300384: Pinchen22
+    3300386: Pinchen23
+    3300388: Pinchen24
+    3300390: Pinchen25
+    3300392: Pinchen26
+    3300394: Pinchen27
+    3300396: Pinchen28
+    3300398: Pinchen29
+    3300400: Pinchen3
+    3300402: Pinchen30
+    3300404: Pinchen31
+    3300406: Pinchen32
+    3300408: Pinchen33
+    3300410: Pinchen34
+    3300412: Pinchen4
+    3300414: Pinchen5
+    3300416: Pinchen6
+    3300418: Pinchen7
+    3300420: Pinchen8
+    3300422: Pinchen9
+    3300424: Plateau
+    3300426: polySurface1
+    3300428: polySurface1 1
+    3300430: polySurface1 10
+    3300432: polySurface1 11
+    3300434: polySurface1 12
+    3300436: polySurface1 13
+    3300438: polySurface1 14
+    3300440: polySurface1 15
+    3300442: polySurface1 2
+    3300444: polySurface1 3
+    3300446: polySurface1 4
+    3300448: polySurface1 5
+    3300450: polySurface1 6
+    3300452: polySurface1 7
+    3300454: polySurface1 8
+    3300456: polySurface1 9
+    3300458: polySurface2
+    3300460: polySurface2 1
+    3300462: polySurface2 10
+    3300464: polySurface2 11
+    3300466: polySurface2 12
+    3300468: polySurface2 13
+    3300470: polySurface2 14
+    3300472: polySurface2 15
+    3300474: polySurface2 2
+    3300476: polySurface2 3
+    3300478: polySurface2 4
+    3300480: polySurface2 5
+    3300482: polySurface2 6
+    3300484: polySurface2 7
+    3300486: polySurface2 8
+    3300488: polySurface2 9
+    3300490: polySurface4
+    3300492: polySurface4 1
+    3300494: polySurface4 10
+    3300496: polySurface4 11
+    3300498: polySurface4 12
+    3300500: polySurface4 13
+    3300502: polySurface4 14
+    3300504: polySurface4 15
+    3300506: polySurface4 16
+    3300508: polySurface4 2
+    3300510: polySurface4 3
+    3300512: polySurface4 4
+    3300514: polySurface4 5
+    3300516: polySurface4 6
+    3300518: polySurface4 7
+    3300520: polySurface4 8
+    3300522: polySurface4 9
+    3300524: polySurface5
+    3300526: polySurface5 1
+    3300528: polySurface5 10
+    3300530: polySurface5 11
+    3300532: polySurface5 12
+    3300534: polySurface5 13
+    3300536: polySurface5 14
+    3300538: polySurface5 15
+    3300540: polySurface5 16
+    3300542: polySurface5 2
+    3300544: polySurface5 3
+    3300546: polySurface5 4
+    3300548: polySurface5 5
+    3300550: polySurface5 6
+    3300552: polySurface5 7
+    3300554: polySurface5 8
+    3300556: polySurface5 9
+    3300558: polySurface9
+    3300560: polySurface9 1
+    3300562: polySurface9 10
+    3300564: polySurface9 11
+    3300566: polySurface9 12
+    3300568: polySurface9 13
+    3300570: polySurface9 14
+    3300572: polySurface9 15
+    3300574: polySurface9 16
+    3300576: polySurface9 2
+    3300578: polySurface9 3
+    3300580: polySurface9 4
+    3300582: polySurface9 5
+    3300584: polySurface9 6
+    3300586: polySurface9 7
+    3300588: polySurface9 8
+    3300590: polySurface9 9
+    3300592: pSphere1
+    3300594: pSphere1 1
+    3300596: pSphere1 2
+    3300598: pSphere1 3
+    3300600: pSphere1 4
+    3300602: pSphere1 5
+    3300604: pTorus1
+    3300606: pTorus1 1
+    3300608: pTorus1 2
+    3300610: pTorus1 3
+    3300612: pTorus1 4
+    3300614: pTorus1 5
+    3300616: pTorus1 6
+    3300618: pTorus1 7
+    3300620: pTorus1 8
+    3300622: pTorus1 9
+    3300624: pTorus2
+    3300626: pTorus2 1
+    3300628: pTorus2 2
+    3300630: pTorus2 3
+    3300632: pTorus2 4
+    3300634: pTorus2 5
+    3300636: pTorus2 6
+    3300638: pTorus2 7
+    3300640: pTorus2 8
+    3300642: pTorus2 9
+    3300644: pTorus3
+    3300646: pTorus3 1
+    3300648: pTorus3 2
+    3300650: pTorus3 3
+    3300652: pTorus3 4
+    3300654: pTorus3 5
+    3300656: pTorus3 6
+    3300658: pTorus3 7
+    3300660: pTorus3 8
+    3300662: pTorus3 9
+    3300664: pTorus4
+    3300666: pTorus5
+    3300668: pTorus6
+    3300670: pTorus7
+    3300672: Regal
+    3300674: RunderTisch
+    3300676: RunderTisch1
+    3300678: RunderTisch1 1
+    3300680: RunderTisch1 2
+    3300682: RunderTisch1 3
+    3300684: RunderTisch2
+    3300686: Shot
+    3300688: Shot1
+    3300690: SodaFlasche
+    3300692: SodaFlasche1
+    3300694: SodaFlasche2
+    3300696: SodaFlasche3
+    3300698: SodaFlasche4
+    3300700: SodaFlasche5
+    3300702: SodaFlasche6
+    3300704: SodaFlasche7
+    3300706: SodaFlasche8
+    3300708: Tisch
+    3300710: Tresen
+    3300712: typeMesh1
+    3300714: typeMesh2
+    3300716: typeMesh2 1
+    3300718: "T\xFCrGriff"
+    3300720: "T\xFCrGriff 1"
+    3300722: "T\xFCrGriff 2"
+    3300724: VodkaFlasche
+    3300726: VodkaFlasche1
+    3300728: VodkaFlasche2
+    3300730: VodkaFlasche3
+    3300732: VodkaFlasche4
+    3300734: VodkaFlasche5
+    3300736: WaffenKiste
+    3300738: WaffenKiste1
+    3300740: WaffenKiste2
+    3300742: WandLinks
+    3300744: WandRechts
+    3300746: ZapfAnlage
+    3300748: ZapfFlasche
+    3300750: ZapfFlasche1
+    3300752: ZapfFlasche10
+    3300754: ZapfFlasche11
+    3300756: ZapfFlasche2
+    3300758: ZapfFlasche3
+    3300760: ZapfFlasche4
+    3300762: ZapfFlasche5
+    3300764: ZapfFlasche6
+    3300766: ZapfFlasche7
+    3300768: ZapfFlasche8
+    3300770: ZapfFlasche9
+    3300772: ZapfHahn
+    3300774: ZapfHahn1
+    3300776: ZapfHahn2
+    3300778: ZapfHahn3
+    3300780: ZapfHahn4
+    3300782: ZapfHahn5
+    3300784: ZapfMaschiene
+    4300000: KreisSofa
+    4300002: RunderTisch2
+    4300004: Fernseher
+    4300006: Fernseher1
+    4300008: Lautsprecher
+    4300010: pCylinder6
+    4300012: pCylinder7
+    4300014: Lautsprecher1
+    4300016: pCylinder6
+    4300018: pCylinder7
+    4300020: Lautsprecher2
+    4300022: pCylinder6
+    4300024: pCylinder7
+    4300026: Lautsprecher3
+    4300028: pCylinder6
+    4300030: pCylinder7
+    4300032: Lautsprecher
+    4300034: pCylinder6
+    4300036: pCylinder7
+    4300038: Lautsprecher1
+    4300040: pCylinder6
+    4300042: pCylinder7
+    4300044: Lautsprecher2
+    4300046: pCylinder6
+    4300048: pCylinder7
+    4300050: Lautsprecher3
+    4300052: pCylinder6
+    4300054: pCylinder7
+    4300056: FernseherHalterung
+    4300058: pTorus4
+    4300060: pTorus5
+    4300062: pTorus6
+    4300064: pTorus7
+    4300066: FernseherLampe
+    4300068: BierKrug3
+    4300070: Bier
+    4300072: BierKrug6
+    4300074: BierKrug5
+    4300076: BierKrug4
+    4300078: Bier
+    4300080: Glas1
+    4300082: Cola
+    4300084: KreisSofa1
+    4300086: Hocker
+    4300088: "BilderRahmenGro\xDF"
+    4300090: BilderRahmenKlein1
+    4300092: BilderRahmenBreit
+    4300094: BilderRahmenKlein2
+    4300096: Tisch
+    4300098: Regal
+    4300100: WaffenKiste
+    4300102: WaffenKiste1
+    4300104: WaffenKiste2
+    4300106: polySurface1
+    4300108: polySurface2
+    4300110: polySurface1
+    4300112: polySurface2
+    4300114: RunderTisch1
+    4300116: polySurface1
+    4300118: polySurface2
+    4300120: BarLampe7
+    4300122: pTorus1
+    4300124: pTorus2
+    4300126: pTorus3
+    4300128: Pinchen33
+    4300130: Pinchen34
+    4300132: Shot1
+    4300134: VodkaFlasche
+    4300136: polySurface1
+    4300138: polySurface2
+    4300140: polySurface1
+    4300142: polySurface2
+    4300144: polySurface1
+    4300146: polySurface2
+    4300148: RunderTisch1
+    4300150: polySurface1
+    4300152: polySurface2
+    4300154: BarLampe8
+    4300156: pTorus1
+    4300158: pTorus2
+    4300160: pTorus3
+    4300162: BierKrug17
+    4300164: Bier
+    4300166: BierKrug18
+    4300168: BierKrug19
+    4300170: Bier
+    4300172: BierKrug20
+    4300174: polySurface1
+    4300176: polySurface2
+    4300178: polySurface1
+    4300180: polySurface2
+    4300182: polySurface1
+    4300184: polySurface2
+    4300186: RunderTisch1
+    4300188: polySurface1
+    4300190: polySurface2
+    4300192: BarLampe9
+    4300194: pTorus1
+    4300196: pTorus2
+    4300198: pTorus3
+    4300200: Laptop
+    4300202: Glas8
+    4300204: Cola
+    4300206: Plateau
+    4300208: pCylinder1
+    4300210: pCylinder2
+    4300212: pCylinder3
+    4300214: pCylinder4
+    4300216: pCylinder5
+    4300218: "Gel\xE4nderAblage"
+    4300220: Hocker
+    4300222: "HockerSitzFl\xE4che"
+    4300224: Hocker1
+    4300226: "HockerSitzFl\xE4che"
+    4300228: Hocker2
+    4300230: "HockerSitzFl\xE4che"
+    4300232: Hocker3
+    4300234: "HockerSitzFl\xE4che"
+    4300236: RunderTisch
+    4300238: polySurface1
+    4300240: polySurface2
+    4300242: polySurface1
+    4300244: polySurface2
+    4300246: polySurface1
+    4300248: polySurface2
+    4300250: Monitor
+    4300252: BarLampe10
+    4300254: pTorus1
+    4300256: pTorus2
+    4300258: pTorus3
+    4300260: BierKrug12
+    4300262: Bier
+    4300264: BierKrug13
+    4300266: Bier
+    4300268: BierKrug14
+    4300270: Bier
+    4300272: BierKrug15
+    4300274: Bier
+    4300276: BierKrug16
+    4300278: Glas9
+    4300280: HumanReferenz
+    4300282: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface9
+    4300284: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface4
+    4300286: newStyleHeadAndBodyRemakeClothesSmoothed:polySurface5
+    4300288: HumanReferenz1
+    4300290: polySurface9
+    4300292: polySurface4
+    4300294: polySurface5
+    4300296: HumanReferenz2
+    4300298: polySurface9
+    4300300: polySurface4
+    4300302: polySurface5
+    4300304: HumanReferenz3
+    4300306: polySurface9
+    4300308: polySurface4
+    4300310: polySurface5
+    4300312: HumanReferenz4
+    4300314: polySurface9
+    4300316: polySurface4
+    4300318: polySurface5
+    4300320: HumanReferenz5
+    4300322: polySurface9
+    4300324: polySurface4
+    4300326: polySurface5
+    4300328: HumanReferenz6
+    4300330: polySurface9
+    4300332: polySurface4
+    4300334: polySurface5
+    4300336: HumanReferenz7
+    4300338: polySurface9
+    4300340: polySurface4
+    4300342: polySurface5
+    4300344: HumanReferenz8
+    4300346: polySurface9
+    4300348: polySurface4
+    4300350: polySurface5
+    4300352: HumanReferenz9
+    4300354: polySurface9
+    4300356: polySurface4
+    4300358: polySurface5
+    4300360: HumanReferenz10
+    4300362: polySurface9
+    4300364: polySurface4
+    4300366: polySurface5
+    4300368: HumanReferenz11
+    4300370: polySurface9
+    4300372: polySurface4
+    4300374: polySurface5
+    4300376: HumanReferenz12
+    4300378: polySurface9
+    4300380: polySurface4
+    4300382: polySurface5
+    4300384: HumanReferenz13
+    4300386: polySurface9
+    4300388: polySurface4
+    4300390: polySurface5
+    4300392: HumanReferenz14
+    4300394: polySurface9
+    4300396: polySurface4
+    4300398: polySurface5
+    4300400: HumanReferenz15
+    4300402: polySurface9
+    4300404: polySurface4
+    4300406: polySurface5
+    4300408: HumanReferenz16
+    4300410: polySurface9
+    4300412: polySurface4
+    4300414: polySurface5
+    4300416: HumanReferenz17
+    4300418: polySurface9
+    4300420: polySurface4
+    4300422: polySurface5
+    4300424: polySurface1
+    4300426: polySurface2
+    4300428: polySurface1
+    4300430: polySurface2
+    4300432: RunderTisch1
+    4300434: BarLampe6
+    4300436: pTorus1
+    4300438: pTorus2
+    4300440: pTorus3
+    4300442: Pinchen1
+    4300444: Shot
+    4300446: "KloT\xFCr"
+    4300448: typeMesh1
+    4300450: "T\xFCrGriff"
+    4300452: Boden1
+    4300454: WandRechts
+    4300456: "Fu\xDFmatte"
+    4300458: "PersonalT\xFCr"
+    4300460: "T\xFCrGriff"
+    4300462: typeMesh2
+    4300464: "PersonalT\xFCr1"
+    4300466: "T\xFCrGriff"
+    4300468: typeMesh2
+    4300470: WandLinks
+    4300472: Tresen
+    4300474: BarRegal
+    4300476: "M\xFClleimer1"
+    4300478: ZapfFlasche3
+    4300480: ZapfMaschiene
+    4300482: ZapfFlasche
+    4300484: ZapfFlasche1
+    4300486: ZapfFlasche2
+    4300488: Hocker4
+    4300490: "HockerSitzFl\xE4che"
+    4300492: Hocker6
+    4300494: "HockerSitzFl\xE4che"
+    4300496: Hocker7
+    4300498: "HockerSitzFl\xE4che"
+    4300500: Hocker8
+    4300502: "HockerSitzFl\xE4che"
+    4300504: Hocker9
+    4300506: "HockerSitzFl\xE4che"
+    4300508: Hocker10
+    4300510: "HockerSitzFl\xE4che"
+    4300512: BarLampe
+    4300514: pTorus1
+    4300516: pTorus2
+    4300518: pTorus3
+    4300520: BarLampe2
+    4300522: pTorus1
+    4300524: pTorus2
+    4300526: pTorus3
+    4300528: BarLampe3
+    4300530: pTorus1
+    4300532: pTorus2
+    4300534: pTorus3
+    4300536: BarLampe4
+    4300538: pTorus1
+    4300540: pTorus2
+    4300542: pTorus3
+    4300544: BarLampe5
+    4300546: pTorus1
+    4300548: pTorus2
+    4300550: pTorus3
+    4300552: ZapfAnlage
+    4300554: pCylinder9
+    4300556: ZapfHahn
+    4300558: pSphere1
+    4300560: pCylinder10
+    4300562: pCylinder19
+    4300564: ZapfHahn1
+    4300566: pSphere1
+    4300568: pCylinder10
+    4300570: pCylinder18
+    4300572: ZapfHahn2
+    4300574: pSphere1
+    4300576: pCylinder10
+    4300578: pCylinder17
+    4300580: ZapfHahn3
+    4300582: pSphere1
+    4300584: pCylinder10
+    4300586: pCylinder16
+    4300588: ZapfHahn4
+    4300590: pSphere1
+    4300592: pCylinder10
+    4300594: pCylinder15
+    4300596: ZapfHahn5
+    4300598: pSphere1
+    4300600: pCylinder10
+    4300602: pCylinder14
+    4300604: AbtropfStand
+    4300606: "K\xFChlschrank"
+    4300608: Glas
+    4300610: Cola
+    4300612: BierKrug
+    4300614: Bier
+    4300616: Pinchen
+    4300618: Pinchen2
+    4300620: Pinchen3
+    4300622: Pinchen4
+    4300624: Pinchen5
+    4300626: Pinchen6
+    4300628: Pinchen7
+    4300630: Pinchen8
+    4300632: Pinchen9
+    4300634: Pinchen10
+    4300636: Pinchen11
+    4300638: Pinchen12
+    4300640: Pinchen13
+    4300642: Pinchen14
+    4300644: Pinchen15
+    4300646: Pinchen16
+    4300648: Pinchen17
+    4300650: Pinchen18
+    4300652: Pinchen19
+    4300654: Pinchen20
+    4300656: Pinchen21
+    4300658: Pinchen22
+    4300660: Pinchen23
+    4300662: Pinchen24
+    4300664: Pinchen25
+    4300666: Pinchen26
+    4300668: Pinchen27
+    4300670: Pinchen28
+    4300672: Pinchen29
+    4300674: Pinchen30
+    4300676: Pinchen31
+    4300678: Pinchen32
+    4300680: BierKrug1
+    4300682: Bier
+    4300684: BierKrug2
+    4300686: Bier
+    4300688: Glas2
+    4300690: Glas3
+    4300692: Glas4
+    4300694: Glas5
+    4300696: Glas6
+    4300698: Glas7
+    4300700: Glas2
+    4300702: Glas3
+    4300704: Glas4
+    4300706: Glas5
+    4300708: Glas6
+    4300710: Glas7
+    4300712: BierKrug7
+    4300714: BierKrug8
+    4300716: BierKrug9
+    4300718: BierKrug10
+    4300720: BierKrug11
+    4300722: BierKrug7
+    4300724: BierKrug8
+    4300726: BierKrug9
+    4300728: SodaFlasche1
+    4300730: SodaFlasche8
+    4300732: SodaFlasche6
+    4300734: SodaFlasche7
+    4300736: SodaFlasche5
+    4300738: SodaFlasche4
+    4300740: SodaFlasche3
+    4300742: SodaFlasche
+    4300744: SodaFlasche2
+    4300746: VodkaFlasche1
+    4300748: VodkaFlasche2
+    4300750: VodkaFlasche3
+    4300752: Bierflasche
+    4300754: Bierflasche1
+    4300756: Bierflasche2
+    4300758: AlkoholFlasche
+    4300760: pCylinder13
+    4300762: AlkoholFlasche1
+    4300764: pCylinder13
+    4300766: VodkaFlasche4
+    4300768: VodkaFlasche5
+    4300770: ZapfFlasche4
+    4300772: ZapfFlasche5
+    4300774: ZapfFlasche6
+    4300776: ZapfFlasche7
+    4300778: ZapfFlasche8
+    4300780: ZapfFlasche9
+    4300782: ZapfFlasche10
+    4300784: ZapfFlasche11
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
