@@ -20,4 +20,22 @@ public class Quest : ScriptableObject {
 		rewards.Add (newReward);
 	}
 
+	public void FinishState (State state) {
+		for (int i = 0; i < states.Count; i++) {
+			if (states [i] == state) {
+				states[i].isStateFinished = true;
+				if (i == states.Count - 1) {
+					isQuestFinished = true;
+					RewardPlayer ();
+				}
+			}
+		}
+	}
+
+	private void RewardPlayer () {
+		for (int i = 0; i < rewards.Count; i++) {
+			rewards [i].RewardPlayer ();
+		}
+	}
+
 }

@@ -96,6 +96,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void OnInteractableClick (Interactable interactable) {
+		Debug.Log ("on interactable click");
 		if (!handleInput)
 			return;
 
