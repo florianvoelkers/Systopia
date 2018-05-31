@@ -1,0 +1,4778 @@
+fileFormatVersion: 2
+guid: bc979a8fd4c408145b8862775e855735
+timeCreated: 1527764400
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Birne
+    100002: Boden
+    100004: BunsenBrenner
+    100006: BunsenBrennerGestell
+    100008: Computer
+    100010: Decke
+    100012: DeckenLampe
+    100014: DeckenLampe1
+    100016: DeckenLampe2
+    100018: DeckenLampe3
+    100020: "DeckenLampenGl\xFChbirne"
+    100022: "DeckenLampenGl\xFChbirne 1"
+    100024: "DeckenLampenGl\xFChbirne 2"
+    100026: "DeckenLampenGl\xFChbirne 3"
+    100028: DeckenLampenKabel1
+    100030: DeckenLampenKabel1 1
+    100032: DeckenLampenKabel1 2
+    100034: DeckenLampenKabel1 3
+    100036: DeckenLampenKabel2
+    100038: DeckenLampenKabel2 1
+    100040: DeckenLampenKabel2 2
+    100042: DeckenLampenKabelAbdeckung
+    100044: DeckenLampenKabelAbdeckung 1
+    100046: DeckenLampenKabelAbdeckung 2
+    100048: DeckenLampenKabelAbdeckung 3
+    100050: DeckenLampenKabelAbdeckung1
+    100052: DeckenLampenKabelAbdeckung1 1
+    100054: DeckenLampenKabelAbdeckung1 2
+    100056: DeckenLampenKabelAbdeckung1 3
+    100058: "D\xFCse"
+    100060: FlipChart
+    100062: FlipChartBody
+    100064: FlipChartPapier
+    100066: FlipChartUmgeschlagenesPapier
+    100068: FlipStift
+    100070: FlipStift1
+    100072: GasFlasche
+    100074: group1
+    100076: group10
+    100078: group11
+    100080: group12
+    100082: group12 1
+    100084: group12 2
+    100086: group15
+    100088: group16
+    100090: group17
+    100092: group18
+    100094: group19
+    100096: group2
+    100098: group20
+    100100: group21
+    100102: group22
+    100104: group23
+    100106: group24
+    100108: group24 1
+    100110: group24 2
+    100112: group25
+    100114: group25 1
+    100116: group25 2
+    100118: group25 3
+    100120: group26
+    100122: group3
+    100124: group4
+    100126: group5
+    100128: group6
+    100130: group7
+    100132: group8
+    100134: group9
+    100136: Kabel
+    100138: Kabel1
+    100140: Kabel10
+    100142: Kabel2
+    100144: Kabel3
+    100146: Kabel4
+    100148: Kabel5
+    100150: Kabel6
+    100152: Kabel7
+    100154: Kabel8
+    100156: Kabel9
+    100158: Kaffe
+    100160: Kaffe 1
+    100162: KaffeInKanne
+    100164: KaffeKanne
+    100166: KaffeMaschiene
+    100168: KaffeMaschine
+    100170: KaffeMaschinenKnopf
+    100172: KaffeMaschinenKnopf1
+    100174: KaffeMaschinenKnopf10
+    100176: KaffeMaschinenKnopf11
+    100178: KaffeMaschinenKnopf12
+    100180: KaffeMaschinenKnopf13
+    100182: KaffeMaschinenKnopf14
+    100184: KaffeMaschinenKnopf15
+    100186: KaffeMaschinenKnopf16
+    100188: KaffeMaschinenKnopf2
+    100190: KaffeMaschinenKnopf3
+    100192: KaffeMaschinenKnopf4
+    100194: KaffeMaschinenKnopf5
+    100196: KaffeMaschinenKnopf6
+    100198: KaffeMaschinenKnopf7
+    100200: KaffeMaschinenKnopf8
+    100202: KaffeMaschinenKnopf9
+    100204: KaffeTasse
+    100206: KaffeTasse1
+    100208: KaffeTasse2
+    100210: //RootNode
+    100212: LaborEquipment
+    100214: LaborHocker
+    100216: LotionCaptureModulator2
+    100218: LotionCaptureModulator:pCone1
+    100220: LotionCaptureModulator:pCone2
+    100222: LotionCaptureModulator:pCone3
+    100224: LotionCaptureModulator:pCube2
+    100226: LotionCaptureModulator:pCube3
+    100228: LotionCaptureModulator:pCube4
+    100230: LotionCaptureModulator:pCube5
+    100232: LotionCaptureModulator:pCylinder1
+    100234: LotionCaptureModulator:pCylinder2
+    100236: LotionCaptureModulator:pCylinder3
+    100238: LotionCaptureModulator:pCylinder4
+    100240: LotionCaptureModulator:pSphere1
+    100242: LotionCaptureModulator:pSphere2
+    100244: LotionCaptureModulator:pTorus1
+    100246: LotionCaptureModulator:pTorus2
+    100248: "L\xF6tkolben"
+    100250: "L\xF6tkolben1"
+    100252: "L\xF6tUnterlage"
+    100254: Maus
+    100256: monitor1
+    100258: monitor:Monitor
+    100260: pCube1
+    100262: pCube1 1
+    100264: pCube10
+    100266: pCube2
+    100268: pCube2 1
+    100270: pCube3
+    100272: pCube3 1
+    100274: pCube4
+    100276: pCube5
+    100278: pCube6
+    100280: pCube7
+    100282: pCube8
+    100284: pCube9
+    100286: pCylinder1
+    100288: pCylinder10
+    100290: pCylinder11
+    100292: pCylinder12
+    100294: pCylinder13
+    100296: pCylinder14
+    100298: pCylinder15
+    100300: pCylinder16
+    100302: pCylinder17
+    100304: pCylinder2
+    100306: pCylinder3
+    100308: pCylinder4
+    100310: pCylinder5
+    100312: pCylinder6
+    100314: pCylinder7
+    100316: pCylinder8
+    100318: pCylinder9
+    100320: Pflanze
+    100322: Pflanze1
+    100324: PostIt
+    100326: PostIt1
+    100328: PostIt2
+    100330: PostIt3
+    100332: PostIt4
+    100334: PostIt5
+    100336: PostIt6
+    100338: PostIt7
+    100340: Postits
+    100342: PottedPlant:pCube1
+    100344: PottedPlant:pCube2
+    100346: PottedPlant:pCube3
+    100348: PottedPlant:pCube4
+    100350: PottedPlant:pCylinder1
+    100352: pPlane1
+    100354: pSphere1
+    100356: pSphere2
+    100358: pSphere3
+    100360: pSphere4
+    100362: pSphere5
+    100364: pSphere6
+    100366: pTorus1
+    100368: pTorus2
+    100370: pTorus3
+    100372: pTorus4
+    100374: pTorus5
+    100376: Raum
+    100378: ReagenzGlas
+    100380: Reagenzienhalter
+    100382: Schwamm
+    100384: ServerSchrank
+    100386: Stein
+    100388: Stein 1
+    100390: Stein 10
+    100392: Stein 11
+    100394: Stein 12
+    100396: Stein 13
+    100398: Stein 14
+    100400: Stein 15
+    100402: Stein 16
+    100404: Stein 17
+    100406: Stein 18
+    100408: Stein 19
+    100410: Stein 2
+    100412: Stein 20
+    100414: Stein 21
+    100416: Stein 3
+    100418: Stein 4
+    100420: Stein 5
+    100422: Stein 6
+    100424: Stein 7
+    100426: Stein 8
+    100428: Stein 9
+    100430: Stein1
+    100432: Stein1 1
+    100434: Stein1 10
+    100436: Stein1 11
+    100438: Stein1 12
+    100440: Stein1 13
+    100442: Stein1 14
+    100444: Stein1 15
+    100446: Stein1 16
+    100448: Stein1 17
+    100450: Stein1 18
+    100452: Stein1 19
+    100454: Stein1 2
+    100456: Stein1 20
+    100458: Stein1 21
+    100460: Stein1 22
+    100462: Stein1 23
+    100464: Stein1 24
+    100466: Stein1 25
+    100468: Stein1 26
+    100470: Stein1 27
+    100472: Stein1 28
+    100474: Stein1 29
+    100476: Stein1 3
+    100478: Stein1 30
+    100480: Stein1 31
+    100482: Stein1 32
+    100484: Stein1 4
+    100486: Stein1 5
+    100488: Stein1 6
+    100490: Stein1 7
+    100492: Stein1 8
+    100494: Stein1 9
+    100496: Stein10
+    100498: Stein10 1
+    100500: Stein10 10
+    100502: Stein10 11
+    100504: Stein10 12
+    100506: Stein10 13
+    100508: Stein10 14
+    100510: Stein10 15
+    100512: Stein10 16
+    100514: Stein10 17
+    100516: Stein10 18
+    100518: Stein10 19
+    100520: Stein10 2
+    100522: Stein10 20
+    100524: Stein10 21
+    100526: Stein10 3
+    100528: Stein10 4
+    100530: Stein10 5
+    100532: Stein10 6
+    100534: Stein10 7
+    100536: Stein10 8
+    100538: Stein10 9
+    100540: Stein11
+    100542: Stein11 1
+    100544: Stein11 10
+    100546: Stein11 11
+    100548: Stein11 12
+    100550: Stein11 13
+    100552: Stein11 14
+    100554: Stein11 15
+    100556: Stein11 16
+    100558: Stein11 17
+    100560: Stein11 18
+    100562: Stein11 19
+    100564: Stein11 2
+    100566: Stein11 20
+    100568: Stein11 21
+    100570: Stein11 3
+    100572: Stein11 4
+    100574: Stein11 5
+    100576: Stein11 6
+    100578: Stein11 7
+    100580: Stein11 8
+    100582: Stein11 9
+    100584: Stein12
+    100586: Stein12 1
+    100588: Stein12 10
+    100590: Stein12 11
+    100592: Stein12 12
+    100594: Stein12 13
+    100596: Stein12 14
+    100598: Stein12 15
+    100600: Stein12 16
+    100602: Stein12 17
+    100604: Stein12 18
+    100606: Stein12 19
+    100608: Stein12 2
+    100610: Stein12 20
+    100612: Stein12 21
+    100614: Stein12 3
+    100616: Stein12 4
+    100618: Stein12 5
+    100620: Stein12 6
+    100622: Stein12 7
+    100624: Stein12 8
+    100626: Stein12 9
+    100628: Stein13
+    100630: Stein13 1
+    100632: Stein13 10
+    100634: Stein13 11
+    100636: Stein13 12
+    100638: Stein13 13
+    100640: Stein13 14
+    100642: Stein13 15
+    100644: Stein13 16
+    100646: Stein13 17
+    100648: Stein13 18
+    100650: Stein13 19
+    100652: Stein13 2
+    100654: Stein13 20
+    100656: Stein13 21
+    100658: Stein13 3
+    100660: Stein13 4
+    100662: Stein13 5
+    100664: Stein13 6
+    100666: Stein13 7
+    100668: Stein13 8
+    100670: Stein13 9
+    100672: Stein14
+    100674: Stein14 1
+    100676: Stein14 10
+    100678: Stein14 11
+    100680: Stein14 12
+    100682: Stein14 13
+    100684: Stein14 14
+    100686: Stein14 15
+    100688: Stein14 16
+    100690: Stein14 17
+    100692: Stein14 18
+    100694: Stein14 19
+    100696: Stein14 2
+    100698: Stein14 20
+    100700: Stein14 21
+    100702: Stein14 3
+    100704: Stein14 4
+    100706: Stein14 5
+    100708: Stein14 6
+    100710: Stein14 7
+    100712: Stein14 8
+    100714: Stein14 9
+    100716: Stein15
+    100718: Stein15 1
+    100720: Stein15 10
+    100722: Stein15 11
+    100724: Stein15 12
+    100726: Stein15 13
+    100728: Stein15 14
+    100730: Stein15 15
+    100732: Stein15 16
+    100734: Stein15 17
+    100736: Stein15 18
+    100738: Stein15 19
+    100740: Stein15 2
+    100742: Stein15 20
+    100744: Stein15 21
+    100746: Stein15 3
+    100748: Stein15 4
+    100750: Stein15 5
+    100752: Stein15 6
+    100754: Stein15 7
+    100756: Stein15 8
+    100758: Stein15 9
+    100760: Stein16
+    100762: Stein16 1
+    100764: Stein16 10
+    100766: Stein16 11
+    100768: Stein16 12
+    100770: Stein16 13
+    100772: Stein16 14
+    100774: Stein16 15
+    100776: Stein16 16
+    100778: Stein16 17
+    100780: Stein16 18
+    100782: Stein16 19
+    100784: Stein16 2
+    100786: Stein16 20
+    100788: Stein16 21
+    100790: Stein16 3
+    100792: Stein16 4
+    100794: Stein16 5
+    100796: Stein16 6
+    100798: Stein16 7
+    100800: Stein16 8
+    100802: Stein16 9
+    100804: Stein17
+    100806: Stein17 1
+    100808: Stein17 10
+    100810: Stein17 11
+    100812: Stein17 12
+    100814: Stein17 13
+    100816: Stein17 14
+    100818: Stein17 15
+    100820: Stein17 16
+    100822: Stein17 17
+    100824: Stein17 18
+    100826: Stein17 19
+    100828: Stein17 2
+    100830: Stein17 20
+    100832: Stein17 21
+    100834: Stein17 3
+    100836: Stein17 4
+    100838: Stein17 5
+    100840: Stein17 6
+    100842: Stein17 7
+    100844: Stein17 8
+    100846: Stein17 9
+    100848: Stein18
+    100850: Stein18 1
+    100852: Stein18 10
+    100854: Stein18 11
+    100856: Stein18 12
+    100858: Stein18 13
+    100860: Stein18 14
+    100862: Stein18 15
+    100864: Stein18 16
+    100866: Stein18 17
+    100868: Stein18 18
+    100870: Stein18 19
+    100872: Stein18 2
+    100874: Stein18 20
+    100876: Stein18 21
+    100878: Stein18 3
+    100880: Stein18 4
+    100882: Stein18 5
+    100884: Stein18 6
+    100886: Stein18 7
+    100888: Stein18 8
+    100890: Stein18 9
+    100892: Stein19
+    100894: Stein19 1
+    100896: Stein19 10
+    100898: Stein19 11
+    100900: Stein19 12
+    100902: Stein19 13
+    100904: Stein19 14
+    100906: Stein19 15
+    100908: Stein19 16
+    100910: Stein19 17
+    100912: Stein19 18
+    100914: Stein19 19
+    100916: Stein19 2
+    100918: Stein19 20
+    100920: Stein19 21
+    100922: Stein19 22
+    100924: Stein19 23
+    100926: Stein19 24
+    100928: Stein19 25
+    100930: Stein19 26
+    100932: Stein19 27
+    100934: Stein19 28
+    100936: Stein19 29
+    100938: Stein19 3
+    100940: Stein19 30
+    100942: Stein19 31
+    100944: Stein19 32
+    100946: Stein19 4
+    100948: Stein19 5
+    100950: Stein19 6
+    100952: Stein19 7
+    100954: Stein19 8
+    100956: Stein19 9
+    100958: Stein2
+    100960: Stein2 1
+    100962: Stein2 10
+    100964: Stein2 11
+    100966: Stein2 12
+    100968: Stein2 13
+    100970: Stein2 14
+    100972: Stein2 15
+    100974: Stein2 16
+    100976: Stein2 17
+    100978: Stein2 18
+    100980: Stein2 19
+    100982: Stein2 2
+    100984: Stein2 20
+    100986: Stein2 21
+    100988: Stein2 22
+    100990: Stein2 23
+    100992: Stein2 24
+    100994: Stein2 25
+    100996: Stein2 26
+    100998: Stein2 27
+    101000: Stein2 28
+    101002: Stein2 29
+    101004: Stein2 3
+    101006: Stein2 30
+    101008: Stein2 31
+    101010: Stein2 32
+    101012: Stein2 4
+    101014: Stein2 5
+    101016: Stein2 6
+    101018: Stein2 7
+    101020: Stein2 8
+    101022: Stein2 9
+    101024: Stein20
+    101026: Stein20 1
+    101028: Stein20 10
+    101030: Stein20 11
+    101032: Stein20 12
+    101034: Stein20 13
+    101036: Stein20 14
+    101038: Stein20 15
+    101040: Stein20 16
+    101042: Stein20 17
+    101044: Stein20 18
+    101046: Stein20 19
+    101048: Stein20 2
+    101050: Stein20 20
+    101052: Stein20 21
+    101054: Stein20 22
+    101056: Stein20 23
+    101058: Stein20 24
+    101060: Stein20 25
+    101062: Stein20 26
+    101064: Stein20 27
+    101066: Stein20 28
+    101068: Stein20 29
+    101070: Stein20 3
+    101072: Stein20 30
+    101074: Stein20 31
+    101076: Stein20 32
+    101078: Stein20 4
+    101080: Stein20 5
+    101082: Stein20 6
+    101084: Stein20 7
+    101086: Stein20 8
+    101088: Stein20 9
+    101090: Stein21
+    101092: Stein21 1
+    101094: Stein21 10
+    101096: Stein21 11
+    101098: Stein21 12
+    101100: Stein21 13
+    101102: Stein21 14
+    101104: Stein21 15
+    101106: Stein21 16
+    101108: Stein21 17
+    101110: Stein21 18
+    101112: Stein21 19
+    101114: Stein21 2
+    101116: Stein21 20
+    101118: Stein21 21
+    101120: Stein21 22
+    101122: Stein21 23
+    101124: Stein21 24
+    101126: Stein21 25
+    101128: Stein21 26
+    101130: Stein21 27
+    101132: Stein21 28
+    101134: Stein21 29
+    101136: Stein21 3
+    101138: Stein21 30
+    101140: Stein21 31
+    101142: Stein21 32
+    101144: Stein21 4
+    101146: Stein21 5
+    101148: Stein21 6
+    101150: Stein21 7
+    101152: Stein21 8
+    101154: Stein21 9
+    101156: Stein22
+    101158: Stein22 1
+    101160: Stein22 10
+    101162: Stein22 11
+    101164: Stein22 12
+    101166: Stein22 13
+    101168: Stein22 14
+    101170: Stein22 15
+    101172: Stein22 16
+    101174: Stein22 17
+    101176: Stein22 18
+    101178: Stein22 19
+    101180: Stein22 2
+    101182: Stein22 20
+    101184: Stein22 21
+    101186: Stein22 22
+    101188: Stein22 23
+    101190: Stein22 24
+    101192: Stein22 25
+    101194: Stein22 26
+    101196: Stein22 27
+    101198: Stein22 28
+    101200: Stein22 29
+    101202: Stein22 3
+    101204: Stein22 30
+    101206: Stein22 31
+    101208: Stein22 32
+    101210: Stein22 4
+    101212: Stein22 5
+    101214: Stein22 6
+    101216: Stein22 7
+    101218: Stein22 8
+    101220: Stein22 9
+    101222: Stein23
+    101224: Stein23 1
+    101226: Stein23 10
+    101228: Stein23 11
+    101230: Stein23 12
+    101232: Stein23 13
+    101234: Stein23 14
+    101236: Stein23 15
+    101238: Stein23 16
+    101240: Stein23 17
+    101242: Stein23 18
+    101244: Stein23 19
+    101246: Stein23 2
+    101248: Stein23 20
+    101250: Stein23 21
+    101252: Stein23 22
+    101254: Stein23 23
+    101256: Stein23 24
+    101258: Stein23 25
+    101260: Stein23 26
+    101262: Stein23 27
+    101264: Stein23 28
+    101266: Stein23 29
+    101268: Stein23 3
+    101270: Stein23 30
+    101272: Stein23 31
+    101274: Stein23 32
+    101276: Stein23 4
+    101278: Stein23 5
+    101280: Stein23 6
+    101282: Stein23 7
+    101284: Stein23 8
+    101286: Stein23 9
+    101288: Stein24
+    101290: Stein24 1
+    101292: Stein24 10
+    101294: Stein24 11
+    101296: Stein24 12
+    101298: Stein24 13
+    101300: Stein24 14
+    101302: Stein24 15
+    101304: Stein24 16
+    101306: Stein24 17
+    101308: Stein24 18
+    101310: Stein24 19
+    101312: Stein24 2
+    101314: Stein24 20
+    101316: Stein24 21
+    101318: Stein24 22
+    101320: Stein24 23
+    101322: Stein24 24
+    101324: Stein24 25
+    101326: Stein24 26
+    101328: Stein24 27
+    101330: Stein24 28
+    101332: Stein24 29
+    101334: Stein24 3
+    101336: Stein24 30
+    101338: Stein24 31
+    101340: Stein24 32
+    101342: Stein24 4
+    101344: Stein24 5
+    101346: Stein24 6
+    101348: Stein24 7
+    101350: Stein24 8
+    101352: Stein24 9
+    101354: Stein25
+    101356: Stein25 1
+    101358: Stein25 10
+    101360: Stein25 11
+    101362: Stein25 12
+    101364: Stein25 13
+    101366: Stein25 14
+    101368: Stein25 15
+    101370: Stein25 16
+    101372: Stein25 17
+    101374: Stein25 18
+    101376: Stein25 19
+    101378: Stein25 2
+    101380: Stein25 20
+    101382: Stein25 21
+    101384: Stein25 3
+    101386: Stein25 4
+    101388: Stein25 5
+    101390: Stein25 6
+    101392: Stein25 7
+    101394: Stein25 8
+    101396: Stein25 9
+    101398: Stein3
+    101400: Stein3 1
+    101402: Stein3 10
+    101404: Stein3 11
+    101406: Stein3 12
+    101408: Stein3 13
+    101410: Stein3 14
+    101412: Stein3 15
+    101414: Stein3 16
+    101416: Stein3 17
+    101418: Stein3 18
+    101420: Stein3 19
+    101422: Stein3 2
+    101424: Stein3 20
+    101426: Stein3 21
+    101428: Stein3 22
+    101430: Stein3 23
+    101432: Stein3 24
+    101434: Stein3 25
+    101436: Stein3 26
+    101438: Stein3 27
+    101440: Stein3 28
+    101442: Stein3 29
+    101444: Stein3 3
+    101446: Stein3 30
+    101448: Stein3 31
+    101450: Stein3 32
+    101452: Stein3 4
+    101454: Stein3 5
+    101456: Stein3 6
+    101458: Stein3 7
+    101460: Stein3 8
+    101462: Stein3 9
+    101464: Stein4
+    101466: Stein4 1
+    101468: Stein4 10
+    101470: Stein4 11
+    101472: Stein4 12
+    101474: Stein4 13
+    101476: Stein4 14
+    101478: Stein4 15
+    101480: Stein4 16
+    101482: Stein4 17
+    101484: Stein4 18
+    101486: Stein4 19
+    101488: Stein4 2
+    101490: Stein4 20
+    101492: Stein4 21
+    101494: Stein4 22
+    101496: Stein4 23
+    101498: Stein4 24
+    101500: Stein4 25
+    101502: Stein4 26
+    101504: Stein4 27
+    101506: Stein4 28
+    101508: Stein4 29
+    101510: Stein4 3
+    101512: Stein4 30
+    101514: Stein4 31
+    101516: Stein4 32
+    101518: Stein4 4
+    101520: Stein4 5
+    101522: Stein4 6
+    101524: Stein4 7
+    101526: Stein4 8
+    101528: Stein4 9
+    101530: Stein5
+    101532: Stein5 1
+    101534: Stein5 10
+    101536: Stein5 11
+    101538: Stein5 12
+    101540: Stein5 13
+    101542: Stein5 14
+    101544: Stein5 15
+    101546: Stein5 16
+    101548: Stein5 17
+    101550: Stein5 18
+    101552: Stein5 19
+    101554: Stein5 2
+    101556: Stein5 20
+    101558: Stein5 21
+    101560: Stein5 22
+    101562: Stein5 23
+    101564: Stein5 24
+    101566: Stein5 25
+    101568: Stein5 26
+    101570: Stein5 27
+    101572: Stein5 28
+    101574: Stein5 29
+    101576: Stein5 3
+    101578: Stein5 30
+    101580: Stein5 31
+    101582: Stein5 32
+    101584: Stein5 4
+    101586: Stein5 5
+    101588: Stein5 6
+    101590: Stein5 7
+    101592: Stein5 8
+    101594: Stein5 9
+    101596: Stein6
+    101598: Stein6 1
+    101600: Stein6 10
+    101602: Stein6 11
+    101604: Stein6 12
+    101606: Stein6 13
+    101608: Stein6 14
+    101610: Stein6 15
+    101612: Stein6 16
+    101614: Stein6 17
+    101616: Stein6 18
+    101618: Stein6 19
+    101620: Stein6 2
+    101622: Stein6 20
+    101624: Stein6 21
+    101626: Stein6 22
+    101628: Stein6 23
+    101630: Stein6 24
+    101632: Stein6 25
+    101634: Stein6 26
+    101636: Stein6 27
+    101638: Stein6 28
+    101640: Stein6 29
+    101642: Stein6 3
+    101644: Stein6 30
+    101646: Stein6 31
+    101648: Stein6 32
+    101650: Stein6 4
+    101652: Stein6 5
+    101654: Stein6 6
+    101656: Stein6 7
+    101658: Stein6 8
+    101660: Stein6 9
+    101662: Stein7
+    101664: Stein7 1
+    101666: Stein7 10
+    101668: Stein7 11
+    101670: Stein7 12
+    101672: Stein7 13
+    101674: Stein7 14
+    101676: Stein7 15
+    101678: Stein7 16
+    101680: Stein7 17
+    101682: Stein7 18
+    101684: Stein7 19
+    101686: Stein7 2
+    101688: Stein7 20
+    101690: Stein7 21
+    101692: Stein7 3
+    101694: Stein7 4
+    101696: Stein7 5
+    101698: Stein7 6
+    101700: Stein7 7
+    101702: Stein7 8
+    101704: Stein7 9
+    101706: Stein8
+    101708: Stein8 1
+    101710: Stein8 10
+    101712: Stein8 11
+    101714: Stein8 12
+    101716: Stein8 13
+    101718: Stein8 14
+    101720: Stein8 15
+    101722: Stein8 16
+    101724: Stein8 17
+    101726: Stein8 18
+    101728: Stein8 19
+    101730: Stein8 2
+    101732: Stein8 20
+    101734: Stein8 21
+    101736: Stein8 3
+    101738: Stein8 4
+    101740: Stein8 5
+    101742: Stein8 6
+    101744: Stein8 7
+    101746: Stein8 8
+    101748: Stein8 9
+    101750: Stein9
+    101752: Stein9 1
+    101754: Stein9 10
+    101756: Stein9 11
+    101758: Stein9 12
+    101760: Stein9 13
+    101762: Stein9 14
+    101764: Stein9 15
+    101766: Stein9 16
+    101768: Stein9 17
+    101770: Stein9 18
+    101772: Stein9 19
+    101774: Stein9 2
+    101776: Stein9 20
+    101778: Stein9 21
+    101780: Stein9 3
+    101782: Stein9 4
+    101784: Stein9 5
+    101786: Stein9 6
+    101788: Stein9 7
+    101790: Stein9 8
+    101792: Stein9 9
+    101794: Tafel
+    101796: Tastatur
+    101798: Tisch1
+    101800: Tisch2
+    101802: Tisch3
+    101804: Tisch4
+    101806: TischBein
+    101808: TischBein 1
+    101810: TischBein 2
+    101812: TischBein 3
+    101814: TischBein1
+    101816: TischBein1 1
+    101818: TischBein1 2
+    101820: TischBein1 3
+    101822: TischBein2
+    101824: TischBein2 1
+    101826: TischBein2 2
+    101828: TischBein2 3
+    101830: TischBein3
+    101832: TischBein3 1
+    101834: TischBein3 2
+    101836: TischBein3 3
+    101838: TischLampe
+    101840: TischLampenArm
+    101842: "TischLampenFu\xDF"
+    101844: TischLampenKopf
+    101846: Tischplatte
+    101848: Tischplatte 1
+    101850: Tischplatte 2
+    101852: Tischplatte 3
+    101854: treppe
+    101856: Wand
+    101858: Wand1
+    101860: WandSteine
+    101862: WandSteine1
+    101864: WandSteine1_group1
+    101866: WandSteine1_group10
+    101868: WandSteine1_group11
+    101870: WandSteine1_group15
+    101872: WandSteine1_group16
+    101874: WandSteine1_group17
+    101876: WandSteine1_group18
+    101878: WandSteine1_group19
+    101880: WandSteine1_group2
+    101882: WandSteine1_group20
+    101884: WandSteine1_group21
+    101886: WandSteine1_group22
+    101888: WandSteine1_group23
+    101890: WandSteine1_group3
+    101892: WandSteine1_group4
+    101894: WandSteine1_group5
+    101896: WandSteine1_group6
+    101898: WandSteine1_group7
+    101900: WandSteine1_group8
+    101902: WandSteine1_group9
+    101904: WandSteine2
+    101906: WandSteine_group1
+    101908: WandSteine_group10
+    101910: WandSteine_group11
+    101912: WandSteine_group15
+    101914: WandSteine_group16
+    101916: WandSteine_group17
+    101918: WandSteine_group18
+    101920: WandSteine_group19
+    101922: WandSteine_group2
+    101924: WandSteine_group20
+    101926: WandSteine_group21
+    101928: WandSteine_group22
+    101930: WandSteine_group23
+    101932: WandSteine_group3
+    101934: WandSteine_group4
+    101936: WandSteine_group5
+    101938: WandSteine_group6
+    101940: WandSteine_group7
+    101942: WandSteine_group8
+    101944: WandSteine_group9
+    101946: "W\xE4nde"
+    101948: Zentrifuge
+    400000: Birne
+    400002: Boden
+    400004: BunsenBrenner
+    400006: BunsenBrennerGestell
+    400008: Computer
+    400010: Decke
+    400012: DeckenLampe
+    400014: DeckenLampe1
+    400016: DeckenLampe2
+    400018: DeckenLampe3
+    400020: "DeckenLampenGl\xFChbirne"
+    400022: "DeckenLampenGl\xFChbirne 1"
+    400024: "DeckenLampenGl\xFChbirne 2"
+    400026: "DeckenLampenGl\xFChbirne 3"
+    400028: DeckenLampenKabel1
+    400030: DeckenLampenKabel1 1
+    400032: DeckenLampenKabel1 2
+    400034: DeckenLampenKabel1 3
+    400036: DeckenLampenKabel2
+    400038: DeckenLampenKabel2 1
+    400040: DeckenLampenKabel2 2
+    400042: DeckenLampenKabelAbdeckung
+    400044: DeckenLampenKabelAbdeckung 1
+    400046: DeckenLampenKabelAbdeckung 2
+    400048: DeckenLampenKabelAbdeckung 3
+    400050: DeckenLampenKabelAbdeckung1
+    400052: DeckenLampenKabelAbdeckung1 1
+    400054: DeckenLampenKabelAbdeckung1 2
+    400056: DeckenLampenKabelAbdeckung1 3
+    400058: "D\xFCse"
+    400060: FlipChart
+    400062: FlipChartBody
+    400064: FlipChartPapier
+    400066: FlipChartUmgeschlagenesPapier
+    400068: FlipStift
+    400070: FlipStift1
+    400072: GasFlasche
+    400074: group1
+    400076: group10
+    400078: group11
+    400080: group12
+    400082: group12 1
+    400084: group12 2
+    400086: group15
+    400088: group16
+    400090: group17
+    400092: group18
+    400094: group19
+    400096: group2
+    400098: group20
+    400100: group21
+    400102: group22
+    400104: group23
+    400106: group24
+    400108: group24 1
+    400110: group24 2
+    400112: group25
+    400114: group25 1
+    400116: group25 2
+    400118: group25 3
+    400120: group26
+    400122: group3
+    400124: group4
+    400126: group5
+    400128: group6
+    400130: group7
+    400132: group8
+    400134: group9
+    400136: Kabel
+    400138: Kabel1
+    400140: Kabel10
+    400142: Kabel2
+    400144: Kabel3
+    400146: Kabel4
+    400148: Kabel5
+    400150: Kabel6
+    400152: Kabel7
+    400154: Kabel8
+    400156: Kabel9
+    400158: Kaffe
+    400160: Kaffe 1
+    400162: KaffeInKanne
+    400164: KaffeKanne
+    400166: KaffeMaschiene
+    400168: KaffeMaschine
+    400170: KaffeMaschinenKnopf
+    400172: KaffeMaschinenKnopf1
+    400174: KaffeMaschinenKnopf10
+    400176: KaffeMaschinenKnopf11
+    400178: KaffeMaschinenKnopf12
+    400180: KaffeMaschinenKnopf13
+    400182: KaffeMaschinenKnopf14
+    400184: KaffeMaschinenKnopf15
+    400186: KaffeMaschinenKnopf16
+    400188: KaffeMaschinenKnopf2
+    400190: KaffeMaschinenKnopf3
+    400192: KaffeMaschinenKnopf4
+    400194: KaffeMaschinenKnopf5
+    400196: KaffeMaschinenKnopf6
+    400198: KaffeMaschinenKnopf7
+    400200: KaffeMaschinenKnopf8
+    400202: KaffeMaschinenKnopf9
+    400204: KaffeTasse
+    400206: KaffeTasse1
+    400208: KaffeTasse2
+    400210: //RootNode
+    400212: LaborEquipment
+    400214: LaborHocker
+    400216: LotionCaptureModulator2
+    400218: LotionCaptureModulator:pCone1
+    400220: LotionCaptureModulator:pCone2
+    400222: LotionCaptureModulator:pCone3
+    400224: LotionCaptureModulator:pCube2
+    400226: LotionCaptureModulator:pCube3
+    400228: LotionCaptureModulator:pCube4
+    400230: LotionCaptureModulator:pCube5
+    400232: LotionCaptureModulator:pCylinder1
+    400234: LotionCaptureModulator:pCylinder2
+    400236: LotionCaptureModulator:pCylinder3
+    400238: LotionCaptureModulator:pCylinder4
+    400240: LotionCaptureModulator:pSphere1
+    400242: LotionCaptureModulator:pSphere2
+    400244: LotionCaptureModulator:pTorus1
+    400246: LotionCaptureModulator:pTorus2
+    400248: "L\xF6tkolben"
+    400250: "L\xF6tkolben1"
+    400252: "L\xF6tUnterlage"
+    400254: Maus
+    400256: monitor1
+    400258: monitor:Monitor
+    400260: pCube1
+    400262: pCube1 1
+    400264: pCube10
+    400266: pCube2
+    400268: pCube2 1
+    400270: pCube3
+    400272: pCube3 1
+    400274: pCube4
+    400276: pCube5
+    400278: pCube6
+    400280: pCube7
+    400282: pCube8
+    400284: pCube9
+    400286: pCylinder1
+    400288: pCylinder10
+    400290: pCylinder11
+    400292: pCylinder12
+    400294: pCylinder13
+    400296: pCylinder14
+    400298: pCylinder15
+    400300: pCylinder16
+    400302: pCylinder17
+    400304: pCylinder2
+    400306: pCylinder3
+    400308: pCylinder4
+    400310: pCylinder5
+    400312: pCylinder6
+    400314: pCylinder7
+    400316: pCylinder8
+    400318: pCylinder9
+    400320: Pflanze
+    400322: Pflanze1
+    400324: PostIt
+    400326: PostIt1
+    400328: PostIt2
+    400330: PostIt3
+    400332: PostIt4
+    400334: PostIt5
+    400336: PostIt6
+    400338: PostIt7
+    400340: Postits
+    400342: PottedPlant:pCube1
+    400344: PottedPlant:pCube2
+    400346: PottedPlant:pCube3
+    400348: PottedPlant:pCube4
+    400350: PottedPlant:pCylinder1
+    400352: pPlane1
+    400354: pSphere1
+    400356: pSphere2
+    400358: pSphere3
+    400360: pSphere4
+    400362: pSphere5
+    400364: pSphere6
+    400366: pTorus1
+    400368: pTorus2
+    400370: pTorus3
+    400372: pTorus4
+    400374: pTorus5
+    400376: Raum
+    400378: ReagenzGlas
+    400380: Reagenzienhalter
+    400382: Schwamm
+    400384: ServerSchrank
+    400386: Stein
+    400388: Stein 1
+    400390: Stein 10
+    400392: Stein 11
+    400394: Stein 12
+    400396: Stein 13
+    400398: Stein 14
+    400400: Stein 15
+    400402: Stein 16
+    400404: Stein 17
+    400406: Stein 18
+    400408: Stein 19
+    400410: Stein 2
+    400412: Stein 20
+    400414: Stein 21
+    400416: Stein 3
+    400418: Stein 4
+    400420: Stein 5
+    400422: Stein 6
+    400424: Stein 7
+    400426: Stein 8
+    400428: Stein 9
+    400430: Stein1
+    400432: Stein1 1
+    400434: Stein1 10
+    400436: Stein1 11
+    400438: Stein1 12
+    400440: Stein1 13
+    400442: Stein1 14
+    400444: Stein1 15
+    400446: Stein1 16
+    400448: Stein1 17
+    400450: Stein1 18
+    400452: Stein1 19
+    400454: Stein1 2
+    400456: Stein1 20
+    400458: Stein1 21
+    400460: Stein1 22
+    400462: Stein1 23
+    400464: Stein1 24
+    400466: Stein1 25
+    400468: Stein1 26
+    400470: Stein1 27
+    400472: Stein1 28
+    400474: Stein1 29
+    400476: Stein1 3
+    400478: Stein1 30
+    400480: Stein1 31
+    400482: Stein1 32
+    400484: Stein1 4
+    400486: Stein1 5
+    400488: Stein1 6
+    400490: Stein1 7
+    400492: Stein1 8
+    400494: Stein1 9
+    400496: Stein10
+    400498: Stein10 1
+    400500: Stein10 10
+    400502: Stein10 11
+    400504: Stein10 12
+    400506: Stein10 13
+    400508: Stein10 14
+    400510: Stein10 15
+    400512: Stein10 16
+    400514: Stein10 17
+    400516: Stein10 18
+    400518: Stein10 19
+    400520: Stein10 2
+    400522: Stein10 20
+    400524: Stein10 21
+    400526: Stein10 3
+    400528: Stein10 4
+    400530: Stein10 5
+    400532: Stein10 6
+    400534: Stein10 7
+    400536: Stein10 8
+    400538: Stein10 9
+    400540: Stein11
+    400542: Stein11 1
+    400544: Stein11 10
+    400546: Stein11 11
+    400548: Stein11 12
+    400550: Stein11 13
+    400552: Stein11 14
+    400554: Stein11 15
+    400556: Stein11 16
+    400558: Stein11 17
+    400560: Stein11 18
+    400562: Stein11 19
+    400564: Stein11 2
+    400566: Stein11 20
+    400568: Stein11 21
+    400570: Stein11 3
+    400572: Stein11 4
+    400574: Stein11 5
+    400576: Stein11 6
+    400578: Stein11 7
+    400580: Stein11 8
+    400582: Stein11 9
+    400584: Stein12
+    400586: Stein12 1
+    400588: Stein12 10
+    400590: Stein12 11
+    400592: Stein12 12
+    400594: Stein12 13
+    400596: Stein12 14
+    400598: Stein12 15
+    400600: Stein12 16
+    400602: Stein12 17
+    400604: Stein12 18
+    400606: Stein12 19
+    400608: Stein12 2
+    400610: Stein12 20
+    400612: Stein12 21
+    400614: Stein12 3
+    400616: Stein12 4
+    400618: Stein12 5
+    400620: Stein12 6
+    400622: Stein12 7
+    400624: Stein12 8
+    400626: Stein12 9
+    400628: Stein13
+    400630: Stein13 1
+    400632: Stein13 10
+    400634: Stein13 11
+    400636: Stein13 12
+    400638: Stein13 13
+    400640: Stein13 14
+    400642: Stein13 15
+    400644: Stein13 16
+    400646: Stein13 17
+    400648: Stein13 18
+    400650: Stein13 19
+    400652: Stein13 2
+    400654: Stein13 20
+    400656: Stein13 21
+    400658: Stein13 3
+    400660: Stein13 4
+    400662: Stein13 5
+    400664: Stein13 6
+    400666: Stein13 7
+    400668: Stein13 8
+    400670: Stein13 9
+    400672: Stein14
+    400674: Stein14 1
+    400676: Stein14 10
+    400678: Stein14 11
+    400680: Stein14 12
+    400682: Stein14 13
+    400684: Stein14 14
+    400686: Stein14 15
+    400688: Stein14 16
+    400690: Stein14 17
+    400692: Stein14 18
+    400694: Stein14 19
+    400696: Stein14 2
+    400698: Stein14 20
+    400700: Stein14 21
+    400702: Stein14 3
+    400704: Stein14 4
+    400706: Stein14 5
+    400708: Stein14 6
+    400710: Stein14 7
+    400712: Stein14 8
+    400714: Stein14 9
+    400716: Stein15
+    400718: Stein15 1
+    400720: Stein15 10
+    400722: Stein15 11
+    400724: Stein15 12
+    400726: Stein15 13
+    400728: Stein15 14
+    400730: Stein15 15
+    400732: Stein15 16
+    400734: Stein15 17
+    400736: Stein15 18
+    400738: Stein15 19
+    400740: Stein15 2
+    400742: Stein15 20
+    400744: Stein15 21
+    400746: Stein15 3
+    400748: Stein15 4
+    400750: Stein15 5
+    400752: Stein15 6
+    400754: Stein15 7
+    400756: Stein15 8
+    400758: Stein15 9
+    400760: Stein16
+    400762: Stein16 1
+    400764: Stein16 10
+    400766: Stein16 11
+    400768: Stein16 12
+    400770: Stein16 13
+    400772: Stein16 14
+    400774: Stein16 15
+    400776: Stein16 16
+    400778: Stein16 17
+    400780: Stein16 18
+    400782: Stein16 19
+    400784: Stein16 2
+    400786: Stein16 20
+    400788: Stein16 21
+    400790: Stein16 3
+    400792: Stein16 4
+    400794: Stein16 5
+    400796: Stein16 6
+    400798: Stein16 7
+    400800: Stein16 8
+    400802: Stein16 9
+    400804: Stein17
+    400806: Stein17 1
+    400808: Stein17 10
+    400810: Stein17 11
+    400812: Stein17 12
+    400814: Stein17 13
+    400816: Stein17 14
+    400818: Stein17 15
+    400820: Stein17 16
+    400822: Stein17 17
+    400824: Stein17 18
+    400826: Stein17 19
+    400828: Stein17 2
+    400830: Stein17 20
+    400832: Stein17 21
+    400834: Stein17 3
+    400836: Stein17 4
+    400838: Stein17 5
+    400840: Stein17 6
+    400842: Stein17 7
+    400844: Stein17 8
+    400846: Stein17 9
+    400848: Stein18
+    400850: Stein18 1
+    400852: Stein18 10
+    400854: Stein18 11
+    400856: Stein18 12
+    400858: Stein18 13
+    400860: Stein18 14
+    400862: Stein18 15
+    400864: Stein18 16
+    400866: Stein18 17
+    400868: Stein18 18
+    400870: Stein18 19
+    400872: Stein18 2
+    400874: Stein18 20
+    400876: Stein18 21
+    400878: Stein18 3
+    400880: Stein18 4
+    400882: Stein18 5
+    400884: Stein18 6
+    400886: Stein18 7
+    400888: Stein18 8
+    400890: Stein18 9
+    400892: Stein19
+    400894: Stein19 1
+    400896: Stein19 10
+    400898: Stein19 11
+    400900: Stein19 12
+    400902: Stein19 13
+    400904: Stein19 14
+    400906: Stein19 15
+    400908: Stein19 16
+    400910: Stein19 17
+    400912: Stein19 18
+    400914: Stein19 19
+    400916: Stein19 2
+    400918: Stein19 20
+    400920: Stein19 21
+    400922: Stein19 22
+    400924: Stein19 23
+    400926: Stein19 24
+    400928: Stein19 25
+    400930: Stein19 26
+    400932: Stein19 27
+    400934: Stein19 28
+    400936: Stein19 29
+    400938: Stein19 3
+    400940: Stein19 30
+    400942: Stein19 31
+    400944: Stein19 32
+    400946: Stein19 4
+    400948: Stein19 5
+    400950: Stein19 6
+    400952: Stein19 7
+    400954: Stein19 8
+    400956: Stein19 9
+    400958: Stein2
+    400960: Stein2 1
+    400962: Stein2 10
+    400964: Stein2 11
+    400966: Stein2 12
+    400968: Stein2 13
+    400970: Stein2 14
+    400972: Stein2 15
+    400974: Stein2 16
+    400976: Stein2 17
+    400978: Stein2 18
+    400980: Stein2 19
+    400982: Stein2 2
+    400984: Stein2 20
+    400986: Stein2 21
+    400988: Stein2 22
+    400990: Stein2 23
+    400992: Stein2 24
+    400994: Stein2 25
+    400996: Stein2 26
+    400998: Stein2 27
+    401000: Stein2 28
+    401002: Stein2 29
+    401004: Stein2 3
+    401006: Stein2 30
+    401008: Stein2 31
+    401010: Stein2 32
+    401012: Stein2 4
+    401014: Stein2 5
+    401016: Stein2 6
+    401018: Stein2 7
+    401020: Stein2 8
+    401022: Stein2 9
+    401024: Stein20
+    401026: Stein20 1
+    401028: Stein20 10
+    401030: Stein20 11
+    401032: Stein20 12
+    401034: Stein20 13
+    401036: Stein20 14
+    401038: Stein20 15
+    401040: Stein20 16
+    401042: Stein20 17
+    401044: Stein20 18
+    401046: Stein20 19
+    401048: Stein20 2
+    401050: Stein20 20
+    401052: Stein20 21
+    401054: Stein20 22
+    401056: Stein20 23
+    401058: Stein20 24
+    401060: Stein20 25
+    401062: Stein20 26
+    401064: Stein20 27
+    401066: Stein20 28
+    401068: Stein20 29
+    401070: Stein20 3
+    401072: Stein20 30
+    401074: Stein20 31
+    401076: Stein20 32
+    401078: Stein20 4
+    401080: Stein20 5
+    401082: Stein20 6
+    401084: Stein20 7
+    401086: Stein20 8
+    401088: Stein20 9
+    401090: Stein21
+    401092: Stein21 1
+    401094: Stein21 10
+    401096: Stein21 11
+    401098: Stein21 12
+    401100: Stein21 13
+    401102: Stein21 14
+    401104: Stein21 15
+    401106: Stein21 16
+    401108: Stein21 17
+    401110: Stein21 18
+    401112: Stein21 19
+    401114: Stein21 2
+    401116: Stein21 20
+    401118: Stein21 21
+    401120: Stein21 22
+    401122: Stein21 23
+    401124: Stein21 24
+    401126: Stein21 25
+    401128: Stein21 26
+    401130: Stein21 27
+    401132: Stein21 28
+    401134: Stein21 29
+    401136: Stein21 3
+    401138: Stein21 30
+    401140: Stein21 31
+    401142: Stein21 32
+    401144: Stein21 4
+    401146: Stein21 5
+    401148: Stein21 6
+    401150: Stein21 7
+    401152: Stein21 8
+    401154: Stein21 9
+    401156: Stein22
+    401158: Stein22 1
+    401160: Stein22 10
+    401162: Stein22 11
+    401164: Stein22 12
+    401166: Stein22 13
+    401168: Stein22 14
+    401170: Stein22 15
+    401172: Stein22 16
+    401174: Stein22 17
+    401176: Stein22 18
+    401178: Stein22 19
+    401180: Stein22 2
+    401182: Stein22 20
+    401184: Stein22 21
+    401186: Stein22 22
+    401188: Stein22 23
+    401190: Stein22 24
+    401192: Stein22 25
+    401194: Stein22 26
+    401196: Stein22 27
+    401198: Stein22 28
+    401200: Stein22 29
+    401202: Stein22 3
+    401204: Stein22 30
+    401206: Stein22 31
+    401208: Stein22 32
+    401210: Stein22 4
+    401212: Stein22 5
+    401214: Stein22 6
+    401216: Stein22 7
+    401218: Stein22 8
+    401220: Stein22 9
+    401222: Stein23
+    401224: Stein23 1
+    401226: Stein23 10
+    401228: Stein23 11
+    401230: Stein23 12
+    401232: Stein23 13
+    401234: Stein23 14
+    401236: Stein23 15
+    401238: Stein23 16
+    401240: Stein23 17
+    401242: Stein23 18
+    401244: Stein23 19
+    401246: Stein23 2
+    401248: Stein23 20
+    401250: Stein23 21
+    401252: Stein23 22
+    401254: Stein23 23
+    401256: Stein23 24
+    401258: Stein23 25
+    401260: Stein23 26
+    401262: Stein23 27
+    401264: Stein23 28
+    401266: Stein23 29
+    401268: Stein23 3
+    401270: Stein23 30
+    401272: Stein23 31
+    401274: Stein23 32
+    401276: Stein23 4
+    401278: Stein23 5
+    401280: Stein23 6
+    401282: Stein23 7
+    401284: Stein23 8
+    401286: Stein23 9
+    401288: Stein24
+    401290: Stein24 1
+    401292: Stein24 10
+    401294: Stein24 11
+    401296: Stein24 12
+    401298: Stein24 13
+    401300: Stein24 14
+    401302: Stein24 15
+    401304: Stein24 16
+    401306: Stein24 17
+    401308: Stein24 18
+    401310: Stein24 19
+    401312: Stein24 2
+    401314: Stein24 20
+    401316: Stein24 21
+    401318: Stein24 22
+    401320: Stein24 23
+    401322: Stein24 24
+    401324: Stein24 25
+    401326: Stein24 26
+    401328: Stein24 27
+    401330: Stein24 28
+    401332: Stein24 29
+    401334: Stein24 3
+    401336: Stein24 30
+    401338: Stein24 31
+    401340: Stein24 32
+    401342: Stein24 4
+    401344: Stein24 5
+    401346: Stein24 6
+    401348: Stein24 7
+    401350: Stein24 8
+    401352: Stein24 9
+    401354: Stein25
+    401356: Stein25 1
+    401358: Stein25 10
+    401360: Stein25 11
+    401362: Stein25 12
+    401364: Stein25 13
+    401366: Stein25 14
+    401368: Stein25 15
+    401370: Stein25 16
+    401372: Stein25 17
+    401374: Stein25 18
+    401376: Stein25 19
+    401378: Stein25 2
+    401380: Stein25 20
+    401382: Stein25 21
+    401384: Stein25 3
+    401386: Stein25 4
+    401388: Stein25 5
+    401390: Stein25 6
+    401392: Stein25 7
+    401394: Stein25 8
+    401396: Stein25 9
+    401398: Stein3
+    401400: Stein3 1
+    401402: Stein3 10
+    401404: Stein3 11
+    401406: Stein3 12
+    401408: Stein3 13
+    401410: Stein3 14
+    401412: Stein3 15
+    401414: Stein3 16
+    401416: Stein3 17
+    401418: Stein3 18
+    401420: Stein3 19
+    401422: Stein3 2
+    401424: Stein3 20
+    401426: Stein3 21
+    401428: Stein3 22
+    401430: Stein3 23
+    401432: Stein3 24
+    401434: Stein3 25
+    401436: Stein3 26
+    401438: Stein3 27
+    401440: Stein3 28
+    401442: Stein3 29
+    401444: Stein3 3
+    401446: Stein3 30
+    401448: Stein3 31
+    401450: Stein3 32
+    401452: Stein3 4
+    401454: Stein3 5
+    401456: Stein3 6
+    401458: Stein3 7
+    401460: Stein3 8
+    401462: Stein3 9
+    401464: Stein4
+    401466: Stein4 1
+    401468: Stein4 10
+    401470: Stein4 11
+    401472: Stein4 12
+    401474: Stein4 13
+    401476: Stein4 14
+    401478: Stein4 15
+    401480: Stein4 16
+    401482: Stein4 17
+    401484: Stein4 18
+    401486: Stein4 19
+    401488: Stein4 2
+    401490: Stein4 20
+    401492: Stein4 21
+    401494: Stein4 22
+    401496: Stein4 23
+    401498: Stein4 24
+    401500: Stein4 25
+    401502: Stein4 26
+    401504: Stein4 27
+    401506: Stein4 28
+    401508: Stein4 29
+    401510: Stein4 3
+    401512: Stein4 30
+    401514: Stein4 31
+    401516: Stein4 32
+    401518: Stein4 4
+    401520: Stein4 5
+    401522: Stein4 6
+    401524: Stein4 7
+    401526: Stein4 8
+    401528: Stein4 9
+    401530: Stein5
+    401532: Stein5 1
+    401534: Stein5 10
+    401536: Stein5 11
+    401538: Stein5 12
+    401540: Stein5 13
+    401542: Stein5 14
+    401544: Stein5 15
+    401546: Stein5 16
+    401548: Stein5 17
+    401550: Stein5 18
+    401552: Stein5 19
+    401554: Stein5 2
+    401556: Stein5 20
+    401558: Stein5 21
+    401560: Stein5 22
+    401562: Stein5 23
+    401564: Stein5 24
+    401566: Stein5 25
+    401568: Stein5 26
+    401570: Stein5 27
+    401572: Stein5 28
+    401574: Stein5 29
+    401576: Stein5 3
+    401578: Stein5 30
+    401580: Stein5 31
+    401582: Stein5 32
+    401584: Stein5 4
+    401586: Stein5 5
+    401588: Stein5 6
+    401590: Stein5 7
+    401592: Stein5 8
+    401594: Stein5 9
+    401596: Stein6
+    401598: Stein6 1
+    401600: Stein6 10
+    401602: Stein6 11
+    401604: Stein6 12
+    401606: Stein6 13
+    401608: Stein6 14
+    401610: Stein6 15
+    401612: Stein6 16
+    401614: Stein6 17
+    401616: Stein6 18
+    401618: Stein6 19
+    401620: Stein6 2
+    401622: Stein6 20
+    401624: Stein6 21
+    401626: Stein6 22
+    401628: Stein6 23
+    401630: Stein6 24
+    401632: Stein6 25
+    401634: Stein6 26
+    401636: Stein6 27
+    401638: Stein6 28
+    401640: Stein6 29
+    401642: Stein6 3
+    401644: Stein6 30
+    401646: Stein6 31
+    401648: Stein6 32
+    401650: Stein6 4
+    401652: Stein6 5
+    401654: Stein6 6
+    401656: Stein6 7
+    401658: Stein6 8
+    401660: Stein6 9
+    401662: Stein7
+    401664: Stein7 1
+    401666: Stein7 10
+    401668: Stein7 11
+    401670: Stein7 12
+    401672: Stein7 13
+    401674: Stein7 14
+    401676: Stein7 15
+    401678: Stein7 16
+    401680: Stein7 17
+    401682: Stein7 18
+    401684: Stein7 19
+    401686: Stein7 2
+    401688: Stein7 20
+    401690: Stein7 21
+    401692: Stein7 3
+    401694: Stein7 4
+    401696: Stein7 5
+    401698: Stein7 6
+    401700: Stein7 7
+    401702: Stein7 8
+    401704: Stein7 9
+    401706: Stein8
+    401708: Stein8 1
+    401710: Stein8 10
+    401712: Stein8 11
+    401714: Stein8 12
+    401716: Stein8 13
+    401718: Stein8 14
+    401720: Stein8 15
+    401722: Stein8 16
+    401724: Stein8 17
+    401726: Stein8 18
+    401728: Stein8 19
+    401730: Stein8 2
+    401732: Stein8 20
+    401734: Stein8 21
+    401736: Stein8 3
+    401738: Stein8 4
+    401740: Stein8 5
+    401742: Stein8 6
+    401744: Stein8 7
+    401746: Stein8 8
+    401748: Stein8 9
+    401750: Stein9
+    401752: Stein9 1
+    401754: Stein9 10
+    401756: Stein9 11
+    401758: Stein9 12
+    401760: Stein9 13
+    401762: Stein9 14
+    401764: Stein9 15
+    401766: Stein9 16
+    401768: Stein9 17
+    401770: Stein9 18
+    401772: Stein9 19
+    401774: Stein9 2
+    401776: Stein9 20
+    401778: Stein9 21
+    401780: Stein9 3
+    401782: Stein9 4
+    401784: Stein9 5
+    401786: Stein9 6
+    401788: Stein9 7
+    401790: Stein9 8
+    401792: Stein9 9
+    401794: Tafel
+    401796: Tastatur
+    401798: Tisch1
+    401800: Tisch2
+    401802: Tisch3
+    401804: Tisch4
+    401806: TischBein
+    401808: TischBein 1
+    401810: TischBein 2
+    401812: TischBein 3
+    401814: TischBein1
+    401816: TischBein1 1
+    401818: TischBein1 2
+    401820: TischBein1 3
+    401822: TischBein2
+    401824: TischBein2 1
+    401826: TischBein2 2
+    401828: TischBein2 3
+    401830: TischBein3
+    401832: TischBein3 1
+    401834: TischBein3 2
+    401836: TischBein3 3
+    401838: TischLampe
+    401840: TischLampenArm
+    401842: "TischLampenFu\xDF"
+    401844: TischLampenKopf
+    401846: Tischplatte
+    401848: Tischplatte 1
+    401850: Tischplatte 2
+    401852: Tischplatte 3
+    401854: treppe
+    401856: Wand
+    401858: Wand1
+    401860: WandSteine
+    401862: WandSteine1
+    401864: WandSteine1_group1
+    401866: WandSteine1_group10
+    401868: WandSteine1_group11
+    401870: WandSteine1_group15
+    401872: WandSteine1_group16
+    401874: WandSteine1_group17
+    401876: WandSteine1_group18
+    401878: WandSteine1_group19
+    401880: WandSteine1_group2
+    401882: WandSteine1_group20
+    401884: WandSteine1_group21
+    401886: WandSteine1_group22
+    401888: WandSteine1_group23
+    401890: WandSteine1_group3
+    401892: WandSteine1_group4
+    401894: WandSteine1_group5
+    401896: WandSteine1_group6
+    401898: WandSteine1_group7
+    401900: WandSteine1_group8
+    401902: WandSteine1_group9
+    401904: WandSteine2
+    401906: WandSteine_group1
+    401908: WandSteine_group10
+    401910: WandSteine_group11
+    401912: WandSteine_group15
+    401914: WandSteine_group16
+    401916: WandSteine_group17
+    401918: WandSteine_group18
+    401920: WandSteine_group19
+    401922: WandSteine_group2
+    401924: WandSteine_group20
+    401926: WandSteine_group21
+    401928: WandSteine_group22
+    401930: WandSteine_group23
+    401932: WandSteine_group3
+    401934: WandSteine_group4
+    401936: WandSteine_group5
+    401938: WandSteine_group6
+    401940: WandSteine_group7
+    401942: WandSteine_group8
+    401944: WandSteine_group9
+    401946: "W\xE4nde"
+    401948: Zentrifuge
+    2100000: TreppenFarbe
+    2100002: TreppenStufenFarbe
+    2100004: DeckenLampeNFarbe
+    2100006: DeckenKabelAbdeckungsFarbe
+    2100008: DeckenLampenKabel
+    2100010: "DeckenLampeGl\xFChbirne"
+    2100012: SteinFarbe1
+    2100014: SteinFarbe2
+    2100016: SteinFarbe6
+    2100018: SteinFarbe5
+    2100020: SteinFarbe3
+    2100022: SteinFarbe4
+    2100024: WandFarbe
+    2100026: FlipChartPapierFarbe2
+    2100028: lambert1
+    2100030: FlipChartStiftHalter
+    2100032: FlipChartPapierFarbe
+    2100034: FlipStiftBody
+    2100036: FlipStiftDeckel
+    2100038: FlipStiftDeckel2
+    2100040: "FlipChartGummFu\xDF"
+    2100042: FlipchartBeine
+    2100044: KabelSchwarzFarbe
+    2100046: ServerSchrankFarbe
+    2100048: "ServerVorS\xE4tze"
+    2100050: "Gr\xFCneServerLampe"
+    2100052: ServerLampen
+    2100054: "ServerVorts\xE4tze2"
+    2100056: TischplattenFarbe
+    2100058: Tischbein
+    2100060: PottedPlant_lambert4
+    2100062: PottedPlant_lambert2
+    2100064: PottedPlant_lambert3
+    2100066: BodenFarbe
+    2100068: KaffeeTassenFarbe
+    2100070: KaffeeFarbe
+    2100072: TafelFarbe
+    2100074: "TafelFl\xE4chenFarbe"
+    2100076: KaffeMaschinenKnopfFarbe
+    2100078: KaffeKannenFarbe
+    2100080: KaffeKannenGriff
+    2100082: KaffeMaschienenFarbe
+    2100084: KaffeMaschienenAbtropfSchwarz1
+    2100086: KaffemaschinenAbtropfGitter
+    2100088: "KaffeMaschinenD\xFCse"
+    2100090: BunsenBrennerGitter
+    2100092: BunsenBrennerGitterDunkel
+    2100094: BunsenBrennerGestellFarbe
+    2100096: BunsenBrennerFarbe
+    2100098: BunsenBrennerSchwarz
+    2100100: GasFlaschenFarbe
+    2100102: GasFlaschenAnschlussFarbe
+    2100104: GasFlaschenBemahlungFarbe
+    2100106: GasFlaschenSchlauch
+    2100108: ReagenzInhaltFarbe
+    2100110: ReagenzGlasFarbe
+    2100112: ZentrifugenFarbe
+    2100114: ZentrifugenDichtung
+    2100116: ZentrifugenDeckelFarbe
+    2100118: ReagenzienhalterFarbe
+    2100120: ComputerFarbe
+    2100122: LaufwerkFarbe
+    2100124: "ComputerR\xFCckseitenFarbe"
+    2100126: "ComputerL\xFCckenFarbe"
+    2100128: TastaturFarbe
+    2100130: TastaturTastenFarben
+    2100132: MausFarbe
+    2100134: MausTastenFarbe
+    2100136: TischLampenFarbe
+    2100138: TischLampenBirneFarbe
+    2100140: monitor_Monitor1
+    2100142: monitor_MonitorAnzeige
+    2100144: LaborHockerFarbe
+    2100146: "LaborHockerSitzFl\xE4cheFarbe"
+    2100148: LaborHockerRadFarbe
+    2100150: PostItFarbe
+    2100152: "L\xF6tUnterlagenFarbe"
+    2100154: LotionCaptureModulator_lambert15
+    2100156: LotionCaptureModulator_lambert17
+    2100158: LotionCaptureModulator_lambert16
+    2100160: LotionCaptureModulator_lambert2
+    2100162: LotionCaptureModulator_lambert3
+    2100164: LotionCaptureModulator_lambert4
+    2100166: LotionCaptureModulator_lambert5
+    2100168: LotionCaptureModulator_lambert6
+    2100170: LotionCaptureModulator_lambert7
+    2100172: LotionCaptureModulator_lambert8
+    2100174: LotionCaptureModulator_lambert9
+    2100176: LotionCaptureModulator_lambert10
+    2100178: LotionCaptureModulator_lambert11
+    2100180: LotionCaptureModulator_lambert12
+    2100182: LotionCaptureModulator_lambert13
+    2100184: LotionCaptureModulator_lambert14
+    2100186: "L\xF6tKolbenGer\xE4t"
+    2100188: "L\xF6tkolbenGer\xE4tFront"
+    2100190: "L\xF6tKo\xF6benSchwamm"
+    2100192: "L\xF6tkolbenSpirale"
+    2100194: "L\xF6tkolbenFarbe"
+    2100196: "L\xF6tkolbenEndeFarbe"
+    2100198: "L\xF6tkolbenSptizeFarbe"
+    2300000: Birne
+    2300002: Boden
+    2300004: BunsenBrenner
+    2300006: Computer
+    2300008: DeckenLampe
+    2300010: DeckenLampe1
+    2300012: DeckenLampe2
+    2300014: DeckenLampe3
+    2300016: "DeckenLampenGl\xFChbirne"
+    2300018: "DeckenLampenGl\xFChbirne 1"
+    2300020: "DeckenLampenGl\xFChbirne 2"
+    2300022: "DeckenLampenGl\xFChbirne 3"
+    2300024: DeckenLampenKabel1
+    2300026: DeckenLampenKabel1 1
+    2300028: DeckenLampenKabel1 2
+    2300030: DeckenLampenKabel1 3
+    2300032: DeckenLampenKabel2
+    2300034: DeckenLampenKabel2 1
+    2300036: DeckenLampenKabel2 2
+    2300038: DeckenLampenKabelAbdeckung
+    2300040: DeckenLampenKabelAbdeckung 1
+    2300042: DeckenLampenKabelAbdeckung 2
+    2300044: DeckenLampenKabelAbdeckung 3
+    2300046: DeckenLampenKabelAbdeckung1
+    2300048: DeckenLampenKabelAbdeckung1 1
+    2300050: DeckenLampenKabelAbdeckung1 2
+    2300052: DeckenLampenKabelAbdeckung1 3
+    2300054: "D\xFCse"
+    2300056: FlipChartBody
+    2300058: FlipChartPapier
+    2300060: FlipChartUmgeschlagenesPapier
+    2300062: FlipStift
+    2300064: FlipStift1
+    2300066: GasFlasche
+    2300068: Kabel1
+    2300070: Kabel10
+    2300072: Kabel2
+    2300074: Kabel3
+    2300076: Kabel4
+    2300078: Kabel5
+    2300080: Kabel6
+    2300082: Kabel7
+    2300084: Kabel8
+    2300086: Kabel9
+    2300088: Kaffe
+    2300090: Kaffe 1
+    2300092: KaffeInKanne
+    2300094: KaffeKanne
+    2300096: KaffeMaschine
+    2300098: KaffeMaschinenKnopf
+    2300100: KaffeMaschinenKnopf1
+    2300102: KaffeMaschinenKnopf10
+    2300104: KaffeMaschinenKnopf11
+    2300106: KaffeMaschinenKnopf12
+    2300108: KaffeMaschinenKnopf13
+    2300110: KaffeMaschinenKnopf14
+    2300112: KaffeMaschinenKnopf15
+    2300114: KaffeMaschinenKnopf16
+    2300116: KaffeMaschinenKnopf2
+    2300118: KaffeMaschinenKnopf3
+    2300120: KaffeMaschinenKnopf4
+    2300122: KaffeMaschinenKnopf5
+    2300124: KaffeMaschinenKnopf6
+    2300126: KaffeMaschinenKnopf7
+    2300128: KaffeMaschinenKnopf8
+    2300130: KaffeMaschinenKnopf9
+    2300132: KaffeTasse
+    2300134: KaffeTasse1
+    2300136: KaffeTasse2
+    2300138: LotionCaptureModulator2
+    2300140: LotionCaptureModulator:pCone1
+    2300142: LotionCaptureModulator:pCone2
+    2300144: LotionCaptureModulator:pCone3
+    2300146: LotionCaptureModulator:pCube2
+    2300148: LotionCaptureModulator:pCube3
+    2300150: LotionCaptureModulator:pCube4
+    2300152: LotionCaptureModulator:pCube5
+    2300154: LotionCaptureModulator:pCylinder1
+    2300156: LotionCaptureModulator:pCylinder2
+    2300158: LotionCaptureModulator:pCylinder3
+    2300160: LotionCaptureModulator:pCylinder4
+    2300162: LotionCaptureModulator:pSphere1
+    2300164: LotionCaptureModulator:pSphere2
+    2300166: LotionCaptureModulator:pTorus1
+    2300168: LotionCaptureModulator:pTorus2
+    2300170: "L\xF6tkolben1"
+    2300172: "L\xF6tUnterlage"
+    2300174: Maus
+    2300176: monitor:Monitor
+    2300178: pCube1
+    2300180: pCube1 1
+    2300182: pCube10
+    2300184: pCube2
+    2300186: pCube2 1
+    2300188: pCube3
+    2300190: pCube3 1
+    2300192: pCube4
+    2300194: pCube5
+    2300196: pCube6
+    2300198: pCube7
+    2300200: pCube8
+    2300202: pCube9
+    2300204: pCylinder1
+    2300206: pCylinder10
+    2300208: pCylinder11
+    2300210: pCylinder12
+    2300212: pCylinder13
+    2300214: pCylinder14
+    2300216: pCylinder15
+    2300218: pCylinder16
+    2300220: pCylinder17
+    2300222: pCylinder2
+    2300224: pCylinder3
+    2300226: pCylinder4
+    2300228: pCylinder5
+    2300230: pCylinder6
+    2300232: pCylinder7
+    2300234: pCylinder8
+    2300236: pCylinder9
+    2300238: PostIt
+    2300240: PostIt1
+    2300242: PostIt2
+    2300244: PostIt3
+    2300246: PostIt4
+    2300248: PostIt5
+    2300250: PostIt6
+    2300252: PostIt7
+    2300254: PottedPlant:pCube1
+    2300256: PottedPlant:pCube2
+    2300258: PottedPlant:pCube3
+    2300260: PottedPlant:pCube4
+    2300262: PottedPlant:pCylinder1
+    2300264: pPlane1
+    2300266: pSphere1
+    2300268: pSphere2
+    2300270: pSphere3
+    2300272: pSphere4
+    2300274: pSphere5
+    2300276: pSphere6
+    2300278: pTorus1
+    2300280: pTorus2
+    2300282: pTorus3
+    2300284: pTorus4
+    2300286: pTorus5
+    2300288: ReagenzGlas
+    2300290: Schwamm
+    2300292: ServerSchrank
+    2300294: Stein
+    2300296: Stein 1
+    2300298: Stein 10
+    2300300: Stein 11
+    2300302: Stein 12
+    2300304: Stein 13
+    2300306: Stein 14
+    2300308: Stein 15
+    2300310: Stein 16
+    2300312: Stein 17
+    2300314: Stein 18
+    2300316: Stein 19
+    2300318: Stein 2
+    2300320: Stein 20
+    2300322: Stein 21
+    2300324: Stein 3
+    2300326: Stein 4
+    2300328: Stein 5
+    2300330: Stein 6
+    2300332: Stein 7
+    2300334: Stein 8
+    2300336: Stein 9
+    2300338: Stein1
+    2300340: Stein1 1
+    2300342: Stein1 10
+    2300344: Stein1 11
+    2300346: Stein1 12
+    2300348: Stein1 13
+    2300350: Stein1 14
+    2300352: Stein1 15
+    2300354: Stein1 16
+    2300356: Stein1 17
+    2300358: Stein1 18
+    2300360: Stein1 19
+    2300362: Stein1 2
+    2300364: Stein1 20
+    2300366: Stein1 21
+    2300368: Stein1 22
+    2300370: Stein1 23
+    2300372: Stein1 24
+    2300374: Stein1 25
+    2300376: Stein1 26
+    2300378: Stein1 27
+    2300380: Stein1 28
+    2300382: Stein1 29
+    2300384: Stein1 3
+    2300386: Stein1 30
+    2300388: Stein1 31
+    2300390: Stein1 32
+    2300392: Stein1 4
+    2300394: Stein1 5
+    2300396: Stein1 6
+    2300398: Stein1 7
+    2300400: Stein1 8
+    2300402: Stein1 9
+    2300404: Stein10
+    2300406: Stein10 1
+    2300408: Stein10 10
+    2300410: Stein10 11
+    2300412: Stein10 12
+    2300414: Stein10 13
+    2300416: Stein10 14
+    2300418: Stein10 15
+    2300420: Stein10 16
+    2300422: Stein10 17
+    2300424: Stein10 18
+    2300426: Stein10 19
+    2300428: Stein10 2
+    2300430: Stein10 20
+    2300432: Stein10 21
+    2300434: Stein10 3
+    2300436: Stein10 4
+    2300438: Stein10 5
+    2300440: Stein10 6
+    2300442: Stein10 7
+    2300444: Stein10 8
+    2300446: Stein10 9
+    2300448: Stein11
+    2300450: Stein11 1
+    2300452: Stein11 10
+    2300454: Stein11 11
+    2300456: Stein11 12
+    2300458: Stein11 13
+    2300460: Stein11 14
+    2300462: Stein11 15
+    2300464: Stein11 16
+    2300466: Stein11 17
+    2300468: Stein11 18
+    2300470: Stein11 19
+    2300472: Stein11 2
+    2300474: Stein11 20
+    2300476: Stein11 21
+    2300478: Stein11 3
+    2300480: Stein11 4
+    2300482: Stein11 5
+    2300484: Stein11 6
+    2300486: Stein11 7
+    2300488: Stein11 8
+    2300490: Stein11 9
+    2300492: Stein12
+    2300494: Stein12 1
+    2300496: Stein12 10
+    2300498: Stein12 11
+    2300500: Stein12 12
+    2300502: Stein12 13
+    2300504: Stein12 14
+    2300506: Stein12 15
+    2300508: Stein12 16
+    2300510: Stein12 17
+    2300512: Stein12 18
+    2300514: Stein12 19
+    2300516: Stein12 2
+    2300518: Stein12 20
+    2300520: Stein12 21
+    2300522: Stein12 3
+    2300524: Stein12 4
+    2300526: Stein12 5
+    2300528: Stein12 6
+    2300530: Stein12 7
+    2300532: Stein12 8
+    2300534: Stein12 9
+    2300536: Stein13
+    2300538: Stein13 1
+    2300540: Stein13 10
+    2300542: Stein13 11
+    2300544: Stein13 12
+    2300546: Stein13 13
+    2300548: Stein13 14
+    2300550: Stein13 15
+    2300552: Stein13 16
+    2300554: Stein13 17
+    2300556: Stein13 18
+    2300558: Stein13 19
+    2300560: Stein13 2
+    2300562: Stein13 20
+    2300564: Stein13 21
+    2300566: Stein13 3
+    2300568: Stein13 4
+    2300570: Stein13 5
+    2300572: Stein13 6
+    2300574: Stein13 7
+    2300576: Stein13 8
+    2300578: Stein13 9
+    2300580: Stein14
+    2300582: Stein14 1
+    2300584: Stein14 10
+    2300586: Stein14 11
+    2300588: Stein14 12
+    2300590: Stein14 13
+    2300592: Stein14 14
+    2300594: Stein14 15
+    2300596: Stein14 16
+    2300598: Stein14 17
+    2300600: Stein14 18
+    2300602: Stein14 19
+    2300604: Stein14 2
+    2300606: Stein14 20
+    2300608: Stein14 21
+    2300610: Stein14 3
+    2300612: Stein14 4
+    2300614: Stein14 5
+    2300616: Stein14 6
+    2300618: Stein14 7
+    2300620: Stein14 8
+    2300622: Stein14 9
+    2300624: Stein15
+    2300626: Stein15 1
+    2300628: Stein15 10
+    2300630: Stein15 11
+    2300632: Stein15 12
+    2300634: Stein15 13
+    2300636: Stein15 14
+    2300638: Stein15 15
+    2300640: Stein15 16
+    2300642: Stein15 17
+    2300644: Stein15 18
+    2300646: Stein15 19
+    2300648: Stein15 2
+    2300650: Stein15 20
+    2300652: Stein15 21
+    2300654: Stein15 3
+    2300656: Stein15 4
+    2300658: Stein15 5
+    2300660: Stein15 6
+    2300662: Stein15 7
+    2300664: Stein15 8
+    2300666: Stein15 9
+    2300668: Stein16
+    2300670: Stein16 1
+    2300672: Stein16 10
+    2300674: Stein16 11
+    2300676: Stein16 12
+    2300678: Stein16 13
+    2300680: Stein16 14
+    2300682: Stein16 15
+    2300684: Stein16 16
+    2300686: Stein16 17
+    2300688: Stein16 18
+    2300690: Stein16 19
+    2300692: Stein16 2
+    2300694: Stein16 20
+    2300696: Stein16 21
+    2300698: Stein16 3
+    2300700: Stein16 4
+    2300702: Stein16 5
+    2300704: Stein16 6
+    2300706: Stein16 7
+    2300708: Stein16 8
+    2300710: Stein16 9
+    2300712: Stein17
+    2300714: Stein17 1
+    2300716: Stein17 10
+    2300718: Stein17 11
+    2300720: Stein17 12
+    2300722: Stein17 13
+    2300724: Stein17 14
+    2300726: Stein17 15
+    2300728: Stein17 16
+    2300730: Stein17 17
+    2300732: Stein17 18
+    2300734: Stein17 19
+    2300736: Stein17 2
+    2300738: Stein17 20
+    2300740: Stein17 21
+    2300742: Stein17 3
+    2300744: Stein17 4
+    2300746: Stein17 5
+    2300748: Stein17 6
+    2300750: Stein17 7
+    2300752: Stein17 8
+    2300754: Stein17 9
+    2300756: Stein18
+    2300758: Stein18 1
+    2300760: Stein18 10
+    2300762: Stein18 11
+    2300764: Stein18 12
+    2300766: Stein18 13
+    2300768: Stein18 14
+    2300770: Stein18 15
+    2300772: Stein18 16
+    2300774: Stein18 17
+    2300776: Stein18 18
+    2300778: Stein18 19
+    2300780: Stein18 2
+    2300782: Stein18 20
+    2300784: Stein18 21
+    2300786: Stein18 3
+    2300788: Stein18 4
+    2300790: Stein18 5
+    2300792: Stein18 6
+    2300794: Stein18 7
+    2300796: Stein18 8
+    2300798: Stein18 9
+    2300800: Stein19
+    2300802: Stein19 1
+    2300804: Stein19 10
+    2300806: Stein19 11
+    2300808: Stein19 12
+    2300810: Stein19 13
+    2300812: Stein19 14
+    2300814: Stein19 15
+    2300816: Stein19 16
+    2300818: Stein19 17
+    2300820: Stein19 18
+    2300822: Stein19 19
+    2300824: Stein19 2
+    2300826: Stein19 20
+    2300828: Stein19 21
+    2300830: Stein19 22
+    2300832: Stein19 23
+    2300834: Stein19 24
+    2300836: Stein19 25
+    2300838: Stein19 26
+    2300840: Stein19 27
+    2300842: Stein19 28
+    2300844: Stein19 29
+    2300846: Stein19 3
+    2300848: Stein19 30
+    2300850: Stein19 31
+    2300852: Stein19 32
+    2300854: Stein19 4
+    2300856: Stein19 5
+    2300858: Stein19 6
+    2300860: Stein19 7
+    2300862: Stein19 8
+    2300864: Stein19 9
+    2300866: Stein2
+    2300868: Stein2 1
+    2300870: Stein2 10
+    2300872: Stein2 11
+    2300874: Stein2 12
+    2300876: Stein2 13
+    2300878: Stein2 14
+    2300880: Stein2 15
+    2300882: Stein2 16
+    2300884: Stein2 17
+    2300886: Stein2 18
+    2300888: Stein2 19
+    2300890: Stein2 2
+    2300892: Stein2 20
+    2300894: Stein2 21
+    2300896: Stein2 22
+    2300898: Stein2 23
+    2300900: Stein2 24
+    2300902: Stein2 25
+    2300904: Stein2 26
+    2300906: Stein2 27
+    2300908: Stein2 28
+    2300910: Stein2 29
+    2300912: Stein2 3
+    2300914: Stein2 30
+    2300916: Stein2 31
+    2300918: Stein2 32
+    2300920: Stein2 4
+    2300922: Stein2 5
+    2300924: Stein2 6
+    2300926: Stein2 7
+    2300928: Stein2 8
+    2300930: Stein2 9
+    2300932: Stein20
+    2300934: Stein20 1
+    2300936: Stein20 10
+    2300938: Stein20 11
+    2300940: Stein20 12
+    2300942: Stein20 13
+    2300944: Stein20 14
+    2300946: Stein20 15
+    2300948: Stein20 16
+    2300950: Stein20 17
+    2300952: Stein20 18
+    2300954: Stein20 19
+    2300956: Stein20 2
+    2300958: Stein20 20
+    2300960: Stein20 21
+    2300962: Stein20 22
+    2300964: Stein20 23
+    2300966: Stein20 24
+    2300968: Stein20 25
+    2300970: Stein20 26
+    2300972: Stein20 27
+    2300974: Stein20 28
+    2300976: Stein20 29
+    2300978: Stein20 3
+    2300980: Stein20 30
+    2300982: Stein20 31
+    2300984: Stein20 32
+    2300986: Stein20 4
+    2300988: Stein20 5
+    2300990: Stein20 6
+    2300992: Stein20 7
+    2300994: Stein20 8
+    2300996: Stein20 9
+    2300998: Stein21
+    2301000: Stein21 1
+    2301002: Stein21 10
+    2301004: Stein21 11
+    2301006: Stein21 12
+    2301008: Stein21 13
+    2301010: Stein21 14
+    2301012: Stein21 15
+    2301014: Stein21 16
+    2301016: Stein21 17
+    2301018: Stein21 18
+    2301020: Stein21 19
+    2301022: Stein21 2
+    2301024: Stein21 20
+    2301026: Stein21 21
+    2301028: Stein21 22
+    2301030: Stein21 23
+    2301032: Stein21 24
+    2301034: Stein21 25
+    2301036: Stein21 26
+    2301038: Stein21 27
+    2301040: Stein21 28
+    2301042: Stein21 29
+    2301044: Stein21 3
+    2301046: Stein21 30
+    2301048: Stein21 31
+    2301050: Stein21 32
+    2301052: Stein21 4
+    2301054: Stein21 5
+    2301056: Stein21 6
+    2301058: Stein21 7
+    2301060: Stein21 8
+    2301062: Stein21 9
+    2301064: Stein22
+    2301066: Stein22 1
+    2301068: Stein22 10
+    2301070: Stein22 11
+    2301072: Stein22 12
+    2301074: Stein22 13
+    2301076: Stein22 14
+    2301078: Stein22 15
+    2301080: Stein22 16
+    2301082: Stein22 17
+    2301084: Stein22 18
+    2301086: Stein22 19
+    2301088: Stein22 2
+    2301090: Stein22 20
+    2301092: Stein22 21
+    2301094: Stein22 22
+    2301096: Stein22 23
+    2301098: Stein22 24
+    2301100: Stein22 25
+    2301102: Stein22 26
+    2301104: Stein22 27
+    2301106: Stein22 28
+    2301108: Stein22 29
+    2301110: Stein22 3
+    2301112: Stein22 30
+    2301114: Stein22 31
+    2301116: Stein22 32
+    2301118: Stein22 4
+    2301120: Stein22 5
+    2301122: Stein22 6
+    2301124: Stein22 7
+    2301126: Stein22 8
+    2301128: Stein22 9
+    2301130: Stein23
+    2301132: Stein23 1
+    2301134: Stein23 10
+    2301136: Stein23 11
+    2301138: Stein23 12
+    2301140: Stein23 13
+    2301142: Stein23 14
+    2301144: Stein23 15
+    2301146: Stein23 16
+    2301148: Stein23 17
+    2301150: Stein23 18
+    2301152: Stein23 19
+    2301154: Stein23 2
+    2301156: Stein23 20
+    2301158: Stein23 21
+    2301160: Stein23 22
+    2301162: Stein23 23
+    2301164: Stein23 24
+    2301166: Stein23 25
+    2301168: Stein23 26
+    2301170: Stein23 27
+    2301172: Stein23 28
+    2301174: Stein23 29
+    2301176: Stein23 3
+    2301178: Stein23 30
+    2301180: Stein23 31
+    2301182: Stein23 32
+    2301184: Stein23 4
+    2301186: Stein23 5
+    2301188: Stein23 6
+    2301190: Stein23 7
+    2301192: Stein23 8
+    2301194: Stein23 9
+    2301196: Stein24
+    2301198: Stein24 1
+    2301200: Stein24 10
+    2301202: Stein24 11
+    2301204: Stein24 12
+    2301206: Stein24 13
+    2301208: Stein24 14
+    2301210: Stein24 15
+    2301212: Stein24 16
+    2301214: Stein24 17
+    2301216: Stein24 18
+    2301218: Stein24 19
+    2301220: Stein24 2
+    2301222: Stein24 20
+    2301224: Stein24 21
+    2301226: Stein24 22
+    2301228: Stein24 23
+    2301230: Stein24 24
+    2301232: Stein24 25
+    2301234: Stein24 26
+    2301236: Stein24 27
+    2301238: Stein24 28
+    2301240: Stein24 29
+    2301242: Stein24 3
+    2301244: Stein24 30
+    2301246: Stein24 31
+    2301248: Stein24 32
+    2301250: Stein24 4
+    2301252: Stein24 5
+    2301254: Stein24 6
+    2301256: Stein24 7
+    2301258: Stein24 8
+    2301260: Stein24 9
+    2301262: Stein25
+    2301264: Stein25 1
+    2301266: Stein25 10
+    2301268: Stein25 11
+    2301270: Stein25 12
+    2301272: Stein25 13
+    2301274: Stein25 14
+    2301276: Stein25 15
+    2301278: Stein25 16
+    2301280: Stein25 17
+    2301282: Stein25 18
+    2301284: Stein25 19
+    2301286: Stein25 2
+    2301288: Stein25 20
+    2301290: Stein25 21
+    2301292: Stein25 3
+    2301294: Stein25 4
+    2301296: Stein25 5
+    2301298: Stein25 6
+    2301300: Stein25 7
+    2301302: Stein25 8
+    2301304: Stein25 9
+    2301306: Stein3
+    2301308: Stein3 1
+    2301310: Stein3 10
+    2301312: Stein3 11
+    2301314: Stein3 12
+    2301316: Stein3 13
+    2301318: Stein3 14
+    2301320: Stein3 15
+    2301322: Stein3 16
+    2301324: Stein3 17
+    2301326: Stein3 18
+    2301328: Stein3 19
+    2301330: Stein3 2
+    2301332: Stein3 20
+    2301334: Stein3 21
+    2301336: Stein3 22
+    2301338: Stein3 23
+    2301340: Stein3 24
+    2301342: Stein3 25
+    2301344: Stein3 26
+    2301346: Stein3 27
+    2301348: Stein3 28
+    2301350: Stein3 29
+    2301352: Stein3 3
+    2301354: Stein3 30
+    2301356: Stein3 31
+    2301358: Stein3 32
+    2301360: Stein3 4
+    2301362: Stein3 5
+    2301364: Stein3 6
+    2301366: Stein3 7
+    2301368: Stein3 8
+    2301370: Stein3 9
+    2301372: Stein4
+    2301374: Stein4 1
+    2301376: Stein4 10
+    2301378: Stein4 11
+    2301380: Stein4 12
+    2301382: Stein4 13
+    2301384: Stein4 14
+    2301386: Stein4 15
+    2301388: Stein4 16
+    2301390: Stein4 17
+    2301392: Stein4 18
+    2301394: Stein4 19
+    2301396: Stein4 2
+    2301398: Stein4 20
+    2301400: Stein4 21
+    2301402: Stein4 22
+    2301404: Stein4 23
+    2301406: Stein4 24
+    2301408: Stein4 25
+    2301410: Stein4 26
+    2301412: Stein4 27
+    2301414: Stein4 28
+    2301416: Stein4 29
+    2301418: Stein4 3
+    2301420: Stein4 30
+    2301422: Stein4 31
+    2301424: Stein4 32
+    2301426: Stein4 4
+    2301428: Stein4 5
+    2301430: Stein4 6
+    2301432: Stein4 7
+    2301434: Stein4 8
+    2301436: Stein4 9
+    2301438: Stein5
+    2301440: Stein5 1
+    2301442: Stein5 10
+    2301444: Stein5 11
+    2301446: Stein5 12
+    2301448: Stein5 13
+    2301450: Stein5 14
+    2301452: Stein5 15
+    2301454: Stein5 16
+    2301456: Stein5 17
+    2301458: Stein5 18
+    2301460: Stein5 19
+    2301462: Stein5 2
+    2301464: Stein5 20
+    2301466: Stein5 21
+    2301468: Stein5 22
+    2301470: Stein5 23
+    2301472: Stein5 24
+    2301474: Stein5 25
+    2301476: Stein5 26
+    2301478: Stein5 27
+    2301480: Stein5 28
+    2301482: Stein5 29
+    2301484: Stein5 3
+    2301486: Stein5 30
+    2301488: Stein5 31
+    2301490: Stein5 32
+    2301492: Stein5 4
+    2301494: Stein5 5
+    2301496: Stein5 6
+    2301498: Stein5 7
+    2301500: Stein5 8
+    2301502: Stein5 9
+    2301504: Stein6
+    2301506: Stein6 1
+    2301508: Stein6 10
+    2301510: Stein6 11
+    2301512: Stein6 12
+    2301514: Stein6 13
+    2301516: Stein6 14
+    2301518: Stein6 15
+    2301520: Stein6 16
+    2301522: Stein6 17
+    2301524: Stein6 18
+    2301526: Stein6 19
+    2301528: Stein6 2
+    2301530: Stein6 20
+    2301532: Stein6 21
+    2301534: Stein6 22
+    2301536: Stein6 23
+    2301538: Stein6 24
+    2301540: Stein6 25
+    2301542: Stein6 26
+    2301544: Stein6 27
+    2301546: Stein6 28
+    2301548: Stein6 29
+    2301550: Stein6 3
+    2301552: Stein6 30
+    2301554: Stein6 31
+    2301556: Stein6 32
+    2301558: Stein6 4
+    2301560: Stein6 5
+    2301562: Stein6 6
+    2301564: Stein6 7
+    2301566: Stein6 8
+    2301568: Stein6 9
+    2301570: Stein7
+    2301572: Stein7 1
+    2301574: Stein7 10
+    2301576: Stein7 11
+    2301578: Stein7 12
+    2301580: Stein7 13
+    2301582: Stein7 14
+    2301584: Stein7 15
+    2301586: Stein7 16
+    2301588: Stein7 17
+    2301590: Stein7 18
+    2301592: Stein7 19
+    2301594: Stein7 2
+    2301596: Stein7 20
+    2301598: Stein7 21
+    2301600: Stein7 3
+    2301602: Stein7 4
+    2301604: Stein7 5
+    2301606: Stein7 6
+    2301608: Stein7 7
+    2301610: Stein7 8
+    2301612: Stein7 9
+    2301614: Stein8
+    2301616: Stein8 1
+    2301618: Stein8 10
+    2301620: Stein8 11
+    2301622: Stein8 12
+    2301624: Stein8 13
+    2301626: Stein8 14
+    2301628: Stein8 15
+    2301630: Stein8 16
+    2301632: Stein8 17
+    2301634: Stein8 18
+    2301636: Stein8 19
+    2301638: Stein8 2
+    2301640: Stein8 20
+    2301642: Stein8 21
+    2301644: Stein8 3
+    2301646: Stein8 4
+    2301648: Stein8 5
+    2301650: Stein8 6
+    2301652: Stein8 7
+    2301654: Stein8 8
+    2301656: Stein8 9
+    2301658: Stein9
+    2301660: Stein9 1
+    2301662: Stein9 10
+    2301664: Stein9 11
+    2301666: Stein9 12
+    2301668: Stein9 13
+    2301670: Stein9 14
+    2301672: Stein9 15
+    2301674: Stein9 16
+    2301676: Stein9 17
+    2301678: Stein9 18
+    2301680: Stein9 19
+    2301682: Stein9 2
+    2301684: Stein9 20
+    2301686: Stein9 21
+    2301688: Stein9 3
+    2301690: Stein9 4
+    2301692: Stein9 5
+    2301694: Stein9 6
+    2301696: Stein9 7
+    2301698: Stein9 8
+    2301700: Stein9 9
+    2301702: Tafel
+    2301704: Tastatur
+    2301706: TischBein
+    2301708: TischBein 1
+    2301710: TischBein 2
+    2301712: TischBein 3
+    2301714: TischBein1
+    2301716: TischBein1 1
+    2301718: TischBein1 2
+    2301720: TischBein1 3
+    2301722: TischBein2
+    2301724: TischBein2 1
+    2301726: TischBein2 2
+    2301728: TischBein2 3
+    2301730: TischBein3
+    2301732: TischBein3 1
+    2301734: TischBein3 2
+    2301736: TischBein3 3
+    2301738: TischLampenArm
+    2301740: "TischLampenFu\xDF"
+    2301742: TischLampenKopf
+    2301744: Tischplatte
+    2301746: Tischplatte 1
+    2301748: Tischplatte 2
+    2301750: Tischplatte 3
+    2301752: treppe
+    2301754: Wand
+    2301756: Wand1
+    2301758: Zentrifuge
+    3300000: Birne
+    3300002: Boden
+    3300004: BunsenBrenner
+    3300006: Computer
+    3300008: DeckenLampe
+    3300010: DeckenLampe1
+    3300012: DeckenLampe2
+    3300014: DeckenLampe3
+    3300016: "DeckenLampenGl\xFChbirne"
+    3300018: "DeckenLampenGl\xFChbirne 1"
+    3300020: "DeckenLampenGl\xFChbirne 2"
+    3300022: "DeckenLampenGl\xFChbirne 3"
+    3300024: DeckenLampenKabel1
+    3300026: DeckenLampenKabel1 1
+    3300028: DeckenLampenKabel1 2
+    3300030: DeckenLampenKabel1 3
+    3300032: DeckenLampenKabel2
+    3300034: DeckenLampenKabel2 1
+    3300036: DeckenLampenKabel2 2
+    3300038: DeckenLampenKabelAbdeckung
+    3300040: DeckenLampenKabelAbdeckung 1
+    3300042: DeckenLampenKabelAbdeckung 2
+    3300044: DeckenLampenKabelAbdeckung 3
+    3300046: DeckenLampenKabelAbdeckung1
+    3300048: DeckenLampenKabelAbdeckung1 1
+    3300050: DeckenLampenKabelAbdeckung1 2
+    3300052: DeckenLampenKabelAbdeckung1 3
+    3300054: "D\xFCse"
+    3300056: FlipChartBody
+    3300058: FlipChartPapier
+    3300060: FlipChartUmgeschlagenesPapier
+    3300062: FlipStift
+    3300064: FlipStift1
+    3300066: GasFlasche
+    3300068: Kabel1
+    3300070: Kabel10
+    3300072: Kabel2
+    3300074: Kabel3
+    3300076: Kabel4
+    3300078: Kabel5
+    3300080: Kabel6
+    3300082: Kabel7
+    3300084: Kabel8
+    3300086: Kabel9
+    3300088: Kaffe
+    3300090: Kaffe 1
+    3300092: KaffeInKanne
+    3300094: KaffeKanne
+    3300096: KaffeMaschine
+    3300098: KaffeMaschinenKnopf
+    3300100: KaffeMaschinenKnopf1
+    3300102: KaffeMaschinenKnopf10
+    3300104: KaffeMaschinenKnopf11
+    3300106: KaffeMaschinenKnopf12
+    3300108: KaffeMaschinenKnopf13
+    3300110: KaffeMaschinenKnopf14
+    3300112: KaffeMaschinenKnopf15
+    3300114: KaffeMaschinenKnopf16
+    3300116: KaffeMaschinenKnopf2
+    3300118: KaffeMaschinenKnopf3
+    3300120: KaffeMaschinenKnopf4
+    3300122: KaffeMaschinenKnopf5
+    3300124: KaffeMaschinenKnopf6
+    3300126: KaffeMaschinenKnopf7
+    3300128: KaffeMaschinenKnopf8
+    3300130: KaffeMaschinenKnopf9
+    3300132: KaffeTasse
+    3300134: KaffeTasse1
+    3300136: KaffeTasse2
+    3300138: LotionCaptureModulator2
+    3300140: LotionCaptureModulator:pCone1
+    3300142: LotionCaptureModulator:pCone2
+    3300144: LotionCaptureModulator:pCone3
+    3300146: LotionCaptureModulator:pCube2
+    3300148: LotionCaptureModulator:pCube3
+    3300150: LotionCaptureModulator:pCube4
+    3300152: LotionCaptureModulator:pCube5
+    3300154: LotionCaptureModulator:pCylinder1
+    3300156: LotionCaptureModulator:pCylinder2
+    3300158: LotionCaptureModulator:pCylinder3
+    3300160: LotionCaptureModulator:pCylinder4
+    3300162: LotionCaptureModulator:pSphere1
+    3300164: LotionCaptureModulator:pSphere2
+    3300166: LotionCaptureModulator:pTorus1
+    3300168: LotionCaptureModulator:pTorus2
+    3300170: "L\xF6tkolben1"
+    3300172: "L\xF6tUnterlage"
+    3300174: Maus
+    3300176: monitor:Monitor
+    3300178: pCube1
+    3300180: pCube1 1
+    3300182: pCube10
+    3300184: pCube2
+    3300186: pCube2 1
+    3300188: pCube3
+    3300190: pCube3 1
+    3300192: pCube4
+    3300194: pCube5
+    3300196: pCube6
+    3300198: pCube7
+    3300200: pCube8
+    3300202: pCube9
+    3300204: pCylinder1
+    3300206: pCylinder10
+    3300208: pCylinder11
+    3300210: pCylinder12
+    3300212: pCylinder13
+    3300214: pCylinder14
+    3300216: pCylinder15
+    3300218: pCylinder16
+    3300220: pCylinder17
+    3300222: pCylinder2
+    3300224: pCylinder3
+    3300226: pCylinder4
+    3300228: pCylinder5
+    3300230: pCylinder6
+    3300232: pCylinder7
+    3300234: pCylinder8
+    3300236: pCylinder9
+    3300238: PostIt
+    3300240: PostIt1
+    3300242: PostIt2
+    3300244: PostIt3
+    3300246: PostIt4
+    3300248: PostIt5
+    3300250: PostIt6
+    3300252: PostIt7
+    3300254: PottedPlant:pCube1
+    3300256: PottedPlant:pCube2
+    3300258: PottedPlant:pCube3
+    3300260: PottedPlant:pCube4
+    3300262: PottedPlant:pCylinder1
+    3300264: pPlane1
+    3300266: pSphere1
+    3300268: pSphere2
+    3300270: pSphere3
+    3300272: pSphere4
+    3300274: pSphere5
+    3300276: pSphere6
+    3300278: pTorus1
+    3300280: pTorus2
+    3300282: pTorus3
+    3300284: pTorus4
+    3300286: pTorus5
+    3300288: ReagenzGlas
+    3300290: Schwamm
+    3300292: ServerSchrank
+    3300294: Stein
+    3300296: Stein 1
+    3300298: Stein 10
+    3300300: Stein 11
+    3300302: Stein 12
+    3300304: Stein 13
+    3300306: Stein 14
+    3300308: Stein 15
+    3300310: Stein 16
+    3300312: Stein 17
+    3300314: Stein 18
+    3300316: Stein 19
+    3300318: Stein 2
+    3300320: Stein 20
+    3300322: Stein 21
+    3300324: Stein 3
+    3300326: Stein 4
+    3300328: Stein 5
+    3300330: Stein 6
+    3300332: Stein 7
+    3300334: Stein 8
+    3300336: Stein 9
+    3300338: Stein1
+    3300340: Stein1 1
+    3300342: Stein1 10
+    3300344: Stein1 11
+    3300346: Stein1 12
+    3300348: Stein1 13
+    3300350: Stein1 14
+    3300352: Stein1 15
+    3300354: Stein1 16
+    3300356: Stein1 17
+    3300358: Stein1 18
+    3300360: Stein1 19
+    3300362: Stein1 2
+    3300364: Stein1 20
+    3300366: Stein1 21
+    3300368: Stein1 22
+    3300370: Stein1 23
+    3300372: Stein1 24
+    3300374: Stein1 25
+    3300376: Stein1 26
+    3300378: Stein1 27
+    3300380: Stein1 28
+    3300382: Stein1 29
+    3300384: Stein1 3
+    3300386: Stein1 30
+    3300388: Stein1 31
+    3300390: Stein1 32
+    3300392: Stein1 4
+    3300394: Stein1 5
+    3300396: Stein1 6
+    3300398: Stein1 7
+    3300400: Stein1 8
+    3300402: Stein1 9
+    3300404: Stein10
+    3300406: Stein10 1
+    3300408: Stein10 10
+    3300410: Stein10 11
+    3300412: Stein10 12
+    3300414: Stein10 13
+    3300416: Stein10 14
+    3300418: Stein10 15
+    3300420: Stein10 16
+    3300422: Stein10 17
+    3300424: Stein10 18
+    3300426: Stein10 19
+    3300428: Stein10 2
+    3300430: Stein10 20
+    3300432: Stein10 21
+    3300434: Stein10 3
+    3300436: Stein10 4
+    3300438: Stein10 5
+    3300440: Stein10 6
+    3300442: Stein10 7
+    3300444: Stein10 8
+    3300446: Stein10 9
+    3300448: Stein11
+    3300450: Stein11 1
+    3300452: Stein11 10
+    3300454: Stein11 11
+    3300456: Stein11 12
+    3300458: Stein11 13
+    3300460: Stein11 14
+    3300462: Stein11 15
+    3300464: Stein11 16
+    3300466: Stein11 17
+    3300468: Stein11 18
+    3300470: Stein11 19
+    3300472: Stein11 2
+    3300474: Stein11 20
+    3300476: Stein11 21
+    3300478: Stein11 3
+    3300480: Stein11 4
+    3300482: Stein11 5
+    3300484: Stein11 6
+    3300486: Stein11 7
+    3300488: Stein11 8
+    3300490: Stein11 9
+    3300492: Stein12
+    3300494: Stein12 1
+    3300496: Stein12 10
+    3300498: Stein12 11
+    3300500: Stein12 12
+    3300502: Stein12 13
+    3300504: Stein12 14
+    3300506: Stein12 15
+    3300508: Stein12 16
+    3300510: Stein12 17
+    3300512: Stein12 18
+    3300514: Stein12 19
+    3300516: Stein12 2
+    3300518: Stein12 20
+    3300520: Stein12 21
+    3300522: Stein12 3
+    3300524: Stein12 4
+    3300526: Stein12 5
+    3300528: Stein12 6
+    3300530: Stein12 7
+    3300532: Stein12 8
+    3300534: Stein12 9
+    3300536: Stein13
+    3300538: Stein13 1
+    3300540: Stein13 10
+    3300542: Stein13 11
+    3300544: Stein13 12
+    3300546: Stein13 13
+    3300548: Stein13 14
+    3300550: Stein13 15
+    3300552: Stein13 16
+    3300554: Stein13 17
+    3300556: Stein13 18
+    3300558: Stein13 19
+    3300560: Stein13 2
+    3300562: Stein13 20
+    3300564: Stein13 21
+    3300566: Stein13 3
+    3300568: Stein13 4
+    3300570: Stein13 5
+    3300572: Stein13 6
+    3300574: Stein13 7
+    3300576: Stein13 8
+    3300578: Stein13 9
+    3300580: Stein14
+    3300582: Stein14 1
+    3300584: Stein14 10
+    3300586: Stein14 11
+    3300588: Stein14 12
+    3300590: Stein14 13
+    3300592: Stein14 14
+    3300594: Stein14 15
+    3300596: Stein14 16
+    3300598: Stein14 17
+    3300600: Stein14 18
+    3300602: Stein14 19
+    3300604: Stein14 2
+    3300606: Stein14 20
+    3300608: Stein14 21
+    3300610: Stein14 3
+    3300612: Stein14 4
+    3300614: Stein14 5
+    3300616: Stein14 6
+    3300618: Stein14 7
+    3300620: Stein14 8
+    3300622: Stein14 9
+    3300624: Stein15
+    3300626: Stein15 1
+    3300628: Stein15 10
+    3300630: Stein15 11
+    3300632: Stein15 12
+    3300634: Stein15 13
+    3300636: Stein15 14
+    3300638: Stein15 15
+    3300640: Stein15 16
+    3300642: Stein15 17
+    3300644: Stein15 18
+    3300646: Stein15 19
+    3300648: Stein15 2
+    3300650: Stein15 20
+    3300652: Stein15 21
+    3300654: Stein15 3
+    3300656: Stein15 4
+    3300658: Stein15 5
+    3300660: Stein15 6
+    3300662: Stein15 7
+    3300664: Stein15 8
+    3300666: Stein15 9
+    3300668: Stein16
+    3300670: Stein16 1
+    3300672: Stein16 10
+    3300674: Stein16 11
+    3300676: Stein16 12
+    3300678: Stein16 13
+    3300680: Stein16 14
+    3300682: Stein16 15
+    3300684: Stein16 16
+    3300686: Stein16 17
+    3300688: Stein16 18
+    3300690: Stein16 19
+    3300692: Stein16 2
+    3300694: Stein16 20
+    3300696: Stein16 21
+    3300698: Stein16 3
+    3300700: Stein16 4
+    3300702: Stein16 5
+    3300704: Stein16 6
+    3300706: Stein16 7
+    3300708: Stein16 8
+    3300710: Stein16 9
+    3300712: Stein17
+    3300714: Stein17 1
+    3300716: Stein17 10
+    3300718: Stein17 11
+    3300720: Stein17 12
+    3300722: Stein17 13
+    3300724: Stein17 14
+    3300726: Stein17 15
+    3300728: Stein17 16
+    3300730: Stein17 17
+    3300732: Stein17 18
+    3300734: Stein17 19
+    3300736: Stein17 2
+    3300738: Stein17 20
+    3300740: Stein17 21
+    3300742: Stein17 3
+    3300744: Stein17 4
+    3300746: Stein17 5
+    3300748: Stein17 6
+    3300750: Stein17 7
+    3300752: Stein17 8
+    3300754: Stein17 9
+    3300756: Stein18
+    3300758: Stein18 1
+    3300760: Stein18 10
+    3300762: Stein18 11
+    3300764: Stein18 12
+    3300766: Stein18 13
+    3300768: Stein18 14
+    3300770: Stein18 15
+    3300772: Stein18 16
+    3300774: Stein18 17
+    3300776: Stein18 18
+    3300778: Stein18 19
+    3300780: Stein18 2
+    3300782: Stein18 20
+    3300784: Stein18 21
+    3300786: Stein18 3
+    3300788: Stein18 4
+    3300790: Stein18 5
+    3300792: Stein18 6
+    3300794: Stein18 7
+    3300796: Stein18 8
+    3300798: Stein18 9
+    3300800: Stein19
+    3300802: Stein19 1
+    3300804: Stein19 10
+    3300806: Stein19 11
+    3300808: Stein19 12
+    3300810: Stein19 13
+    3300812: Stein19 14
+    3300814: Stein19 15
+    3300816: Stein19 16
+    3300818: Stein19 17
+    3300820: Stein19 18
+    3300822: Stein19 19
+    3300824: Stein19 2
+    3300826: Stein19 20
+    3300828: Stein19 21
+    3300830: Stein19 22
+    3300832: Stein19 23
+    3300834: Stein19 24
+    3300836: Stein19 25
+    3300838: Stein19 26
+    3300840: Stein19 27
+    3300842: Stein19 28
+    3300844: Stein19 29
+    3300846: Stein19 3
+    3300848: Stein19 30
+    3300850: Stein19 31
+    3300852: Stein19 32
+    3300854: Stein19 4
+    3300856: Stein19 5
+    3300858: Stein19 6
+    3300860: Stein19 7
+    3300862: Stein19 8
+    3300864: Stein19 9
+    3300866: Stein2
+    3300868: Stein2 1
+    3300870: Stein2 10
+    3300872: Stein2 11
+    3300874: Stein2 12
+    3300876: Stein2 13
+    3300878: Stein2 14
+    3300880: Stein2 15
+    3300882: Stein2 16
+    3300884: Stein2 17
+    3300886: Stein2 18
+    3300888: Stein2 19
+    3300890: Stein2 2
+    3300892: Stein2 20
+    3300894: Stein2 21
+    3300896: Stein2 22
+    3300898: Stein2 23
+    3300900: Stein2 24
+    3300902: Stein2 25
+    3300904: Stein2 26
+    3300906: Stein2 27
+    3300908: Stein2 28
+    3300910: Stein2 29
+    3300912: Stein2 3
+    3300914: Stein2 30
+    3300916: Stein2 31
+    3300918: Stein2 32
+    3300920: Stein2 4
+    3300922: Stein2 5
+    3300924: Stein2 6
+    3300926: Stein2 7
+    3300928: Stein2 8
+    3300930: Stein2 9
+    3300932: Stein20
+    3300934: Stein20 1
+    3300936: Stein20 10
+    3300938: Stein20 11
+    3300940: Stein20 12
+    3300942: Stein20 13
+    3300944: Stein20 14
+    3300946: Stein20 15
+    3300948: Stein20 16
+    3300950: Stein20 17
+    3300952: Stein20 18
+    3300954: Stein20 19
+    3300956: Stein20 2
+    3300958: Stein20 20
+    3300960: Stein20 21
+    3300962: Stein20 22
+    3300964: Stein20 23
+    3300966: Stein20 24
+    3300968: Stein20 25
+    3300970: Stein20 26
+    3300972: Stein20 27
+    3300974: Stein20 28
+    3300976: Stein20 29
+    3300978: Stein20 3
+    3300980: Stein20 30
+    3300982: Stein20 31
+    3300984: Stein20 32
+    3300986: Stein20 4
+    3300988: Stein20 5
+    3300990: Stein20 6
+    3300992: Stein20 7
+    3300994: Stein20 8
+    3300996: Stein20 9
+    3300998: Stein21
+    3301000: Stein21 1
+    3301002: Stein21 10
+    3301004: Stein21 11
+    3301006: Stein21 12
+    3301008: Stein21 13
+    3301010: Stein21 14
+    3301012: Stein21 15
+    3301014: Stein21 16
+    3301016: Stein21 17
+    3301018: Stein21 18
+    3301020: Stein21 19
+    3301022: Stein21 2
+    3301024: Stein21 20
+    3301026: Stein21 21
+    3301028: Stein21 22
+    3301030: Stein21 23
+    3301032: Stein21 24
+    3301034: Stein21 25
+    3301036: Stein21 26
+    3301038: Stein21 27
+    3301040: Stein21 28
+    3301042: Stein21 29
+    3301044: Stein21 3
+    3301046: Stein21 30
+    3301048: Stein21 31
+    3301050: Stein21 32
+    3301052: Stein21 4
+    3301054: Stein21 5
+    3301056: Stein21 6
+    3301058: Stein21 7
+    3301060: Stein21 8
+    3301062: Stein21 9
+    3301064: Stein22
+    3301066: Stein22 1
+    3301068: Stein22 10
+    3301070: Stein22 11
+    3301072: Stein22 12
+    3301074: Stein22 13
+    3301076: Stein22 14
+    3301078: Stein22 15
+    3301080: Stein22 16
+    3301082: Stein22 17
+    3301084: Stein22 18
+    3301086: Stein22 19
+    3301088: Stein22 2
+    3301090: Stein22 20
+    3301092: Stein22 21
+    3301094: Stein22 22
+    3301096: Stein22 23
+    3301098: Stein22 24
+    3301100: Stein22 25
+    3301102: Stein22 26
+    3301104: Stein22 27
+    3301106: Stein22 28
+    3301108: Stein22 29
+    3301110: Stein22 3
+    3301112: Stein22 30
+    3301114: Stein22 31
+    3301116: Stein22 32
+    3301118: Stein22 4
+    3301120: Stein22 5
+    3301122: Stein22 6
+    3301124: Stein22 7
+    3301126: Stein22 8
+    3301128: Stein22 9
+    3301130: Stein23
+    3301132: Stein23 1
+    3301134: Stein23 10
+    3301136: Stein23 11
+    3301138: Stein23 12
+    3301140: Stein23 13
+    3301142: Stein23 14
+    3301144: Stein23 15
+    3301146: Stein23 16
+    3301148: Stein23 17
+    3301150: Stein23 18
+    3301152: Stein23 19
+    3301154: Stein23 2
+    3301156: Stein23 20
+    3301158: Stein23 21
+    3301160: Stein23 22
+    3301162: Stein23 23
+    3301164: Stein23 24
+    3301166: Stein23 25
+    3301168: Stein23 26
+    3301170: Stein23 27
+    3301172: Stein23 28
+    3301174: Stein23 29
+    3301176: Stein23 3
+    3301178: Stein23 30
+    3301180: Stein23 31
+    3301182: Stein23 32
+    3301184: Stein23 4
+    3301186: Stein23 5
+    3301188: Stein23 6
+    3301190: Stein23 7
+    3301192: Stein23 8
+    3301194: Stein23 9
+    3301196: Stein24
+    3301198: Stein24 1
+    3301200: Stein24 10
+    3301202: Stein24 11
+    3301204: Stein24 12
+    3301206: Stein24 13
+    3301208: Stein24 14
+    3301210: Stein24 15
+    3301212: Stein24 16
+    3301214: Stein24 17
+    3301216: Stein24 18
+    3301218: Stein24 19
+    3301220: Stein24 2
+    3301222: Stein24 20
+    3301224: Stein24 21
+    3301226: Stein24 22
+    3301228: Stein24 23
+    3301230: Stein24 24
+    3301232: Stein24 25
+    3301234: Stein24 26
+    3301236: Stein24 27
+    3301238: Stein24 28
+    3301240: Stein24 29
+    3301242: Stein24 3
+    3301244: Stein24 30
+    3301246: Stein24 31
+    3301248: Stein24 32
+    3301250: Stein24 4
+    3301252: Stein24 5
+    3301254: Stein24 6
+    3301256: Stein24 7
+    3301258: Stein24 8
+    3301260: Stein24 9
+    3301262: Stein25
+    3301264: Stein25 1
+    3301266: Stein25 10
+    3301268: Stein25 11
+    3301270: Stein25 12
+    3301272: Stein25 13
+    3301274: Stein25 14
+    3301276: Stein25 15
+    3301278: Stein25 16
+    3301280: Stein25 17
+    3301282: Stein25 18
+    3301284: Stein25 19
+    3301286: Stein25 2
+    3301288: Stein25 20
+    3301290: Stein25 21
+    3301292: Stein25 3
+    3301294: Stein25 4
+    3301296: Stein25 5
+    3301298: Stein25 6
+    3301300: Stein25 7
+    3301302: Stein25 8
+    3301304: Stein25 9
+    3301306: Stein3
+    3301308: Stein3 1
+    3301310: Stein3 10
+    3301312: Stein3 11
+    3301314: Stein3 12
+    3301316: Stein3 13
+    3301318: Stein3 14
+    3301320: Stein3 15
+    3301322: Stein3 16
+    3301324: Stein3 17
+    3301326: Stein3 18
+    3301328: Stein3 19
+    3301330: Stein3 2
+    3301332: Stein3 20
+    3301334: Stein3 21
+    3301336: Stein3 22
+    3301338: Stein3 23
+    3301340: Stein3 24
+    3301342: Stein3 25
+    3301344: Stein3 26
+    3301346: Stein3 27
+    3301348: Stein3 28
+    3301350: Stein3 29
+    3301352: Stein3 3
+    3301354: Stein3 30
+    3301356: Stein3 31
+    3301358: Stein3 32
+    3301360: Stein3 4
+    3301362: Stein3 5
+    3301364: Stein3 6
+    3301366: Stein3 7
+    3301368: Stein3 8
+    3301370: Stein3 9
+    3301372: Stein4
+    3301374: Stein4 1
+    3301376: Stein4 10
+    3301378: Stein4 11
+    3301380: Stein4 12
+    3301382: Stein4 13
+    3301384: Stein4 14
+    3301386: Stein4 15
+    3301388: Stein4 16
+    3301390: Stein4 17
+    3301392: Stein4 18
+    3301394: Stein4 19
+    3301396: Stein4 2
+    3301398: Stein4 20
+    3301400: Stein4 21
+    3301402: Stein4 22
+    3301404: Stein4 23
+    3301406: Stein4 24
+    3301408: Stein4 25
+    3301410: Stein4 26
+    3301412: Stein4 27
+    3301414: Stein4 28
+    3301416: Stein4 29
+    3301418: Stein4 3
+    3301420: Stein4 30
+    3301422: Stein4 31
+    3301424: Stein4 32
+    3301426: Stein4 4
+    3301428: Stein4 5
+    3301430: Stein4 6
+    3301432: Stein4 7
+    3301434: Stein4 8
+    3301436: Stein4 9
+    3301438: Stein5
+    3301440: Stein5 1
+    3301442: Stein5 10
+    3301444: Stein5 11
+    3301446: Stein5 12
+    3301448: Stein5 13
+    3301450: Stein5 14
+    3301452: Stein5 15
+    3301454: Stein5 16
+    3301456: Stein5 17
+    3301458: Stein5 18
+    3301460: Stein5 19
+    3301462: Stein5 2
+    3301464: Stein5 20
+    3301466: Stein5 21
+    3301468: Stein5 22
+    3301470: Stein5 23
+    3301472: Stein5 24
+    3301474: Stein5 25
+    3301476: Stein5 26
+    3301478: Stein5 27
+    3301480: Stein5 28
+    3301482: Stein5 29
+    3301484: Stein5 3
+    3301486: Stein5 30
+    3301488: Stein5 31
+    3301490: Stein5 32
+    3301492: Stein5 4
+    3301494: Stein5 5
+    3301496: Stein5 6
+    3301498: Stein5 7
+    3301500: Stein5 8
+    3301502: Stein5 9
+    3301504: Stein6
+    3301506: Stein6 1
+    3301508: Stein6 10
+    3301510: Stein6 11
+    3301512: Stein6 12
+    3301514: Stein6 13
+    3301516: Stein6 14
+    3301518: Stein6 15
+    3301520: Stein6 16
+    3301522: Stein6 17
+    3301524: Stein6 18
+    3301526: Stein6 19
+    3301528: Stein6 2
+    3301530: Stein6 20
+    3301532: Stein6 21
+    3301534: Stein6 22
+    3301536: Stein6 23
+    3301538: Stein6 24
+    3301540: Stein6 25
+    3301542: Stein6 26
+    3301544: Stein6 27
+    3301546: Stein6 28
+    3301548: Stein6 29
+    3301550: Stein6 3
+    3301552: Stein6 30
+    3301554: Stein6 31
+    3301556: Stein6 32
+    3301558: Stein6 4
+    3301560: Stein6 5
+    3301562: Stein6 6
+    3301564: Stein6 7
+    3301566: Stein6 8
+    3301568: Stein6 9
+    3301570: Stein7
+    3301572: Stein7 1
+    3301574: Stein7 10
+    3301576: Stein7 11
+    3301578: Stein7 12
+    3301580: Stein7 13
+    3301582: Stein7 14
+    3301584: Stein7 15
+    3301586: Stein7 16
+    3301588: Stein7 17
+    3301590: Stein7 18
+    3301592: Stein7 19
+    3301594: Stein7 2
+    3301596: Stein7 20
+    3301598: Stein7 21
+    3301600: Stein7 3
+    3301602: Stein7 4
+    3301604: Stein7 5
+    3301606: Stein7 6
+    3301608: Stein7 7
+    3301610: Stein7 8
+    3301612: Stein7 9
+    3301614: Stein8
+    3301616: Stein8 1
+    3301618: Stein8 10
+    3301620: Stein8 11
+    3301622: Stein8 12
+    3301624: Stein8 13
+    3301626: Stein8 14
+    3301628: Stein8 15
+    3301630: Stein8 16
+    3301632: Stein8 17
+    3301634: Stein8 18
+    3301636: Stein8 19
+    3301638: Stein8 2
+    3301640: Stein8 20
+    3301642: Stein8 21
+    3301644: Stein8 3
+    3301646: Stein8 4
+    3301648: Stein8 5
+    3301650: Stein8 6
+    3301652: Stein8 7
+    3301654: Stein8 8
+    3301656: Stein8 9
+    3301658: Stein9
+    3301660: Stein9 1
+    3301662: Stein9 10
+    3301664: Stein9 11
+    3301666: Stein9 12
+    3301668: Stein9 13
+    3301670: Stein9 14
+    3301672: Stein9 15
+    3301674: Stein9 16
+    3301676: Stein9 17
+    3301678: Stein9 18
+    3301680: Stein9 19
+    3301682: Stein9 2
+    3301684: Stein9 20
+    3301686: Stein9 21
+    3301688: Stein9 3
+    3301690: Stein9 4
+    3301692: Stein9 5
+    3301694: Stein9 6
+    3301696: Stein9 7
+    3301698: Stein9 8
+    3301700: Stein9 9
+    3301702: Tafel
+    3301704: Tastatur
+    3301706: TischBein
+    3301708: TischBein 1
+    3301710: TischBein 2
+    3301712: TischBein 3
+    3301714: TischBein1
+    3301716: TischBein1 1
+    3301718: TischBein1 2
+    3301720: TischBein1 3
+    3301722: TischBein2
+    3301724: TischBein2 1
+    3301726: TischBein2 2
+    3301728: TischBein2 3
+    3301730: TischBein3
+    3301732: TischBein3 1
+    3301734: TischBein3 2
+    3301736: TischBein3 3
+    3301738: TischLampenArm
+    3301740: "TischLampenFu\xDF"
+    3301742: TischLampenKopf
+    3301744: Tischplatte
+    3301746: Tischplatte 1
+    3301748: Tischplatte 2
+    3301750: Tischplatte 3
+    3301752: treppe
+    3301754: Wand
+    3301756: Wand1
+    3301758: Zentrifuge
+    4300000: treppe
+    4300002: DeckenLampe
+    4300004: DeckenLampenKabelAbdeckung
+    4300006: DeckenLampenKabel1
+    4300008: DeckenLampenKabelAbdeckung1
+    4300010: DeckenLampenKabel2
+    4300012: "DeckenLampenGl\xFChbirne"
+    4300014: DeckenLampe1
+    4300016: DeckenLampenKabelAbdeckung
+    4300018: DeckenLampenKabel1
+    4300020: DeckenLampenKabelAbdeckung1
+    4300022: "DeckenLampenGl\xFChbirne"
+    4300024: DeckenLampe2
+    4300026: DeckenLampenKabelAbdeckung
+    4300028: DeckenLampenKabel1
+    4300030: DeckenLampenKabelAbdeckung1
+    4300032: DeckenLampenKabel2
+    4300034: "DeckenLampenGl\xFChbirne"
+    4300036: DeckenLampe3
+    4300038: DeckenLampenKabelAbdeckung
+    4300040: DeckenLampenKabel1
+    4300042: DeckenLampenKabelAbdeckung1
+    4300044: DeckenLampenKabel2
+    4300046: "DeckenLampenGl\xFChbirne"
+    4300048: Stein
+    4300050: Stein1
+    4300052: Stein2
+    4300054: Stein3
+    4300056: Stein4
+    4300058: Stein5
+    4300060: Stein6
+    4300062: Stein7
+    4300064: Stein8
+    4300066: Stein9
+    4300068: Stein10
+    4300070: Stein11
+    4300072: Stein12
+    4300074: Stein13
+    4300076: Stein14
+    4300078: Stein15
+    4300080: Stein16
+    4300082: Stein17
+    4300084: Stein18
+    4300086: Stein19
+    4300088: Stein20
+    4300090: Stein21
+    4300092: Stein22
+    4300094: Stein23
+    4300096: Stein24
+    4300098: Stein25
+    4300100: Stein13
+    4300102: Stein14
+    4300104: Stein15
+    4300106: Stein16
+    4300108: Stein17
+    4300110: Stein18
+    4300112: Stein19
+    4300114: Stein20
+    4300116: Stein21
+    4300118: Stein22
+    4300120: Stein23
+    4300122: Stein24
+    4300124: Stein25
+    4300126: Stein
+    4300128: Stein1
+    4300130: Stein2
+    4300132: Stein3
+    4300134: Stein4
+    4300136: Stein5
+    4300138: Stein6
+    4300140: Stein7
+    4300142: Stein8
+    4300144: Stein9
+    4300146: Stein10
+    4300148: Stein11
+    4300150: Stein12
+    4300152: Stein
+    4300154: Stein1
+    4300156: Stein2
+    4300158: Stein3
+    4300160: Stein4
+    4300162: Stein5
+    4300164: Stein6
+    4300166: Stein7
+    4300168: Stein8
+    4300170: Stein9
+    4300172: Stein10
+    4300174: Stein11
+    4300176: Stein12
+    4300178: Stein
+    4300180: Stein1
+    4300182: Stein2
+    4300184: Stein3
+    4300186: Stein4
+    4300188: Stein5
+    4300190: Stein6
+    4300192: Stein7
+    4300194: Stein8
+    4300196: Stein9
+    4300198: Stein10
+    4300200: Stein11
+    4300202: Stein12
+    4300204: Stein
+    4300206: Stein1
+    4300208: Stein2
+    4300210: Stein3
+    4300212: Stein4
+    4300214: Stein5
+    4300216: Stein6
+    4300218: Stein7
+    4300220: Stein8
+    4300222: Stein9
+    4300224: Stein10
+    4300226: Stein11
+    4300228: Stein12
+    4300230: Stein
+    4300232: Stein1
+    4300234: Stein2
+    4300236: Stein3
+    4300238: Stein4
+    4300240: Stein5
+    4300242: Stein6
+    4300244: Stein7
+    4300246: Stein8
+    4300248: Stein9
+    4300250: Stein10
+    4300252: Stein11
+    4300254: Stein12
+    4300256: Stein
+    4300258: Stein1
+    4300260: Stein2
+    4300262: Stein3
+    4300264: Stein4
+    4300266: Stein5
+    4300268: Stein6
+    4300270: Stein7
+    4300272: Stein8
+    4300274: Stein9
+    4300276: Stein10
+    4300278: Stein11
+    4300280: Stein12
+    4300282: Stein
+    4300284: Stein1
+    4300286: Stein2
+    4300288: Stein3
+    4300290: Stein4
+    4300292: Stein5
+    4300294: Stein6
+    4300296: Stein7
+    4300298: Stein8
+    4300300: Stein9
+    4300302: Stein10
+    4300304: Stein11
+    4300306: Stein12
+    4300308: Stein
+    4300310: Stein1
+    4300312: Stein2
+    4300314: Stein3
+    4300316: Stein4
+    4300318: Stein5
+    4300320: Stein6
+    4300322: Stein7
+    4300324: Stein8
+    4300326: Stein9
+    4300328: Stein10
+    4300330: Stein11
+    4300332: Stein12
+    4300334: Stein
+    4300336: Stein1
+    4300338: Stein2
+    4300340: Stein3
+    4300342: Stein4
+    4300344: Stein5
+    4300346: Stein6
+    4300348: Stein7
+    4300350: Stein8
+    4300352: Stein9
+    4300354: Stein10
+    4300356: Stein11
+    4300358: Stein12
+    4300360: Stein
+    4300362: Stein1
+    4300364: Stein2
+    4300366: Stein3
+    4300368: Stein4
+    4300370: Stein5
+    4300372: Stein6
+    4300374: Stein7
+    4300376: Stein8
+    4300378: Stein9
+    4300380: Stein10
+    4300382: Stein11
+    4300384: Stein12
+    4300386: Stein13
+    4300388: Stein14
+    4300390: Stein15
+    4300392: Stein16
+    4300394: Stein17
+    4300396: Stein18
+    4300398: Stein19
+    4300400: Stein20
+    4300402: Stein21
+    4300404: Stein22
+    4300406: Stein23
+    4300408: Stein24
+    4300410: Stein25
+    4300412: Stein13
+    4300414: Stein14
+    4300416: Stein15
+    4300418: Stein16
+    4300420: Stein17
+    4300422: Stein18
+    4300424: Stein19
+    4300426: Stein20
+    4300428: Stein21
+    4300430: Stein22
+    4300432: Stein23
+    4300434: Stein24
+    4300436: Stein25
+    4300438: Stein13
+    4300440: Stein14
+    4300442: Stein15
+    4300444: Stein16
+    4300446: Stein17
+    4300448: Stein18
+    4300450: Stein19
+    4300452: Stein20
+    4300454: Stein21
+    4300456: Stein22
+    4300458: Stein23
+    4300460: Stein24
+    4300462: Stein25
+    4300464: Stein13
+    4300466: Stein14
+    4300468: Stein15
+    4300470: Stein16
+    4300472: Stein17
+    4300474: Stein18
+    4300476: Stein19
+    4300478: Stein20
+    4300480: Stein21
+    4300482: Stein22
+    4300484: Stein23
+    4300486: Stein24
+    4300488: Stein25
+    4300490: Stein13
+    4300492: Stein14
+    4300494: Stein15
+    4300496: Stein16
+    4300498: Stein17
+    4300500: Stein18
+    4300502: Stein19
+    4300504: Stein20
+    4300506: Stein21
+    4300508: Stein22
+    4300510: Stein23
+    4300512: Stein24
+    4300514: Stein25
+    4300516: Stein13
+    4300518: Stein14
+    4300520: Stein15
+    4300522: Stein16
+    4300524: Stein17
+    4300526: Stein18
+    4300528: Stein19
+    4300530: Stein20
+    4300532: Stein21
+    4300534: Stein22
+    4300536: Stein23
+    4300538: Stein24
+    4300540: Stein25
+    4300542: Stein13
+    4300544: Stein14
+    4300546: Stein15
+    4300548: Stein16
+    4300550: Stein17
+    4300552: Stein18
+    4300554: Stein19
+    4300556: Stein20
+    4300558: Stein21
+    4300560: Stein22
+    4300562: Stein23
+    4300564: Stein24
+    4300566: Stein25
+    4300568: Stein13
+    4300570: Stein14
+    4300572: Stein15
+    4300574: Stein16
+    4300576: Stein17
+    4300578: Stein18
+    4300580: Stein19
+    4300582: Stein20
+    4300584: Stein21
+    4300586: Stein22
+    4300588: Stein23
+    4300590: Stein24
+    4300592: Stein25
+    4300594: Stein13
+    4300596: Stein14
+    4300598: Stein15
+    4300600: Stein16
+    4300602: Stein17
+    4300604: Stein18
+    4300606: Stein19
+    4300608: Stein20
+    4300610: Stein21
+    4300612: Stein22
+    4300614: Stein23
+    4300616: Stein24
+    4300618: Stein25
+    4300620: Stein1
+    4300622: Stein2
+    4300624: Stein3
+    4300626: Stein4
+    4300628: Stein5
+    4300630: Stein6
+    4300632: Stein12
+    4300634: Stein13
+    4300636: Stein19
+    4300638: Stein20
+    4300640: Stein21
+    4300642: Stein22
+    4300644: Stein23
+    4300646: Stein24
+    4300648: Stein13
+    4300650: Stein19
+    4300652: Stein20
+    4300654: Stein21
+    4300656: Stein22
+    4300658: Stein23
+    4300660: Stein24
+    4300662: Stein1
+    4300664: Stein2
+    4300666: Stein3
+    4300668: Stein4
+    4300670: Stein5
+    4300672: Stein6
+    4300674: Stein12
+    4300676: Stein1
+    4300678: Stein2
+    4300680: Stein3
+    4300682: Stein4
+    4300684: Stein5
+    4300686: Stein6
+    4300688: Stein12
+    4300690: Stein1
+    4300692: Stein2
+    4300694: Stein3
+    4300696: Stein4
+    4300698: Stein5
+    4300700: Stein6
+    4300702: Stein12
+    4300704: Stein1
+    4300706: Stein2
+    4300708: Stein3
+    4300710: Stein4
+    4300712: Stein5
+    4300714: Stein6
+    4300716: Stein12
+    4300718: Stein1
+    4300720: Stein2
+    4300722: Stein3
+    4300724: Stein4
+    4300726: Stein5
+    4300728: Stein6
+    4300730: Stein12
+    4300732: Stein1
+    4300734: Stein2
+    4300736: Stein3
+    4300738: Stein4
+    4300740: Stein5
+    4300742: Stein6
+    4300744: Stein12
+    4300746: Stein1
+    4300748: Stein2
+    4300750: Stein3
+    4300752: Stein4
+    4300754: Stein5
+    4300756: Stein6
+    4300758: Stein12
+    4300760: Stein1
+    4300762: Stein2
+    4300764: Stein3
+    4300766: Stein4
+    4300768: Stein5
+    4300770: Stein6
+    4300772: Stein12
+    4300774: Stein1
+    4300776: Stein2
+    4300778: Stein3
+    4300780: Stein4
+    4300782: Stein5
+    4300784: Stein6
+    4300786: Stein12
+    4300788: Stein1
+    4300790: Stein2
+    4300792: Stein3
+    4300794: Stein4
+    4300796: Stein5
+    4300798: Stein6
+    4300800: Stein12
+    4300802: Stein13
+    4300804: Stein19
+    4300806: Stein20
+    4300808: Stein21
+    4300810: Stein22
+    4300812: Stein23
+    4300814: Stein24
+    4300816: Stein13
+    4300818: Stein19
+    4300820: Stein20
+    4300822: Stein21
+    4300824: Stein22
+    4300826: Stein23
+    4300828: Stein24
+    4300830: Stein13
+    4300832: Stein19
+    4300834: Stein20
+    4300836: Stein21
+    4300838: Stein22
+    4300840: Stein23
+    4300842: Stein24
+    4300844: Stein13
+    4300846: Stein19
+    4300848: Stein20
+    4300850: Stein21
+    4300852: Stein22
+    4300854: Stein23
+    4300856: Stein24
+    4300858: Stein13
+    4300860: Stein19
+    4300862: Stein20
+    4300864: Stein21
+    4300866: Stein22
+    4300868: Stein23
+    4300870: Stein24
+    4300872: Stein13
+    4300874: Stein19
+    4300876: Stein20
+    4300878: Stein21
+    4300880: Stein22
+    4300882: Stein23
+    4300884: Stein24
+    4300886: Stein13
+    4300888: Stein19
+    4300890: Stein20
+    4300892: Stein21
+    4300894: Stein22
+    4300896: Stein23
+    4300898: Stein24
+    4300900: Stein13
+    4300902: Stein19
+    4300904: Stein20
+    4300906: Stein21
+    4300908: Stein22
+    4300910: Stein23
+    4300912: Stein24
+    4300914: Stein13
+    4300916: Stein19
+    4300918: Stein20
+    4300920: Stein21
+    4300922: Stein22
+    4300924: Stein23
+    4300926: Stein24
+    4300928: Stein
+    4300930: Stein1
+    4300932: Stein2
+    4300934: Stein3
+    4300936: Stein4
+    4300938: Stein5
+    4300940: Stein6
+    4300942: Stein7
+    4300944: Stein8
+    4300946: Stein9
+    4300948: Stein10
+    4300950: Stein11
+    4300952: Stein14
+    4300954: Stein15
+    4300956: Stein16
+    4300958: Stein17
+    4300960: Stein18
+    4300962: Stein19
+    4300964: Stein20
+    4300966: Stein21
+    4300968: Stein22
+    4300970: Stein23
+    4300972: Stein24
+    4300974: Stein25
+    4300976: Stein14
+    4300978: Stein15
+    4300980: Stein16
+    4300982: Stein17
+    4300984: Stein18
+    4300986: Stein19
+    4300988: Stein20
+    4300990: Stein21
+    4300992: Stein22
+    4300994: Stein23
+    4300996: Stein24
+    4300998: Stein25
+    4301000: Stein
+    4301002: Stein1
+    4301004: Stein2
+    4301006: Stein3
+    4301008: Stein4
+    4301010: Stein5
+    4301012: Stein6
+    4301014: Stein7
+    4301016: Stein8
+    4301018: Stein9
+    4301020: Stein10
+    4301022: Stein11
+    4301024: Stein
+    4301026: Stein1
+    4301028: Stein2
+    4301030: Stein3
+    4301032: Stein4
+    4301034: Stein5
+    4301036: Stein6
+    4301038: Stein7
+    4301040: Stein8
+    4301042: Stein9
+    4301044: Stein10
+    4301046: Stein11
+    4301048: Stein
+    4301050: Stein1
+    4301052: Stein2
+    4301054: Stein3
+    4301056: Stein4
+    4301058: Stein5
+    4301060: Stein6
+    4301062: Stein7
+    4301064: Stein8
+    4301066: Stein9
+    4301068: Stein10
+    4301070: Stein11
+    4301072: Stein
+    4301074: Stein1
+    4301076: Stein2
+    4301078: Stein3
+    4301080: Stein4
+    4301082: Stein5
+    4301084: Stein6
+    4301086: Stein7
+    4301088: Stein8
+    4301090: Stein9
+    4301092: Stein10
+    4301094: Stein11
+    4301096: Stein
+    4301098: Stein1
+    4301100: Stein2
+    4301102: Stein3
+    4301104: Stein4
+    4301106: Stein5
+    4301108: Stein6
+    4301110: Stein7
+    4301112: Stein8
+    4301114: Stein9
+    4301116: Stein10
+    4301118: Stein11
+    4301120: Stein
+    4301122: Stein1
+    4301124: Stein2
+    4301126: Stein3
+    4301128: Stein4
+    4301130: Stein5
+    4301132: Stein6
+    4301134: Stein7
+    4301136: Stein8
+    4301138: Stein9
+    4301140: Stein10
+    4301142: Stein11
+    4301144: Stein
+    4301146: Stein1
+    4301148: Stein2
+    4301150: Stein3
+    4301152: Stein4
+    4301154: Stein5
+    4301156: Stein6
+    4301158: Stein7
+    4301160: Stein8
+    4301162: Stein9
+    4301164: Stein10
+    4301166: Stein11
+    4301168: Stein
+    4301170: Stein1
+    4301172: Stein2
+    4301174: Stein3
+    4301176: Stein4
+    4301178: Stein5
+    4301180: Stein6
+    4301182: Stein7
+    4301184: Stein8
+    4301186: Stein9
+    4301188: Stein10
+    4301190: Stein11
+    4301192: Stein
+    4301194: Stein1
+    4301196: Stein2
+    4301198: Stein3
+    4301200: Stein4
+    4301202: Stein5
+    4301204: Stein6
+    4301206: Stein7
+    4301208: Stein8
+    4301210: Stein9
+    4301212: Stein10
+    4301214: Stein11
+    4301216: Stein
+    4301218: Stein1
+    4301220: Stein2
+    4301222: Stein3
+    4301224: Stein4
+    4301226: Stein5
+    4301228: Stein6
+    4301230: Stein7
+    4301232: Stein8
+    4301234: Stein9
+    4301236: Stein10
+    4301238: Stein11
+    4301240: Stein14
+    4301242: Stein15
+    4301244: Stein16
+    4301246: Stein17
+    4301248: Stein18
+    4301250: Stein19
+    4301252: Stein20
+    4301254: Stein21
+    4301256: Stein22
+    4301258: Stein23
+    4301260: Stein24
+    4301262: Stein25
+    4301264: Stein14
+    4301266: Stein15
+    4301268: Stein16
+    4301270: Stein17
+    4301272: Stein18
+    4301274: Stein19
+    4301276: Stein20
+    4301278: Stein21
+    4301280: Stein22
+    4301282: Stein23
+    4301284: Stein24
+    4301286: Stein25
+    4301288: Stein14
+    4301290: Stein15
+    4301292: Stein16
+    4301294: Stein17
+    4301296: Stein18
+    4301298: Stein19
+    4301300: Stein20
+    4301302: Stein21
+    4301304: Stein22
+    4301306: Stein23
+    4301308: Stein24
+    4301310: Stein25
+    4301312: Stein14
+    4301314: Stein15
+    4301316: Stein16
+    4301318: Stein17
+    4301320: Stein18
+    4301322: Stein19
+    4301324: Stein20
+    4301326: Stein21
+    4301328: Stein22
+    4301330: Stein23
+    4301332: Stein24
+    4301334: Stein25
+    4301336: Stein14
+    4301338: Stein15
+    4301340: Stein16
+    4301342: Stein17
+    4301344: Stein18
+    4301346: Stein19
+    4301348: Stein20
+    4301350: Stein21
+    4301352: Stein22
+    4301354: Stein23
+    4301356: Stein24
+    4301358: Stein25
+    4301360: Stein14
+    4301362: Stein15
+    4301364: Stein16
+    4301366: Stein17
+    4301368: Stein18
+    4301370: Stein19
+    4301372: Stein20
+    4301374: Stein21
+    4301376: Stein22
+    4301378: Stein23
+    4301380: Stein24
+    4301382: Stein25
+    4301384: Stein14
+    4301386: Stein15
+    4301388: Stein16
+    4301390: Stein17
+    4301392: Stein18
+    4301394: Stein19
+    4301396: Stein20
+    4301398: Stein21
+    4301400: Stein22
+    4301402: Stein23
+    4301404: Stein24
+    4301406: Stein25
+    4301408: Stein14
+    4301410: Stein15
+    4301412: Stein16
+    4301414: Stein17
+    4301416: Stein18
+    4301418: Stein19
+    4301420: Stein20
+    4301422: Stein21
+    4301424: Stein22
+    4301426: Stein23
+    4301428: Stein24
+    4301430: Stein25
+    4301432: Stein14
+    4301434: Stein15
+    4301436: Stein16
+    4301438: Stein17
+    4301440: Stein18
+    4301442: Stein19
+    4301444: Stein20
+    4301446: Stein21
+    4301448: Stein22
+    4301450: Stein23
+    4301452: Stein24
+    4301454: Stein25
+    4301456: Wand1
+    4301458: Wand
+    4301460: FlipChartUmgeschlagenesPapier
+    4301462: FlipChartBody
+    4301464: FlipChartPapier
+    4301466: FlipStift
+    4301468: FlipStift1
+    4301470: pCube3
+    4301472: pCube2
+    4301474: pCube1
+    4301476: Kabel1
+    4301478: Kabel2
+    4301480: Kabel3
+    4301482: Kabel4
+    4301484: Kabel5
+    4301486: Kabel6
+    4301488: Kabel7
+    4301490: Kabel8
+    4301492: Kabel9
+    4301494: ServerSchrank
+    4301496: Tischplatte
+    4301498: TischBein
+    4301500: TischBein1
+    4301502: TischBein2
+    4301504: TischBein3
+    4301506: pCube4
+    4301508: pCube3
+    4301510: pCube2
+    4301512: pCube1
+    4301514: pCylinder1
+    4301516: Tischplatte
+    4301518: TischBein
+    4301520: TischBein1
+    4301522: TischBein2
+    4301524: TischBein3
+    4301526: Tischplatte
+    4301528: TischBein
+    4301530: TischBein1
+    4301532: TischBein2
+    4301534: TischBein3
+    4301536: PottedPlant:pCube4
+    4301538: PottedPlant:pCube3
+    4301540: PottedPlant:pCube2
+    4301542: PottedPlant:pCube1
+    4301544: PottedPlant:pCylinder1
+    4301546: Boden
+    4301548: KaffeTasse
+    4301550: KaffeTasse1
+    4301552: Kaffe
+    4301554: KaffeTasse2
+    4301556: Kaffe
+    4301558: Tafel
+    4301560: KaffeMaschinenKnopf3
+    4301562: KaffeMaschinenKnopf2
+    4301564: KaffeMaschinenKnopf1
+    4301566: KaffeMaschinenKnopf
+    4301568: KaffeKanne
+    4301570: KaffeInKanne
+    4301572: KaffeMaschine
+    4301574: "D\xFCse"
+    4301576: pPlane1
+    4301578: pTorus1
+    4301580: BunsenBrenner
+    4301582: GasFlasche
+    4301584: pCylinder2
+    4301586: ReagenzGlas
+    4301588: Zentrifuge
+    4301590: KaffeMaschinenKnopf4
+    4301592: KaffeMaschinenKnopf5
+    4301594: KaffeMaschinenKnopf6
+    4301596: KaffeMaschinenKnopf7
+    4301598: KaffeMaschinenKnopf8
+    4301600: KaffeMaschinenKnopf9
+    4301602: KaffeMaschinenKnopf10
+    4301604: KaffeMaschinenKnopf11
+    4301606: pCube5
+    4301608: pCube6
+    4301610: pCylinder3
+    4301612: pCylinder4
+    4301614: pCylinder5
+    4301616: pCylinder6
+    4301618: pCylinder7
+    4301620: pCylinder8
+    4301622: pCylinder9
+    4301624: pCylinder10
+    4301626: pCylinder11
+    4301628: pCylinder12
+    4301630: pCylinder13
+    4301632: pCylinder14
+    4301634: Computer
+    4301636: Tastatur
+    4301638: Maus
+    4301640: TischLampenArm
+    4301642: TischLampenKopf
+    4301644: "TischLampenFu\xDF"
+    4301646: Birne
+    4301648: monitor:Monitor
+    4301650: pCube7
+    4301652: pCube8
+    4301654: pCube9
+    4301656: pCylinder15
+    4301658: pCylinder16
+    4301660: pSphere1
+    4301662: pSphere2
+    4301664: pSphere3
+    4301666: pSphere4
+    4301668: pSphere5
+    4301670: pSphere6
+    4301672: Tischplatte
+    4301674: TischBein
+    4301676: TischBein1
+    4301678: TischBein2
+    4301680: TischBein3
+    4301682: PostIt
+    4301684: PostIt1
+    4301686: PostIt2
+    4301688: PostIt3
+    4301690: PostIt4
+    4301692: PostIt5
+    4301694: PostIt6
+    4301696: PostIt7
+    4301698: "L\xF6tUnterlage"
+    4301700: LotionCaptureModulator2
+    4301702: LotionCaptureModulator:pTorus1
+    4301704: LotionCaptureModulator:pTorus2
+    4301706: LotionCaptureModulator:pCylinder1
+    4301708: LotionCaptureModulator:pCylinder2
+    4301710: LotionCaptureModulator:pCylinder3
+    4301712: LotionCaptureModulator:pCube2
+    4301714: LotionCaptureModulator:pCube3
+    4301716: LotionCaptureModulator:pCube4
+    4301718: LotionCaptureModulator:pCylinder4
+    4301720: LotionCaptureModulator:pCone1
+    4301722: LotionCaptureModulator:pCone2
+    4301724: LotionCaptureModulator:pCone3
+    4301726: LotionCaptureModulator:pCube5
+    4301728: LotionCaptureModulator:pSphere2
+    4301730: LotionCaptureModulator:pSphere1
+    4301732: KaffeMaschinenKnopf15
+    4301734: KaffeMaschinenKnopf14
+    4301736: KaffeMaschinenKnopf13
+    4301738: KaffeMaschinenKnopf12
+    4301740: pCube10
+    4301742: KaffeMaschinenKnopf16
+    4301744: Schwamm
+    4301746: Kabel10
+    4301748: pCylinder17
+    4301750: pTorus2
+    4301752: pTorus3
+    4301754: pTorus4
+    4301756: pTorus5
+    4301758: "L\xF6tkolben1"
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
