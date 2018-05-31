@@ -15,5 +15,20 @@ MonoBehaviour:
   questDescription: 
   isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
-  states: []
+  states:
+  - {fileID: 114203278262503094}
   rewards: []
+--- !u!114 &114203278262503094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: zeitung1
+  m_EditorClassIdentifier: 
+  stateName: zeitung1
+  stateDescription: describe it here
+  isStateFinished: 0

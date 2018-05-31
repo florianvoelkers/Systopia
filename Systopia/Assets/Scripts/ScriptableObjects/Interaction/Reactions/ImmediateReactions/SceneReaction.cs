@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class SceneReaction : Reaction {
 
-public class SceneReaction : MonoBehaviour {
+	public string sceneName;
+	public string startingPointInLoadedScene;
 
-	// Use this for initialization
-	void Start () {
-		
+	//private SceneController sceneController;
+
+	protected override void SpecificInit () {
+		//sceneController = FindObjectOfType <SceneController> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	protected override void ImmediateReaction () {
+		//playerSaveData
+		//sceneController.FadeAndLoadScene (this);
 	}
 }

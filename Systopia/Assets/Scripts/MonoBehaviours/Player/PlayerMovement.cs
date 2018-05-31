@@ -64,7 +64,6 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	private void Slowing (out float speed, float distanceToDestination) {
-		Debug.Log ("slowing");
 		agent.isStopped = true; // moving will be controlled manually
 		float proportionalDistance = 1f - distanceToDestination / agent.stoppingDistance;
 		Quaternion targetRotation = currentInteractable ? currentInteractable.interactionLocation.rotation : transform.rotation;
