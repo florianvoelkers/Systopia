@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: 3-2derZeitungsartikel
+  m_EditorClassIdentifier: 
+  questTitle: 3-2derZeitungsartikel
+  questDescription: "Der alte Mann hat sich scheinbar erinnert und scheint Wogapowi
+    und Frunobulax zu kennen. Er sprach von einem Zeitungsartikel, der \xFCber eine
+    Erfindung der beiden berichten soll. Er glaubt, dass dieser im Lager f\xFCr wertvolle
+    Artefakte sein soll."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
+  states:
+  - {fileID: 114414851154300966}
+  - {fileID: 114122664967470128}
+  rewards:
+  - {fileID: 114096464862792964}
+--- !u!114 &114096464862792964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 200
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114122664967470128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-2hasArticle
+  m_EditorClassIdentifier: 
+  stateName: 3-2hasArticle
+  stateDescription: "Ich habe den Zeitungsartikel gefunden, zumindest eine H\xE4lfte.
+    Sie zeigt diesen Prof. Willaschek an einem Computer. Jemand ist bei ihm. Aber
+    es ist wirklich verbl\xFCffend wie \xE4hnlich Wogapowi diesem Prof. Willaschek
+    sieht."
+  isStateFinished: 0
+--- !u!114 &114414851154300966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-2started
+  m_EditorClassIdentifier: 
+  stateName: 3-2started
+  stateDescription: "Ich sollte mir dar\xFCber Gedanken machen wie ich in das Lager
+    f\xFCr wertvolle Artefakte komme. "
+  isStateFinished: 0

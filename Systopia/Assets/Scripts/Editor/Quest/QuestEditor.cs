@@ -98,7 +98,7 @@ public class QuestEditor : EditorWindow {
 				GUILayout.BeginHorizontal (GUILayout.MaxWidth (915f));
 				GUILayout.Space (30f);
 				EditorGUILayout.PrefixLabel ("Quest Description");
-				questList [i].questDescription = EditorGUILayout.TextArea (questList [i].questDescription, GUILayout.Height (64f));
+				questList [i].questDescription = GUILayout.TextArea (questList [i].questDescription, GUILayout.Height (64f));
 				GUILayout.EndHorizontal ();
 
 				GUILayout.BeginHorizontal ();
@@ -148,7 +148,7 @@ public class QuestEditor : EditorWindow {
 						GUILayout.BeginHorizontal ();
 						GUILayout.Space (15f);
 						EditorGUILayout.PrefixLabel ("Description");
-						questList [i].states[j].stateDescription = EditorGUILayout.TextArea (questList [i].states[j].stateDescription, GUILayout.Height (64f));
+						questList [i].states[j].stateDescription = GUILayout.TextArea (questList [i].states[j].stateDescription, GUILayout.Height (64f));
 						GUILayout.EndHorizontal ();
 					}
 				}
