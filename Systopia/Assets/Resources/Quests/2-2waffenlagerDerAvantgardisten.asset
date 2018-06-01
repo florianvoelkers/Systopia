@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: 2-2waffenlagerDerAvantgardisten
+  m_EditorClassIdentifier: 
+  questTitle: Waffenlager der Avantgardisten
+  questDescription: "Der Hauptmann m\xF6chte, dass ich das Waffenlager der Avantgardisten
+    st\xFCrme und die Waffen in unseren Besitz bringe. Ich sollte mir daf\xFCr Unterst\xFCtzung
+    holen, da das Waffenlager sehr gut bewacht sein wird."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: ae82f14ec732f824cb10c2644d80931f, type: 2}
+  states:
+  - {fileID: 114713621358441568}
+  - {fileID: 114346787611145866}
+  - {fileID: 114506644363614864}
+  rewards:
+  - {fileID: 114674191081879336}
+--- !u!114 &114346787611145866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-2hasSupport
+  m_EditorClassIdentifier: 
+  stateName: 2-2hasSupport
+  stateDescription: "Ich habe mir Unterst\xFCtzung geholt und bin nun bereit das Waffenlager
+    der Avantgardisten zu st\xFCrmen."
+  isStateFinished: 0
+--- !u!114 &114506644363614864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-2killedAvantgardisten
+  m_EditorClassIdentifier: 
+  stateName: 2-2killedAvantgardisten
+  stateDescription: "Wir haben die Avantgardisten besiegen k\xF6nnen. Ein gro\xDFartiger
+    Sieg f\xFCr unseren Anf\xFChrer Frunobulax."
+  isStateFinished: 0
+--- !u!114 &114674191081879336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 200
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114713621358441568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-2started
+  m_EditorClassIdentifier: 
+  stateName: 2-2started
+  stateDescription: "Bevor ich mich auf den Weg zum Waffenlager mache, sollte ich
+    mir Unterst\xFCtzung holen."
+  isStateFinished: 0

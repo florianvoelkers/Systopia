@@ -19,6 +19,8 @@ public class QuestEditor : EditorWindow {
 	private int selectedRewardType = 0;
 	private string[] rewardTypes = {"Item", "Money", "Exp"};
 
+	private Vector2 scrollPosition;
+
 	[MenuItem ("My Tools/Quest Editor")]
 	static void Init () {
 		EditorWindow window = EditorWindow.GetWindow (typeof(QuestEditor));
@@ -53,6 +55,8 @@ public class QuestEditor : EditorWindow {
 		if (GUILayout.Button ("Create Quest")) {
 			CreateQuest ();
 		}
+
+		scrollPosition = EditorGUILayout.BeginScrollView (scrollPosition, false, false);
 		GUILayout.Space (10f);
 
 		if (selectedQuestFaction == 0) {
@@ -217,6 +221,8 @@ public class QuestEditor : EditorWindow {
 
 			GUILayout.Space (5f);
 		}
+
+		EditorGUILayout.EndScrollView ();
 	}
 
 	private void CreateQuest () {

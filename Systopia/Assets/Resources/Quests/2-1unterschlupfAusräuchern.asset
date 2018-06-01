@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: "2-1unterschlupfAusr\xE4uchern"
+  m_EditorClassIdentifier: 
+  questTitle: "Unterschlupf ausr\xE4uchern"
+  questDescription: "Der Hauptmann der Technokraten hat mir meine erste Aufgabe gegeben.
+    Ich soll in den Unterschlupf der Avantgardisten eindringen und diese neutralisieren.
+    Au\xDFerdem soll ich weitere Informationen zu den Pl\xE4nen der Avantgardisten
+    sammeln."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: ae82f14ec732f824cb10c2644d80931f, type: 2}
+  states:
+  - {fileID: 114797423161115964}
+  - {fileID: 114777750541629340}
+  - {fileID: 114937674529842762}
+  rewards:
+  - {fileID: 114164800202196486}
+--- !u!114 &114164800202196486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 100
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114777750541629340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-1killedAvantgardisten
+  m_EditorClassIdentifier: 
+  stateName: 2-1killedAvantgardisten
+  stateDescription: "Ich habe die Avantgardisten beseitigt und sollte den Unterschlupf
+    nun durchsuchen. Vielleicht finde ich ja weitere Informationen zu ihren Pl\xE4nen."
+  isStateFinished: 0
+--- !u!114 &114797423161115964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-1started
+  m_EditorClassIdentifier: 
+  stateName: 2-1started
+  stateDescription: Ich sollte nicht mit viel Widerstand rechnen, da sich der Unterschlupf
+    auf unserer Seite der Stadt befindet.
+  isStateFinished: 0
+--- !u!114 &114937674529842762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-1hasAvaMap
+  m_EditorClassIdentifier: 
+  stateName: 2-1hasAvaMap
+  stateDescription: "Ich habe eine Karte gefunden, auf denen die wichtigsten Geb\xE4ude
+    der Avantgardisten eingezeichnet sind. Das wird unseren Hauptmann freuen."
+  isStateFinished: 0

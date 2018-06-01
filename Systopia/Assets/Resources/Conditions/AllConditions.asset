@@ -21,6 +21,27 @@ MonoBehaviour:
   - {fileID: 114643239343598412}
   - {fileID: 114123978580005390}
   - {fileID: 114296799341282820}
+  - {fileID: 114236911489417814}
+  - {fileID: 114880877742259342}
+  - {fileID: 114586936149723330}
+  - {fileID: 114397725248900844}
+  - {fileID: 114192914643168618}
+  - {fileID: 114519879249078280}
+  - {fileID: 114950649848663200}
+  - {fileID: 114932531925181686}
+  - {fileID: 114592002678585824}
+  - {fileID: 114882049743169802}
+  - {fileID: 114639851032775702}
+  - {fileID: 114934365115508606}
+  - {fileID: 114728253040147168}
+  - {fileID: 114288547345746538}
+  - {fileID: 114943001961950164}
+  - {fileID: 114937231839128964}
+  - {fileID: 114887199417787074}
+  - {fileID: 114573691241052810}
+  - {fileID: 114584364955084638}
+  - {fileID: 114423019035872344}
+  - {fileID: 114456345674533678}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +84,48 @@ MonoBehaviour:
   description: hasNewsArticleAboutInvention
   satisfied: 0
   hash: -1045555992
+--- !u!114 &114192914643168618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest3-4
+  m_EditorClassIdentifier: 
+  description: startedQuest3-4
+  satisfied: 0
+  hash: 1390831435
+--- !u!114 &114236911489417814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest3-3
+  m_EditorClassIdentifier: 
+  description: startedQuest3-3
+  satisfied: 0
+  hash: -863833368
+--- !u!114 &114288547345746538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest2-1
+  m_EditorClassIdentifier: 
+  description: startedQuest2-1
+  satisfied: 0
+  hash: 592378355
 --- !u!114 &114296799341282820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +140,76 @@ MonoBehaviour:
   description: finishedQuest3-2
   satisfied: 0
   hash: 413115151
+--- !u!114 &114397725248900844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest3-3
+  m_EditorClassIdentifier: 
+  description: finishedQuest3-3
+  satisfied: 0
+  hash: 1872270233
+--- !u!114 &114423019035872344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: tookTheAvaArmoury
+  m_EditorClassIdentifier: 
+  description: tookTheAvaArmoury
+  satisfied: 0
+  hash: 1415460208
+--- !u!114 &114456345674533678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest2-2
+  m_EditorClassIdentifier: 
+  description: finishedQuest2-2
+  satisfied: 0
+  hash: 425576760
+--- !u!114 &114519879249078280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasAccessToLaboratory
+  m_EditorClassIdentifier: 
+  description: hasAccessToLaboratory
+  satisfied: 0
+  hash: -1094338735
+--- !u!114 &114573691241052810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest2-2
+  m_EditorClassIdentifier: 
+  description: startedQuest2-2
+  satisfied: 0
+  hash: -1169708983
 --- !u!114 &114580935106589110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +224,48 @@ MonoBehaviour:
   description: earnedOldMansTrust
   satisfied: 0
   hash: 161861814
+--- !u!114 &114584364955084638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasSupportForQuest2-2
+  m_EditorClassIdentifier: 
+  description: hasSupportForQuest2-2
+  satisfied: 0
+  hash: -1398941535
+--- !u!114 &114586936149723330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasFirstPartOfArticle
+  m_EditorClassIdentifier: 
+  description: hasFirstPartOfArticle
+  satisfied: 0
+  hash: 678893951
+--- !u!114 &114592002678585824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest3-5
+  m_EditorClassIdentifier: 
+  description: startedQuest3-5
+  satisfied: 0
+  hash: 635525085
 --- !u!114 &114631196455471364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +280,20 @@ MonoBehaviour:
   description: finishedQuest3-1
   satisfied: 0
   hash: -2120813899
+--- !u!114 &114639851032775702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest3-5
+  m_EditorClassIdentifier: 
+  description: finishedQuest3-5
+  satisfied: 0
+  hash: -2030356820
 --- !u!114 &114643239343598412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +322,20 @@ MonoBehaviour:
   description: declinedQuest3-1
   satisfied: 0
   hash: -410226012
+--- !u!114 &114728253040147168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: talkedToTechnokratenCaptain
+  m_EditorClassIdentifier: 
+  description: talkedToTechnokratenCaptain
+  satisfied: 0
+  hash: -1370220941
 --- !u!114 &114854315130655190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +350,115 @@ MonoBehaviour:
   description: acceptedQuest3-1
   satisfied: 0
   hash: -447595894
+--- !u!114 &114880877742259342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsAvaArtefactLocation
+  m_EditorClassIdentifier: 
+  description: knowsAvaArtefactLocation
+  satisfied: 0
+  hash: -1065343907
+--- !u!114 &114882049743169802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasCPU
+  m_EditorClassIdentifier: 
+  description: hasCPU
+  satisfied: 0
+  hash: 1541125805
+--- !u!114 &114887199417787074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest2-1
+  m_EditorClassIdentifier: 
+  description: finishedQuest2-1
+  satisfied: 0
+  hash: -2141939582
+--- !u!114 &114932531925181686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest3-4
+  m_EditorClassIdentifier: 
+  description: finishedQuest3-4
+  satisfied: 0
+  hash: -235141574
+--- !u!114 &114934365115508606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: joinedTechnokraten
+  m_EditorClassIdentifier: 
+  description: joinedTechnokraten
+  satisfied: 0
+  hash: 1387835176
+--- !u!114 &114937231839128964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasAvantgardistenMap
+  m_EditorClassIdentifier: 
+  description: hasAvantgardistenMap
+  satisfied: 0
+  hash: -789712303
+--- !u!114 &114943001961950164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: killedAvasInHideout
+  m_EditorClassIdentifier: 
+  description: killedAvasInHideout
+  satisfied: 0
+  hash: 1980471743
+--- !u!114 &114950649848663200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: metKlausWillaschek
+  m_EditorClassIdentifier: 
+  description: metKlausWillaschek
+  satisfied: 0
+  hash: -181332820

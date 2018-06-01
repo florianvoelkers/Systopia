@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: 2-3lotionCaptureModulator
+  m_EditorClassIdentifier: 
+  questTitle: Lotion Capture Modulator
+  questDescription: "Ich soll ein verschollenes technisches Ger\xE4t wiederfinden.
+    Es soll sich in den alten Ruinen der HAW Hamburg befinden. Es k\xF6nnte uns zum
+    endg\xFCltigen Sieg \xFCber die Avantgardisten helfen."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: ae82f14ec732f824cb10c2644d80931f, type: 2}
+  states:
+  - {fileID: 114357414682112546}
+  - {fileID: 114624506830381528}
+  - {fileID: 114955903208820786}
+  rewards:
+  - {fileID: 114880899404587046}
+--- !u!114 &114357414682112546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-3started
+  m_EditorClassIdentifier: 
+  stateName: 2-3started
+  stateDescription: Ich sollte mich auf dem Weg zu den Ruinen machen.
+  isStateFinished: 0
+--- !u!114 &114624506830381528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-3inTheRuins
+  m_EditorClassIdentifier: 
+  stateName: 2-3inTheRuins
+  stateDescription: "Anscheinend sind uns die dreckigen Avantgardisten zuvor gekommen.
+    Eventuell kann ich aber trotzdem noch etwas N\xFCtzliches hier finden."
+  isStateFinished: 0
+--- !u!114 &114880899404587046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 300
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114955903208820786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 2-3foundArmorDesigns
+  m_EditorClassIdentifier: 
+  stateName: 2-3foundArmorDesigns
+  stateDescription: "Ich habe zumindest interessante Designs f\xFCr eine R\xFCstung
+    gefunden. Diese sollte ich unserem Forschungsteam zukommen lassen."
+  isStateFinished: 0

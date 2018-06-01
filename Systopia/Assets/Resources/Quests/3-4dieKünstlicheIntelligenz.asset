@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: "3-4dieK\xFCnstlicheIntelligenz"
+  m_EditorClassIdentifier: 
+  questTitle: "Die K\xFCnstliche Intelligenz"
+  questDescription: "Der alte Mann hat den Studenten auf dem Bild vom Zeitungsartikel
+    erkannt und meint, dass ich ihn in den alten Kellergew\xF6lben der HAW finden
+    k\xF6nnte."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
+  states:
+  - {fileID: 114203246990219866}
+  - {fileID: 114112337087993838}
+  rewards:
+  - {fileID: 114667140553634194}
+--- !u!114 &114112337087993838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-4hasAccessToLaboratory
+  m_EditorClassIdentifier: 
+  stateName: 3-4hasAccessToLaboratory
+  stateDescription: "Ich habe nun den Zugangscode zum Labor, in dem sich der ehemalige
+    Student befinden soll. Ich hoffe er hat Antworten f\xFCr mich."
+  isStateFinished: 0
+--- !u!114 &114203246990219866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-4started
+  m_EditorClassIdentifier: 
+  stateName: 3-4started
+  stateDescription: "Ich sollte den ehemaligen Studenten versuchen zu finden. Das
+    Kellergew\xF6lbe soll sich in der N\xE4he der Bibliothek befinden."
+  isStateFinished: 0
+--- !u!114 &114667140553634194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 400
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}

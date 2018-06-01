@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: 3-5dasFehlendePuzzleteil
+  m_EditorClassIdentifier: 
+  questTitle: 3-5dasFehlendePuzzleteil
+  questDescription: "Klaus m\xF6chte mit dem Lotion Capture Modulator die K.I. wieder
+    zusammenf\xFCgen. Doch die letzte CPU ist ihm bei einem Test durchgebrannt. Ich
+    soll ihm eine neue CPU besorgen."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
+  states:
+  - {fileID: 114226900952463254}
+  - {fileID: 114695890613126496}
+  rewards:
+  - {fileID: 114861077324092268}
+--- !u!114 &114226900952463254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-5started
+  m_EditorClassIdentifier: 
+  stateName: 3-5started
+  stateDescription: "Eventuell hat die H\xE4ndlerin in der Taverne eine CPU."
+  isStateFinished: 0
+--- !u!114 &114695890613126496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 3-5hasCPU
+  m_EditorClassIdentifier: 
+  stateName: 3-5hasCPU
+  stateDescription: "Ich habe eine passende CPU f\xFCr den Lotion Capture Modulator
+    gefunden und sollte diese nun zu Klaus bringen."
+  isStateFinished: 0
+--- !u!114 &114861077324092268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 500
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
