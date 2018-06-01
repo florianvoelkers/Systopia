@@ -19,6 +19,8 @@ MonoBehaviour:
   - {fileID: 114854315130655190}
   - {fileID: 114631196455471364}
   - {fileID: 114643239343598412}
+  - {fileID: 114123978580005390}
+  - {fileID: 114296799341282820}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +49,34 @@ MonoBehaviour:
   description: talkedToOldMan
   satisfied: 0
   hash: -1924799856
+--- !u!114 &114123978580005390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasNewsArticleAboutInvention
+  m_EditorClassIdentifier: 
+  description: hasNewsArticleAboutInvention
+  satisfied: 0
+  hash: -1045555992
+--- !u!114 &114296799341282820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest3-2
+  m_EditorClassIdentifier: 
+  description: finishedQuest3-2
+  satisfied: 0
+  hash: 413115151
 --- !u!114 &114580935106589110
 MonoBehaviour:
   m_ObjectHideFlags: 0
