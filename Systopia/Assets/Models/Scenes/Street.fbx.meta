@@ -1,842 +1,1100 @@
 fileFormatVersion: 2
-guid: c8c5d0c7db87424458971239a99ba335
-timeCreated: 1525354247
+guid: b1d9d084d7ed86d40a4337ce6226fd77
+timeCreated: 1527961190
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: AvaArteFaktLager
-    100002: AvaHQ
-    100004: AvaUnterSchlupf
-    100006: AvaWaffenlager
-    100008: back1
-    100010: BibliotheksRuine
-    100012: Haus
-    100014: "KellerGew\xF6lbe"
-    100016: left1
-    100018: newStyleHeadAndBodyClothesBonesAnimations:polySurface11
-    100020: newStyleHeadAndBodyClothesBonesAnimations:polySurface12
-    100022: newStyleHeadAndBodyClothesBonesAnimations:polySurface13
-    100024: newStyleHeadAndBodyClothesBonesAnimations:polySurface14
-    100026: newStyleHeadAndBodyClothesBonesAnimations:polySurface6
-    100028: newStyleHeadAndBodyClothesBonesAnimations:polySurface7
-    100030: newStyleHeadAndBodyClothesBonesAnimations:polySurface8
-    100032: newStyleHeadAndBodyClothesBonesAnimations:polySurface9
-    100034: pCone1
-    100036: pCone1 1
-    100038: pCube1
-    100040: pCube10
-    100042: pCube11
-    100044: pCube11 1
-    100046: pCube12
-    100048: pCube12 1
-    100050: pCube13
-    100052: pCube14
-    100054: pCube15
-    100056: pCube16
-    100058: pCube17
-    100060: pCube2
-    100062: pCube20
-    100064: pCube22
-    100066: pCube23
-    100068: pCube24
-    100070: pCube26
-    100072: pCube27
-    100074: pCube28
-    100076: pCube29
-    100078: pCube3
-    100080: pCube30
-    100082: pCube31
-    100084: pCube32
-    100086: pCube33
-    100088: pCube34
-    100090: pCube35
-    100092: pCube36
-    100094: pCube37
-    100096: pCube38
-    100098: pCube39
-    100100: pCube4
-    100102: pCube40
-    100104: pCube41
-    100106: pCube42
-    100108: pCube43
-    100110: pCube44
-    100112: pCube45
-    100114: pCube46
-    100116: pCube47
-    100118: pCube48
-    100120: pCube49
-    100122: pCube5
-    100124: pCube50
-    100126: pCube51
-    100128: pCube52
-    100130: pCube53
-    100132: pCube54
-    100134: pCube55
-    100136: pCube57
-    100138: pCube58
-    100140: pCube59
-    100142: pCube6
-    100144: pCube7
-    100146: pCube8
-    100148: pCube9
-    100150: pCylinder1
-    100152: pCylinder10
-    100154: pCylinder11
-    100156: pCylinder2
-    100158: pCylinder3
-    100160: pCylinder4
-    100162: pCylinder5
-    100164: pCylinder6
-    100166: pCylinder7
-    100168: pCylinder8
-    100170: pCylinder9
-    100172: polySurface11
-    100174: polySurface11 1
-    100176: polySurface11 10
-    100178: polySurface11 2
-    100180: polySurface11 3
-    100182: polySurface11 4
-    100184: polySurface11 5
-    100186: polySurface11 6
-    100188: polySurface11 7
-    100190: polySurface11 8
-    100192: polySurface11 9
-    100194: polySurface12
-    100196: polySurface12 1
-    100198: polySurface12 10
-    100200: polySurface12 2
-    100202: polySurface12 3
-    100204: polySurface12 4
-    100206: polySurface12 5
-    100208: polySurface12 6
-    100210: polySurface12 7
-    100212: polySurface12 8
-    100214: polySurface12 9
-    100216: polySurface13
-    100218: polySurface13 1
-    100220: polySurface13 10
-    100222: polySurface13 2
-    100224: polySurface13 3
-    100226: polySurface13 4
-    100228: polySurface13 5
-    100230: polySurface13 6
-    100232: polySurface13 7
-    100234: polySurface13 8
-    100236: polySurface13 9
-    100238: polySurface14
-    100240: polySurface14 1
-    100242: polySurface14 10
-    100244: polySurface14 2
-    100246: polySurface14 3
-    100248: polySurface14 4
-    100250: polySurface14 5
-    100252: polySurface14 6
-    100254: polySurface14 7
-    100256: polySurface14 8
-    100258: polySurface14 9
-    100260: polySurface15
-    100262: polySurface16
-    100264: polySurface17
-    100266: polySurface18
-    100268: polySurface19
-    100270: polySurface20
-    100272: polySurface21
-    100274: polySurface22
-    100276: polySurface23
-    100278: polySurface26
-    100280: polySurface27
-    100282: polySurface28
-    100284: polySurface3
-    100286: polySurface4
-    100288: polySurface6
-    100290: polySurface7
-    100292: polySurface7 1
-    100294: polySurface7 10
-    100296: polySurface7 2
-    100298: polySurface7 3
-    100300: polySurface7 4
-    100302: polySurface7 5
-    100304: polySurface7 6
-    100306: polySurface7 7
-    100308: polySurface7 8
-    100310: polySurface7 9
-    100312: polySurface8
-    100314: polySurface8 1
-    100316: polySurface8 10
-    100318: polySurface8 2
-    100320: polySurface8 3
-    100322: polySurface8 4
-    100324: polySurface8 5
-    100326: polySurface8 6
-    100328: polySurface8 7
-    100330: polySurface8 8
-    100332: polySurface8 9
-    100334: polySurface9
-    100336: polySurface9 1
-    100338: polySurface9 10
-    100340: polySurface9 2
-    100342: polySurface9 3
-    100344: polySurface9 4
-    100346: polySurface9 5
-    100348: polySurface9 6
-    100350: polySurface9 7
-    100352: polySurface9 8
-    100354: polySurface9 9
-    100356: pPlane1
-    100358: pPlatonic1
-    100360: pSphere1
-    100362: pSphere2
-    100364: pSphere3
-    100366: pSphere4
-    100368: pSphere5
-    100370: pSphere6
-    100372: pSphere7
-    100374: pSphere8
-    100376: pSphere9
-    100378: Referenzen
-    100380: Street
-    100382: //RootNode
-    100384: Taverne
-    100386: "TechnoAu\xDFenposten"
-    100388: TechnoHQ
-    100390: "TechnoLagerF\xFCrArtefakte"
-    100392: TechnoWaffenKammer
-    100394: Zaun
-    400000: AvaArteFaktLager
-    400002: AvaHQ
-    400004: AvaUnterSchlupf
-    400006: AvaWaffenlager
-    400008: back1
-    400010: BibliotheksRuine
-    400012: Haus
-    400014: "KellerGew\xF6lbe"
-    400016: left1
-    400018: newStyleHeadAndBodyClothesBonesAnimations:polySurface11
-    400020: newStyleHeadAndBodyClothesBonesAnimations:polySurface12
-    400022: newStyleHeadAndBodyClothesBonesAnimations:polySurface13
-    400024: newStyleHeadAndBodyClothesBonesAnimations:polySurface14
-    400026: newStyleHeadAndBodyClothesBonesAnimations:polySurface6
-    400028: newStyleHeadAndBodyClothesBonesAnimations:polySurface7
-    400030: newStyleHeadAndBodyClothesBonesAnimations:polySurface8
-    400032: newStyleHeadAndBodyClothesBonesAnimations:polySurface9
-    400034: pCone1
-    400036: pCone1 1
-    400038: pCube1
-    400040: pCube10
-    400042: pCube11
-    400044: pCube11 1
-    400046: pCube12
-    400048: pCube12 1
-    400050: pCube13
-    400052: pCube14
-    400054: pCube15
-    400056: pCube16
-    400058: pCube17
-    400060: pCube2
-    400062: pCube20
-    400064: pCube22
-    400066: pCube23
-    400068: pCube24
-    400070: pCube26
-    400072: pCube27
-    400074: pCube28
-    400076: pCube29
-    400078: pCube3
-    400080: pCube30
-    400082: pCube31
-    400084: pCube32
-    400086: pCube33
-    400088: pCube34
-    400090: pCube35
-    400092: pCube36
-    400094: pCube37
-    400096: pCube38
-    400098: pCube39
-    400100: pCube4
-    400102: pCube40
-    400104: pCube41
-    400106: pCube42
-    400108: pCube43
-    400110: pCube44
-    400112: pCube45
-    400114: pCube46
-    400116: pCube47
-    400118: pCube48
-    400120: pCube49
-    400122: pCube5
-    400124: pCube50
-    400126: pCube51
-    400128: pCube52
-    400130: pCube53
-    400132: pCube54
-    400134: pCube55
-    400136: pCube57
-    400138: pCube58
-    400140: pCube59
-    400142: pCube6
-    400144: pCube7
-    400146: pCube8
-    400148: pCube9
-    400150: pCylinder1
-    400152: pCylinder10
-    400154: pCylinder11
-    400156: pCylinder2
-    400158: pCylinder3
-    400160: pCylinder4
-    400162: pCylinder5
-    400164: pCylinder6
-    400166: pCylinder7
-    400168: pCylinder8
-    400170: pCylinder9
-    400172: polySurface11
-    400174: polySurface11 1
-    400176: polySurface11 10
-    400178: polySurface11 2
-    400180: polySurface11 3
-    400182: polySurface11 4
-    400184: polySurface11 5
-    400186: polySurface11 6
-    400188: polySurface11 7
-    400190: polySurface11 8
-    400192: polySurface11 9
-    400194: polySurface12
-    400196: polySurface12 1
-    400198: polySurface12 10
-    400200: polySurface12 2
-    400202: polySurface12 3
-    400204: polySurface12 4
-    400206: polySurface12 5
-    400208: polySurface12 6
-    400210: polySurface12 7
-    400212: polySurface12 8
-    400214: polySurface12 9
-    400216: polySurface13
-    400218: polySurface13 1
-    400220: polySurface13 10
-    400222: polySurface13 2
-    400224: polySurface13 3
-    400226: polySurface13 4
-    400228: polySurface13 5
-    400230: polySurface13 6
-    400232: polySurface13 7
-    400234: polySurface13 8
-    400236: polySurface13 9
-    400238: polySurface14
-    400240: polySurface14 1
-    400242: polySurface14 10
-    400244: polySurface14 2
-    400246: polySurface14 3
-    400248: polySurface14 4
-    400250: polySurface14 5
-    400252: polySurface14 6
-    400254: polySurface14 7
-    400256: polySurface14 8
-    400258: polySurface14 9
-    400260: polySurface15
-    400262: polySurface16
-    400264: polySurface17
-    400266: polySurface18
-    400268: polySurface19
-    400270: polySurface20
-    400272: polySurface21
-    400274: polySurface22
-    400276: polySurface23
-    400278: polySurface26
-    400280: polySurface27
-    400282: polySurface28
-    400284: polySurface3
-    400286: polySurface4
-    400288: polySurface6
-    400290: polySurface7
-    400292: polySurface7 1
-    400294: polySurface7 10
-    400296: polySurface7 2
-    400298: polySurface7 3
-    400300: polySurface7 4
-    400302: polySurface7 5
-    400304: polySurface7 6
-    400306: polySurface7 7
-    400308: polySurface7 8
-    400310: polySurface7 9
-    400312: polySurface8
-    400314: polySurface8 1
-    400316: polySurface8 10
-    400318: polySurface8 2
-    400320: polySurface8 3
-    400322: polySurface8 4
-    400324: polySurface8 5
-    400326: polySurface8 6
-    400328: polySurface8 7
-    400330: polySurface8 8
-    400332: polySurface8 9
-    400334: polySurface9
-    400336: polySurface9 1
-    400338: polySurface9 10
-    400340: polySurface9 2
-    400342: polySurface9 3
-    400344: polySurface9 4
-    400346: polySurface9 5
-    400348: polySurface9 6
-    400350: polySurface9 7
-    400352: polySurface9 8
-    400354: polySurface9 9
-    400356: pPlane1
-    400358: pPlatonic1
-    400360: pSphere1
-    400362: pSphere2
-    400364: pSphere3
-    400366: pSphere4
-    400368: pSphere5
-    400370: pSphere6
-    400372: pSphere7
-    400374: pSphere8
-    400376: pSphere9
-    400378: Referenzen
-    400380: Street
-    400382: //RootNode
-    400384: Taverne
-    400386: "TechnoAu\xDFenposten"
-    400388: TechnoHQ
-    400390: "TechnoLagerF\xFCrArtefakte"
-    400392: TechnoWaffenKammer
-    400394: Zaun
-    2000000: back1
-    2000002: left1
-    2100000: lambert3
-    2100002: lambert4
-    2100004: lambert2
-    2100006: lambert1
-    2100008: newStyleHeadAndBodyClothesBonesAnimations_lambert3
-    2100010: newStyleHeadAndBodyClothesBonesAnimations_lambert11
-    2100012: newStyleHeadAndBodyClothesBonesAnimations_lambert14
-    2100014: newStyleHeadAndBodyClothesBonesAnimations_lambert13
-    2100016: newStyleHeadAndBodyClothesBonesAnimations_lambert12
-    2100018: newStyleHeadAndBodyClothesBonesAnimations_lambert10
-    2300000: AvaArteFaktLager
-    2300002: AvaUnterSchlupf
-    2300004: BibliotheksRuine
-    2300006: Haus
-    2300008: newStyleHeadAndBodyClothesBonesAnimations:polySurface12
-    2300010: newStyleHeadAndBodyClothesBonesAnimations:polySurface13
-    2300012: newStyleHeadAndBodyClothesBonesAnimations:polySurface14
-    2300014: newStyleHeadAndBodyClothesBonesAnimations:polySurface8
-    2300016: pCone1
-    2300018: pCone1 1
-    2300020: pCube1
-    2300022: pCube10
-    2300024: pCube11
-    2300026: pCube11 1
-    2300028: pCube12
-    2300030: pCube12 1
-    2300032: pCube14
-    2300034: pCube15
-    2300036: pCube16
-    2300038: pCube17
-    2300040: pCube2
-    2300042: pCube20
-    2300044: pCube22
-    2300046: pCube23
-    2300048: pCube24
-    2300050: pCube26
-    2300052: pCube27
-    2300054: pCube28
-    2300056: pCube29
-    2300058: pCube3
-    2300060: pCube30
-    2300062: pCube31
-    2300064: pCube32
-    2300066: pCube33
-    2300068: pCube34
-    2300070: pCube35
-    2300072: pCube36
-    2300074: pCube37
-    2300076: pCube38
-    2300078: pCube39
-    2300080: pCube4
-    2300082: pCube40
-    2300084: pCube41
-    2300086: pCube42
-    2300088: pCube43
-    2300090: pCube44
-    2300092: pCube45
-    2300094: pCube46
-    2300096: pCube47
-    2300098: pCube48
-    2300100: pCube49
-    2300102: pCube5
-    2300104: pCube50
-    2300106: pCube51
-    2300108: pCube52
-    2300110: pCube53
-    2300112: pCube54
-    2300114: pCube55
-    2300116: pCube57
-    2300118: pCube58
-    2300120: pCube59
-    2300122: pCube6
-    2300124: pCube7
-    2300126: pCube8
-    2300128: pCube9
-    2300130: pCylinder1
-    2300132: pCylinder10
-    2300134: pCylinder11
-    2300136: pCylinder2
-    2300138: pCylinder3
-    2300140: pCylinder4
-    2300142: pCylinder5
-    2300144: pCylinder6
-    2300146: pCylinder7
-    2300148: pCylinder8
-    2300150: pCylinder9
-    2300152: polySurface12
-    2300154: polySurface12 1
-    2300156: polySurface12 10
-    2300158: polySurface12 2
-    2300160: polySurface12 3
-    2300162: polySurface12 4
-    2300164: polySurface12 5
-    2300166: polySurface12 6
-    2300168: polySurface12 7
-    2300170: polySurface12 8
-    2300172: polySurface12 9
-    2300174: polySurface13
-    2300176: polySurface13 1
-    2300178: polySurface13 10
-    2300180: polySurface13 2
-    2300182: polySurface13 3
-    2300184: polySurface13 4
-    2300186: polySurface13 5
-    2300188: polySurface13 6
-    2300190: polySurface13 7
-    2300192: polySurface13 8
-    2300194: polySurface13 9
-    2300196: polySurface14
-    2300198: polySurface14 1
-    2300200: polySurface14 10
-    2300202: polySurface14 2
-    2300204: polySurface14 3
-    2300206: polySurface14 4
-    2300208: polySurface14 5
-    2300210: polySurface14 6
-    2300212: polySurface14 7
-    2300214: polySurface14 8
-    2300216: polySurface14 9
-    2300218: polySurface26
-    2300220: polySurface27
-    2300222: polySurface3
-    2300224: polySurface4
-    2300226: polySurface8
-    2300228: polySurface8 1
-    2300230: polySurface8 10
-    2300232: polySurface8 2
-    2300234: polySurface8 3
-    2300236: polySurface8 4
-    2300238: polySurface8 5
-    2300240: polySurface8 6
-    2300242: polySurface8 7
-    2300244: polySurface8 8
-    2300246: polySurface8 9
-    2300248: pPlane1
-    2300250: pPlatonic1
-    2300252: pSphere1
-    2300254: pSphere2
-    2300256: pSphere3
-    2300258: pSphere4
-    2300260: pSphere5
-    2300262: pSphere6
-    2300264: pSphere7
-    2300266: pSphere8
-    2300268: pSphere9
-    2300270: Street
-    2300272: Taverne
-    2300274: "TechnoAu\xDFenposten"
-    2300276: TechnoHQ
-    2300278: "TechnoLagerF\xFCrArtefakte"
-    2300280: TechnoWaffenKammer
-    3300000: AvaArteFaktLager
-    3300002: AvaUnterSchlupf
-    3300004: BibliotheksRuine
-    3300006: Haus
-    3300008: newStyleHeadAndBodyClothesBonesAnimations:polySurface12
-    3300010: newStyleHeadAndBodyClothesBonesAnimations:polySurface13
-    3300012: newStyleHeadAndBodyClothesBonesAnimations:polySurface14
-    3300014: newStyleHeadAndBodyClothesBonesAnimations:polySurface8
-    3300016: pCone1
-    3300018: pCone1 1
-    3300020: pCube1
-    3300022: pCube10
-    3300024: pCube11
-    3300026: pCube11 1
-    3300028: pCube12
-    3300030: pCube12 1
-    3300032: pCube14
-    3300034: pCube15
-    3300036: pCube16
-    3300038: pCube17
-    3300040: pCube2
-    3300042: pCube20
-    3300044: pCube22
-    3300046: pCube23
-    3300048: pCube24
-    3300050: pCube26
-    3300052: pCube27
-    3300054: pCube28
-    3300056: pCube29
-    3300058: pCube3
-    3300060: pCube30
-    3300062: pCube31
-    3300064: pCube32
-    3300066: pCube33
-    3300068: pCube34
-    3300070: pCube35
-    3300072: pCube36
-    3300074: pCube37
-    3300076: pCube38
-    3300078: pCube39
-    3300080: pCube4
-    3300082: pCube40
-    3300084: pCube41
-    3300086: pCube42
-    3300088: pCube43
-    3300090: pCube44
-    3300092: pCube45
-    3300094: pCube46
-    3300096: pCube47
-    3300098: pCube48
-    3300100: pCube49
-    3300102: pCube5
-    3300104: pCube50
-    3300106: pCube51
-    3300108: pCube52
-    3300110: pCube53
-    3300112: pCube54
-    3300114: pCube55
-    3300116: pCube57
-    3300118: pCube58
-    3300120: pCube59
-    3300122: pCube6
-    3300124: pCube7
-    3300126: pCube8
-    3300128: pCube9
-    3300130: pCylinder1
-    3300132: pCylinder10
-    3300134: pCylinder11
-    3300136: pCylinder2
-    3300138: pCylinder3
-    3300140: pCylinder4
-    3300142: pCylinder5
-    3300144: pCylinder6
-    3300146: pCylinder7
-    3300148: pCylinder8
-    3300150: pCylinder9
-    3300152: polySurface12
-    3300154: polySurface12 1
-    3300156: polySurface12 10
-    3300158: polySurface12 2
-    3300160: polySurface12 3
-    3300162: polySurface12 4
-    3300164: polySurface12 5
-    3300166: polySurface12 6
-    3300168: polySurface12 7
-    3300170: polySurface12 8
-    3300172: polySurface12 9
-    3300174: polySurface13
-    3300176: polySurface13 1
-    3300178: polySurface13 10
-    3300180: polySurface13 2
-    3300182: polySurface13 3
-    3300184: polySurface13 4
-    3300186: polySurface13 5
-    3300188: polySurface13 6
-    3300190: polySurface13 7
-    3300192: polySurface13 8
-    3300194: polySurface13 9
-    3300196: polySurface14
-    3300198: polySurface14 1
-    3300200: polySurface14 10
-    3300202: polySurface14 2
-    3300204: polySurface14 3
-    3300206: polySurface14 4
-    3300208: polySurface14 5
-    3300210: polySurface14 6
-    3300212: polySurface14 7
-    3300214: polySurface14 8
-    3300216: polySurface14 9
-    3300218: polySurface26
-    3300220: polySurface27
-    3300222: polySurface3
-    3300224: polySurface4
-    3300226: polySurface8
-    3300228: polySurface8 1
-    3300230: polySurface8 10
-    3300232: polySurface8 2
-    3300234: polySurface8 3
-    3300236: polySurface8 4
-    3300238: polySurface8 5
-    3300240: polySurface8 6
-    3300242: polySurface8 7
-    3300244: polySurface8 8
-    3300246: polySurface8 9
-    3300248: pPlane1
-    3300250: pPlatonic1
-    3300252: pSphere1
-    3300254: pSphere2
-    3300256: pSphere3
-    3300258: pSphere4
-    3300260: pSphere5
-    3300262: pSphere6
-    3300264: pSphere7
-    3300266: pSphere8
-    3300268: pSphere9
-    3300270: Street
-    3300272: Taverne
-    3300274: "TechnoAu\xDFenposten"
-    3300276: TechnoHQ
-    3300278: "TechnoLagerF\xFCrArtefakte"
-    3300280: TechnoWaffenKammer
-    4300000: TechnoHQ
-    4300002: TechnoWaffenKammer
-    4300004: "TechnoLagerF\xFCrArtefakte"
-    4300006: Street
-    4300008: "TechnoAu\xDFenposten"
-    4300010: pCylinder1
-    4300012: pCylinder2
-    4300014: pCylinder3
-    4300016: pCylinder4
-    4300018: pCylinder5
-    4300020: pCylinder6
-    4300022: pCylinder7
-    4300024: pPlatonic1
-    4300026: pCube1
-    4300028: pCube2
-    4300030: pCube3
-    4300032: pCube4
-    4300034: pCube5
-    4300036: pCube6
-    4300038: pCylinder8
-    4300040: pCylinder9
-    4300042: pCube7
-    4300044: pCube8
-    4300046: pSphere1
-    4300048: pCube9
-    4300050: pCube10
-    4300052: pSphere3
-    4300054: pSphere4
-    4300056: BibliotheksRuine
-    4300058: pCylinder10
-    4300060: pCube11
-    4300062: pCube12
-    4300064: pCylinder11
-    4300066: pCube11
-    4300068: pCube12
-    4300070: polySurface3
-    4300072: polySurface4
-    4300074: pCube14
-    4300076: pSphere2
-    4300078: pSphere5
-    4300080: pSphere6
-    4300082: newStyleHeadAndBodyClothesBonesAnimations:polySurface13
-    4300084: newStyleHeadAndBodyClothesBonesAnimations:polySurface14
-    4300086: newStyleHeadAndBodyClothesBonesAnimations:polySurface12
-    4300088: newStyleHeadAndBodyClothesBonesAnimations:polySurface8
-    4300090: polySurface13
-    4300092: polySurface14
-    4300094: polySurface12
-    4300096: polySurface8
-    4300098: polySurface13
-    4300100: polySurface14
-    4300102: polySurface12
-    4300104: polySurface8
-    4300106: polySurface13
-    4300108: polySurface14
-    4300110: polySurface12
-    4300112: polySurface8
-    4300114: polySurface13
-    4300116: polySurface14
-    4300118: polySurface12
-    4300120: polySurface8
-    4300122: polySurface13
-    4300124: polySurface14
-    4300126: polySurface12
-    4300128: polySurface8
-    4300130: polySurface13
-    4300132: polySurface14
-    4300134: polySurface12
-    4300136: polySurface8
-    4300138: polySurface13
-    4300140: polySurface14
-    4300142: polySurface12
-    4300144: polySurface8
-    4300146: polySurface13
-    4300148: polySurface14
-    4300150: polySurface12
-    4300152: polySurface8
-    4300154: polySurface13
-    4300156: polySurface14
-    4300158: polySurface12
-    4300160: polySurface8
-    4300162: polySurface13
-    4300164: polySurface14
-    4300166: polySurface12
-    4300168: polySurface8
-    4300170: polySurface13
-    4300172: polySurface14
-    4300174: polySurface12
-    4300176: polySurface8
-    4300178: pCube15
-    4300180: pCube16
+    100000: AvaArteFaktVersteck
+    100002: AvaArteFaktVersteckEingangsStein
+    100004: "AvaArtefaktVersteckT\xFCr"
+    100006: AvaHQ
+    100008: AvaUnterSchlupf
+    100010: "AvaUnterSchlupfGeb\xE4ude"
+    100012: "AvaUnterSchlupfGeb\xE4ude1"
+    100014: "AvaUnterSchlupfGeb\xE4ude2"
+    100016: "AvaUnterSchlupfGeb\xE4ude3"
+    100018: AvaWaffenLager
+    100020: Bib1
+    100022: BibliotheksRuine
+    100024: "Geb\xE4ude"
+    100026: group1
+    100028: KellerEingangsRuine
+    100030: lowpoldelo:Delorean
+    100032: lowpoldelo:pCube1
+    100034: lowpoldelo:polySurface1
+    100036: pCone3
+    100038: pCone4
+    100040: pCone5
+    100042: pCube100
+    100044: pCube101
+    100046: pCube102
+    100048: pCube103
+    100050: pCube104
+    100052: pCube105
+    100054: pCube106
+    100056: pCube107
+    100058: pCube108
+    100060: pCube109
+    100062: pCube11
+    100064: pCube110
+    100066: pCube111
+    100068: pCube112
+    100070: pCube113
+    100072: pCube114
+    100074: pCube115
+    100076: pCube116
+    100078: pCube117
+    100080: pCube118
+    100082: pCube119
+    100084: pCube12
+    100086: pCube120
+    100088: pCube121
+    100090: pCube122
+    100092: pCube123
+    100094: pCube124
+    100096: pCube125
+    100098: pCube126
+    100100: pCube127
+    100102: pCube128
+    100104: pCube129
+    100106: pCube130
+    100108: pCube131
+    100110: pCube132
+    100112: pCube133
+    100114: pCube134
+    100116: pCube135
+    100118: pCube136
+    100120: pCube137
+    100122: pCube138
+    100124: pCube139
+    100126: pCube14
+    100128: pCube140
+    100130: pCube141
+    100132: pCube15
+    100134: pCube17
+    100136: pCube22
+    100138: pCube26
+    100140: pCube27
+    100142: pCube28
+    100144: pCube29
+    100146: pCube30
+    100148: pCube31
+    100150: pCube32
+    100152: pCube33
+    100154: pCube34
+    100156: pCube35
+    100158: pCube36
+    100160: pCube37
+    100162: pCube38
+    100164: pCube39
+    100166: pCube40
+    100168: pCube41
+    100170: pCube42
+    100172: pCube43
+    100174: pCube44
+    100176: pCube45
+    100178: pCube46
+    100180: pCube47
+    100182: pCube48
+    100184: pCube49
+    100186: pCube50
+    100188: pCube51
+    100190: pCube52
+    100192: pCube53
+    100194: pCube54
+    100196: pCube55
+    100198: pCube57
+    100200: pCube58
+    100202: pCube60
+    100204: pCube61
+    100206: pCube62
+    100208: pCube63
+    100210: pCube64
+    100212: pCube65
+    100214: pCube66
+    100216: pCube67
+    100218: pCube68
+    100220: pCube69
+    100222: pCube70
+    100224: pCube71
+    100226: pCube72
+    100228: pCube73
+    100230: pCube74
+    100232: pCube75
+    100234: pCube76
+    100236: pCube77
+    100238: pCube78
+    100240: pCube79
+    100242: pCube80
+    100244: pCube81
+    100246: pCube82
+    100248: pCube83
+    100250: pCube84
+    100252: pCube85
+    100254: pCube86
+    100256: pCube87
+    100258: pCube88
+    100260: pCube89
+    100262: pCube90
+    100264: pCube91
+    100266: pCube92
+    100268: pCube93
+    100270: pCube94
+    100272: pCube95
+    100274: pCube96
+    100276: pCube97
+    100278: pCube98
+    100280: pCube99
+    100282: pCylinder10
+    100284: pCylinder11
+    100286: pCylinder12
+    100288: pCylinder13
+    100290: pCylinder14
+    100292: pCylinder15
+    100294: pCylinder16
+    100296: pCylinder17
+    100298: pCylinder18
+    100300: pCylinder19
+    100302: pCylinder20
+    100304: polySurface1
+    100306: polySurface27
+    100308: polySurface3
+    100310: polySurface34
+    100312: pPlane1
+    100314: pPlane2
+    100316: pSphere2
+    100318: pSphere5
+    100320: pSphere6
+    100322: Steine1
+    100324: //RootNode
+    100326: Street1
+    100328: Taverne
+    100330: "TavernenGeb\xE4ude"
+    100332: TavernenSchriftZug
+    100334: TavernenSchriftZugHintergrund
+    100336: "TavernenT\xFCr"
+    100338: TavernenVorDach1
+    100340: TechHQ
+    100342: TechHqFenster12
+    100344: TechHqFenster12 1
+    100346: TechHqFenster13
+    100348: TechHqFenster13 1
+    100350: TechHqFenster2
+    100352: TechHqFenster3
+    100354: TechHqFenster4
+    100356: TechHqFenster5
+    100358: TechHqFenster6
+    100360: TechHqFenster7
+    100362: TechHqFenster7 1
+    100364: TechHqFenster8
+    100366: TechHqFenster8 1
+    100368: TechHqFenster9
+    100370: TechHqFenster9 1
+    100372: "TechHQGeb\xE4ude"
+    100374: "TechHQGeb\xE4ude 1"
+    100376: TechHQSolarPanel
+    100378: TechHQSolarPanel 1
+    100380: TechHQSolarPanel1
+    100382: TechHQSolarPanel1 1
+    100384: TechHQSolarPanel10
+    100386: TechHQSolarPanel11
+    100388: TechHQSolarPanel12
+    100390: TechHQSolarPanel13
+    100392: TechHQSolarPanel2
+    100394: TechHQSolarPanel2 1
+    100396: TechHQSolarPanel3
+    100398: TechHQSolarPanel3 1
+    100400: TechHQSolarPanel4
+    100402: TechHQSolarPanel5
+    100404: TechHQSolarPanel6
+    100406: TechHQSolarPanel7
+    100408: TechHQSolarPanel8
+    100410: TechHQSolarPanel9
+    100412: TechnoArtefaktLager
+    100414: "TechnoAu\xDFenposten"
+    100416: TechnoWaffenLager
+    100418: Zaun
+    400000: AvaArteFaktVersteck
+    400002: AvaArteFaktVersteckEingangsStein
+    400004: "AvaArtefaktVersteckT\xFCr"
+    400006: AvaHQ
+    400008: AvaUnterSchlupf
+    400010: "AvaUnterSchlupfGeb\xE4ude"
+    400012: "AvaUnterSchlupfGeb\xE4ude1"
+    400014: "AvaUnterSchlupfGeb\xE4ude2"
+    400016: "AvaUnterSchlupfGeb\xE4ude3"
+    400018: AvaWaffenLager
+    400020: Bib1
+    400022: BibliotheksRuine
+    400024: "Geb\xE4ude"
+    400026: group1
+    400028: KellerEingangsRuine
+    400030: lowpoldelo:Delorean
+    400032: lowpoldelo:pCube1
+    400034: lowpoldelo:polySurface1
+    400036: pCone3
+    400038: pCone4
+    400040: pCone5
+    400042: pCube100
+    400044: pCube101
+    400046: pCube102
+    400048: pCube103
+    400050: pCube104
+    400052: pCube105
+    400054: pCube106
+    400056: pCube107
+    400058: pCube108
+    400060: pCube109
+    400062: pCube11
+    400064: pCube110
+    400066: pCube111
+    400068: pCube112
+    400070: pCube113
+    400072: pCube114
+    400074: pCube115
+    400076: pCube116
+    400078: pCube117
+    400080: pCube118
+    400082: pCube119
+    400084: pCube12
+    400086: pCube120
+    400088: pCube121
+    400090: pCube122
+    400092: pCube123
+    400094: pCube124
+    400096: pCube125
+    400098: pCube126
+    400100: pCube127
+    400102: pCube128
+    400104: pCube129
+    400106: pCube130
+    400108: pCube131
+    400110: pCube132
+    400112: pCube133
+    400114: pCube134
+    400116: pCube135
+    400118: pCube136
+    400120: pCube137
+    400122: pCube138
+    400124: pCube139
+    400126: pCube14
+    400128: pCube140
+    400130: pCube141
+    400132: pCube15
+    400134: pCube17
+    400136: pCube22
+    400138: pCube26
+    400140: pCube27
+    400142: pCube28
+    400144: pCube29
+    400146: pCube30
+    400148: pCube31
+    400150: pCube32
+    400152: pCube33
+    400154: pCube34
+    400156: pCube35
+    400158: pCube36
+    400160: pCube37
+    400162: pCube38
+    400164: pCube39
+    400166: pCube40
+    400168: pCube41
+    400170: pCube42
+    400172: pCube43
+    400174: pCube44
+    400176: pCube45
+    400178: pCube46
+    400180: pCube47
+    400182: pCube48
+    400184: pCube49
+    400186: pCube50
+    400188: pCube51
+    400190: pCube52
+    400192: pCube53
+    400194: pCube54
+    400196: pCube55
+    400198: pCube57
+    400200: pCube58
+    400202: pCube60
+    400204: pCube61
+    400206: pCube62
+    400208: pCube63
+    400210: pCube64
+    400212: pCube65
+    400214: pCube66
+    400216: pCube67
+    400218: pCube68
+    400220: pCube69
+    400222: pCube70
+    400224: pCube71
+    400226: pCube72
+    400228: pCube73
+    400230: pCube74
+    400232: pCube75
+    400234: pCube76
+    400236: pCube77
+    400238: pCube78
+    400240: pCube79
+    400242: pCube80
+    400244: pCube81
+    400246: pCube82
+    400248: pCube83
+    400250: pCube84
+    400252: pCube85
+    400254: pCube86
+    400256: pCube87
+    400258: pCube88
+    400260: pCube89
+    400262: pCube90
+    400264: pCube91
+    400266: pCube92
+    400268: pCube93
+    400270: pCube94
+    400272: pCube95
+    400274: pCube96
+    400276: pCube97
+    400278: pCube98
+    400280: pCube99
+    400282: pCylinder10
+    400284: pCylinder11
+    400286: pCylinder12
+    400288: pCylinder13
+    400290: pCylinder14
+    400292: pCylinder15
+    400294: pCylinder16
+    400296: pCylinder17
+    400298: pCylinder18
+    400300: pCylinder19
+    400302: pCylinder20
+    400304: polySurface1
+    400306: polySurface27
+    400308: polySurface3
+    400310: polySurface34
+    400312: pPlane1
+    400314: pPlane2
+    400316: pSphere2
+    400318: pSphere5
+    400320: pSphere6
+    400322: Steine1
+    400324: //RootNode
+    400326: Street1
+    400328: Taverne
+    400330: "TavernenGeb\xE4ude"
+    400332: TavernenSchriftZug
+    400334: TavernenSchriftZugHintergrund
+    400336: "TavernenT\xFCr"
+    400338: TavernenVorDach1
+    400340: TechHQ
+    400342: TechHqFenster12
+    400344: TechHqFenster12 1
+    400346: TechHqFenster13
+    400348: TechHqFenster13 1
+    400350: TechHqFenster2
+    400352: TechHqFenster3
+    400354: TechHqFenster4
+    400356: TechHqFenster5
+    400358: TechHqFenster6
+    400360: TechHqFenster7
+    400362: TechHqFenster7 1
+    400364: TechHqFenster8
+    400366: TechHqFenster8 1
+    400368: TechHqFenster9
+    400370: TechHqFenster9 1
+    400372: "TechHQGeb\xE4ude"
+    400374: "TechHQGeb\xE4ude 1"
+    400376: TechHQSolarPanel
+    400378: TechHQSolarPanel 1
+    400380: TechHQSolarPanel1
+    400382: TechHQSolarPanel1 1
+    400384: TechHQSolarPanel10
+    400386: TechHQSolarPanel11
+    400388: TechHQSolarPanel12
+    400390: TechHQSolarPanel13
+    400392: TechHQSolarPanel2
+    400394: TechHQSolarPanel2 1
+    400396: TechHQSolarPanel3
+    400398: TechHQSolarPanel3 1
+    400400: TechHQSolarPanel4
+    400402: TechHQSolarPanel5
+    400404: TechHQSolarPanel6
+    400406: TechHQSolarPanel7
+    400408: TechHQSolarPanel8
+    400410: TechHQSolarPanel9
+    400412: TechnoArtefaktLager
+    400414: "TechnoAu\xDFenposten"
+    400416: TechnoWaffenLager
+    400418: Zaun
+    2100000: "Stra\xDFenBelagFarbe"
+    2100002: GehwegFarbe
+    2100004: "Stra\xDFenBaseColor"
+    2100006: AvaHQUntergrundFarbe
+    2100008: AvaArtefaktVersteckErde
+    2100010: BiblioteksruinenSockel
+    2100012: "Biblioteksuinens\xE4ulenfarbe"
+    2100014: lambert1
+    2100016: "BiblioteksruinenM\xFCllHaufenFarbe1"
+    2100018: "BiblioteksruinenM\xFCllHaufenFarbe2"
+    2100020: BibRuineGlasKoppelFarbe
+    2100022: BibliotheksruinenDachFarbe
+    2100024: KellerEingangSeinFarbe
+    2100026: "BibliotheksruinenT\xFCrFarbe"
+    2100028: TechnoHQBaseColor
+    2100030: "TechHqT\xFCrScheibenFarbe"
+    2100032: TechHqSolarPanelBlau
+    2100034: "TechnoLagerF\xFCrArtefakteGitterL\xFCcken"
+    2100036: "TechArtefaktLagerGitterSt\xE4be"
+    2100038: "TechnoAu\xDFenPostenT\xFCrFarbe"
+    2100040: TechHQFensterRahmenFarbe
+    2100042: TechHqFensterGlasFarbe
+    2100044: TechHqSolarPanelBaseFarbe
+    2100046: "TechnoAus\xDFenPostenFarbe"
+    2100048: "TechnoAu\xDFenpostenFensterGlasFarbe"
+    2100050: "Technoau\xDFenpostenT\xFCrFarbeinnen"
+    2100052: "TechnoAu\xDFenpostenFensterFarbe"
+    2100054: "TavernenT\xFCrFarbe"
+    2100056: "TavernenT\xFCrL\xFCcke"
+    2100058: "TavernenT\xFCrGriff"
+    2100060: TavernenFrontKachelFarbe
+    2100062: TavernenFarbe
+    2100064: TavernenSchriftZugFarbe
+    2100066: TavernenSchriftUmrandungsFarbe
+    2100068: TavernenSchriftHintergrund
+    2100070: TavernenSchildUmrandungsFarbe
+    2100072: TavernenVorDach
+    2100074: AvaWaffenLagerDachFarbe
+    2100076: Default_Material
+    2100078: AvaWaffenlagerTurmBaseFarbe
+    2100080: AvaWaffenlagerObererContainerZweitFarbe
+    2100082: AvaWaffenLagerEingagnsFarbe
+    2100084: AvaWaffenLagerUntererContainerHauptFarbe
+    2100086: AvaWaffenlagerUntererContainerzweiteFarbe
+    2100088: AvaWaffelagerEingangsFarbe
+    2100090: AvaHQTurmBaseColor
+    2100092: AvaHQTurmBaseColor1
+    2100094: AvaHQZaunFarbe
+    2100096: AvaHQEingangsContainerBaseFarbe
+    2100098: AvaHQEingangsContainerZweitfarbe
+    2100100: AvaHQRechterContainerBaseColor
+    2100102: AvaHQREchterContainerZweitFarbe
+    2100104: AvaHQTurmDachFarbe
+    2100106: "AvaUnterschlupfGro\xDFeBretterFarbe"
+    2100108: AvaUnterschlupfBaseColor
+    2100110: AvaUnterschlupfDachFarbe
+    2100112: AvaUnterschlupfFensterFarbe
+    2100114: "AvaUnterschlupfT\xFCrFarbe"
+    2100116: "AvaUntersSchlupfT\xFCrSpaltFarbe"
+    2100118: AvaUnterschlupfFensterBretter
+    2100120: AvaUnterschlupfNagelFarbe
+    2100122: KellerEingangsRuinenFarbe
+    2100124: KellerZugangWandInnenFarbe2
+    2100126: KellerZugangInnenMauerFarbe
+    2100128: "AvaArtefaktVersteckT\xFCrFarbe"
+    2100130: "AvaArteFFaktVersteckT\xFCrRitzenFarbe"
+    2100132: "AvaArtefaktVersteckT\xFCrGrifFarbe"
+    2100134: GelblicherSteinFarbe
+    2100136: HellerSteinFarbe
+    2100138: DunklerSteinFarbe
+    2100140: NormalerSteinFarbe
+    2100142: BraunerSteinFarbe
+    2100144: lowpoldelo_Chassie
+    2100146: lowpoldelo_Scheinwerfer
+    2100148: lowpoldelo_Stosstange
+    2100150: lowpoldelo_Blinker
+    2100152: lowpoldelo_blackBoxes
+    2100154: lowpoldelo_Bremsleuchte
+    2100156: lowpoldelo_kuelergrill
+    2100158: lowpoldelo_rearWindows
+    2100160: lowpoldelo_Exhaust
+    2100162: lowpoldelo_Window
+    2100164: lowpoldelo_Details
+    2100166: lowpoldelo_Felge
+    2100168: lowpoldelo_Reifen
+    2300000: AvaArteFaktVersteckEingangsStein
+    2300002: "AvaArtefaktVersteckT\xFCr"
+    2300004: "AvaUnterSchlupfGeb\xE4ude"
+    2300006: "AvaUnterSchlupfGeb\xE4ude1"
+    2300008: "AvaUnterSchlupfGeb\xE4ude2"
+    2300010: "AvaUnterSchlupfGeb\xE4ude3"
+    2300012: BibliotheksRuine
+    2300014: lowpoldelo:pCube1
+    2300016: lowpoldelo:polySurface1
+    2300018: pCone3
+    2300020: pCone4
+    2300022: pCone5
+    2300024: pCube100
+    2300026: pCube101
+    2300028: pCube102
+    2300030: pCube103
+    2300032: pCube104
+    2300034: pCube105
+    2300036: pCube106
+    2300038: pCube107
+    2300040: pCube108
+    2300042: pCube109
+    2300044: pCube11
+    2300046: pCube110
+    2300048: pCube111
+    2300050: pCube112
+    2300052: pCube113
+    2300054: pCube114
+    2300056: pCube115
+    2300058: pCube116
+    2300060: pCube117
+    2300062: pCube118
+    2300064: pCube119
+    2300066: pCube12
+    2300068: pCube120
+    2300070: pCube121
+    2300072: pCube122
+    2300074: pCube123
+    2300076: pCube124
+    2300078: pCube125
+    2300080: pCube126
+    2300082: pCube127
+    2300084: pCube128
+    2300086: pCube129
+    2300088: pCube130
+    2300090: pCube131
+    2300092: pCube132
+    2300094: pCube133
+    2300096: pCube134
+    2300098: pCube135
+    2300100: pCube136
+    2300102: pCube137
+    2300104: pCube138
+    2300106: pCube139
+    2300108: pCube14
+    2300110: pCube140
+    2300112: pCube141
+    2300114: pCube15
+    2300116: pCube17
+    2300118: pCube22
+    2300120: pCube26
+    2300122: pCube27
+    2300124: pCube28
+    2300126: pCube29
+    2300128: pCube30
+    2300130: pCube31
+    2300132: pCube32
+    2300134: pCube33
+    2300136: pCube34
+    2300138: pCube35
+    2300140: pCube36
+    2300142: pCube37
+    2300144: pCube38
+    2300146: pCube39
+    2300148: pCube40
+    2300150: pCube41
+    2300152: pCube42
+    2300154: pCube43
+    2300156: pCube44
+    2300158: pCube45
+    2300160: pCube46
+    2300162: pCube47
+    2300164: pCube48
+    2300166: pCube49
+    2300168: pCube50
+    2300170: pCube51
+    2300172: pCube52
+    2300174: pCube53
+    2300176: pCube54
+    2300178: pCube55
+    2300180: pCube57
+    2300182: pCube58
+    2300184: pCube60
+    2300186: pCube61
+    2300188: pCube62
+    2300190: pCube63
+    2300192: pCube64
+    2300194: pCube65
+    2300196: pCube66
+    2300198: pCube67
+    2300200: pCube68
+    2300202: pCube69
+    2300204: pCube70
+    2300206: pCube71
+    2300208: pCube72
+    2300210: pCube73
+    2300212: pCube74
+    2300214: pCube75
+    2300216: pCube76
+    2300218: pCube77
+    2300220: pCube78
+    2300222: pCube79
+    2300224: pCube80
+    2300226: pCube81
+    2300228: pCube82
+    2300230: pCube83
+    2300232: pCube84
+    2300234: pCube85
+    2300236: pCube86
+    2300238: pCube87
+    2300240: pCube88
+    2300242: pCube89
+    2300244: pCube90
+    2300246: pCube91
+    2300248: pCube92
+    2300250: pCube93
+    2300252: pCube94
+    2300254: pCube95
+    2300256: pCube96
+    2300258: pCube97
+    2300260: pCube98
+    2300262: pCube99
+    2300264: pCylinder10
+    2300266: pCylinder11
+    2300268: pCylinder12
+    2300270: pCylinder13
+    2300272: pCylinder14
+    2300274: pCylinder15
+    2300276: pCylinder16
+    2300278: pCylinder17
+    2300280: pCylinder18
+    2300282: pCylinder19
+    2300284: pCylinder20
+    2300286: polySurface1
+    2300288: polySurface27
+    2300290: polySurface3
+    2300292: polySurface34
+    2300294: pPlane1
+    2300296: pPlane2
+    2300298: pSphere2
+    2300300: pSphere5
+    2300302: pSphere6
+    2300304: Street1
+    2300306: "TavernenGeb\xE4ude"
+    2300308: TavernenSchriftZug
+    2300310: TavernenSchriftZugHintergrund
+    2300312: "TavernenT\xFCr"
+    2300314: TavernenVorDach1
+    2300316: TechHqFenster12
+    2300318: TechHqFenster12 1
+    2300320: TechHqFenster13
+    2300322: TechHqFenster13 1
+    2300324: TechHqFenster2
+    2300326: TechHqFenster3
+    2300328: TechHqFenster4
+    2300330: TechHqFenster5
+    2300332: TechHqFenster6
+    2300334: TechHqFenster7
+    2300336: TechHqFenster7 1
+    2300338: TechHqFenster8
+    2300340: TechHqFenster8 1
+    2300342: TechHqFenster9
+    2300344: TechHqFenster9 1
+    2300346: "TechHQGeb\xE4ude"
+    2300348: "TechHQGeb\xE4ude 1"
+    2300350: TechHQSolarPanel
+    2300352: TechHQSolarPanel 1
+    2300354: TechHQSolarPanel1
+    2300356: TechHQSolarPanel1 1
+    2300358: TechHQSolarPanel10
+    2300360: TechHQSolarPanel11
+    2300362: TechHQSolarPanel12
+    2300364: TechHQSolarPanel13
+    2300366: TechHQSolarPanel2
+    2300368: TechHQSolarPanel2 1
+    2300370: TechHQSolarPanel3
+    2300372: TechHQSolarPanel3 1
+    2300374: TechHQSolarPanel4
+    2300376: TechHQSolarPanel5
+    2300378: TechHQSolarPanel6
+    2300380: TechHQSolarPanel7
+    2300382: TechHQSolarPanel8
+    2300384: TechHQSolarPanel9
+    2300386: TechnoArtefaktLager
+    2300388: "TechnoAu\xDFenposten"
+    3300000: AvaArteFaktVersteckEingangsStein
+    3300002: "AvaArtefaktVersteckT\xFCr"
+    3300004: "AvaUnterSchlupfGeb\xE4ude"
+    3300006: "AvaUnterSchlupfGeb\xE4ude1"
+    3300008: "AvaUnterSchlupfGeb\xE4ude2"
+    3300010: "AvaUnterSchlupfGeb\xE4ude3"
+    3300012: BibliotheksRuine
+    3300014: lowpoldelo:pCube1
+    3300016: lowpoldelo:polySurface1
+    3300018: pCone3
+    3300020: pCone4
+    3300022: pCone5
+    3300024: pCube100
+    3300026: pCube101
+    3300028: pCube102
+    3300030: pCube103
+    3300032: pCube104
+    3300034: pCube105
+    3300036: pCube106
+    3300038: pCube107
+    3300040: pCube108
+    3300042: pCube109
+    3300044: pCube11
+    3300046: pCube110
+    3300048: pCube111
+    3300050: pCube112
+    3300052: pCube113
+    3300054: pCube114
+    3300056: pCube115
+    3300058: pCube116
+    3300060: pCube117
+    3300062: pCube118
+    3300064: pCube119
+    3300066: pCube12
+    3300068: pCube120
+    3300070: pCube121
+    3300072: pCube122
+    3300074: pCube123
+    3300076: pCube124
+    3300078: pCube125
+    3300080: pCube126
+    3300082: pCube127
+    3300084: pCube128
+    3300086: pCube129
+    3300088: pCube130
+    3300090: pCube131
+    3300092: pCube132
+    3300094: pCube133
+    3300096: pCube134
+    3300098: pCube135
+    3300100: pCube136
+    3300102: pCube137
+    3300104: pCube138
+    3300106: pCube139
+    3300108: pCube14
+    3300110: pCube140
+    3300112: pCube141
+    3300114: pCube15
+    3300116: pCube17
+    3300118: pCube22
+    3300120: pCube26
+    3300122: pCube27
+    3300124: pCube28
+    3300126: pCube29
+    3300128: pCube30
+    3300130: pCube31
+    3300132: pCube32
+    3300134: pCube33
+    3300136: pCube34
+    3300138: pCube35
+    3300140: pCube36
+    3300142: pCube37
+    3300144: pCube38
+    3300146: pCube39
+    3300148: pCube40
+    3300150: pCube41
+    3300152: pCube42
+    3300154: pCube43
+    3300156: pCube44
+    3300158: pCube45
+    3300160: pCube46
+    3300162: pCube47
+    3300164: pCube48
+    3300166: pCube49
+    3300168: pCube50
+    3300170: pCube51
+    3300172: pCube52
+    3300174: pCube53
+    3300176: pCube54
+    3300178: pCube55
+    3300180: pCube57
+    3300182: pCube58
+    3300184: pCube60
+    3300186: pCube61
+    3300188: pCube62
+    3300190: pCube63
+    3300192: pCube64
+    3300194: pCube65
+    3300196: pCube66
+    3300198: pCube67
+    3300200: pCube68
+    3300202: pCube69
+    3300204: pCube70
+    3300206: pCube71
+    3300208: pCube72
+    3300210: pCube73
+    3300212: pCube74
+    3300214: pCube75
+    3300216: pCube76
+    3300218: pCube77
+    3300220: pCube78
+    3300222: pCube79
+    3300224: pCube80
+    3300226: pCube81
+    3300228: pCube82
+    3300230: pCube83
+    3300232: pCube84
+    3300234: pCube85
+    3300236: pCube86
+    3300238: pCube87
+    3300240: pCube88
+    3300242: pCube89
+    3300244: pCube90
+    3300246: pCube91
+    3300248: pCube92
+    3300250: pCube93
+    3300252: pCube94
+    3300254: pCube95
+    3300256: pCube96
+    3300258: pCube97
+    3300260: pCube98
+    3300262: pCube99
+    3300264: pCylinder10
+    3300266: pCylinder11
+    3300268: pCylinder12
+    3300270: pCylinder13
+    3300272: pCylinder14
+    3300274: pCylinder15
+    3300276: pCylinder16
+    3300278: pCylinder17
+    3300280: pCylinder18
+    3300282: pCylinder19
+    3300284: pCylinder20
+    3300286: polySurface1
+    3300288: polySurface27
+    3300290: polySurface3
+    3300292: polySurface34
+    3300294: pPlane1
+    3300296: pPlane2
+    3300298: pSphere2
+    3300300: pSphere5
+    3300302: pSphere6
+    3300304: Street1
+    3300306: "TavernenGeb\xE4ude"
+    3300308: TavernenSchriftZug
+    3300310: TavernenSchriftZugHintergrund
+    3300312: "TavernenT\xFCr"
+    3300314: TavernenVorDach1
+    3300316: TechHqFenster12
+    3300318: TechHqFenster12 1
+    3300320: TechHqFenster13
+    3300322: TechHqFenster13 1
+    3300324: TechHqFenster2
+    3300326: TechHqFenster3
+    3300328: TechHqFenster4
+    3300330: TechHqFenster5
+    3300332: TechHqFenster6
+    3300334: TechHqFenster7
+    3300336: TechHqFenster7 1
+    3300338: TechHqFenster8
+    3300340: TechHqFenster8 1
+    3300342: TechHqFenster9
+    3300344: TechHqFenster9 1
+    3300346: "TechHQGeb\xE4ude"
+    3300348: "TechHQGeb\xE4ude 1"
+    3300350: TechHQSolarPanel
+    3300352: TechHQSolarPanel 1
+    3300354: TechHQSolarPanel1
+    3300356: TechHQSolarPanel1 1
+    3300358: TechHQSolarPanel10
+    3300360: TechHQSolarPanel11
+    3300362: TechHQSolarPanel12
+    3300364: TechHQSolarPanel13
+    3300366: TechHQSolarPanel2
+    3300368: TechHQSolarPanel2 1
+    3300370: TechHQSolarPanel3
+    3300372: TechHQSolarPanel3 1
+    3300374: TechHQSolarPanel4
+    3300376: TechHQSolarPanel5
+    3300378: TechHQSolarPanel6
+    3300380: TechHQSolarPanel7
+    3300382: TechHQSolarPanel8
+    3300384: TechHQSolarPanel9
+    3300386: TechnoArtefaktLager
+    3300388: "TechnoAu\xDFenposten"
+    4300000: Street1
+    4300002: BibliotheksRuine
+    4300004: pCube11
+    4300006: pCube12
+    4300008: pCylinder10
+    4300010: polySurface3
+    4300012: pSphere5
+    4300014: pSphere6
+    4300016: pSphere2
+    4300018: pCube14
+    4300020: pCube61
+    4300022: pCylinder11
+    4300024: pCube60
+    4300026: pPlane2
+    4300028: TechnoArtefaktLager
+    4300030: "TechHQGeb\xE4ude"
+    4300032: TechHqFenster7
+    4300034: TechHqFenster8
+    4300036: TechHqFenster9
+    4300038: TechHQSolarPanel
+    4300040: TechHQSolarPanel1
+    4300042: TechHQSolarPanel2
+    4300044: TechHQSolarPanel3
+    4300046: TechHqFenster12
+    4300048: TechHqFenster13
+    4300050: TechHQSolarPanel13
+    4300052: "TechnoAu\xDFenposten"
+    4300054: "TechHQGeb\xE4ude"
+    4300056: TechHqFenster2
+    4300058: TechHqFenster3
+    4300060: TechHqFenster4
+    4300062: TechHqFenster5
+    4300064: TechHqFenster6
+    4300066: TechHqFenster7
+    4300068: TechHqFenster8
+    4300070: TechHqFenster9
+    4300072: TechHQSolarPanel
+    4300074: TechHQSolarPanel1
+    4300076: TechHQSolarPanel2
+    4300078: TechHQSolarPanel3
+    4300080: TechHQSolarPanel4
+    4300082: TechHQSolarPanel5
+    4300084: TechHQSolarPanel6
+    4300086: TechHQSolarPanel7
+    4300088: TechHQSolarPanel8
+    4300090: TechHQSolarPanel9
+    4300092: TechHQSolarPanel10
+    4300094: TechHQSolarPanel11
+    4300096: TechHQSolarPanel12
+    4300098: TechHqFenster12
+    4300100: TechHqFenster13
+    4300102: "TavernenT\xFCr"
+    4300104: "TavernenGeb\xE4ude"
+    4300106: TavernenSchriftZug
+    4300108: TavernenSchriftZugHintergrund
+    4300110: TavernenVorDach1
+    4300112: pCone3
+    4300114: polySurface27
+    4300116: pPlane1
+    4300118: pCube22
+    4300120: pCube26
+    4300122: pCube27
+    4300124: pCube28
+    4300126: pCube29
+    4300128: pCube30
+    4300130: pCube31
+    4300132: pCube32
+    4300134: pCube33
+    4300136: pCube34
+    4300138: pCube35
+    4300140: pCube36
+    4300142: pCube37
+    4300144: pCube38
+    4300146: pCube39
+    4300148: pCube40
+    4300150: pCube41
+    4300152: pCube42
+    4300154: pCube43
+    4300156: pCube44
+    4300158: pCube45
+    4300160: pCube46
+    4300162: pCube47
+    4300164: pCube48
+    4300166: pCube49
+    4300168: pCube50
+    4300170: pCube51
+    4300172: pCube52
+    4300174: pCube53
+    4300176: pCube54
+    4300178: pCube55
+    4300180: pCube15
     4300182: pCube17
-    4300184: pCube20
-    4300186: pCube23
-    4300188: pCone1
-    4300190: pCube26
-    4300192: pCone1
-    4300194: pCube24
-    4300196: pCube27
-    4300198: pCube28
-    4300200: pCube29
-    4300202: pCube30
-    4300204: pCube31
-    4300206: pCube32
-    4300208: pCube33
-    4300210: pCube34
-    4300212: pCube35
-    4300214: pCube36
-    4300216: pCube37
-    4300218: pCube38
-    4300220: pCube39
-    4300222: pCube40
-    4300224: pCube41
-    4300226: pCube42
-    4300228: pCube43
-    4300230: pCube44
-    4300232: pCube45
-    4300234: pCube46
-    4300236: pCube47
-    4300238: pCube48
-    4300240: pCube49
-    4300242: pCube50
-    4300244: pCube51
-    4300246: pCube52
-    4300248: pCube53
-    4300250: pCube54
-    4300252: pCube55
-    4300254: pCube22
-    4300256: pPlane1
-    4300258: polySurface27
-    4300260: polySurface26
-    4300262: AvaUnterSchlupf
-    4300264: pCube57
-    4300266: pCube58
-    4300268: AvaArteFaktLager
-    4300270: pSphere7
-    4300272: pSphere8
-    4300274: Taverne
-    4300276: Haus
-    4300278: pCube59
-    4300280: pSphere9
-    7400000: Take 001
+    4300184: pCone4
+    4300186: pCube62
+    4300188: pCone5
+    4300190: pCube63
+    4300192: pCube64
+    4300194: pCube65
+    4300196: pCube58
+    4300198: pCube57
+    4300200: "AvaUnterSchlupfGeb\xE4ude"
+    4300202: pCube66
+    4300204: pCube67
+    4300206: pCube68
+    4300208: pCylinder12
+    4300210: pCylinder13
+    4300212: pCylinder14
+    4300214: pCylinder15
+    4300216: pCylinder16
+    4300218: pCylinder17
+    4300220: pCylinder18
+    4300222: pCylinder19
+    4300224: pCylinder20
+    4300226: "AvaUnterSchlupfGeb\xE4ude1"
+    4300228: "AvaUnterSchlupfGeb\xE4ude2"
+    4300230: "AvaUnterSchlupfGeb\xE4ude3"
+    4300232: pCube69
+    4300234: pCube70
+    4300236: pCube71
+    4300238: pCube76
+    4300240: pCube77
+    4300242: pCube72
+    4300244: pCube73
+    4300246: pCube74
+    4300248: pCube75
+    4300250: "AvaArtefaktVersteckT\xFCr"
+    4300252: AvaArteFaktVersteckEingangsStein
+    4300254: pCube92
+    4300256: pCube98
+    4300258: pCube99
+    4300260: pCube102
+    4300262: pCube101
+    4300264: pCube100
+    4300266: pCube83
+    4300268: pCube80
+    4300270: pCube86
+    4300272: pCube88
+    4300274: pCube91
+    4300276: pCube89
+    4300278: pCube90
+    4300280: pCube85
+    4300282: pCube78
+    4300284: pCube79
+    4300286: pCube81
+    4300288: pCube95
+    4300290: pCube93
+    4300292: pCube97
+    4300294: pCube94
+    4300296: pCube87
+    4300298: pCube96
+    4300300: pCube84
+    4300302: pCube82
+    4300304: pCube111
+    4300306: pCube110
+    4300308: pCube109
+    4300310: pCube108
+    4300312: pCube107
+    4300314: pCube106
+    4300316: pCube105
+    4300318: pCube104
+    4300320: pCube103
+    4300322: pCube120
+    4300324: pCube119
+    4300326: pCube118
+    4300328: pCube117
+    4300330: pCube116
+    4300332: pCube115
+    4300334: pCube114
+    4300336: pCube113
+    4300338: pCube112
+    4300340: pCube140
+    4300342: pCube139
+    4300344: pCube138
+    4300346: pCube137
+    4300348: pCube136
+    4300350: pCube135
+    4300352: pCube134
+    4300354: pCube133
+    4300356: pCube132
+    4300358: pCube131
+    4300360: pCube130
+    4300362: pCube129
+    4300364: pCube128
+    4300366: pCube127
+    4300368: pCube126
+    4300370: pCube125
+    4300372: pCube124
+    4300374: pCube123
+    4300376: pCube122
+    4300378: pCube121
+    4300380: pCube141
+    4300382: lowpoldelo:pCube1
+    4300384: lowpoldelo:polySurface1
+    4300386: polySurface1
+    4300388: polySurface34
     9500000: //RootNode
   externalObjects: {}
   materials:
