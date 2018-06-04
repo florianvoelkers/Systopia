@@ -1,0 +1,1045 @@
+fileFormatVersion: 2
+guid: ebadd6f687b067d41959f68f1cf9ad30
+timeCreated: 1528118963
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Boden2
+    100002: Echse
+    100004: Echse1
+    100006: "EingabeGer\xE4t"
+    100008: "EingabeGer\xE4t1"
+    100010: ForscherinEcke
+    100012: GlasHalter
+    100014: GlasHalter 1
+    100016: GlasHalter 10
+    100018: GlasHalter 11
+    100020: GlasHalter 12
+    100022: GlasHalter 13
+    100024: GlasHalter 14
+    100026: GlasHalter 15
+    100028: GlasHalter 16
+    100030: GlasHalter 17
+    100032: GlasHalter 18
+    100034: GlasHalter 19
+    100036: GlasHalter 2
+    100038: GlasHalter 20
+    100040: GlasHalter 21
+    100042: GlasHalter 22
+    100044: GlasHalter 23
+    100046: GlasHalter 24
+    100048: GlasHalter 3
+    100050: GlasHalter 4
+    100052: GlasHalter 5
+    100054: GlasHalter 6
+    100056: GlasHalter 7
+    100058: GlasHalter 8
+    100060: GlasHalter 9
+    100062: GlasHalter1
+    100064: GlasHalter1 1
+    100066: GlasHalter1 10
+    100068: GlasHalter1 11
+    100070: GlasHalter1 12
+    100072: GlasHalter1 13
+    100074: GlasHalter1 14
+    100076: GlasHalter1 15
+    100078: GlasHalter1 16
+    100080: GlasHalter1 17
+    100082: GlasHalter1 18
+    100084: GlasHalter1 19
+    100086: GlasHalter1 2
+    100088: GlasHalter1 20
+    100090: GlasHalter1 21
+    100092: GlasHalter1 22
+    100094: GlasHalter1 23
+    100096: GlasHalter1 24
+    100098: GlasHalter1 3
+    100100: GlasHalter1 4
+    100102: GlasHalter1 5
+    100104: GlasHalter1 6
+    100106: GlasHalter1 7
+    100108: GlasHalter1 8
+    100110: GlasHalter1 9
+    100112: GlasMitHalterung
+    100114: GlasMitHalterung 1
+    100116: GlasMitHalterung 2
+    100118: GlasMitHalterung 3
+    100120: GlasMitHalterung 4
+    100122: GlasMitHalterung 5
+    100124: GlasMitHalterung1
+    100126: GlasMitHalterung2
+    100128: GlasMitHalterung3
+    100130: GlasMitHalterung4
+    100132: GlasMitHalterung5
+    100134: GlasMitHalterung6
+    100136: GlasMitHalterung7
+    100138: GlasMitHalterung8
+    100140: group1
+    100142: group10
+    100144: group11
+    100146: group12
+    100148: group13
+    100150: group14
+    100152: group2
+    100154: group3
+    100156: group4
+    100158: group5
+    100160: group5 1
+    100162: group5 10
+    100164: group5 11
+    100166: group5 12
+    100168: group5 13
+    100170: group5 2
+    100172: group5 3
+    100174: group5 4
+    100176: group5 5
+    100178: group5 6
+    100180: group5 7
+    100182: group5 8
+    100184: group5 9
+    100186: group6
+    100188: group6 1
+    100190: group6 10
+    100192: group6 11
+    100194: group6 12
+    100196: group6 13
+    100198: group6 2
+    100200: group6 3
+    100202: group6 4
+    100204: group6 5
+    100206: group6 6
+    100208: group6 7
+    100210: group6 8
+    100212: group6 9
+    100214: group7
+    100216: group8
+    100218: group9
+    100220: HauptMannMonitor
+    100222: HauptMannMonitor2
+    100224: HauptMannMonitor3
+    100226: HauptMannPlataeu
+    100228: HauptMannStuhl
+    100230: HauptMannStuhlBase
+    100232: HauptMannTisch
+    100234: "HauptMannZaunGer\xFCst"
+    100236: HauptManTischMitHoloGramm
+    100238: HintereWand
+    100240: HoloGrammZaun
+    100242: HoloGrammZaun 1
+    100244: HoloGrammZaun 2
+    100246: HoloGrammZaun 3
+    100248: HoloGrammZaun1
+    100250: HoloGrammZaun1 1
+    100252: HoloGrammZaun1 2
+    100254: HoloGrammZaun4
+    100256: HoloGrammZaun4 1
+    100258: HoloGrammZaun4 2
+    100260: HoloGrammZaun4 3
+    100262: HoloGrammZaun4 4
+    100264: HoloGrammZaun4 5
+    100266: HoloGrammZaun5
+    100268: Mikroskop
+    100270: PC1
+    100272: pCube2
+    100274: pCube5
+    100276: pCube6
+    100278: pCube7
+    100280: pCylinder1
+    100282: pCylinder10
+    100284: pCylinder11
+    100286: pCylinder12
+    100288: pCylinder13
+    100290: pCylinder14
+    100292: pCylinder15
+    100294: pCylinder3
+    100296: pCylinder4
+    100298: pCylinder5
+    100300: pCylinder6
+    100302: pCylinder7
+    100304: pCylinder8
+    100306: pCylinder9
+    100308: Raum
+    100310: Reagenzienhalter
+    100312: "RechteL\xE4uchte"
+    100314: RechteWand
+    100316: SitzKissen
+    100318: "SitzSch\xFCssel"
+    100320: Stuhl
+    100322: StuhlBein
+    100324: "S\xE4ule"
+    100326: "S\xE4ule1"
+    100328: "S\xE4ule2"
+    100330: "S\xE4ule3"
+    100332: "S\xE4ule4"
+    100334: "S\xE4ule5"
+    100336: "S\xE4ule6"
+    100338: "S\xE4ule7"
+    100340: "S\xE4ule8"
+    100342: "S\xE4ulen"
+    100344: //RootNode
+    100346: Therarium
+    100348: TherariumBase
+    100350: TherariumGlas
+    100352: TherariumSand
+    100354: TheraroumAst
+    100356: TischHoloGramm
+    100358: TischPlatte
+    100360: TischPlatte1
+    100362: "T\xFCr"
+    100364: WandLampe
+    100366: WeltProjektion
+    100368: WeltProjektion 1
+    100370: WeltProjektionsBase
+    100372: ZaunInnenGlas
+    100374: ZaunInnenGlas 1
+    100376: ZaunInnenGlas 10
+    100378: ZaunInnenGlas 11
+    100380: ZaunInnenGlas 12
+    100382: ZaunInnenGlas 2
+    100384: ZaunInnenGlas 3
+    100386: ZaunInnenGlas 4
+    100388: ZaunInnenGlas 5
+    100390: ZaunInnenGlas 6
+    100392: ZaunInnenGlas 7
+    100394: ZaunInnenGlas 8
+    100396: ZaunInnenGlas 9
+    100398: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf10"
+    100400: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf11"
+    100402: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf4"
+    100404: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf5"
+    100406: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf6"
+    100408: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf7"
+    100410: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf8"
+    100412: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf9"
+    100414: "Zentrifuge_und_Gl\xE4ser:LaborEquipment"
+    100416: "Zentrifuge_und_Gl\xE4ser:pCube5"
+    100418: "Zentrifuge_und_Gl\xE4ser:pCube6"
+    100420: "Zentrifuge_und_Gl\xE4ser:pCylinder10"
+    100422: "Zentrifuge_und_Gl\xE4ser:pCylinder11"
+    100424: "Zentrifuge_und_Gl\xE4ser:pCylinder12"
+    100426: "Zentrifuge_und_Gl\xE4ser:pCylinder13"
+    100428: "Zentrifuge_und_Gl\xE4ser:pCylinder14"
+    100430: "Zentrifuge_und_Gl\xE4ser:pCylinder3"
+    100432: "Zentrifuge_und_Gl\xE4ser:pCylinder4"
+    100434: "Zentrifuge_und_Gl\xE4ser:pCylinder5"
+    100436: "Zentrifuge_und_Gl\xE4ser:pCylinder6"
+    100438: "Zentrifuge_und_Gl\xE4ser:pCylinder7"
+    100440: "Zentrifuge_und_Gl\xE4ser:pCylinder8"
+    100442: "Zentrifuge_und_Gl\xE4ser:pCylinder9"
+    100444: "Zentrifuge_und_Gl\xE4ser:Reagenzienhalter"
+    100446: "Zentrifuge_und_Gl\xE4ser:Zentrifuge"
+    400000: Boden2
+    400002: Echse
+    400004: Echse1
+    400006: "EingabeGer\xE4t"
+    400008: "EingabeGer\xE4t1"
+    400010: ForscherinEcke
+    400012: GlasHalter
+    400014: GlasHalter 1
+    400016: GlasHalter 10
+    400018: GlasHalter 11
+    400020: GlasHalter 12
+    400022: GlasHalter 13
+    400024: GlasHalter 14
+    400026: GlasHalter 15
+    400028: GlasHalter 16
+    400030: GlasHalter 17
+    400032: GlasHalter 18
+    400034: GlasHalter 19
+    400036: GlasHalter 2
+    400038: GlasHalter 20
+    400040: GlasHalter 21
+    400042: GlasHalter 22
+    400044: GlasHalter 23
+    400046: GlasHalter 24
+    400048: GlasHalter 3
+    400050: GlasHalter 4
+    400052: GlasHalter 5
+    400054: GlasHalter 6
+    400056: GlasHalter 7
+    400058: GlasHalter 8
+    400060: GlasHalter 9
+    400062: GlasHalter1
+    400064: GlasHalter1 1
+    400066: GlasHalter1 10
+    400068: GlasHalter1 11
+    400070: GlasHalter1 12
+    400072: GlasHalter1 13
+    400074: GlasHalter1 14
+    400076: GlasHalter1 15
+    400078: GlasHalter1 16
+    400080: GlasHalter1 17
+    400082: GlasHalter1 18
+    400084: GlasHalter1 19
+    400086: GlasHalter1 2
+    400088: GlasHalter1 20
+    400090: GlasHalter1 21
+    400092: GlasHalter1 22
+    400094: GlasHalter1 23
+    400096: GlasHalter1 24
+    400098: GlasHalter1 3
+    400100: GlasHalter1 4
+    400102: GlasHalter1 5
+    400104: GlasHalter1 6
+    400106: GlasHalter1 7
+    400108: GlasHalter1 8
+    400110: GlasHalter1 9
+    400112: GlasMitHalterung
+    400114: GlasMitHalterung 1
+    400116: GlasMitHalterung 2
+    400118: GlasMitHalterung 3
+    400120: GlasMitHalterung 4
+    400122: GlasMitHalterung 5
+    400124: GlasMitHalterung1
+    400126: GlasMitHalterung2
+    400128: GlasMitHalterung3
+    400130: GlasMitHalterung4
+    400132: GlasMitHalterung5
+    400134: GlasMitHalterung6
+    400136: GlasMitHalterung7
+    400138: GlasMitHalterung8
+    400140: group1
+    400142: group10
+    400144: group11
+    400146: group12
+    400148: group13
+    400150: group14
+    400152: group2
+    400154: group3
+    400156: group4
+    400158: group5
+    400160: group5 1
+    400162: group5 10
+    400164: group5 11
+    400166: group5 12
+    400168: group5 13
+    400170: group5 2
+    400172: group5 3
+    400174: group5 4
+    400176: group5 5
+    400178: group5 6
+    400180: group5 7
+    400182: group5 8
+    400184: group5 9
+    400186: group6
+    400188: group6 1
+    400190: group6 10
+    400192: group6 11
+    400194: group6 12
+    400196: group6 13
+    400198: group6 2
+    400200: group6 3
+    400202: group6 4
+    400204: group6 5
+    400206: group6 6
+    400208: group6 7
+    400210: group6 8
+    400212: group6 9
+    400214: group7
+    400216: group8
+    400218: group9
+    400220: HauptMannMonitor
+    400222: HauptMannMonitor2
+    400224: HauptMannMonitor3
+    400226: HauptMannPlataeu
+    400228: HauptMannStuhl
+    400230: HauptMannStuhlBase
+    400232: HauptMannTisch
+    400234: "HauptMannZaunGer\xFCst"
+    400236: HauptManTischMitHoloGramm
+    400238: HintereWand
+    400240: HoloGrammZaun
+    400242: HoloGrammZaun 1
+    400244: HoloGrammZaun 2
+    400246: HoloGrammZaun 3
+    400248: HoloGrammZaun1
+    400250: HoloGrammZaun1 1
+    400252: HoloGrammZaun1 2
+    400254: HoloGrammZaun4
+    400256: HoloGrammZaun4 1
+    400258: HoloGrammZaun4 2
+    400260: HoloGrammZaun4 3
+    400262: HoloGrammZaun4 4
+    400264: HoloGrammZaun4 5
+    400266: HoloGrammZaun5
+    400268: Mikroskop
+    400270: PC1
+    400272: pCube2
+    400274: pCube5
+    400276: pCube6
+    400278: pCube7
+    400280: pCylinder1
+    400282: pCylinder10
+    400284: pCylinder11
+    400286: pCylinder12
+    400288: pCylinder13
+    400290: pCylinder14
+    400292: pCylinder15
+    400294: pCylinder3
+    400296: pCylinder4
+    400298: pCylinder5
+    400300: pCylinder6
+    400302: pCylinder7
+    400304: pCylinder8
+    400306: pCylinder9
+    400308: Raum
+    400310: Reagenzienhalter
+    400312: "RechteL\xE4uchte"
+    400314: RechteWand
+    400316: SitzKissen
+    400318: "SitzSch\xFCssel"
+    400320: Stuhl
+    400322: StuhlBein
+    400324: "S\xE4ule"
+    400326: "S\xE4ule1"
+    400328: "S\xE4ule2"
+    400330: "S\xE4ule3"
+    400332: "S\xE4ule4"
+    400334: "S\xE4ule5"
+    400336: "S\xE4ule6"
+    400338: "S\xE4ule7"
+    400340: "S\xE4ule8"
+    400342: "S\xE4ulen"
+    400344: //RootNode
+    400346: Therarium
+    400348: TherariumBase
+    400350: TherariumGlas
+    400352: TherariumSand
+    400354: TheraroumAst
+    400356: TischHoloGramm
+    400358: TischPlatte
+    400360: TischPlatte1
+    400362: "T\xFCr"
+    400364: WandLampe
+    400366: WeltProjektion
+    400368: WeltProjektion 1
+    400370: WeltProjektionsBase
+    400372: ZaunInnenGlas
+    400374: ZaunInnenGlas 1
+    400376: ZaunInnenGlas 10
+    400378: ZaunInnenGlas 11
+    400380: ZaunInnenGlas 12
+    400382: ZaunInnenGlas 2
+    400384: ZaunInnenGlas 3
+    400386: ZaunInnenGlas 4
+    400388: ZaunInnenGlas 5
+    400390: ZaunInnenGlas 6
+    400392: ZaunInnenGlas 7
+    400394: ZaunInnenGlas 8
+    400396: ZaunInnenGlas 9
+    400398: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf10"
+    400400: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf11"
+    400402: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf4"
+    400404: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf5"
+    400406: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf6"
+    400408: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf7"
+    400410: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf8"
+    400412: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf9"
+    400414: "Zentrifuge_und_Gl\xE4ser:LaborEquipment"
+    400416: "Zentrifuge_und_Gl\xE4ser:pCube5"
+    400418: "Zentrifuge_und_Gl\xE4ser:pCube6"
+    400420: "Zentrifuge_und_Gl\xE4ser:pCylinder10"
+    400422: "Zentrifuge_und_Gl\xE4ser:pCylinder11"
+    400424: "Zentrifuge_und_Gl\xE4ser:pCylinder12"
+    400426: "Zentrifuge_und_Gl\xE4ser:pCylinder13"
+    400428: "Zentrifuge_und_Gl\xE4ser:pCylinder14"
+    400430: "Zentrifuge_und_Gl\xE4ser:pCylinder3"
+    400432: "Zentrifuge_und_Gl\xE4ser:pCylinder4"
+    400434: "Zentrifuge_und_Gl\xE4ser:pCylinder5"
+    400436: "Zentrifuge_und_Gl\xE4ser:pCylinder6"
+    400438: "Zentrifuge_und_Gl\xE4ser:pCylinder7"
+    400440: "Zentrifuge_und_Gl\xE4ser:pCylinder8"
+    400442: "Zentrifuge_und_Gl\xE4ser:pCylinder9"
+    400444: "Zentrifuge_und_Gl\xE4ser:Reagenzienhalter"
+    400446: "Zentrifuge_und_Gl\xE4ser:Zentrifuge"
+    2100000: BodenBaseColor
+    2100002: WandLampenFarbe
+    2100004: "T\xFCrBaseFarbe"
+    2100006: "T\xFCrSchlossBalkenFarbe"
+    2100008: "T\xFCrRitzenFarbe"
+    2100010: "T\xFCrSchlossFarbe2"
+    2100012: "T\xFCrSchlossBaseFarbe"
+    2100014: "T\xFCrSchlossFarbe3"
+    2100016: "S\xE4ulenBaseFarbe"
+    2100018: BodenKachelFarbe
+    2100020: AbgrenzungsGlas
+    2100022: WegZumTorFarbe
+    2100024: TischFarbe
+    2100026: TischHoloGramFarbe
+    2100028: weltBaseColor
+    2100030: "EingabgeGer\xE4tFarbe"
+    2100032: HologrammTastenFarben
+    2100034: PCFarbe
+    2100036: PcFrontFarbe
+    2100038: StuhlBeinFarbe
+    2100040: "SitzSch\xFCsselFarbe"
+    2100042: SitzKissenFarbe
+    2100044: lambert27
+    2100046: TherariumSandFarbe
+    2100048: TherariumWasserFarbe
+    2100050: TherariumGlasFarbe
+    2100052: TherariumAstFarbe
+    2100054: TherariumAstBlattfArbe
+    2100056: EchsenFarbe
+    2100058: "Zentrifuge_und_Gl\xE4ser_ZentrifugenFarbe"
+    2100060: "Zentrifuge_und_Gl\xE4ser_ZentrifugenDichtung"
+    2100062: "Zentrifuge_und_Gl\xE4ser_ZentrifugenDeckelFarbe"
+    2100064: "Zentrifuge_und_Gl\xE4ser_KaffeMaschinenKnopfFarbe"
+    2100066: "Zentrifuge_und_Gl\xE4ser_ReagenzienhalterFarbe"
+    2100068: "Zentrifuge_und_Gl\xE4ser_ReagenzGlasFarbe"
+    2100070: MikroskopBaseFarbe
+    2100072: MikroskopAblagenFarbe
+    2100074: MikroskopLinsenFarbe
+    2100076: "MikroskopAugenSt\xFCcke"
+    2100078: MikroskopMusterFarbe
+    2100080: WeltProjektionsBaseFarbe
+    2100082: "WeltProjektionGr\xFCn"
+    2100084: WeltProjektionRot
+    2100086: HoloGrammZaunFarbe
+    2100088: GlasHalterungFarbe
+    2100090: HauptMannStuhlBaseFarbe
+    2100092: HauptMannMonitorFarbe1
+    2300000: Boden2
+    2300002: Echse
+    2300004: Echse1
+    2300006: "EingabeGer\xE4t"
+    2300008: "EingabeGer\xE4t1"
+    2300010: GlasHalter
+    2300012: GlasHalter 1
+    2300014: GlasHalter 10
+    2300016: GlasHalter 11
+    2300018: GlasHalter 12
+    2300020: GlasHalter 13
+    2300022: GlasHalter 14
+    2300024: GlasHalter 15
+    2300026: GlasHalter 16
+    2300028: GlasHalter 17
+    2300030: GlasHalter 18
+    2300032: GlasHalter 19
+    2300034: GlasHalter 2
+    2300036: GlasHalter 20
+    2300038: GlasHalter 21
+    2300040: GlasHalter 22
+    2300042: GlasHalter 23
+    2300044: GlasHalter 24
+    2300046: GlasHalter 3
+    2300048: GlasHalter 4
+    2300050: GlasHalter 5
+    2300052: GlasHalter 6
+    2300054: GlasHalter 7
+    2300056: GlasHalter 8
+    2300058: GlasHalter 9
+    2300060: GlasHalter1
+    2300062: GlasHalter1 1
+    2300064: GlasHalter1 10
+    2300066: GlasHalter1 11
+    2300068: GlasHalter1 12
+    2300070: GlasHalter1 13
+    2300072: GlasHalter1 14
+    2300074: GlasHalter1 15
+    2300076: GlasHalter1 16
+    2300078: GlasHalter1 17
+    2300080: GlasHalter1 18
+    2300082: GlasHalter1 19
+    2300084: GlasHalter1 2
+    2300086: GlasHalter1 20
+    2300088: GlasHalter1 21
+    2300090: GlasHalter1 22
+    2300092: GlasHalter1 23
+    2300094: GlasHalter1 24
+    2300096: GlasHalter1 3
+    2300098: GlasHalter1 4
+    2300100: GlasHalter1 5
+    2300102: GlasHalter1 6
+    2300104: GlasHalter1 7
+    2300106: GlasHalter1 8
+    2300108: GlasHalter1 9
+    2300110: HauptMannMonitor
+    2300112: HauptMannMonitor2
+    2300114: HauptMannMonitor3
+    2300116: HauptMannStuhlBase
+    2300118: HauptMannTisch
+    2300120: HintereWand
+    2300122: HoloGrammZaun 1
+    2300124: HoloGrammZaun 2
+    2300126: HoloGrammZaun 3
+    2300128: HoloGrammZaun1
+    2300130: HoloGrammZaun1 1
+    2300132: HoloGrammZaun1 2
+    2300134: HoloGrammZaun4
+    2300136: HoloGrammZaun4 1
+    2300138: HoloGrammZaun4 2
+    2300140: HoloGrammZaun4 3
+    2300142: HoloGrammZaun4 4
+    2300144: HoloGrammZaun4 5
+    2300146: HoloGrammZaun5
+    2300148: Mikroskop
+    2300150: PC1
+    2300152: pCube2
+    2300154: pCube5
+    2300156: pCube6
+    2300158: pCube7
+    2300160: pCylinder1
+    2300162: pCylinder10
+    2300164: pCylinder11
+    2300166: pCylinder12
+    2300168: pCylinder13
+    2300170: pCylinder14
+    2300172: pCylinder15
+    2300174: pCylinder3
+    2300176: pCylinder4
+    2300178: pCylinder5
+    2300180: pCylinder6
+    2300182: pCylinder7
+    2300184: pCylinder8
+    2300186: pCylinder9
+    2300188: "RechteL\xE4uchte"
+    2300190: RechteWand
+    2300192: SitzKissen
+    2300194: "SitzSch\xFCssel"
+    2300196: StuhlBein
+    2300198: "S\xE4ule"
+    2300200: "S\xE4ule1"
+    2300202: "S\xE4ule2"
+    2300204: "S\xE4ule3"
+    2300206: "S\xE4ule4"
+    2300208: "S\xE4ule5"
+    2300210: "S\xE4ule6"
+    2300212: "S\xE4ule7"
+    2300214: "S\xE4ule8"
+    2300216: TherariumBase
+    2300218: TherariumGlas
+    2300220: TherariumSand
+    2300222: TheraroumAst
+    2300224: TischHoloGramm
+    2300226: TischPlatte
+    2300228: TischPlatte1
+    2300230: WandLampe
+    2300232: WeltProjektion 1
+    2300234: WeltProjektionsBase
+    2300236: ZaunInnenGlas
+    2300238: ZaunInnenGlas 1
+    2300240: ZaunInnenGlas 10
+    2300242: ZaunInnenGlas 11
+    2300244: ZaunInnenGlas 12
+    2300246: ZaunInnenGlas 2
+    2300248: ZaunInnenGlas 3
+    2300250: ZaunInnenGlas 4
+    2300252: ZaunInnenGlas 5
+    2300254: ZaunInnenGlas 6
+    2300256: ZaunInnenGlas 7
+    2300258: ZaunInnenGlas 8
+    2300260: ZaunInnenGlas 9
+    2300262: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf10"
+    2300264: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf11"
+    2300266: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf4"
+    2300268: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf5"
+    2300270: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf6"
+    2300272: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf7"
+    2300274: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf8"
+    2300276: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf9"
+    2300278: "Zentrifuge_und_Gl\xE4ser:pCube5"
+    2300280: "Zentrifuge_und_Gl\xE4ser:pCube6"
+    2300282: "Zentrifuge_und_Gl\xE4ser:pCylinder10"
+    2300284: "Zentrifuge_und_Gl\xE4ser:pCylinder11"
+    2300286: "Zentrifuge_und_Gl\xE4ser:pCylinder12"
+    2300288: "Zentrifuge_und_Gl\xE4ser:pCylinder13"
+    2300290: "Zentrifuge_und_Gl\xE4ser:pCylinder14"
+    2300292: "Zentrifuge_und_Gl\xE4ser:pCylinder3"
+    2300294: "Zentrifuge_und_Gl\xE4ser:pCylinder4"
+    2300296: "Zentrifuge_und_Gl\xE4ser:pCylinder5"
+    2300298: "Zentrifuge_und_Gl\xE4ser:pCylinder6"
+    2300300: "Zentrifuge_und_Gl\xE4ser:pCylinder7"
+    2300302: "Zentrifuge_und_Gl\xE4ser:pCylinder8"
+    2300304: "Zentrifuge_und_Gl\xE4ser:pCylinder9"
+    2300306: "Zentrifuge_und_Gl\xE4ser:Zentrifuge"
+    3300000: Boden2
+    3300002: Echse
+    3300004: Echse1
+    3300006: "EingabeGer\xE4t"
+    3300008: "EingabeGer\xE4t1"
+    3300010: GlasHalter
+    3300012: GlasHalter 1
+    3300014: GlasHalter 10
+    3300016: GlasHalter 11
+    3300018: GlasHalter 12
+    3300020: GlasHalter 13
+    3300022: GlasHalter 14
+    3300024: GlasHalter 15
+    3300026: GlasHalter 16
+    3300028: GlasHalter 17
+    3300030: GlasHalter 18
+    3300032: GlasHalter 19
+    3300034: GlasHalter 2
+    3300036: GlasHalter 20
+    3300038: GlasHalter 21
+    3300040: GlasHalter 22
+    3300042: GlasHalter 23
+    3300044: GlasHalter 24
+    3300046: GlasHalter 3
+    3300048: GlasHalter 4
+    3300050: GlasHalter 5
+    3300052: GlasHalter 6
+    3300054: GlasHalter 7
+    3300056: GlasHalter 8
+    3300058: GlasHalter 9
+    3300060: GlasHalter1
+    3300062: GlasHalter1 1
+    3300064: GlasHalter1 10
+    3300066: GlasHalter1 11
+    3300068: GlasHalter1 12
+    3300070: GlasHalter1 13
+    3300072: GlasHalter1 14
+    3300074: GlasHalter1 15
+    3300076: GlasHalter1 16
+    3300078: GlasHalter1 17
+    3300080: GlasHalter1 18
+    3300082: GlasHalter1 19
+    3300084: GlasHalter1 2
+    3300086: GlasHalter1 20
+    3300088: GlasHalter1 21
+    3300090: GlasHalter1 22
+    3300092: GlasHalter1 23
+    3300094: GlasHalter1 24
+    3300096: GlasHalter1 3
+    3300098: GlasHalter1 4
+    3300100: GlasHalter1 5
+    3300102: GlasHalter1 6
+    3300104: GlasHalter1 7
+    3300106: GlasHalter1 8
+    3300108: GlasHalter1 9
+    3300110: HauptMannMonitor
+    3300112: HauptMannMonitor2
+    3300114: HauptMannMonitor3
+    3300116: HauptMannStuhlBase
+    3300118: HauptMannTisch
+    3300120: HintereWand
+    3300122: HoloGrammZaun 1
+    3300124: HoloGrammZaun 2
+    3300126: HoloGrammZaun 3
+    3300128: HoloGrammZaun1
+    3300130: HoloGrammZaun1 1
+    3300132: HoloGrammZaun1 2
+    3300134: HoloGrammZaun4
+    3300136: HoloGrammZaun4 1
+    3300138: HoloGrammZaun4 2
+    3300140: HoloGrammZaun4 3
+    3300142: HoloGrammZaun4 4
+    3300144: HoloGrammZaun4 5
+    3300146: HoloGrammZaun5
+    3300148: Mikroskop
+    3300150: PC1
+    3300152: pCube2
+    3300154: pCube5
+    3300156: pCube6
+    3300158: pCube7
+    3300160: pCylinder1
+    3300162: pCylinder10
+    3300164: pCylinder11
+    3300166: pCylinder12
+    3300168: pCylinder13
+    3300170: pCylinder14
+    3300172: pCylinder15
+    3300174: pCylinder3
+    3300176: pCylinder4
+    3300178: pCylinder5
+    3300180: pCylinder6
+    3300182: pCylinder7
+    3300184: pCylinder8
+    3300186: pCylinder9
+    3300188: "RechteL\xE4uchte"
+    3300190: RechteWand
+    3300192: SitzKissen
+    3300194: "SitzSch\xFCssel"
+    3300196: StuhlBein
+    3300198: "S\xE4ule"
+    3300200: "S\xE4ule1"
+    3300202: "S\xE4ule2"
+    3300204: "S\xE4ule3"
+    3300206: "S\xE4ule4"
+    3300208: "S\xE4ule5"
+    3300210: "S\xE4ule6"
+    3300212: "S\xE4ule7"
+    3300214: "S\xE4ule8"
+    3300216: TherariumBase
+    3300218: TherariumGlas
+    3300220: TherariumSand
+    3300222: TheraroumAst
+    3300224: TischHoloGramm
+    3300226: TischPlatte
+    3300228: TischPlatte1
+    3300230: WandLampe
+    3300232: WeltProjektion 1
+    3300234: WeltProjektionsBase
+    3300236: ZaunInnenGlas
+    3300238: ZaunInnenGlas 1
+    3300240: ZaunInnenGlas 10
+    3300242: ZaunInnenGlas 11
+    3300244: ZaunInnenGlas 12
+    3300246: ZaunInnenGlas 2
+    3300248: ZaunInnenGlas 3
+    3300250: ZaunInnenGlas 4
+    3300252: ZaunInnenGlas 5
+    3300254: ZaunInnenGlas 6
+    3300256: ZaunInnenGlas 7
+    3300258: ZaunInnenGlas 8
+    3300260: ZaunInnenGlas 9
+    3300262: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf10"
+    3300264: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf11"
+    3300266: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf4"
+    3300268: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf5"
+    3300270: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf6"
+    3300272: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf7"
+    3300274: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf8"
+    3300276: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf9"
+    3300278: "Zentrifuge_und_Gl\xE4ser:pCube5"
+    3300280: "Zentrifuge_und_Gl\xE4ser:pCube6"
+    3300282: "Zentrifuge_und_Gl\xE4ser:pCylinder10"
+    3300284: "Zentrifuge_und_Gl\xE4ser:pCylinder11"
+    3300286: "Zentrifuge_und_Gl\xE4ser:pCylinder12"
+    3300288: "Zentrifuge_und_Gl\xE4ser:pCylinder13"
+    3300290: "Zentrifuge_und_Gl\xE4ser:pCylinder14"
+    3300292: "Zentrifuge_und_Gl\xE4ser:pCylinder3"
+    3300294: "Zentrifuge_und_Gl\xE4ser:pCylinder4"
+    3300296: "Zentrifuge_und_Gl\xE4ser:pCylinder5"
+    3300298: "Zentrifuge_und_Gl\xE4ser:pCylinder6"
+    3300300: "Zentrifuge_und_Gl\xE4ser:pCylinder7"
+    3300302: "Zentrifuge_und_Gl\xE4ser:pCylinder8"
+    3300304: "Zentrifuge_und_Gl\xE4ser:pCylinder9"
+    3300306: "Zentrifuge_und_Gl\xE4ser:Zentrifuge"
+    4300000: HintereWand
+    4300002: WandLampe
+    4300004: RechteWand
+    4300006: "RechteL\xE4uchte"
+    4300008: pCube2
+    4300010: pCylinder1
+    4300012: "S\xE4ule"
+    4300014: "S\xE4ule1"
+    4300016: "S\xE4ule2"
+    4300018: "S\xE4ule3"
+    4300020: "S\xE4ule4"
+    4300022: "S\xE4ule5"
+    4300024: "S\xE4ule6"
+    4300026: "S\xE4ule7"
+    4300028: "S\xE4ule8"
+    4300030: Boden2
+    4300032: TischPlatte
+    4300034: TischHoloGramm
+    4300036: "EingabeGer\xE4t"
+    4300038: "EingabeGer\xE4t1"
+    4300040: PC1
+    4300042: StuhlBein
+    4300044: "SitzSch\xFCssel"
+    4300046: SitzKissen
+    4300048: TischPlatte1
+    4300050: TherariumBase
+    4300052: TherariumSand
+    4300054: TherariumGlas
+    4300056: TheraroumAst
+    4300058: Echse
+    4300060: Echse1
+    4300062: "Zentrifuge_und_Gl\xE4ser:Zentrifuge"
+    4300064: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf4"
+    4300066: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf5"
+    4300068: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf6"
+    4300070: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf7"
+    4300072: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf8"
+    4300074: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf9"
+    4300076: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf10"
+    4300078: "Zentrifuge_und_Gl\xE4ser:KaffeMaschinenKnopf11"
+    4300080: "Zentrifuge_und_Gl\xE4ser:pCube5"
+    4300082: "Zentrifuge_und_Gl\xE4ser:pCube6"
+    4300084: "Zentrifuge_und_Gl\xE4ser:pCylinder3"
+    4300086: "Zentrifuge_und_Gl\xE4ser:pCylinder4"
+    4300088: "Zentrifuge_und_Gl\xE4ser:pCylinder5"
+    4300090: "Zentrifuge_und_Gl\xE4ser:pCylinder6"
+    4300092: "Zentrifuge_und_Gl\xE4ser:pCylinder7"
+    4300094: "Zentrifuge_und_Gl\xE4ser:pCylinder8"
+    4300096: "Zentrifuge_und_Gl\xE4ser:pCylinder9"
+    4300098: "Zentrifuge_und_Gl\xE4ser:pCylinder10"
+    4300100: "Zentrifuge_und_Gl\xE4ser:pCylinder11"
+    4300102: "Zentrifuge_und_Gl\xE4ser:pCylinder12"
+    4300104: "Zentrifuge_und_Gl\xE4ser:pCylinder13"
+    4300106: "Zentrifuge_und_Gl\xE4ser:pCylinder14"
+    4300108: pCube5
+    4300110: pCube6
+    4300112: pCylinder3
+    4300114: pCylinder4
+    4300116: pCylinder5
+    4300118: pCylinder6
+    4300120: pCylinder7
+    4300122: pCylinder8
+    4300124: pCylinder9
+    4300126: pCylinder10
+    4300128: pCylinder11
+    4300130: pCylinder12
+    4300132: pCylinder13
+    4300134: pCylinder14
+    4300136: Mikroskop
+    4300138: WeltProjektionsBase
+    4300140: WeltProjektion
+    4300142: HoloGrammZaun1
+    4300144: HoloGrammZaun
+    4300146: HoloGrammZaun1
+    4300148: HoloGrammZaun
+    4300150: HoloGrammZaun1
+    4300152: HoloGrammZaun
+    4300154: HoloGrammZaun4
+    4300156: GlasHalter1
+    4300158: GlasHalter
+    4300160: GlasHalter1
+    4300162: GlasHalter
+    4300164: ZaunInnenGlas
+    4300166: HoloGrammZaun4
+    4300168: GlasHalter1
+    4300170: GlasHalter
+    4300172: GlasHalter1
+    4300174: GlasHalter
+    4300176: ZaunInnenGlas
+    4300178: HoloGrammZaun4
+    4300180: GlasHalter1
+    4300182: GlasHalter
+    4300184: GlasHalter1
+    4300186: GlasHalter
+    4300188: ZaunInnenGlas
+    4300190: GlasHalter1
+    4300192: GlasHalter
+    4300194: GlasHalter1
+    4300196: GlasHalter
+    4300198: ZaunInnenGlas
+    4300200: GlasHalter1
+    4300202: GlasHalter
+    4300204: GlasHalter1
+    4300206: GlasHalter
+    4300208: ZaunInnenGlas
+    4300210: HoloGrammZaun4
+    4300212: GlasHalter1
+    4300214: GlasHalter
+    4300216: GlasHalter1
+    4300218: GlasHalter
+    4300220: ZaunInnenGlas
+    4300222: GlasHalter1
+    4300224: GlasHalter
+    4300226: GlasHalter1
+    4300228: GlasHalter
+    4300230: ZaunInnenGlas
+    4300232: GlasHalter1
+    4300234: GlasHalter
+    4300236: GlasHalter1
+    4300238: GlasHalter
+    4300240: ZaunInnenGlas
+    4300242: GlasHalter1
+    4300244: GlasHalter
+    4300246: ZaunInnenGlas
+    4300248: GlasHalter1
+    4300250: GlasHalter
+    4300252: GlasHalter1
+    4300254: GlasHalter
+    4300256: ZaunInnenGlas
+    4300258: GlasHalter1
+    4300260: GlasHalter
+    4300262: GlasHalter1
+    4300264: GlasHalter
+    4300266: ZaunInnenGlas
+    4300268: HoloGrammZaun4
+    4300270: HoloGrammZaun4
+    4300272: GlasHalter1
+    4300274: GlasHalter
+    4300276: GlasHalter1
+    4300278: GlasHalter
+    4300280: ZaunInnenGlas
+    4300282: GlasHalter1
+    4300284: GlasHalter
+    4300286: GlasHalter1
+    4300288: GlasHalter
+    4300290: ZaunInnenGlas
+    4300292: HoloGrammZaun5
+    4300294: HauptMannStuhlBase
+    4300296: pCylinder15
+    4300298: pCube7
+    4300300: HauptMannTisch
+    4300302: HauptMannMonitor
+    4300304: HauptMannMonitor2
+    4300306: HauptMannMonitor3
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
