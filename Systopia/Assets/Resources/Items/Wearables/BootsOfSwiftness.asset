@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: BootsOfSwiftness
   m_EditorClassIdentifier: 
   itemName: Flinke Stiefel
-  itemDescription: Sehr schnelle Stiefel
+  itemDescription: Sehr schnelle Stiefel. Und auch noch stylisch!
   itemValue: 500
   itemSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   itemObject: {fileID: 0}

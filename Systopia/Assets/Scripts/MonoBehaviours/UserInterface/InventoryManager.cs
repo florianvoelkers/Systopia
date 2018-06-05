@@ -16,6 +16,9 @@ public class InventoryManager : MonoBehaviour {
 	[SerializeField] private Sprite itemBorder;
 	[SerializeField] private Sprite itemBorderSelected;
 	[SerializeField] private Sprite itemBorderEmpty;
+	[SerializeField] private Text itemName;
+	[SerializeField] private Text itemDescription;
+	[SerializeField] private Text itemValues;
 
 	private GameObject[] items;
 	private Type[] types = {typeof(Consumable), typeof(Weapon), typeof(Wearable), typeof(QuestItem)};
@@ -38,6 +41,9 @@ public class InventoryManager : MonoBehaviour {
 		groupButtons [selectedGroup].sprite = tabletGroupSelected;
 		currentType = types [selectedGroup];
 		selectedItem = -1;
+		itemName.text = "";
+		itemDescription.text = "";
+		itemValues.text = "";
 		FindAllItemsOfType ();
 	}
 
@@ -82,9 +88,30 @@ public class InventoryManager : MonoBehaviour {
 		if (index < currentItems.Count) {
 			if (selectedItem != -1) {
 				items [selectedItem].transform.GetComponent<Image> ().sprite = itemBorder;
+				itemName.text = "";
+				itemDescription.text = "";
+				itemValues.text = "";
 			}
 			selectedItem = index;
 			items [index].transform.GetComponent<Image> ().sprite = itemBorderSelected;
+			itemName.text = currentItems [selectedItem].itemName;
+			itemDescription.text = currentItems [selectedItem].itemDescription;
+			string valueString = "Wert: " + currentItems [selectedItem].itemValue;
+			Consumable itemAsConsumable = currentItems [selectedItem] as Consumable;
+			if (itemAsConsumable) {
+				valueString += "\n" + "Heilwert: " + itemAsConsumable.recoveryValue;
+			}
+
+			Weapon itemAsWeapon = currentItems [selectedItem] as Weapon;
+			if (itemAsWeapon) {
+				valueString += "\n" + "Schaden: " + itemAsWeapon.damage;
+			}
+
+			Wearable itemAsWearable = currentItems [selectedItem] as Wearable;
+			if (itemAsWearable) {
+				valueString += "\n" + "Rüstung: " + itemAsWearable.armor;
+			}
+			itemValues.text = valueString;
 		}
 	}
 
