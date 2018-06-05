@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b1d9d084d7ed86d40a4337ce6226fd77
-timeCreated: 1527961190
+guid: d2aa97bf3779e2b458720752c6c715a4
+timeCreated: 1528224415
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -212,7 +212,7 @@ ModelImporter:
     100408: TechHQSolarPanel8
     100410: TechHQSolarPanel9
     100412: TechnoArtefaktLager
-    100414: "TechnoAu\xDFenposten"
+    100414: TechnoVerwaltungsStelle
     100416: TechnoWaffenLager
     100418: Zaun
     400000: AvaArteFaktVersteck
@@ -422,7 +422,7 @@ ModelImporter:
     400408: TechHQSolarPanel8
     400410: TechHQSolarPanel9
     400412: TechnoArtefaktLager
-    400414: "TechnoAu\xDFenposten"
+    400414: TechnoVerwaltungsStelle
     400416: TechnoWaffenLager
     400418: Zaun
     2100000: "Stra\xDFenBelagFarbe"
@@ -704,7 +704,7 @@ ModelImporter:
     2300382: TechHQSolarPanel8
     2300384: TechHQSolarPanel9
     2300386: TechnoArtefaktLager
-    2300388: "TechnoAu\xDFenposten"
+    2300388: TechnoVerwaltungsStelle
     3300000: AvaArteFaktVersteckEingangsStein
     3300002: "AvaArtefaktVersteckT\xFCr"
     3300004: "AvaUnterSchlupfGeb\xE4ude"
@@ -899,7 +899,7 @@ ModelImporter:
     3300382: TechHQSolarPanel8
     3300384: TechHQSolarPanel9
     3300386: TechnoArtefaktLager
-    3300388: "TechnoAu\xDFenposten"
+    3300388: TechnoVerwaltungsStelle
     4300000: Street1
     4300002: BibliotheksRuine
     4300004: pCube11
@@ -926,7 +926,7 @@ ModelImporter:
     4300046: TechHqFenster12
     4300048: TechHqFenster13
     4300050: TechHQSolarPanel13
-    4300052: "TechnoAu\xDFenposten"
+    4300052: TechnoVerwaltungsStelle
     4300054: "TechHQGeb\xE4ude"
     4300056: TechHqFenster2
     4300058: TechHqFenster3
