@@ -5,7 +5,8 @@ using UnityEngine;
 public class TabletManager : MonoBehaviour {
 
 	[SerializeField] private GameObject navigationSelections;
-	[SerializeField] private GameObject[] tabletPanels;
+	[SerializeField] private GameObject [] tabletPanels;
+	[SerializeField] private GameObject tablet;
 
 	private GameObject[] selectors;
 
@@ -14,7 +15,12 @@ public class TabletManager : MonoBehaviour {
 		for (int i = 0; i < navigationSelections.transform.childCount; i++) {
 			selectors[i] = navigationSelections.transform.GetChild (i).gameObject;
 		}
+	}
 
+	private void Update () {
+		if (Input.GetKeyDown (KeyCode.T)) {
+			tablet.SetActive (!tablet.activeSelf);
+		}
 	}
 
 	public void ShowInventory () {

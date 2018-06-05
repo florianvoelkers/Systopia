@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 	private void Update () {
 		if (agent.pathPending)
 			return;
-
+		Debug.Log (agent.remainingDistance);
 		float speed = agent.desiredVelocity.magnitude;
 		if (agent.remainingDistance <= agent.stoppingDistance * stopDistanceProportion)
 			Stopping (out speed);
@@ -95,6 +95,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void OnInteractableClick (Interactable interactable) {
+		Debug.Log ("interact");
 		if (!handleInput)
 			return;
 

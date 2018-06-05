@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5af5815d906179b45b471c2ac281de2b, type: 3}
-  m_Name: HealthPotion
+  m_Name: ManaPotion
   m_EditorClassIdentifier: 
-  itemName: Health Potion
-  itemDescription: "Ein besonderer Heiltrank, durch den meine erlittenen Wunden auf
-    wundersame Art und Weise geheilt werden k\xF6nnen"
+  itemName: Mana Potion
+  itemDescription: "Ein ganz besonderer Trank, der die Zauberkraft wiederherstellt.
+    Sieht aber aus wie eine M\xFCnze."
   itemValue: 100
-  itemSprite: {fileID: 21300000, guid: 36d7bca7fe122ec4597305213a72bb6f, type: 3}
+  itemSprite: {fileID: 21300000, guid: 31586fc321c83464a9fc2be1e158d802, type: 3}
   itemObject: {fileID: 0}
   isQuestItem: 0
-  isStackable: 1
+  isStackable: 0
   recoveryValue: 50

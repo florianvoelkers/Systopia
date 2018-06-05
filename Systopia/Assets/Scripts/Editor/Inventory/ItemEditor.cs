@@ -157,6 +157,8 @@ public class ItemEditor : EditorWindow {
 			if (GUILayout.Button ("Add to Inventory", GUILayout.MaxWidth (120f))) {
 				if (EditorUtility.DisplayDialog ("Add " + itemList[i].name, "Are you sure you want to add " + itemList[i].name + " to the PlayerInventory?", "Yes", "No")) {
 					playerInventory.AddItem (itemList[i]);
+					EditorUtility.SetDirty (playerInventory);
+					AssetDatabase.SaveAssets ();
 				}
 			}
 			if (GUILayout.Button ("Delete Item", GUILayout.MaxWidth (100f))) {
@@ -213,7 +215,7 @@ public class ItemEditor : EditorWindow {
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);
 				EditorGUILayout.PrefixLabel ("Item Description");
-				itemList [i].itemDescription = EditorGUILayout.TextArea (itemList [i].itemDescription, GUILayout.MaxWidth(300f), GUILayout.Height (64f));
+				itemList [i].itemDescription = GUILayout.TextArea (itemList [i].itemDescription, GUILayout.MaxWidth(300f), GUILayout.Height (64f));
 				GUILayout.Space (10f);
 				itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));			
 				GUILayout.EndHorizontal ();

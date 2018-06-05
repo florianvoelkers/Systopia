@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour {
 			if (conditionCollections [i].CheckAndReact ())
 				return;
 		}
-
+		Debug.Log ("interact with it");
 		defaultReactionCollection.React ();
 	}
 }
