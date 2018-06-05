@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: db3b6512d41bfab44a4ba9cb5fa34b68
+timeCreated: 1528237199
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BodenWand
+    100002: ForscherinEcke
+    100004: ForscherinEcke 1
+    100006: ForscherinEcke 2
+    100008: ForscherinEcke 3
+    100010: GlasHalter8
+    100012: GlasHalter9
+    100014: GlasZaun1
+    100016: GlasZaun:GlasHalter
+    100018: GlasZaun:GlasHalter1
+    100020: GlasZaun:GlasHalter10
+    100022: GlasZaun:GlasHalter11
+    100024: GlasZaun:GlasHalter12
+    100026: GlasZaun:GlasHalter13
+    100028: GlasZaun:GlasHalter14
+    100030: GlasZaun:GlasHalter15
+    100032: GlasZaun:GlasHalter2
+    100034: GlasZaun:GlasHalter3
+    100036: GlasZaun:GlasHalter4
+    100038: GlasZaun:GlasHalter5
+    100040: GlasZaun:GlasHalter6
+    100042: GlasZaun:GlasHalter7
+    100044: GlasZaun:GlasHalter8
+    100046: GlasZaun:GlasHalter9
+    100048: GlasZaun:group7
+    100050: GlasZaun:HoloGrammZaun1
+    100052: GlasZaun:HoloGrammZaun4
+    100054: GlasZaun:ZaunInnenGlas
+    100056: GlasZaun:ZaunInnenGlas1
+    100058: GlasZaun:ZaunInnenGlas2
+    100060: GlasZaun:ZaunInnenGlas3
+    100062: GlasZaun:ZaunInnenGlas4
+    100064: group1
+    100066: group1 1
+    100068: group1 2
+    100070: group1 3
+    100072: group1 4
+    100074: group1 5
+    100076: PC
+    100078: Raum
+    100080: SitzKissen
+    100082: SitzKissen 1
+    100084: SitzKissen 2
+    100086: SitzKissen 3
+    100088: SitzKissen 4
+    100090: "SitzSch\xFCssel"
+    100092: "SitzSch\xFCssel 1"
+    100094: "SitzSch\xFCssel 2"
+    100096: "SitzSch\xFCssel 3"
+    100098: "SitzSch\xFCssel 4"
+    100100: Stuhl1
+    100102: Stuhl3
+    100104: Stuhl3 1
+    100106: Stuhl4
+    100108: Stuhl5
+    100110: Stuhl6
+    100112: Stuhl6 1
+    100114: Stuhl6 2
+    100116: Stuhl7
+    100118: Stuhl8
+    100120: Stuhl:ForscherinEcke
+    100122: Stuhl:group1
+    100124: Stuhl:SitzKissen
+    100126: "Stuhl:SitzSch\xFCssel"
+    100128: Stuhl:Stuhl
+    100130: Stuhl:StuhlBein
+    100132: StuhlBein
+    100134: StuhlBein 1
+    100136: StuhlBein 2
+    100138: StuhlBein 3
+    100140: StuhlBein 4
+    100142: //RootNode
+    400000: BodenWand
+    400002: ForscherinEcke
+    400004: ForscherinEcke 1
+    400006: ForscherinEcke 2
+    400008: ForscherinEcke 3
+    400010: GlasHalter8
+    400012: GlasHalter9
+    400014: GlasZaun1
+    400016: GlasZaun:GlasHalter
+    400018: GlasZaun:GlasHalter1
+    400020: GlasZaun:GlasHalter10
+    400022: GlasZaun:GlasHalter11
+    400024: GlasZaun:GlasHalter12
+    400026: GlasZaun:GlasHalter13
+    400028: GlasZaun:GlasHalter14
+    400030: GlasZaun:GlasHalter15
+    400032: GlasZaun:GlasHalter2
+    400034: GlasZaun:GlasHalter3
+    400036: GlasZaun:GlasHalter4
+    400038: GlasZaun:GlasHalter5
+    400040: GlasZaun:GlasHalter6
+    400042: GlasZaun:GlasHalter7
+    400044: GlasZaun:GlasHalter8
+    400046: GlasZaun:GlasHalter9
+    400048: GlasZaun:group7
+    400050: GlasZaun:HoloGrammZaun1
+    400052: GlasZaun:HoloGrammZaun4
+    400054: GlasZaun:ZaunInnenGlas
+    400056: GlasZaun:ZaunInnenGlas1
+    400058: GlasZaun:ZaunInnenGlas2
+    400060: GlasZaun:ZaunInnenGlas3
+    400062: GlasZaun:ZaunInnenGlas4
+    400064: group1
+    400066: group1 1
+    400068: group1 2
+    400070: group1 3
+    400072: group1 4
+    400074: group1 5
+    400076: PC
+    400078: Raum
+    400080: SitzKissen
+    400082: SitzKissen 1
+    400084: SitzKissen 2
+    400086: SitzKissen 3
+    400088: SitzKissen 4
+    400090: "SitzSch\xFCssel"
+    400092: "SitzSch\xFCssel 1"
+    400094: "SitzSch\xFCssel 2"
+    400096: "SitzSch\xFCssel 3"
+    400098: "SitzSch\xFCssel 4"
+    400100: Stuhl1
+    400102: Stuhl3
+    400104: Stuhl3 1
+    400106: Stuhl4
+    400108: Stuhl5
+    400110: Stuhl6
+    400112: Stuhl6 1
+    400114: Stuhl6 2
+    400116: Stuhl7
+    400118: Stuhl8
+    400120: Stuhl:ForscherinEcke
+    400122: Stuhl:group1
+    400124: Stuhl:SitzKissen
+    400126: "Stuhl:SitzSch\xFCssel"
+    400128: Stuhl:Stuhl
+    400130: Stuhl:StuhlBein
+    400132: StuhlBein
+    400134: StuhlBein 1
+    400136: StuhlBein 2
+    400138: StuhlBein 3
+    400140: StuhlBein 4
+    400142: //RootNode
+    2100000: GlasZaun_GlasHalterungFarbe
+    2100002: GlasZaun_AbgrenzungsGlas
+    2100004: GlasZaun_HoloGrammZaunFarbe
+    2100006: TechRaum_BodenBaseColor
+    2100008: TechRaum_BodenKachelFarbe
+    2100010: "TechnoVerwaltungsStellenGeb\xE4ude_TechnoAu\xDFenpostenFensterGlasFarbe"
+    2100012: "TechnoVerwaltungsStellenGeb\xE4ude_TechnoAu\xDFenpostenFensterFarbe"
+    2100014: TechRaum_WandLampenFarbe
+    2100016: ComputerBaseColor
+    2100018: TastenFarbe4
+    2100020: ComputerBildschirmFarbe
+    2100022: PcBildschirmUmrandungFarbe
+    2100024: ComputerTastaturHintergrund
+    2100026: TastenHintergrundsFarbe
+    2100028: TastenFarbe3
+    2100030: Stuhl_StuhlBeinFarbe
+    2100032: "Stuhl_SitzSch\xFCsselFarbe"
+    2100034: Stuhl_SitzKissenFarbe
+    2300000: BodenWand
+    2300002: GlasHalter8
+    2300004: GlasHalter9
+    2300006: GlasZaun:GlasHalter
+    2300008: GlasZaun:GlasHalter1
+    2300010: GlasZaun:GlasHalter10
+    2300012: GlasZaun:GlasHalter11
+    2300014: GlasZaun:GlasHalter12
+    2300016: GlasZaun:GlasHalter13
+    2300018: GlasZaun:GlasHalter14
+    2300020: GlasZaun:GlasHalter15
+    2300022: GlasZaun:GlasHalter2
+    2300024: GlasZaun:GlasHalter3
+    2300026: GlasZaun:GlasHalter4
+    2300028: GlasZaun:GlasHalter5
+    2300030: GlasZaun:GlasHalter6
+    2300032: GlasZaun:GlasHalter7
+    2300034: GlasZaun:GlasHalter8
+    2300036: GlasZaun:GlasHalter9
+    2300038: GlasZaun:HoloGrammZaun1
+    2300040: GlasZaun:HoloGrammZaun4
+    2300042: GlasZaun:ZaunInnenGlas
+    2300044: GlasZaun:ZaunInnenGlas1
+    2300046: GlasZaun:ZaunInnenGlas2
+    2300048: GlasZaun:ZaunInnenGlas3
+    2300050: GlasZaun:ZaunInnenGlas4
+    2300052: PC
+    2300054: SitzKissen
+    2300056: SitzKissen 1
+    2300058: SitzKissen 2
+    2300060: SitzKissen 3
+    2300062: SitzKissen 4
+    2300064: "SitzSch\xFCssel"
+    2300066: "SitzSch\xFCssel 1"
+    2300068: "SitzSch\xFCssel 2"
+    2300070: "SitzSch\xFCssel 3"
+    2300072: "SitzSch\xFCssel 4"
+    2300074: Stuhl:SitzKissen
+    2300076: "Stuhl:SitzSch\xFCssel"
+    2300078: Stuhl:StuhlBein
+    2300080: StuhlBein
+    2300082: StuhlBein 1
+    2300084: StuhlBein 2
+    2300086: StuhlBein 3
+    2300088: StuhlBein 4
+    3300000: BodenWand
+    3300002: GlasHalter8
+    3300004: GlasHalter9
+    3300006: GlasZaun:GlasHalter
+    3300008: GlasZaun:GlasHalter1
+    3300010: GlasZaun:GlasHalter10
+    3300012: GlasZaun:GlasHalter11
+    3300014: GlasZaun:GlasHalter12
+    3300016: GlasZaun:GlasHalter13
+    3300018: GlasZaun:GlasHalter14
+    3300020: GlasZaun:GlasHalter15
+    3300022: GlasZaun:GlasHalter2
+    3300024: GlasZaun:GlasHalter3
+    3300026: GlasZaun:GlasHalter4
+    3300028: GlasZaun:GlasHalter5
+    3300030: GlasZaun:GlasHalter6
+    3300032: GlasZaun:GlasHalter7
+    3300034: GlasZaun:GlasHalter8
+    3300036: GlasZaun:GlasHalter9
+    3300038: GlasZaun:HoloGrammZaun1
+    3300040: GlasZaun:HoloGrammZaun4
+    3300042: GlasZaun:ZaunInnenGlas
+    3300044: GlasZaun:ZaunInnenGlas1
+    3300046: GlasZaun:ZaunInnenGlas2
+    3300048: GlasZaun:ZaunInnenGlas3
+    3300050: GlasZaun:ZaunInnenGlas4
+    3300052: PC
+    3300054: SitzKissen
+    3300056: SitzKissen 1
+    3300058: SitzKissen 2
+    3300060: SitzKissen 3
+    3300062: SitzKissen 4
+    3300064: "SitzSch\xFCssel"
+    3300066: "SitzSch\xFCssel 1"
+    3300068: "SitzSch\xFCssel 2"
+    3300070: "SitzSch\xFCssel 3"
+    3300072: "SitzSch\xFCssel 4"
+    3300074: Stuhl:SitzKissen
+    3300076: "Stuhl:SitzSch\xFCssel"
+    3300078: Stuhl:StuhlBein
+    3300080: StuhlBein
+    3300082: StuhlBein 1
+    3300084: StuhlBein 2
+    3300086: StuhlBein 3
+    3300088: StuhlBein 4
+    4300000: GlasZaun:GlasHalter14
+    4300002: GlasZaun:GlasHalter15
+    4300004: GlasZaun:ZaunInnenGlas4
+    4300006: GlasZaun:GlasHalter12
+    4300008: GlasZaun:GlasHalter13
+    4300010: GlasZaun:HoloGrammZaun4
+    4300012: GlasZaun:HoloGrammZaun1
+    4300014: GlasZaun:ZaunInnenGlas3
+    4300016: GlasZaun:GlasHalter11
+    4300018: GlasZaun:GlasHalter10
+    4300020: GlasZaun:GlasHalter9
+    4300022: GlasZaun:GlasHalter8
+    4300024: GlasZaun:GlasHalter1
+    4300026: GlasZaun:GlasHalter
+    4300028: GlasZaun:ZaunInnenGlas
+    4300030: GlasZaun:ZaunInnenGlas1
+    4300032: GlasZaun:GlasHalter3
+    4300034: GlasZaun:GlasHalter2
+    4300036: GlasZaun:GlasHalter5
+    4300038: GlasZaun:GlasHalter4
+    4300040: GlasZaun:ZaunInnenGlas2
+    4300042: GlasZaun:GlasHalter6
+    4300044: GlasZaun:GlasHalter7
+    4300046: GlasHalter9
+    4300048: GlasHalter8
+    4300050: BodenWand
+    4300052: PC
+    4300054: Stuhl:StuhlBein
+    4300056: "Stuhl:SitzSch\xFCssel"
+    4300058: Stuhl:SitzKissen
+    4300060: StuhlBein
+    4300062: "SitzSch\xFCssel"
+    4300064: SitzKissen
+    4300066: StuhlBein
+    4300068: "SitzSch\xFCssel"
+    4300070: SitzKissen
+    4300072: StuhlBein
+    4300074: "SitzSch\xFCssel"
+    4300076: SitzKissen
+    4300078: StuhlBein
+    4300080: "SitzSch\xFCssel"
+    4300082: SitzKissen
+    4300084: StuhlBein
+    4300086: "SitzSch\xFCssel"
+    4300088: SitzKissen
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
