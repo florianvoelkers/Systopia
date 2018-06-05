@@ -34,6 +34,10 @@ public class InventoryManager : MonoBehaviour {
 		currentType = types [selectedGroup];
 		FindAllItemsOfType ();
 	}
+
+	private void OnEnable () {
+		FindAllItemsOfType ();
+	}
 	
 	public void SelectGroup (int selected) {
 		groupButtons [selectedGroup].sprite = tabletGroup;
