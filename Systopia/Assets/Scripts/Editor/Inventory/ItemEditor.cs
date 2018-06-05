@@ -24,6 +24,13 @@ public class ItemEditor : EditorWindow {
 		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
+	void OnLostFocus () {
+		for (int i = 0; i < allItems.Count; i++) {
+			EditorUtility.SetDirty (allItems [i]);
+		}
+		AssetDatabase.SaveAssets ();
+	}
+
 	void OnEnable () {
 		labelStyle.padding = new RectOffset (10, 10, 10, 10);
 		labelStyle.fontSize = 31;

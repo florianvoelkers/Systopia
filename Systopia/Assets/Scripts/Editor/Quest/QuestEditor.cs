@@ -27,6 +27,13 @@ public class QuestEditor : EditorWindow {
 		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
+	void OnLostFocus () {
+		for (int i = 0; i < allQuests.Count; i++) {
+			EditorUtility.SetDirty (allQuests [i]);
+		}
+		AssetDatabase.SaveAssets ();
+	}
+
 	void OnEnable () {
 		labelStyle.padding = new RectOffset (10, 10, 10, 10);
 		labelStyle.fontSize = 31;

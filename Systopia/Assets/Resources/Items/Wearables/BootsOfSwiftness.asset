@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
   m_Name: BootsOfSwiftness
   m_EditorClassIdentifier: 
-  itemName: BootsOfSwiftness
-  itemDescription: describe it here
-  itemValue: 0
-  itemSprite: {fileID: 0}
+  itemName: Flinke Stiefel
+  itemDescription: Sehr schnelle Stiefel
+  itemValue: 500
+  itemSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   itemObject: {fileID: 0}
   isQuestItem: 0
   isStackable: 0
-  armor: 0
+  armor: 1

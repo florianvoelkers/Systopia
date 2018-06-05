@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
   m_Name: 3-5dasFehlendePuzzleteil
   m_EditorClassIdentifier: 
-  questTitle: 3-5dasFehlendePuzzleteil
+  questTitle: Das fehlende Puzzleteil
   questDescription: "Klaus m\xF6chte mit dem Lotion Capture Modulator die K.I. wieder
     zusammenf\xFCgen. Doch die letzte CPU ist ihm bei einem Test durchgebrannt. Ich
     soll ihm eine neue CPU besorgen."

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
   m_Name: 3-2derZeitungsartikel
   m_EditorClassIdentifier: 
-  questTitle: 3-2derZeitungsartikel
+  questTitle: Der Zeitungsartikel
   questDescription: "Der alte Mann hat sich scheinbar erinnert und scheint Wogapowi
     und Frunobulax zu kennen. Er sprach von einem Zeitungsartikel, der \xFCber eine
     Erfindung der beiden berichten soll. Er glaubt, dass dieser im Lager f\xFCr wertvolle

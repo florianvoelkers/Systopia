@@ -17,6 +17,13 @@ public class FactionEditor : EditorWindow {
 		window.position = new Rect(Screen.width / 2, Screen.height / 2, 900, 450);
 	}
 
+	void OnLostFocus () {
+		for (int i = 0; i < factions.Count; i++) {
+			EditorUtility.SetDirty (factions [i]);
+		}
+		AssetDatabase.SaveAssets ();
+	}
+
 	void OnEnable () {
 		labelStyle.padding = new RectOffset (10, 10, 10, 10);
 		labelStyle.fontSize = 31;
