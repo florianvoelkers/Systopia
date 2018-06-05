@@ -1,0 +1,1530 @@
+fileFormatVersion: 2
+guid: 2d203bf706af26c4f94770a9d48e1edd
+timeCreated: 1528221144
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AlteTafel
+    100002: AlteTafel 1
+    100004: AlteTafel 2
+    100006: AlteTafel 3
+    100008: AlteTafel 4
+    100010: AlteTafel 5
+    100012: AlteTafel1
+    100014: AlteTafel2
+    100016: AlteTafel3
+    100018: AlteTafel4
+    100020: Boden
+    100022: Boden2
+    100024: Boden3
+    100026: BunterMac
+    100028: BunterMac1
+    100030: BunterMac2
+    100032: DerZeitungsArtikel
+    100034: Drone
+    100036: Drone1
+    100038: Drone2
+    100040: GameBoy
+    100042: GameBoy 1
+    100044: GameBoy 2
+    100046: GameBoyAdvance
+    100048: GameboyAdvanceSP
+    100050: GameBoyColor
+    100052: GanzesHoverBoard
+    100054: GoogleGlass
+    100056: group1
+    100058: group2
+    100060: HoverBoard
+    100062: Ipad
+    100064: Ipad1
+    100066: iPhone
+    100068: iPhone1
+    100070: iPhone2
+    100072: MacinTosh
+    100074: MacinTosh1
+    100076: MacinTosh2
+    100078: MacPro
+    100080: MakintoshMaus
+    100082: MakinToshMaus2
+    100084: MakintoshTastatur
+    100086: Nintendo64
+    100088: NintendoDS
+    100090: NintendoDS1
+    100092: OcolusRift
+    100094: OcolusRift1
+    100096: OldTech
+    100098: pCube1
+    100100: pCube1 1
+    100102: pCube10
+    100104: pCube11
+    100106: pCube12
+    100108: pCube13
+    100110: pCube14
+    100112: pCube15
+    100114: pCube16
+    100116: pCube17
+    100118: pCube18
+    100120: pCube19
+    100122: pCube2
+    100124: pCube2 1
+    100126: pCube20
+    100128: pCube21
+    100130: pCube22
+    100132: pCube23
+    100134: pCube24
+    100136: pCube24 1
+    100138: pCube25
+    100140: pCube25 1
+    100142: pCube26
+    100144: pCube26 1
+    100146: pCube27
+    100148: pCube27 1
+    100150: pCube28
+    100152: pCube28 1
+    100154: pCube29
+    100156: pCube29 1
+    100158: pCube3
+    100160: pCube3 1
+    100162: pCube30
+    100164: pCube31
+    100166: pCube31 1
+    100168: pCube32
+    100170: pCube32 1
+    100172: pCube33
+    100174: pCube34
+    100176: pCube34 1
+    100178: pCube35
+    100180: pCube35 1
+    100182: pCube36
+    100184: pCube36 1
+    100186: pCube37
+    100188: pCube37 1
+    100190: pCube4
+    100192: pCube5
+    100194: pCube6
+    100196: pCube7
+    100198: pCube8
+    100200: pCube9
+    100202: pCylinder1
+    100204: pCylinder1 1
+    100206: pCylinder10
+    100208: pCylinder11
+    100210: pCylinder12
+    100212: pCylinder13
+    100214: pCylinder14
+    100216: pCylinder15
+    100218: pCylinder16
+    100220: pCylinder17
+    100222: pCylinder18
+    100224: pCylinder19
+    100226: pCylinder2
+    100228: pCylinder2 1
+    100230: pCylinder20
+    100232: pCylinder21
+    100234: pCylinder22
+    100236: pCylinder23
+    100238: pCylinder24
+    100240: pCylinder25
+    100242: pCylinder26
+    100244: pCylinder27
+    100246: pCylinder28
+    100248: pCylinder29
+    100250: pCylinder3
+    100252: pCylinder30
+    100254: pCylinder31
+    100256: pCylinder32
+    100258: pCylinder33
+    100260: pCylinder34
+    100262: pCylinder35
+    100264: pCylinder36
+    100266: pCylinder37
+    100268: pCylinder38
+    100270: pCylinder39
+    100272: pCylinder4
+    100274: pCylinder40
+    100276: pCylinder42
+    100278: pCylinder43
+    100280: pCylinder44
+    100282: pCylinder45
+    100284: pCylinder46
+    100286: pCylinder46 1
+    100288: pCylinder47
+    100290: pCylinder47 1
+    100292: pCylinder48
+    100294: pCylinder48 1
+    100296: pCylinder49
+    100298: pCylinder49 1
+    100300: pCylinder5
+    100302: pCylinder50
+    100304: pCylinder51
+    100306: pCylinder51 1
+    100308: pCylinder52
+    100310: pCylinder52 1
+    100312: pCylinder53
+    100314: pCylinder53 1
+    100316: pCylinder54
+    100318: pCylinder54 1
+    100320: pCylinder55
+    100322: pCylinder55 1
+    100324: pCylinder56
+    100326: pCylinder56 1
+    100328: pCylinder57
+    100330: pCylinder58
+    100332: pCylinder59
+    100334: pCylinder6
+    100336: pCylinder60
+    100338: pCylinder60 1
+    100340: pCylinder61
+    100342: pCylinder61 1
+    100344: pCylinder62
+    100346: pCylinder62 1
+    100348: pCylinder63
+    100350: pCylinder63 1
+    100352: pCylinder65
+    100354: pCylinder66
+    100356: pCylinder7
+    100358: pCylinder8
+    100360: pCylinder9
+    100362: Playstation
+    100364: Playstation1Controller
+    100366: Playstation1Controller1
+    100368: Playstation2
+    100370: Playstation3
+    100372: Raum
+    100374: SchriftRolle
+    100376: SchriftRolle1
+    100378: SchriftRolle2
+    100380: SchriftRollenRolle
+    100382: SchriftRollenRolle 1
+    100384: SchriftRollenRolle 2
+    100386: SchriftRollenRolle1
+    100388: SchriftRollenRolle1 1
+    100390: SchriftRollenRolle1 2
+    100392: SmartWatch
+    100394: SmartWatch1
+    100396: SmartWatch2
+    100398: SmartWatch3
+    100400: //RootNode
+    100402: TechRaum:HintereWand
+    100404: "TechRaum:RechteL\xE4uchte"
+    100406: TechRaum:RechteWand
+    100408: TechRaum:WandLampe
+    100410: typeMesh1
+    100412: typeMesh1 1
+    100414: typeMesh1 2
+    100416: typeMesh1 3
+    100418: typeMesh1 4
+    100420: typeMesh2
+    100422: typeMesh2 1
+    100424: typeMesh2 2
+    100426: Vitrine10
+    100428: Vitrine11
+    100430: Vitrine14
+    100432: Vitrine15
+    100434: Vitrine16
+    100436: Vitrine17
+    100438: Vitrine2
+    100440: Vitrine21
+    100442: Vitrine22
+    100444: Vitrine23
+    100446: Vitrine24
+    100448: Vitrine25
+    100450: Vitrine26
+    100452: Vitrine27
+    100454: Vitrine28
+    100456: Vitrine3
+    100458: Vitrine30
+    100460: Vitrine31
+    100462: Vitrine32
+    100464: Vitrine33
+    100466: Vitrine34
+    100468: Vitrine35
+    100470: Vitrine36
+    100472: Vitrine37
+    100474: Vitrine38
+    100476: Vitrine39
+    100478: Vitrine4
+    100480: Vitrine5
+    100482: Vitrine6
+    100484: Vitrine7
+    100486: Vitrine8
+    100488: Vitrine9
+    100490: Vitrinen
+    100492: VitrinenGlasDeckel
+    100494: VitrinenGlasDeckel 1
+    100496: VitrinenGlasDeckel 10
+    100498: VitrinenGlasDeckel 11
+    100500: VitrinenGlasDeckel 12
+    100502: VitrinenGlasDeckel 13
+    100504: VitrinenGlasDeckel 14
+    100506: VitrinenGlasDeckel 15
+    100508: VitrinenGlasDeckel 16
+    100510: VitrinenGlasDeckel 17
+    100512: VitrinenGlasDeckel 18
+    100514: VitrinenGlasDeckel 19
+    100516: VitrinenGlasDeckel 2
+    100518: VitrinenGlasDeckel 3
+    100520: VitrinenGlasDeckel 4
+    100522: VitrinenGlasDeckel 5
+    100524: VitrinenGlasDeckel 6
+    100526: VitrinenGlasDeckel 7
+    100528: VitrinenGlasDeckel 8
+    100530: VitrinenGlasDeckel 9
+    100532: VitrinenGlasDeckel1
+    100534: VitrinenSockel
+    100536: VitrinenSockel 1
+    100538: VitrinenSockel 10
+    100540: VitrinenSockel 11
+    100542: VitrinenSockel 12
+    100544: VitrinenSockel 13
+    100546: VitrinenSockel 14
+    100548: VitrinenSockel 15
+    100550: VitrinenSockel 16
+    100552: VitrinenSockel 17
+    100554: VitrinenSockel 18
+    100556: VitrinenSockel 19
+    100558: VitrinenSockel 2
+    100560: VitrinenSockel 20
+    100562: VitrinenSockel 21
+    100564: VitrinenSockel 22
+    100566: VitrinenSockel 23
+    100568: VitrinenSockel 24
+    100570: VitrinenSockel 25
+    100572: VitrinenSockel 26
+    100574: VitrinenSockel 27
+    100576: VitrinenSockel 28
+    100578: VitrinenSockel 29
+    100580: VitrinenSockel 3
+    100582: VitrinenSockel 30
+    100584: VitrinenSockel 31
+    100586: VitrinenSockel 4
+    100588: VitrinenSockel 5
+    100590: VitrinenSockel 6
+    100592: VitrinenSockel 7
+    100594: VitrinenSockel 8
+    100596: VitrinenSockel 9
+    100598: VitrinenSockel1
+    100600: VitrinenSockel2
+    100602: VitrinenSockel3
+    100604: VitrinenSockel4
+    100606: VitrinenSockel4 1
+    100608: WiiU
+    100610: Zettel
+    100612: Zettel3
+    100614: Zettel4
+    100616: Zettel5
+    400000: AlteTafel
+    400002: AlteTafel 1
+    400004: AlteTafel 2
+    400006: AlteTafel 3
+    400008: AlteTafel 4
+    400010: AlteTafel 5
+    400012: AlteTafel1
+    400014: AlteTafel2
+    400016: AlteTafel3
+    400018: AlteTafel4
+    400020: Boden
+    400022: Boden2
+    400024: Boden3
+    400026: BunterMac
+    400028: BunterMac1
+    400030: BunterMac2
+    400032: DerZeitungsArtikel
+    400034: Drone
+    400036: Drone1
+    400038: Drone2
+    400040: GameBoy
+    400042: GameBoy 1
+    400044: GameBoy 2
+    400046: GameBoyAdvance
+    400048: GameboyAdvanceSP
+    400050: GameBoyColor
+    400052: GanzesHoverBoard
+    400054: GoogleGlass
+    400056: group1
+    400058: group2
+    400060: HoverBoard
+    400062: Ipad
+    400064: Ipad1
+    400066: iPhone
+    400068: iPhone1
+    400070: iPhone2
+    400072: MacinTosh
+    400074: MacinTosh1
+    400076: MacinTosh2
+    400078: MacPro
+    400080: MakintoshMaus
+    400082: MakinToshMaus2
+    400084: MakintoshTastatur
+    400086: Nintendo64
+    400088: NintendoDS
+    400090: NintendoDS1
+    400092: OcolusRift
+    400094: OcolusRift1
+    400096: OldTech
+    400098: pCube1
+    400100: pCube1 1
+    400102: pCube10
+    400104: pCube11
+    400106: pCube12
+    400108: pCube13
+    400110: pCube14
+    400112: pCube15
+    400114: pCube16
+    400116: pCube17
+    400118: pCube18
+    400120: pCube19
+    400122: pCube2
+    400124: pCube2 1
+    400126: pCube20
+    400128: pCube21
+    400130: pCube22
+    400132: pCube23
+    400134: pCube24
+    400136: pCube24 1
+    400138: pCube25
+    400140: pCube25 1
+    400142: pCube26
+    400144: pCube26 1
+    400146: pCube27
+    400148: pCube27 1
+    400150: pCube28
+    400152: pCube28 1
+    400154: pCube29
+    400156: pCube29 1
+    400158: pCube3
+    400160: pCube3 1
+    400162: pCube30
+    400164: pCube31
+    400166: pCube31 1
+    400168: pCube32
+    400170: pCube32 1
+    400172: pCube33
+    400174: pCube34
+    400176: pCube34 1
+    400178: pCube35
+    400180: pCube35 1
+    400182: pCube36
+    400184: pCube36 1
+    400186: pCube37
+    400188: pCube37 1
+    400190: pCube4
+    400192: pCube5
+    400194: pCube6
+    400196: pCube7
+    400198: pCube8
+    400200: pCube9
+    400202: pCylinder1
+    400204: pCylinder1 1
+    400206: pCylinder10
+    400208: pCylinder11
+    400210: pCylinder12
+    400212: pCylinder13
+    400214: pCylinder14
+    400216: pCylinder15
+    400218: pCylinder16
+    400220: pCylinder17
+    400222: pCylinder18
+    400224: pCylinder19
+    400226: pCylinder2
+    400228: pCylinder2 1
+    400230: pCylinder20
+    400232: pCylinder21
+    400234: pCylinder22
+    400236: pCylinder23
+    400238: pCylinder24
+    400240: pCylinder25
+    400242: pCylinder26
+    400244: pCylinder27
+    400246: pCylinder28
+    400248: pCylinder29
+    400250: pCylinder3
+    400252: pCylinder30
+    400254: pCylinder31
+    400256: pCylinder32
+    400258: pCylinder33
+    400260: pCylinder34
+    400262: pCylinder35
+    400264: pCylinder36
+    400266: pCylinder37
+    400268: pCylinder38
+    400270: pCylinder39
+    400272: pCylinder4
+    400274: pCylinder40
+    400276: pCylinder42
+    400278: pCylinder43
+    400280: pCylinder44
+    400282: pCylinder45
+    400284: pCylinder46
+    400286: pCylinder46 1
+    400288: pCylinder47
+    400290: pCylinder47 1
+    400292: pCylinder48
+    400294: pCylinder48 1
+    400296: pCylinder49
+    400298: pCylinder49 1
+    400300: pCylinder5
+    400302: pCylinder50
+    400304: pCylinder51
+    400306: pCylinder51 1
+    400308: pCylinder52
+    400310: pCylinder52 1
+    400312: pCylinder53
+    400314: pCylinder53 1
+    400316: pCylinder54
+    400318: pCylinder54 1
+    400320: pCylinder55
+    400322: pCylinder55 1
+    400324: pCylinder56
+    400326: pCylinder56 1
+    400328: pCylinder57
+    400330: pCylinder58
+    400332: pCylinder59
+    400334: pCylinder6
+    400336: pCylinder60
+    400338: pCylinder60 1
+    400340: pCylinder61
+    400342: pCylinder61 1
+    400344: pCylinder62
+    400346: pCylinder62 1
+    400348: pCylinder63
+    400350: pCylinder63 1
+    400352: pCylinder65
+    400354: pCylinder66
+    400356: pCylinder7
+    400358: pCylinder8
+    400360: pCylinder9
+    400362: Playstation
+    400364: Playstation1Controller
+    400366: Playstation1Controller1
+    400368: Playstation2
+    400370: Playstation3
+    400372: Raum
+    400374: SchriftRolle
+    400376: SchriftRolle1
+    400378: SchriftRolle2
+    400380: SchriftRollenRolle
+    400382: SchriftRollenRolle 1
+    400384: SchriftRollenRolle 2
+    400386: SchriftRollenRolle1
+    400388: SchriftRollenRolle1 1
+    400390: SchriftRollenRolle1 2
+    400392: SmartWatch
+    400394: SmartWatch1
+    400396: SmartWatch2
+    400398: SmartWatch3
+    400400: //RootNode
+    400402: TechRaum:HintereWand
+    400404: "TechRaum:RechteL\xE4uchte"
+    400406: TechRaum:RechteWand
+    400408: TechRaum:WandLampe
+    400410: typeMesh1
+    400412: typeMesh1 1
+    400414: typeMesh1 2
+    400416: typeMesh1 3
+    400418: typeMesh1 4
+    400420: typeMesh2
+    400422: typeMesh2 1
+    400424: typeMesh2 2
+    400426: Vitrine10
+    400428: Vitrine11
+    400430: Vitrine14
+    400432: Vitrine15
+    400434: Vitrine16
+    400436: Vitrine17
+    400438: Vitrine2
+    400440: Vitrine21
+    400442: Vitrine22
+    400444: Vitrine23
+    400446: Vitrine24
+    400448: Vitrine25
+    400450: Vitrine26
+    400452: Vitrine27
+    400454: Vitrine28
+    400456: Vitrine3
+    400458: Vitrine30
+    400460: Vitrine31
+    400462: Vitrine32
+    400464: Vitrine33
+    400466: Vitrine34
+    400468: Vitrine35
+    400470: Vitrine36
+    400472: Vitrine37
+    400474: Vitrine38
+    400476: Vitrine39
+    400478: Vitrine4
+    400480: Vitrine5
+    400482: Vitrine6
+    400484: Vitrine7
+    400486: Vitrine8
+    400488: Vitrine9
+    400490: Vitrinen
+    400492: VitrinenGlasDeckel
+    400494: VitrinenGlasDeckel 1
+    400496: VitrinenGlasDeckel 10
+    400498: VitrinenGlasDeckel 11
+    400500: VitrinenGlasDeckel 12
+    400502: VitrinenGlasDeckel 13
+    400504: VitrinenGlasDeckel 14
+    400506: VitrinenGlasDeckel 15
+    400508: VitrinenGlasDeckel 16
+    400510: VitrinenGlasDeckel 17
+    400512: VitrinenGlasDeckel 18
+    400514: VitrinenGlasDeckel 19
+    400516: VitrinenGlasDeckel 2
+    400518: VitrinenGlasDeckel 3
+    400520: VitrinenGlasDeckel 4
+    400522: VitrinenGlasDeckel 5
+    400524: VitrinenGlasDeckel 6
+    400526: VitrinenGlasDeckel 7
+    400528: VitrinenGlasDeckel 8
+    400530: VitrinenGlasDeckel 9
+    400532: VitrinenGlasDeckel1
+    400534: VitrinenSockel
+    400536: VitrinenSockel 1
+    400538: VitrinenSockel 10
+    400540: VitrinenSockel 11
+    400542: VitrinenSockel 12
+    400544: VitrinenSockel 13
+    400546: VitrinenSockel 14
+    400548: VitrinenSockel 15
+    400550: VitrinenSockel 16
+    400552: VitrinenSockel 17
+    400554: VitrinenSockel 18
+    400556: VitrinenSockel 19
+    400558: VitrinenSockel 2
+    400560: VitrinenSockel 20
+    400562: VitrinenSockel 21
+    400564: VitrinenSockel 22
+    400566: VitrinenSockel 23
+    400568: VitrinenSockel 24
+    400570: VitrinenSockel 25
+    400572: VitrinenSockel 26
+    400574: VitrinenSockel 27
+    400576: VitrinenSockel 28
+    400578: VitrinenSockel 29
+    400580: VitrinenSockel 3
+    400582: VitrinenSockel 30
+    400584: VitrinenSockel 31
+    400586: VitrinenSockel 4
+    400588: VitrinenSockel 5
+    400590: VitrinenSockel 6
+    400592: VitrinenSockel 7
+    400594: VitrinenSockel 8
+    400596: VitrinenSockel 9
+    400598: VitrinenSockel1
+    400600: VitrinenSockel2
+    400602: VitrinenSockel3
+    400604: VitrinenSockel4
+    400606: VitrinenSockel4 1
+    400608: WiiU
+    400610: Zettel
+    400612: Zettel3
+    400614: Zettel4
+    400616: Zettel5
+    2100000: ZettelFarbe
+    2100002: ZettelSchriftFarbe
+    2100004: GameBoyKnopfFarbe
+    2100006: GameBoyBaseFarbe
+    2100008: GameBoyInnerDisplay
+    2100010: GameBoyDisplayUmrandung
+    2100012: GameBoyFarbe
+    2100014: GameBoyAdvanceBaseFarbe
+    2100016: GameBoyAdvanceKnopfFarbe
+    2100018: Nintendo64LabelFarbe
+    2100020: Nintendo64BaseFArbe
+    2100022: Nintendo64SlotFarbe
+    2100024: Nintendo64ControllerPortFarbe
+    2100026: Nintendo64SpielLabel
+    2100028: Nintendo64ModulFarbe
+    2100030: Nintendo64SpielSlotFarbe
+    2100032: N64AnalogStickBaseFarbe
+    2100034: N64RoterKnopf
+    2100036: "n64Gr\xFCnerKnopf"
+    2100038: N64BlauerKnopf
+    2100040: N64GelberKnopf
+    2100042: Nintendo64ControlerBaseColor
+    2100044: GameBoyAdvanveSPBaseColor
+    2100046: GameBoyAdvanceSPKnopfFarbe
+    2100048: Nintendo3dsFarbe
+    2100050: MacProFarbe
+    2100052: lambert1
+    2100054: MacPinkFarbe
+    2100056: BunterMacDisplayFarbe
+    2100058: "MacGr\xFCnFarbe"
+    2100060: MacBlauFarbe
+    2100062: WiiBaseFarbe
+    2100064: WiiLaufWerkFarbe
+    2100066: WiiBedinungDisplayFarbe
+    2100068: IpadBaseFarbe
+    2100070: IpadDisplayFarbe
+    2100072: IpadKnopfFarbe
+    2100074: PlaystationBaseFarbe
+    2100076: PlaystationAnschlussFarbe
+    2100078: PlaystationKnopfFarbe
+    2100080: Playstation2Farbe
+    2100082: SmartWAtchDisplay
+    2100084: SmartWatchBaseFarbe1
+    2100086: SmartWatchFarbe2
+    2100088: SmartWatchFarbe3
+    2100090: MakintoshBaseFarbe
+    2100092: MacintoshLaufwerksFarbe
+    2100094: MakintoshBildschirmfarbe
+    2100096: MakintoshTastenFarbe
+    2100098: MakintoshMausTaste
+    2100100: DronenBaseFarbe
+    2100102: DronenMotorFarbe
+    2100104: HoverBoardBaseColor
+    2100106: HoverBoardGelenkFarbe
+    2100108: "HoverBoardFu\xDFStand"
+    2100110: HoverBoardRadFarbe
+    2100112: GoogleGlassBaseFarbe
+    2100114: "GoogleGlassWei\xDF"
+    2100116: GoogleGlassGlas
+    2100118: OcolusFarbe
+    2100120: OcolusFarbe2
+    2100122: AlteTafelSchrift
+    2100124: AlteTafelFarbe
+    2100126: SchriftRollenFarbe
+    2100128: SchriftRollenRollenRandFarbe
+    2100130: VitrinenBaseFarbe
+    2100132: VitrinenInnenBodenFarbe
+    2100134: VitrinenDisplayFarbe
+    2100136: "VitrinenGr\xFCn"
+    2100138: VitrinenGlas
+    2100140: TechRaum_BodenBaseColor
+    2100142: TechRaum_WandLampenFarbe
+    2100144: TechRaum_BodenKachelFarbe
+    2100146: TechRaum_WegZumTorFarbe
+    2300000: AlteTafel 1
+    2300002: AlteTafel 2
+    2300004: AlteTafel 3
+    2300006: AlteTafel 4
+    2300008: AlteTafel 5
+    2300010: Boden2
+    2300012: Boden3
+    2300014: BunterMac
+    2300016: BunterMac1
+    2300018: BunterMac2
+    2300020: DerZeitungsArtikel
+    2300022: Drone
+    2300024: Drone1
+    2300026: Drone2
+    2300028: GameBoy 1
+    2300030: GameBoy 2
+    2300032: GoogleGlass
+    2300034: HoverBoard
+    2300036: Ipad
+    2300038: Ipad1
+    2300040: iPhone
+    2300042: iPhone1
+    2300044: iPhone2
+    2300046: MacinTosh
+    2300048: MacinTosh1
+    2300050: MacinTosh2
+    2300052: MacPro
+    2300054: MakintoshMaus
+    2300056: MakinToshMaus2
+    2300058: MakintoshTastatur
+    2300060: OcolusRift
+    2300062: OcolusRift1
+    2300064: pCube1
+    2300066: pCube1 1
+    2300068: pCube10
+    2300070: pCube11
+    2300072: pCube12
+    2300074: pCube13
+    2300076: pCube14
+    2300078: pCube15
+    2300080: pCube16
+    2300082: pCube17
+    2300084: pCube18
+    2300086: pCube19
+    2300088: pCube2
+    2300090: pCube2 1
+    2300092: pCube20
+    2300094: pCube21
+    2300096: pCube22
+    2300098: pCube23
+    2300100: pCube24
+    2300102: pCube24 1
+    2300104: pCube25
+    2300106: pCube25 1
+    2300108: pCube26
+    2300110: pCube26 1
+    2300112: pCube27
+    2300114: pCube27 1
+    2300116: pCube28
+    2300118: pCube28 1
+    2300120: pCube29
+    2300122: pCube29 1
+    2300124: pCube3
+    2300126: pCube3 1
+    2300128: pCube30
+    2300130: pCube31
+    2300132: pCube31 1
+    2300134: pCube32
+    2300136: pCube32 1
+    2300138: pCube33
+    2300140: pCube34
+    2300142: pCube34 1
+    2300144: pCube35
+    2300146: pCube35 1
+    2300148: pCube36
+    2300150: pCube36 1
+    2300152: pCube37
+    2300154: pCube37 1
+    2300156: pCube4
+    2300158: pCube5
+    2300160: pCube6
+    2300162: pCube7
+    2300164: pCube8
+    2300166: pCube9
+    2300168: pCylinder1
+    2300170: pCylinder1 1
+    2300172: pCylinder10
+    2300174: pCylinder11
+    2300176: pCylinder12
+    2300178: pCylinder13
+    2300180: pCylinder14
+    2300182: pCylinder15
+    2300184: pCylinder16
+    2300186: pCylinder17
+    2300188: pCylinder18
+    2300190: pCylinder19
+    2300192: pCylinder2
+    2300194: pCylinder2 1
+    2300196: pCylinder20
+    2300198: pCylinder21
+    2300200: pCylinder22
+    2300202: pCylinder23
+    2300204: pCylinder24
+    2300206: pCylinder25
+    2300208: pCylinder26
+    2300210: pCylinder27
+    2300212: pCylinder28
+    2300214: pCylinder29
+    2300216: pCylinder3
+    2300218: pCylinder30
+    2300220: pCylinder31
+    2300222: pCylinder32
+    2300224: pCylinder33
+    2300226: pCylinder34
+    2300228: pCylinder35
+    2300230: pCylinder36
+    2300232: pCylinder37
+    2300234: pCylinder38
+    2300236: pCylinder39
+    2300238: pCylinder4
+    2300240: pCylinder40
+    2300242: pCylinder42
+    2300244: pCylinder43
+    2300246: pCylinder44
+    2300248: pCylinder45
+    2300250: pCylinder46
+    2300252: pCylinder46 1
+    2300254: pCylinder47
+    2300256: pCylinder47 1
+    2300258: pCylinder48
+    2300260: pCylinder48 1
+    2300262: pCylinder49
+    2300264: pCylinder49 1
+    2300266: pCylinder5
+    2300268: pCylinder50
+    2300270: pCylinder51
+    2300272: pCylinder51 1
+    2300274: pCylinder52
+    2300276: pCylinder52 1
+    2300278: pCylinder53
+    2300280: pCylinder53 1
+    2300282: pCylinder54
+    2300284: pCylinder54 1
+    2300286: pCylinder55
+    2300288: pCylinder55 1
+    2300290: pCylinder56
+    2300292: pCylinder56 1
+    2300294: pCylinder57
+    2300296: pCylinder58
+    2300298: pCylinder59
+    2300300: pCylinder6
+    2300302: pCylinder60
+    2300304: pCylinder60 1
+    2300306: pCylinder61
+    2300308: pCylinder61 1
+    2300310: pCylinder62
+    2300312: pCylinder62 1
+    2300314: pCylinder63
+    2300316: pCylinder63 1
+    2300318: pCylinder65
+    2300320: pCylinder66
+    2300322: pCylinder7
+    2300324: pCylinder8
+    2300326: pCylinder9
+    2300328: Playstation2
+    2300330: Playstation3
+    2300332: SchriftRollenRolle
+    2300334: SchriftRollenRolle 1
+    2300336: SchriftRollenRolle 2
+    2300338: SchriftRollenRolle1
+    2300340: SchriftRollenRolle1 1
+    2300342: SchriftRollenRolle1 2
+    2300344: SmartWatch
+    2300346: SmartWatch1
+    2300348: SmartWatch2
+    2300350: SmartWatch3
+    2300352: TechRaum:HintereWand
+    2300354: "TechRaum:RechteL\xE4uchte"
+    2300356: TechRaum:RechteWand
+    2300358: TechRaum:WandLampe
+    2300360: typeMesh1
+    2300362: typeMesh1 1
+    2300364: typeMesh1 2
+    2300366: typeMesh1 3
+    2300368: typeMesh1 4
+    2300370: typeMesh2
+    2300372: typeMesh2 1
+    2300374: typeMesh2 2
+    2300376: VitrinenGlasDeckel
+    2300378: VitrinenGlasDeckel 1
+    2300380: VitrinenGlasDeckel 10
+    2300382: VitrinenGlasDeckel 11
+    2300384: VitrinenGlasDeckel 12
+    2300386: VitrinenGlasDeckel 13
+    2300388: VitrinenGlasDeckel 14
+    2300390: VitrinenGlasDeckel 15
+    2300392: VitrinenGlasDeckel 16
+    2300394: VitrinenGlasDeckel 17
+    2300396: VitrinenGlasDeckel 18
+    2300398: VitrinenGlasDeckel 19
+    2300400: VitrinenGlasDeckel 2
+    2300402: VitrinenGlasDeckel 3
+    2300404: VitrinenGlasDeckel 4
+    2300406: VitrinenGlasDeckel 5
+    2300408: VitrinenGlasDeckel 6
+    2300410: VitrinenGlasDeckel 7
+    2300412: VitrinenGlasDeckel 8
+    2300414: VitrinenGlasDeckel 9
+    2300416: VitrinenGlasDeckel1
+    2300418: VitrinenSockel
+    2300420: VitrinenSockel 1
+    2300422: VitrinenSockel 10
+    2300424: VitrinenSockel 11
+    2300426: VitrinenSockel 12
+    2300428: VitrinenSockel 13
+    2300430: VitrinenSockel 14
+    2300432: VitrinenSockel 15
+    2300434: VitrinenSockel 16
+    2300436: VitrinenSockel 17
+    2300438: VitrinenSockel 18
+    2300440: VitrinenSockel 19
+    2300442: VitrinenSockel 2
+    2300444: VitrinenSockel 20
+    2300446: VitrinenSockel 21
+    2300448: VitrinenSockel 22
+    2300450: VitrinenSockel 23
+    2300452: VitrinenSockel 24
+    2300454: VitrinenSockel 25
+    2300456: VitrinenSockel 26
+    2300458: VitrinenSockel 27
+    2300460: VitrinenSockel 28
+    2300462: VitrinenSockel 29
+    2300464: VitrinenSockel 3
+    2300466: VitrinenSockel 30
+    2300468: VitrinenSockel 31
+    2300470: VitrinenSockel 4
+    2300472: VitrinenSockel 5
+    2300474: VitrinenSockel 6
+    2300476: VitrinenSockel 7
+    2300478: VitrinenSockel 8
+    2300480: VitrinenSockel 9
+    2300482: VitrinenSockel1
+    2300484: VitrinenSockel2
+    2300486: VitrinenSockel3
+    2300488: VitrinenSockel4
+    2300490: VitrinenSockel4 1
+    2300492: Zettel
+    2300494: Zettel3
+    2300496: Zettel4
+    2300498: Zettel5
+    3300000: AlteTafel 1
+    3300002: AlteTafel 2
+    3300004: AlteTafel 3
+    3300006: AlteTafel 4
+    3300008: AlteTafel 5
+    3300010: Boden2
+    3300012: Boden3
+    3300014: BunterMac
+    3300016: BunterMac1
+    3300018: BunterMac2
+    3300020: DerZeitungsArtikel
+    3300022: Drone
+    3300024: Drone1
+    3300026: Drone2
+    3300028: GameBoy 1
+    3300030: GameBoy 2
+    3300032: GoogleGlass
+    3300034: HoverBoard
+    3300036: Ipad
+    3300038: Ipad1
+    3300040: iPhone
+    3300042: iPhone1
+    3300044: iPhone2
+    3300046: MacinTosh
+    3300048: MacinTosh1
+    3300050: MacinTosh2
+    3300052: MacPro
+    3300054: MakintoshMaus
+    3300056: MakinToshMaus2
+    3300058: MakintoshTastatur
+    3300060: OcolusRift
+    3300062: OcolusRift1
+    3300064: pCube1
+    3300066: pCube1 1
+    3300068: pCube10
+    3300070: pCube11
+    3300072: pCube12
+    3300074: pCube13
+    3300076: pCube14
+    3300078: pCube15
+    3300080: pCube16
+    3300082: pCube17
+    3300084: pCube18
+    3300086: pCube19
+    3300088: pCube2
+    3300090: pCube2 1
+    3300092: pCube20
+    3300094: pCube21
+    3300096: pCube22
+    3300098: pCube23
+    3300100: pCube24
+    3300102: pCube24 1
+    3300104: pCube25
+    3300106: pCube25 1
+    3300108: pCube26
+    3300110: pCube26 1
+    3300112: pCube27
+    3300114: pCube27 1
+    3300116: pCube28
+    3300118: pCube28 1
+    3300120: pCube29
+    3300122: pCube29 1
+    3300124: pCube3
+    3300126: pCube3 1
+    3300128: pCube30
+    3300130: pCube31
+    3300132: pCube31 1
+    3300134: pCube32
+    3300136: pCube32 1
+    3300138: pCube33
+    3300140: pCube34
+    3300142: pCube34 1
+    3300144: pCube35
+    3300146: pCube35 1
+    3300148: pCube36
+    3300150: pCube36 1
+    3300152: pCube37
+    3300154: pCube37 1
+    3300156: pCube4
+    3300158: pCube5
+    3300160: pCube6
+    3300162: pCube7
+    3300164: pCube8
+    3300166: pCube9
+    3300168: pCylinder1
+    3300170: pCylinder1 1
+    3300172: pCylinder10
+    3300174: pCylinder11
+    3300176: pCylinder12
+    3300178: pCylinder13
+    3300180: pCylinder14
+    3300182: pCylinder15
+    3300184: pCylinder16
+    3300186: pCylinder17
+    3300188: pCylinder18
+    3300190: pCylinder19
+    3300192: pCylinder2
+    3300194: pCylinder2 1
+    3300196: pCylinder20
+    3300198: pCylinder21
+    3300200: pCylinder22
+    3300202: pCylinder23
+    3300204: pCylinder24
+    3300206: pCylinder25
+    3300208: pCylinder26
+    3300210: pCylinder27
+    3300212: pCylinder28
+    3300214: pCylinder29
+    3300216: pCylinder3
+    3300218: pCylinder30
+    3300220: pCylinder31
+    3300222: pCylinder32
+    3300224: pCylinder33
+    3300226: pCylinder34
+    3300228: pCylinder35
+    3300230: pCylinder36
+    3300232: pCylinder37
+    3300234: pCylinder38
+    3300236: pCylinder39
+    3300238: pCylinder4
+    3300240: pCylinder40
+    3300242: pCylinder42
+    3300244: pCylinder43
+    3300246: pCylinder44
+    3300248: pCylinder45
+    3300250: pCylinder46
+    3300252: pCylinder46 1
+    3300254: pCylinder47
+    3300256: pCylinder47 1
+    3300258: pCylinder48
+    3300260: pCylinder48 1
+    3300262: pCylinder49
+    3300264: pCylinder49 1
+    3300266: pCylinder5
+    3300268: pCylinder50
+    3300270: pCylinder51
+    3300272: pCylinder51 1
+    3300274: pCylinder52
+    3300276: pCylinder52 1
+    3300278: pCylinder53
+    3300280: pCylinder53 1
+    3300282: pCylinder54
+    3300284: pCylinder54 1
+    3300286: pCylinder55
+    3300288: pCylinder55 1
+    3300290: pCylinder56
+    3300292: pCylinder56 1
+    3300294: pCylinder57
+    3300296: pCylinder58
+    3300298: pCylinder59
+    3300300: pCylinder6
+    3300302: pCylinder60
+    3300304: pCylinder60 1
+    3300306: pCylinder61
+    3300308: pCylinder61 1
+    3300310: pCylinder62
+    3300312: pCylinder62 1
+    3300314: pCylinder63
+    3300316: pCylinder63 1
+    3300318: pCylinder65
+    3300320: pCylinder66
+    3300322: pCylinder7
+    3300324: pCylinder8
+    3300326: pCylinder9
+    3300328: Playstation2
+    3300330: Playstation3
+    3300332: SchriftRollenRolle
+    3300334: SchriftRollenRolle 1
+    3300336: SchriftRollenRolle 2
+    3300338: SchriftRollenRolle1
+    3300340: SchriftRollenRolle1 1
+    3300342: SchriftRollenRolle1 2
+    3300344: SmartWatch
+    3300346: SmartWatch1
+    3300348: SmartWatch2
+    3300350: SmartWatch3
+    3300352: TechRaum:HintereWand
+    3300354: "TechRaum:RechteL\xE4uchte"
+    3300356: TechRaum:RechteWand
+    3300358: TechRaum:WandLampe
+    3300360: typeMesh1
+    3300362: typeMesh1 1
+    3300364: typeMesh1 2
+    3300366: typeMesh1 3
+    3300368: typeMesh1 4
+    3300370: typeMesh2
+    3300372: typeMesh2 1
+    3300374: typeMesh2 2
+    3300376: VitrinenGlasDeckel
+    3300378: VitrinenGlasDeckel 1
+    3300380: VitrinenGlasDeckel 10
+    3300382: VitrinenGlasDeckel 11
+    3300384: VitrinenGlasDeckel 12
+    3300386: VitrinenGlasDeckel 13
+    3300388: VitrinenGlasDeckel 14
+    3300390: VitrinenGlasDeckel 15
+    3300392: VitrinenGlasDeckel 16
+    3300394: VitrinenGlasDeckel 17
+    3300396: VitrinenGlasDeckel 18
+    3300398: VitrinenGlasDeckel 19
+    3300400: VitrinenGlasDeckel 2
+    3300402: VitrinenGlasDeckel 3
+    3300404: VitrinenGlasDeckel 4
+    3300406: VitrinenGlasDeckel 5
+    3300408: VitrinenGlasDeckel 6
+    3300410: VitrinenGlasDeckel 7
+    3300412: VitrinenGlasDeckel 8
+    3300414: VitrinenGlasDeckel 9
+    3300416: VitrinenGlasDeckel1
+    3300418: VitrinenSockel
+    3300420: VitrinenSockel 1
+    3300422: VitrinenSockel 10
+    3300424: VitrinenSockel 11
+    3300426: VitrinenSockel 12
+    3300428: VitrinenSockel 13
+    3300430: VitrinenSockel 14
+    3300432: VitrinenSockel 15
+    3300434: VitrinenSockel 16
+    3300436: VitrinenSockel 17
+    3300438: VitrinenSockel 18
+    3300440: VitrinenSockel 19
+    3300442: VitrinenSockel 2
+    3300444: VitrinenSockel 20
+    3300446: VitrinenSockel 21
+    3300448: VitrinenSockel 22
+    3300450: VitrinenSockel 23
+    3300452: VitrinenSockel 24
+    3300454: VitrinenSockel 25
+    3300456: VitrinenSockel 26
+    3300458: VitrinenSockel 27
+    3300460: VitrinenSockel 28
+    3300462: VitrinenSockel 29
+    3300464: VitrinenSockel 3
+    3300466: VitrinenSockel 30
+    3300468: VitrinenSockel 31
+    3300470: VitrinenSockel 4
+    3300472: VitrinenSockel 5
+    3300474: VitrinenSockel 6
+    3300476: VitrinenSockel 7
+    3300478: VitrinenSockel 8
+    3300480: VitrinenSockel 9
+    3300482: VitrinenSockel1
+    3300484: VitrinenSockel2
+    3300486: VitrinenSockel3
+    3300488: VitrinenSockel4
+    3300490: VitrinenSockel4 1
+    3300492: Zettel
+    3300494: Zettel3
+    3300496: Zettel4
+    3300498: Zettel5
+    4300000: DerZeitungsArtikel
+    4300002: pCube1
+    4300004: pCube2
+    4300006: pCube3
+    4300008: GameBoy
+    4300010: pCylinder1
+    4300012: pCylinder2
+    4300014: pCube1
+    4300016: pCube2
+    4300018: pCube3
+    4300020: GameBoy
+    4300022: pCylinder1
+    4300024: pCylinder2
+    4300026: pCube4
+    4300028: pCube7
+    4300030: pCube6
+    4300032: pCube5
+    4300034: pCylinder4
+    4300036: pCylinder3
+    4300038: pCube8
+    4300040: pCylinder5
+    4300042: pCylinder6
+    4300044: pCylinder7
+    4300046: pCylinder8
+    4300048: pCube12
+    4300050: pCube11
+    4300052: pCube10
+    4300054: pCube9
+    4300056: pCylinder16
+    4300058: pCylinder15
+    4300060: pCylinder14
+    4300062: pCylinder13
+    4300064: pCylinder12
+    4300066: pCylinder11
+    4300068: pCylinder10
+    4300070: pCylinder9
+    4300072: pCube14
+    4300074: pCube13
+    4300076: pCylinder17
+    4300078: pCylinder18
+    4300080: pCylinder19
+    4300082: pCylinder20
+    4300084: pCylinder21
+    4300086: pCylinder22
+    4300088: pCylinder23
+    4300090: pCylinder24
+    4300092: pCube15
+    4300094: pCube16
+    4300096: pCylinder25
+    4300098: pCylinder26
+    4300100: pCylinder27
+    4300102: pCylinder28
+    4300104: pCylinder29
+    4300106: pCylinder30
+    4300108: pCylinder31
+    4300110: pCylinder32
+    4300112: pCube17
+    4300114: pCube18
+    4300116: pCylinder33
+    4300118: pCylinder34
+    4300120: pCylinder35
+    4300122: pCylinder36
+    4300124: pCylinder37
+    4300126: pCylinder38
+    4300128: pCylinder39
+    4300130: pCylinder40
+    4300132: pCube19
+    4300134: pCube20
+    4300136: pCube21
+    4300138: pCube22
+    4300140: pCylinder42
+    4300142: pCylinder43
+    4300144: pCube23
+    4300146: pCylinder44
+    4300148: pCylinder45
+    4300150: pCube24
+    4300152: pCube25
+    4300154: pCube26
+    4300156: pCube27
+    4300158: pCube28
+    4300160: pCylinder46
+    4300162: pCylinder47
+    4300164: pCylinder48
+    4300166: pCylinder49
+    4300168: pCube29
+    4300170: pCube24
+    4300172: pCube25
+    4300174: pCube26
+    4300176: pCube27
+    4300178: pCube28
+    4300180: pCylinder46
+    4300182: pCylinder47
+    4300184: pCylinder48
+    4300186: pCylinder49
+    4300188: pCube29
+    4300190: pCylinder50
+    4300192: MacPro
+    4300194: BunterMac
+    4300196: BunterMac1
+    4300198: BunterMac2
+    4300200: pCube30
+    4300202: pCube31
+    4300204: pCylinder51
+    4300206: pCylinder52
+    4300208: pCube32
+    4300210: pCylinder53
+    4300212: pCylinder54
+    4300214: pCylinder55
+    4300216: pCylinder56
+    4300218: pCube31
+    4300220: pCylinder51
+    4300222: pCylinder52
+    4300224: pCube32
+    4300226: pCylinder53
+    4300228: pCylinder54
+    4300230: pCylinder55
+    4300232: pCylinder56
+    4300234: Ipad
+    4300236: iPhone
+    4300238: iPhone1
+    4300240: iPhone2
+    4300242: pCube33
+    4300244: pCylinder57
+    4300246: pCylinder58
+    4300248: pCylinder59
+    4300250: Playstation3
+    4300252: Playstation2
+    4300254: SmartWatch
+    4300256: SmartWatch1
+    4300258: SmartWatch2
+    4300260: SmartWatch3
+    4300262: pCube34
+    4300264: pCube35
+    4300266: pCylinder60
+    4300268: pCylinder61
+    4300270: pCylinder62
+    4300272: pCylinder63
+    4300274: pCube36
+    4300276: pCube37
+    4300278: pCube34
+    4300280: pCube35
+    4300282: pCylinder60
+    4300284: pCylinder61
+    4300286: pCylinder62
+    4300288: pCylinder63
+    4300290: pCube36
+    4300292: pCube37
+    4300294: MacinTosh
+    4300296: MacinTosh1
+    4300298: MakinToshMaus2
+    4300300: MacinTosh2
+    4300302: MakintoshTastatur
+    4300304: MakintoshMaus
+    4300306: Ipad1
+    4300308: Drone
+    4300310: Drone1
+    4300312: Drone2
+    4300314: HoverBoard
+    4300316: pCylinder65
+    4300318: pCylinder66
+    4300320: GoogleGlass
+    4300322: OcolusRift
+    4300324: OcolusRift1
+    4300326: typeMesh1
+    4300328: AlteTafel
+    4300330: typeMesh1
+    4300332: AlteTafel
+    4300334: typeMesh1
+    4300336: AlteTafel
+    4300338: typeMesh1
+    4300340: AlteTafel
+    4300342: typeMesh1
+    4300344: AlteTafel
+    4300346: Zettel
+    4300348: Zettel3
+    4300350: Zettel4
+    4300352: Zettel5
+    4300354: SchriftRollenRolle
+    4300356: SchriftRollenRolle1
+    4300358: typeMesh2
+    4300360: SchriftRollenRolle
+    4300362: SchriftRollenRolle1
+    4300364: typeMesh2
+    4300366: SchriftRollenRolle
+    4300368: SchriftRollenRolle1
+    4300370: typeMesh2
+    4300372: VitrinenSockel1
+    4300374: VitrinenGlasDeckel1
+    4300376: VitrinenGlasDeckel
+    4300378: VitrinenSockel
+    4300380: VitrinenGlasDeckel
+    4300382: VitrinenSockel
+    4300384: VitrinenSockel2
+    4300386: VitrinenSockel3
+    4300388: VitrinenSockel
+    4300390: VitrinenGlasDeckel
+    4300392: VitrinenSockel
+    4300394: VitrinenGlasDeckel
+    4300396: VitrinenSockel
+    4300398: VitrinenGlasDeckel
+    4300400: VitrinenSockel
+    4300402: VitrinenGlasDeckel
+    4300404: VitrinenSockel
+    4300406: VitrinenSockel
+    4300408: VitrinenSockel
+    4300410: VitrinenSockel
+    4300412: VitrinenSockel
+    4300414: VitrinenGlasDeckel
+    4300416: VitrinenSockel
+    4300418: VitrinenGlasDeckel
+    4300420: VitrinenSockel
+    4300422: VitrinenGlasDeckel
+    4300424: VitrinenSockel
+    4300426: VitrinenGlasDeckel
+    4300428: VitrinenSockel
+    4300430: VitrinenGlasDeckel
+    4300432: VitrinenSockel
+    4300434: VitrinenGlasDeckel
+    4300436: VitrinenSockel
+    4300438: VitrinenSockel
+    4300440: VitrinenSockel4
+    4300442: VitrinenSockel
+    4300444: VitrinenSockel
+    4300446: VitrinenGlasDeckel
+    4300448: VitrinenSockel
+    4300450: VitrinenGlasDeckel
+    4300452: VitrinenSockel
+    4300454: VitrinenGlasDeckel
+    4300456: VitrinenSockel
+    4300458: VitrinenGlasDeckel
+    4300460: VitrinenSockel
+    4300462: VitrinenGlasDeckel
+    4300464: VitrinenSockel
+    4300466: VitrinenGlasDeckel
+    4300468: VitrinenSockel
+    4300470: VitrinenSockel
+    4300472: VitrinenSockel
+    4300474: VitrinenSockel4
+    4300476: VitrinenGlasDeckel
+    4300478: VitrinenSockel
+    4300480: VitrinenGlasDeckel
+    4300482: VitrinenSockel
+    4300484: VitrinenSockel
+    4300486: VitrinenSockel
+    4300488: TechRaum:HintereWand
+    4300490: TechRaum:WandLampe
+    4300492: TechRaum:RechteWand
+    4300494: "TechRaum:RechteL\xE4uchte"
+    4300496: Boden2
+    4300498: Boden3
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
