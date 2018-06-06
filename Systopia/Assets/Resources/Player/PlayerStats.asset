@@ -27,5 +27,6 @@ MonoBehaviour:
   baseValue: 10
   statBonus: 0
   finalValue: 0
-  statName: Strength
-  statDescription: description here
+  statName: "St\xE4rke"
+  statDescription: "Gibt die rohe St\xE4rke des Helden an und beeinflusst direkt den
+    Schaden, den er anrichtet."

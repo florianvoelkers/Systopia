@@ -48,7 +48,7 @@ public class StatsEditor : Editor {
 			EditorGUILayout.PropertyField (statNameProperty);
 			EditorGUILayout.BeginHorizontal ();
 			EditorGUILayout.PrefixLabel ("Description");
-			statDescriptionsProperty.stringValue = GUILayout.TextArea (statDescriptionsProperty.stringValue, GUILayout.Height (50f));
+			statDescriptionsProperty.stringValue = GUILayout.TextArea (statDescriptionsProperty.stringValue, GUILayout.Height (75f));
 			EditorGUILayout.EndHorizontal ();
 			EditorGUILayout.PropertyField (baseValueProperty);
 			EditorGUI.indentLevel--;
