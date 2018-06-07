@@ -42,6 +42,17 @@ MonoBehaviour:
   - {fileID: 114584364955084638}
   - {fileID: 114423019035872344}
   - {fileID: 114456345674533678}
+  - {fileID: 114625007438565306}
+  - {fileID: 114065376893912300}
+  - {fileID: 114236389552481594}
+  - {fileID: 114308714000630680}
+  - {fileID: 114607162699739496}
+  - {fileID: 114297037510284418}
+  - {fileID: 114042842350557242}
+  - {fileID: 114338246248719424}
+  - {fileID: 114529448560632788}
+  - {fileID: 114153486165968374}
+  - {fileID: 114750410655041286}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,6 +67,20 @@ MonoBehaviour:
   description: hasBookOfProfessors
   satisfied: 0
   hash: 2143076375
+--- !u!114 &114042842350557242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsSecretAvaMessage
+  m_EditorClassIdentifier: 
+  description: knowsSecretAvaMessage
+  satisfied: 0
+  hash: 865920183
 --- !u!114 &114054524776010630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +95,20 @@ MonoBehaviour:
   description: talkedToOldMan
   satisfied: 0
   hash: -1924799856
+--- !u!114 &114065376893912300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasBeenToTheRuins
+  m_EditorClassIdentifier: 
+  description: hasBeenToTheRuins
+  satisfied: 0
+  hash: -1272583476
 --- !u!114 &114123978580005390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +123,20 @@ MonoBehaviour:
   description: hasNewsArticleAboutInvention
   satisfied: 0
   hash: -1045555992
+--- !u!114 &114153486165968374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: correctedErrorInProgram
+  m_EditorClassIdentifier: 
+  description: correctedErrorInProgram
+  satisfied: 0
+  hash: 28738128
 --- !u!114 &114192914643168618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,6 +151,20 @@ MonoBehaviour:
   description: startedQuest3-4
   satisfied: 0
   hash: 1390831435
+--- !u!114 &114236389552481594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: foundArmorDesigns
+  m_EditorClassIdentifier: 
+  description: foundArmorDesigns
+  satisfied: 0
+  hash: 1035461802
 --- !u!114 &114236911489417814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +207,48 @@ MonoBehaviour:
   description: finishedQuest3-2
   satisfied: 0
   hash: 413115151
+--- !u!114 &114297037510284418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasPaintings
+  m_EditorClassIdentifier: 
+  description: hasPaintings
+  satisfied: 0
+  hash: 1894377727
+--- !u!114 &114308714000630680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest2-3
+  m_EditorClassIdentifier: 
+  description: finishedQuest2-3
+  satisfied: 0
+  hash: 1851455918
+--- !u!114 &114338246248719424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest2-4
+  m_EditorClassIdentifier: 
+  description: finishedQuest2-4
+  satisfied: 0
+  hash: -264344563
 --- !u!114 &114397725248900844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +305,20 @@ MonoBehaviour:
   description: hasAccessToLaboratory
   satisfied: 0
   hash: -1094338735
+--- !u!114 &114529448560632788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest2-5
+  m_EditorClassIdentifier: 
+  description: startedQuest2-5
+  satisfied: 0
+  hash: 606289386
 --- !u!114 &114573691241052810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +389,34 @@ MonoBehaviour:
   description: startedQuest3-5
   satisfied: 0
   hash: 635525085
+--- !u!114 &114607162699739496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest2-4
+  m_EditorClassIdentifier: 
+  description: startedQuest2-4
+  satisfied: 0
+  hash: 1394871676
+--- !u!114 &114625007438565306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedQuest2-3
+  m_EditorClassIdentifier: 
+  description: startedQuest2-3
+  satisfied: 0
+  hash: -851404577
 --- !u!114 &114631196455471364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +487,20 @@ MonoBehaviour:
   description: talkedToTechnokratenCaptain
   satisfied: 0
   hash: -1370220941
+--- !u!114 &114750410655041286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finsihedQuest2-5
+  m_EditorClassIdentifier: 
+  description: finsihedQuest2-5
+  satisfied: 0
+  hash: -280061446
 --- !u!114 &114854315130655190
 MonoBehaviour:
   m_ObjectHideFlags: 0
