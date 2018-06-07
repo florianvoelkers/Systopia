@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: "1-1informationen\xDCberDieTechnokraten"
+  m_EditorClassIdentifier: 
+  questTitle: "Informationen \xFCber die Technokraten"
+  questDescription: "Wogapowi ist verschwunden. Da niemand wei\xDF, wer ich bin, soll
+    ich in der Taverne weitere Informationen sammeln und bestenfalls den Aufenthaltsort
+    Wogapowis erfahren."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
+  states:
+  - {fileID: 114893027378896614}
+  - {fileID: 114170882946739176}
+  rewards:
+  - {fileID: 114437683243268996}
+--- !u!114 &114170882946739176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-1foundAllPieces
+  m_EditorClassIdentifier: 
+  stateName: 1-1foundAllPieces
+  stateDescription: "Ich sollte nun alle Informationen zu den Technokraten gesammelt
+    haben. Au\xDFerdem habe ich eine Karte gefunden, die nicht nur Wogapowis Aufenthaltsort,
+    sondern auch das Waffenlager zeigt."
+  isStateFinished: 0
+--- !u!114 &114437683243268996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 100
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114893027378896614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-1questStarted
+  m_EditorClassIdentifier: 
+  stateName: 1-1questStarted
+  stateDescription: 'Ich sollte mich in der Taverne umsehen. Aber ich muss aufpassen,
+    wem ich was sage. Der Wirt sollte ein guter erster Ansprechpartner sein. '
+  isStateFinished: 0

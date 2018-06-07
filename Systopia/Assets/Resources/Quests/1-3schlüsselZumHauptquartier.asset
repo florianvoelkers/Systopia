@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: "1-3schl\xFCsselZumHauptquartier"
+  m_EditorClassIdentifier: 
+  questTitle: "Schl\xFCssel zum Hauptquartier"
+  questDescription: "Ich soll in die Verwaltungsstelle der Technokraten eindringen
+    und mir dort einen gef\xE4lschten Ausweis erstellen, damit ich in das Hauptquartier
+    der Technokraten gelangen kann. "
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
+  states:
+  - {fileID: 114913319865142814}
+  - {fileID: 114578643488058100}
+  - {fileID: 114486900644101250}
+  rewards:
+  - {fileID: 114708758808259826}
+--- !u!114 &114486900644101250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-3hasCredentials
+  m_EditorClassIdentifier: 
+  stateName: 1-3hasCredentials
+  stateDescription: 'Ich habe nun den Ausweis, mit dem ich in das Hauptquartier der
+    Technokraten gelangen kann, um Wogapowi zu befreien. '
+  isStateFinished: 0
+--- !u!114 &114578643488058100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-3outsmartedGuard
+  m_EditorClassIdentifier: 
+  stateName: 1-3outsmartedGuard
+  stateDescription: "Ich habe den W\xE4chter \xFCberlisten k\xF6nnen. Nun muss ich
+    mir noch den Ausweis erstellen."
+  isStateFinished: 0
+--- !u!114 &114708758808259826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 300
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
+--- !u!114 &114913319865142814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-3questStarted
+  m_EditorClassIdentifier: 
+  stateName: 1-3questStarted
+  stateDescription: "Ich sollte zur Verwaltungsstelle aufbrechen und einen Weg finden
+    den W\xE4chter dort zu \xFCberlisten, um so wenig Aufmerksamkeit wie m\xF6glich
+    auf mich zu lenken."
+  isStateFinished: 0
