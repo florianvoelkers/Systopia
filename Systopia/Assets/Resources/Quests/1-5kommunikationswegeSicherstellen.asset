@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
+  m_Name: 1-5kommunikationswegeSicherstellen
+  m_EditorClassIdentifier: 
+  questTitle: Kommunikationswege sicherstellen
+  questDescription: "Es scheint so als ob der H\xE4ndler in der Taverne, den wir f\xFCr
+    unsere Kommunikation genutzt haben, uns an die Technokraten verraten hat. Ich
+    soll herausfinden, was er ihnen gesagt hat und ihm klar machen, wem er loyal sein
+    sollte."
+  isQuestFinished: 0
+  fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
+  states:
+  - {fileID: 114917417461177342}
+  - {fileID: 114903671301431098}
+  rewards:
+  - {fileID: 114935965603942532}
+--- !u!114 &114903671301431098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-5merchantConvinced
+  m_EditorClassIdentifier: 
+  stateName: 1-5merchantConvinced
+  stateDescription: "Der H\xE4ndler hat mir alles erz\xE4hlt, was er wei\xDF. Leider
+    war das nicht viel. Aber er hat mir als Zeichen seiner Loyalit\xE4t eine sehr
+    starke Waffe geschenkt."
+  isStateFinished: 0
+--- !u!114 &114917417461177342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-5questStarted
+  m_EditorClassIdentifier: 
+  stateName: 1-5questStarted
+  stateDescription: "Der H\xE4ndler befindet sich in der Taverne. Ich sollte jedoch
+    keine Gewalt anwenden, da dies zu auff\xE4llig w\xE4re."
+  isStateFinished: 0
+--- !u!114 &114935965603942532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31576de58293e248a9ad2f358f2c86c, type: 3}
+  m_Name: exp
+  m_EditorClassIdentifier: 
+  experienceRewarded: 500
+  playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
