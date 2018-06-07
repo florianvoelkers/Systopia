@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: 32bd59d7c00dd364f9ec41247f16c56a
+timeCreated: 1528377683
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AlleKarten
+    100002: //RootNode
+    100004: baseballBat1
+    100006: baseballBat2
+    100008: BaseballBatSaw1
+    100010: BaseballBatSaw1 1
+    100012: Bett
+    100014: BettGestellBase
+    100016: Bierflasche
+    100018: Bierflasche1
+    100020: Bierflasche2
+    100022: Bierflasche3
+    100024: Bierflasche4
+    100026: Bierflasche5
+    100028: Bierflasche6
+    100030: Bierflasche7
+    100032: Boden
+    100034: Decke
+    100036: DeckenLampe
+    100038: DeckenLampe1
+    100040: DeckenLampe2
+    100042: DeckenLampe3
+    100044: DieKarteZumWaffenLager
+    100046: Fenster
+    100048: FensterRahmen
+    100050: FlascheUndGlas1
+    100052: FlascheUndGlas:Bierflasche
+    100054: FlascheUndGlas:Glas2
+    100056: "FlascheUndGlas:Gl\xE4serImRegal1"
+    100058: Gewehr27
+    100060: Glas2
+    100062: Glas3
+    100064: Glas4
+    100066: Glas5
+    100068: Glas6
+    100070: group1
+    100072: group8
+    100074: group9
+    100076: HolzKiste
+    100078: HolzKiste1
+    100080: HolzKiste2
+    100082: HolzKiste3
+    100084: HolzKiste4
+    100086: HolzKiste5
+    100088: HolzKisten
+    100090: KartenHand
+    100092: KartenHand1
+    100094: KartenHand2
+    100096: KartenUndZettel
+    100098: Kissen
+    100100: KleinerTisch
+    100102: KleinerTisch1
+    100104: LampenSchirm
+    100106: LampenSchirm 1
+    100108: LampenSchirm 2
+    100110: LampenSchirm 3
+    100112: pCube1
+    100114: pCube1 1
+    100116: pCube1 2
+    100118: pCube3
+    100120: pCube66
+    100122: pCube67
+    100124: pCube68
+    100126: pCube72
+    100128: pCube73
+    100130: pCube74
+    100132: pCube75
+    100134: pCube76
+    100136: pCube77
+    100138: pCube77 1
+    100140: pCube77 2
+    100142: pCube78
+    100144: pCube78 1
+    100146: pCube78 2
+    100148: pCube79
+    100150: pCube79 1
+    100152: pCube79 2
+    100154: pCube80
+    100156: pCube80 1
+    100158: pCube80 2
+    100160: pCube81
+    100162: pCube81 1
+    100164: pCube81 2
+    100166: pCube82
+    100168: pCylinder1
+    100170: pCylinder1 1
+    100172: pCylinder12
+    100174: pCylinder13
+    100176: pCylinder14
+    100178: pCylinder15
+    100180: pCylinder16
+    100182: pCylinder17
+    100184: pCylinder18
+    100186: pCylinder19
+    100188: pCylinder2
+    100190: pCylinder2 1
+    100192: pCylinder2 2
+    100194: pCylinder2 3
+    100196: pCylinder20
+    100198: pCylinder21
+    100200: pCylinder21 1
+    100202: pCylinder21 2
+    100204: pCylinder21 3
+    100206: pCylinder22
+    100208: pCylinder23
+    100210: pCylinder24
+    100212: pCylinder25
+    100214: pPlane1
+    100216: pPlane2
+    100218: pPlane3
+    100220: pPlane5
+    100222: pSphere1
+    100224: pSphere1 1
+    100226: pSphere1 2
+    100228: pSphere1 3
+    100230: pTorus1
+    100232: pTorus1 1
+    100234: Raum
+    100236: regal
+    100238: regal1
+    100240: regale
+    100242: "ScharfSch\xFCtzenGewehr"
+    100244: "St\xFChle"
+    100246: Tisch
+    100248: TischPlatte
+    100250: typeMesh1
+    100252: "T\xFCr"
+    100254: Waffen1
+    100256: Wand
+    100258: Wand2
+    400000: AlleKarten
+    400002: //RootNode
+    400004: baseballBat1
+    400006: baseballBat2
+    400008: BaseballBatSaw1
+    400010: BaseballBatSaw1 1
+    400012: Bett
+    400014: BettGestellBase
+    400016: Bierflasche
+    400018: Bierflasche1
+    400020: Bierflasche2
+    400022: Bierflasche3
+    400024: Bierflasche4
+    400026: Bierflasche5
+    400028: Bierflasche6
+    400030: Bierflasche7
+    400032: Boden
+    400034: Decke
+    400036: DeckenLampe
+    400038: DeckenLampe1
+    400040: DeckenLampe2
+    400042: DeckenLampe3
+    400044: DieKarteZumWaffenLager
+    400046: Fenster
+    400048: FensterRahmen
+    400050: FlascheUndGlas1
+    400052: FlascheUndGlas:Bierflasche
+    400054: FlascheUndGlas:Glas2
+    400056: "FlascheUndGlas:Gl\xE4serImRegal1"
+    400058: Gewehr27
+    400060: Glas2
+    400062: Glas3
+    400064: Glas4
+    400066: Glas5
+    400068: Glas6
+    400070: group1
+    400072: group8
+    400074: group9
+    400076: HolzKiste
+    400078: HolzKiste1
+    400080: HolzKiste2
+    400082: HolzKiste3
+    400084: HolzKiste4
+    400086: HolzKiste5
+    400088: HolzKisten
+    400090: KartenHand
+    400092: KartenHand1
+    400094: KartenHand2
+    400096: KartenUndZettel
+    400098: Kissen
+    400100: KleinerTisch
+    400102: KleinerTisch1
+    400104: LampenSchirm
+    400106: LampenSchirm 1
+    400108: LampenSchirm 2
+    400110: LampenSchirm 3
+    400112: pCube1
+    400114: pCube1 1
+    400116: pCube1 2
+    400118: pCube3
+    400120: pCube66
+    400122: pCube67
+    400124: pCube68
+    400126: pCube72
+    400128: pCube73
+    400130: pCube74
+    400132: pCube75
+    400134: pCube76
+    400136: pCube77
+    400138: pCube77 1
+    400140: pCube77 2
+    400142: pCube78
+    400144: pCube78 1
+    400146: pCube78 2
+    400148: pCube79
+    400150: pCube79 1
+    400152: pCube79 2
+    400154: pCube80
+    400156: pCube80 1
+    400158: pCube80 2
+    400160: pCube81
+    400162: pCube81 1
+    400164: pCube81 2
+    400166: pCube82
+    400168: pCylinder1
+    400170: pCylinder1 1
+    400172: pCylinder12
+    400174: pCylinder13
+    400176: pCylinder14
+    400178: pCylinder15
+    400180: pCylinder16
+    400182: pCylinder17
+    400184: pCylinder18
+    400186: pCylinder19
+    400188: pCylinder2
+    400190: pCylinder2 1
+    400192: pCylinder2 2
+    400194: pCylinder2 3
+    400196: pCylinder20
+    400198: pCylinder21
+    400200: pCylinder21 1
+    400202: pCylinder21 2
+    400204: pCylinder21 3
+    400206: pCylinder22
+    400208: pCylinder23
+    400210: pCylinder24
+    400212: pCylinder25
+    400214: pPlane1
+    400216: pPlane2
+    400218: pPlane3
+    400220: pPlane5
+    400222: pSphere1
+    400224: pSphere1 1
+    400226: pSphere1 2
+    400228: pSphere1 3
+    400230: pTorus1
+    400232: pTorus1 1
+    400234: Raum
+    400236: regal
+    400238: regal1
+    400240: regale
+    400242: "ScharfSch\xFCtzenGewehr"
+    400244: "St\xFChle"
+    400246: Tisch
+    400248: TischPlatte
+    400250: typeMesh1
+    400252: "T\xFCr"
+    400254: Waffen1
+    400256: Wand
+    400258: Wand2
+    2100000: BodenBaseFarbe
+    2100002: FensterFarbe
+    2100004: WandFarbe1
+    2100006: "T\xFCrRahmenFarbe"
+    2100008: lambert1
+    2100010: "AvaUnterSchlupf_AvaUntersSchlupfT\xFCrSpaltFarbe"
+    2100012: "AvaUnterSchlupf_AvaUnterschlupfT\xFCrFarbe"
+    2100014: AvaUnterSchlupf_AvaUnterschlupfFensterBretter
+    2100016: AvaUnterSchlupf_AvaUnterschlupfNagelFarbe
+    2100018: FensterRahmenFarbe
+    2100020: LampenSchirmFarbe
+    2100022: "Gl\xFChbirnenFarbe"
+    2100024: KabelFarbe
+    2100026: HolzKistenBretterFarbe
+    2100028: HolzKistenBaseFarbe
+    2100030: BettBeinFarbe
+    2100032: BettBaseFarbe
+    2100034: MatratzenFarbe
+    2100036: DeckenFarbe
+    2100038: KissenFarbe
+    2100040: KommodenPlattenFarbe
+    2100042: StuhlFarbe
+    2100044: "AvaUnterSchlupf_AvaUnterschlupfGro\xDFeBretterFarbe"
+    2100046: "StuhlSitzFl\xE4che"
+    2100048: FlascheUndGlas_GlasFarbe
+    2100050: FlascheUndGlas_BierFlaschenFarbe
+    2100052: FlascheUndGlas_BierVerschluss
+    2100054: FlascheUndGlas_BierFlaschenEttiket
+    2100056: Waffen_GewehrBaseFarbe
+    2100058: Waffen_GewehrHolzFarbe
+    2100060: Waffen_GwewehrSilber
+    2100062: Waffen_GewehrMagazinFarbe
+    2100064: Waffen_Waffen_GewehrBaseFarbe
+    2100066: Waffen_BaseballBatSaw_lambert4
+    2100068: Waffen_BaseballBatSaw_lambert3
+    2100070: Waffen_BaseballBatSaw_blinn1
+    2100072: Waffen_PistolenHolzFarbe
+    2100074: Waffen_Pistole_lambert4
+    2100076: Waffen_Pistole_lambert3
+    2100078: Waffen_Pistole_lambert2
+    2100080: "Waffen_Waffen_ScharfSch\xFCtzenGewehrBaseFarbe"
+    2100082: Waffen_Waffen_RaketenVerzierungsFarbe
+    2100084: Waffen_Waffen_RaketenWerferDisplayFarbe
+    2100086: "Waffen_Waffen_RaketenD\xFCsenFarbe"
+    2100088: Waffen_Waffen_RaketenWerferRohrFarbe
+    2100090: "Waffen_Waffen_PistolenM\xFCndungFarbe"
+    2100092: KartenBaseFarbe
+    2100094: ZettelSchriftFarbe1
+    2100096: KartenSchriftFarbe
+    2100098: ZettelSchriftFarbe2
+    2100100: "KartenWei\xDF"
+    2100102: KartenFarbe1
+    2100104: KartenFarbe2
+    2100106: ZettelFarbeRot
+    2300000: BaseballBatSaw1
+    2300002: BaseballBatSaw1 1
+    2300004: BettGestellBase
+    2300006: Bierflasche
+    2300008: Bierflasche1
+    2300010: Bierflasche2
+    2300012: Bierflasche3
+    2300014: Bierflasche4
+    2300016: Bierflasche5
+    2300018: Bierflasche6
+    2300020: Bierflasche7
+    2300022: Boden
+    2300024: Decke
+    2300026: DieKarteZumWaffenLager
+    2300028: FensterRahmen
+    2300030: FlascheUndGlas:Bierflasche
+    2300032: FlascheUndGlas:Glas2
+    2300034: Gewehr27
+    2300036: Glas2
+    2300038: Glas3
+    2300040: Glas4
+    2300042: Glas5
+    2300044: Glas6
+    2300046: HolzKiste
+    2300048: HolzKiste1
+    2300050: HolzKiste2
+    2300052: HolzKiste3
+    2300054: HolzKiste4
+    2300056: HolzKiste5
+    2300058: Kissen
+    2300060: KleinerTisch
+    2300062: KleinerTisch1
+    2300064: LampenSchirm
+    2300066: LampenSchirm 1
+    2300068: LampenSchirm 2
+    2300070: LampenSchirm 3
+    2300072: pCube1
+    2300074: pCube1 1
+    2300076: pCube1 2
+    2300078: pCube3
+    2300080: pCube66
+    2300082: pCube67
+    2300084: pCube68
+    2300086: pCube72
+    2300088: pCube73
+    2300090: pCube74
+    2300092: pCube75
+    2300094: pCube76
+    2300096: pCube77
+    2300098: pCube77 1
+    2300100: pCube77 2
+    2300102: pCube78
+    2300104: pCube78 1
+    2300106: pCube78 2
+    2300108: pCube79
+    2300110: pCube79 1
+    2300112: pCube79 2
+    2300114: pCube80
+    2300116: pCube80 1
+    2300118: pCube80 2
+    2300120: pCube81
+    2300122: pCube81 1
+    2300124: pCube81 2
+    2300126: pCube82
+    2300128: pCylinder1
+    2300130: pCylinder1 1
+    2300132: pCylinder12
+    2300134: pCylinder13
+    2300136: pCylinder14
+    2300138: pCylinder15
+    2300140: pCylinder16
+    2300142: pCylinder17
+    2300144: pCylinder18
+    2300146: pCylinder19
+    2300148: pCylinder2
+    2300150: pCylinder2 1
+    2300152: pCylinder2 2
+    2300154: pCylinder2 3
+    2300156: pCylinder20
+    2300158: pCylinder21
+    2300160: pCylinder21 1
+    2300162: pCylinder21 2
+    2300164: pCylinder21 3
+    2300166: pCylinder22
+    2300168: pCylinder23
+    2300170: pCylinder24
+    2300172: pCylinder25
+    2300174: pPlane1
+    2300176: pPlane2
+    2300178: pPlane3
+    2300180: pPlane5
+    2300182: pSphere1
+    2300184: pSphere1 1
+    2300186: pSphere1 2
+    2300188: pSphere1 3
+    2300190: pTorus1
+    2300192: pTorus1 1
+    2300194: regal
+    2300196: regal1
+    2300198: TischPlatte
+    2300200: typeMesh1
+    2300202: "T\xFCr"
+    2300204: Wand
+    2300206: Wand2
+    3300000: BaseballBatSaw1
+    3300002: BaseballBatSaw1 1
+    3300004: BettGestellBase
+    3300006: Bierflasche
+    3300008: Bierflasche1
+    3300010: Bierflasche2
+    3300012: Bierflasche3
+    3300014: Bierflasche4
+    3300016: Bierflasche5
+    3300018: Bierflasche6
+    3300020: Bierflasche7
+    3300022: Boden
+    3300024: Decke
+    3300026: DieKarteZumWaffenLager
+    3300028: FensterRahmen
+    3300030: FlascheUndGlas:Bierflasche
+    3300032: FlascheUndGlas:Glas2
+    3300034: Gewehr27
+    3300036: Glas2
+    3300038: Glas3
+    3300040: Glas4
+    3300042: Glas5
+    3300044: Glas6
+    3300046: HolzKiste
+    3300048: HolzKiste1
+    3300050: HolzKiste2
+    3300052: HolzKiste3
+    3300054: HolzKiste4
+    3300056: HolzKiste5
+    3300058: Kissen
+    3300060: KleinerTisch
+    3300062: KleinerTisch1
+    3300064: LampenSchirm
+    3300066: LampenSchirm 1
+    3300068: LampenSchirm 2
+    3300070: LampenSchirm 3
+    3300072: pCube1
+    3300074: pCube1 1
+    3300076: pCube1 2
+    3300078: pCube3
+    3300080: pCube66
+    3300082: pCube67
+    3300084: pCube68
+    3300086: pCube72
+    3300088: pCube73
+    3300090: pCube74
+    3300092: pCube75
+    3300094: pCube76
+    3300096: pCube77
+    3300098: pCube77 1
+    3300100: pCube77 2
+    3300102: pCube78
+    3300104: pCube78 1
+    3300106: pCube78 2
+    3300108: pCube79
+    3300110: pCube79 1
+    3300112: pCube79 2
+    3300114: pCube80
+    3300116: pCube80 1
+    3300118: pCube80 2
+    3300120: pCube81
+    3300122: pCube81 1
+    3300124: pCube81 2
+    3300126: pCube82
+    3300128: pCylinder1
+    3300130: pCylinder1 1
+    3300132: pCylinder12
+    3300134: pCylinder13
+    3300136: pCylinder14
+    3300138: pCylinder15
+    3300140: pCylinder16
+    3300142: pCylinder17
+    3300144: pCylinder18
+    3300146: pCylinder19
+    3300148: pCylinder2
+    3300150: pCylinder2 1
+    3300152: pCylinder2 2
+    3300154: pCylinder2 3
+    3300156: pCylinder20
+    3300158: pCylinder21
+    3300160: pCylinder21 1
+    3300162: pCylinder21 2
+    3300164: pCylinder21 3
+    3300166: pCylinder22
+    3300168: pCylinder23
+    3300170: pCylinder24
+    3300172: pCylinder25
+    3300174: pPlane1
+    3300176: pPlane2
+    3300178: pPlane3
+    3300180: pPlane5
+    3300182: pSphere1
+    3300184: pSphere1 1
+    3300186: pSphere1 2
+    3300188: pSphere1 3
+    3300190: pTorus1
+    3300192: pTorus1 1
+    3300194: regal
+    3300196: regal1
+    3300198: TischPlatte
+    3300200: typeMesh1
+    3300202: "T\xFCr"
+    3300204: Wand
+    3300206: Wand2
+    4300000: Boden
+    4300002: Wand
+    4300004: "T\xFCr"
+    4300006: pCube67
+    4300008: pCube68
+    4300010: pCylinder12
+    4300012: pCylinder13
+    4300014: pCylinder14
+    4300016: pCylinder15
+    4300018: pCylinder16
+    4300020: pCylinder17
+    4300022: pCylinder18
+    4300024: pCylinder19
+    4300026: pCube66
+    4300028: pCylinder20
+    4300030: FensterRahmen
+    4300032: Wand2
+    4300034: LampenSchirm
+    4300036: pSphere1
+    4300038: pCylinder21
+    4300040: LampenSchirm
+    4300042: pSphere1
+    4300044: pCylinder21
+    4300046: LampenSchirm
+    4300048: pSphere1
+    4300050: pCylinder21
+    4300052: LampenSchirm
+    4300054: pSphere1
+    4300056: pCylinder21
+    4300058: HolzKiste4
+    4300060: HolzKiste3
+    4300062: HolzKiste2
+    4300064: HolzKiste1
+    4300066: HolzKiste
+    4300068: pCylinder22
+    4300070: pCylinder23
+    4300072: pCylinder24
+    4300074: pCylinder25
+    4300076: BettGestellBase
+    4300078: Decke
+    4300080: Kissen
+    4300082: KleinerTisch
+    4300084: KleinerTisch1
+    4300086: regal1
+    4300088: regal
+    4300090: HolzKiste5
+    4300092: TischPlatte
+    4300094: pCube72
+    4300096: pCube73
+    4300098: pCube74
+    4300100: pCube75
+    4300102: FlascheUndGlas:Glas2
+    4300104: Glas2
+    4300106: Glas3
+    4300108: Glas4
+    4300110: Glas5
+    4300112: Glas6
+    4300114: FlascheUndGlas:Bierflasche
+    4300116: Bierflasche
+    4300118: Bierflasche1
+    4300120: Bierflasche2
+    4300122: Bierflasche3
+    4300124: Bierflasche4
+    4300126: Bierflasche5
+    4300128: Bierflasche6
+    4300130: Bierflasche7
+    4300132: Gewehr27
+    4300134: pTorus1
+    4300136: pCylinder2
+    4300138: BaseballBatSaw1
+    4300140: pTorus1
+    4300142: pCylinder2
+    4300144: BaseballBatSaw1
+    4300146: pCube1
+    4300148: pCylinder1
+    4300150: pCylinder2
+    4300152: pCube1
+    4300154: pCylinder1
+    4300156: pCylinder2
+    4300158: pCube1
+    4300160: pCube3
+    4300162: pPlane3
+    4300164: pPlane2
+    4300166: typeMesh1
+    4300168: pPlane1
+    4300170: pPlane5
+    4300172: pCube77
+    4300174: pCube78
+    4300176: pCube79
+    4300178: pCube80
+    4300180: pCube81
+    4300182: pCube82
+    4300184: pCube77
+    4300186: pCube78
+    4300188: pCube79
+    4300190: pCube80
+    4300192: pCube81
+    4300194: pCube77
+    4300196: pCube78
+    4300198: pCube79
+    4300200: pCube80
+    4300202: pCube81
+    4300204: pCube76
+    4300206: DieKarteZumWaffenLager
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
