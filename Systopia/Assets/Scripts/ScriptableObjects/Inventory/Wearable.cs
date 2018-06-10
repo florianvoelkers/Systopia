@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wearable : Item {
 
-	public enum WearableSlot {Head, Body, Legs, Finger};
+	public enum WearableSlot {Kopf, Körper, Beine, Finger};
 
 	public WearableSlot wearableSlot;
 	public List <StatBonus> bonusses = new List<StatBonus> ();

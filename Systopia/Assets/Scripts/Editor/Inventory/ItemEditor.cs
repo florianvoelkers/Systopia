@@ -126,7 +126,7 @@ public class ItemEditor : EditorWindow {
 		newItem.itemName = newItemName;
 		Wearable newItemAsWearable = newItem as Wearable;
 		if (newItemAsWearable) {
-			newItemAsWearable.wearableSlot = Wearable.WearableSlot.Head;
+			newItemAsWearable.wearableSlot = Wearable.WearableSlot.Kopf;
 		}
 		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/Wearables/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();

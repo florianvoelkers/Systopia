@@ -18,7 +18,11 @@ public class InventoryManager : MonoBehaviour {
 	[SerializeField] private Sprite itemBorderEmpty;
 	[SerializeField] private Text itemName;
 	[SerializeField] private Text itemDescription;
-	[SerializeField] private Text itemValues;
+	[SerializeField] private Button useButton;
+	[SerializeField] private Button dropButton;
+	[SerializeField] private GameObject itemValues;
+	[SerializeField] private GameObject field;
+	[SerializeField] private GameObject fieldValue;
 
 	private GameObject[] items;
 	private Type[] types = {typeof(Consumable), typeof(Weapon), typeof(Wearable), typeof(QuestItem)};
@@ -26,12 +30,15 @@ public class InventoryManager : MonoBehaviour {
 	private int selectedGroup;
 	private List <Item> currentItems;
 	private int selectedItem;
+	private List <GameObject> itemValueObjects;
 
 	private void Awake () {	 
 		items = new GameObject[maximumItemCount];
 		selectedGroup = 0;
+		selectedItem = -1;
 		groupButtons [selectedGroup].sprite = tabletGroupSelected;
 		currentType = types [selectedGroup];
+		itemValueObjects = new List<GameObject> ();
 		FindAllItemsOfType ();
 	}
 
@@ -47,7 +54,12 @@ public class InventoryManager : MonoBehaviour {
 		selectedItem = -1;
 		itemName.text = "";
 		itemDescription.text = "";
-		itemValues.text = "";
+		useButton.gameObject.SetActive(false);
+		dropButton.gameObject.SetActive (false);
+		for (int i = itemValues.transform.childCount - 1; i >= 0; i--) {
+			Destroy (itemValues.transform.GetChild (i).gameObject);
+		}
+		itemValueObjects.Clear ();
 		FindAllItemsOfType ();
 	}
 
@@ -89,34 +101,70 @@ public class InventoryManager : MonoBehaviour {
 	}
 
 	public void SelectItem (int index) {
+		for (int i = itemValues.transform.childCount - 1; i >= 0; i--) {
+			Destroy (itemValues.transform.GetChild (i).gameObject);
+		}
+		itemValueObjects.Clear ();
 		if (index < currentItems.Count) {
 			if (selectedItem != -1) {
 				items [selectedItem].transform.GetComponent<Image> ().sprite = itemBorder;
 				itemName.text = "";
 				itemDescription.text = "";
-				itemValues.text = "";
+
 			}
 			selectedItem = index;
 			items [index].transform.GetComponent<Image> ().sprite = itemBorderSelected;
 			itemName.text = currentItems [selectedItem].itemName;
 			itemDescription.text = currentItems [selectedItem].itemDescription;
-			string valueString = "Wert: " + currentItems [selectedItem].itemValue;
+
+			itemValueObjects.Add (Instantiate (field, itemValues.transform));
+			itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = "Goldwert";
+			itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
+			itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = currentItems [selectedItem].itemValue.ToString ();
+
 			Consumable itemAsConsumable = currentItems [selectedItem] as Consumable;
 			if (itemAsConsumable) {
-				valueString += "\n" + "Heilwert: " + itemAsConsumable.recoveryValue;
+				itemValueObjects.Add (Instantiate (field, itemValues.transform));
+				itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = "Regeneration";
+				itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
+				itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = itemAsConsumable.recoveryValue.ToString ();
 			}
 
 			Weapon itemAsWeapon = currentItems [selectedItem] as Weapon;
 			if (itemAsWeapon) {
-				//valueString += "\n" + "Schaden: " + itemAsWeapon.damage;
+				for (int i = 0; i < itemAsWeapon.bonusses.Count; i++) {
+					itemValueObjects.Add (Instantiate (field, itemValues.transform));
+					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = itemAsWeapon.bonusses [i].stat.statName;
+					itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
+					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text =  itemAsWeapon.bonusses [i].stat.statBonus.ToString ();
+				}
 			}
 
 			Wearable itemAsWearable = currentItems [selectedItem] as Wearable;
 			if (itemAsWearable) {
-				//valueString += "\n" + "Rüstung: " + itemAsWearable.armor;
+				itemValueObjects.Add (Instantiate (field, itemValues.transform));
+				itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = "Position";
+				itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
+				itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = itemAsWearable.wearableSlot.ToString ();
+				for (int i = 0; i < itemAsWearable.bonusses.Count; i++) {
+					itemValueObjects.Add (Instantiate (field, itemValues.transform));
+					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = itemAsWearable.bonusses [i].stat.statName;
+					itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
+					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text =  itemAsWearable.bonusses [i].bonus.ToString ();
+				}
 			}
-			itemValues.text = valueString;
+
+			useButton.gameObject.SetActive (true);
+			dropButton.gameObject.SetActive (true);
 		}
+	}
+
+	public void UseItem () {
+		currentItems [selectedItem].Use ();
+	}
+
+	public void DropItem () {
+		currentItems [selectedItem].Drop ();
 	}
 
 }

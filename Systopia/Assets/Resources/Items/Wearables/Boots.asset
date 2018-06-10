@@ -11,16 +11,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
   m_Name: Boots
   m_EditorClassIdentifier: 
-  itemName: Boots
+  itemName: Schuhe
   itemDescription: describe it here
   itemValue: 200
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   itemObject: {fileID: 0}
   isStackable: 0
   wearableSlot: 2
   bonusses:
-  - {fileID: 114572040641579134}
---- !u!114 &114572040641579134
+  - {fileID: 114933573646332860}
+--- !u!114 &114933573646332860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}

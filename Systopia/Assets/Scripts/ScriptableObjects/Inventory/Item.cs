@@ -11,7 +11,9 @@ public class Item : ScriptableObject {
 	public GameObject itemObject = null;
 	public bool isStackable = false;
 
-	public virtual void Use () {
+	public virtual void Use () {}
 
+	public virtual void Drop () {
+		Debug.Log ("drop it like its hot");
 	}
 }

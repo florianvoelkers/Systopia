@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: Sword
+  itemName: Schwert
   itemDescription: describe it here
   itemValue: 500
   itemSprite: {fileID: 0}
