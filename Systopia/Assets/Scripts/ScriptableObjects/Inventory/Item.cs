@@ -10,4 +10,8 @@ public class Item : ScriptableObject {
 	public Sprite itemSprite = null;
 	public GameObject itemObject = null;
 	public bool isStackable = false;
+
+	public virtual void Use () {
+
+	}
 }
