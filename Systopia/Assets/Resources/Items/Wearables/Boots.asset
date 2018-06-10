@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
+  m_Name: Boots
+  m_EditorClassIdentifier: 
+  itemName: Boots
+  itemDescription: describe it here
+  itemValue: 200
+  itemSprite: {fileID: 0}
+  itemObject: {fileID: 0}
+  isStackable: 0
+  wearableSlot: 2
+  bonusses:
+  - {fileID: 114572040641579134}
+--- !u!114 &114572040641579134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 1
+  stat: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

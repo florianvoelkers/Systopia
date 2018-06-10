@@ -1,10 +1,13 @@
-﻿public class StatBonus {
+﻿using UnityEngine;
 
-	public int value { get; set; }
-	public string statType { get; set; }
+[System.Serializable]
+public class StatBonus : ScriptableObject {
 
-	public StatBonus (int value, string statType) {
-		this.value = value;
-		this.statType = statType;
+	public int bonus;
+	public Stat stat;
+
+	public StatBonus (int bonus, Stat stat) {
+		this.bonus = bonus;
+		this.stat = stat;
 	}
 }

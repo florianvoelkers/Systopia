@@ -9,6 +9,5 @@ public class Item : ScriptableObject {
 	public int itemValue = 0;
 	public Sprite itemSprite = null;
 	public GameObject itemObject = null;
-	public bool isQuestItem = false;
 	public bool isStackable = false;
 }

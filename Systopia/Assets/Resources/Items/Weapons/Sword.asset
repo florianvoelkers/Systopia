@@ -11,12 +11,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: Schwert
-  itemDescription: "Standardschwert der Avantgardisten. Die Klinge ist nicht sehr
-    scharf, aber mit genug Wucht, sollte man ordentlich Schaden zuf\xFCgen k\xF6nnen."
+  itemName: Sword
+  itemDescription: describe it here
   itemValue: 500
-  itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  itemSprite: {fileID: 0}
   itemObject: {fileID: 0}
-  isQuestItem: 0
   isStackable: 0
-  damage: 17
+  bonusses:
+  - {fileID: 114330225952992906}
+  - {fileID: 114712727687444714}
+--- !u!114 &114330225952992906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 10
+  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114712727687444714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus1
+  m_EditorClassIdentifier: 
+  bonus: 17
+  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

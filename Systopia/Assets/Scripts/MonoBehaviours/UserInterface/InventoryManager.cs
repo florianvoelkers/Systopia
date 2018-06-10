@@ -108,12 +108,12 @@ public class InventoryManager : MonoBehaviour {
 
 			Weapon itemAsWeapon = currentItems [selectedItem] as Weapon;
 			if (itemAsWeapon) {
-				valueString += "\n" + "Schaden: " + itemAsWeapon.damage;
+				//valueString += "\n" + "Schaden: " + itemAsWeapon.damage;
 			}
 
 			Wearable itemAsWearable = currentItems [selectedItem] as Wearable;
 			if (itemAsWearable) {
-				valueString += "\n" + "Rüstung: " + itemAsWearable.armor;
+				//valueString += "\n" + "Rüstung: " + itemAsWearable.armor;
 			}
 			itemValues.text = valueString;
 		}

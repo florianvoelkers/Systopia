@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Weapon : Item {
 
-	public int damage;
+	public List <StatBonus> bonusses = new List<StatBonus> ();
 }

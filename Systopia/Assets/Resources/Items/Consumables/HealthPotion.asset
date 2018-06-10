@@ -17,6 +17,6 @@ MonoBehaviour:
   itemValue: 100
   itemSprite: {fileID: 21300000, guid: 36d7bca7fe122ec4597305213a72bb6f, type: 3}
   itemObject: {fileID: 0}
-  isQuestItem: 0
   isStackable: 1
   recoveryValue: 50
+  recoveryStat: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}

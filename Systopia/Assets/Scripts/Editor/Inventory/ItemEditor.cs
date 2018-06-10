@@ -124,6 +124,10 @@ public class ItemEditor : EditorWindow {
 	private void CreateWearable () {
 		Item newItem = ScriptableObject.CreateInstance <Wearable> ();
 		newItem.itemName = newItemName;
+		Wearable newItemAsWearable = newItem as Wearable;
+		if (newItemAsWearable) {
+			newItemAsWearable.wearableSlot = Wearable.WearableSlot.Head;
+		}
 		AssetDatabase.CreateAsset (newItem, "Assets/Resources/Items/Wearables/" + newItemName + ".asset");
 		AssetDatabase.SaveAssets ();
 		EditorUtility.FocusProjectWindow ();
@@ -190,28 +194,99 @@ public class ItemEditor : EditorWindow {
 				GUILayout.EndHorizontal ();
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);
+				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (450f));
+				GUILayout.Space (10f);
+				itemList [i].itemObject = (GameObject)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(GameObject), true, GUILayout.MaxWidth(450f));
+				GUILayout.EndHorizontal ();
+
 				// check for special values of item subclasses
 				Consumable itemAsConsumable = itemList [i] as Consumable;
 				if (itemAsConsumable) {
-					itemAsConsumable.recoveryValue = EditorGUILayout.IntField ("Recovery Value", itemAsConsumable.recoveryValue, GUILayout.MaxWidth (250f));
+					GUILayout.BeginHorizontal ();
+					GUILayout.Space (30f);
+					itemAsConsumable.recoveryStat = (IntVariable)EditorGUILayout.ObjectField ("Stat to recover", itemAsConsumable.recoveryStat, typeof (IntVariable), true, GUILayout.MaxWidth (450f));
+					GUILayout.Space (10f);
+					itemAsConsumable.recoveryValue = EditorGUILayout.IntField ("Recovery Value", itemAsConsumable.recoveryValue, GUILayout.MaxWidth (450f));
+					GUILayout.EndHorizontal ();
 				}
 				Weapon itemAsWeapon = itemList [i] as Weapon;
 				if (itemAsWeapon) {
-					itemAsWeapon.damage = EditorGUILayout.IntField ("Damage", itemAsWeapon.damage, GUILayout.MaxWidth (250f));
+					GUILayout.BeginHorizontal ();
+					GUILayout.Space (30f);
+					if (GUILayout.Button ("Add stat bonus", GUILayout.Width (150f))) {
+						StatBonus newStatBonus = CreateInstance <StatBonus> ();
+						newStatBonus.name = "bonus" + itemAsWeapon.bonusses.Count;
+						AssetDatabase.AddObjectToAsset (newStatBonus, itemAsWeapon);
+						AssetDatabase.ImportAsset (AssetDatabase.GetAssetPath (newStatBonus));
+						itemAsWeapon.bonusses.Add (newStatBonus);
+						EditorUtility.SetDirty (itemAsWeapon);
+						AssetDatabase.SaveAssets ();
+						Repaint ();
+					}
+					GUILayout.EndHorizontal ();
+					for (int j = 0; j < itemAsWeapon.bonusses.Count; j++) {
+						GUILayout.BeginHorizontal ();
+						GUILayout.Space (30f);
+						itemAsWeapon.bonusses [j].stat = (Stat)EditorGUILayout.ObjectField ("Stat for bonus", itemAsWeapon.bonusses [j].stat, typeof(Stat), true, GUILayout.MaxWidth (450f));
+						GUILayout.Space (10f);
+						itemAsWeapon.bonusses [j].bonus = EditorGUILayout.IntField ("Bonus Value", itemAsWeapon.bonusses [j].bonus, GUILayout.MaxWidth (450f));
+						GUILayout.Space (10f);
+						if (GUILayout.Button ("-", GUILayout.Width (50f))) {
+							if (EditorUtility.DisplayDialog ("Delete " + 	itemAsWeapon.bonusses [j].name, "Are you sure you want to delete " + 	itemAsWeapon.bonusses [j].name + "?", "Yes", "No")) {
+								StatBonus statBonusToRemove = 	itemAsWeapon.bonusses [j];
+								itemAsWeapon.bonusses.RemoveAt (j);
+								DestroyImmediate (statBonusToRemove, true);
+								AssetDatabase.SaveAssets ();
+								EditorUtility.SetDirty (itemAsWeapon);
+							}
+						}
+						GUILayout.EndHorizontal ();
+					}
 				}
 				Wearable itemAsWearable = itemList [i] as Wearable;
 				if (itemAsWearable) {
-					itemAsWearable.armor = EditorGUILayout.IntField ("Armor", itemAsWearable.armor, GUILayout.MaxWidth (250f));
+					GUILayout.BeginHorizontal ();
+					GUILayout.Space (30f);
+					itemAsWearable.wearableSlot = (Wearable.WearableSlot)EditorGUILayout.EnumPopup ("Wearable slot", itemAsWearable.wearableSlot, GUILayout.Width(450f));
+					GUILayout.Space (10f);
+					if (GUILayout.Button ("Add stat bonus", GUILayout.Width (150f))) {
+						StatBonus newStatBonus = CreateInstance <StatBonus> ();
+						newStatBonus.name = "bonus" + itemAsWearable.bonusses.Count;
+						AssetDatabase.AddObjectToAsset (newStatBonus, itemAsWearable);
+						AssetDatabase.ImportAsset (AssetDatabase.GetAssetPath (newStatBonus));
+						itemAsWearable.bonusses.Add (newStatBonus);
+						EditorUtility.SetDirty (itemAsWearable);
+						AssetDatabase.SaveAssets ();
+						Repaint ();
+					}
+					GUILayout.EndHorizontal ();
+					for (int j = 0; j < itemAsWearable.bonusses.Count; j++) {
+						GUILayout.BeginHorizontal ();
+						GUILayout.Space (30f);
+						itemAsWearable.bonusses [j].stat = (Stat)EditorGUILayout.ObjectField ("Stat for bonus", itemAsWearable.bonusses [j].stat, typeof(Stat), true, GUILayout.MaxWidth (450f));
+						GUILayout.Space (10f);
+						itemAsWearable.bonusses [j].bonus = EditorGUILayout.IntField ("Bonus Value", itemAsWearable.bonusses [j].bonus, GUILayout.MaxWidth (450f));
+						GUILayout.Space (10f);
+						if (GUILayout.Button ("-", GUILayout.Width (50f))) {
+							if (EditorUtility.DisplayDialog ("Delete " + 	itemAsWearable.bonusses [j].name, "Are you sure you want to delete " + 	itemAsWearable.bonusses [j].name + "?", "Yes", "No")) {
+								StatBonus statBonusToRemove = 	itemAsWearable.bonusses [j];
+								itemAsWearable.bonusses.RemoveAt (j);
+								DestroyImmediate (statBonusToRemove, true);
+								AssetDatabase.SaveAssets ();
+								EditorUtility.SetDirty (itemAsWearable);
+							}
+						}
+						GUILayout.EndHorizontal ();
+					}
 				}
 				QuestItem itemAsQuestItem = itemList [i] as QuestItem;
 				if (itemAsQuestItem) {
-					itemAsQuestItem.correspondingCondition = (Condition)EditorGUILayout.ObjectField ("Condition", itemAsQuestItem.correspondingCondition, typeof(Condition), true, GUILayout.MaxWidth (250f));
+					GUILayout.BeginHorizontal ();
+					GUILayout.Space (30f);
+					itemAsQuestItem.correspondingCondition = (Condition)EditorGUILayout.ObjectField ("Condition", itemAsQuestItem.correspondingCondition, typeof(Condition), true, GUILayout.MaxWidth (450f));
+					GUILayout.EndHorizontal ();
 				}
-				GUILayout.Space (33f);
-				itemList [i].isStackable = EditorGUILayout.Toggle ("Is Stackable", itemList[i].isStackable, GUILayout.MaxWidth (150f));
-				GUILayout.Space (23f);
-				itemList [i].itemObject = (GameObject)EditorGUILayout.ObjectField ("Item Object", itemList [i].itemObject, typeof(GameObject), true, GUILayout.MaxWidth(450f));
-				GUILayout.EndHorizontal ();
+
 				GUILayout.BeginHorizontal ();
 				GUILayout.Space (30f);
 				EditorGUILayout.PrefixLabel ("Item Description");
@@ -219,6 +294,7 @@ public class ItemEditor : EditorWindow {
 				GUILayout.Space (10f);
 				itemList [i].itemSprite = (Sprite)EditorGUILayout.ObjectField ("Item Sprite", itemList [i].itemSprite, typeof(Sprite), true, GUILayout.MaxWidth(450f), GUILayout.MaxHeight (64f));			
 				GUILayout.EndHorizontal ();
+
 			}
 
 			GUILayout.Space (5f);
