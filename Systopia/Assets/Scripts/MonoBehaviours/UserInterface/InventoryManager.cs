@@ -60,6 +60,11 @@ public class InventoryManager : MonoBehaviour {
 			Destroy (itemValues.transform.GetChild (i).gameObject);
 		}
 		itemValueObjects.Clear ();
+		if (selectedGroup == 0) {
+			useButton.GetComponentInChildren <Text> ().text = "Use";
+		} else if (selectedGroup == 1 || selectedGroup == 2) {
+			useButton.GetComponentInChildren <Text> ().text = "Equip";
+		}
 		FindAllItemsOfType ();
 	}
 
@@ -153,9 +158,11 @@ public class InventoryManager : MonoBehaviour {
 					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text =  itemAsWearable.bonusses [i].bonus.ToString ();
 				}
 			}
+			if (selectedGroup != 3) {
+				useButton.gameObject.SetActive (true);
+				dropButton.gameObject.SetActive (true);
+			}
 
-			useButton.gameObject.SetActive (true);
-			dropButton.gameObject.SetActive (true);
 		}
 	}
 
