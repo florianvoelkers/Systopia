@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour {
 	}
 
 	public Text text;
+	public GameObject dialogBackground;
 	public float displayTimePerCharacter = 0.1f;
 	public float additionalDisplayTime = 0.5f;
 
@@ -19,16 +20,18 @@ public class TextManager : MonoBehaviour {
 
 	private void Update () {
 		if (instructions.Count > 0 && Time.time >= instructions [0].startTime) {
+			dialogBackground.SetActive (true);
 			text.text = instructions [0].message;
 			text.color = instructions [0].textColor;
-
 			instructions.RemoveAt (0);
 		} else if (Time.time >= clearTime) {
 			text.text = string.Empty;
+			dialogBackground.SetActive (false);
 		}
 	}
 
 	public void DisplayMessage (string message, Color textColor, float delay) {
+		Debug.Log ("display " + message + " with " + delay);
 		float startTime = Time.time + delay;
 		float displayDuration = message.Length * displayTimePerCharacter + additionalDisplayTime;
 		float newClearTime = startTime + displayDuration;

@@ -32,6 +32,7 @@ public class TabletManager : MonoBehaviour {
 	public void ShowCharacter () {
 		SetEveryPanelInactive ();
 		selectors [1].SetActive (true);
+		tabletPanels [1].SetActive (true);
 	}
 
 	public void ShowNotes () {
@@ -46,6 +47,7 @@ public class TabletManager : MonoBehaviour {
 
 	private void SetEveryPanelInactive () {
 		tabletPanels [0].SetActive (false);
+		tabletPanels [1].SetActive (false);
 		for (int i = 0; i < selectors.Length; i++) {
 			selectors [i].SetActive (false);
 		}
