@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 
 public class TextManager : MonoBehaviour {
@@ -14,7 +15,11 @@ public class TextManager : MonoBehaviour {
 	public GameObject dialogBackground;
 	public float displayTimePerCharacter = 0.1f;
 	public float additionalDisplayTime = 0.5f;
+	public GameObject optionsText;
+	public GameObject dialogOptions;
+	public Text lastNPCText;
 
+	private List <GameObject> optionsTexts = new List<GameObject> ();
 	private List <Instruction> instructions = new List <Instruction> ();
 	private float clearTime;
 
@@ -30,8 +35,11 @@ public class TextManager : MonoBehaviour {
 		}
 	}
 
+	public void DisplayMessageWithOptions (string message, Color textColor, float delay, string [] options) {
+		StartCoroutine (DisplayMessageWithOptionsWithDelay (message, textColor, delay, options));
+	}
+
 	public void DisplayMessage (string message, Color textColor, float delay) {
-		Debug.Log ("display " + message + " with " + delay);
 		float startTime = Time.time + delay;
 		float displayDuration = message.Length * displayTimePerCharacter + additionalDisplayTime;
 		float newClearTime = startTime + displayDuration;
@@ -65,5 +73,19 @@ public class TextManager : MonoBehaviour {
 			if (!swapped)
 				break;
 		}
+	}
+
+	private IEnumerator DisplayMessageWithOptionsWithDelay(string message, Color textColor, float delay, string [] options) {
+		yield return new WaitForSeconds (delay);
+		dialogBackground.SetActive (true);
+		lastNPCText.gameObject.SetActive (true);
+		dialogOptions.SetActive (true);
+		lastNPCText.text = message;
+		for (int i = 0; i < options.Length; i++) {
+			optionsTexts.Add (Instantiate (optionsText, dialogOptions.transform));
+			optionsTexts [optionsTexts.Count - 1].transform.GetComponent <Text> ().text = options [i];
+			optionsTexts [optionsTexts.Count - 1].transform.GetComponent <Text> ().color = textColor;
+		}
+
 	}
 }
