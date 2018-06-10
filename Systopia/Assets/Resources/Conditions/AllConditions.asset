@@ -67,6 +67,8 @@ MonoBehaviour:
   - {fileID: 114963549147042454}
   - {fileID: 114899681842268726}
   - {fileID: 114361829790874048}
+  - {fileID: 114333036213136840}
+  - {fileID: 114297308200569478}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +293,20 @@ MonoBehaviour:
   description: hasPaintings
   satisfied: 0
   hash: 1894377727
+--- !u!114 &114297308200569478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: finishedQuest1-5
+  m_EditorClassIdentifier: 
+  description: finishedQuest1-5
+  satisfied: 0
+  hash: -2055216446
 --- !u!114 &114308714000630680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +321,20 @@ MonoBehaviour:
   description: finishedQuest2-3
   satisfied: 0
   hash: 1851455918
+--- !u!114 &114333036213136840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: ensuredMerchantsAvaLoyal
+  m_EditorClassIdentifier: 
+  description: ensuredMerchantsAvaLoyal
+  satisfied: 0
+  hash: 123800328
 --- !u!114 &114338246248719424
 MonoBehaviour:
   m_ObjectHideFlags: 0
