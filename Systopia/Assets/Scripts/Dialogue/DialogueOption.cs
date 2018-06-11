@@ -1,7 +1,9 @@
-﻿[System.Serializable]
+﻿using UnityEngine;
+
+[System.Serializable]
 public class DialogueOption {
 
-	public string text;
+	[TextArea (2,5)] public string text;
 	public int destinationNodeId;
 
 	public DialogueOption (string text, int destinationNodeId) {

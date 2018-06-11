@@ -1,16 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEditor;
 
-public class DialogueNodeEditor : MonoBehaviour {
+//[CustomEditor (typeof (DialogueNode))]
+public class DialogueNodeEditor : Editor {
 
-	// Use this for initialization
-	void Start () {
-		
+	private SerializedProperty dialogueNodeIdProperty;
+	private SerializedProperty dialogueTextProperty;
+	private SerializedProperty dialogueOptionsProperty;
+
+	private const string dialogueNodeIdPropName = "nodeId";
+	private const string dialogueTextPropName = "text";
+	private const string dialogueOptionsPropName = "options";
+
+	private void OnEnable () {
+		dialogueNodeIdProperty = serializedObject.FindProperty (dialogueNodeIdPropName);
+		dialogueTextProperty = serializedObject.FindProperty (dialogueTextPropName);
+		dialogueOptionsProperty = serializedObject.FindProperty (dialogueOptionsPropName);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public override void OnInspectorGUI () {
+		serializedObject.Update ();
+
+		EditorGUILayout.BeginVertical (GUI.skin.box);
+		EditorGUI.indentLevel++;
+
+		EditorGUILayout.PropertyField (dialogueNodeIdProperty);
+		dialogueTextProperty.stringValue = GUILayout.TextArea (dialogueTextProperty.stringValue, GUILayout.Height (75f));
+		EditorGUILayout.PropertyField (dialogueOptionsProperty, true);
+
+		EditorGUI.indentLevel--;
+		EditorGUILayout.EndVertical ();
+
+		serializedObject.ApplyModifiedProperties ();
 	}
 }
