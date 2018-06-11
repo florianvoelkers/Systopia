@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 678305460}
   - component: {fileID: 678305459}
   - component: {fileID: 678305458}
+  - component: {fileID: 678305463}
   m_Layer: 5
   m_Name: DialogCanvas
   m_TagString: Untagged
@@ -1002,13 +1003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2117665220}
-  dialogBackground: {fileID: 352388256}
   displayTimePerCharacter: 0.1
   additionalDisplayTime: 0.5
-  optionsText: {fileID: 1733426595621952, guid: d36687de02cd7d944a2f856e22c6c3ef,
-    type: 2}
-  dialogOptions: {fileID: 1810696055}
-  lastNPCText: {fileID: 497254231}
 --- !u!114 &678305459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1084,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &678305463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678305457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5c7e81e6261574d86a8f864d1175b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &793694838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1220,31 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!114 &959166060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueNodes:
+  - nodeId: 0
+    text: dies ist ein test
+    options:
+    - text: Ja
+      destinationNodeId: 1
+    - text: Nein
+      destinationNodeId: 2
+  - nodeId: 1
+    text: test erfolgreich
+    options: []
+  - nodeId: 2
+    text: test nicht erfolgreich
+    options: []
 --- !u!1 &1175573149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1307,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1249865399
+--- !u!114 &1232535811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1283,16 +1315,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c644d8b989b9e344ebfa68acfc2cc6f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Willst du mit mir gehen?
+  message: test test test
   textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 1
-  options:
-  - 1. Ja
-  - 2. Nein
-  - 3. Vielleicht
+  delay: 0
 --- !u!1 &1269281493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,7 +1352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 793694839}
   conditionCollections: []
-  defaultReactionCollection: {fileID: 1895064751}
+  defaultReactionCollection: {fileID: 0}
 --- !u!114 &1269281495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,7 +1678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1249865399}
+  - {fileID: 1232535811}
+  - {fileID: 959166060}
 --- !u!1 &2117665219
 GameObject:
   m_ObjectHideFlags: 0
