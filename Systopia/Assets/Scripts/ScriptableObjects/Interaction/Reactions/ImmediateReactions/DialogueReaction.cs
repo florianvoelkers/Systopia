@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class DialogueReaction : Reaction {
 
+	public string nPCName = "";
 	public List <DialogueNode> dialogueNodes = new List<DialogueNode> ();
+
+	private DialogueManager dialogueManager;
+
+	protected override void SpecificInit () {
+		dialogueManager = FindObjectOfType<DialogueManager> ();
+	}
 
 	public void AddNode (DialogueNode newNode) {
 		dialogueNodes.Add (newNode);
@@ -15,6 +22,6 @@ public class DialogueReaction : Reaction {
 	}
 
 	protected override void ImmediateReaction () {
-
+		dialogueManager.DisplayDialog (dialogueNodes, nPCName);
 	}
 }

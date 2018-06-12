@@ -3,7 +3,7 @@
 [System.Serializable]
 public class DialogueOption {
 
-	[TextArea (2,5)] public string text;
+	[TextArea (2,3)] public string text;
 	public int destinationNodeId;
 
 	public DialogueOption (string text, int destinationNodeId) {

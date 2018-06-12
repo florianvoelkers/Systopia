@@ -5,11 +5,6 @@ using UnityEngine;
 public class DialogueNode {
 
 	public int nodeId = -1;
-	[TextArea (3,5)] public string text;
+	[TextArea (2,3)] public string [] sentences;
 	public List <DialogueOption> options;
-
-	public DialogueNode (string text) {
-		this.text = text;
-		options = new List<DialogueOption> ();
-	}
 }
