@@ -1,16 +1,47 @@
 fileFormatVersion: 2
-guid: ba303d2ec277a774e9a2135736fac5cb
-timeCreated: 1525354382
+guid: d6bc04a7cf16c954b93e6d0087e7d5a5
+timeCreated: 1528834026
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Computer 1
+    100004: Maus
+    100006: Monitor
+    100008: MonitorGlas
+    100010: Tastatur
     400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
+    400002: Computer 1
+    400004: Maus
+    400006: Monitor
+    400008: MonitorGlas
+    400010: Tastatur
+    2100000: ComputerFarbe
+    2100002: LaufwerkFarbe
+    2100004: "ComputerR\xFCckseitenFarbe"
+    2100006: "ComputerL\xFCckenFarbe"
+    2100008: MausFarbe
+    2100010: MausTastenFarbe
+    2100012: monitor_Monitor1
+    2100014: TastaturFarbe
+    2100016: TastaturTastenFarben
+    2100018: monitor_MonitorAnzeige
+    2300000: Computer 1
+    2300002: Maus
+    2300004: Monitor
+    2300006: MonitorGlas
+    2300008: Tastatur
+    3300000: Computer 1
+    3300002: Maus
+    3300004: Monitor
+    3300006: MonitorGlas
+    3300008: Tastatur
+    4300000: Computer
+    4300002: Maus
+    4300004: Monitor
+    4300006: Tastatur
+    4300008: MonitorGlas
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -61,7 +92,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -1,16 +1,26 @@
 fileFormatVersion: 2
-guid: bc92c84b0d9ac634883d079053e50135
-timeCreated: 1525354387
+guid: 4ca26b7f0847b5041bc089d4963bcdce
+timeCreated: 1528834248
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Schaltbrett1
+    100004: "T\xFCrSchaltKasten"
     400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
+    400002: Schaltbrett1
+    400004: "T\xFCrSchaltKasten"
+    2100000: "T\xFCrSchaltkastenFarbe"
+    2100002: SchalbrettBaseFarbe
+    2100004: SchaltBrettZweiteFarbe
+    2100006: SchaltbrettZweiteFarbe
+    2300000: Schaltbrett1
+    2300002: "T\xFCrSchaltKasten"
+    3300000: Schaltbrett1
+    3300002: "T\xFCrSchaltKasten"
+    4300000: "T\xFCrSchaltKasten"
+    4300002: Schaltbrett1
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -61,7 +71,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
