@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: 1-3outsmartedGuard
   stateDescription: "Ich habe den W\xE4chter \xFCberlisten k\xF6nnen. Nun muss ich
-    mir noch den Ausweis erstellen."
+    mir noch den Ausweis erstellen. (Sphinx-R\xE4tsel)"
   isStateFinished: 0
 --- !u!114 &114708758808259826
 MonoBehaviour:
