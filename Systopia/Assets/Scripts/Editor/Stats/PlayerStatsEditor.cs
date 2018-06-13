@@ -9,6 +9,9 @@ public class PlayerStatsEditor : Editor {
 	private string newStatName = "newStat";
 	private const float buttonWidth = 30f;
 
+	private SerializedProperty playerNameProperty;
+	private const string playerNamePropName = "playerName";
+
 	private void OnEnable () {
 		playerStats = (PlayerStats)target;
 		if (playerStats.stats == null)
@@ -17,6 +20,8 @@ public class PlayerStatsEditor : Editor {
 		if (statsEditors == null) {
 			CreateEditors ();
 		}
+
+		playerNameProperty = serializedObject.FindProperty (playerNamePropName);
 	}
 
 	private void OnDisable () {
@@ -27,6 +32,8 @@ public class PlayerStatsEditor : Editor {
 	}
 
 	public override void OnInspectorGUI () {
+		serializedObject.Update ();
+
 		if (statsEditors.Length != playerStats.stats.Length) {
 			for (int i = 0; i < statsEditors.Length; i++) {
 				DestroyImmediate (statsEditors [i]);
@@ -34,7 +41,7 @@ public class PlayerStatsEditor : Editor {
 
 			CreateEditors ();
 		}
-
+		EditorGUILayout.PropertyField (playerNameProperty);
 		for (int i = 0; i < statsEditors.Length; i++) {
 			EditorGUILayout.BeginHorizontal ();
 			statsEditors [i].OnInspectorGUI ();
@@ -57,6 +64,8 @@ public class PlayerStatsEditor : Editor {
 		}
 
 		EditorGUILayout.EndHorizontal ();
+
+		serializedObject.ApplyModifiedProperties ();
 	}
 
 	private void CreateEditors () {

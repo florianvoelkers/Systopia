@@ -4,9 +4,9 @@ using UnityEngine;
 [CustomEditor(typeof (Stat))]
 public class StatsEditor : Editor {
 
-	SerializedProperty baseValueProperty;
-	SerializedProperty statNameProperty;
-	[TextArea (3, 10)] SerializedProperty statDescriptionsProperty;
+	private SerializedProperty baseValueProperty;
+	private SerializedProperty statNameProperty;
+	[TextArea (3, 10)] private SerializedProperty statDescriptionsProperty;
 
 	private bool showStat;
 	private const float statButtonWidth = 30f;

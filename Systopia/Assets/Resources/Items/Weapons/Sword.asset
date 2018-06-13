@@ -14,7 +14,7 @@ MonoBehaviour:
   itemName: Schwert
   itemDescription: describe it here
   itemValue: 500
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   itemObject: {fileID: 0}
   isStackable: 0
   bonusses:

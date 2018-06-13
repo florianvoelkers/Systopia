@@ -6,5 +6,6 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "Player/Stats")]
 public class PlayerStats : ScriptableObject {
 
+	public string playerName;
 	public Stat [] stats;
 }

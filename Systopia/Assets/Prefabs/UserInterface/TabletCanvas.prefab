@@ -2165,6 +2165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
   headIcon: {fileID: 114220270050625620}
   bodyIcon: {fileID: 114036110370241504}
   ringIcon: {fileID: 114318433692744940}

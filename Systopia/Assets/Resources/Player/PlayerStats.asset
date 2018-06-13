@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b062da84b87d11040896280149bc6ff5, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
+  playerName: Floki
   stats:
   - {fileID: 114958683150792074}
   - {fileID: 114096672639918392}
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseValue: 10
   statBonus: 0
-  finalValue: 0
+  finalValue: 10
   statName: Geschicklichkeit
   statDescription: Gibt die rohe Geschicklichkeit des Helden an und beeinflusst direkt
     den Schaden und die Genauigkeit.
@@ -65,8 +66,8 @@ MonoBehaviour:
   m_Name: Accuracy
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 0
-  finalValue: 0
+  statBonus: 10
+  finalValue: 10
   statName: Genauigkeit
   statDescription: "Gibt an, mit welcher Chance der Held trifft. Berechnet sich aus
     seiner Geschicklichkeit und den ausger\xFCsteten Gegenst\xE4nden."
@@ -82,8 +83,8 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 0
-  finalValue: 0
+  statBonus: 1
+  finalValue: 1
   statName: "R\xFCstung"
   statDescription: "Gibt an, wie viel Schaden der Held bei einer Attacke negiert.
     Berechnet sich aus den ausger\xFCsteten Gegenst\xE4nden."
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseValue: 10
   statBonus: 0
-  finalValue: 0
+  finalValue: 10
   statName: "Vitalit\xE4t"
   statDescription: "Gibt an, wie lebensf\xE4hig der Held ist und beeinflusst seine
     Lebenspunkte."
@@ -116,8 +117,8 @@ MonoBehaviour:
   m_Name: Damage
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 0
-  finalValue: 0
+  statBonus: 17
+  finalValue: 17
   statName: Schaden
   statDescription: "Gibt an, wie viel Schaden der Held mit einer Attacke anrichtet.
     Berechnet sich aus den Attributen sowie den ausger\xFCsteten Gegenst\xE4nden."
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseValue: 10
   statBonus: 0
-  finalValue: 0
+  finalValue: 10
   statName: "St\xE4rke"
   statDescription: "Gibt die rohe St\xE4rke des Helden an und beeinflusst direkt den
     Schaden, den er anrichtet."

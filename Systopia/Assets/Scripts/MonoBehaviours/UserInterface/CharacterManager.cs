@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CharacterManager : MonoBehaviour {
 
 	[SerializeField] private PlayerStats playerStats;
+	[SerializeField] private PlayerEquipment playerEquipment;
 	[SerializeField] private Image headIcon;
 	[SerializeField] private Image bodyIcon;
 	[SerializeField] private Image ringIcon;
@@ -16,11 +17,7 @@ public class CharacterManager : MonoBehaviour {
 	[SerializeField] private GameObject field;
 	[SerializeField] private GameObject fieldValue;
 
-	private List <GameObject> characterStatsObjects;
-
-	private void Awake () {
-		characterStatsObjects = new List<GameObject> ();
-	}
+	private List <GameObject> characterStatsObjects = new List<GameObject> ();
 
 	private void OnEnable () {
 		ShowCharacterStats ();
@@ -31,6 +28,27 @@ public class CharacterManager : MonoBehaviour {
 	}
 
 	private void ShowCharacterStats () {
+		characterName.text = playerStats.playerName;
+		if (playerEquipment.headItem) {
+			headIcon.enabled = true;
+			headIcon.sprite = playerEquipment.headItem.itemSprite;
+		}
+		if (playerEquipment.bodyItem) {
+			bodyIcon.enabled = true;
+			bodyIcon.sprite = playerEquipment.bodyItem.itemSprite;
+		}
+		if (playerEquipment.fingerItem) {
+			ringIcon.enabled = true;
+			ringIcon.sprite = playerEquipment.fingerItem.itemSprite;
+		}
+		if (playerEquipment.legsItem) {
+				legIcon.enabled = true;
+			legIcon.sprite = playerEquipment.legsItem.itemSprite;
+		}
+		if (playerEquipment.weapon) {
+			weaponIcon.enabled = true;
+			weaponIcon.sprite = playerEquipment.weapon.itemSprite;
+		}
 		for (int i = 0; i < playerStats.stats.Length; i++) {
 			characterStatsObjects.Add (Instantiate (field, characterStatsPanel.transform));
 			characterStatsObjects [characterStatsObjects.Count - 1].transform.GetComponentInChildren <Text> ().text = playerStats.stats [i].statName;
@@ -40,6 +58,7 @@ public class CharacterManager : MonoBehaviour {
 	}
 
 	private void RemoveCharacterStats () {
+		characterName.text = "";
 		for (int i = 0; i < characterStatsPanel.transform.childCount; i++) {
 			Destroy (characterStatsPanel.transform.GetChild (i).gameObject);
 		}
