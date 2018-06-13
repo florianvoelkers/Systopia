@@ -8,8 +8,9 @@ public class Wearable : Item {
 
 	public WearableSlot wearableSlot;
 	public List <StatBonus> bonusses = new List<StatBonus> ();
+	public PlayerEquipment playerEquipment;
 
 	public override void Use () {
-		Debug.Log ("equip wearable at slot " + wearableSlot.ToString ());
+		playerEquipment.EquipWearable (this, wearableSlot);
 	}
 }

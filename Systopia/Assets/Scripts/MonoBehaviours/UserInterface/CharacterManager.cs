@@ -26,6 +26,10 @@ public class CharacterManager : MonoBehaviour {
 		ShowCharacterStats ();
 	}
 
+	private void OnDisable () {
+		RemoveCharacterStats ();
+	}
+
 	private void ShowCharacterStats () {
 		for (int i = 0; i < playerStats.stats.Length; i++) {
 			characterStatsObjects.Add (Instantiate (field, characterStatsPanel.transform));
@@ -33,6 +37,13 @@ public class CharacterManager : MonoBehaviour {
 			characterStatsObjects.Add (Instantiate (fieldValue, characterStatsPanel.transform));
 			characterStatsObjects [characterStatsObjects.Count - 1].transform.GetComponentInChildren <Text> ().text = playerStats.stats [i].GetValue ().ToString ();
 		}
+	}
+
+	private void RemoveCharacterStats () {
+		for (int i = 0; i < characterStatsPanel.transform.childCount; i++) {
+			Destroy (characterStatsPanel.transform.GetChild (i).gameObject);
+		}
+		characterStatsObjects.Clear ();
 	}
 
 }

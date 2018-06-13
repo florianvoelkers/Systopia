@@ -141,7 +141,7 @@ public class InventoryManager : MonoBehaviour {
 					itemValueObjects.Add (Instantiate (field, itemValues.transform));
 					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text = itemAsWeapon.bonusses [i].stat.statName;
 					itemValueObjects.Add (Instantiate (fieldValue, itemValues.transform));
-					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text =  itemAsWeapon.bonusses [i].stat.statBonus.ToString ();
+					itemValueObjects [itemValueObjects.Count - 1].GetComponent <Text> ().text =  itemAsWeapon.bonusses [i].bonus.ToString ();
 				}
 			}
 
