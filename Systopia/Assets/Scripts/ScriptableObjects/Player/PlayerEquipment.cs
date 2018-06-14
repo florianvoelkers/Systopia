@@ -12,6 +12,14 @@ public class PlayerEquipment : ScriptableObject {
 	public Weapon weapon;
 
 	private void UnequipAll () {
+		UnequipHead ();
+		UnequipBody ();
+		UnequipLegs ();
+		UnequipFinger ();
+		UnequipWeapon ();
+	}
+
+	private void OnDisable () {
 		
 	}
 

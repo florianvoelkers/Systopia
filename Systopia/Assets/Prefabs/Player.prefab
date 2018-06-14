@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 95702548637900210}
   - component: {fileID: 195562081341767892}
   - component: {fileID: 114165004676723130}
+  - component: {fileID: 114686034695286244}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1212,6 +1213,19 @@ MonoBehaviour:
   slowingSpeed: 0.175
   turnSpeedThreshold: 0.5
   inputHoldDelay: 0.5
+--- !u!114 &114686034695286244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275154013244698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e7097f40d25444990ac5c39a61913f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  hp: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}
 --- !u!137 &137182642851972740
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
