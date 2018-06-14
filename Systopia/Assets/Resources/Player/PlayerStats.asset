@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b062da84b87d11040896280149bc6ff5, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  playerName: Floki
+  playerName: Flo
   stats:
   - {fileID: 114958683150792074}
   - {fileID: 114096672639918392}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: Accuracy
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 10
+  statBonus: 0
   finalValue: 10
   statName: Genauigkeit
   statDescription: "Gibt an, mit welcher Chance der Held trifft. Berechnet sich aus
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 1
+  statBonus: 0
   finalValue: 1
   statName: "R\xFCstung"
   statDescription: "Gibt an, wie viel Schaden der Held bei einer Attacke negiert.
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: Damage
   m_EditorClassIdentifier: 
   baseValue: 0
-  statBonus: 17
+  statBonus: 0
   finalValue: 17
   statName: Schaden
   statDescription: "Gibt an, wie viel Schaden der Held mit einer Attacke anrichtet.

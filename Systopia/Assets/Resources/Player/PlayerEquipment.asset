@@ -16,4 +16,3 @@ MonoBehaviour:
   legsItem: {fileID: 0}
   fingerItem: {fileID: 0}
   weapon: {fileID: 0}
-  playerStats: {fileID: 0}

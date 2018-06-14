@@ -7,6 +7,7 @@ public class StatsEditor : Editor {
 	private SerializedProperty baseValueProperty;
 	private SerializedProperty statNameProperty;
 	[TextArea (3, 10)] private SerializedProperty statDescriptionsProperty;
+	private SerializedProperty statBonusProperty;
 
 	private bool showStat;
 	private const float statButtonWidth = 30f;
@@ -14,6 +15,7 @@ public class StatsEditor : Editor {
 	private const string baseValuePropName = "baseValue";
 	private const string statNamePropName = "statName";
 	private const string statDescriptionPropName = "statDescription";
+	private const string statBonusPropName = "statBonus";
 
 	private Stat stat;
 
@@ -29,6 +31,7 @@ public class StatsEditor : Editor {
 		baseValueProperty = serializedObject.FindProperty (baseValuePropName);
 		statNameProperty = serializedObject.FindProperty (statNamePropName);
 		statDescriptionsProperty = serializedObject.FindProperty (statDescriptionPropName);
+		statBonusProperty = serializedObject.FindProperty (statBonusPropName);
 	}
 
 	public override void OnInspectorGUI (){
@@ -51,6 +54,7 @@ public class StatsEditor : Editor {
 			statDescriptionsProperty.stringValue = GUILayout.TextArea (statDescriptionsProperty.stringValue, GUILayout.Height (100f));
 			EditorGUILayout.EndHorizontal ();
 			EditorGUILayout.PropertyField (baseValueProperty);
+			EditorGUILayout.PropertyField (statBonusProperty);
 			EditorGUI.indentLevel--;
 		}
 		EditorGUILayout.EndVertical ();

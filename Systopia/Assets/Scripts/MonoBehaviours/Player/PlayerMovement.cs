@@ -31,7 +31,8 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	private void OnAnimatorMove () {
-		agent.velocity = animator.deltaPosition / Time.deltaTime; // set velocity of nav mesh agent to speed of the animator
+		if (!GameStateManager.isPaused)
+			agent.velocity = animator.deltaPosition / Time.deltaTime; // set velocity of nav mesh agent to speed of the animator
 	}
 
 	private void Update () {
