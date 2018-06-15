@@ -7,7 +7,7 @@ public class Consumable : Item {
 	public int recoveryValue;
 	public IntVariable recoveryStat;
 
-	public override void Use () {
-		Debug.Log ("recover " + recoveryStat.name);
+	public override bool Use () {
+		return recoveryStat.ApplyChange (recoveryValue);
 	}
 }

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
+  m_Name: Armor of Health
+  m_EditorClassIdentifier: 
+  itemName: "R\xFCstung des Lebens"
+  itemDescription: Gibt ne Menge Leben
+  itemValue: 1000
+  itemSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  itemObject: {fileID: 0}
+  isStackable: 0
+  wearableSlot: 1
+  bonusses:
+  - {fileID: 114520553334023350}
+  - {fileID: 114086321889392118}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
+--- !u!114 &114086321889392118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus1
+  m_EditorClassIdentifier: 
+  bonus: 17
+  stat: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114520553334023350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 100
+  stat: {fileID: 114019946124218352, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

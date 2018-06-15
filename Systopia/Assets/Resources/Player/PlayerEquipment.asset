@@ -16,3 +16,4 @@ MonoBehaviour:
   legsItem: {fileID: 0}
   fingerItem: {fileID: 0}
   weapon: {fileID: 0}
+  hp: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}
