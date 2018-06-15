@@ -23,33 +23,16 @@ public class TabletManager : MonoBehaviour {
 		}
 	}
 
-	public void ShowInventory () {
+	public void SelectTabletPanel (int selectedTabletPanel) {
 		SetEveryPanelInactive ();
-		selectors [0].SetActive (true);
-		tabletPanels [0].SetActive (true);
-	}
-
-	public void ShowCharacter () {
-		SetEveryPanelInactive ();
-		selectors [1].SetActive (true);
-		tabletPanels [1].SetActive (true);
-	}
-
-	public void ShowNotes () {
-		SetEveryPanelInactive ();
-		selectors [2].SetActive (true);
-	}
-
-	public void ShowMap () {
-		SetEveryPanelInactive ();
-		selectors [3].SetActive (true);
+		selectors [selectedTabletPanel].SetActive (true);
+		tabletPanels [selectedTabletPanel].SetActive (true);
 	}
 
 	private void SetEveryPanelInactive () {
-		tabletPanels [0].SetActive (false);
-		tabletPanels [1].SetActive (false);
 		for (int i = 0; i < selectors.Length; i++) {
 			selectors [i].SetActive (false);
+			tabletPanels [i].SetActive (false);
 		}
 	}
 
