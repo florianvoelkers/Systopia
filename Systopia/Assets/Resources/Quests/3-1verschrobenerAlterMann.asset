@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questTitle: Verschrobener alter Mann
   questDescription: Der verschrobene alte Mann in der Taverne hat mich beauftragt
-    ein Buch zu finden. Es soll sich in der Bibliotheksruine und den Titel "Professoren
-    und Dozenten der HAW Hamburg von 2010 bis 2020" tragen. Mal sehen, ob an der Geschichte
-    etwas Wahres dran ist.
+    ein Buch zu finden. Es soll sich in der Bibliotheksruine befinden und den Titel
+    "Professoren und Dozenten der HAW Hamburg von 2010 bis 2020" tragen. Mal sehen,
+    ob an der Geschichte etwas Wahres dran ist.
   isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
   states:

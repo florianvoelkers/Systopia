@@ -7,15 +7,18 @@ public class CharacterManager : MonoBehaviour {
 
 	[SerializeField] private PlayerStats playerStats;
 	[SerializeField] private PlayerEquipment playerEquipment;
+	[SerializeField] private PlayerMoney playerMoney;
 	[SerializeField] private Image headIcon;
 	[SerializeField] private Image bodyIcon;
 	[SerializeField] private Image ringIcon;
 	[SerializeField] private Image legIcon;
 	[SerializeField] private Image weaponIcon;
 	[SerializeField] private Text characterName;
+	[SerializeField] private Text characterMoney;
 	[SerializeField] private GameObject characterStatsPanel;
 	[SerializeField] private GameObject field;
 	[SerializeField] private GameObject fieldValue;
+
 
 	private List <GameObject> characterStatsObjects = new List<GameObject> ();
 
@@ -55,10 +58,12 @@ public class CharacterManager : MonoBehaviour {
 			characterStatsObjects.Add (Instantiate (fieldValue, characterStatsPanel.transform));
 			characterStatsObjects [characterStatsObjects.Count - 1].transform.GetComponentInChildren <Text> ().text = playerStats.stats [i].GetValue ().ToString ();
 		}
+		characterMoney.text = playerMoney.money.ToString ();
 	}
 
 	private void RemoveCharacterStats () {
 		characterName.text = "";
+		characterMoney.text = "";
 		for (int i = 0; i < characterStatsPanel.transform.childCount; i++) {
 			Destroy (characterStatsPanel.transform.GetChild (i).gameObject);
 		}
