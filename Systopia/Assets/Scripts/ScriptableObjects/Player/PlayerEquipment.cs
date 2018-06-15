@@ -10,6 +10,7 @@ public class PlayerEquipment : ScriptableObject {
 	public Wearable legsItem;
 	public Wearable fingerItem;
 	public Weapon weapon;
+	public IntVariable hp;
 
 	private void UnequipAll () {
 		UnequipHead ();
@@ -22,6 +23,53 @@ public class PlayerEquipment : ScriptableObject {
 	private void OnDisable () {
 		
 	}
+
+	public void CalculateStats () {
+		if (headItem) {
+			CalculateStatFromEquippedWearable (headItem);
+			headItem.isEquipped = true;
+		}
+		if (bodyItem) {
+			CalculateStatFromEquippedWearable (bodyItem);
+			bodyItem.isEquipped = true;
+		}
+		if (legsItem) {
+			CalculateStatFromEquippedWearable (legsItem);
+			legsItem.isEquipped = true;
+		}
+		if (fingerItem) {
+			CalculateStatFromEquippedWearable (fingerItem);
+			fingerItem.isEquipped = true;
+		}
+		if (weapon) {
+			CalculateStatFromEquippedWeapon (weapon);
+			weapon.isEquipped = true;
+		}
+	}
+
+	private void CalculateStatFromEquippedWearable (Wearable wearable) {
+		if (wearable.bonusses.Count > 0) {
+			for (int i = 0; i < wearable.bonusses.Count; i++) {
+				wearable.bonusses [i].stat.AddBonus (wearable.bonusses [i].bonus);
+				if (wearable.bonusses [i].stat.name == "Vitality") {
+					hp.value += wearable.bonusses [i].bonus * 10;
+					hp.maxValue = wearable.bonusses [i].stat.GetValue () * 10;
+				}
+				if (wearable.bonusses [i].stat.name == "Health") {
+					hp.value += wearable.bonusses [i].bonus;
+					hp.maxValue = wearable.bonusses [i].stat.GetValue ();
+				}
+			}
+		}
+	}
+	public void CalculateStatFromEquippedWeapon (Weapon weapon) {
+		if (weapon.bonusses.Count > 0) {
+			for (int i = 0; i < weapon.bonusses.Count; i++) {
+				weapon.bonusses [i].stat.AddBonus (weapon.bonusses [i].bonus);
+			}
+		}
+	}
+
 
 	public void EquipWearable (Wearable wearable, Wearable.WearableSlot slot) {
 		if (slot == Wearable.WearableSlot.Kopf) {
@@ -39,19 +87,27 @@ public class PlayerEquipment : ScriptableObject {
 		if (headItem)
 			UnequipHead ();
 		headItem = itemToEquip;
-		if (headItem.bonusses.Count > 0) {
-			for (int i = 0; i < headItem.bonusses.Count; i++) {
-				headItem.bonusses [i].stat.AddBonus (headItem.bonusses [i].bonus);
+		CalculateStatFromEquippedWearable (headItem);
+	}
+
+	private void CalculateStatsFromUnequipWearable (Wearable wearable) {
+		if (wearable.bonusses.Count > 0) {
+			for (int i = 0; i < wearable.bonusses.Count; i++) {
+				wearable.bonusses [i].stat.RemoveBonus (wearable.bonusses [i].bonus);
+				if (wearable.bonusses [i].stat.name == "Vitality") {
+					hp.value -= wearable.bonusses [i].bonus * 10;
+					hp.maxValue = wearable.bonusses [i].stat.GetValue () * 10;
+				}
+				if (wearable.bonusses [i].stat.name == "Health") {
+					hp.value -= wearable.bonusses [i].bonus;
+					hp.maxValue = wearable.bonusses [i].stat.GetValue ();
+				}
 			}
 		}
 	}
 
 	public void UnequipHead () {
-		if (headItem.bonusses.Count > 0) {
-			for (int i = 0; i < headItem.bonusses.Count; i++) {
-				headItem.bonusses [i].stat.RemoveBonus (headItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatsFromUnequipWearable (headItem);
 		headItem = null;
 	}
 
@@ -59,19 +115,11 @@ public class PlayerEquipment : ScriptableObject {
 		if (bodyItem)
 			UnequipBody ();
 		bodyItem = itemToEquip;
-		if (bodyItem.bonusses.Count > 0) {
-			for (int i = 0; i < bodyItem.bonusses.Count; i++) {
-				bodyItem.bonusses [i].stat.AddBonus (bodyItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatFromEquippedWearable (bodyItem);
 	}
 
 	public void UnequipBody () {
-		if (bodyItem.bonusses.Count > 0) {
-			for (int i = 0; i < bodyItem.bonusses.Count; i++) {
-				bodyItem.bonusses [i].stat.RemoveBonus (bodyItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatsFromUnequipWearable (bodyItem);
 		bodyItem = null;
 	}
 
@@ -79,19 +127,11 @@ public class PlayerEquipment : ScriptableObject {
 		if (legsItem)
 			UnequipLegs ();
 		legsItem = itemToEquip;
-		if (legsItem.bonusses.Count > 0) {
-			for (int i = 0; i < legsItem.bonusses.Count; i++) {
-				legsItem.bonusses [i].stat.AddBonus (legsItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatFromEquippedWearable (legsItem);
 	}
 
 	public void UnequipLegs () {
-		if (legsItem.bonusses.Count > 0) {
-			for (int i = 0; i < legsItem.bonusses.Count; i++) {
-				legsItem.bonusses [i].stat.RemoveBonus (legsItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatsFromUnequipWearable (legsItem);
 		legsItem = null;
 	}
 
@@ -100,19 +140,11 @@ public class PlayerEquipment : ScriptableObject {
 		if (fingerItem)
 			UnequipFinger ();
 		fingerItem = itemToEquip;
-		if (fingerItem.bonusses.Count > 0) {
-			for (int i = 0; i < fingerItem.bonusses.Count; i++) {
-				fingerItem.bonusses [i].stat.AddBonus (fingerItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatFromEquippedWearable (fingerItem);
 	}
 
 	public void UnequipFinger () {
-		if (fingerItem.bonusses.Count > 0) {
-			for (int i = 0; i < fingerItem.bonusses.Count; i++) {
-				fingerItem.bonusses [i].stat.RemoveBonus (fingerItem.bonusses [i].bonus);
-			}
-		}
+		CalculateStatsFromUnequipWearable (fingerItem);
 		fingerItem = null;
 	}
 
@@ -120,11 +152,7 @@ public class PlayerEquipment : ScriptableObject {
 		if (weapon)
 			UnequipWeapon ();
 		weapon = itemToEquip;
-		if (weapon.bonusses.Count > 0) {
-			for (int i = 0; i < weapon.bonusses.Count; i++) {
-				weapon.bonusses [i].stat.AddBonus (weapon.bonusses [i].bonus);
-			}
-		}
+		CalculateStatFromEquippedWeapon (weapon);
 	}
 
 	public void UnequipWeapon () {

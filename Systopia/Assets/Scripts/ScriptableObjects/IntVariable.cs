@@ -10,20 +10,33 @@ public class IntVariable : ScriptableObject {
 	#endif
 
 	public int value;
+	public int maxValue;
 
 	public void SetValue (int value) {
 		this.value = value;
+		maxValue = this.value;
 	}
 
 	public void SetValue (IntVariable value) {
 		this.value = value.value;
+		maxValue = this.value;
 	}
 
-	public void ApplyChange (int amount) {
+	public bool ApplyChange (int amount) {
+		if (value >= maxValue)
+			return false;
 		value += amount;
+		if (value > maxValue)
+			value = maxValue;
+		return true;
 	}
 
-	public void ApplyChange (IntVariable amount) {
+	public bool ApplyChange (IntVariable amount) {
+		if (value >= maxValue)
+			return false;
 		value += amount.value;
+		if (value > maxValue)
+			value = maxValue;
+		return true;
 	}
 }

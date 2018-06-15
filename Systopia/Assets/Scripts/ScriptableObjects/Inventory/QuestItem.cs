@@ -4,7 +4,8 @@ public class QuestItem : Item {
 
 	public Condition correspondingCondition;
 
-	public override void Use () {
+	public override bool Use () {
 		Debug.Log ("cannot use");
+		return true;
 	}
 }

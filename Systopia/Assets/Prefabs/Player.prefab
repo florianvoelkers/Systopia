@@ -1224,7 +1224,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e7097f40d25444990ac5c39a61913f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
+  stats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  strength: {fileID: 114958683150792074, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  dexterity: {fileID: 114096672639918392, guid: 0d242641c7dce8d4a875b7b1418bd812,
+    type: 2}
+  vitality: {fileID: 114710439288459364, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  damage: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  armor: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  accuracy: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  health: {fileID: 114019946124218352, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   hp: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}
 --- !u!137 &137182642851972740
 SkinnedMeshRenderer:

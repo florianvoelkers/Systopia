@@ -10,8 +10,9 @@ public class Item : ScriptableObject {
 	public Sprite itemSprite = null;
 	public GameObject itemObject = null;
 	public bool isStackable = false;
+	public bool isEquipped = false;
 
-	public virtual void Use () {}
+	public virtual bool Use () { return true; }
 
 	public virtual void Drop () {
 		Debug.Log ("drop it like its hot");
