@@ -27,6 +27,8 @@ public class GameStateManager : MonoBehaviour {
 	[SerializeField] private GameObject menu;
 	[SerializeField] private GameObject devFunctions;
 	[SerializeField] private Text continueStartButtonText;
+	[SerializeField] private GameObject settingsIcon;
+	[SerializeField] private GameObject tabletIcon;
 
 	public static bool isPaused = false;
 	private string savePath;
@@ -36,16 +38,23 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetKeyUp(KeyCode.Escape)){
-			if (isPaused)
-				Unpause();
-			else
-				Pause();
-		}
-
 		if (Input.GetKeyUp (KeyCode.D)) {
 			devFunctions.SetActive (!devFunctions.activeSelf);
 		}
+	}
+
+	public void PauseGame () {
+		settingsIcon.SetActive (false);
+		tabletIcon.SetActive (false);
+		Time.timeScale = 0;
+		isPaused = true;
+	}
+
+	public void UnpauseGame () {
+		settingsIcon.SetActive (true);
+		tabletIcon.SetActive (true);
+		Time.timeScale = 1;
+		isPaused = false;
 	}
 
 	public void ExitGame () {
@@ -55,6 +64,8 @@ public class GameStateManager : MonoBehaviour {
 
 	public void Pause () {
 		menu.SetActive (true);
+		settingsIcon.SetActive (false);
+		tabletIcon.SetActive (false);
 		Time.timeScale = 0;
 		isPaused = true;
 	}
@@ -63,6 +74,8 @@ public class GameStateManager : MonoBehaviour {
 		menu.SetActive (false);
 		Time.timeScale = 1;
 		isPaused = false;
+		settingsIcon.SetActive (true);
+		tabletIcon.SetActive (true);
 	}
 
 	public void SaveGame () {

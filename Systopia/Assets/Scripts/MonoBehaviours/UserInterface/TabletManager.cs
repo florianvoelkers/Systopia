@@ -7,6 +7,7 @@ public class TabletManager : MonoBehaviour {
 	[SerializeField] private GameObject navigationSelections;
 	[SerializeField] private GameObject [] tabletPanels;
 	[SerializeField] private GameObject tablet;
+	[SerializeField] private GameStateManager gameStateManager;
 
 	private GameObject[] selectors;
 
@@ -17,10 +18,14 @@ public class TabletManager : MonoBehaviour {
 		}
 	}
 
-	private void Update () {
-		if (Input.GetKeyDown (KeyCode.T)) {
-			tablet.SetActive (!tablet.activeSelf);
-		}
+	public void ShowTablet () {
+		tablet.SetActive (true);
+		gameStateManager.PauseGame ();
+	}
+
+	public void HideTablet () {
+		tablet.SetActive (false);
+		gameStateManager.UnpauseGame ();
 	}
 
 	public void SelectTabletPanel (int selectedTabletPanel) {
