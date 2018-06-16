@@ -67,6 +67,8 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	private void SelectOption (int selectedOption) {
+		if (nodes [currentNodeId].options [selectedOption].reactionCollection)
+			nodes [currentNodeId].options [selectedOption].reactionCollection.React ();
 		for (int i = optionsObject.transform.childCount - 1; i >= 0; i--) {
 			Destroy (optionsObject.transform.GetChild (i).gameObject);
 		}
