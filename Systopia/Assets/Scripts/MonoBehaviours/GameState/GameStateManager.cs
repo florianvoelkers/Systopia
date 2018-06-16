@@ -9,11 +9,13 @@ using UnityEngine.AI;
  * What needs saving:
  * 		- All Conditions
  * 		- Player: HP, Inventory, Equipment, Experience, Money, Quests, Stats
+ * 		- All Locations
  */
 public class GameStateManager : MonoBehaviour {
 
 	[Header ("Save Data")]
 	[SerializeField] private AllConditions allConditions;
+	[SerializeField] private AllLocations allLocations;
 	[SerializeField] private PlayerEquipment playerEquipment;
 	[SerializeField] private PlayerExperience playerExperience;
 	[SerializeField] private IntVariable playerHP;
@@ -77,6 +79,17 @@ public class GameStateManager : MonoBehaviour {
 			json = JsonUtility.ToJson (allConditions.conditions [i]);
 			File.WriteAllText (savePath + "/conditions/" + allConditions.conditions [i].name + ".txt", json);
 		}
+		try {
+			if (!Directory.Exists (savePath + "/locations")) {
+				Directory.CreateDirectory (savePath + "/locations");
+			}
+		} catch (IOException ex) {
+			Debug.LogError (ex.Message);
+		}
+		for (int i = 0; i < allLocations.locations.Length; i++) {
+			json = JsonUtility.ToJson (allLocations.locations [i]);
+			File.WriteAllText (savePath + "/locations/" + allLocations.locations [i].name + ".txt", json);
+		}
 		json = JsonUtility.ToJson (playerEquipment);
 		File.WriteAllText (savePath + "/equipment.txt", json);
 		json = JsonUtility.ToJson (playerExperience);
@@ -111,6 +124,16 @@ public class GameStateManager : MonoBehaviour {
 				if (File.Exists (filePath)) {
 					string json = File.ReadAllText (filePath);
 					JsonUtility.FromJsonOverwrite (json, allConditions.conditions[i]);
+				}
+			}
+
+		}
+		if (Directory.Exists (savePath + "/locations")) {
+			for (int i = 0; i < allLocations.locations.Length; i++) {
+				filePath = savePath + "/locations/" + allLocations.locations[i].name + ".txt";
+				if (File.Exists (filePath)) {
+					string json = File.ReadAllText (filePath);
+					JsonUtility.FromJsonOverwrite (json, allLocations.locations[i]);
 				}
 			}
 
