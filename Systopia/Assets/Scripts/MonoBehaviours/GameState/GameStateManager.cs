@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.UI;
 
 /*
  * What needs saving:
@@ -26,6 +26,7 @@ public class GameStateManager : MonoBehaviour {
 	[Header ("UI")]
 	[SerializeField] private GameObject menu;
 	[SerializeField] private GameObject devFunctions;
+	[SerializeField] private Text continueStartButtonText;
 
 	public static bool isPaused = false;
 	private string savePath;
@@ -45,6 +46,11 @@ public class GameStateManager : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.D)) {
 			devFunctions.SetActive (!devFunctions.activeSelf);
 		}
+	}
+
+	public void ExitGame () {
+		SaveGame ();
+		Application.Quit ();
 	}
 
 	public void Pause () {
