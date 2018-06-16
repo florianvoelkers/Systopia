@@ -64,7 +64,6 @@ public class AllLocationsEditor : Editor {
 	private void CreateEditors () {
 		locationEditors = new LocationEditor[allLocations.locations.Length];
 		for (int i = 0; i < locationEditors.Length; i++) {
-			Debug.Log ("location editor created");
 			locationEditors [i] = CreateEditor (allLocations.locations[i]) as LocationEditor;
 		}
 	}

@@ -31,7 +31,6 @@ public class LocationEditor : Editor {
 	}
 
 	public override void OnInspectorGUI () {
-		Debug.Log ("create editor gui");
 		serializedObject.Update ();
 
 		EditorGUILayout.BeginVertical (GUI.skin.box);

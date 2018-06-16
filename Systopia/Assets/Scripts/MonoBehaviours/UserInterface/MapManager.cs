@@ -21,7 +21,6 @@ public class MapManager : MonoBehaviour {
 	}
 
 	public void SelectLocation (Location location) {
-		Debug.Log (location.locationTitle + " " + location.locationDiscovered);
 		if (location.locationDiscovered) {
 			locationTitle.text = location.locationTitle;
 			locationDescription.text = location.locationDescription;

@@ -1206,7 +1206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &678305458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,6 +1506,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 3dda9ef9754903040873566b44ff1953, type: 2}
+--- !u!114 &820600296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbd274679258c840a54fc2b1b8689b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 114819588628607498, guid: b5ee5b8cc990bb14584f73f364080cd1, type: 2}
+  locationDiscoveredState: 1
 --- !u!1 &890449055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,37 +1554,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &959166060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nPCName: Testicle
-  dialogueNodes:
-  - nodeId: 0
-    sentences:
-    - "Dies ist ein Test f\xFCr das Dialogsystem."
-    - Und die Aufgabe ist eigentlich sehr einfach.
-    - Wird es funktionieren?
-    options:
-    - text: Ja
-      destinationNodeId: 1
-    - text: Nein
-      destinationNodeId: 2
-  - nodeId: 1
-    sentences:
-    - Du liegst richtig, es funktioniert.
-    options: []
-  - nodeId: 2
-    sentences:
-    - Du liegst falsch, es funktioniert.
-    options: []
 --- !u!1 &961132240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1294947100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2753,6 +2735,20 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 1
+--- !u!114 &1832455638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: test
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &1895064749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,7 +2790,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 959166060}
+  - {fileID: 820600296}
+  - {fileID: 1832455638}
 --- !u!1 &1895303781
 GameObject:
   m_ObjectHideFlags: 0
