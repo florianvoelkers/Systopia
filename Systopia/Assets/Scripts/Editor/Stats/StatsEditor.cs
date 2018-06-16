@@ -35,6 +35,7 @@ public class StatsEditor : Editor {
 	}
 
 	public override void OnInspectorGUI (){
+		Debug.Log ("on inspector gui");
 		serializedObject.Update ();
 
 		EditorGUILayout.BeginVertical (GUI.skin.box);

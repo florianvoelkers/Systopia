@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12345998926ff9e418bcd2e17289dc3e, type: 3}
+  m_Name: AllLocations
+  m_EditorClassIdentifier: 
+  locations:
+  - {fileID: 114561552393808318}
+  - {fileID: 114674785470837870}
+  - {fileID: 114085606460504980}
+  - {fileID: 114410162210266434}
+  - {fileID: 114084573152374330}
+  - {fileID: 114819588628607498}
+  - {fileID: 114736951572384518}
+  - {fileID: 114457146679812310}
+  - {fileID: 114943860932457868}
+  - {fileID: 114682437829344130}
+  - {fileID: 114111292329632910}
+--- !u!114 &114084573152374330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: AvantgardistenWaffenlager
+  m_EditorClassIdentifier: 
+  locationTitle: Waffenlager der Avantgardisten
+  locationDescription: Hier lagern die Avantgardisten ihre Waffen, die sie im Kampf
+    gegen die Technokraten verwenden. Es ist schwer bewacht und nur Avantgardisten
+    haben freien Zutritt zum Lager.
+  locationDiscovered: 0
+--- !u!114 &114085606460504980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: HAWRuine
+  m_EditorClassIdentifier: 
+  locationTitle: HAW Ruine
+  locationDescription: "Die Ruine der ehemaligen Hochschule f\xFCr angewandte Wissenschaften
+    in Hamburg. Nach dem Technolapse wurde dieser Ort vergessen und zerfiel. Ein gef\xE4hrlicher
+    Ort, an dem es viel zu entdecken geben soll."
+  locationDiscovered: 0
+--- !u!114 &114111292329632910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: LagerArtefakte
+  m_EditorClassIdentifier: 
+  locationTitle: "Lager f\xFCr wertvolle Artefakte"
+  locationDescription: Hier bewahren die Technokraten ihre mehr oder minder wertvollen
+    Artefakte auf. Nur angesehene Technokraten haben Zugang zum Lager.
+  locationDiscovered: 0
+--- !u!114 &114410162210266434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: AvantgardistenHQ
+  m_EditorClassIdentifier: 
+  locationTitle: Hauptquartier der Avantgardisten
+  locationDescription: Das Hauptquartier der Avantgardisten dient zur Rekrutierung
+    neuer Avantgardisten. Von hier aus operieren die Avantgardisten unter der Leitung
+    des sympathischen Wogapowi.
+  locationDiscovered: 1
+--- !u!114 &114457146679812310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: TechnokratenHQ
+  m_EditorClassIdentifier: 
+  locationTitle: Hauptquartier der Technokraten
+  locationDescription: "Das Hauptquartier der Technokraten dient zur Rekrutierung
+    neuer Technokraten. Von hier aus operieren die Technokraten unter der F\xFChrung
+    des hochintelligente Frunobulax."
+  locationDiscovered: 1
+--- !u!114 &114561552393808318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: Taverne
+  m_EditorClassIdentifier: 
+  locationTitle: Taverne
+  locationDescription: Die Taverne ist der einzig neutrale Ort in Hamburg. Hier sind
+    alle willkommen, die sich an das Gesetz des Wirtes halten.
+  locationDiscovered: 1
+--- !u!114 &114674785470837870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: Bibliotheksruine
+  m_EditorClassIdentifier: 
+  locationTitle: Bibliotheksruine
+  locationDescription: "Die Bibliotheksruine war fr\xFCher die gro\xDFe Bibliothek
+    der HAW Hamburg und soll viele Geheimnisse verbergen."
+  locationDiscovered: 0
+--- !u!114 &114682437829344130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: TechnokratenVerwaltung
+  m_EditorClassIdentifier: 
+  locationTitle: Verwaltungsstelle der Technokraten
+  locationDescription: "In der Verwaltungsstelle der Technokraten werden alle m\xF6glichen
+    Daten \xFCber die Mitglieder der Technokraten bewahrt. Au\xDFerdem dient sie als
+    Au\xDFenposten und befindet sich im Territorium der Avantgardisten."
+  locationDiscovered: 0
+--- !u!114 &114736951572384518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: VersteckArtefakte
+  m_EditorClassIdentifier: 
+  locationTitle: "Versteck f\xFCr Artefakte"
+  locationDescription: Hier sollen die Avantgardisten ihre mehr oder minder wertvollen
+    Artefakte verstecken. Jedoch wissen nur Avantgardisten von diesem Ort.
+  locationDiscovered: 0
+--- !u!114 &114819588628607498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: AvantgardistenUnterschlupf
+  m_EditorClassIdentifier: 
+  locationTitle: Unterschlupf der Avantgardisten
+  locationDescription: Dieser Unterschlupf befindet sich im Territorium der Technokraten.
+    VOn hier aus brechen Avantgardisten auf, um die Operationen der Technokraten zu
+    sabotieren. Ein Dorn im Auge der Technokraten.
+  locationDiscovered: 0
+--- !u!114 &114943860932457868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f088b727d9504ba916cc1c4332631, type: 3}
+  m_Name: TechnokratenWaffenlager
+  m_EditorClassIdentifier: 
+  locationTitle: Waffenlager der Technokraten
+  locationDescription: Hier lagern die Technokraten ihre Waffen, die sie im Kampf
+    gegen die Avantgardisten verwenden. Es ist schwer bewacht und nur Technokraten
+    haben freien Zutritt zum Lager.
+  locationDiscovered: 0
