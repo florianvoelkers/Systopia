@@ -3,17 +3,19 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.UI;
 
 /*
  * What needs saving:
  * 		- All Conditions
  * 		- Player: HP, Inventory, Equipment, Experience, Money, Quests, Stats
+ * 		- All Locations
  */
 public class GameStateManager : MonoBehaviour {
 
 	[Header ("Save Data")]
 	[SerializeField] private AllConditions allConditions;
+	[SerializeField] private AllLocations allLocations;
 	[SerializeField] private PlayerEquipment playerEquipment;
 	[SerializeField] private PlayerExperience playerExperience;
 	[SerializeField] private IntVariable playerHP;
@@ -24,6 +26,7 @@ public class GameStateManager : MonoBehaviour {
 	[Header ("UI")]
 	[SerializeField] private GameObject menu;
 	[SerializeField] private GameObject devFunctions;
+	[SerializeField] private Text continueStartButtonText;
 
 	public static bool isPaused = false;
 	private string savePath;
@@ -43,6 +46,11 @@ public class GameStateManager : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.D)) {
 			devFunctions.SetActive (!devFunctions.activeSelf);
 		}
+	}
+
+	public void ExitGame () {
+		SaveGame ();
+		Application.Quit ();
 	}
 
 	public void Pause () {
@@ -76,6 +84,17 @@ public class GameStateManager : MonoBehaviour {
 		for (int i = 0; i < allConditions.conditions.Length; i++) {
 			json = JsonUtility.ToJson (allConditions.conditions [i]);
 			File.WriteAllText (savePath + "/conditions/" + allConditions.conditions [i].name + ".txt", json);
+		}
+		try {
+			if (!Directory.Exists (savePath + "/locations")) {
+				Directory.CreateDirectory (savePath + "/locations");
+			}
+		} catch (IOException ex) {
+			Debug.LogError (ex.Message);
+		}
+		for (int i = 0; i < allLocations.locations.Length; i++) {
+			json = JsonUtility.ToJson (allLocations.locations [i]);
+			File.WriteAllText (savePath + "/locations/" + allLocations.locations [i].name + ".txt", json);
 		}
 		json = JsonUtility.ToJson (playerEquipment);
 		File.WriteAllText (savePath + "/equipment.txt", json);
@@ -111,6 +130,16 @@ public class GameStateManager : MonoBehaviour {
 				if (File.Exists (filePath)) {
 					string json = File.ReadAllText (filePath);
 					JsonUtility.FromJsonOverwrite (json, allConditions.conditions[i]);
+				}
+			}
+
+		}
+		if (Directory.Exists (savePath + "/locations")) {
+			for (int i = 0; i < allLocations.locations.Length; i++) {
+				filePath = savePath + "/locations/" + allLocations.locations[i].name + ".txt";
+				if (File.Exists (filePath)) {
+					string json = File.ReadAllText (filePath);
+					JsonUtility.FromJsonOverwrite (json, allLocations.locations[i]);
 				}
 			}
 
