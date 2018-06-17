@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 96ba701baf8d10a428410023f86686e8
-timeCreated: 1529234023
+guid: 26eb65a223174d7478b79b91316ed845
+timeCreated: 1529233647
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -81,12 +81,14 @@ ModelImporter:
     400072: //RootNode
     2100000: HaarFarbe1
     2100002: HautFarbe
-    2100004: BauchPanzerFarbe
+    2100004: GesichtsMusterFarbe
     2100006: "TechnoGr\xFCn"
-    2100008: "SchuhL\xFCckenFarbe1"
-    2100010: TechnoAnzugBaseFarbe
-    2100012: SeitenPanzerFarbe
-    2100014: KlonAugenbrauenFarbe
+    2100008: BauchPanzerFarbe
+    2100010: "SchuhL\xFCckenFarbe1"
+    2100012: TechnoAnzugBaseFarbe
+    2100014: SeitenPanzerFarbe
+    2100016: HaarGummiFarbe
+    2100018: AugenBrauenFarbe
     4300000: BaseBody
     9500000: //RootNode
     13700000: BaseBody
@@ -423,18 +425,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: TechnoKlon(Clone)
+    - name: TechnokratVerwaltungsStelle(Clone)
       parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: BaseBody
-      parentName: TechnoKlon(Clone)
+      parentName: TechnokratVerwaltungsStelle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Character1_Reference
-      parentName: TechnoKlon(Clone)
+      parentName: TechnokratVerwaltungsStelle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
