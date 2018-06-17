@@ -12,16 +12,21 @@ public class PlayerEquipment : ScriptableObject {
 	public Weapon weapon;
 	public IntVariable hp;
 
+	// change to start items
+	public void Reset () {
+		headItem = null;
+		bodyItem = null;
+		legsItem = null;
+		fingerItem = null;
+		weapon = null;
+	}
+
 	private void UnequipAll () {
 		UnequipHead ();
 		UnequipBody ();
 		UnequipLegs ();
 		UnequipFinger ();
 		UnequipWeapon ();
-	}
-
-	private void OnDisable () {
-		
 	}
 
 	public void CalculateStats () {

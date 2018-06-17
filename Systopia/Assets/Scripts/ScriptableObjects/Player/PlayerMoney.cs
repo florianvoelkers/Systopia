@@ -18,7 +18,7 @@ public class PlayerMoney : ScriptableObject {
 		money = amount;
 	}
 
-	public void TakeAllMoney ()  {
+	public void Reset ()  {
 		money = 0;
 	}
 }
