@@ -2,7 +2,7 @@
 
 	public string sceneName;
 	public string startingPointInLoadedScene;
-	public SaveData playerSaveData;
+	public PlayerLocation playerLocation;
 
 	private SceneController sceneController;
 
@@ -11,7 +11,9 @@
 	}
 
 	protected override void ImmediateReaction () {
-		playerSaveData.Save (PlayerMovement.startingPositionKey, startingPointInLoadedScene);
+		playerLocation.currentPositionSet = false;
+		playerLocation.startingPositionName = startingPointInLoadedScene;
+		playerLocation.currentSceneName = sceneName;
 		sceneController.FadeAndLoadScene (this);
 	}
 }

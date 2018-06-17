@@ -10,6 +10,7 @@ using UnityEngine.UI;
  * 		- All Conditions
  * 		- Player: HP, Inventory, Equipment, Experience, Money, Quests, Stats
  * 		- All Locations
+ * 		- PlayerLocation: currently missing
  */
 public class GameStateManager : MonoBehaviour {
 
@@ -23,24 +24,42 @@ public class GameStateManager : MonoBehaviour {
 	[SerializeField] private PlayerMoney playerMoney;
 	[SerializeField] private PlayerQuests playerQuests;
 	[SerializeField] private PlayerStats playerStats;
+	[SerializeField] private PlayerLocation playerLocation;
 	[Header ("UI")]
 	[SerializeField] private GameObject menu;
-	[SerializeField] private GameObject devFunctions;
 	[SerializeField] private Text continueStartButtonText;
 	[SerializeField] private GameObject settingsIcon;
 	[SerializeField] private GameObject tabletIcon;
+	[Header ("Scene")]
+	[SerializeField] private SceneController sceneController;
 
+	private GameObject player;
 	public static bool isPaused = false;
+	private bool gameStarted = false;
 	private string savePath;
+	private WaitForSeconds wait;
 
 	void Awake () {
 		savePath = Application.persistentDataPath + "/save";
+		continueStartButtonText.text = "Spiel starten";
 	}
 
-	void Update () {
-		if (Input.GetKeyUp (KeyCode.D)) {
-			devFunctions.SetActive (!devFunctions.activeSelf);
+	public void StartContinueGame () {
+		if (!gameStarted) {
+			ResetPlayer ();
+			gameStarted = true;
+			continueStartButtonText.text = "Fortsetzen";
+			sceneController.StartGame ();
+			StartCoroutine (WaitAndUnpause (1f));
+		} else {
+			Unpause ();
 		}
+	}
+
+	private IEnumerator WaitAndUnpause (float delay) {
+		wait = new WaitForSeconds (delay);
+		yield return wait;
+		Unpause ();
 	}
 
 	public void PauseGame () {
@@ -71,14 +90,17 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void Unpause () {
-		menu.SetActive (false);
 		Time.timeScale = 1;
 		isPaused = false;
+		menu.SetActive (false);
 		settingsIcon.SetActive (true);
 		tabletIcon.SetActive (true);
 	}
 
 	public void SaveGame () {
+		player = GameObject.Find ("PlayerCharacter");
+		playerLocation.currentPosition = player.transform.position;
+		playerLocation.currentPositionSet = true;
 		try {
 			if (!Directory.Exists (savePath)) {
 				Directory.CreateDirectory (savePath);
@@ -109,6 +131,8 @@ public class GameStateManager : MonoBehaviour {
 			json = JsonUtility.ToJson (allLocations.locations [i]);
 			File.WriteAllText (savePath + "/locations/" + allLocations.locations [i].name + ".txt", json);
 		}
+		json = JsonUtility.ToJson (playerLocation);
+		File.WriteAllText (savePath + "/playerLocation.txt", json);
 		json = JsonUtility.ToJson (playerEquipment);
 		File.WriteAllText (savePath + "/equipment.txt", json);
 		json = JsonUtility.ToJson (playerExperience);
@@ -132,30 +156,36 @@ public class GameStateManager : MonoBehaviour {
 			json = JsonUtility.ToJson (playerStats.stats [i]);
 			File.WriteAllText (savePath + "/stats/" + playerStats.stats [i].name + ".txt", json);
 		}
-
+		Unpause ();
 	}
 
 	public void LoadGame () {
 		string filePath;
 		if (Directory.Exists (savePath + "/conditions")) {
 			for (int i = 0; i < allConditions.conditions.Length; i++) {
-				filePath = savePath + "/conditions/" + allConditions.conditions[i].name + ".txt";
+				filePath = savePath + "/conditions/" + allConditions.conditions [i].name + ".txt";
 				if (File.Exists (filePath)) {
 					string json = File.ReadAllText (filePath);
-					JsonUtility.FromJsonOverwrite (json, allConditions.conditions[i]);
+					JsonUtility.FromJsonOverwrite (json, allConditions.conditions [i]);
+				}
+			}
+			gameStarted = true;
+			continueStartButtonText.text = "Fortsetzen";
+		}
+		if (Directory.Exists (savePath + "/locations")) {
+			for (int i = 0; i < allLocations.locations.Length; i++) {
+				filePath = savePath + "/locations/" + allLocations.locations [i].name + ".txt";
+				if (File.Exists (filePath)) {
+					string json = File.ReadAllText (filePath);
+					JsonUtility.FromJsonOverwrite (json, allLocations.locations [i]);
 				}
 			}
 
 		}
-		if (Directory.Exists (savePath + "/locations")) {
-			for (int i = 0; i < allLocations.locations.Length; i++) {
-				filePath = savePath + "/locations/" + allLocations.locations[i].name + ".txt";
-				if (File.Exists (filePath)) {
-					string json = File.ReadAllText (filePath);
-					JsonUtility.FromJsonOverwrite (json, allLocations.locations[i]);
-				}
-			}
-
+		filePath = savePath + "/playerLocation.txt";
+		if (File.Exists (filePath)) {
+			string json = File.ReadAllText (filePath);
+			JsonUtility.FromJsonOverwrite (json, playerLocation);
 		}
 		filePath = savePath + "/equipment.txt";
 		if (File.Exists (filePath)) {
@@ -189,17 +219,29 @@ public class GameStateManager : MonoBehaviour {
 		}
 		if (Directory.Exists (savePath + "/stats")) {
 			for (int i = 0; i < playerStats.stats.Length; i++) {
-				filePath = savePath + "/stats/" + playerStats.stats[i].name + ".txt";
+				filePath = savePath + "/stats/" + playerStats.stats [i].name + ".txt";
 				if (File.Exists (filePath)) {
 					string json = File.ReadAllText (filePath);
-					JsonUtility.FromJsonOverwrite (json, playerStats.stats[i]);
+					JsonUtility.FromJsonOverwrite (json, playerStats.stats [i]);
 				}
 			}
 
 		}
+		Time.timeScale = 1;
+		sceneController.StartGameFromSaveFile (gameStarted);
+		StartCoroutine (WaitAndUnpause (2f));
 	}
 
-	public void ResetPlayerBonusStats () {
+	public void ResetPlayer () {
+		allConditions.Reset ();
+		allLocations.ResetLocations ();
+		playerEquipment.Reset ();
+		playerExperience.Reset ();
+		playerHP.Reset ();
+		playerInventory.Reset ();
+		playerMoney.Reset ();
+		playerQuests.Reset ();
 		playerStats.ResetBonus ();
+		playerLocation.Reset ();
 	}		
 }

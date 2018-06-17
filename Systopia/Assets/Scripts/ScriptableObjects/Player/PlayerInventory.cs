@@ -5,7 +5,11 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "Player/Inventory")]
 public class PlayerInventory : ScriptableObject {
 
-	public List <Item> items;
+	public List <Item> items = new List <Item> ();
+
+	public void Reset () {
+		items.Clear ();
+	}
 
 	public void AddItem (Item item) {
 		items.Add (item);

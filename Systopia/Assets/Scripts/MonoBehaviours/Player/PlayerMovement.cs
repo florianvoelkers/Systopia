@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public Animator animator;
 	public NavMeshAgent agent;
-	public SaveData playerSaveData;
+	public PlayerLocation playerLocation;
 	public float turnSmoothing = 15f;
 	public float speedDampTime = 0.1f;
 	public float slowingSpeed = 0.175f;
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
 	private WaitForSeconds inputHoldWait;
 
 	public const string startingPositionKey = "starting position";
+	public const string currentSceneKey = "current scene";
 
 	private readonly int hashSpeedPara = Animator.StringToHash ("Speed");
 	private const float stopDistanceProportion = 0.1f; 
@@ -29,9 +30,13 @@ public class PlayerMovement : MonoBehaviour {
 	private void Start () {
 		agent.updateRotation = false; // player will be rotated by this script so the nav mesh agent should not rotate it
 		inputHoldWait = new WaitForSeconds (inputHoldDelay);
-		string startingPositionName = "";
-		playerSaveData.Load (startingPositionKey, ref startingPositionName);
+
+		string startingPositionName = playerLocation.startingPositionName;
 		Transform startingPosition = StartingPosition.FindStartingPosition (startingPositionName);
+		if (playerLocation.currentPositionSet) {
+			startingPosition.position = playerLocation.currentPosition;
+			playerLocation.startingPositionName = "";
+		}
 
 		transform.position = startingPosition.position;
 		transform.rotation = startingPosition.rotation;

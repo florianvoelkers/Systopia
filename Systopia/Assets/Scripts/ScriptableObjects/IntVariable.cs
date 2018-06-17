@@ -39,4 +39,9 @@ public class IntVariable : ScriptableObject {
 			value = maxValue;
 		return true;
 	}
+
+	public void Reset () {
+		value = 0;
+		maxValue = 0;
+	} 
 }

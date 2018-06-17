@@ -9,14 +9,35 @@ public class SceneController : MonoBehaviour {
 	[SerializeField] private float fadeDuration = 1f;
 	[SerializeField] private string startingSceneName = "Taverne";
 	[SerializeField] private string initialStartingPointName = "DoorToStreet";
-	[SerializeField] private SaveData playerSaveData;
+	[SerializeField] private PlayerLocation playerLocation;
 
 	private bool isFading;
 
-	private IEnumerator Start () {
+	public void StartGame () {
+		StartCoroutine (ShowStartScene ());
+	}
+
+	public void StartGameFromSaveFile (bool gameStarted) {
+		if (gameStarted)
+			StartCoroutine (FadeAndSwitchScenes (playerLocation.currentSceneName));
+		else
+			StartCoroutine (StartFromSaveFile ());
+	}
+
+	private IEnumerator ShowStartScene () {
 		faderCanvasGroup.alpha = 1f;
-		playerSaveData.Save (PlayerMovement.startingPositionKey, initialStartingPointName);
+		playerLocation.startingPositionName = initialStartingPointName;
 		yield return StartCoroutine (LoadSceneAndSetActive (startingSceneName));
+		StartCoroutine (Fade (0f));
+	}
+
+	private IEnumerator StartFromSaveFile () {
+		faderCanvasGroup.alpha = 1f;
+		string currentScene = startingSceneName;
+		if (playerLocation.currentSceneName != "")
+			currentScene = playerLocation.currentSceneName;
+
+		yield return StartCoroutine (LoadSceneAndSetActive (currentScene));
 		StartCoroutine (Fade (0f));
 	}
 
@@ -27,20 +48,8 @@ public class SceneController : MonoBehaviour {
 
 	private IEnumerator FadeAndSwitchScenes (string sceneName) {
 		yield return StartCoroutine (Fade (1f));
-
-		/*
-		if (BeforeSceneUnload != null)
-			BeforeSceneUnload ();
-		*/
-
 		yield return SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
 		yield return StartCoroutine (LoadSceneAndSetActive (sceneName));
-
-		/*
-		if (AfterSceneLoad != null)
-			AfterSceneLoad ();
-		*/
-
 		yield return StartCoroutine (Fade (0f));
 	}
 

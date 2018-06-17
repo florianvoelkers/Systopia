@@ -17,4 +17,8 @@ public class PlayerExperience : ScriptableObject {
 	public void SetExperience (int currentExperience) {
 		experience = currentExperience;
 	}
+
+	public void Reset () {
+		experience = 0;
+	}
 }
