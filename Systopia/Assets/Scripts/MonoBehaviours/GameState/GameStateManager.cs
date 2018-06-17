@@ -30,8 +30,15 @@ public class GameStateManager : MonoBehaviour {
 	[SerializeField] private Text continueStartButtonText;
 	[SerializeField] private GameObject settingsIcon;
 	[SerializeField] private GameObject tabletIcon;
+	[SerializeField] private GameObject characterCreation;
+	[SerializeField] private InputField characterName;
+	[SerializeField] private GameObject loadingScreen;
 	[Header ("Scene")]
 	[SerializeField] private SceneController sceneController;
+	[SerializeField] private GameObject creationCharacter;
+	[SerializeField] private GameObject characterLight;
+	[SerializeField] private GameObject characterCamera;
+	[SerializeField] private GameObject persistentCamera;
 
 	private GameObject player;
 	public static bool isPaused = false;
@@ -47,12 +54,31 @@ public class GameStateManager : MonoBehaviour {
 	public void StartContinueGame () {
 		if (!gameStarted) {
 			ResetPlayer ();
+			//equip player with standard items
+			ShowCharacterCreation ();
+		} else {
+			Unpause ();
+		}
+	}
+
+	private void ShowCharacterCreation () {
+		characterCreation.SetActive (true);
+		menu.SetActive (false);
+	}
+
+	public void FinishCharacter () {
+		if (characterName.text != "") {
+			loadingScreen.SetActive (true);
+			playerStats.playerName = characterName.text;
+			creationCharacter.SetActive (false);
+			characterLight.SetActive (false);
+			characterCamera.SetActive (false);
+			persistentCamera.SetActive (true);
+			characterCreation.SetActive (false);
 			gameStarted = true;
 			continueStartButtonText.text = "Fortsetzen";
 			sceneController.StartGame ();
 			StartCoroutine (WaitAndUnpause (1f));
-		} else {
-			Unpause ();
 		}
 	}
 
@@ -93,6 +119,7 @@ public class GameStateManager : MonoBehaviour {
 		Time.timeScale = 1;
 		isPaused = false;
 		menu.SetActive (false);
+		loadingScreen.SetActive (false);
 		settingsIcon.SetActive (true);
 		tabletIcon.SetActive (true);
 	}
@@ -241,7 +268,7 @@ public class GameStateManager : MonoBehaviour {
 		playerInventory.Reset ();
 		playerMoney.Reset ();
 		playerQuests.Reset ();
-		playerStats.ResetBonus ();
+		playerStats.Reset ();
 		playerLocation.Reset ();
 	}		
 }
