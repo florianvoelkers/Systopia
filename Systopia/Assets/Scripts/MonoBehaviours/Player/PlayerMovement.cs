@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public Animator animator;
 	public NavMeshAgent agent;
+	public SaveData playerSaveData;
 	public float turnSmoothing = 15f;
 	public float speedDampTime = 0.1f;
 	public float slowingSpeed = 0.175f;
@@ -19,6 +20,8 @@ public class PlayerMovement : MonoBehaviour {
 	private bool handleInput = true;
 	private WaitForSeconds inputHoldWait;
 
+	public const string startingPositionKey = "starting position";
+
 	private readonly int hashSpeedPara = Animator.StringToHash ("Speed");
 	private const float stopDistanceProportion = 0.1f; 
 	private const float navMeshSampleDistance = 4f; // maximum distance a click can be accepted
@@ -26,7 +29,12 @@ public class PlayerMovement : MonoBehaviour {
 	private void Start () {
 		agent.updateRotation = false; // player will be rotated by this script so the nav mesh agent should not rotate it
 		inputHoldWait = new WaitForSeconds (inputHoldDelay);
+		string startingPositionName = "";
+		playerSaveData.Load (startingPositionKey, ref startingPositionName);
+		Transform startingPosition = StartingPosition.FindStartingPosition (startingPositionName);
 
+		transform.position = startingPosition.position;
+		transform.rotation = startingPosition.rotation;
 		destinationPosition = transform.position;
 	}
 
@@ -78,6 +86,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void OnGroundClick (BaseEventData data) {
+		Debug.Log ("on ground click");
 		if (!handleInput)
 			return;
 
@@ -95,6 +104,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void OnInteractableClick (Interactable interactable) {
+		Debug.Log ("on interactable click");
 		if (!handleInput)
 			return;
 

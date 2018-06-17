@@ -2,15 +2,16 @@
 
 	public string sceneName;
 	public string startingPointInLoadedScene;
+	public SaveData playerSaveData;
 
-	//private SceneController sceneController;
+	private SceneController sceneController;
 
 	protected override void SpecificInit () {
-		//sceneController = FindObjectOfType <SceneController> ();
+		sceneController = FindObjectOfType <SceneController> ();
 	}
 
 	protected override void ImmediateReaction () {
-		//playerSaveData
-		//sceneController.FadeAndLoadScene (this);
+		playerSaveData.Save (PlayerMovement.startingPositionKey, startingPointInLoadedScene);
+		sceneController.FadeAndLoadScene (this);
 	}
 }
