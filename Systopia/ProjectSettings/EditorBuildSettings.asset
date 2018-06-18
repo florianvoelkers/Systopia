@@ -9,44 +9,47 @@ EditorBuildSettings:
     path: Assets/Scenes/Persistent.unity
     guid: 87939100ba945874bbb76d2793b72746
   - enabled: 1
-    path: Assets/Scenes/Taverne.unity
+    path: Assets/Scenes/Sonstige/Taverne.unity
     guid: e1cb1534a982d4a44b34b2f2a6229edd
   - enabled: 1
-    path: "Assets/Scenes/Stra\xDFe.unity"
+    path: "Assets/Scenes/Sonstige/Stra\xDFe.unity"
     guid: 19ca3f67ccf0d494ca1bc967901c6c10
   - enabled: 1
-    path: Assets/Scenes/AvaArtefaktLager.unity
+    path: Assets/Scenes/Avantgardisten/AvaArtefaktLager.unity
     guid: 453c77683c1e85849993f92754385dd3
   - enabled: 1
-    path: Assets/Scenes/AvaHQ.unity
+    path: Assets/Scenes/Avantgardisten/AvaHQ.unity
     guid: 952c2111239a6cb428fe89057e8e564d
   - enabled: 1
-    path: Assets/Scenes/AvaUnterschlupf.unity
+    path: Assets/Scenes/Avantgardisten/AvaUnterschlupf.unity
     guid: 868504acebf32544987ad522fe37ae9c
   - enabled: 1
-    path: Assets/Scenes/AvaWaffenLager.unity
+    path: Assets/Scenes/Avantgardisten/AvaWaffenLager.unity
     guid: 23bd9b6518d85644fa8fe9914217d288
   - enabled: 1
-    path: Assets/Scenes/TechnoArtefakLager.unity
+    path: Assets/Scenes/Technokraten/TechnoArtefakLager.unity
     guid: ad1933499c144fa42826476b780732ae
   - enabled: 1
-    path: Assets/Scenes/TechnoHQ.unity
+    path: Assets/Scenes/Technokraten/TechnoHQ.unity
     guid: a5362aa386387c54bba47496b35ac775
   - enabled: 1
-    path: Assets/Scenes/TechnoVerwaltungsStelle.unity
+    path: Assets/Scenes/Technokraten/TechnoVerwaltungsStelle.unity
     guid: 008e12e468ff4404db1b7ca8943b6cf3
   - enabled: 1
-    path: Assets/Scenes/TechnoWaffenLager.unity
+    path: Assets/Scenes/Technokraten/TechnoWaffenLager.unity
     guid: 0bbc79923880cb343bc679ba8de7eea9
   - enabled: 1
-    path: Assets/Scenes/BibRuine.unity
+    path: Assets/Scenes/HAW/BibRuine.unity
     guid: 89822e667db69414ebf5fc8d651df988
   - enabled: 1
-    path: Assets/Scenes/HAWRuine.unity
+    path: Assets/Scenes/HAW/HAWRuine.unity
     guid: 8ff93685af9b38b43a7b7cec27361e33
   - enabled: 1
-    path: Assets/Scenes/KellerFlur.unity
+    path: Assets/Scenes/HAW/KellerFlur.unity
     guid: 318b92c9a26781646bcfa214ee7a0292
   - enabled: 1
-    path: "Assets/Scenes/KellerGew\xF6lbe.unity"
+    path: "Assets/Scenes/HAW/KellerGew\xF6lbe.unity"
     guid: 3c7b83583be275c44a653b7d89347a39
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/TechnoWaffenlagerFight.unity
+    guid: 8d9c42aeb33c80947a36109821d8e14d

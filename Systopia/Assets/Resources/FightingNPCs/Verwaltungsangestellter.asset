@@ -18,4 +18,4 @@ MonoBehaviour:
   damage: 10
   accuracy: 90
   armor: 3
-  npcModel: {fileID: 100072, guid: 26eb65a223174d7478b79b91316ed845, type: 3}
+  npcModel: {fileID: 1380350505192330, guid: f8a560f5fa4cd3e4dbcd8587e4adbb59, type: 2}

@@ -1597,6 +1597,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1536991043036728
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224753592910866690}
+  - component: {fileID: 114389881571241144}
+  m_Layer: 5
+  m_Name: TargetButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1539249844839094
 GameObject:
   m_ObjectHideFlags: 1
@@ -4659,6 +4675,28 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114389881571241144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536991043036728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
 --- !u!114 &114400097350294200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6643,6 +6681,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a63a69227389045b8c985cfc1d5798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fightCharacterUI: {fileID: 1600740631926880, guid: fd745588bfb81ed4ebbc3848d285b3bd,
+    type: 2}
+  enemies: {fileID: 1964266128622598}
+  party: {fileID: 1695976085747372}
+  fightComments: {fileID: 1423208355776290}
+  comments: {fileID: 114872974127074660}
+  playerButtons: {fileID: 1936857428854966}
+  settingsIcon: {fileID: 1085615902971634}
+  tabletIcon: {fileID: 1428418444601022}
+  playerIcon: {fileID: 21300000, guid: 9cf80a0d4ebca1d478b8e020530b380b, type: 3}
+  targetButtonParent: {fileID: 1536991043036728}
+  targetButton: {fileID: 1501327236722196, guid: 42f4c7e642d18a044955e8a739bcf2c9,
+    type: 2}
+  sceneController: {fileID: 0}
 --- !u!114 &114710933861934704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6774,7 +6826,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114292055992973848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114710469239866066}
+        m_MethodName: Heal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114733454011059122
@@ -7647,7 +7710,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114694381163994544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114710469239866066}
+        m_MethodName: ShowTargets
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114829526567767630
@@ -7688,7 +7762,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114804316368924514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114710469239866066}
+        m_MethodName: Escape
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114830974126886800
@@ -10753,6 +10838,7 @@ RectTransform:
   - {fileID: 224524256845090568}
   - {fileID: 224729382684944088}
   - {fileID: 224347939607013194}
+  - {fileID: 224753592910866690}
   - {fileID: 224850124208924784}
   m_Father: {fileID: 4311223249102508}
   m_RootOrder: 4
@@ -11604,6 +11690,24 @@ RectTransform:
   m_AnchoredPosition: {x: 603, y: 0}
   m_SizeDelta: {x: 435, y: 794}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224753592910866690
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536991043036728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224438001674458940}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 124}
+  m_SizeDelta: {x: 600, y: 120}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224757397291814458
 RectTransform:
   m_ObjectHideFlags: 1
@@ -12001,7 +12105,7 @@ RectTransform:
   - {fileID: 224781223469800330}
   - {fileID: 224726931664976158}
   m_Father: {fileID: 224438001674458940}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

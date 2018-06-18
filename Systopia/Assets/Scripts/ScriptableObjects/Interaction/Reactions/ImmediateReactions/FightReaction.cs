@@ -6,6 +6,7 @@ public class FightReaction : Reaction {
 
 	public FightingNPC [] enemies;
 	public FightingNPC [] playersParty;
+	public string sceneName;
 	public string fightSceneName;
 	public ReactionCollection winReaction;
 	public ReactionCollection lossReaction;

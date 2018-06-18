@@ -17,8 +17,8 @@ public class FightingNPC : ScriptableObject {
 	public GameObject npcModel;
 
 	public int Attack () {
-		int randomNumber = Random.Range (1, 100);
-		if (randomNumber <= accuracy) {
+		int hitProbability = Random.Range (1, 100);
+		if (hitProbability <= accuracy) {
 			return damage;
 		}
 		return 0;

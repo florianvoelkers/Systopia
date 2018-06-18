@@ -46,6 +46,19 @@ public class SceneController : MonoBehaviour {
 			StartCoroutine (FadeAndSwitchScenes (sceneReaction.sceneName));
 	}
 
+	public void FadeAndLoadFightScene (string sceneName, System.Action callback) {
+		if (!isFading)
+			StartCoroutine (FadeAndSwitchScenesToFight (sceneName, callback));
+	}
+
+	private IEnumerator FadeAndSwitchScenesToFight (string sceneName, System.Action callback) {
+		yield return StartCoroutine (Fade (1f));
+		yield return SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
+		yield return StartCoroutine (LoadSceneAndSetActive (sceneName));
+		yield return StartCoroutine (Fade (0f));
+		callback ();
+	}
+
 	private IEnumerator FadeAndSwitchScenes (string sceneName) {
 		yield return StartCoroutine (Fade (1f));
 		yield return SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
