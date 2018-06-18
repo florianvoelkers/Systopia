@@ -1,0 +1,18 @@
+Am besten kommt man bei egal welcher antwort zu zweiten frage
+und dann kommt eine fehler meldung wenn es nicht richtig war
+
+Frage 1: In Welcher Zeile ist der Fehler?
+
+Antworten:
+1. 37
+2. 82
+3. 59 <- Richtig
+4. 68
+
+Frage 2: Was ist Falsch?
+
+Antworten:
+1. Eine Klammer zu viel.
+2. Am Ende fehlt ein Semikolon. <- Richtig
+3. Eine Klammer zu wenig.
+4. Nichts. <- Dann wieder zu Frage 1
