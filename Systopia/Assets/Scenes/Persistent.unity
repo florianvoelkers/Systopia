@@ -654,27 +654,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114539127088966118, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114899940265217184, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: gameStateManager
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114525784766852084, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114400097350294200, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114326269325349540, guid: 902f8768af34a0a4289768c61b55229b,
+    - target: {fileID: 114543639181296386, guid: 902f8768af34a0a4289768c61b55229b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -684,7 +664,27 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 839349392}
-    - target: {fileID: 114543639181296386, guid: 902f8768af34a0a4289768c61b55229b,
+    - target: {fileID: 114326269325349540, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114400097350294200, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114525784766852084, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114899940265217184, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: gameStateManager
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114539127088966118, guid: 902f8768af34a0a4289768c61b55229b,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
