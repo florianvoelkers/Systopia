@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Katharina
   m_EditorClassIdentifier: 
   npcName: Katharina
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 56d0505d80f833c47886c80b725c5d13, type: 3}
   currentHP: 100
   maximumHP: 100
   damage: 10
   accuracy: 75
   armor: 2
+  npcModel: {fileID: 100000, guid: 06435d29e9019e1419868856e3f9860c, type: 3}

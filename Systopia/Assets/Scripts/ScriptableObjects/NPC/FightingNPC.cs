@@ -14,6 +14,7 @@ public class FightingNPC : ScriptableObject {
 	public int damage;
 	public int accuracy;
 	public int armor;
+	public GameObject npcModel;
 
 	public int Attack () {
 		int randomNumber = Random.Range (1, 100);

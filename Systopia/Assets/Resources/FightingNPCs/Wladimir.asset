@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Wladimir
   m_EditorClassIdentifier: 
   npcName: Wladimir
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 8cdebaed748fa3d47a8322df79003e53, type: 3}
   currentHP: 75
   maximumHP: 75
   damage: 10
   accuracy: 50
   armor: 2
+  npcModel: {fileID: 100000, guid: 69bc54eee0cd86a498c5dcde1b083d61, type: 3}
