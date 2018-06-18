@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Carsten
   m_EditorClassIdentifier: 
   npcName: Carsten
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 59b7eaf530d2c0042a8ba912962449e7, type: 3}
   currentHP: 100
   maximumHP: 100
   damage: 18
   accuracy: 85
   armor: 3
+  npcModel: {fileID: 100002, guid: faac204e9ff51ce48a51fe2be1fe8ea4, type: 3}

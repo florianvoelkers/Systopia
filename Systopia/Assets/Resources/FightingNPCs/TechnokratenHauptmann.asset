@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: TechnokratenHauptmann
   m_EditorClassIdentifier: 
   npcName: Hauptmann
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 9c5e976c74e6ac247a66d2a517c1fdcd, type: 3}
   currentHP: 100
   maximumHP: 100
   damage: 15
   accuracy: 85
   armor: 5
+  npcModel: {fileID: 100078, guid: 0b88c5b8e74ce3641a92dbe443524b28, type: 3}

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Christopher
   m_EditorClassIdentifier: 
   npcName: Christopher
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 98984bacf16f507489337f726b5c47c4, type: 3}
   currentHP: 75
   maximumHP: 75
   damage: 10
   accuracy: 60
   armor: 2
+  npcModel: {fileID: 100000, guid: b1f90caf000d2c54cb5f3ab98a272310, type: 3}

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Verwaltungsangestellter
   m_EditorClassIdentifier: 
   npcName: Verwaltungsangestellter
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 8f39d0c9c1754324ab26da30e3b808fe, type: 3}
   currentHP: 50
   maximumHP: 50
   damage: 10
   accuracy: 90
   armor: 3
+  npcModel: {fileID: 100072, guid: 26eb65a223174d7478b79b91316ed845, type: 3}

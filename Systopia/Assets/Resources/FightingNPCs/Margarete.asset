@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Margarete
   m_EditorClassIdentifier: 
   npcName: Margarete
-  npcIcon: {fileID: 0}
+  npcIcon: {fileID: 21300000, guid: 62008a416759ced44ba1aa187a30bb6f, type: 3}
   currentHP: 75
   maximumHP: 75
   damage: 15
   accuracy: 75
   armor: 5
+  npcModel: {fileID: 100000, guid: 9c68c27e45ee44545a5023f0b9976042, type: 3}
