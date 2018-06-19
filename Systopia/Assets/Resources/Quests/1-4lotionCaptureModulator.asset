@@ -9,17 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad39fab799eff0b40a93ea9ff068a9c4, type: 3}
-  m_Name: 1-4botschaftDesSpions
+  m_Name: 1-4lotionCaptureModulator
   m_EditorClassIdentifier: 
-  questTitle: Botschaft des Spions
-  questDescription: "Die Technokraten suchen nach einer starken Waffe, den Lotion
-    Capture Modulator. Ich soll diese Waffe finden und sicherstellen. Ich soll dazu
-    die Botschaft des Spions entschl\xFCsseln."
+  questTitle: Lotion Capture Modulator
+  questDescription: "Ich soll ein verschollenes technisches Ger\xE4t wiederfinden.
+    Es solll sich in den alten Ruinen der HAW Hamburg befinden. Es k\xF6nnte uns zum
+    endg\xFCltigen Sieg \xFCber die Technokraten helfen."
   isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
   states:
   - {fileID: 114367301701873042}
-  - {fileID: 114870822860872740}
+  - {fileID: 114519345037491494}
+  - {fileID: 114935121731124858}
   rewards:
   - {fileID: 114148963378900294}
 --- !u!114 &114148963378900294
@@ -50,7 +51,7 @@ MonoBehaviour:
   stateDescription: "Das Gem\xE4lde auf dem sich die Botschaft befindet befindet sich
     hier im Hauptquartier."
   isStateFinished: 0
---- !u!114 &114870822860872740
+--- !u!114 &114519345037491494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -59,9 +60,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
-  m_Name: 1-4messageDecoded
+  m_Name: 1-4inTheRuins
   m_EditorClassIdentifier: 
-  stateName: 1-4messageDecoded
-  stateDescription: "Ich habe die Nachricht entschl\xFCsseln k\xF6nnen. Sie lautet:
-    \"LCM existiert nicht\". Ich sollte dem Hauptmann davon berichten."
+  stateName: 1-4inTheRuins
+  stateDescription: "Anscheinend sind uns die Technokraten zuvor gekommen. Eventuell
+    kann ich aber trotzdem noch etwas N\xFCtzliches hier finden."
+  isStateFinished: 0
+--- !u!114 &114935121731124858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
+  m_Name: 1-4foundArmorDesigns
+  m_EditorClassIdentifier: 
+  stateName: 1-4foundArmorDesigns
+  stateDescription: "Ich habe zumindest interessante Designs f\xFCr eine R\xFCstung
+    gefunden. Diese sollte ich im Hauptquartier abliefern."
   isStateFinished: 0
