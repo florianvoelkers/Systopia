@@ -575,6 +575,10 @@ Prefab:
       propertyPath: sceneController
       value: 
       objectReference: {fileID: 1683313321}
+    - target: {fileID: 1955224887794284, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
   m_IsPrefabParent: 0
