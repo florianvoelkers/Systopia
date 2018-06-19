@@ -114,6 +114,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 8c788652da9b6b749afa1289025a23c7, type: 2}
+--- !u!114 &40435055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Hah, du Schw\xE4chling!"
+  textColor: {r: 0.7647059, g: 0, b: 0, a: 1}
+  delay: 1
 --- !u!1 &85746559
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,8 +307,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc01d8d5baae32243a0776802c7a527b, type: 2}
   sceneName: "Stra\xDFe"
   fightSceneName: TechnoWaffenlagerFight
-  winReaction: {fileID: 0}
-  lossReaction: {fileID: 0}
+  winReaction: {fileID: 502038537}
+  lossReaction: {fileID: 1564722938}
 --- !u!1 &206852394
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +789,48 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &502038535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 502038536}
+  - component: {fileID: 502038537}
+  m_Layer: 0
+  m_Name: FightWonReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502038536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502038535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1890646647}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &502038537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502038535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1063357126}
 --- !u!1001 &539127902
 Prefab:
   m_ObjectHideFlags: 0
@@ -2102,6 +2158,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1063357126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Na gut, du bist der St\xE4rkere!"
+  textColor: {r: 0, g: 0.7058823, b: 0.5598377, a: 1}
+  delay: 1
 --- !u!1 &1160886194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2439,48 @@ Transform:
   m_Father: {fileID: 394232023}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1564722936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1564722937}
+  - component: {fileID: 1564722938}
+  m_Layer: 0
+  m_Name: FightLostReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564722937
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564722936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1890646647}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1564722938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564722936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 40435055}
 --- !u!1 &1642065457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,6 +2739,8 @@ Transform:
   m_Children:
   - {fileID: 1961239908}
   - {fileID: 240360232}
+  - {fileID: 502038536}
+  - {fileID: 1564722937}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

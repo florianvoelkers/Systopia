@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public int Attack () {
-		int hitProbability = Random.Range (1, 100);
+		int hitProbability = Random.Range (0, 100);
 		if (hitProbability <= accuracy.GetValue ()) {
 			return damage.GetValue ();
 		}
@@ -68,5 +68,7 @@ public class Player : MonoBehaviour {
 		return hp.maxValue;
 	}
 
-
+	public int GetArmor () {
+		return armor.GetValue ();
+	}
 }

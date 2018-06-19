@@ -5030,7 +5030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764706, g: 0.13333334, b: 0.14117648, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5533,8 +5533,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.627451}
+    m_NormalColor: {r: 0.227451, g: 0.33333334, b: 0.3647059, a: 1}
+    m_HighlightedColor: {r: 0.227451, g: 0.33333334, b: 0.3647059, a: 0.422}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6684,8 +6684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fightCharacterUI: {fileID: 1600740631926880, guid: fd745588bfb81ed4ebbc3848d285b3bd,
     type: 2}
-  enemies: {fileID: 1964266128622598}
-  party: {fileID: 1695976085747372}
+  enemiesObject: {fileID: 1964266128622598}
+  partyObject: {fileID: 1695976085747372}
   fightComments: {fileID: 1423208355776290}
   comments: {fileID: 114872974127074660}
   playerButtons: {fileID: 1936857428854966}
@@ -6695,6 +6695,7 @@ MonoBehaviour:
   targetButtonParent: {fileID: 1536991043036728}
   targetButton: {fileID: 1501327236722196, guid: 42f4c7e642d18a044955e8a739bcf2c9,
     type: 2}
+  loadScreen: {fileID: 1955224887794284}
   sceneController: {fileID: 0}
 --- !u!114 &114710933861934704
 MonoBehaviour:

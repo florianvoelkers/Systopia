@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
 public class FightManager : MonoBehaviour {
 
 	[Header ("UI")]
 	[SerializeField] private GameObject fightCharacterUI;
-	[SerializeField] private GameObject enemies;
-	[SerializeField] private GameObject party;
+	[SerializeField] private GameObject enemiesObject;
+	[SerializeField] private GameObject partyObject;
 	[SerializeField] private GameObject fightComments;
 	[SerializeField] private Text comments;
 	[SerializeField] private GameObject playerButtons;
@@ -19,93 +18,175 @@ public class FightManager : MonoBehaviour {
 	[SerializeField] private Sprite playerIcon;
 	[SerializeField] private GameObject targetButtonParent;
 	[SerializeField] private GameObject targetButton;
+	[SerializeField] private GameObject loadScreen;
 	[Header ("Scene Objects")]
 	[SerializeField] private SceneController sceneController;
 
-	private GameObject enemySpawns;
-	private GameObject playerPartySpawns;
+	private string previousSceneName;
+	private ReactionCollection winReaction;
+	private ReactionCollection lossReaction;
+
 	private GameObject playerCharacter;
-	private NavMeshAgent playerNavMeshAgent;
 	private Player player;
-	private FightReaction fight;
-
-	private List <GameObject> enemyObjects;
-	private List <GameObject> partyObjects;
-	private List <GameObject> enemyUIObjects;
-	private List <GameObject> partyUIObjects;
 	private GameObject playerUI;
-	private List <GameObject> targetButtons;
-	private bool continueRound;
 
-	private List <FightingNPC> enemyList;
-	private List <FightingNPC> partyList;
+	private GameObject enemySpawns;
+	private List <FightingNPC> enemies = new List <FightingNPC> (); // clear at end of battle
+	private List <GameObject> enemyModels = new List <GameObject> ();
+	private List <GameObject> enemyUIObjects = new List <GameObject> ();
+	private List <GameObject> targetButtons = new List <GameObject> ();
+
+	private GameObject partySpawns;
+	private List <FightingNPC> party = new List <FightingNPC> ();
+	private List <GameObject> partyModels = new List <GameObject> ();
+	private List <GameObject> partyUIObjects = new List <GameObject> ();
+
+	private enum FightStages {Wait, PlayerAttack, PartyAttack, EnemyAttack, PlayerWon, PlayerLost };
+	private FightStages currentFightStage;
+	private int enemyOnTurn;
+	private int partyTarget;
+	private int partyMemberOnTurn;
+	private bool continueRound;
+	private bool playerDead;
 
 	public void StartFight (FightReaction fight) {
-		enemyObjects = new List <GameObject> ();
-		partyObjects = new List <GameObject> ();
-		enemyUIObjects = new List <GameObject> ();
-		partyUIObjects = new List <GameObject> ();
-		targetButtons = new List <GameObject> ();
-		enemyList = new List <FightingNPC> ();
-		partyList = new List <FightingNPC> ();
+		loadScreen.SetActive (true);
 		for (int i = 0; i < fight.enemies.Length; i++) {
-			enemyList.Add (Instantiate (fight.enemies [i]));
+			enemies.Add (Instantiate (fight.enemies [i]));
 		}
+		enemyOnTurn = 0;
 		for (int i = 0; i < fight.playersParty.Length; i++) {
-			partyList.Add (Instantiate (fight.playersParty [i]));
+			party.Add (Instantiate (fight.playersParty [i]));
 		}
-		this.fight = fight;
+		partyMemberOnTurn = 0;
+		previousSceneName = fight.sceneName;
+		winReaction = fight.winReaction;
+		lossReaction = fight.lossReaction;
+		currentFightStage = FightStages.Wait;
 		continueRound = true;
-		sceneController.FadeAndLoadFightScene (this.fight.fightSceneName, BeginFight);
+		playerDead = false;
+		sceneController.FadeAndLoadFightScene (fight.fightSceneName, BeginFight);
 	}
 
 	public void BeginFight () {
+		enemySpawns = GameObject.Find ("EnemySpawns");
+		partySpawns = GameObject.Find ("PlayerPartySpawns");
 		settingsIcon.SetActive (false);
 		tabletIcon.SetActive (false);
 		playerCharacter = GameObject.Find ("PlayerCharacter");
 		player = playerCharacter.GetComponent <Player> ();
 		playerButtons.SetActive (true);
 
-		// spawn enemies
-		enemySpawns = GameObject.Find ("EnemySpawns");
-		for (int i = 0; i < enemyList.Count; i++) {
-			if (i <= enemySpawns.transform.childCount) {
-				enemyObjects.Add(Instantiate (enemyList [i].npcModel));
-				enemyObjects [i].transform.position = enemySpawns.transform.GetChild (i).position;
-				enemyObjects [i].transform.rotation = enemySpawns.transform.GetChild (i).rotation;
-				enemyUIObjects.Add(Instantiate (fightCharacterUI, enemies.transform));
-				enemyUIObjects [i].transform.Find ("Name").GetComponent <Text> ().text = enemyList [i].npcName;
-				enemyUIObjects [i].transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = enemyList [i].npcIcon;
-				enemyUIObjects [i].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) enemyList [i].currentHP / (float) enemyList [i].maximumHP;
-				targetButtons.Add(Instantiate (targetButton, targetButtonParent.transform));
-				targetButtons [i].transform.Find ("Name").GetComponent <Text> ().text = enemyList [i].npcName;
-				targetButtons [i].transform.Find ("CharacterSpriteButton/CharacterSprite").GetComponent <Image> ().sprite = enemyList [i].npcIcon;
-				int localIndex = i;
-				UnityEngine.Events.UnityAction attackSelection = () => {
-					this.Attack (localIndex);
-				};
-				targetButtons [i].transform.Find ("CharacterSpriteButton").GetComponent <Button> ().onClick.AddListener (attackSelection);
+		SetupEnemyUI ();
+		SetupPartyUI ();
+		SetupPlayerUI ();
+
+		loadScreen.SetActive (false);
+	}
+
+	private void Update () {
+		if (continueRound) {
+			switch (currentFightStage) {
+			case FightStages.PlayerAttack:
+				currentFightStage = FightStages.Wait;
+				playerButtons.SetActive (true);
+				break;	
+			case FightStages.PartyAttack:
+				currentFightStage = FightStages.Wait;
+				PartyAttack ();
+				break;	
+			case FightStages.EnemyAttack:
+				currentFightStage = FightStages.Wait;
+				EnemyAttack ();
+				break;
+			case FightStages.PlayerLost:
+				currentFightStage = FightStages.Wait;
+				PlayerLost ();
+				break;
+			case FightStages.PlayerWon:
+				currentFightStage = FightStages.Wait;
+				PlayerWon ();
+				break;
+			default:
+				break;
 			}
 		}
+	}
 
-		// spawn player party
-		playerPartySpawns = GameObject.Find ("PlayerPartySpawns");
-		for (int i = 0; i < partyList.Count; i++) {
-			if (i <= playerPartySpawns.transform.childCount) {
-				partyObjects.Add(Instantiate (partyList [i].npcModel));
-				partyObjects [i].transform.position = playerPartySpawns.transform.GetChild (i).position;
-				partyObjects [i].transform.rotation = playerPartySpawns.transform.GetChild (i).rotation;
-				partyUIObjects.Add(Instantiate (fightCharacterUI, party.transform));
-				partyUIObjects [i].transform.Find ("Name").GetComponent <Text> ().text = partyList [i].npcName;
-				partyUIObjects [i].transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = partyList[i].npcIcon;
-				partyUIObjects [i].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) partyList [i].currentHP / (float) partyList[i].maximumHP;
-			}
+	public void Escape () {
+		playerButtons.SetActive (false);
+		currentFightStage = FightStages.PlayerLost;
+	}
+
+	public void Heal () {
+
+	}
+
+	private void EndFightScene () {
+		Destroy (playerUI);
+		playerUI = null;
+		player = null;
+		playerCharacter = null;
+
+		for (int i = 0; i < enemies.Count; i++) {
+			Destroy (enemies [i]);
 		}
+		enemies.Clear ();
+		for (int i = 0; i < enemyModels.Count; i++) {
+			Destroy (enemyModels [i]);
+		}
+		enemyModels.Clear ();
+		for (int i = 0; i < enemyUIObjects.Count; i++) {
+			Destroy (enemyUIObjects [i]);
+		}
+		enemyUIObjects.Clear ();
+		for (int i = 0; i < targetButtons.Count; i++) {
+			Destroy (targetButtons [i]);
+		}
+		targetButtons.Clear ();
 
-		playerUI = Instantiate (fightCharacterUI, party.transform);
-		playerUI.transform.Find ("Name").GetComponent <Text> ().text = player.GetPlayerName ();
-		playerUI.transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = playerIcon;
-		playerUI.transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) player.GetCurrentHealth () / (float) player.GetMaximumHealth ();
+		for (int i = 0; i < party.Count; i++) {
+			Destroy (party [i]);
+		}
+		party.Clear ();
+		for (int i = 0; i < partyModels.Count; i++) {
+			Destroy (partyModels [i]);
+		}
+		partyModels.Clear ();
+		for (int i = 0; i < partyUIObjects.Count; i++) {
+			Destroy (partyUIObjects [i]);
+		}
+		partyUIObjects.Clear ();
+
+		settingsIcon.SetActive (true);
+		tabletIcon.SetActive (true);
+	}
+
+	private void FightWonReaction () {
+		loadScreen.SetActive (false);
+		winReaction.React ();
+	}
+
+	private void FightLostReaction () {
+		loadScreen.SetActive (false);
+		lossReaction.React ();
+	}
+
+	private void PlayerWon () {
+		loadScreen.SetActive (true);
+		EndFightScene ();
+		sceneController.FadeAndLoadFightScene (previousSceneName, FightWonReaction);
+	}
+
+	private void PlayerLost () {
+		loadScreen.SetActive (true);
+		EndFightScene ();
+		sceneController.FadeAndLoadFightScene (previousSceneName, FightLostReaction);
+	}
+
+	public void ContinueRound () {
+		continueRound = true;
+		fightComments.SetActive (false);
 	}
 
 	public void ShowTargets () {
@@ -114,170 +195,225 @@ public class FightManager : MonoBehaviour {
 		targetButtonParent.SetActive (true);
 	}
 
-	private void EndRound () {
-		StartCoroutine (WaitForNewRound ());
-	}
-
-	private IEnumerator WaitForNewRound () {
-		while (!continueRound) {
-			yield return new WaitForSeconds (1f);
+	private void EnemyAttack () {
+		int damageDealt = enemies [enemyOnTurn].Attack ();
+		enemyModels [enemyOnTurn].GetComponent <Animator> ().SetTrigger ("attack");
+		if (damageDealt == 0) {
+			comments.text = enemies [enemyOnTurn].npcName + " trifft nicht.";
+			FinishEnemyAttack ();
+		} else {
+			int randomTarget = Random.Range (0, party.Count + 1);
+			if (randomTarget == party.Count) {
+				comments.text = enemies [enemyOnTurn].npcName + " trifft " + DamagePlayer (damageDealt, FinishEnemyAttack);
+			} else {
+				comments.text = enemies [enemyOnTurn].npcName + " trifft " + DamageParty (randomTarget, damageDealt, FinishEnemyAttack);
+			}
 		}
-		fightComments.SetActive (false);
-		playerButtons.SetActive (true);
 	}
 
-	public void ContinueRound () {
-		continueRound = true;
-		fightComments.SetActive (false);
+	private void FinishEnemyAttack () {
+		continueRound = false;
+		fightComments.SetActive (true);
+		enemyOnTurn++;
+		if (enemies.Count > enemyOnTurn) {
+			currentFightStage = FightStages.EnemyAttack;
+		}
+		else {
+			currentFightStage = FightStages.PlayerAttack;
+			enemyOnTurn = 0;
+		}
+
+		if (playerDead)
+			currentFightStage = FightStages.PlayerLost;
 	}
 
-	public void Attack (int targetIndex) {
+	private void PartyAttack () {
+		int damageDealt = party [partyMemberOnTurn].Attack ();
+		partyModels [partyMemberOnTurn].GetComponent <Animator> ().SetTrigger ("attack");
+		if (damageDealt == 0) {
+			comments.text = party [partyMemberOnTurn].npcName + " trifft nicht.";
+			FinishPartyAttack ();
+		} else {
+			comments.text = party [partyMemberOnTurn].npcName + " trifft " + DamageEnemy (partyTarget, damageDealt, FinishPartyAttack);
+		}
+	}
+
+	private void FinishPartyAttack () {
+		continueRound = false;
+		fightComments.SetActive (true);
+		partyMemberOnTurn++;
+		if (party.Count > partyMemberOnTurn) {
+			currentFightStage = FightStages.PartyAttack;
+		}
+		else {
+			currentFightStage = FightStages.EnemyAttack;
+			partyMemberOnTurn = 0;
+		}
+
+		if (enemies.Count == 0)
+			currentFightStage = FightStages.PlayerWon;
+	}
+
+	public void PlayerAttack (int targetIndex) {
 		targetButtonParent.SetActive (false);
 		EventSystem.current.SetSelectedGameObject (null);
+		partyTarget = targetIndex;
 		int damageDealtByPlayer = player.Attack ();
+		playerCharacter.GetComponent <Animator> ().SetTrigger ("attack");
 		if (damageDealtByPlayer == 0) {
 			comments.text = player.GetPlayerName () + " trifft nicht.";
+			FinishPlayerAttack ();
 		} else {
-			comments.text = player.GetPlayerName () + " trifft " + enemyList[targetIndex].npcName + " und richtet " + damageDealtByPlayer + " Schaden an.";
-			DamageEnemy (targetIndex, damageDealtByPlayer);
+			comments.text = player.GetPlayerName () + " trifft " + DamageEnemy (targetIndex, damageDealtByPlayer, FinishPlayerAttack);;
 		}
-		// hit animation and stuff
-		continueRound = false;
-		fightComments.SetActive (true);
-
-		if (partyList.Count > 0)
-			StartCoroutine (LetPartyAttack (0, targetIndex));
 	}
 
-	private IEnumerator LetPartyAttack (int attackerIndex, int targetIndex) {
-		while (!continueRound) {
-			yield return new WaitForSeconds (1f);
-		}
-		PartyAttack (attackerIndex, targetIndex);
-	}
-
-	private void PartyAttack (int attackerIndex, int targetIndex) {
-		int damageDealt = partyList [attackerIndex].Attack ();
-		if (damageDealt == 0) {
-			comments.text = partyList [attackerIndex].npcName + " trifft nicht.";
-		} else {
-			string npcName;
-			if (enemyList [targetIndex]) {
-				npcName = enemyList [targetIndex].npcName;
-				DamageEnemy (targetIndex, damageDealt);
-			} else {
-				npcName = enemyList [enemyList.Count - 1].npcName;
-				DamageEnemy (enemyList.Count - 1, damageDealt);
-			}
-			comments.text = partyList [attackerIndex].npcName + " trifft " + npcName + " und richtet " + damageDealt + " Schaden an.";
-		}
+	private void FinishPlayerAttack () {
 		continueRound = false;
 		fightComments.SetActive (true);
-		attackerIndex++;
-		if (attackerIndex < partyList.Count)
-			StartCoroutine (LetPartyAttack (attackerIndex, targetIndex));
+		if (party.Count > 0)
+			currentFightStage = FightStages.PartyAttack;
 		else
-			if (enemyList.Count > 0)
-				StartCoroutine (LetEnemiesAttack (0));
+			currentFightStage = FightStages.EnemyAttack;
+
+		if (enemies.Count == 0)
+			currentFightStage = FightStages.PlayerWon;
 	}
 
-	private IEnumerator LetEnemiesAttack (int attackerIndex) {
-		while (!continueRound) {
-			yield return new WaitForSeconds (1f);
-		}
-		EnemyAttack (attackerIndex);
-	}
-
-	private void EnemyAttack (int enemyIndex) {
-		int damageDealt = enemyList [enemyIndex].Attack ();
-		if (damageDealt == 0) {
-			comments.text = enemyList [enemyIndex].npcName + " trifft nicht.";
+	private string DamagePlayer (int damage, System.Action callback) {
+		bool playerDead = player.TakeDamage (damage);
+		UpdatePlayerHealthBar ();
+		string comment = player.GetPlayerName () + " und richtet " + (damage - player.GetArmor ()) + " Schaden an.";
+		if (playerDead) {
+			comment = player.GetPlayerName () + " und setzt ihn außer Gefecht.";
+			playerCharacter.GetComponent <Animator> ().SetTrigger ("dies");
+			playerDead = true;
 		} else {
-			int randomTarget = Random.Range (0, partyList.Count+1);
-			if (randomTarget == partyList.Count) { 
-				bool playerDead = player.TakeDamage (damageDealt);
-				playerUI.transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) player.GetCurrentHealth () / (float) player.GetMaximumHealth ();
-				comments.text = enemyList [enemyIndex].npcName + " trifft " + player.GetPlayerName () + " und richtet " + damageDealt + " Schaden an.";
-				if (playerDead) {
-					comments.text = enemyList [enemyIndex].npcName + " trifft " + player.GetPlayerName () + ", richtet " + damageDealt + " Schaden an und schaltet damit ihn damit aus.";
-					PlayerLost ();
-				}
-			} else {
-				comments.text = enemyList [enemyIndex].npcName + " trifft " + partyList [randomTarget].npcName + " und richtet " + damageDealt + " Schaden an.";
-				DamageParty (randomTarget, damageDealt);
+			playerCharacter.GetComponent <Animator> ().SetTrigger ("hit");
+		}
+		callback ();
+		return comment;
+	}
+
+	private string DamageParty (int targetIndex, int damage, System.Action callback) {
+		bool isDead = party [targetIndex].TakeDamage (damage);
+		UpdatePartyHealthBar (targetIndex);
+		string comment = party [targetIndex].npcName + " und richtet " + (damage - party [targetIndex].armor) + " Schaden an.";
+		if (isDead) {
+			comment = party [targetIndex].npcName + " und setzt ihn außer Gefecht.";
+			partyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("dies");
+
+			FightingNPC partyMember = party [targetIndex];
+			party.Remove (partyMember);
+			Destroy (partyMember);
+
+			GameObject partyMemberModel = partyModels [targetIndex];
+			partyModels.Remove (partyMemberModel);
+			Destroy (partyMemberModel, 2f);
+
+			GameObject partyMemberUI = partyUIObjects [targetIndex];
+			partyUIObjects.Remove (partyMemberUI);
+			Destroy (partyMemberUI, 2f);
+		} else {
+			partyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("hit");
+		}
+		callback ();
+		return comment;
+	}
+
+	private string DamageEnemy (int targetIndex, int damage, System.Action callback) {
+		Debug.Log ("ziel ist #" + targetIndex);
+		bool isDead = enemies [targetIndex].TakeDamage (damage);
+		UpdateEnemyHealthBar (targetIndex);
+		string comment = enemies [targetIndex].npcName + " und richtet " + (damage - enemies [targetIndex].armor) + " Schaden an.";
+		if (isDead) {
+			comment = enemies [targetIndex].npcName + " und setzt ihn außer Gefecht.";
+			enemyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("dies");
+
+			FightingNPC enemy = enemies [targetIndex];
+			enemies.Remove (enemy);
+			Destroy (enemy);
+
+			GameObject enemyModel = enemyModels [targetIndex];
+			enemyModels.Remove (enemyModel);
+			Destroy (enemyModel, 2f);
+
+			GameObject enemyUI = enemyUIObjects [targetIndex];
+			enemyUIObjects.Remove (enemyUI);
+			Destroy (enemyUI, 2f);
+
+			for (int i = 0; i < targetButtons.Count; i++) {
+				Destroy (targetButtons [i]);
+			}
+			targetButtons.Clear ();
+			for (int i = 0; i < enemies.Count; i++) {
+				SetupTargetButton (i);
+			}
+
+			partyTarget = Random.Range (0, enemies.Count);
+		} else {
+			enemyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("hit");
+		}
+		callback ();
+		return comment;
+	}
+
+	private void SetupPlayerUI () {
+		playerUI = Instantiate (fightCharacterUI, partyObject.transform);
+		playerUI.transform.Find ("Name").GetComponent <Text> ().text = player.GetPlayerName ();
+		playerUI.transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = playerIcon;
+		UpdatePlayerHealthBar ();
+	}
+
+	private void UpdatePlayerHealthBar () {
+		playerUI.transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) player.GetCurrentHealth () / (float) player.GetMaximumHealth ();
+	}
+
+	private void SetupPartyUI () {
+		for (int i = 0; i < party.Count; i++) {
+			if (i <= partySpawns.transform.childCount) {
+				partyModels.Add(Instantiate (party [i].npcModel));
+				partyModels [i].transform.position = partySpawns.transform.GetChild (i).position;
+				partyModels [i].transform.rotation = partySpawns.transform.GetChild (i).rotation;
+				partyUIObjects.Add(Instantiate (fightCharacterUI, partyObject.transform));
+				partyUIObjects [i].transform.Find ("Name").GetComponent <Text> ().text = party [i].npcName;
+				partyUIObjects [i].transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = party[i].npcIcon;
+				UpdatePartyHealthBar (i);
 			}
 		}
-		continueRound = false;
-		fightComments.SetActive (true);
-		enemyIndex++;
-		Debug.Log (enemyIndex + " of " + enemyList.Count);
-		if (enemyIndex < enemyList.Count)
-			StartCoroutine (LetEnemiesAttack (enemyIndex));
-		else
-			EndRound ();
 	}
 
-	private void DamageParty (int targetIndex, int damage) {
-		bool isDead = partyList [targetIndex].TakeDamage (damage);
-		partyUIObjects [targetIndex].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) partyList [targetIndex].currentHP / (float) partyList [targetIndex].maximumHP;
-		if (isDead) {
-			GameObject partyMemberToRemove = partyObjects [targetIndex];
-			Destroy (partyMemberToRemove);
-			partyObjects.Remove (partyMemberToRemove);
-			GameObject partyMemberUIToRemove = partyUIObjects [targetIndex];
-			Destroy (partyMemberUIToRemove);
-			partyUIObjects.Remove (partyMemberUIToRemove);
-		} 
+	private void UpdatePartyHealthBar (int i) {
+		partyUIObjects [i].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) party [i].currentHP / (float) party[i].maximumHP;
 	}
 
-	private void DamageEnemy (int targetIndex, int damage) {
-		bool isDead = enemyList [targetIndex].TakeDamage (damage);
-		enemyUIObjects [targetIndex].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) enemyList [targetIndex].currentHP / (float) enemyList [targetIndex].maximumHP;
-		Debug.Log (enemyList[targetIndex].npcName + " has " + enemyList[targetIndex].currentHP + " hp left");
-		if (isDead) {
-			GameObject enemyToRemove = enemyObjects [targetIndex];
-			Destroy (enemyToRemove);
-			enemyObjects.Remove (enemyToRemove);
-			GameObject enemyUIToRemove = enemyUIObjects [targetIndex];
-			Destroy (enemyUIToRemove);
-			enemyUIObjects.Remove (enemyUIToRemove);
-			GameObject targetButtonToRemove = targetButtons [targetIndex];
-			Destroy (targetButtonToRemove);
-			targetButtons.Remove (targetButtonToRemove);
-			FightingNPC listEnemyToRemove = enemyList [targetIndex];
-			enemyList.Remove (listEnemyToRemove);
-			if (enemyList.Count == 0) {
-				PlayerWon ();
+	private void SetupEnemyUI () {
+		for (int i = 0; i < enemies.Count; i++) {
+			if (i <= enemySpawns.transform.childCount) {
+				enemyModels.Add(Instantiate (enemies [i].npcModel));
+				enemyModels [i].transform.position = enemySpawns.transform.GetChild (i).position;
+				enemyModels [i].transform.rotation = enemySpawns.transform.GetChild (i).rotation;
+				enemyUIObjects.Add(Instantiate (fightCharacterUI, enemiesObject.transform));
+				enemyUIObjects [i].transform.Find ("Name").GetComponent <Text> ().text = enemies [i].npcName;
+				enemyUIObjects [i].transform.Find ("CharacterSpriteBack/CharacterSprite").GetComponent <Image> ().sprite = enemies [i].npcIcon;
+				UpdateEnemyHealthBar (i);
+				SetupTargetButton (i);
 			}
-			for (int i = 0; i < enemyList.Count; i++) {
-				int localIndex = i;
-				UnityEngine.Events.UnityAction attackSelection = () => {
-					this.Attack (localIndex);
-				};
-				targetButtons [i].transform.Find ("CharacterSpriteButton").GetComponent <Button> ().onClick.AddListener (attackSelection);
-			}
-		} 
+		}
 	}
 
-	public void Heal () {
-
+	private void UpdateEnemyHealthBar (int index) {
+		enemyUIObjects [index].transform.Find ("HealthBar/Fill").GetComponent <Image> ().fillAmount = (float) enemies [index].currentHP / (float) enemies [index].maximumHP;
 	}
 
-	public void Escape () {
-		sceneController.FadeAndLoadFightScene (fight.sceneName, EndFight);
-	}
-
-	private void PlayerLost () {
-		Debug.Log ("player lost");
-		EndFight ();
-	}
-
-	private void PlayerWon () {
-		Debug.Log ("player won");
-		EndFight ();
-	}
-
-	public void EndFight () {
-		playerButtons.SetActive (false);
+	private void SetupTargetButton (int index) {
+		targetButtons.Add(Instantiate (targetButton, targetButtonParent.transform));
+		targetButtons [index].transform.Find ("Name").GetComponent <Text> ().text = enemies [index].npcName;
+		targetButtons [index].transform.Find ("CharacterSpriteButton/CharacterSprite").GetComponent <Image> ().sprite = enemies [index].npcIcon;
+		int localIndex = index;
+		UnityEngine.Events.UnityAction attackSelection = () => {
+			this.PlayerAttack (localIndex);
+		};
+		targetButtons [index].transform.Find ("CharacterSpriteButton").GetComponent <Button> ().onClick.AddListener (attackSelection);
 	}
 }
