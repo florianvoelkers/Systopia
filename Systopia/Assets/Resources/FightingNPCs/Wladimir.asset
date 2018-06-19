@@ -19,3 +19,6 @@ MonoBehaviour:
   accuracy: 50
   armor: 2
   npcModel: {fileID: 1646658365073502, guid: 83e3b4412b64547499ef92e67416e767, type: 2}
+  attackSound: {fileID: 8300000, guid: e202f28e76544e74887e88a49f80aac5, type: 3}
+  hitSound: {fileID: 8300000, guid: 7488e8a938779c241ad3544fb503b2d1, type: 3}
+  dieSound: {fileID: 8300000, guid: 0b634c2142f21de45943aabf9f7aea7d, type: 3}

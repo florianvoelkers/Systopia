@@ -17,6 +17,10 @@ public class Player : MonoBehaviour {
 	[SerializeField] private Stat health;
 	[Header ("Health")]
 	[SerializeField] private IntVariable hp;
+	[Header ("Sounds")]
+	[SerializeField] public AudioClip attackSound;
+	[SerializeField] public AudioClip hitSound;
+	[SerializeField] public AudioClip dieSound;
 
 	private void Start () {
 		stats.ResetBonus ();

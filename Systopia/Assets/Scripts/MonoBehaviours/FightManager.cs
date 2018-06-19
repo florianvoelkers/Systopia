@@ -21,10 +21,16 @@ public class FightManager : MonoBehaviour {
 	[SerializeField] private GameObject loadScreen;
 	[Header ("Scene Objects")]
 	[SerializeField] private SceneController sceneController;
+	[Header ("Sounds")]
+	[SerializeField] private AudioSource backgroundMusic;
+	[SerializeField] private AudioSource soundEffects;
+	[SerializeField] private AudioClip fightWon;
 
 	private string previousSceneName;
 	private ReactionCollection winReaction;
 	private ReactionCollection lossReaction;
+	private AudioClip previousBackgroundMusic;
+	private AudioClip fightMusic;
 
 	private GameObject playerCharacter;
 	private Player player;
@@ -62,6 +68,8 @@ public class FightManager : MonoBehaviour {
 		previousSceneName = fight.sceneName;
 		winReaction = fight.winReaction;
 		lossReaction = fight.lossReaction;
+		previousBackgroundMusic = backgroundMusic.clip;
+		fightMusic = fight.fightMusic;
 		currentFightStage = FightStages.Wait;
 		continueRound = true;
 		playerDead = false;
@@ -76,6 +84,8 @@ public class FightManager : MonoBehaviour {
 		playerCharacter = GameObject.Find ("PlayerCharacter");
 		player = playerCharacter.GetComponent <Player> ();
 		playerButtons.SetActive (true);
+		backgroundMusic.clip = fightMusic;
+		backgroundMusic.Play ();
 
 		SetupEnemyUI ();
 		SetupPartyUI ();
@@ -157,7 +167,8 @@ public class FightManager : MonoBehaviour {
 			Destroy (partyUIObjects [i]);
 		}
 		partyUIObjects.Clear ();
-
+		backgroundMusic.clip = previousBackgroundMusic;
+		backgroundMusic.Play ();
 		settingsIcon.SetActive (true);
 		tabletIcon.SetActive (true);
 	}
@@ -174,6 +185,8 @@ public class FightManager : MonoBehaviour {
 
 	private void PlayerWon () {
 		loadScreen.SetActive (true);
+		soundEffects.clip = fightWon;
+		soundEffects.Play ();
 		EndFightScene ();
 		sceneController.FadeAndLoadFightScene (previousSceneName, FightWonReaction);
 	}
@@ -198,6 +211,10 @@ public class FightManager : MonoBehaviour {
 	private void EnemyAttack () {
 		int damageDealt = enemies [enemyOnTurn].Attack ();
 		enemyModels [enemyOnTurn].GetComponent <Animator> ().SetTrigger ("attack");
+		AudioSource source = enemyModels [enemyOnTurn].GetComponent <AudioSource> ();
+		source.clip = enemies [enemyOnTurn].attackSound;
+		source.Play ();
+
 		if (damageDealt == 0) {
 			comments.text = enemies [enemyOnTurn].npcName + " trifft nicht.";
 			FinishEnemyAttack ();
@@ -230,6 +247,9 @@ public class FightManager : MonoBehaviour {
 	private void PartyAttack () {
 		int damageDealt = party [partyMemberOnTurn].Attack ();
 		partyModels [partyMemberOnTurn].GetComponent <Animator> ().SetTrigger ("attack");
+		AudioSource source = partyModels [partyMemberOnTurn].GetComponent <AudioSource> ();
+		source.clip = party [partyMemberOnTurn].attackSound;
+		source.Play ();
 		if (damageDealt == 0) {
 			comments.text = party [partyMemberOnTurn].npcName + " trifft nicht.";
 			FinishPartyAttack ();
@@ -260,6 +280,9 @@ public class FightManager : MonoBehaviour {
 		partyTarget = targetIndex;
 		int damageDealtByPlayer = player.Attack ();
 		playerCharacter.GetComponent <Animator> ().SetTrigger ("attack");
+		AudioSource source = playerCharacter.GetComponent <AudioSource> ();
+		source.clip = player.attackSound;
+		source.Play ();
 		if (damageDealtByPlayer == 0) {
 			comments.text = player.GetPlayerName () + " trifft nicht.";
 			FinishPlayerAttack ();
@@ -286,9 +309,15 @@ public class FightManager : MonoBehaviour {
 		string comment = player.GetPlayerName () + " und richtet " + (damage - player.GetArmor ()) + " Schaden an.";
 		if (playerDead) {
 			comment = player.GetPlayerName () + " und setzt ihn außer Gefecht.";
+			AudioSource source = playerCharacter.GetComponent <AudioSource> ();
+			source.clip = player.dieSound;
+			source.Play ();
 			playerCharacter.GetComponent <Animator> ().SetTrigger ("dies");
 			playerDead = true;
 		} else {
+			AudioSource source = playerCharacter.GetComponent <AudioSource> ();
+			source.clip = player.hitSound;
+			source.Play ();
 			playerCharacter.GetComponent <Animator> ().SetTrigger ("hit");
 		}
 		callback ();
@@ -301,6 +330,9 @@ public class FightManager : MonoBehaviour {
 		string comment = party [targetIndex].npcName + " und richtet " + (damage - party [targetIndex].armor) + " Schaden an.";
 		if (isDead) {
 			comment = party [targetIndex].npcName + " und setzt ihn außer Gefecht.";
+			AudioSource source = partyModels[targetIndex].GetComponent <AudioSource> ();
+			source.clip = party [targetIndex].dieSound;
+			source.Play ();
 			partyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("dies");
 
 			FightingNPC partyMember = party [targetIndex];
@@ -315,6 +347,9 @@ public class FightManager : MonoBehaviour {
 			partyUIObjects.Remove (partyMemberUI);
 			Destroy (partyMemberUI, 2f);
 		} else {
+			AudioSource source = partyModels[targetIndex].GetComponent <AudioSource> ();
+			source.clip = party [targetIndex].hitSound;
+			source.Play ();
 			partyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("hit");
 		}
 		callback ();
@@ -322,12 +357,14 @@ public class FightManager : MonoBehaviour {
 	}
 
 	private string DamageEnemy (int targetIndex, int damage, System.Action callback) {
-		Debug.Log ("ziel ist #" + targetIndex);
 		bool isDead = enemies [targetIndex].TakeDamage (damage);
 		UpdateEnemyHealthBar (targetIndex);
 		string comment = enemies [targetIndex].npcName + " und richtet " + (damage - enemies [targetIndex].armor) + " Schaden an.";
 		if (isDead) {
 			comment = enemies [targetIndex].npcName + " und setzt ihn außer Gefecht.";
+			AudioSource source = enemyModels[targetIndex].GetComponent <AudioSource> ();
+			source.clip = enemies [targetIndex].dieSound;
+			source.Play ();
 			enemyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("dies");
 
 			FightingNPC enemy = enemies [targetIndex];
@@ -352,6 +389,9 @@ public class FightManager : MonoBehaviour {
 
 			partyTarget = Random.Range (0, enemies.Count);
 		} else {
+			AudioSource source = enemyModels[targetIndex].GetComponent <AudioSource> ();
+			source.clip = enemies [targetIndex].hitSound;
+			source.Play ();
 			enemyModels [targetIndex].GetComponent <Animator> ().SetTrigger ("hit");
 		}
 		callback ();

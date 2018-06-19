@@ -15,6 +15,9 @@ public class FightingNPC : ScriptableObject {
 	public int accuracy;
 	public int armor;
 	public GameObject npcModel;
+	public AudioClip attackSound;
+	public AudioClip hitSound;
+	public AudioClip dieSound;
 
 	public int Attack () {
 		int hitProbability = Random.Range (0, 100);
