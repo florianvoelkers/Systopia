@@ -9,6 +9,7 @@ public class PlayerLocation : ScriptableObject {
 	public string startingPositionName;
 	public bool currentPositionSet;
 	public Vector3 currentPosition;
+	public Quaternion currentRotation;
 	public string currentSceneName;
 
 	public void Reset () {

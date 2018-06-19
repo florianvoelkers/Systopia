@@ -18,6 +18,10 @@ public class FightReaction : Reaction {
 	}
 
 	protected override void ImmediateReaction () {
+		GameObject player = GameObject.Find ("PlayerCharacter");
+		player.GetComponent <PlayerMovement> ().playerLocation.currentPosition = player.transform.position;
+		player.GetComponent <PlayerMovement> ().playerLocation.currentRotation = player.transform.rotation;
+		player.GetComponent <PlayerMovement> ().playerLocation.currentPositionSet = true;
 		fightManager.StartFight (this);
 	}
 }
