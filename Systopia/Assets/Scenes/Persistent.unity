@@ -113,125 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &441473036
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.355596
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.3227587
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.932972
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: menu
-      value: 
-      objectReference: {fileID: 1264067135}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: continueStartButtonText
-      value: 
-      objectReference: {fileID: 1264067136}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: settingsIcon
-      value: 
-      objectReference: {fileID: 1264067138}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: tabletIcon
-      value: 
-      objectReference: {fileID: 1264067137}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: sceneController
-      value: 
-      objectReference: {fileID: 1683313321}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: playerSaveData
-      value: 
-      objectReference: {fileID: 11400000, guid: ccb89a722d1cfa943bd3c0d2c1a13569,
-        type: 2}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: playerLocation
-      value: 
-      objectReference: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e,
-        type: 2}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: characterCreation
-      value: 
-      objectReference: {fileID: 2081781563}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: characterName
-      value: 
-      objectReference: {fileID: 1787936082}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: creationCharacter
-      value: 
-      objectReference: {fileID: 924353882}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: characterCamera
-      value: 
-      objectReference: {fileID: 2078183232}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: persistentCamera
-      value: 
-      objectReference: {fileID: 1039220876}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: characterLight
-      value: 
-      objectReference: {fileID: 807286479}
-    - target: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
-        type: 2}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 1259237918}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 60e0e66c87cd7fe46897d4727d7a652b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &543218503
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +245,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1644784306021424, guid: 60e0e66c87cd7fe46897d4727d7a652b,
     type: 2}
-  m_PrefabInternal: {fileID: 441473036}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
   - component: {fileID: 839349393}
@@ -381,7 +262,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114552093732511310, guid: 60e0e66c87cd7fe46897d4727d7a652b,
     type: 2}
-  m_PrefabInternal: {fileID: 441473036}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839349391}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -415,7 +296,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4627346703061282, guid: 60e0e66c87cd7fe46897d4727d7a652b,
     type: 2}
-  m_PrefabInternal: {fileID: 441473036}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839349391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.355596, y: 2.3227587, z: -2.932972}

@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour {
 		Transform startingPosition = StartingPosition.FindStartingPosition (startingPositionName);
 		if (playerLocation.currentPositionSet) {
 			startingPosition.position = playerLocation.currentPosition;
+			startingPosition.rotation = playerLocation.currentRotation;
 			playerLocation.startingPositionName = "";
 		}
 

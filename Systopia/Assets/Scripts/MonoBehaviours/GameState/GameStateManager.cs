@@ -8,9 +8,8 @@ using UnityEngine.UI;
 /*
  * What needs saving:
  * 		- All Conditions
- * 		- Player: HP, Inventory, Equipment, Experience, Money, Quests, Stats
+ * 		- Player: HP, Inventory, Equipment, Experience, Money, Quests, Stats, Location
  * 		- All Locations
- * 		- PlayerLocation: currently missing
  */
 public class GameStateManager : MonoBehaviour {
 
@@ -127,6 +126,7 @@ public class GameStateManager : MonoBehaviour {
 	public void SaveGame () {
 		player = GameObject.Find ("PlayerCharacter");
 		playerLocation.currentPosition = player.transform.position;
+		playerLocation.currentRotation = player.transform.rotation;
 		playerLocation.currentPositionSet = true;
 		try {
 			if (!Directory.Exists (savePath)) {
