@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 1039220879}
   - component: {fileID: 1039220878}
   - component: {fileID: 1039220877}
+  - component: {fileID: 1039220880}
   m_Layer: 0
   m_Name: PersistentCamera
   m_TagString: Untagged
@@ -382,6 +383,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1039220880
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039220876}
+  m_Enabled: 1
 --- !u!1 &1175401279
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,12 +425,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175401279}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1abb1168473a00b45b567a1b15082b78, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -575,10 +583,11 @@ Prefab:
       propertyPath: sceneController
       value: 
       objectReference: {fileID: 1683313321}
-    - target: {fileID: 1955224887794284, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114710469239866066, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 1175401281}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
   m_IsPrefabParent: 0

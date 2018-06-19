@@ -309,6 +309,7 @@ MonoBehaviour:
   fightSceneName: TechnoWaffenlagerFight
   winReaction: {fileID: 502038537}
   lossReaction: {fileID: 1564722938}
+  fightMusic: {fileID: 8300000, guid: 76a675d9e82ee44458e04360886fbb04, type: 3}
 --- !u!1 &206852394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,7 +2336,6 @@ GameObject:
   - component: {fileID: 628148446}
   - component: {fileID: 628148445}
   - component: {fileID: 628148444}
-  - component: {fileID: 628148443}
   - component: {fileID: 628148448}
   - component: {fileID: 628148447}
   m_Layer: 0
@@ -2345,13 +2345,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &628148443
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 628148442}
-  m_Enabled: 1
 --- !u!124 &628148444
 Behaviour:
   m_ObjectHideFlags: 0

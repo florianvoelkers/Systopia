@@ -10,6 +10,7 @@ public class FightReaction : Reaction {
 	public string fightSceneName;
 	public ReactionCollection winReaction;
 	public ReactionCollection lossReaction;
+	public AudioClip fightMusic;
 
 	private FightManager fightManager;
 

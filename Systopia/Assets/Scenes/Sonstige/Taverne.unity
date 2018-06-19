@@ -7551,7 +7551,6 @@ GameObject:
   - component: {fileID: 550421819}
   - component: {fileID: 550421818}
   - component: {fileID: 550421817}
-  - component: {fileID: 550421816}
   - component: {fileID: 550421815}
   - component: {fileID: 550421814}
   m_Layer: 0
@@ -7588,13 +7587,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
---- !u!81 &550421816
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 550421813}
-  m_Enabled: 1
 --- !u!124 &550421817
 Behaviour:
   m_ObjectHideFlags: 0
@@ -28641,7 +28633,6 @@ GameObject:
   - component: {fileID: 2129557453}
   - component: {fileID: 2129557452}
   - component: {fileID: 2129557451}
-  - component: {fileID: 2129557450}
   - component: {fileID: 2129557449}
   - component: {fileID: 2129557448}
   m_Layer: 0
@@ -28678,13 +28669,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
---- !u!81 &2129557450
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2129557447}
-  m_Enabled: 1
 --- !u!124 &2129557451
 Behaviour:
   m_ObjectHideFlags: 0
