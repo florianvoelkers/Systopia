@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public void DisplayDialog (List <DialogueNode> dialogueNodes, string npcName) {
+		Debug.Log ("display dialogue");
 		nodes = dialogueNodes;
 		currentNodeId = 0;
 		currentSentence = -1;

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
+  m_Name: TechnokratenSniper
+  m_EditorClassIdentifier: 
+  itemName: "Technokraten Scharfsch\xFCtzengewehr"
+  itemDescription: "Scharfsch\xFCtzengewehr der Technokraten"
+  itemValue: 300
+  itemSprite: {fileID: 21300000, guid: 429d6bd8118a2844cad35bd8b1e13156, type: 3}
+  itemObject: {fileID: 0}
+  isStackable: 0
+  isEquipped: 0
+  bonusses:
+  - {fileID: 114370251785481098}
+  - {fileID: 114183440414812414}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114183440414812414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus1
+  m_EditorClassIdentifier: 
+  bonus: 40
+  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114370251785481098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 40
+  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
+  m_Name: AvantgardistenPistol
+  m_EditorClassIdentifier: 
+  itemName: Avantgardisten Pistole
+  itemDescription: Standard-Pistole der Avantgardisten
+  itemValue: 150
+  itemSprite: {fileID: 21300000, guid: d7f93f2b514d65744bff7f5b0762ef0f, type: 3}
+  itemObject: {fileID: 0}
+  isStackable: 0
+  isEquipped: 0
+  bonusses:
+  - {fileID: 114915535289928472}
+  - {fileID: 114221880404134020}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114221880404134020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus1
+  m_EditorClassIdentifier: 
+  bonus: 25
+  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114915535289928472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 25
+  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
