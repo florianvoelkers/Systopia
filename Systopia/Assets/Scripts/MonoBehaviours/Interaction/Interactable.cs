@@ -23,12 +23,12 @@ public class Interactable : MonoBehaviour {
 	}
 
 	public void Interact () {
+		Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 		for (int i = 0; i < conditionCollections.Length; i++) {
 			if (conditionCollections [i].CheckAndReact ())
 				return;
 		}
 		defaultReactionCollection.React ();
-		Cursor.SetCursor (null, Vector2.zero, CursorMode.Auto);
 	}
 
 	public void ShowCustomCursor () {
