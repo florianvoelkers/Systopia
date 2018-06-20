@@ -9,15 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5af5815d906179b45b471c2ac281de2b, type: 3}
-  m_Name: HealthPotion
+  m_Name: Beer
   m_EditorClassIdentifier: 
-  itemName: Health Potion
-  itemDescription: "Ein besonderer Heiltrank, durch den meine erlittenen Wunden auf
-    wundersame Art und Weise geheilt werden k\xF6nnen"
-  itemValue: 100
-  itemSprite: {fileID: 21300000, guid: 36d7bca7fe122ec4597305213a72bb6f, type: 3}
+  itemName: "Tavernen Br\xE4u"
+  itemDescription: "In einer rauen Welt ist Bier eines der wenigen genie\xDFbaren
+    Getr\xE4nke. Dieses Bier wurde speziell in der Taverne gebraut und bietet aufgrund
+    seiner geheimen Rezeptur besondere Heilkr\xE4fte."
+  itemValue: 5
+  itemSprite: {fileID: 21300000, guid: 0b2cf6187273d4b428914ff1fa6c506e, type: 3}
   itemObject: {fileID: 0}
   isStackable: 1
   isEquipped: 0
-  recoveryValue: 50
+  recoveryValue: 25
   recoveryStat: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}

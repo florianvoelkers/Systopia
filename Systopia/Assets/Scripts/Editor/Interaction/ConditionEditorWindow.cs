@@ -9,6 +9,7 @@ public class ConditionEditorWindow : EditorWindow {
 
 	private AllConditions allConditions;
 	private bool showConditions = true;
+	private Vector2 scrollPosition;
 
 	[MenuItem ("My Tools/Condition Editor")]
 	static void Init () {
@@ -27,7 +28,7 @@ public class ConditionEditorWindow : EditorWindow {
 	}
 
 	void OnGUI () {
-
+		scrollPosition = EditorGUILayout.BeginScrollView (scrollPosition, false, false);
 		GUILayout.BeginHorizontal ();
 		GUILayout.Label ("Condition Editor", labelStyle);
 		GUILayout.EndHorizontal ();
@@ -60,6 +61,7 @@ public class ConditionEditorWindow : EditorWindow {
 				GUILayout.EndHorizontal ();
 			}
 		}
+		EditorGUILayout.EndScrollView ();
 	}
 
 	private void AddNewCondition () {

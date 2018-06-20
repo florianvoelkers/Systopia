@@ -5,17 +5,23 @@ using UnityEngine;
 public class InteractableEditor : EditorWithSubEditors <ConditionCollectionEditor, ConditionCollection> {
 
 	private Interactable interactable;
+	private SerializedProperty interactionCursorProperty;
+	private SerializedProperty interactionNameProperty;
 	private SerializedProperty interactionLocationProperty;
 	private SerializedProperty collectionsProperty;
 	private SerializedProperty defaultReactionCollectionProperty;
 
 	private const float collectionButtonWidth = 125f;
+	private const string interactablePropInteractionCursorName = "interactionCursor";
+	private const string interactablePropInteractionNameName = "interactionName";
 	private const string interactablePropInteractionLocationName = "interactionLocation";
 	private const string interactablePropConditionCollectionsName = "conditionCollections";
 	private const string interactactablePropDefaultReactionCollectionName = "defaultReactionCollection";
 
 	private void OnEnable () {
 		interactable = (Interactable)target;
+		interactionCursorProperty = serializedObject.FindProperty (interactablePropInteractionCursorName);
+		interactionNameProperty = serializedObject.FindProperty (interactablePropInteractionNameName);
 		collectionsProperty = serializedObject.FindProperty (interactablePropConditionCollectionsName);
 		interactionLocationProperty = serializedObject.FindProperty (interactablePropInteractionLocationName);
 		defaultReactionCollectionProperty = serializedObject.FindProperty (interactactablePropDefaultReactionCollectionName);
@@ -35,7 +41,8 @@ public class InteractableEditor : EditorWithSubEditors <ConditionCollectionEdito
 		serializedObject.Update ();
 
 		CheckAndCreateSubEditors (interactable.conditionCollections);
-
+		EditorGUILayout.PropertyField (interactionCursorProperty);
+		EditorGUILayout.PropertyField (interactionNameProperty);
 		EditorGUILayout.PropertyField (interactionLocationProperty);
 		for (int i = 0; i < subEditors.Length; i++) {
 			subEditors [i].OnInspectorGUI ();

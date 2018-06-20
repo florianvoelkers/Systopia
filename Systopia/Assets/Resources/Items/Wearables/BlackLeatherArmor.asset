@@ -9,20 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
-  m_Name: Boots
+  m_Name: BlackLeatherArmor
   m_EditorClassIdentifier: 
-  itemName: Schuhe
-  itemDescription: describe it here
-  itemValue: 200
-  itemSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  itemName: "Leichte schwarze Lederr\xFCstung"
+  itemDescription: "Eine leichte schwarze Lederr\xFCstung, die eine sehr hohe Beweglichkeit
+    bietet und etwas Schutz vor Angriffen."
+  itemValue: 100
+  itemSprite: {fileID: 21300000, guid: 368ef433d6023c840a8cb0bbe81735d5, type: 3}
   itemObject: {fileID: 0}
   isStackable: 0
-  isEquipped: 0
-  wearableSlot: 2
+  isEquipped: 1
+  wearableSlot: 1
   bonusses:
-  - {fileID: 114933573646332860}
-  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
---- !u!114 &114933573646332860
+  - {fileID: 114685867588114198}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114685867588114198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -33,5 +34,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
   m_Name: bonus0
   m_EditorClassIdentifier: 
-  bonus: 1
+  bonus: 3
   stat: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

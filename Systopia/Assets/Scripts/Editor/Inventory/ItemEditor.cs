@@ -17,6 +17,7 @@ public class ItemEditor : EditorWindow {
 	private string newItemName = "newItem";
 
 	private PlayerInventory playerInventory;
+	private Vector2 scrollPosition;
 
 	[MenuItem ("My Tools/Item Editor")]
 	static void Init () {
@@ -42,7 +43,7 @@ public class ItemEditor : EditorWindow {
 	}
 
 	void OnGUI () {
-
+		scrollPosition = EditorGUILayout.BeginScrollView (scrollPosition, false, false);
 		GUILayout.BeginHorizontal ();
 		GUILayout.Label ("Item Editor", labelStyle);
 		GUILayout.EndHorizontal ();
@@ -99,6 +100,7 @@ public class ItemEditor : EditorWindow {
 		}
 
 		DisplayItemProperties ();
+		EditorGUILayout.EndScrollView ();
 	}
 
 	private void CreateConsumable () {

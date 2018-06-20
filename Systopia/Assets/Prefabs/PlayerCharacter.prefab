@@ -563,9 +563,11 @@ GameObject:
   - component: {fileID: 195720383842901896}
   - component: {fileID: 114943047893154248}
   - component: {fileID: 114866145199403990}
+  - component: {fileID: 65767965533456376}
+  - component: {fileID: 54197813480768090}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2640,6 +2642,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54197813480768090
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463163123565866}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65767965533456376
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463163123565866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1652184, y: 7.320848, z: 1}
+  m_Center: {x: -0.028092982, y: 3.160424, z: -2.424564e-10}
 --- !u!95 &95336786865647740
 Animator:
   serializedVersion: 3
@@ -2679,6 +2708,9 @@ MonoBehaviour:
   accuracy: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   health: {fileID: 114019946124218352, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   hp: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}
+  attackSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  dieSound: {fileID: 0}
 --- !u!114 &114943047893154248
 MonoBehaviour:
   m_ObjectHideFlags: 1
