@@ -23,7 +23,7 @@ public class TextReactionEditor : ReactionEditor {
 	protected override void DrawReaction () {
 		EditorGUILayout.BeginHorizontal ();
 		EditorGUILayout.LabelField ("Message", GUILayout.Width (EditorGUIUtility.labelWidth - areaWidthOffset));
-		messageProperty.stringValue = EditorGUILayout.TextArea (messageProperty.stringValue, GUILayout.Height (EditorGUIUtility.singleLineHeight * messageGUILines));
+		messageProperty.stringValue = GUILayout.TextArea (messageProperty.stringValue, GUILayout.Height (EditorGUIUtility.singleLineHeight * messageGUILines));
 		EditorGUILayout.EndHorizontal ();
 
 		EditorGUILayout.PropertyField (textColorProperty);

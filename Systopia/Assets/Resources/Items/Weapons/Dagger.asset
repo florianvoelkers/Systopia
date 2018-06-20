@@ -9,20 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
-  m_Name: Sword
+  m_Name: Dagger
   m_EditorClassIdentifier: 
-  itemName: Schwert
-  itemDescription: describe it here
-  itemValue: 500
-  itemSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  itemName: Dolch
+  itemDescription: Ein einfacher Dolch, mit dem man sehr viel Schaden anrichtet, wenn
+    man trifft. Jedoch ist dies aufgrund der geringen Reichweite sehr schwierig.
+  itemValue: 50
+  itemSprite: {fileID: 21300000, guid: 858bcc40ce8211640b5f99be1c5ae016, type: 3}
   itemObject: {fileID: 0}
   isStackable: 0
   isEquipped: 0
   bonusses:
-  - {fileID: 114330225952992906}
-  - {fileID: 114712727687444714}
-  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
---- !u!114 &114330225952992906
+  - {fileID: 114004114543659160}
+  - {fileID: 114325707862579620}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114004114543659160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -33,9 +34,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
   m_Name: bonus0
   m_EditorClassIdentifier: 
-  bonus: 10
-  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
---- !u!114 &114712727687444714
+  bonus: 35
+  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114325707862579620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -46,5 +47,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
   m_Name: bonus1
   m_EditorClassIdentifier: 
-  bonus: 17
-  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  bonus: 10
+  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

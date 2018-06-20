@@ -38,6 +38,10 @@ public class GameStateManager : MonoBehaviour {
 	[SerializeField] private GameObject characterLight;
 	[SerializeField] private GameObject characterCamera;
 	[SerializeField] private GameObject persistentCamera;
+	[Header ("Player Start Equipment")]
+	[SerializeField] private Item [] playerStartInventory;
+	[SerializeField] private Wearable [] playerStartEquipment;
+	[SerializeField] private Weapon playerStartWeapon;
 
 	private GameObject player;
 	public static bool isPaused = false;
@@ -53,7 +57,14 @@ public class GameStateManager : MonoBehaviour {
 	public void StartContinueGame () {
 		if (!gameStarted) {
 			ResetPlayer ();
-			//equip player with standard items
+			for (int i = 0; i < playerStartInventory.Length; i++) {
+				playerInventory.AddItem (playerStartInventory [i]);
+			}
+			for (int i = 0; i < playerStartEquipment.Length; i++) {
+				playerEquipment.EquipWearable (playerStartEquipment [i], playerStartEquipment [i].wearableSlot);
+			}
+			playerEquipment.EquipWeapon (playerStartWeapon);
+			playerMoney.SetMoney (1000);
 			ShowCharacterCreation ();
 		} else {
 			Unpause ();

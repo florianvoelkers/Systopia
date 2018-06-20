@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
+  m_Name: BlackLeatherBoots
+  m_EditorClassIdentifier: 
+  itemName: Schwarze Lederstiefel
+  itemDescription: "Schwarze Lederstiefel, die zur Standard-Ausr\xFCstung des Helden
+    geh\xF6ren. Sie sind sehr gem\xFCtlich und bieten guten Halt."
+  itemValue: 50
+  itemSprite: {fileID: 21300000, guid: 9656f01ca6553d24294d00a4bba539a0, type: 3}
+  itemObject: {fileID: 0}
+  isStackable: 0
+  isEquipped: 1
+  wearableSlot: 2
+  bonusses:
+  - {fileID: 114927098504287100}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114927098504287100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
+  m_Name: bonus0
+  m_EditorClassIdentifier: 
+  bonus: 1
+  stat: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

@@ -291,6 +291,22 @@ MonoBehaviour:
   characterLight: {fileID: 807286479}
   characterCamera: {fileID: 2078183232}
   persistentCamera: {fileID: 1039220876}
+  playerStartInventory:
+  - {fileID: 11400000, guid: f91c26a77cc34fa4aad81943bc05a0ad, type: 2}
+  - {fileID: 11400000, guid: d8a3c340173a71f4f8cc4760904628f8, type: 2}
+  - {fileID: 11400000, guid: 5f332a30dfd5b144c8ce1c0cc539bf64, type: 2}
+  - {fileID: 11400000, guid: 5becd105919016c49b468e9a8b962ad1, type: 2}
+  - {fileID: 11400000, guid: 11628054f20da3c4c95154634e1b6ade, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  playerStartEquipment:
+  - {fileID: 11400000, guid: f91c26a77cc34fa4aad81943bc05a0ad, type: 2}
+  - {fileID: 11400000, guid: d8a3c340173a71f4f8cc4760904628f8, type: 2}
+  - {fileID: 11400000, guid: 5f332a30dfd5b144c8ce1c0cc539bf64, type: 2}
+  playerStartWeapon: {fileID: 11400000, guid: 11628054f20da3c4c95154634e1b6ade, type: 2}
 --- !u!4 &839349393
 Transform:
   m_ObjectHideFlags: 0

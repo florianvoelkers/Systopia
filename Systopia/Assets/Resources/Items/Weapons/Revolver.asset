@@ -8,22 +8,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d19bd6012fcb8b842acc8a929df865fa, type: 3}
-  m_Name: Armor of Health
+  m_Script: {fileID: 11500000, guid: fcff5c21c6056f449b83c042764baf3e, type: 3}
+  m_Name: Revolver
   m_EditorClassIdentifier: 
-  itemName: "R\xFCstung des Lebens"
-  itemDescription: Gibt ne Menge Leben
-  itemValue: 1000
-  itemSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  itemName: Revolver
+  itemDescription: "Ein t\xF6dlicher Revolver, mit dem man seine Ziele pr\xE4zise
+    verwunden kann. Aufgrund des geringen Kalibers ist der Schaden geringer als bei
+    anderen Schusswaffen."
+  itemValue: 100
+  itemSprite: {fileID: 21300000, guid: f4aa0c4039feead439e7ee7a881456ef, type: 3}
   itemObject: {fileID: 0}
   isStackable: 0
-  isEquipped: 0
-  wearableSlot: 1
+  isEquipped: 1
   bonusses:
-  - {fileID: 114520553334023350}
-  - {fileID: 114086321889392118}
-  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
---- !u!114 &114086321889392118
+  - {fileID: 114831080029289270}
+  - {fileID: 114159282151460634}
+  playerEquipment: {fileID: 0}
+--- !u!114 &114159282151460634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -34,9 +35,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
   m_Name: bonus1
   m_EditorClassIdentifier: 
-  bonus: 17
-  stat: {fileID: 114431536265853478, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
---- !u!114 &114520553334023350
+  bonus: 30
+  stat: {fileID: 114388060018618082, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+--- !u!114 &114831080029289270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -47,5 +48,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045d0cb1f704c7149a9df3cbf54b0f34, type: 3}
   m_Name: bonus0
   m_EditorClassIdentifier: 
-  bonus: 100
-  stat: {fileID: 114019946124218352, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
+  bonus: 20
+  stat: {fileID: 114736054185571480, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}

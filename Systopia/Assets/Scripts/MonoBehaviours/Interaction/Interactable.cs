@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour {
 		font = Resources.Load ("Fonts/Modern Sans Serif") as Font;
 		infoStyle = new GUIStyle ();
 		infoStyle.normal.textColor = Color.white;
-		infoStyle.alignment = TextAnchor.MiddleCenter;
+		infoStyle.alignment = TextAnchor.MiddleLeft;
 		infoStyle.font = font;
 		infoStyle.fontSize = 23;
 	}
@@ -43,7 +43,7 @@ public class Interactable : MonoBehaviour {
 
 	void OnGUI () {
 		if (showInteractionName) {
-			GUI.Label (new Rect (Input.mousePosition.x + 10f, Screen.height - Input.mousePosition.y - 10f, 250, 60), interactionName, infoStyle);
+			GUI.Label (new Rect (Input.mousePosition.x + 50f, Screen.height - Input.mousePosition.y - 10f, 250, 60), interactionName, infoStyle);
 		}
 	}
 }

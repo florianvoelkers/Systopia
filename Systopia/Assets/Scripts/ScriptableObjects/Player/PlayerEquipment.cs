@@ -92,6 +92,7 @@ public class PlayerEquipment : ScriptableObject {
 		if (headItem)
 			UnequipHead ();
 		headItem = itemToEquip;
+		headItem.isEquipped = true;
 		CalculateStatFromEquippedWearable (headItem);
 	}
 
@@ -113,6 +114,7 @@ public class PlayerEquipment : ScriptableObject {
 
 	public void UnequipHead () {
 		CalculateStatsFromUnequipWearable (headItem);
+		headItem.isEquipped = false;
 		headItem = null;
 	}
 
@@ -120,11 +122,13 @@ public class PlayerEquipment : ScriptableObject {
 		if (bodyItem)
 			UnequipBody ();
 		bodyItem = itemToEquip;
+		bodyItem.isEquipped = true;
 		CalculateStatFromEquippedWearable (bodyItem);
 	}
 
 	public void UnequipBody () {
 		CalculateStatsFromUnequipWearable (bodyItem);
+		bodyItem.isEquipped = false;
 		bodyItem = null;
 	}
 
@@ -132,11 +136,13 @@ public class PlayerEquipment : ScriptableObject {
 		if (legsItem)
 			UnequipLegs ();
 		legsItem = itemToEquip;
+		legsItem.isEquipped = true;
 		CalculateStatFromEquippedWearable (legsItem);
 	}
 
 	public void UnequipLegs () {
 		CalculateStatsFromUnequipWearable (legsItem);
+		legsItem.isEquipped = false;
 		legsItem = null;
 	}
 
@@ -145,11 +151,13 @@ public class PlayerEquipment : ScriptableObject {
 		if (fingerItem)
 			UnequipFinger ();
 		fingerItem = itemToEquip;
+		fingerItem.isEquipped = true;
 		CalculateStatFromEquippedWearable (fingerItem);
 	}
 
 	public void UnequipFinger () {
 		CalculateStatsFromUnequipWearable (fingerItem);
+		fingerItem.isEquipped = false;
 		fingerItem = null;
 	}
 
@@ -157,6 +165,7 @@ public class PlayerEquipment : ScriptableObject {
 		if (weapon)
 			UnequipWeapon ();
 		weapon = itemToEquip;
+		weapon.isEquipped = true;
 		CalculateStatFromEquippedWeapon (weapon);
 	}
 
@@ -166,6 +175,7 @@ public class PlayerEquipment : ScriptableObject {
 				weapon.bonusses [i].stat.RemoveBonus (weapon.bonusses [i].bonus);
 			}
 		}
+		weapon.isEquipped = false;
 		weapon = null;
 	}
 }
