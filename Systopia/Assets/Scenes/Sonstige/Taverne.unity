@@ -204,6 +204,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 95838416}
   - {fileID: 1870212482}
+--- !u!114 &7204830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &10472418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2396,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 158248952}
   m_Mesh: {fileID: 4300576, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &159693259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee5db45f514068459753b9f2d3df8ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: dca60d799f1dfee4f80b799fa8d2911c, type: 2}
 --- !u!1 &163527126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1650319881}
+  - {fileID: 7204830}
 --- !u!1 &164051856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,6 +3066,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201097756}
   m_Mesh: {fileID: 4300172, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &203031152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Ich warte hier auf dich bis du den Artikel gefunden hast. Ich glaube an
+    dich!
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!114 &206709797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3969,6 +4013,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247784239}
   m_Mesh: {fileID: 4300120, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &249877555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Der Zeitungsartikel sollte sich bei den Technokraten im Lager f\xFCr wertvolle
+    Artefakte befinden."
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &252478403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,6 +4324,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &259051921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 259051922}
+  - component: {fileID: 259051923}
+  m_Layer: 0
+  m_Name: startQuest3-4Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259051922
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259051921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 701133333}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259051923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259051921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1404922552}
+  - {fileID: 781247967}
+  - {fileID: 2106992419}
 --- !u!1 &262106668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4573,7 +4676,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1033971313}
+  - {fileID: 2145957548}
 --- !u!114 &281760989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5265,6 +5370,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327215407}
   m_Mesh: {fileID: 4300566, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &333939723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: da95bdb55310a834eb6f5ebcff08445e, type: 3}
+  delay: 0
 --- !u!1 &334248098
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,6 +6206,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 363271162}
   m_Mesh: {fileID: 4300070, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &367220005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 6065cae709995aa4284d0d0458583d34, type: 2}
+  state: {fileID: 114122664967470128, guid: 6065cae709995aa4284d0d0458583d34, type: 2}
 --- !u!1 &367392253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,7 +7401,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1249263410}
   m_Father: {fileID: 595432227}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7284,7 +7417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1002078921}
 --- !u!1001 &417795297
 Prefab:
   m_ObjectHideFlags: 0
@@ -10884,6 +11018,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 606911607}
   m_Mesh: {fileID: 4300214, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &607697576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114236911489417814, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!114 &608405201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12818,7 +12966,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 259051922}
   m_Father: {fileID: 595432227}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12833,7 +12982,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1188234169}
+  - {fileID: 948288163}
 --- !u!114 &705154799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13221,6 +13372,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 729512004}
   m_Mesh: {fileID: 4300478, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &730771074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 730771075}
+  - component: {fileID: 730771076}
+  m_Layer: 0
+  m_Name: startQuest3-3Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730771075
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730771074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828160061}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730771076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730771074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1059078998}
+  - {fileID: 607697576}
 --- !u!1 &734033513
 GameObject:
   m_ObjectHideFlags: 0
@@ -14011,6 +14205,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778992375}
   m_Mesh: {fileID: 4300142, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &781247967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114192914643168618, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &783213227
 GameObject:
   m_ObjectHideFlags: 0
@@ -14159,6 +14367,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789533234}
   m_Mesh: {fileID: 4300726, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &791090045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee5db45f514068459753b9f2d3df8ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 90f4c4399eb16394590cf671c1d92f8c, type: 2}
 --- !u!1 &796205752
 GameObject:
   m_ObjectHideFlags: 0
@@ -14410,7 +14631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 249877555}
+  - {fileID: 1034564244}
 --- !u!1 &816396296
 GameObject:
   m_ObjectHideFlags: 0
@@ -14759,7 +14982,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 730771075}
   m_Father: {fileID: 595432227}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14774,7 +14998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1760030717}
+  - {fileID: 333939723}
 --- !u!1 &834434019
 GameObject:
   m_ObjectHideFlags: 0
@@ -16341,6 +16567,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &948288163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: da95bdb55310a834eb6f5ebcff08445e, type: 3}
+  delay: 0
 --- !u!1 &954651642
 GameObject:
   m_ObjectHideFlags: 0
@@ -16854,7 +17094,7 @@ MonoBehaviour:
       es auf deiner Karte sehen."
     - Pass auf dich auf!
     options: []
-  - nodeId: 1
+  - nodeId: 2
     sentences:
     - "Oh, schade. Aber vielleicht ja sp\xE4ter."
     options: []
@@ -17053,6 +17293,38 @@ MonoBehaviour:
   - {fileID: 1119741029}
   - {fileID: 1661522695}
   - {fileID: 87914280}
+--- !u!114 &1002078921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Verschrobener alter Mann
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - Du hast den Artikel? Zeig her.
+    options:
+    - text: (Artikel geben)
+      destinationNodeId: 1
+      reactionCollection: {fileID: 1249263411}
+    - text: (Artikel behalten)
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Oh ja...dankesch\xF6n!"
+    options: []
+  - nodeId: 2
+    sentences:
+    - Oh na gut. Aber ich war doch so kurz davor mich wieder an alles zu erinnern.
+      Schade.
+    options: []
 --- !u!1 &1003728152
 GameObject:
   m_ObjectHideFlags: 0
@@ -17159,6 +17431,20 @@ Transform:
   m_Father: {fileID: 1353596512}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007854225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: 8d257c06e2d167e47b4302ac15923601, type: 3}
+  delay: 0
 --- !u!1 &1010144860
 GameObject:
   m_ObjectHideFlags: 0
@@ -17499,6 +17785,20 @@ MonoBehaviour:
   message: Ich hoffe ich kann mich wieder erinnern, wenn du das Buch gefunden hast.
   textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
   delay: 0
+--- !u!114 &1033971313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Na los. Finde Klaus in den Ruinen der alten HAW!
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &1034439549
 GameObject:
   m_ObjectHideFlags: 0
@@ -17572,6 +17872,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1034439549}
   m_Mesh: {fileID: 4300132, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1034564244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!114 &1047049842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17659,6 +17973,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1056996622}
   m_Mesh: {fileID: 4300204, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1059078998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca0f849530e0974ebe028429036ae89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 17417d3e863a3d440b93f49814f93709, type: 2}
+  playerQuests: {fileID: 11400000, guid: 1c994f106db14914f9383d4f1cda22e6, type: 2}
 --- !u!1 &1062839820
 GameObject:
   m_ObjectHideFlags: 0
@@ -18865,6 +19192,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110833254}
   m_Mesh: {fileID: 4300718, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1113917161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 17417d3e863a3d440b93f49814f93709, type: 2}
+  state: {fileID: 114986103402976444, guid: 17417d3e863a3d440b93f49814f93709, type: 2}
 --- !u!1 &1116623170
 GameObject:
   m_ObjectHideFlags: 0
@@ -20106,6 +20446,47 @@ MonoBehaviour:
   condition: {fileID: 114054524776010630, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
     type: 2}
   satisfied: 1
+--- !u!114 &1188234169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Verschrobener alter Mann
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - "Oh ja, das ist die andere H\xE4lfte. Sie passen genau! Wunderbar. Wenn man
+      nun...(er setzt die beiden H\xE4lften des Artieksl zusammen)"
+    - 'Jaaaa! Das ist es. (er liest aufmerksam) '
+    - "Eine k\xFCnstliche Intelligenz. Daran haben sie gearbeitet. Aber wer ist dieser
+      junge Mann dort?"
+    - Ich glaube...ja, ich habe ihn doch schon einmal irgendwo gesehen. Damals...auf
+      der Suche nach dem Buch. Ja!
+    - "Ich bin mir sicher, dass ich ihn gesehen habe. Er ist ins alte Kellergew\xF6lbe
+      der HAW gegangen. Ja, da muss er sein. Es k\xF6nnte wirklich alles wieder gut
+      machen."
+    - "Kannst du ihn f\xFCr uns finden? "
+    options:
+    - text: "Nat\xFCrlich finde ich ihn."
+      destinationNodeId: 1
+      reactionCollection: {fileID: 259051923}
+    - text: Ich glaube lieber nicht.
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - Na dann los! Schnell! Finde ihn!
+    options: []
+  - nodeId: 2
+    sentences:
+    - "Ich hoffe du \xE4nderst noch deine Meinung! Komm zu mir, wenn es soweit ist."
+    options: []
 --- !u!114 &1189751855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21371,6 +21752,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248820354}
   m_Mesh: {fileID: 4300754, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1249263409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1249263410}
+  - component: {fileID: 1249263411}
+  m_Layer: 0
+  m_Name: hasGivenSecondPartOfArticleReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1249263410
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1249263409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 416052794}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249263411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1249263409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 159693259}
+  - {fileID: 1113917161}
+  - {fileID: 1370784943}
+  - {fileID: 2142974600}
 --- !u!114 &1252522386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21663,7 +22089,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1483408675}
   m_Father: {fileID: 595432227}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21678,7 +22105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1577415460}
+  - {fileID: 2033696557}
 --- !u!1 &1275433012
 GameObject:
   m_ObjectHideFlags: 0
@@ -23218,6 +23647,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1369746209}
   m_Mesh: {fileID: 4300728, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1370784943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: 8d257c06e2d167e47b4302ac15923601, type: 3}
+  delay: 0
 --- !u!1 &1371840825
 GameObject:
   m_ObjectHideFlags: 0
@@ -23959,6 +24402,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1395474591}
   m_Mesh: {fileID: 4300534, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1399544908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbd274679258c840a54fc2b1b8689b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 114111292329632910, guid: b5ee5b8cc990bb14584f73f364080cd1, type: 2}
+  locationDiscoveredState: 1
 --- !u!1 &1402493610
 GameObject:
   m_ObjectHideFlags: 0
@@ -24105,6 +24561,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1403795687}
   m_Mesh: {fileID: 4300234, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1404922552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbd274679258c840a54fc2b1b8689b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 114085606460504980, guid: b5ee5b8cc990bb14584f73f364080cd1, type: 2}
+  locationDiscoveredState: 1
 --- !u!1 &1413986106
 GameObject:
   m_ObjectHideFlags: 0
@@ -24281,6 +24750,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429989548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &1430099221
 GameObject:
   m_ObjectHideFlags: 0
@@ -25251,6 +25734,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1481045197}
   m_Mesh: {fileID: 4300000, guid: bfd2bdc41951efc40903a9505e12b6fc, type: 3}
+--- !u!1 &1483408674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1483408675}
+  - component: {fileID: 1483408676}
+  m_Layer: 0
+  m_Name: hasGivenFirstPartOfArticleReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483408675
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483408674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1274820306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483408676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483408674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1751231209}
+  - {fileID: 367220005}
+  - {fileID: 1007854225}
+  - {fileID: 791090045}
 --- !u!114 &1489709094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25767,6 +26295,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 1189751855}
   - {fileID: 1880842434}
+  - {fileID: 1399544908}
 --- !u!1 &1524500928
 GameObject:
   m_ObjectHideFlags: 0
@@ -26163,6 +26692,37 @@ MonoBehaviour:
   message: "Wenn ich mit ihm sprechen m\xF6chte, muss ich wohl hartn\xE4ckig sein."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 5
+--- !u!114 &1577415460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Verschrobener alter Mann
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - Oh ja...du hast den Zeitungsartikel? Magst du ihn mir geben?
+    options:
+    - text: "Nat\xFCrlich."
+      destinationNodeId: 1
+      reactionCollection: {fileID: 1483408676}
+    - text: "Nein, ich behalte ihn lieber f\xFCr mich."
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Dankesch\xF6n!"
+    options: []
+  - nodeId: 2
+    sentences:
+    - "Oh...aber falls Sie Ihre Meinung \xE4ndern, wissen Sie ja, wo Sie mich finden."
+    options: []
 --- !u!1 &1580167041
 GameObject:
   m_ObjectHideFlags: 0
@@ -27339,6 +27899,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644396234}
   m_Mesh: {fileID: 4300272, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1650319881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Du hast ihn gefunden? Wunderbar! '
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &1653540556
 GameObject:
   m_ObjectHideFlags: 0
@@ -29149,7 +29723,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 203031152}
+  - {fileID: 1429989548}
+--- !u!114 &1751231209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114296799341282820, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1001 &1752095759
 Prefab:
   m_ObjectHideFlags: 0
@@ -29258,6 +29848,48 @@ Transform:
   m_Father: {fileID: 601912206}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1760030717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Verschrobener alter Mann
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - "(verzweifelt) Aber...aber...da fehlt ja die H\xE4lfte! (erbost) So wird man
+      doch nicht schlau draus."
+    - "Wo ist denn nur die andere H\xE4lfte? Hmm...wo k\xF6nnte sie denn sein? Da
+      war doch jemand..."
+    - "Ja, jemand hat dar\xFCber gesprochen. Er hat von einer H\xE4lfte eines Zeitungsartikels
+      gesprochen. Wertlos f\xFCr ihn, aber nicht f\xFCr uns."
+    - Aber das war kein Technokrat. Das war einer dieser chaotischen Avantgardisten.
+      Aber wer?
+    - "Jaaa, das war dieser M\xF6rder, den sie vorhin rausgebracht haben. Der wei\xDF
+      mehr! Der wei\xDF, wo die andere H\xE4lfte ist. "
+    - "Wirst du uns die andere H\xE4lfte des Artikels besorgen?"
+    options:
+    - text: Auf jeden Fall!
+      destinationNodeId: 1
+      reactionCollection: {fileID: 730771076}
+    - text: Nein, das wird mir zu bunt.
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Wunderbar! Aber sei vorsichtig, dieser Mann scheint gef\xE4hrlich zu sein."
+    options: []
+  - nodeId: 2
+    sentences:
+    - Bunt? Also ich finde das eher trist, aber...ohne deine Hilfe schaffe ich es
+      nicht. Schade.
+    options: []
 --- !u!114 &1760706704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33818,6 +34450,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031066101}
   m_Mesh: {fileID: 4300538, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &2033696557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: da95bdb55310a834eb6f5ebcff08445e, type: 3}
+  delay: 0
 --- !u!1 &2033842149
 GameObject:
   m_ObjectHideFlags: 0
@@ -35377,6 +36023,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2105990761}
   m_Mesh: {fileID: 4300228, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &2106992419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca0f849530e0974ebe028429036ae89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: f578a5c68e6f8e94086824af57e3013f, type: 2}
+  playerQuests: {fileID: 11400000, guid: 1c994f106db14914f9383d4f1cda22e6, type: 2}
 --- !u!1 &2108943110
 GameObject:
   m_ObjectHideFlags: 0
@@ -35896,3 +36555,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2134985803}
   m_Mesh: {fileID: 4300588, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &2142974600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114397725248900844, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
+--- !u!114 &2145957548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
