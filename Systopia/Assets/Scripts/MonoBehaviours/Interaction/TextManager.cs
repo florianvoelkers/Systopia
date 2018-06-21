@@ -12,7 +12,7 @@ public class TextManager : MonoBehaviour {
 	}
 
 	public Text text;
-	public float displayTimePerCharacter = 0.1f;
+	public float displayTimePerCharacter = 0.05f;
 	public float additionalDisplayTime = 0.5f;
 
 	private List <Instruction> instructions = new List <Instruction> ();
