@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject {
 
 	public List <Item> items = new List <Item> ();
+	public AllConditions allConditions;
 
 	public void Reset () {
 		items.Clear ();
@@ -13,6 +14,15 @@ public class PlayerInventory : ScriptableObject {
 
 	public void AddItem (Item item) {
 		items.Add (item);
+
+		QuestItem questItem = item as QuestItem;
+		if (questItem) {
+			for (int i = 0; i < allConditions.conditions.Length; i++) {
+				if (questItem.correspondingCondition == allConditions.conditions [i]) {
+					allConditions.conditions [i].satisfied = true;
+				}
+			}
+		}
 	}
 
 	public void RemoveItem (Item item) {

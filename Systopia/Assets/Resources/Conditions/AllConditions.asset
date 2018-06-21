@@ -69,6 +69,14 @@ MonoBehaviour:
   - {fileID: 114297308200569478}
   - {fileID: 114715413925549084}
   - {fileID: 114756356068625758}
+  - {fileID: 114125976971234014}
+  - {fileID: 114287367933312344}
+  - {fileID: 114597253800544572}
+  - {fileID: 114442278643319556}
+  - {fileID: 114547607564260234}
+  - {fileID: 114691740108029290}
+  - {fileID: 114320698426541920}
+  - {fileID: 114465956979529618}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +147,20 @@ MonoBehaviour:
   description: hasNewsArticleAboutInvention
   satisfied: 0
   hash: -1045555992
+--- !u!114 &114125976971234014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsAvantgardistenWaffenlager
+  m_EditorClassIdentifier: 
+  description: knowsAvantgardistenWaffenlager
+  satisfied: 0
+  hash: 170190135
 --- !u!114 &114153486165968374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +273,20 @@ MonoBehaviour:
   description: startedQuest1-3
   satisfied: 0
   hash: -821680506
+--- !u!114 &114287367933312344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsHAWRuine
+  m_EditorClassIdentifier: 
+  description: knowsHAWRuine
+  satisfied: 0
+  hash: -1347948568
 --- !u!114 &114288547345746538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +357,20 @@ MonoBehaviour:
   description: finishedQuest2-3
   satisfied: 0
   hash: 1851455918
+--- !u!114 &114320698426541920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsTechnokratenWaffenlager
+  m_EditorClassIdentifier: 
+  description: knowsTechnokratenWaffenlager
+  satisfied: 0
+  hash: -1797062313
 --- !u!114 &114333036213136840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +455,20 @@ MonoBehaviour:
   description: tookTheAvaArmoury
   satisfied: 0
   hash: 1415460208
+--- !u!114 &114442278643319556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsBibliotheksruine
+  m_EditorClassIdentifier: 
+  description: knowsBibliotheksruine
+  satisfied: 0
+  hash: -1245771626
 --- !u!114 &114456345674533678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +483,20 @@ MonoBehaviour:
   description: finishedQuest2-2
   satisfied: 0
   hash: 425576760
+--- !u!114 &114465956979529618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsAvantgardistenUnterschlupf
+  m_EditorClassIdentifier: 
+  description: knowsAvantgardistenUnterschlupf
+  satisfied: 0
+  hash: -565051864
 --- !u!114 &114507213015949158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +539,20 @@ MonoBehaviour:
   description: startedQuest2-5
   satisfied: 0
   hash: 606289386
+--- !u!114 &114547607564260234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsTechnokratenVerwaltung
+  m_EditorClassIdentifier: 
+  description: knowsTechnokratenVerwaltung
+  satisfied: 0
+  hash: 1396280971
 --- !u!114 &114573691241052810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +623,20 @@ MonoBehaviour:
   description: startedQuest3-5
   satisfied: 0
   hash: 635525085
+--- !u!114 &114597253800544572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsLagerArtefakte
+  m_EditorClassIdentifier: 
+  description: knowsLagerArtefakte
+  satisfied: 0
+  hash: -1829505396
 --- !u!114 &114607162699739496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +749,20 @@ MonoBehaviour:
   description: startedQuest1-2
   satisfied: 0
   hash: -1207888368
+--- !u!114 &114691740108029290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: knowsVersteckArtefakte
+  m_EditorClassIdentifier: 
+  description: knowsVersteckArtefakte
+  satisfied: 0
+  hash: -459203514
 --- !u!114 &114715413925549084
 MonoBehaviour:
   m_ObjectHideFlags: 0
