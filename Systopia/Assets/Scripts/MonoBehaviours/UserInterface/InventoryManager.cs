@@ -20,7 +20,6 @@ public class InventoryManager : MonoBehaviour {
 	[SerializeField] private Text itemName;
 	[SerializeField] private Text itemDescription;
 	[SerializeField] private Button useButton;
-	[SerializeField] private Button dropButton;
 	[SerializeField] private GameObject itemValues;
 	[SerializeField] private GameObject field;
 	[SerializeField] private GameObject fieldValue;
@@ -66,7 +65,6 @@ public class InventoryManager : MonoBehaviour {
 		itemName.text = "";
 		itemDescription.text = "";
 		useButton.gameObject.SetActive(false);
-		dropButton.gameObject.SetActive (false);
 		for (int i = itemValues.transform.childCount - 1; i >= 0; i--) {
 			Destroy (itemValues.transform.GetChild (i).gameObject);
 		}
@@ -169,7 +167,6 @@ public class InventoryManager : MonoBehaviour {
 			}
 			if (selectedGroup != 3) {
 				useButton.gameObject.SetActive (true);
-				dropButton.gameObject.SetActive (true);
 			}
 
 		}
