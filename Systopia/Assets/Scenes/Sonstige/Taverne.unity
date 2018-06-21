@@ -1154,6 +1154,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 97408857}
   m_Mesh: {fileID: 4300698, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &98347932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f637f7de48289f346b06fbbc3f1bdcd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToTake: 5
+  playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
 --- !u!114 &99761666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,6 +1993,52 @@ MonoBehaviour:
   - {fileID: 320717744}
   - {fileID: 1187811370}
   - {fileID: 1571739818}
+--- !u!1 &123252410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1445598748621246, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 123252411}
+  - component: {fileID: 123252412}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123252411
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4894770453824238, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123252410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1273672039}
+  m_Father: {fileID: 930665494}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123252412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123252410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1776737970}
+  - {fileID: 413067671}
 --- !u!114 &125873502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4506,6 +4565,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 262146947}
   m_Mesh: {fileID: 4300022, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &264739309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: gotFreeBeer
+  satisfied: 0
+  hash: -609909440
 --- !u!1 &270652083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,6 +4917,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 298187670}
   m_Mesh: {fileID: 4300102, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &300992777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &302427778
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,6 +5149,52 @@ Transform:
   m_Father: {fileID: 486760829}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &318110095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 318110096}
+  - component: {fileID: 318110097}
+  m_Layer: 0
+  m_Name: freeBeerReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &318110096
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318110095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 930665494}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318110097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318110095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 435886936}
+  - {fileID: 2082548567}
+  - {fileID: 1547734385}
+  - {fileID: 727970125}
+  - {fileID: 1590962235}
 --- !u!114 &320717744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7173,6 +7306,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411479120}
   m_Mesh: {fileID: 4300682, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &413067671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &413245635
 GameObject:
   m_ObjectHideFlags: 0
@@ -7768,6 +7915,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 434949596}
   m_Mesh: {fileID: 4300160, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &435886936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Willkommen in der Taverne! Das erste Bier geht aufs Haus! Prost!
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!114 &439316854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11953,6 +12114,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 656247390}
   m_Mesh: {fileID: 4300182, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &656857553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: free beer
+  requiredConditions:
+  - {fileID: 264739309}
+  reactionCollection: {fileID: 318110097}
 --- !u!114 &659685189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13297,6 +13473,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726559450}
   m_Mesh: {fileID: 4300736, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &727970125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &729512004
 GameObject:
   m_ObjectHideFlags: 0
@@ -15074,6 +15264,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+--- !u!4 &838501793
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4943703842993520, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1111136723}
+  m_LocalRotation: {x: -0, y: -0.23595244, z: -0, w: 0.9717646}
+  m_LocalPosition: {x: 8.56, y: 0, z: -13.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 942472480}
+  - {fileID: 1701560023}
+  m_Father: {fileID: 1566580974}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: -27.296001, z: 0}
 --- !u!1 &840895038
 GameObject:
   m_ObjectHideFlags: 0
@@ -16312,6 +16518,138 @@ MonoBehaviour:
   description: finishedQuest3-1
   satisfied: 0
   hash: -2120813899
+--- !u!1 &930665493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1692567240999712, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 930665494}
+  - component: {fileID: 930665497}
+  - component: {fileID: 930665496}
+  - component: {fileID: 930665495}
+  m_Layer: 0
+  m_Name: InnkeeperInteractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930665494
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4943703842993520, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930665493}
+  m_LocalRotation: {x: -0, y: 0.3398739, z: -0, w: 0.9404711}
+  m_LocalPosition: {x: 26.67, y: 0, z: -14.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1503817043}
+  - {fileID: 123252411}
+  - {fileID: 318110096}
+  m_Father: {fileID: 1566580974}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 39.738003, z: 0}
+--- !u!114 &930665495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114701604046204364, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930665493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
+  interactionName: Wirt
+  interactionLocation: {fileID: 1503817043}
+  conditionCollections:
+  - {fileID: 656857553}
+  defaultReactionCollection: {fileID: 123252412}
+--- !u!114 &930665496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114584682784276904, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930665493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1343528049}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 930665495}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 930665495}
+          m_MethodName: ShowCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 930665495}
+          m_MethodName: HideCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &930665497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65502198303228566, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930665493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.9671516, z: 3.7784748}
+  m_Center: {x: 0, y: 2.9835758, z: 0.6116991}
 --- !u!1 &934073885
 GameObject:
   m_ObjectHideFlags: 0
@@ -16502,6 +16840,36 @@ MonoBehaviour:
   - {fileID: 1953172910}
   - {fileID: 154050874}
   - {fileID: 1717802669}
+--- !u!1 &942472479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1155140946553810, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 942472480}
+  m_Layer: 0
+  m_Name: InteractionLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &942472480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4349592422960476, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942472479}
+  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 5.76, y: 0, z: -6.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 838501793}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!1 &947226739
 GameObject:
   m_ObjectHideFlags: 0
@@ -17622,6 +17990,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016210714}
   m_Mesh: {fileID: 4300700, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1022630569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Tim war mein bester Kumpel. Jetzt muss ich alleine saufen!
+  textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
+  delay: 0
 --- !u!1 &1024361906
 GameObject:
   m_ObjectHideFlags: 0
@@ -19192,6 +19574,120 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110833254}
   m_Mesh: {fileID: 4300718, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1111136723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1692567240999712, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 838501793}
+  - component: {fileID: 1111136726}
+  - component: {fileID: 1111136725}
+  - component: {fileID: 1111136724}
+  m_Layer: 0
+  m_Name: LonelyTechnokratInteractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1111136724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114701604046204364, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1111136723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
+  interactionName: Technokrat
+  interactionLocation: {fileID: 942472480}
+  conditionCollections: []
+  defaultReactionCollection: {fileID: 1701560024}
+--- !u!114 &1111136725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114584682784276904, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1111136723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1343528049}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1111136724}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1111136724}
+          m_MethodName: ShowCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1111136724}
+          m_MethodName: HideCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1111136726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65502198303228566, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1111136723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1350503, y: 7.3227253, z: 1.1615536}
+  m_Center: {x: -0.14272287, y: 3.1613626, z: -0.080777295}
 --- !u!114 &1113917161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21987,6 +22483,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266257292}
   m_Mesh: {fileID: 4300208, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1267521966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &1269903949
 GameObject:
   m_ObjectHideFlags: 0
@@ -22064,6 +22574,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1269903949}
   m_Mesh: {fileID: 4300154, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1273672038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1273672039}
+  - component: {fileID: 1273672040}
+  m_Layer: 0
+  m_Name: buyBeerReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1273672039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273672038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 123252411}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1273672040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273672038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 300992777}
+  - {fileID: 98347932}
+  - {fileID: 1716238214}
 --- !u!1 &1274820305
 GameObject:
   m_ObjectHideFlags: 0
@@ -25956,6 +26510,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501997914}
   m_Mesh: {fileID: 4300068, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1503817042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1155140946553810, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1503817043}
+  m_Layer: 0
+  m_Name: InteractionLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503817043
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4349592422960476, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503817042}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -10.69, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 930665494}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1503842860
 GameObject:
   m_ObjectHideFlags: 0
@@ -26532,6 +27116,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1535510865}
   m_Mesh: {fileID: 4300724, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1547734385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &1562180180
 GameObject:
   m_ObjectHideFlags: 0
@@ -26647,6 +27245,8 @@ Transform:
   - {fileID: 1371840826}
   - {fileID: 1898691823}
   - {fileID: 595432227}
+  - {fileID: 838501793}
+  - {fileID: 930665494}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26958,6 +27558,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590962235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114756356068625758, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &1594106191
 GameObject:
   m_ObjectHideFlags: 0
@@ -28809,6 +29423,51 @@ Transform:
   m_Father: {fileID: 1582652332}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1701560022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1445598748621246, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1701560023}
+  - component: {fileID: 1701560024}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701560023
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4894770453824238, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701560022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 838501793}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1701560024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701560022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1022630569}
+  - {fileID: 1267521966}
 --- !u!114 &1706217613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29100,6 +29759,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712380891}
   m_Mesh: {fileID: 4300710, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1716238214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!114 &1716552405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30028,6 +30701,101 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: cb14540c878bea5478a8cdc85eda6dac, type: 3}
   m_PrefabInternal: {fileID: 1770773972}
+--- !u!114 &1776737970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Wirt Shayan
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - Willkommen im letzten neutralen Ort in Hamburg! ich bin Shayan, der Wirt! Und
+      hier gilt, was ich sage. Also mach keinen Stress, klar?
+    - Was darf's sein?
+    options:
+    - text: "Ein Tavernen Br\xE4u (5 Coins)"
+      destinationNodeId: 1
+      reactionCollection: {fileID: 1273672040}
+    - text: "Was kannst du mir \xFCber die Technokraten erz\xE4hlen?"
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+    - text: "Was kannst du mir \xFCber die Avantgardisten erz\xE4hlen?"
+      destinationNodeId: 3
+      reactionCollection: {fileID: 0}
+    - text: Danke!
+      destinationNodeId: 4
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - Prost!
+    options: []
+  - nodeId: 2
+    sentences:
+    - "Die Technokraten streben eine hochtechnologisierte, konforme Welt an. Sie folgen
+      ihrem Anf\xFChrer Frunobulax, der gemeinhin als intelligentester Mensch der
+      Welt gilt."
+    - "Sie sehen Logik als oberste Priorit\xE4t und meinen, dass die Evolution des
+      Menschen nur durch eine technologische Evolution m\xF6glich ist."
+    - Die Avantgardisten sind ihnen ein Dorn im Auge, da diese durch ihre chaotische
+      und unlogische Art zu leben den technischen, also den Fortschritt der Menschen
+      verhindern.
+    - "Nach dem TechnoLapse waren es die Technokraten, die f\xFCr den Wiederaufbau
+      der Stadt verantwortlich waren und die Technik wieder funktionsf\xE4hig gemacht
+      haben."
+    - "Wenn du dich ihnen anschlie\xDFen willst, kannst du in ihrem Hauptquartier
+      nachfragen."
+    options:
+    - text: "Ein Tavernen Br\xE4u (5 Coins)"
+      destinationNodeId: 1
+      reactionCollection: {fileID: 1273672040}
+    - text: "Was kannst du mir \xFCber die Technokraten erz\xE4hlen?"
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+    - text: "Was kannst du mir \xFCber die Avantgardisten erz\xE4hlen?"
+      destinationNodeId: 3
+      reactionCollection: {fileID: 0}
+    - text: Danke!
+      destinationNodeId: 4
+      reactionCollection: {fileID: 0}
+  - nodeId: 3
+    sentences:
+    - Die Avantgardisten sind eine kreative und innovative Bewegung. Eine Gruppe von
+      Individualisten, die nur durch den charismatischen und humorvollen Wogapowi
+      vereint werden konnten.
+    - "Sie k\xE4mpfen f\xFCr die Freiheit des Individuums und haben sich vereint,
+      um die Technokraten zu stoppen. Sie lehnen deren Konformit\xE4t ab und f\xFChlen
+      sich von der Art und Weise der Technokraten bedroht."
+    - "Obwohl sie ein chaotischer und verr\xFCckter Haufen sind, sind sie den Technokraten
+      im Kampf ebenb\xFCrtig und \xFCberraschen diese durch ihre unvorhersehbaren
+      Ideen."
+    - "Die waghalsigsten und legend\xE4rsten Geschichten der neuen Zeit basieren auf
+      Begebenheiten aus dem Leben einiger Avantgardisten."
+    - "Wenn du dich ihnen anschlie\xDFen willst, solltest du ins Hauptquartier der
+      Avantgardisten gehen."
+    options:
+    - text: "Ein Tavernen Br\xE4u"
+      destinationNodeId: 1
+      reactionCollection: {fileID: 1273672040}
+    - text: "Was kannst du mir \xFCber die Technokraten erz\xE4hlen?"
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+    - text: "Was kannst du mir \xFCber die Avantgardisten erz\xE4hlen?"
+      destinationNodeId: 3
+      reactionCollection: {fileID: 0}
+    - text: Danke!
+      destinationNodeId: 4
+      reactionCollection: {fileID: 0}
+  - nodeId: 4
+    sentences:
+    - "Tsch\xFCss!"
+    options: []
 --- !u!1 &1776936816
 GameObject:
   m_ObjectHideFlags: 0
@@ -35483,6 +36251,20 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9dd92b090a299574cac9d526062fd1a6, type: 3}
   m_PrefabInternal: {fileID: 2082286549}
+--- !u!114 &2082548567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &2086265855
 GameObject:
   m_ObjectHideFlags: 0

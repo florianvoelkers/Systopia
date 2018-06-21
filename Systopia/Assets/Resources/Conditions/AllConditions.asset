@@ -68,6 +68,7 @@ MonoBehaviour:
   - {fileID: 114333036213136840}
   - {fileID: 114297308200569478}
   - {fileID: 114715413925549084}
+  - {fileID: 114756356068625758}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +685,20 @@ MonoBehaviour:
   description: finsihedQuest2-5
   satisfied: 0
   hash: -280061446
+--- !u!114 &114756356068625758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: gotFreeBeer
+  m_EditorClassIdentifier: 
+  description: gotFreeBeer
+  satisfied: 0
+  hash: -609909440
 --- !u!114 &114798719141492994
 MonoBehaviour:
   m_ObjectHideFlags: 0
