@@ -1146,6 +1146,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 359187379}
+  - {fileID: 1393679115}
+  - {fileID: 986578898}
+  - {fileID: 708546038}
+  - {fileID: 1123762648}
+  - {fileID: 1543122222}
+  - {fileID: 820274759}
+  - {fileID: 2084150560}
+  - {fileID: 392622999}
+  - {fileID: 740657605}
+  - {fileID: 1575937630}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3380,35 +3390,6 @@ Transform:
   m_Father: {fileID: 784366454}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &326110384
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 326110385}
-  m_Layer: 0
-  m_Name: StartingPositions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &326110385
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 326110384}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 30.690483, y: 0.7835215, z: -25.407331}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1393679115}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &327022334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,7 +3811,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 359187378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: -106}
+  m_LocalPosition: {x: 8, y: 1.41, z: -107.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 89233087}
@@ -4506,6 +4487,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 388262904}
   m_Mesh: {fileID: 4300048, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &392622998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 392622999}
+  - component: {fileID: 392623000}
+  m_Layer: 0
+  m_Name: AvaWaffenLagerStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392622999
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392622998}
+  m_LocalRotation: {x: -0, y: 0.74516875, z: -0, w: 0.66687596}
+  m_LocalPosition: {x: -25.9, y: 1.14, z: 29.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 96.34701, z: 0}
+--- !u!114 &392623000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392622998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: AvaWaffenlagerDoor
 --- !u!1 &394232019
 GameObject:
   m_ObjectHideFlags: 0
@@ -7330,6 +7355,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   location: {fileID: 114819588628607498, guid: b5ee5b8cc990bb14584f73f364080cd1, type: 2}
   locationDiscoveredState: 1
+--- !u!1 &708546037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 708546038}
+  - component: {fileID: 708546039}
+  m_Layer: 0
+  m_Name: AvaUnterschlupfStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708546038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708546037}
+  m_LocalRotation: {x: -0, y: 0.69484144, z: -0, w: -0.719163}
+  m_LocalPosition: {x: 23.2, y: 1.14, z: 41.8}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 181.971, z: 0}
+--- !u!114 &708546039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708546037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: AvaUnterschlupfDoor
 --- !u!114 &709879171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7838,6 +7907,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 730306762}
   m_Mesh: {fileID: 4300080, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &740657604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 740657605}
+  - component: {fileID: 740657606}
+  m_Layer: 0
+  m_Name: AvaHauptQuartierStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740657605
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740657604}
+  m_LocalRotation: {x: -0, y: 0.71098024, z: -0, w: 0.7032121}
+  m_LocalPosition: {x: -19.97, y: 1.14, z: -3.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 90.629005, z: 0}
+--- !u!114 &740657606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740657604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: AvaHauptquartierDoor
 --- !u!1 &747217310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8157,7 +8270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &782451432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8657,6 +8770,50 @@ Transform:
   m_Father: {fileID: 1643587993}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &820274758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 820274759}
+  - component: {fileID: 820274760}
+  m_Layer: 0
+  m_Name: HAWFlurStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820274759
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820274758}
+  m_LocalRotation: {x: -0, y: 0.74516875, z: -0, w: 0.66687596}
+  m_LocalPosition: {x: -22.88, y: 1.14, z: 94.91}
+  m_LocalScale: {x: 1.0000012, y: 1, z: 1.0000012}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 96.34701, z: 0}
+--- !u!114 &820274760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820274758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: HAWFlurDoor
 --- !u!1 &825855557
 GameObject:
   m_ObjectHideFlags: 0
@@ -9827,6 +9984,50 @@ MonoBehaviour:
   reactions:
   - {fileID: 341430171}
   - {fileID: 709879171}
+--- !u!1 &986578897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 986578898}
+  - component: {fileID: 986578899}
+  m_Layer: 0
+  m_Name: TechnoWaffenlagerStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986578898
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986578897}
+  m_LocalRotation: {x: -0, y: 0.69484144, z: -0, w: -0.719163}
+  m_LocalPosition: {x: 30.690586, y: 1.9435215, z: -13.877222}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 181.971, z: 0}
+--- !u!114 &986578899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 986578897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: TechnoWaffenlagerDoor
 --- !u!1 &988259685
 GameObject:
   m_ObjectHideFlags: 0
@@ -10866,6 +11067,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1119922538}
   m_Mesh: {fileID: 4300180, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &1123762647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1123762648}
+  - component: {fileID: 1123762649}
+  m_Layer: 0
+  m_Name: TechnoArtefaktLagerStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1123762648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123762647}
+  m_LocalRotation: {x: -0, y: 0.69484144, z: -0, w: -0.719163}
+  m_LocalPosition: {x: 23.4, y: 1.14, z: 93.73}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 181.971, z: 0}
+--- !u!114 &1123762649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123762647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: TechnoArtefaktlagerDoor
 --- !u!1 &1126742415
 GameObject:
   m_ObjectHideFlags: 0
@@ -13372,13 +13617,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393679114}
-  m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.64867055, z: -0, w: -0.7610694}
+  m_LocalPosition: {x: 30.690483, y: 1.9435215, z: -25.407331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 326110385}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 189.11699, z: 0}
 --- !u!114 &1393679116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14899,6 +15144,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1534818321}
   m_Mesh: {fileID: 4300042, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &1543122221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1543122222}
+  - component: {fileID: 1543122223}
+  m_Layer: 0
+  m_Name: BibRuinenStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1543122222
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543122221}
+  m_LocalRotation: {x: -0, y: 0.9999627, z: -0, w: 0.00864738}
+  m_LocalPosition: {x: 1.3, y: 1.14, z: 110.4}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 179.009, z: 0}
+--- !u!114 &1543122223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543122221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: BibRuinenDoor
 --- !u!1 &1543255166
 GameObject:
   m_ObjectHideFlags: 0
@@ -15033,6 +15322,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571439687}
   m_Mesh: {fileID: 4300024, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &1575937629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1575937630}
+  - component: {fileID: 1575937631}
+  m_Layer: 0
+  m_Name: AvaArtefaktVersteckStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575937630
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575937629}
+  m_LocalRotation: {x: -0, y: 0.71098024, z: -0, w: 0.7032121}
+  m_LocalPosition: {x: -24.82, y: 0.65, z: -62.19}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 90.629005, z: 0}
+--- !u!114 &1575937631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575937629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: AvaArtefaktVersteckDoor
 --- !u!1 &1581314603
 GameObject:
   m_ObjectHideFlags: 0
@@ -19809,6 +20142,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083277101}
   m_Mesh: {fileID: 4300014, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!1 &2084150559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2084150560}
+  - component: {fileID: 2084150561}
+  m_Layer: 0
+  m_Name: TechnoVerwaltungsStelleStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2084150560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084150559}
+  m_LocalRotation: {x: -0, y: 0.74516875, z: -0, w: 0.66687596}
+  m_LocalPosition: {x: -21.44, y: 1.14, z: 53.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89233087}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 96.34701, z: 0}
+--- !u!114 &2084150561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084150559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: TechnoVerwaltungsStelleDoor
 --- !u!1 &2090752513
 GameObject:
   m_ObjectHideFlags: 0
