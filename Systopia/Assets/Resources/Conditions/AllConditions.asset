@@ -79,6 +79,9 @@ MonoBehaviour:
   - {fileID: 114465956979529618}
   - {fileID: 114890354378819950}
   - {fileID: 114487421353924944}
+  - {fileID: 114857952649993698}
+  - {fileID: 114941809276166254}
+  - {fileID: 114672608095698230}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +768,20 @@ MonoBehaviour:
   description: startedQuest1-2
   satisfied: 0
   hash: -1207888368
+--- !u!114 &114672608095698230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedConspiracyFinale
+  m_EditorClassIdentifier: 
+  description: startedConspiracyFinale
+  satisfied: 0
+  hash: 903801937
 --- !u!114 &114691740108029290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +894,20 @@ MonoBehaviour:
   description: acceptedQuest3-1
   satisfied: 0
   hash: -447595894
+--- !u!114 &114857952649993698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedTechnokratenFinale
+  m_EditorClassIdentifier: 
+  description: startedTechnokratenFinale
+  satisfied: 0
+  hash: 1261086172
 --- !u!114 &114880877742259342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,6 +1020,20 @@ MonoBehaviour:
   description: hasAvantgardistenMap
   satisfied: 0
   hash: -789712303
+--- !u!114 &114941809276166254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: startedAvantgardistenFinale
+  m_EditorClassIdentifier: 
+  description: startedAvantgardistenFinale
+  satisfied: 0
+  hash: -1029403381
 --- !u!114 &114943001961950164
 MonoBehaviour:
   m_ObjectHideFlags: 0
