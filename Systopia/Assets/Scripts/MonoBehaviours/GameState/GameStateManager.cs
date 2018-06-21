@@ -65,6 +65,11 @@ public class GameStateManager : MonoBehaviour {
 			}
 			playerEquipment.EquipWeapon (playerStartWeapon);
 			playerMoney.SetMoney (1000);
+			for (int i = 0; i < allLocations.locations.Length; i++) {
+				if (allLocations.locations [i].name == "Taverne" || allLocations.locations [i].name == "AvantgardistenHQ" || allLocations.locations [i].name == "TechnokratenHQ") {
+					allLocations.locations [i].locationDiscovered = true;
+				}
+			}
 			ShowCharacterCreation ();
 		} else {
 			Unpause ();
