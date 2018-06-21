@@ -3191,6 +3191,7 @@ MonoBehaviour:
   - {fileID: 486898852}
   - {fileID: 696877693}
   - {fileID: 1962375174}
+  - {fileID: 1143365334}
 --- !u!1 &311771975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,7 +4823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
 --- !u!1 &495697278
 GameObject:
   m_ObjectHideFlags: 0
@@ -6272,7 +6273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothing: 7
-  offset: {x: 0, y: 6, z: 0}
+  offset: {x: 0, y: 7, z: 0}
   playerPosition: {fileID: 372502842}
   tavernEdge: {fileID: 129819945}
   ruinEdge: {fileID: 573671440}
@@ -6328,7 +6329,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628148442}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 6, z: -66}
+  m_LocalPosition: {x: 0, y: 14, z: -66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6723,8 +6724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbd274679258c840a54fc2b1b8689b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  locationDiscoveredState: 0
+  location: {fileID: 114819588628607498, guid: b5ee5b8cc990bb14584f73f364080cd1, type: 2}
+  locationDiscoveredState: 1
 --- !u!114 &709879171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8308,7 +8309,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 928578831}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.0340705, y: -31.677269, z: 17.972313}
+  m_LocalPosition: {x: 7.0340705, y: -32, z: 17.972313}
   m_LocalScale: {x: 3.4349377, y: 0.2522331, z: 0.80724746}
   m_Children: []
   m_Father: {fileID: 1413485150}
@@ -9864,6 +9865,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1139427698}
   m_Mesh: {fileID: 4300268, guid: 84ddc5f94172f634b98b1d87eafe1634, type: 3}
+--- !u!114 &1143365334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 17417d3e863a3d440b93f49814f93709, type: 2}
+  state: {fileID: 114211525977433678, guid: 17417d3e863a3d440b93f49814f93709, type: 2}
 --- !u!1 &1147715336
 GameObject:
   m_ObjectHideFlags: 0
@@ -12916,13 +12930,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1523819773}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 394232023}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1524167795
 GameObject:
   m_ObjectHideFlags: 0
@@ -16587,8 +16601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  condition: {fileID: 0}
-  satisfied: 0
+  condition: {fileID: 114880877742259342, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &1973044771
 GameObject:
   m_ObjectHideFlags: 0
