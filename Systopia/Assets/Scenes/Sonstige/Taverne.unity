@@ -292,20 +292,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10472418}
   m_Mesh: {fileID: 4300116, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &12283750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
-  delay: 0
 --- !u!1 &14446579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,20 +1087,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 78266008}
   m_Mesh: {fileID: 4300554, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &87914280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114297037510284418, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
-    type: 2}
-  satisfied: 1
 --- !u!4 &95053818 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4203401231099012, guid: d2da70544f0a10e47adf1b78893e9d4a,
@@ -1861,6 +1833,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112231293}
   m_Mesh: {fileID: 4300042, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &112733827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: d2cbc8d157745e744a036c838fc79a1b, type: 3}
+  delay: 0
 --- !u!1 &113172159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,6 +3114,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 183979920}
   m_Mesh: {fileID: 4300218, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &187651653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &189862817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,7 +3153,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1013750970}
+  - {fileID: 1625836264}
   m_Father: {fileID: 566177852}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3169,8 +3171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 812484886}
-  - {fileID: 866273496}
   - {fileID: 1716552405}
 --- !u!1 &201097756
 GameObject:
@@ -3259,20 +3259,6 @@ MonoBehaviour:
   message: Ich warte hier auf dich bis du den Artikel gefunden hast. Ich glaube an
     dich!
   textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
---- !u!114 &206709797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
   delay: 0
 --- !u!1 &207500930
 GameObject:
@@ -4115,6 +4101,20 @@ MonoBehaviour:
   - {fileID: 1167999856}
   - {fileID: 827661161}
   reactionCollection: {fileID: 281620524}
+--- !u!114 &246624719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Komm sp\xE4ter wieder, wenn du genug Coins hast."
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &247784239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,6 +4830,49 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.4650154, z: 2.2209415}
   m_Center: {x: 0, y: 2.2325077, z: 1.0624838}
+--- !u!1 &272734946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 272734947}
+  - component: {fileID: 272734948}
+  m_Layer: 0
+  m_Name: HasEnoughMoneyReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &272734947
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272734946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 445992556}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272734948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272734946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1348621274}
+  - {fileID: 1444930710}
 --- !u!1 &281620522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,20 +5957,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 336357881}
   m_Mesh: {fileID: 4300220, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &338620106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: d0e20cd01d0aae64494735377b4a93fc, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &339438750
 GameObject:
   m_ObjectHideFlags: 0
@@ -8237,7 +8266,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 272734947}
+  - {fileID: 1503997257}
   m_Father: {fileID: 566177852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8253,9 +8284,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1490921890}
-  - {fileID: 12283750}
   - {fileID: 1847712497}
+--- !u!114 &447881661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Komm wieder, wenn du genug Coins hast.
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &450394067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,6 +8884,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 480409462}
   m_Mesh: {fileID: 4300488, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &485772720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114297037510284418, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &486760828
 GameObject:
   m_ObjectHideFlags: 0
@@ -9427,6 +9484,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 507422171}
+  - component: {fileID: 507422172}
   m_Layer: 0
   m_Name: HasEnoughMoneyObject
   m_TagString: Untagged
@@ -9447,6 +9505,20 @@ Transform:
   m_Father: {fileID: 1944598549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507422172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 507422170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1742201485}
+  - {fileID: 187651653}
 --- !u!1 &510842861
 GameObject:
   m_ObjectHideFlags: 0
@@ -10845,20 +10917,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &588143606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114297037510284418, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
-    type: 2}
-  satisfied: 1
 --- !u!1 &591061751
 GameObject:
   m_ObjectHideFlags: 0
@@ -11110,6 +11168,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 597213436}
+  - component: {fileID: 597213437}
   m_Layer: 0
   m_Name: DoesNotHaveEnoughMoneyObject
   m_TagString: Untagged
@@ -11130,6 +11189,20 @@ Transform:
   m_Father: {fileID: 1944598549}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597213437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597213435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 246624719}
+  - {fileID: 1030590589}
 --- !u!1 &601912202
 GameObject:
   m_ObjectHideFlags: 0
@@ -13528,6 +13601,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714447272}
   m_Mesh: {fileID: 4300468, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &723927002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: d2cbc8d157745e744a036c838fc79a1b, type: 3}
+  delay: 0
 --- !u!1 &725239134
 GameObject:
   m_ObjectHideFlags: 0
@@ -14493,6 +14580,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749571778}
   m_Mesh: {fileID: 4300676, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &756039964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 756039965}
+  - component: {fileID: 756039966}
+  m_Layer: 0
+  m_Name: DoesNotHaveEnoughMoneyReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &756039965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756039964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1000180900}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &756039966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756039964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 2031112686}
+  - {fileID: 723927002}
 --- !u!1 &772705757
 GameObject:
   m_ObjectHideFlags: 0
@@ -15048,20 +15178,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &812484886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: 888ed722969c12149b7f6aedba42b496, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &813362217
 GameObject:
   m_ObjectHideFlags: 0
@@ -15545,8 +15661,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 507422172}
+  doesNotHaveEnoughMoney: {fileID: 597213437}
 --- !u!4 &838501793
 Transform:
   m_ObjectHideFlags: 0
@@ -15636,7 +15752,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 840895038}
   m_Mesh: {fileID: 4300432, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &846085634
+--- !u!114 &844907903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -15957,7 +16073,7 @@ MonoBehaviour:
   audioSource: {fileID: 734033515}
   audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
   delay: 0
---- !u!114 &866273496
+--- !u!114 &868476819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -15965,12 +16081,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
   delay: 0
+  item: {fileID: 11400000, guid: d0e20cd01d0aae64494735377b4a93fc, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &869790309
 GameObject:
   m_ObjectHideFlags: 0
@@ -17755,6 +17871,20 @@ MonoBehaviour:
   audioSource: {fileID: 2027245621}
   audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
   delay: 0
+--- !u!114 &977718870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Komm wieder, wenn du genug Coins hast.
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &978222767
 GameObject:
   m_ObjectHideFlags: 0
@@ -18050,7 +18180,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1611325374}
+  - {fileID: 756039965}
   m_Father: {fileID: 1669670288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18067,9 +18199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1607701275}
-  - {fileID: 1119741029}
-  - {fileID: 1661522695}
-  - {fileID: 87914280}
 --- !u!114 &1002078921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18238,6 +18367,49 @@ Transform:
   m_Father: {fileID: 1784941238}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 170, z: 0}
+--- !u!1 &1013750969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1013750970}
+  - component: {fileID: 1013750971}
+  m_Layer: 0
+  m_Name: HasEnoughMoneyReaction (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1013750970
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013750969}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 189862818}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1013750971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013750969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1779277529}
+  - {fileID: 844907903}
 --- !u!1 &1015559752
 GameObject:
   m_ObjectHideFlags: 0
@@ -18548,6 +18720,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029743447}
   m_Mesh: {fileID: 4300044, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1030590589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: d2cbc8d157745e744a036c838fc79a1b, type: 3}
+  delay: 1
 --- !u!114 &1031667956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20126,20 +20312,6 @@ MonoBehaviour:
   firstCamera: {fileID: 550421813}
   secondCamera: {fileID: 2129557447}
   player: {fileID: 1343528050}
---- !u!114 &1119741029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
-  delay: 0
 --- !u!114 &1121573038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21933,9 +22105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1613813846}
-  - {fileID: 206709797}
-  - {fileID: 1877594028}
-  - {fileID: 588143606}
 --- !u!1 &1211687102
 GameObject:
   m_ObjectHideFlags: 0
@@ -23864,6 +24033,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1317565851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: d2cbc8d157745e744a036c838fc79a1b, type: 3}
+  delay: 0
 --- !u!1 &1321824638
 GameObject:
   m_ObjectHideFlags: 0
@@ -24289,6 +24472,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 64098e9408da91f478c2928298a176ea, type: 2}
   state: {fileID: 114370967522515422, guid: 64098e9408da91f478c2928298a176ea, type: 2}
+--- !u!114 &1348621274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 967631ee78437f643ade3ded4d06444b, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1351450712
 GameObject:
   m_ObjectHideFlags: 0
@@ -26079,6 +26276,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444711808}
   m_Mesh: {fileID: 4300188, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1444930710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &1450621418
 GameObject:
   m_ObjectHideFlags: 0
@@ -26342,9 +26553,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1612477691}
-  - {fileID: 1570124570}
-  - {fileID: 338620106}
-  - {fileID: 1899157033}
 --- !u!1 &1453758537
 GameObject:
   m_ObjectHideFlags: 0
@@ -26785,20 +26993,6 @@ MonoBehaviour:
   - {fileID: 99761666}
   - {fileID: 1633221829}
   reactionCollection: {fileID: 416052795}
---- !u!114 &1490921890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: 967631ee78437f643ade3ded4d06444b, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1496203482
 GameObject:
   m_ObjectHideFlags: 0
@@ -27049,6 +27243,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503842860}
   m_Mesh: {fileID: 4300716, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1503997256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1503997257}
+  - component: {fileID: 1503997258}
+  m_Layer: 0
+  m_Name: DoesNotHaveEnoughMoneyReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503997257
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503997256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 445992556}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503997258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503997256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 112733827}
+  - {fileID: 447881661}
 --- !u!114 &1504257573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27715,20 +27952,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1570124570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
-  delay: 0
 --- !u!114 &1570661504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28284,8 +28507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 500
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 1611325375}
+  doesNotHaveEnoughMoney: {fileID: 756039966}
 --- !u!1 &1608780553
 GameObject:
   m_ObjectHideFlags: 0
@@ -28415,6 +28638,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609470807}
   m_Mesh: {fileID: 4300570, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1611325373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1611325374}
+  - component: {fileID: 1611325375}
+  m_Layer: 0
+  m_Name: HasEnoughMoneyReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611325374
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611325373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1000180900}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611325375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611325373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 868476819}
+  - {fileID: 485772720}
+  - {fileID: 2096537922}
 --- !u!114 &1612477691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28428,8 +28695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 300
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 1611325375}
+  doesNotHaveEnoughMoney: {fileID: 756039966}
 --- !u!1 &1613587742
 GameObject:
   m_ObjectHideFlags: 0
@@ -28520,8 +28787,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 400
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 1611325375}
+  doesNotHaveEnoughMoney: {fileID: 756039966}
 --- !u!1 &1616733733
 GameObject:
   m_ObjectHideFlags: 0
@@ -28760,6 +29027,49 @@ MonoBehaviour:
   reactions:
   - {fileID: 614144488}
   - {fileID: 1766228711}
+--- !u!1 &1625836263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1625836264}
+  - component: {fileID: 1625836265}
+  m_Layer: 0
+  m_Name: DoesNotHaveEnoughMoneyReaction (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625836264
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625836263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 189862818}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625836265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625836263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1317565851}
+  - {fileID: 977718870}
 --- !u!1 &1626404544
 GameObject:
   m_ObjectHideFlags: 0
@@ -29342,20 +29652,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1659422729}
   m_Mesh: {fileID: 4300784, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &1661522695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: d0e20cd01d0aae64494735377b4a93fc, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1666302053
 GameObject:
   m_ObjectHideFlags: 0
@@ -30641,6 +30937,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741434862}
   m_Mesh: {fileID: 4300250, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1742201485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: ae799ea0155122f46893cc7ad23a4238, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1742738684
 GameObject:
   m_ObjectHideFlags: 0
@@ -31471,6 +31781,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779243375}
   m_Mesh: {fileID: 4300740, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1779277529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 888ed722969c12149b7f6aedba42b496, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1783448800
 GameObject:
   m_ObjectHideFlags: 0
@@ -32545,20 +32869,6 @@ MonoBehaviour:
   description: hasFirstPartOfArticle
   satisfied: 0
   hash: 678893951
---- !u!114 &1843991242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: ae799ea0155122f46893cc7ad23a4238, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!114 &1847712497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32572,8 +32882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 272734948}
+  doesNotHaveEnoughMoney: {fileID: 1503997258}
 --- !u!1 &1848324097
 GameObject:
   m_ObjectHideFlags: 0
@@ -32973,20 +33283,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875117990}
   m_Mesh: {fileID: 4300666, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &1877594028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: d0e20cd01d0aae64494735377b4a93fc, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!114 &1879507013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33217,20 +33513,6 @@ Transform:
   m_Father: {fileID: 1566580974}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1899157033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114297037510284418, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
-    type: 2}
-  satisfied: 1
 --- !u!1 &1901534886
 GameObject:
   m_ObjectHideFlags: 0
@@ -33958,8 +34240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1843991242}
-  - {fileID: 846085634}
   - {fileID: 836868463}
 --- !u!1 &1945095531
 GameObject:
@@ -35763,6 +36043,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031066101}
   m_Mesh: {fileID: 4300538, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &2031112686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Komm wieder, wenn du genug Coins daf\xFCr hast."
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!114 &2033696557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37094,6 +37388,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092386518}
   m_Mesh: {fileID: 4300002, guid: bfd2bdc41951efc40903a9505e12b6fc, type: 3}
+--- !u!114 &2096537922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &2098400329
 GameObject:
   m_ObjectHideFlags: 0
