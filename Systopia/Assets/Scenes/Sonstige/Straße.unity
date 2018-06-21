@@ -6878,6 +6878,9 @@ MonoBehaviour:
   ruinEdge: {fileID: 573671440}
   rotateCamera: 1
   moveCamera: 1
+  changeXAxis: 0
+  changeYAxis: 0
+  changeZAxis: 1
 --- !u!124 &628148444
 Behaviour:
   m_ObjectHideFlags: 0
@@ -10420,7 +10423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1069884677
 Transform:
   m_ObjectHideFlags: 0
@@ -12486,7 +12489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1308456302
 Transform:
   m_ObjectHideFlags: 0

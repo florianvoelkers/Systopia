@@ -11,6 +11,10 @@ public class DollyCameraController : MonoBehaviour {
 	[SerializeField] private Transform ruinEdge;
 	[SerializeField] private bool rotateCamera = true;
 	[SerializeField] private bool moveCamera = true;
+	[SerializeField] private bool changeXAxis = false;
+	[SerializeField] private bool changeYAxis = false;
+	[SerializeField] private bool changeZAxis = false;
+	[SerializeField] private float moveCameraDistance = 0f;
 
 	private Vector3 newPosition;
 	private float step;
@@ -23,13 +27,36 @@ public class DollyCameraController : MonoBehaviour {
 
 		if (!moveCamera) {
 			newPosition = transform.position;
-			if (playerPosition.position.z < tavernEdge.position.z) {
-				newPosition.z = tavernEdge.position.z;
-			} else if (playerPosition.position.z > ruinEdge.position.z) {
-				newPosition.z = ruinEdge.position.z;
-			} else {
-				newPosition.z = playerPosition.position.z;
+			if (changeZAxis) {
+				if (playerPosition.position.z < tavernEdge.position.z) {
+					newPosition.z = tavernEdge.position.z + moveCameraDistance;
+				} else if (playerPosition.position.z > ruinEdge.position.z) {
+					newPosition.z = ruinEdge.position.z+ moveCameraDistance;
+				} else {
+					newPosition.z = playerPosition.position.z + moveCameraDistance;
+				}
 			}
+
+			if (changeYAxis) {
+				if (playerPosition.position.y < tavernEdge.position.y) {
+					newPosition.y = tavernEdge.position.y + moveCameraDistance;
+				} else if (playerPosition.position.y > ruinEdge.position.y) {
+					newPosition.y = ruinEdge.position.y + moveCameraDistance;
+				} else {
+					newPosition.y = playerPosition.position.y + moveCameraDistance;
+				}
+			}
+
+			if (changeXAxis) {
+				if (playerPosition.position.x < tavernEdge.position.x) {
+					newPosition.x = tavernEdge.position.x + moveCameraDistance;
+				} else if (playerPosition.position.x > ruinEdge.position.x) {
+					newPosition.x = ruinEdge.position.x + moveCameraDistance;
+				} else {
+					newPosition.x = playerPosition.position.x + moveCameraDistance;
+				}
+			}
+				
 			transform.position = newPosition;
 		}
 
@@ -44,13 +71,37 @@ public class DollyCameraController : MonoBehaviour {
 		if (moveCamera) {
 			step = 30f * Time.deltaTime;
 			newPosition = transform.position;
-			if (playerPosition.position.z < tavernEdge.position.z) {
-				newPosition.z = tavernEdge.position.z;
-			} else if (playerPosition.position.z > ruinEdge.position.z) {
-				newPosition.z = ruinEdge.position.z;
-			} else {
-				newPosition.z = playerPosition.position.z;
+
+			if (changeZAxis) {
+				if (playerPosition.position.z < tavernEdge.position.z) {
+					newPosition.z = tavernEdge.position.z;
+				} else if (playerPosition.position.z > ruinEdge.position.z) {
+					newPosition.z = ruinEdge.position.z;
+				} else {
+					newPosition.z = playerPosition.position.z + moveCameraDistance;
+				}
 			}
+
+			if (changeYAxis) {
+				if (playerPosition.position.y < tavernEdge.position.y) {
+					newPosition.y = tavernEdge.position.y + moveCameraDistance;
+				} else if (playerPosition.position.y > ruinEdge.position.y) {
+					newPosition.y = ruinEdge.position.y + moveCameraDistance;
+				} else {
+					newPosition.y = playerPosition.position.y + moveCameraDistance;
+				}
+			}
+
+			if (changeXAxis) {
+				if (playerPosition.position.x < tavernEdge.position.x) {
+					newPosition.x = tavernEdge.position.x + moveCameraDistance;
+				} else if (playerPosition.position.x > ruinEdge.position.x) {
+					newPosition.x = ruinEdge.position.x + moveCameraDistance;
+				} else {
+					newPosition.x = playerPosition.position.x + moveCameraDistance;
+				}
+			}
+
 			transform.position = Vector3.MoveTowards (transform.position, newPosition, step);
 		}
 
