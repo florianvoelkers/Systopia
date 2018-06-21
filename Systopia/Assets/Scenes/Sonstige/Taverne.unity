@@ -2324,6 +2324,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 531818257}
   - {fileID: 1511326178}
+  - {fileID: 1223341699}
 --- !u!114 &154050874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9519,6 +9520,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 1742201485}
   - {fileID: 187651653}
+  - {fileID: 1460395819}
 --- !u!1 &510842861
 GameObject:
   m_ObjectHideFlags: 0
@@ -10185,10 +10187,10 @@ MonoBehaviour:
     - Ich kann dir zwei unterschiedliche Waffen anbieten.
     options:
     - text: Avantgardisten Gewehr (150 Coins)
-      destinationNodeId: 1
+      destinationNodeId: -1
       reactionCollection: {fileID: 521253329}
     - text: Avantgardisten Pistole (150 Coins)
-      destinationNodeId: 2
+      destinationNodeId: -1
       reactionCollection: {fileID: 1944598550}
     - text: Doch nichts kaufen.
       destinationNodeId: 3
@@ -22223,6 +22225,20 @@ MonoBehaviour:
   audioSource: {fileID: 2027245621}
   audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
   delay: 0
+--- !u!114 &1223341699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Prost!
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &1223556798
 GameObject:
   m_ObjectHideFlags: 0
@@ -26759,6 +26775,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455671572}
   m_Mesh: {fileID: 4300734, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1460395819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Viel Spa\xDF damit!"
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &1461393064
 GameObject:
   m_ObjectHideFlags: 0
@@ -28333,6 +28363,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 284268371}
   - {fileID: 1275250777}
+  - {fileID: 1917985806}
 --- !u!1 &1605534192
 GameObject:
   m_ObjectHideFlags: 0
@@ -28682,6 +28713,7 @@ MonoBehaviour:
   - {fileID: 868476819}
   - {fileID: 485772720}
   - {fileID: 2096537922}
+  - {fileID: 2042985962}
 --- !u!114 &1612477691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31418,7 +31450,7 @@ MonoBehaviour:
     - "Gib mir 500 Coins und sie geh\xF6ren dir."
     options:
     - text: 'Abgemacht. '
-      destinationNodeId: 1
+      destinationNodeId: -1
       reactionCollection: {fileID: 1000180901}
     - text: Sagen wir 300!
       destinationNodeId: 2
@@ -31435,10 +31467,10 @@ MonoBehaviour:
     - Hmm...400!
     options:
     - text: Deal!
-      destinationNodeId: 4
+      destinationNodeId: -1
       reactionCollection: {fileID: 1209303009}
     - text: Nein, 300 ist mein letztes Wort.
-      destinationNodeId: 5
+      destinationNodeId: -1
       reactionCollection: {fileID: 1453518881}
   - nodeId: 3
     sentences:
@@ -31556,7 +31588,7 @@ MonoBehaviour:
     - Was darf's sein?
     options:
     - text: "Ein Tavernen Br\xE4u (5 Coins)"
-      destinationNodeId: 1
+      destinationNodeId: -1
       reactionCollection: {fileID: 1273672040}
     - text: "Was kannst du mir \xFCber die Technokraten erz\xE4hlen?"
       destinationNodeId: 2
@@ -33868,6 +33900,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917672115}
   m_Mesh: {fileID: 4300582, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1917985806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Viel Spa\xDF damit!"
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1001 &1920801266
 Prefab:
   m_ObjectHideFlags: 0
@@ -36430,6 +36476,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042420483}
   m_Mesh: {fileID: 4300084, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &2042985962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Viel Spa\xDF damit!"
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!1 &2043214467
 GameObject:
   m_ObjectHideFlags: 0

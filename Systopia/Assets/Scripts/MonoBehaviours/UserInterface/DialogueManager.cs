@@ -77,9 +77,13 @@ public class DialogueManager : MonoBehaviour {
 		npcText.text = "";
 		currentSentence = -1;
 		npcName.enabled = true;
-		currentNodeId = nodes [currentNodeId].options [selectedOption].destinationNodeId;
-		continueButton.SetActive (true);
-		DisplayNextSentence ();
+		if (nodes [currentNodeId].options [selectedOption].destinationNodeId != -1) {
+			currentNodeId = nodes [currentNodeId].options [selectedOption].destinationNodeId;
+			continueButton.SetActive (true);
+			DisplayNextSentence ();
+		} else {
+			EndDialogue ();
+		}
 	}
 
 	private void EndDialogue () {
