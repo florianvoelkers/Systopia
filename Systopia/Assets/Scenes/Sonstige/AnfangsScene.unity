@@ -1521,6 +1521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 5
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!114 &99761666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3082,6 +3084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: dca60d799f1dfee4f80b799fa8d2911c, type: 2}
+  inventory: {fileID: 0}
+  hasItemReaction: {fileID: 0}
+  doesNotHaveItem: {fileID: 0}
 --- !u!1 &160961557
 GameObject:
   m_ObjectHideFlags: 0
@@ -18799,6 +18804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: 90f4c4399eb16394590cf671c1d92f8c, type: 2}
+  inventory: {fileID: 0}
+  hasItemReaction: {fileID: 0}
+  doesNotHaveItem: {fileID: 0}
 --- !u!1 &793598159
 GameObject:
   m_ObjectHideFlags: 0
@@ -19781,6 +19789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!4 &838501793
 Transform:
   m_ObjectHideFlags: 0
@@ -30348,6 +30358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 50
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!1 &1343355497
 GameObject:
   m_ObjectHideFlags: 0
@@ -31829,6 +31841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!114 &1394342557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36271,6 +36285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 500
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!1 &1608780553
 GameObject:
   m_ObjectHideFlags: 0
@@ -36419,6 +36435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 300
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!1 &1613587742
 GameObject:
   m_ObjectHideFlags: 0
@@ -36509,6 +36527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 400
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!1 &1616733733
 GameObject:
   m_ObjectHideFlags: 0
@@ -38769,6 +38789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!114 &1717802669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41880,6 +41902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 150
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
+  hasEnoughMoney: {fileID: 0}
+  doesNotHaveEnoughMoney: {fileID: 0}
 --- !u!1 &1848324097
 GameObject:
   m_ObjectHideFlags: 0
