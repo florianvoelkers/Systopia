@@ -486,6 +486,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 16123097}
   m_Mesh: {fileID: 4300244, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &30951675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasFirstPartOfTechnokratenMap
+  requiredConditions:
+  - {fileID: 1886481592}
+  - {fileID: 79382478}
+  reactionCollection: {fileID: 1479542696}
 --- !u!1 &31617523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1103,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 78266008}
   m_Mesh: {fileID: 4300554, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &79382478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: foundAllPiecesOfTechnoMap
+  satisfied: 0
+  hash: -102591959
+--- !u!114 &89795270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  item: {fileID: 11400000, guid: 0562b7c058e271a4694d071bb2a883f9, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!4 &95053818 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4203401231099012, guid: d2da70544f0a10e47adf1b78893e9d4a,
@@ -1238,7 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Willkommen in der Taverne! Der letzte neutrale Orte in Hamburg. Schau dich
+  message: Willkommen in der Taverne! Der letzte neutrale Ort in Hamburg. Schau dich
     ruhig um!
   textColor: {r: 0.9264706, g: 0.862576, b: 0, a: 1}
   delay: 0
@@ -3894,6 +3938,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229398101}
   m_Mesh: {fileID: 4300498, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &231214975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedQuest1-1
+  satisfied: 1
+  hash: 554190762
 --- !u!1 &232680422
 GameObject:
   m_ObjectHideFlags: 0
@@ -9596,6 +9654,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510842861}
   m_Mesh: {fileID: 4300032, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &512573147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114487421353924944, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!114 &515836350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15180,6 +15252,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &811624868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  item: {fileID: 11400000, guid: 14e0a8e7bf60edb4580f04cb7d4102e6, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &813362217
 GameObject:
   m_ObjectHideFlags: 0
@@ -16308,6 +16394,20 @@ MonoBehaviour:
   audioSource: {fileID: 2027245621}
   audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
   delay: 0
+--- !u!114 &880959678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 1
 --- !u!1 &885818570
 GameObject:
   m_ObjectHideFlags: 0
@@ -17008,6 +17108,7 @@ Transform:
   - {fileID: 1503817043}
   - {fileID: 123252411}
   - {fileID: 318110096}
+  - {fileID: 1371130246}
   m_Father: {fileID: 1566580974}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 27.152, z: 0}
@@ -17028,6 +17129,7 @@ MonoBehaviour:
   interactionLocation: {fileID: 1503817043}
   conditionCollections:
   - {fileID: 656857553}
+  - {fileID: 1442805649}
   defaultReactionCollection: {fileID: 123252412}
 --- !u!114 &930665496
 MonoBehaviour:
@@ -22225,6 +22327,20 @@ MonoBehaviour:
   audioSource: {fileID: 2027245621}
   audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
   delay: 0
+--- !u!114 &1219696836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 1
 --- !u!114 &1223341699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22604,6 +22720,21 @@ MonoBehaviour:
   description: hasCPU
   satisfied: 0
   hash: 1541125805
+--- !u!114 &1233444320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Ich habe tats\xE4chlich eine H\xE4lfte einer Karte gefunden. Hier! Ich
+    kann damit eh nichts anfagen."
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!114 &1238896577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22723,6 +22854,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1242461405}
   m_Mesh: {fileID: 4300752, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1242872877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasFirstPartOfTechnokratenMap
+  satisfied: 0
+  hash: 1176861128
 --- !u!4 &1247928235 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400072, guid: 5bf6e39cc69d60248a72e3eaa5739f3d, type: 3}
@@ -23664,6 +23809,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294424983}
   m_Mesh: {fileID: 4300126, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1296899296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Du kannst sonst mal Engin fragen, ob er noch etwas gesehen hat.
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 3
 --- !u!1 &1303253785
 GameObject:
   m_ObjectHideFlags: 0
@@ -24905,6 +25064,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1369746209}
   m_Mesh: {fileID: 4300728, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1371130245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1371130246}
+  - component: {fileID: 1371130247}
+  m_Layer: 0
+  m_Name: lookingForTechnoMapReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1371130246
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371130245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 930665494}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1371130247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371130245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 89795270}
+  - {fileID: 1926674849}
+  - {fileID: 1465451958}
+  - {fileID: 1219696836}
+  - {fileID: 512573147}
+  - {fileID: 1296899296}
 --- !u!1 &1371840825
 GameObject:
   m_ObjectHideFlags: 0
@@ -26218,6 +26424,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1438614707}
   m_Mesh: {fileID: 4300492, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1442805649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: lookingForTechnoMap
+  requiredConditions:
+  - {fileID: 231214975}
+  - {fileID: 1242872877}
+  reactionCollection: {fileID: 1371130247}
 --- !u!1 &1444711808
 GameObject:
   m_ObjectHideFlags: 0
@@ -26817,6 +27039,20 @@ Transform:
   m_Father: {fileID: 601912206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1465451958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &1472639962
 GameObject:
   m_ObjectHideFlags: 0
@@ -26890,6 +27126,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1472639962}
   m_Mesh: {fileID: 4300158, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1479542694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1479542695}
+  - component: {fileID: 1479542696}
+  m_Layer: 0
+  m_Name: HasFirstPartOfTechnokratenMapReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1479542695
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479542694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1707465450}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1479542696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479542694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1233444320}
+  - {fileID: 811624868}
+  - {fileID: 1503368335}
+  - {fileID: 880959678}
+  - {fileID: 1839372263}
+  - {fileID: 1706132604}
 --- !u!1 &1481045197
 GameObject:
   m_ObjectHideFlags: 0
@@ -27170,6 +27453,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501997914}
   m_Mesh: {fileID: 4300068, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1503368335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!1 &1503817042
 GameObject:
   m_ObjectHideFlags: 0
@@ -30332,6 +30629,19 @@ MonoBehaviour:
   reactions:
   - {fileID: 1022630569}
   - {fileID: 1267521966}
+--- !u!114 &1706132604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 2ebd3b48d30fa9445a612f8381099c9b, type: 2}
+  state: {fileID: 114893027378896614, guid: 2ebd3b48d30fa9445a612f8381099c9b, type: 2}
 --- !u!114 &1706217613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30378,6 +30688,7 @@ Transform:
   m_Children:
   - {fileID: 433436443}
   - {fileID: 1075299708}
+  - {fileID: 1479542695}
   m_Father: {fileID: 1566580974}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 42.182003, z: 0}
@@ -30396,7 +30707,8 @@ MonoBehaviour:
   interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
   interactionName: Engin
   interactionLocation: {fileID: 433436443}
-  conditionCollections: []
+  conditionCollections:
+  - {fileID: 30951675}
   defaultReactionCollection: {fileID: 1075299709}
 --- !u!114 &1707465452
 MonoBehaviour:
@@ -32901,6 +33213,20 @@ MonoBehaviour:
   description: hasFirstPartOfArticle
   satisfied: 0
   hash: 678893951
+--- !u!114 &1839372263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114633337754155364, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!114 &1847712497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33342,6 +33668,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 6065cae709995aa4284d0d0458583d34, type: 2}
   playerQuests: {fileID: 11400000, guid: 1c994f106db14914f9383d4f1cda22e6, type: 2}
+--- !u!114 &1886481592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasFirstPartOfTechnokratenMap
+  satisfied: 1
+  hash: 1176861128
 --- !u!1 &1889342485
 GameObject:
   m_ObjectHideFlags: 0
@@ -34083,6 +34423,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922656006}
   m_Mesh: {fileID: 4300770, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1926674849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Ja, ich habe tats\xE4chlich neulich beim Aufr\xE4umen etwas gefunden.
+    Hier!"
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
+  delay: 0
 --- !u!114 &1927770044
 MonoBehaviour:
   m_ObjectHideFlags: 0

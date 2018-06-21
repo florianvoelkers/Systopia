@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour {
 	[SerializeField] private Text npcName;
 	[SerializeField] private Text dialogueSentence;
 	[SerializeField] private GameObject continueButton;
+	[SerializeField] private GameObject settingsIcon;
+	[SerializeField] private GameObject tabletIcon;
 
 	private List <DialogueNode> nodes;
 	private int currentNodeId;
@@ -27,7 +29,8 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public void DisplayDialog (List <DialogueNode> dialogueNodes, string npcName) {
-		Debug.Log ("display dialogue");
+		tabletIcon.SetActive (false);
+		settingsIcon.SetActive (false);
 		nodes = dialogueNodes;
 		currentNodeId = 0;
 		currentSentence = -1;
@@ -95,5 +98,7 @@ public class DialogueManager : MonoBehaviour {
 		npcName.enabled = false;
 		npcName.text = "";
 		continueButton.SetActive (false);
+		tabletIcon.SetActive (true);
+		settingsIcon.SetActive (true);
 	}
 }
