@@ -30709,6 +30709,7 @@ MonoBehaviour:
       haben."
     - "Wenn du dich ihnen anschlie\xDFen willst, kannst du in ihrem Hauptquartier
       nachfragen."
+    - Was darf's sein?
     options:
     - text: "Ein Tavernen Br\xE4u (5 Coins)"
       destinationNodeId: 1
@@ -30737,6 +30738,7 @@ MonoBehaviour:
       Begebenheiten aus dem Leben einiger Avantgardisten."
     - "Wenn du dich ihnen anschlie\xDFen willst, solltest du ins Hauptquartier der
       Avantgardisten gehen."
+    - Was darf's sein?
     options:
     - text: "Ein Tavernen Br\xE4u"
       destinationNodeId: 1
