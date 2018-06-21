@@ -78,6 +78,7 @@ MonoBehaviour:
   - {fileID: 114320698426541920}
   - {fileID: 114465956979529618}
   - {fileID: 114890354378819950}
+  - {fileID: 114487421353924944}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +499,20 @@ MonoBehaviour:
   description: knowsAvantgardistenUnterschlupf
   satisfied: 0
   hash: -565051864
+--- !u!114 &114487421353924944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: hasFirstPartOfTechnokratenMap
+  m_EditorClassIdentifier: 
+  description: hasFirstPartOfTechnokratenMap
+  satisfied: 0
+  hash: 1176861128
 --- !u!114 &114507213015949158
 MonoBehaviour:
   m_ObjectHideFlags: 0

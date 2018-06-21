@@ -12,8 +12,10 @@ public class TextManager : MonoBehaviour {
 	}
 
 	public Text text;
-	public float displayTimePerCharacter = 0.05f;
+	public float displayTimePerCharacter = 0.025f;
 	public float additionalDisplayTime = 0.5f;
+	[SerializeField] private GameObject settingsIcon;
+	[SerializeField] private GameObject tabletIcon;
 
 	private List <Instruction> instructions = new List <Instruction> ();
 	private float clearTime;

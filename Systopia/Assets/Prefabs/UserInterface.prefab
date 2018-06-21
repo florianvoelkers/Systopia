@@ -3096,6 +3096,8 @@ MonoBehaviour:
   npcName: {fileID: 114520914857663272}
   dialogueSentence: {fileID: 114114332904744856}
   continueButton: {fileID: 1015739894462250}
+  settingsIcon: {fileID: 1085615902971634}
+  tabletIcon: {fileID: 1428418444601022}
 --- !u!114 &114080557078243468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4361,8 +4363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 114986661566932694}
-  displayTimePerCharacter: 0.1
+  displayTimePerCharacter: 0.05
   additionalDisplayTime: 0.5
+  settingsIcon: {fileID: 1085615902971634}
+  tabletIcon: {fileID: 1428418444601022}
 --- !u!114 &114321499120196842
 MonoBehaviour:
   m_ObjectHideFlags: 1

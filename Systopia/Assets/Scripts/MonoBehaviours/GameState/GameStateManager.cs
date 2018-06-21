@@ -111,6 +111,7 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void UnpauseGame () {
+		Debug.Log ("unpause game");
 		settingsIcon.SetActive (true);
 		tabletIcon.SetActive (true);
 		Time.timeScale = 1;
@@ -131,6 +132,7 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void Unpause () {
+		Debug.Log ("unpause");
 		Time.timeScale = 1;
 		isPaused = false;
 		menu.SetActive (false);
