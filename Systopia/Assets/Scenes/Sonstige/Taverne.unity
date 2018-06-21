@@ -19709,7 +19709,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1116623171}
-  - component: {fileID: 1116623172}
   - component: {fileID: 1116623173}
   m_Layer: 0
   m_Name: CameraChanger
@@ -19731,18 +19730,6 @@ Transform:
   m_Father: {fileID: 339438752}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -7.7300005, z: 0}
---- !u!65 &1116623172
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1116623170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.9231272, y: 22.47256, z: 47.231644}
-  m_Center: {x: -0.99300367, y: 6.765547, z: -7.658125}
 --- !u!114 &1116623173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19756,6 +19743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstCamera: {fileID: 550421813}
   secondCamera: {fileID: 2129557447}
+  player: {fileID: 1343528050}
 --- !u!114 &1119741029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23799,6 +23787,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1343528048}
   m_Script: {fileID: 11500000, guid: b26186d2575bec5439c56f32616d7151, type: 3}
+--- !u!1 &1343528050 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1463163123565866, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1343528048}
 --- !u!114 &1344906042
 MonoBehaviour:
   m_ObjectHideFlags: 0
