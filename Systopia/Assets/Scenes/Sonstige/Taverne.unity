@@ -2468,6 +2468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: dca60d799f1dfee4f80b799fa8d2911c, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &163527126
 GameObject:
   m_ObjectHideFlags: 0
@@ -10757,7 +10758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &595432227
 Transform:
   m_ObjectHideFlags: 0
@@ -14585,6 +14586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: 90f4c4399eb16394590cf671c1d92f8c, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &796205752
 GameObject:
   m_ObjectHideFlags: 0
@@ -27767,6 +27769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426827889}
   - component: {fileID: 1608780554}
+  - component: {fileID: 1608780555}
   m_Layer: 0
   m_Name: Taverne 1
   m_TagString: Untagged
@@ -27792,6 +27795,27 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1608780555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608780553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39733daafe99c9b40afd8685189221dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeableGameObjects:
+  - gameObject: {fileID: 2059678671}
+    state: 1
+    condition: {fileID: 114890354378819950, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  - gameObject: {fileID: 595432226}
+    state: 1
+    condition: {fileID: 114890354378819950, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
 --- !u!1 &1609470807
 GameObject:
   m_ObjectHideFlags: 0
@@ -30504,6 +30528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 631051565}
+  - {fileID: 1927770044}
 --- !u!4 &1758625915
 Transform:
   m_ObjectHideFlags: 0
@@ -33224,6 +33249,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922656006}
   m_Mesh: {fileID: 4300770, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1927770044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114890354378819950, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &1929365982
 GameObject:
   m_ObjectHideFlags: 0
@@ -35808,7 +35847,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: bbb78452f72acf64795f439259f3b806, type: 2}
     - target: {fileID: 100180, guid: f0be9ad26cc3ed34996de57fa63786bf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0be9ad26cc3ed34996de57fa63786bf, type: 3}

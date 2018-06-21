@@ -4,7 +4,7 @@
 public class LostItemReaction : DelayedReaction {
 
 	public Item item;
-	private PlayerInventory inventory;
+	public PlayerInventory inventory;
 
 	protected override void SpecificInit () {
 		inventory = FindObjectOfType<PlayerInventory> ();

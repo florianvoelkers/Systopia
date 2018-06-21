@@ -3237,6 +3237,7 @@ MonoBehaviour:
   - {fileID: 1962375174}
   - {fileID: 1143365334}
   - {fileID: 226683448}
+  - {fileID: 1495702486}
 --- !u!1 &311771975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,7 +4562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &450992315
 Transform:
   m_ObjectHideFlags: 0
@@ -4569,15 +4570,15 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 450992314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.5113831, w: 0.8593528}
+  m_LocalPosition: {x: -31.1, y: 1.72, z: -62.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104886896}
   - {fileID: 1238854505}
   m_Father: {fileID: 1769092725}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 61.512}
 --- !u!114 &450992316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4594,7 +4595,7 @@ MonoBehaviour:
   interactionName: "Versteck f\xFCr Artefakte"
   interactionLocation: {fileID: 104886896}
   conditionCollections: []
-  defaultReactionCollection: {fileID: 0}
+  defaultReactionCollection: {fileID: 1238854506}
 --- !u!114 &450992317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4616,7 +4617,7 @@ MonoBehaviour:
           m_MethodName: OnInteractableClick
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 450992316}
             m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -4671,8 +4672,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.37021005, y: 6.516222, z: 10.110607}
+  m_Center: {x: -0.31489643, y: 1.9372135, z: -0.059850693}
 --- !u!1 &451407675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   item: {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &495697278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,7 +5547,7 @@ MonoBehaviour:
     options:
     - text: "Ich hab ein Bier f\xFCr dich! (Bier geben)"
       destinationNodeId: 1
-      reactionCollection: {fileID: 0}
+      reactionCollection: {fileID: 309835864}
     - text: Nein, ich finde das so heraus.
       destinationNodeId: 2
       reactionCollection: {fileID: 0}
@@ -8779,6 +8781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970233806}
   - component: {fileID: 970233805}
+  - component: {fileID: 970233807}
   m_Layer: 0
   m_Name: StreetRemake
   m_TagString: Untagged
@@ -8819,6 +8822,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970233807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970233804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39733daafe99c9b40afd8685189221dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeableGameObjects:
+  - gameObject: {fileID: 450992314}
+    state: 1
+    condition: {fileID: 114880877742259342, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
 --- !u!1 &972901405
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,6 +13024,20 @@ Transform:
   m_Father: {fileID: 600638275}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495702486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  gameObject: {fileID: 450992314}
+  activeState: 1
 --- !u!1 &1508444212
 GameObject:
   m_ObjectHideFlags: 0
