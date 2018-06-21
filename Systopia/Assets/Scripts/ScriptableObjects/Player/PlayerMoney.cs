@@ -10,8 +10,13 @@ public class PlayerMoney : ScriptableObject {
 		money += amount;
 	}
 
-	public void SubtractMoney (int amount) {
+	public bool SubtractMoney (int amount) {
 		money -= amount;
+		if (money < 0) {
+			money += amount;
+			return false;
+		}
+		return true;
 	}
 
 	public void SetMoney (int amount) {

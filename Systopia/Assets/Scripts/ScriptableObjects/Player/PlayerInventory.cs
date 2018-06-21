@@ -25,7 +25,14 @@ public class PlayerInventory : ScriptableObject {
 		}
 	}
 
-	public void RemoveItem (Item item) {
-		items.Remove (item);
+	public bool RemoveItem (Item item) {
+		for (int i = 0; i < items.Count; i++) {
+			if (items [i] == item) {
+				items.Remove (item);
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

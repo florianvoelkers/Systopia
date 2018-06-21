@@ -5,12 +5,19 @@ public class LostItemReaction : DelayedReaction {
 
 	public Item item;
 	public PlayerInventory inventory;
+	public ReactionCollection hasItemReaction;
+	public ReactionCollection doesNotHaveItem;
 
 	protected override void SpecificInit () {
 		inventory = FindObjectOfType<PlayerInventory> ();
 	}
 
 	protected override void ImmediateReaction () {
-		inventory.RemoveItem (item);
+		bool hadItem = inventory.RemoveItem (item);
+		if (hadItem) {
+			hasItemReaction.React ();
+		} else {
+			doesNotHaveItem.React ();
+		}
 	}
 }
