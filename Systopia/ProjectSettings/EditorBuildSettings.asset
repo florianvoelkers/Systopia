@@ -33,11 +33,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Technokraten/TechnoHQ.unity
     guid: a5362aa386387c54bba47496b35ac775
   - enabled: 1
-    path: Assets/Scenes/Technokraten/TechnoVerwaltungsStelle.unity
-    guid: 008e12e468ff4404db1b7ca8943b6cf3
-  - enabled: 1
     path: Assets/Scenes/Technokraten/TechnoWaffenLager.unity
     guid: 0bbc79923880cb343bc679ba8de7eea9
+  - enabled: 1
+    path: Assets/Scenes/Technokraten/TechnoVerwaltungsStelle.unity
+    guid: 008e12e468ff4404db1b7ca8943b6cf3
   - enabled: 1
     path: Assets/Scenes/HAW/BibRuine.unity
     guid: 89822e667db69414ebf5fc8d651df988
@@ -53,3 +53,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FightScenes/TechnoWaffenlagerFight.unity
     guid: 8d9c42aeb33c80947a36109821d8e14d
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/AvaUnterschlupfFight.unity
+    guid: 85bce7c11bf474c40b7762089c0779ab
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/AvaWaffenLagerFight.unity
+    guid: 202bcc8c815edf44fb610f013992cf3b
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/EndFightScene.unity
+    guid: 6f84746c734ff9d42b8ee65265057523
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/TechnoArtefakLagerFight.unity
+    guid: 491ba196f15a089428153a0d2d66c250
+  - enabled: 1
+    path: Assets/Scenes/FightScenes/TechnoVerwaltungsStelleFight.unity
+    guid: 23ea9d3c96326dc4fb9709fb645201ef

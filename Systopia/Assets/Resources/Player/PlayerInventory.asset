@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: 61c6c1c2bb739144eb935d720c36a5ae, type: 2}
-  - {fileID: 11400000, guid: e0366e0ffa937374daf9dab4459ad64c, type: 2}
-  - {fileID: 11400000, guid: 9b5a4062c38c69c469108aa5cfe7cc17, type: 2}
-  - {fileID: 11400000, guid: 1b009a63531e78d47a2177bc08c70c99, type: 2}
-  - {fileID: 11400000, guid: faeb925bcc3af31499bfe77c60576438, type: 2}
-  - {fileID: 11400000, guid: faeb925bcc3af31499bfe77c60576438, type: 2}
+  - {fileID: 11400000, guid: f91c26a77cc34fa4aad81943bc05a0ad, type: 2}
+  - {fileID: 11400000, guid: d8a3c340173a71f4f8cc4760904628f8, type: 2}
+  - {fileID: 11400000, guid: 5f332a30dfd5b144c8ce1c0cc539bf64, type: 2}
+  - {fileID: 11400000, guid: 5becd105919016c49b468e9a8b962ad1, type: 2}
+  - {fileID: 11400000, guid: 11628054f20da3c4c95154634e1b6ade, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 81051efef43eb0d45a38dd25d5ede2ed, type: 2}
+  - {fileID: 11400000, guid: 82be2260c94b7bc40882ff4da42e4694, type: 2}
+  allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
