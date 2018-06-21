@@ -15,9 +15,11 @@ public class LostItemReaction : DelayedReaction {
 	protected override void ImmediateReaction () {
 		bool hadItem = inventory.RemoveItem (item);
 		if (hadItem) {
-			hasItemReaction.React ();
+			if (hasItemReaction != null)
+				hasItemReaction.React ();
 		} else {
-			doesNotHaveItem.React ();
+			if (doesNotHaveItem != null)
+				doesNotHaveItem.React ();
 		}
 	}
 }
