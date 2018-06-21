@@ -6273,7 +6273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothing: 7
-  offset: {x: 0, y: 6, z: 0}
+  offset: {x: 0, y: 7, z: 0}
   playerPosition: {fileID: 372502842}
   tavernEdge: {fileID: 129819945}
   ruinEdge: {fileID: 573671440}
@@ -6329,7 +6329,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628148442}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 6, z: -66}
+  m_LocalPosition: {x: 0, y: 14, z: -66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
