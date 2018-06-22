@@ -11379,7 +11379,7 @@ GameObject:
   - component: {fileID: 517533731}
   - component: {fileID: 517533730}
   m_Layer: 0
-  m_Name: FightPlayerCharacter
+  m_Name: PlayerCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

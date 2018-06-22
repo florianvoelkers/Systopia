@@ -52,7 +52,7 @@ public class AnfangsSzenenScript : MonoBehaviour {
 
     }
     //textmanager.DisplayMessage(message,textColor,delay);
-    //sceneController.StartGame ();
+    //
     // Update is called once per frame
     void Update () {
         timeLeft -= Time.deltaTime;
@@ -63,6 +63,6 @@ public class AnfangsSzenenScript : MonoBehaviour {
     }
 
     void StartGame() {
-        Debug.Log("Start Game");
+		sceneController.StartGame ();
     }
 }
