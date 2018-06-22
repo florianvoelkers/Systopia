@@ -74,9 +74,9 @@ public class DollyCameraController : MonoBehaviour {
 
 			if (changeZAxis) {
 				if (playerPosition.position.z < tavernEdge.position.z) {
-					newPosition.z = tavernEdge.position.z;
+					newPosition.z = tavernEdge.position.z + moveCameraDistance;
 				} else if (playerPosition.position.z > ruinEdge.position.z) {
-					newPosition.z = ruinEdge.position.z;
+					newPosition.z = ruinEdge.position.z + moveCameraDistance;
 				} else {
 					newPosition.z = playerPosition.position.z + moveCameraDistance;
 				}
