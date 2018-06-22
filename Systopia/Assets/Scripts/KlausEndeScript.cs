@@ -88,6 +88,6 @@ public class KlausEndeScript : MonoBehaviour {
     void EndGame()
     {
 
-        Debug.Log("EndGame");
+		Application.Quit ();
     }
 }

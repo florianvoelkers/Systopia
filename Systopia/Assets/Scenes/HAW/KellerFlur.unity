@@ -114,6 +114,64 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 0754551c833345b40a7ea0c2f03db47b, type: 2}
+--- !u!1 &26709801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1155140946553810, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 26709802}
+  m_Layer: 0
+  m_Name: InteractionLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26709802
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4349592422960476, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26709801}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -3.4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1445155031}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &27283798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasAccessToLaboratory
+  satisfied: 1
+  hash: -1094338735
+--- !u!114 &27296259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6b980ed4fc02942af4ef086c54c5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: "KellerGew\xF6lbe"
+  startingPointInLoadedScene: DoorToFlur
+  playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
 --- !u!1 &65772461
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &156627395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +439,87 @@ Transform:
   m_Father: {fileID: 1494702077}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 118.741, y: -369.94098, z: -81.259}
+--- !u!114 &256258341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Klaus Willaschek
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - "Nanu...was machst du an meiner T\xFCr? Wieso wei\xDFt du von diesem Ort?"
+    - Du willst also zu mir...Ein alter Mann aus der Taverne schickt dich. So so...
+    - Beweise mir, dass du sowohl logisch als auch kreativ denkst, indem du diese
+      3 Fragen beantwortest.
+    - "Was ist schwarz, wenn du es bekommst, rot, wenn du es nutzt und wei\xDF, wenn
+      du damit fertig bist?"
+    options:
+    - text: Hummer
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Pistolenkugel
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Erdbeere
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Kohle
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Falsch! Kein Zutritt f\xFCr dich."
+    options: []
+  - nodeId: 2
+    sentences:
+    - Richtig! Kommen wir zur zweiten Frage.
+    - "Du stehst in einem quadratischen Raum, bei dem alle 4 W\xE4nde, sowie der Boden
+      und die Decke komplett aus Spiegeln bestehen."
+    - Wie oft kannst du dich sehen?
+    options:
+    - text: Kein Mal.
+      destinationNodeId: 3
+      reactionCollection: {fileID: 0}
+    - text: 1 Mal
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: 6 Mal
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Unendlich Mal
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+  - nodeId: 3
+    sentences:
+    - Richtig, denn es gibt kein Licht im Raum. Letzte Frage.
+    - "Die toten K\xF6rper von Bob und Anna liegen auf dem Boden. Sie sind nass und
+      nackt. Ihre K\xF6rper haben keine Schnitte. Die Fenster vom Haus, in dem sie
+      leben, stehen weit offen und es st\xFCrmt drau\xDFen."
+    - Wie sind sie gestorben?
+    options:
+    - text: Vom Blitz erschlagen.
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Vergiftet.
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Erstickt.
+      destinationNodeId: 4
+      reactionCollection: {fileID: 1032588458}
+    - text: Ertrunken.
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+  - nodeId: 4
+    sentences:
+    - Richtig, Anna und Bob sind Fische. Du darfst eintreten.
+    options: []
 --- !u!1 &417766754
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +718,50 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &556590167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1445598748621246, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 556590169}
+  - component: {fileID: 556590168}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556590168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556590167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 256258341}
+--- !u!4 &556590169
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4894770453824238, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556590167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1445155031}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621592744
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +838,7 @@ GameObject:
   - component: {fileID: 628148446}
   - component: {fileID: 628148445}
   - component: {fileID: 628148444}
+  - component: {fileID: 628148447}
   - component: {fileID: 628148443}
   m_Layer: 0
   m_Name: Main Camera
@@ -663,13 +847,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &628148443
-AudioListener:
+--- !u!114 &628148443
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628148442}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 3dda9ef9754903040873566b44ff1953, type: 2}
 --- !u!124 &628148444
 Behaviour:
   m_ObjectHideFlags: 0
@@ -698,10 +887,10 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967263
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -726,6 +915,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 11.7, y: 135.07, z: -0.018000001}
+--- !u!114 &628148447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628148442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &660138658
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +965,7 @@ MonoBehaviour:
   interactionName: "Zur Stra\xDFe"
   interactionLocation: {fileID: 1848487091}
   conditionCollections: []
-  defaultReactionCollection: {fileID: 0}
+  defaultReactionCollection: {fileID: 931488656}
 --- !u!114 &660138660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,8 +983,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1516206636}
-          m_MethodName: 
+        - m_Target: {fileID: 1516206637}
+          m_MethodName: OnInteractableClick
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 660138659}
@@ -1093,6 +1297,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 2089161041}
+--- !u!1 &1032588456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1032588457}
+  - component: {fileID: 1032588458}
+  m_Layer: 0
+  m_Name: VisitKlausReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032588457
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032588456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1445155031}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032588458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032588456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 27296259}
+  - {fileID: 1599347675}
+  - {fileID: 2144969196}
 --- !u!114 &1046352371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,7 +1354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: HAWRuine
   startingPointInLoadedScene: DoorToFlur
-  playerLocation: {fileID: 0}
+  playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
 --- !u!1 &1079966819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,6 +4865,83 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c2f1c018353cc94296685ccaea64b2b, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1243427327 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 9c2f1c018353cc94296685ccaea64b2b, type: 3}
+  m_PrefabInternal: {fileID: 1243427326}
+--- !u!114 &1243427328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1243427327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1516206637}
+          m_MethodName: OnGroundClick
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!64 &1243427329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1243427327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9c2f1c018353cc94296685ccaea64b2b, type: 3}
+--- !u!1 &1243427330 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100042, guid: 9c2f1c018353cc94296685ccaea64b2b, type: 3}
+  m_PrefabInternal: {fileID: 1243427326}
+--- !u!114 &1243427331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1243427330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39733daafe99c9b40afd8685189221dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeableGameObjects:
+  - gameObject: {fileID: 1445155027}
+    state: 1
+    condition: {fileID: 114192914643168618, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  - gameObject: {fileID: 156627394}
+    state: 1
+    condition: {fileID: 114625007438565306, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  - gameObject: {fileID: 156627394}
+    state: 1
+    condition: {fileID: 114798719141492994, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+      type: 2}
+  allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
 --- !u!1 &1267503889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +5036,138 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1445155027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1692567240999712, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1445155031}
+  - component: {fileID: 1445155030}
+  - component: {fileID: 1445155029}
+  - component: {fileID: 1445155028}
+  m_Layer: 0
+  m_Name: DoorToLaboratoryInteractable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1445155028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114701604046204364, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445155027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
+  interactionName: "Zu den Kellergew\xF6lben"
+  interactionLocation: {fileID: 26709802}
+  conditionCollections:
+  - {fileID: 1728467449}
+  defaultReactionCollection: {fileID: 556590168}
+--- !u!114 &1445155029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114584682784276904, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445155027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1516206637}
+          m_MethodName: OnInteractableClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1445155028}
+            m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1445155028}
+          m_MethodName: ShowCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1445155028}
+          m_MethodName: HideCustomCursor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1445155030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65502198303228566, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445155027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 8.838469, z: 3.9521046}
+  m_Center: {x: 0, y: 3.9192343, z: -0.6508703}
+--- !u!4 &1445155031
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4943703842993520, guid: 0c77dfacd510dce4ca99ab9a63871fc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445155027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.24, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 26709802}
+  - {fileID: 556590169}
+  - {fileID: 1032588457}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494702076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +5280,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1463163123565866, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f,
     type: 2}
   m_PrefabInternal: {fileID: 1516206635}
+--- !u!114 &1516206637 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114943047893154248, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1516206635}
+  m_Script: {fileID: 11500000, guid: b26186d2575bec5439c56f32616d7151, type: 3}
 --- !u!1 &1539099624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,6 +5316,20 @@ Transform:
   m_Father: {fileID: 156627398}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -172.72801, z: 0}
+--- !u!114 &1599347675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114519879249078280, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &1670881917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +5462,65 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1728467449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasAccess
+  requiredConditions:
+  - {fileID: 27283798}
+  reactionCollection: {fileID: 1032588458}
+--- !u!1 &1802802599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1653572062141818, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1802802601}
+  - component: {fileID: 1802802600}
+  m_Layer: 0
+  m_Name: DoorToLaboratoryStartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1802802600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114443587394498202, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802802599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: DoorToLaboratory
+--- !u!4 &1802802601
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802802599}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 22.14, y: 0, z: -0.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1848487090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,3 +5703,16 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: HAWFlurDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+--- !u!114 &2144969196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: f578a5c68e6f8e94086824af57e3013f, type: 2}
+  state: {fileID: 114203246990219866, guid: f578a5c68e6f8e94086824af57e3013f, type: 2}

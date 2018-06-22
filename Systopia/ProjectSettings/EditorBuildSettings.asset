@@ -68,3 +68,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FightScenes/TechnoVerwaltungsStelleFight.unity
     guid: 23ea9d3c96326dc4fb9709fb645201ef
+  - enabled: 1
+    path: Assets/Scenes/Sonstige/KlausEnde.unity
+    guid: cbbde8dbef1e3ff41b39781e54dcc436
