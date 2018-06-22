@@ -13,12 +13,15 @@ public class KlausEndeScript : MonoBehaviour {
     private bool playedVideo = false;
     private bool finishedDialog = false;
 
+	private GameObject backgroundMusic;
+
     // Use this for initialization
     void Start()
     {
 
         textmanager = FindObjectOfType<TextManager>();
-
+		backgroundMusic = GameObject.Find ("BackgroundMusic");
+		backgroundMusic.SetActive (false);
         textmanager.DisplayMessage("Klaus: Haltet ein ihr Narren!", Color.white, 0.5f);
         textmanager.DisplayMessage("Dies ist nicht die vorgesehene Lösung.", Color.white, 4f);
         textmanager.DisplayMessage("Alles war ein schrecklicher Fehler und wir können ihn jetzt endlich rückgängig machen.", Color.white, 8f);

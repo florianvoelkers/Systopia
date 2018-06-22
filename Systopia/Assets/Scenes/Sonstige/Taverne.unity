@@ -15671,9 +15671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: startedQuest2-4
+  description: startedQuest3-5
   satisfied: 0
-  hash: 1394871676
+  hash: 635525085
 --- !u!114 &827661161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16545,6 +16545,7 @@ MonoBehaviour:
   description: joinedAvantgardisten
   requiredConditions:
   - {fileID: 1312981441}
+  - {fileID: 1015568228}
   reactionCollection: {fileID: 566177853}
 --- !u!1 &895869406
 GameObject:
@@ -18644,6 +18645,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015559752}
   m_Mesh: {fileID: 4300112, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1015568228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedQuest3-5
+  satisfied: 0
+  hash: 635525085
 --- !u!1 &1016210714
 GameObject:
   m_ObjectHideFlags: 0
@@ -23207,6 +23222,7 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1201244942}
   - {fileID: 826821512}
+  - {fileID: 1765545202}
   reactionCollection: {fileID: 869790311}
 --- !u!1 &1266257292
 GameObject:
@@ -24605,8 +24621,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountToTake: 50
   playerMoney: {fileID: 11400000, guid: ad3b9df6d73a6d24d89edad60e60a432, type: 2}
-  hasEnoughMoney: {fileID: 0}
-  doesNotHaveEnoughMoney: {fileID: 0}
+  hasEnoughMoney: {fileID: 1693081459}
+  doesNotHaveEnoughMoney: {fileID: 447490974}
 --- !u!1001 &1343528048
 Prefab:
   m_ObjectHideFlags: 0
@@ -31851,6 +31867,20 @@ MonoBehaviour:
     sentences:
     - Ach man, na gut. Aber nur weil du es bist.
     options: []
+--- !u!114 &1765545202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedQuest2-4
+  satisfied: 0
+  hash: 1394871676
 --- !u!114 &1766228711
 MonoBehaviour:
   m_ObjectHideFlags: 0

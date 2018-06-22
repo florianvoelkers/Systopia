@@ -8,10 +8,6 @@ public class LostItemReaction : DelayedReaction {
 	public ReactionCollection hasItemReaction;
 	public ReactionCollection doesNotHaveItem;
 
-	protected override void SpecificInit () {
-		inventory = FindObjectOfType<PlayerInventory> ();
-	}
-
 	protected override void ImmediateReaction () {
 		bool hadItem = inventory.RemoveItem (item);
 		if (hadItem) {

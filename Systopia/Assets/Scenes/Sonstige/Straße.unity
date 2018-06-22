@@ -13092,7 +13092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
-  interactionName: HAW Keller
+  interactionName: HAW Ruine
   interactionLocation: {fileID: 789881359}
   conditionCollections: []
   defaultReactionCollection: {fileID: 337287935}

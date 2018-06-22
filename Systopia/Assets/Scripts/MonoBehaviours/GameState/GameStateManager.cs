@@ -286,6 +286,8 @@ public class GameStateManager : MonoBehaviour {
 
 		}
 		Time.timeScale = 1;
+		creationCharacter.SetActive (false);
+		characterLight.SetActive (false);
 		sceneController.StartGameFromSaveFile (gameStarted);
 		StartCoroutine (WaitAndUnpause (2f));
 	}
