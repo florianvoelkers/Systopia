@@ -71,3 +71,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sonstige/KlausEnde.unity
     guid: cbbde8dbef1e3ff41b39781e54dcc436
+  - enabled: 1
+    path: Assets/Scenes/Sonstige/AnfangsScene.unity
+    guid: f8dd0bdd6f9017d4ab5fd0c50cf41e00

@@ -19493,8 +19493,6 @@ MonoBehaviour:
   reactions:
   - {fileID: 100269456}
   - {fileID: 1238896577}
-  - {fileID: 1706217613}
-  - {fileID: 1868561396}
 --- !u!1 &1077826117
 GameObject:
   m_ObjectHideFlags: 0
@@ -30713,20 +30711,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 2ebd3b48d30fa9445a612f8381099c9b, type: 2}
   state: {fileID: 114893027378896614, guid: 2ebd3b48d30fa9445a612f8381099c9b, type: 2}
---- !u!114 &1706217613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  gameObject: {fileID: 595432226}
-  activeState: 1
 --- !u!1 &1707465449
 GameObject:
   m_ObjectHideFlags: 0
@@ -33624,20 +33608,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868176749}
   m_Mesh: {fileID: 4300216, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &1868561396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  gameObject: {fileID: 2059678671}
-  activeState: 1
 --- !u!114 &1870212482
 MonoBehaviour:
   m_ObjectHideFlags: 0

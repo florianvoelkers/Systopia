@@ -15333,7 +15333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183eca61bcaf9ea4c811e3e3982b7462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: BibRuinenDoor
+  startingPointName: BibRuineDoor
 --- !u!1 &1543255166
 GameObject:
   m_ObjectHideFlags: 0
