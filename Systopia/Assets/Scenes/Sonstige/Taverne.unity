@@ -8344,6 +8344,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1847712497}
+--- !u!1 &447490972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 447490973}
+  - component: {fileID: 447490974}
+  m_Layer: 0
+  m_Name: DoesNotHaveEnoughMoney
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447490973
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447490972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1382567891}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &447490974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447490972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 953351426}
 --- !u!114 &447881661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12436,6 +12478,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 653835861}
   m_Mesh: {fileID: 4300732, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &654205297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114882049743169802, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &656247390
 GameObject:
   m_ObjectHideFlags: 0
@@ -16147,20 +16203,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862351602}
   m_Mesh: {fileID: 4300614, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &864761288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 734033515}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
-  delay: 0
 --- !u!114 &868476819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17536,6 +17578,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2027245621}
   audioClip: {fileID: 8300000, guid: da95bdb55310a834eb6f5ebcff08445e, type: 3}
+  delay: 0
+--- !u!114 &953351426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Du hast aber nicht genug Coins.
+  textColor: {r: 0.9254902, g: 0.8627451, b: 0, a: 1}
   delay: 0
 --- !u!1 &954651642
 GameObject:
@@ -19392,20 +19448,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071667809}
   m_Mesh: {fileID: 4300574, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &1073896836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: 5752eeb9cd66e3f47bd891c631efa74b, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &1075299707
 GameObject:
   m_ObjectHideFlags: 0
@@ -21242,20 +21284,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1171297614}
   m_Mesh: {fileID: 4300006, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
---- !u!114 &1176140290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: {fileID: 114882049743169802, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
-    type: 2}
-  satisfied: 1
 --- !u!1 &1178329772
 GameObject:
   m_ObjectHideFlags: 0
@@ -25492,7 +25520,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1693081458}
+  - {fileID: 447490973}
   m_Father: {fileID: 3533883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25508,10 +25538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1073896836}
   - {fileID: 1342475913}
-  - {fileID: 864761288}
-  - {fileID: 1176140290}
 --- !u!1 &1386643997
 GameObject:
   m_ObjectHideFlags: 0
@@ -30475,6 +30502,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1693081457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1693081458}
+  - component: {fileID: 1693081459}
+  m_Layer: 0
+  m_Name: HasEnoughMoney
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1693081458
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1693081457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1382567891}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693081459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1693081457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1878979478}
+  - {fileID: 654205297}
+  - {fileID: 1862140838}
 --- !u!1 &1693454894
 GameObject:
   m_ObjectHideFlags: 0
@@ -33391,6 +33462,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862072388}
   m_Mesh: {fileID: 4300772, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1862140838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: fc1d192b71e15e54c8f4ff379e0e17e9, type: 2}
+  state: {fileID: 114226900952463254, guid: fc1d192b71e15e54c8f4ff379e0e17e9, type: 2}
 --- !u!1 &1865917428
 GameObject:
   m_ObjectHideFlags: 0
@@ -33641,6 +33725,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875117990}
   m_Mesh: {fileID: 4300666, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1878979478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: 5752eeb9cd66e3f47bd891c631efa74b, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!114 &1879507013
 MonoBehaviour:
   m_ObjectHideFlags: 0
