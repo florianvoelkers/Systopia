@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 /*
  * What needs saving:
@@ -13,6 +14,8 @@ using UnityEngine.UI;
  */
 public class GameStateManager : MonoBehaviour {
 
+	[SerializeField] private VideoPlayer videoPlayer;
+	[SerializeField] private AudioSource backgroundMusic;
 	[Header ("Save Data")]
 	[SerializeField] private AllConditions allConditions;
 	[SerializeField] private AllLocations allLocations;
@@ -52,6 +55,14 @@ public class GameStateManager : MonoBehaviour {
 	void Awake () {
 		savePath = Application.persistentDataPath + "/save";
 		continueStartButtonText.text = "Spiel starten";
+		videoPlayer.loopPointReached += EndReached;
+	}
+
+	void EndReached (VideoPlayer vp) {
+		vp.enabled = false;
+		backgroundMusic.Play ();
+		sceneController.StartCutscene ("AnfangsScene");
+		StartCoroutine (WaitAndUnpause (1f));
 	}
 
 	public void StartContinueGame () {
@@ -92,8 +103,10 @@ public class GameStateManager : MonoBehaviour {
 			characterCreation.SetActive (false);
 			gameStarted = true;
 			continueStartButtonText.text = "Fortsetzen";
-			sceneController.StartGame ();
-			StartCoroutine (WaitAndUnpause (1f));
+			backgroundMusic.Pause ();
+			loadingScreen.SetActive (false);
+			videoPlayer.Play ();
+			Debug.Log (videoPlayer.isPlaying);
 		}
 	}
 

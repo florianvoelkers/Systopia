@@ -17,6 +17,10 @@ public class SceneController : MonoBehaviour {
 		StartCoroutine (ShowStartScene ());
 	}
 
+	public void StartCutscene (string cutsceneName) {
+		StartCoroutine (LoadSceneAndSetActive (cutsceneName));
+	}
+
 	public void StartGameFromSaveFile (bool gameStarted) {
 		if (gameStarted)
 			StartCoroutine (FadeAndSwitchScenes (playerLocation.currentSceneName));
@@ -27,7 +31,7 @@ public class SceneController : MonoBehaviour {
 	private IEnumerator ShowStartScene () {
 		faderCanvasGroup.alpha = 1f;
 		playerLocation.startingPositionName = initialStartingPointName;
-		yield return StartCoroutine (LoadSceneAndSetActive (startingSceneName));
+		yield return StartCoroutine (FadeAndSwitchScenes (startingSceneName));
 		StartCoroutine (Fade (0f));
 	}
 

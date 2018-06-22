@@ -6,7 +6,6 @@ using UnityEngine;
 public class KlausEndeScript : MonoBehaviour {
 
     private TextManager textmanager;
-    private SceneController sceneController;
     float timeLeft = 16.0f;
     public GameObject videoPlayer;
     public GameObject crowd;
@@ -19,7 +18,6 @@ public class KlausEndeScript : MonoBehaviour {
     {
 
         textmanager = FindObjectOfType<TextManager>();
-        sceneController = FindObjectOfType<SceneController>();
 
         textmanager.DisplayMessage("Klaus: Haltet ein ihr Narren!", Color.white, 0.5f);
         textmanager.DisplayMessage("Dies ist nicht die vorgesehene Lösung.", Color.white, 4f);

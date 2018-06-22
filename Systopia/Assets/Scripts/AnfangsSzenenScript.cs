@@ -11,12 +11,14 @@ public class AnfangsSzenenScript : MonoBehaviour {
     private Color green2;
     private Color yellow;
     float timeLeft = 34.0f;
+	private bool startedGame;
 
     //rot BA0000FF
     //grün 00F448FF
     //gelb ECDC00FF
     // Use this for initialization
     void Start () {
+		startedGame = false;
         red = new Color(0.8f, 0.5f, 0.45f);
         green = new Color(0.4f, 0.9f, 0.5f);
         green2 = new Color(0.1f, 0.9f, 0.5f);
@@ -63,6 +65,9 @@ public class AnfangsSzenenScript : MonoBehaviour {
     }
 
     void StartGame() {
-		sceneController.StartGame ();
+		if (!startedGame) {
+			startedGame = true;
+			sceneController.StartGame ();
+		}
     }
 }
