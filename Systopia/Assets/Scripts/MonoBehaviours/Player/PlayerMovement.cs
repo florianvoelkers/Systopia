@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour {
 
 		string startingPositionName = playerLocation.startingPositionName;
 		Transform startingPosition = StartingPosition.FindStartingPosition (startingPositionName);
+		if (startingPosition == null)
+			startingPosition = this.transform;
 		if (playerLocation.currentPositionSet) {
 			startingPosition.position = playerLocation.currentPosition;
 			startingPosition.rotation = playerLocation.currentRotation;

@@ -10,14 +10,17 @@ public class SceneController : MonoBehaviour {
 	[SerializeField] private string startingSceneName = "Taverne";
 	[SerializeField] private string initialStartingPointName = "DoorToStreet";
 	[SerializeField] private PlayerLocation playerLocation;
+	[SerializeField] private GameObject loadScreen;
 
 	private bool isFading;
 
 	public void StartGame () {
+		loadScreen.SetActive (true);
 		StartCoroutine (ShowStartScene ());
 	}
 
 	public void StartCutscene (string cutsceneName) {
+		loadScreen.SetActive (true);
 		StartCoroutine (LoadSceneAndSetActive (cutsceneName));
 	}
 
@@ -46,13 +49,17 @@ public class SceneController : MonoBehaviour {
 	}
 
 	public void FadeAndLoadScene (SceneReaction sceneReaction) {
-		if (!isFading)
+		if (!isFading) {
+			loadScreen.SetActive (true);
 			StartCoroutine (FadeAndSwitchScenes (sceneReaction.sceneName));
+		}
 	}
 
 	public void FadeAndLoadFightScene (string sceneName, System.Action callback) {
-		if (!isFading)
+		if (!isFading) {
+			loadScreen.SetActive (true);
 			StartCoroutine (FadeAndSwitchScenesToFight (sceneName, callback));
+		}
 	}
 
 	private IEnumerator FadeAndSwitchScenesToFight (string sceneName, System.Action callback) {
@@ -61,6 +68,7 @@ public class SceneController : MonoBehaviour {
 		yield return StartCoroutine (LoadSceneAndSetActive (sceneName));
 		yield return StartCoroutine (Fade (0f));
 		callback ();
+		loadScreen.SetActive (false);
 	}
 
 	private IEnumerator FadeAndSwitchScenes (string sceneName) {
@@ -68,12 +76,14 @@ public class SceneController : MonoBehaviour {
 		yield return SceneManager.UnloadSceneAsync (SceneManager.GetActiveScene ().buildIndex);
 		yield return StartCoroutine (LoadSceneAndSetActive (sceneName));
 		yield return StartCoroutine (Fade (0f));
+		loadScreen.SetActive (false);
 	}
 
 	private IEnumerator LoadSceneAndSetActive (string sceneName) {
 		yield return SceneManager.LoadSceneAsync (sceneName, LoadSceneMode.Additive);
 		Scene newlyLoadedScene = SceneManager.GetSceneAt (SceneManager.sceneCount - 1);
 		SceneManager.SetActiveScene (newlyLoadedScene);
+		loadScreen.SetActive (false);
 	}
 
 	private IEnumerator Fade (float finalAlpha) {

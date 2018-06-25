@@ -8,6 +8,10 @@ public class PlayerInventory : ScriptableObject {
 	public List <Item> items = new List <Item> ();
 	public AllConditions allConditions;
 
+	public void Load () {
+		allConditions = Resources.Load <AllConditions> ("Conditions/AllConditions");
+	}
+
 	public void Reset () {
 		items.Clear ();
 	}

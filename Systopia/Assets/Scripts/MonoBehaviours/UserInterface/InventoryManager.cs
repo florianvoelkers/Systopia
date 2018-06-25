@@ -179,6 +179,12 @@ public class InventoryManager : MonoBehaviour {
 			ClearItemDescription ();
 			FindAllItemsOfType ();
 		} else if ((currentItems [selectedItem].GetType () == types [1] || currentItems [selectedItem].GetType () == types [2]) && successfulUse) {
+			for (int i = 0; i < items.Length; i++) {
+				if (i < currentItems.Count)
+					items [i].GetComponent <Image> ().sprite = itemBorder;
+				else
+					items [i].GetComponent <Image> ().sprite = itemBorderEmpty;
+			}
 			currentItems [selectedItem].isEquipped = true;
 			items [selectedItem].GetComponent <Image> ().sprite = itemBorderEquipped;
 		}

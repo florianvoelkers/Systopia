@@ -12,6 +12,10 @@ public class PlayerEquipment : ScriptableObject {
 	public Weapon weapon;
 	public IntVariable hp;
 
+	public void Load () {
+		hp = Resources.Load <IntVariable> ("Player/PlayerHP");
+	}
+
 	// change to start items
 	public void Reset () {
 		headItem = null;

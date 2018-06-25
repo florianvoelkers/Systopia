@@ -22,7 +22,7 @@ MonoBehaviour:
   wearableSlot: 2
   bonusses:
   - {fileID: 114927098504287100}
-  playerEquipment: {fileID: 0}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
 --- !u!114 &114927098504287100
 MonoBehaviour:
   m_ObjectHideFlags: 0

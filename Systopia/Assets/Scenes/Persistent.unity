@@ -214,6 +214,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114543639181296386, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114805237502170662, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114326269325349540, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114400097350294200, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114525784766852084, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114899940265217184, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: gameStateManager
+      value: 
+      objectReference: {fileID: 839349392}
+    - target: {fileID: 114539127088966118, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839349392}
     - target: {fileID: 114710469239866066, guid: 902f8768af34a0a4289768c61b55229b,
         type: 2}
       propertyPath: sceneController
@@ -224,41 +259,6 @@ Prefab:
       propertyPath: backgroundMusic
       value: 
       objectReference: {fileID: 1175401281}
-    - target: {fileID: 114539127088966118, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114899940265217184, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: gameStateManager
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114525784766852084, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114400097350294200, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114326269325349540, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114805237502170662, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
-    - target: {fileID: 114543639181296386, guid: 902f8768af34a0a4289768c61b55229b,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 839349392}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
   m_IsPrefabParent: 0
@@ -667,6 +667,7 @@ MonoBehaviour:
   startingSceneName: Taverne
   initialStartingPointName: DoorToStreet
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  loadScreen: {fileID: 1259237918}
 --- !u!4 &1683313323
 Transform:
   m_ObjectHideFlags: 0

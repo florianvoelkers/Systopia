@@ -56,6 +56,7 @@ public class GameStateManager : MonoBehaviour {
 		savePath = Application.persistentDataPath + "/save";
 		continueStartButtonText.text = "Spiel starten";
 		videoPlayer.loopPointReached += EndReached;
+		LoadScriptableObjects ();
 	}
 
 	void EndReached (VideoPlayer vp) {
@@ -124,7 +125,6 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void UnpauseGame () {
-		Debug.Log ("unpause game");
 		settingsIcon.SetActive (true);
 		tabletIcon.SetActive (true);
 		Time.timeScale = 1;
@@ -145,7 +145,6 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void Unpause () {
-		Debug.Log ("unpause");
 		Time.timeScale = 1;
 		isPaused = false;
 		menu.SetActive (false);
@@ -288,8 +287,16 @@ public class GameStateManager : MonoBehaviour {
 		Time.timeScale = 1;
 		creationCharacter.SetActive (false);
 		characterLight.SetActive (false);
+		persistentCamera.SetActive (true);
+		characterCamera.SetActive (false);
+		LoadScriptableObjects ();
 		sceneController.StartGameFromSaveFile (gameStarted);
 		StartCoroutine (WaitAndUnpause (2f));
+	}
+
+	private void LoadScriptableObjects () {
+		playerEquipment.Load ();
+		playerInventory.Load ();
 	}
 
 	public void ResetPlayer () {

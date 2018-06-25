@@ -21,4 +21,4 @@ MonoBehaviour:
   isEquipped: 1
   wearableSlot: 0
   bonusses: []
-  playerEquipment: {fileID: 0}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}

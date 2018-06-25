@@ -21,7 +21,7 @@ MonoBehaviour:
   bonusses:
   - {fileID: 114915535289928472}
   - {fileID: 114221880404134020}
-  playerEquipment: {fileID: 0}
+  playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
 --- !u!114 &114221880404134020
 MonoBehaviour:
   m_ObjectHideFlags: 0

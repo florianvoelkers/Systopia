@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb8743de88bcd64a853180707966d23, type: 3}
   m_Name: PlayerEquipment
   m_EditorClassIdentifier: 
-  headItem: {fileID: 0}
-  bodyItem: {fileID: 0}
-  legsItem: {fileID: 0}
+  headItem: {fileID: 11400000, guid: f91c26a77cc34fa4aad81943bc05a0ad, type: 2}
+  bodyItem: {fileID: 11400000, guid: d8a3c340173a71f4f8cc4760904628f8, type: 2}
+  legsItem: {fileID: 11400000, guid: 5f332a30dfd5b144c8ce1c0cc539bf64, type: 2}
   fingerItem: {fileID: 0}
-  weapon: {fileID: 0}
+  weapon: {fileID: 11400000, guid: 11628054f20da3c4c95154634e1b6ade, type: 2}
   hp: {fileID: 11400000, guid: 91df1aeb7b6607a4fbfe8e0cd58a9ed5, type: 2}
