@@ -294,6 +294,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 563344472}
   - {fileID: 194368165}
+--- !u!114 &29891771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  gameObject: {fileID: 1338099383}
+  activeState: 1
 --- !u!114 &32522082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,7 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Das sind ja gro\xDFartige Neugikeiten."
+  message: "Sie haben den LCM also auch nicht. Das sind ja gro\xDFartige Neugikeiten."
   textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
   delay: 0
 --- !u!1 &427384982
@@ -3247,6 +3261,34 @@ MonoBehaviour:
   condition: {fileID: 114456345674533678, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
     type: 2}
   satisfied: 1
+--- !u!114 &533393701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Technokraten-Forscherin
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - "Sehr gut, Sie haben die Gem\xE4lde in Ihren Besitz gebracht. Sie sollten sich
+      die Bilder ansehen, um die Botschaft zu entziffern."
+    options:
+    - text: Bilder ansehen
+      destinationNodeId: -1
+      reactionCollection: {fileID: 1000489984}
+    - text: Bilder nicht an sehen
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Vielleicht haben Sie ja sp\xE4ter etwas Zeit."
+    options: []
 --- !u!114 &559530731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3377,20 +3419,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &621304478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 3
-  gameObject: {fileID: 1338099383}
-  activeState: 1
 --- !u!1 &621592744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4658,7 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 1730583446}
   - {fileID: 1878124302}
-  reactionCollection: {fileID: 0}
+  reactionCollection: {fileID: 1104409605}
 --- !u!114 &840965563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5102,6 +5130,48 @@ MonoBehaviour:
   audioSource: {fileID: 22230161}
   audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
   delay: 0
+--- !u!1 &1000489982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1000489983}
+  - component: {fileID: 1000489984}
+  m_Layer: 0
+  m_Name: lookAtPaintingReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000489983
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000489982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1545730460}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000489984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1000489982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 29891771}
 --- !u!1001 &1017005165
 Prefab:
   m_ObjectHideFlags: 0
@@ -6107,6 +6177,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 1637917778}
   - {fileID: 297895793}
+  - {fileID: 1385207216}
 --- !u!114 &1338132746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6368,6 +6439,21 @@ MonoBehaviour:
   condition: {fileID: 114547607564260234, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
     type: 2}
   satisfied: 1
+--- !u!114 &1385207216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Ich habe das R\xE4tsel gel\xF6st und sollte die Nachricht der Forscherin
+    mitteilen."
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &1393175204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6743,6 +6829,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: TechnoHQDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!114 &1465607437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7211,7 +7298,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1000489983}
   m_Father: {fileID: 1893390362}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7227,9 +7315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactions:
-  - {fileID: 1606311933}
   - {fileID: 1822963772}
-  - {fileID: 621304478}
+  - {fileID: 533393701}
 --- !u!1 &1548218776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,20 +7405,6 @@ MonoBehaviour:
   reactions:
   - {fileID: 674442801}
   - {fileID: 1679193488}
---- !u!114 &1606311933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: "Schauen Sie sich die Gem\xE4lde an und entziffern Sie bitte die Botschaft."
-  textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
-  delay: 0
 --- !u!1 &1611508400
 GameObject:
   m_ObjectHideFlags: 0

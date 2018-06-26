@@ -9845,6 +9845,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 462372886}
   m_Mesh: {fileID: 4300728, guid: d79fba6b8c1f48a47803d4803b502289, type: 3}
+--- !u!114 &462707286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: TechnokratenReaction
+  requiredConditions:
+  - {fileID: 554761775}
+  - {fileID: 1970935524}
+  reactionCollection: {fileID: 581182889}
 --- !u!1 &463041900
 GameObject:
   m_ObjectHideFlags: 0
@@ -12167,6 +12183,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551474407}
   m_Mesh: {fileID: 4300608, guid: d79fba6b8c1f48a47803d4803b502289, type: 3}
+--- !u!114 &554761775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedQuest2-2
+  satisfied: 1
+  hash: -1169708983
 --- !u!1 &564777904
 GameObject:
   m_ObjectHideFlags: 0
@@ -18692,13 +18722,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941617186}
-  m_LocalRotation: {x: 0, y: -0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 10.81, y: 0, z: 9.2}
+  m_LocalRotation: {x: 0, y: -0.5, z: 0, w: 0.8660254}
+  m_LocalPosition: {x: 8.63, y: 0, z: -3.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1878752462}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -120, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
 --- !u!1 &942397782
 GameObject:
   m_ObjectHideFlags: 0
@@ -24308,6 +24338,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: AvaWaffenlagerDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &1259913461
 GameObject:
   m_ObjectHideFlags: 0
@@ -35618,6 +35649,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95244096792900644, guid: 9588d6ddc1a60bb43b13edf379550299,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e8448dae31dc9b244a28197befdde6f7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9588d6ddc1a60bb43b13edf379550299, type: 2}
   m_IsPrefabParent: 0
@@ -36475,9 +36511,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
   interactionName: Avantgardistin
-  interactionLocation: {fileID: 894562830}
+  interactionLocation: {fileID: 941617187}
   conditionCollections:
   - {fileID: 1064519543}
+  - {fileID: 462707286}
   defaultReactionCollection: {fileID: 894562831}
 --- !u!114 &1878752460
 MonoBehaviour:
@@ -36565,7 +36602,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1878752458}
   m_LocalRotation: {x: -0, y: -0.36213955, z: -0, w: 0.9321239}
-  m_LocalPosition: {x: -7.35, y: 0, z: -4.82}
+  m_LocalPosition: {x: -7.35, y: 0.66, z: -4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 941617187}
@@ -37890,6 +37927,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970237383}
   m_Mesh: {fileID: 4300842, guid: d79fba6b8c1f48a47803d4803b502289, type: 3}
+--- !u!114 &1970935524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: tookTheAvaArmoury
+  satisfied: 0
+  hash: 1415460208
 --- !u!114 &1972559757
 MonoBehaviour:
   m_ObjectHideFlags: 0

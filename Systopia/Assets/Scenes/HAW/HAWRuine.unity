@@ -157,7 +157,22 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 14348693}
   - {fileID: 2063109916}
+  - {fileID: 314402673}
   reactionCollection: {fileID: 1767379661}
+--- !u!114 &135290240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  gameObject: {fileID: 189022580}
+  activeState: 0
 --- !u!114 &166626978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3231,6 +3246,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8ae7f086080713b4ea5e9117a2111c29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ae7f086080713b4ea5e9117a2111c29, type: 3}
   m_IsPrefabParent: 0
@@ -3282,6 +3301,10 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301390, guid: 8ae7f086080713b4ea5e9117a2111c29, type: 3}
+--- !u!1 &189022580 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 8ae7f086080713b4ea5e9117a2111c29, type: 3}
+  m_PrefabInternal: {fileID: 189022576}
 --- !u!1 &219903045
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,6 +3576,20 @@ Transform:
   m_Father: {fileID: 285877197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.702, z: 0}
+--- !u!114 &314402673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: foundArmorDesigns
+  satisfied: 0
+  hash: 1035461802
 --- !u!114 &359019043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4310,6 +4347,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &889397012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Eine Blaupause f\xFCr eine sehr starke R\xFCstung. Sehr gut!"
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &918921935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,6 +4389,20 @@ Transform:
   m_Father: {fileID: 874991386}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931847253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 2
+  gameObject: {fileID: 1192717125}
+  activeState: 0
 --- !u!114 &1144068126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4352,6 +4417,7 @@ MonoBehaviour:
   sceneName: KellerFlur
   startingPointInLoadedScene: DoorToRuine
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &1183900622
 GameObject:
   m_ObjectHideFlags: 0
@@ -4514,6 +4580,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 26.491001, y: -53.324, z: 0}
+--- !u!114 &1272795813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Pl\xE4ne f\xFCr eine sehr starke R\xFCstung. Sehr gut!"
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!114 &1323997132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4787,6 +4867,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: ca953e7692172b444a232bcbcd93c466, type: 2}
   state: {fileID: 114367301701873042, guid: ca953e7692172b444a232bcbcd93c466, type: 2}
+--- !u!114 &1633027438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  gameObject: {fileID: 189022580}
+  activeState: 0
 --- !u!1 &1670881917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,6 +4993,9 @@ MonoBehaviour:
   - {fileID: 1574554286}
   - {fileID: 1616073087}
   - {fileID: 166626978}
+  - {fileID: 889397012}
+  - {fileID: 931847253}
+  - {fileID: 1633027438}
 --- !u!1 &1797919281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,6 +5092,20 @@ Transform:
   m_Father: {fileID: 1192717129}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 130, z: 0}
+--- !u!114 &1838926926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 2
+  gameObject: {fileID: 1192717125}
+  activeState: 0
 --- !u!1001 &1841861585
 Prefab:
   m_ObjectHideFlags: 0
@@ -5047,6 +5158,19 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1841861585}
   m_Script: {fileID: 11500000, guid: b26186d2575bec5439c56f32616d7151, type: 3}
+--- !u!114 &1851394805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: ca953e7692172b444a232bcbcd93c466, type: 2}
+  state: {fileID: 114367301701873042, guid: ca953e7692172b444a232bcbcd93c466, type: 2}
 --- !u!114 &1864868073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5104,6 +5228,10 @@ MonoBehaviour:
   reactions:
   - {fileID: 1323997132}
   - {fileID: 728759154}
+  - {fileID: 1851394805}
+  - {fileID: 1272795813}
+  - {fileID: 1838926926}
+  - {fileID: 135290240}
 --- !u!1 &1892090145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5149,7 +5277,22 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 21236232}
   - {fileID: 1864868073}
+  - {fileID: 1949964045}
   reactionCollection: {fileID: 1878777610}
+--- !u!114 &1949964045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: foundArmorDesigns
+  satisfied: 0
+  hash: 1035461802
 --- !u!1 &1952118356
 GameObject:
   m_ObjectHideFlags: 0

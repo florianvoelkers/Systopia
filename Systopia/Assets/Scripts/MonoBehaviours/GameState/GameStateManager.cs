@@ -27,6 +27,7 @@ public class GameStateManager : MonoBehaviour {
 	[SerializeField] private PlayerQuests playerQuests;
 	[SerializeField] private PlayerStats playerStats;
 	[SerializeField] private PlayerLocation playerLocation;
+	[SerializeField] private StreetCameraSaver streetCameraSaver;
 	[Header ("UI")]
 	[SerializeField] private GameObject menu;
 	[SerializeField] private Text continueStartButtonText;
@@ -63,7 +64,18 @@ public class GameStateManager : MonoBehaviour {
 		vp.enabled = false;
 		backgroundMusic.Play ();
 		sceneController.StartCutscene ("AnfangsScene");
-		StartCoroutine (WaitAndUnpause (1f));
+		Time.timeScale = 1;
+	}
+
+	public void StartGame () {
+		sceneController.StartGame ();
+		settingsIcon.SetActive (true);
+		tabletIcon.SetActive (true);
+	}
+
+	public void HideIcons () {
+		settingsIcon.SetActive (false);
+		tabletIcon.SetActive (false);
 	}
 
 	public void StartContinueGame () {
@@ -107,7 +119,6 @@ public class GameStateManager : MonoBehaviour {
 			backgroundMusic.Pause ();
 			loadingScreen.SetActive (false);
 			videoPlayer.Play ();
-			Debug.Log (videoPlayer.isPlaying);
 		}
 	}
 
@@ -188,6 +199,8 @@ public class GameStateManager : MonoBehaviour {
 			json = JsonUtility.ToJson (allLocations.locations [i]);
 			File.WriteAllText (savePath + "/locations/" + allLocations.locations [i].name + ".txt", json);
 		}
+		json = JsonUtility.ToJson (streetCameraSaver);
+		File.WriteAllText (savePath + "/streetCamera.txt", json);
 		json = JsonUtility.ToJson (playerLocation);
 		File.WriteAllText (savePath + "/playerLocation.txt", json);
 		json = JsonUtility.ToJson (playerEquipment);
@@ -238,6 +251,11 @@ public class GameStateManager : MonoBehaviour {
 				}
 			}
 
+		}
+		filePath = savePath + "/streetCamera.txt";
+		if (File.Exists (filePath)) {
+			string json = File.ReadAllText (filePath);
+			JsonUtility.FromJsonOverwrite (json, streetCameraSaver);
 		}
 		filePath = savePath + "/playerLocation.txt";
 		if (File.Exists (filePath)) {

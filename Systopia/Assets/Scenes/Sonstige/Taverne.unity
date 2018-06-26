@@ -11754,7 +11754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
+  interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
   interactionName: Toilette
   interactionLocation: {fileID: 1908022}
   conditionCollections: []
@@ -19649,6 +19649,25 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b120b050ba6a23d4db546851ad76290f, type: 3}
   m_PrefabInternal: {fileID: 1081843977}
+--- !u!1 &1081843979 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: b120b050ba6a23d4db546851ad76290f, type: 3}
+  m_PrefabInternal: {fileID: 1081843977}
+--- !u!208 &1081843980
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1081843979}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1, y: 3.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3.5, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1083387465
 GameObject:
   m_ObjectHideFlags: 0
@@ -25200,7 +25219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
+  interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
   interactionName: "Personalr\xE4ume"
   interactionLocation: {fileID: 1193386467}
   conditionCollections: []
@@ -26963,6 +26982,25 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400072, guid: 9e2d4b16b34d09743b8f0ac1a716968f, type: 3}
   m_PrefabInternal: {fileID: 1454911912}
+--- !u!1 &1454911914 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100072, guid: 9e2d4b16b34d09743b8f0ac1a716968f, type: 3}
+  m_PrefabInternal: {fileID: 1454911912}
+--- !u!208 &1454911915
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454911914}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1, y: 3, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1455671572
 GameObject:
   m_ObjectHideFlags: 0
@@ -33884,7 +33922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094f0ece1a5ef0b4ab97dd9a9c289a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCursor: {fileID: 2800000, guid: a1467f243b7553a48a9c1894a631ab4c, type: 3}
+  interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
   interactionName: "J\xE4germeister Zapfmaschine"
   interactionLocation: {fileID: 1387208522}
   conditionCollections: []

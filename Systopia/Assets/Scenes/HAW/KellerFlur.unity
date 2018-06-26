@@ -172,6 +172,7 @@ MonoBehaviour:
   sceneName: "KellerGew\xF6lbe"
   startingPointInLoadedScene: DoorToFlur
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &65772461
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
-  interactionName: Haw Ruine
+  interactionName: HAW Ruine
   interactionLocation: {fileID: 1539099625}
   conditionCollections: []
   defaultReactionCollection: {fileID: 2024117282}
@@ -297,8 +298,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1516206636}
-          m_MethodName: 
+        - m_Target: {fileID: 1516206637}
+          m_MethodName: OnInteractableClick
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 156627395}
@@ -1355,6 +1356,7 @@ MonoBehaviour:
   sceneName: HAWRuine
   startingPointInLoadedScene: DoorToFlur
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &1079966819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,6 +4944,7 @@ MonoBehaviour:
     condition: {fileID: 114798719141492994, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
       type: 2}
   allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
+  dollyCamera: {fileID: 0}
 --- !u!1 &1267503889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,11 +5278,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1516206636 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1463163123565866, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1516206635}
 --- !u!114 &1516206637 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114943047893154248, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f,
@@ -5703,6 +5701,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: HAWFlurDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!114 &2144969196
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,6 +19,11 @@ public class DollyCameraController : MonoBehaviour {
 	private Vector3 newPosition;
 	private float step;
 
+	public void SetPosition (Vector3 position, Quaternion rotation) {
+		transform.position = position;
+		transform.rotation = rotation;
+	}
+
 	private IEnumerator Start () {
 		if (!moveCamera && !rotateCamera)
 			yield break;

@@ -333,6 +333,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: TechnoArtefaktlagerDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &405818823
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +583,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 601131178}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 20.19, y: 0.6800001, z: 26.72}
+  m_LocalPosition: {x: 20.19, y: 0.6800001, z: 18.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3493,7 +3494,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1835355984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6800001, z: -7.04}
+  m_LocalPosition: {x: 0, y: 0.6800001, z: -2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 768806347}

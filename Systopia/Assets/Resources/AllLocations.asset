@@ -69,7 +69,7 @@ MonoBehaviour:
   locationTitle: "Lager f\xFCr wertvolle Artefakte"
   locationDescription: Hier bewahren die Technokraten ihre mehr oder minder wertvollen
     Artefakte auf. Nur angesehene Technokraten haben Zugang zum Lager.
-  locationDiscovered: 0
+  locationDiscovered: 1
 --- !u!114 &114410162210266434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   locationTitle: Hauptquartier der Technokraten
   locationDescription: "Das Hauptquartier der Technokraten dient zur Rekrutierung
     neuer Technokraten. Von hier aus operieren die Technokraten unter der F\xFChrung
-    des hochintelligente Frunobulax."
+    des hochintelligenten Frunobulax."
   locationDiscovered: 1
 --- !u!114 &114561552393808318
 MonoBehaviour:
@@ -131,7 +131,7 @@ MonoBehaviour:
   locationTitle: Bibliotheksruine
   locationDescription: "Die Bibliotheksruine war fr\xFCher die gro\xDFe Bibliothek
     der HAW Hamburg und soll viele Geheimnisse verbergen."
-  locationDiscovered: 0
+  locationDiscovered: 1
 --- !u!114 &114682437829344130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   locationDescription: "In der Verwaltungsstelle der Technokraten werden alle m\xF6glichen
     Daten \xFCber die Mitglieder der Technokraten bewahrt. Au\xDFerdem dient sie als
     Au\xDFenposten und befindet sich im Territorium der Avantgardisten."
-  locationDiscovered: 0
+  locationDiscovered: 1
 --- !u!114 &114736951572384518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   locationDescription: Dieser Unterschlupf befindet sich im Territorium der Technokraten.
     VOn hier aus brechen Avantgardisten auf, um die Operationen der Technokraten zu
     sabotieren. Ein Dorn im Auge der Technokraten.
-  locationDiscovered: 0
+  locationDiscovered: 1
 --- !u!114 &114943860932457868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,4 +194,4 @@ MonoBehaviour:
   locationDescription: Hier lagern die Technokraten ihre Waffen, die sie im Kampf
     gegen die Avantgardisten verwenden. Es ist schwer bewacht und nur Technokraten
     haben freien Zutritt zum Lager.
-  locationDiscovered: 0
+  locationDiscovered: 1

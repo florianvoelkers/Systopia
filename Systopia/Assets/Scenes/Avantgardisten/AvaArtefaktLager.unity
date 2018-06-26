@@ -114,6 +114,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 9e669db1c324d23438f27b697d4070d1, type: 2}
+--- !u!1 &35715086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 35715087}
+  - component: {fileID: 35715088}
+  m_Layer: 0
+  m_Name: DefaultReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &35715087
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 35715086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 431159757}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &35715088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 35715086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 682876449}
 --- !u!114 &76340828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +199,22 @@ Transform:
   m_Father: {fileID: 431159757}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106097913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: LookingForArticle
+  requiredConditions:
+  - {fileID: 2106950096}
+  - {fileID: 389948967}
+  reactionCollection: {fileID: 2122927854}
 --- !u!1 &134936373
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +399,7 @@ Transform:
   - {fileID: 1582710396}
   - {fileID: 1246729873}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &256193155
 GameObject:
@@ -445,7 +503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4991890807663960, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64ed0e1942bcd5d47b43fb5ed6861a3f, type: 2}
@@ -470,6 +528,20 @@ MonoBehaviour:
   condition: {fileID: 114123978580005390, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
     type: 2}
   satisfied: 1
+--- !u!114 &389948967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: hasNewsArticleAboutInvention
+  satisfied: 0
+  hash: -1045555992
 --- !u!1 &429656242
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +642,9 @@ MonoBehaviour:
   interactionCursor: {fileID: 2800000, guid: 0eba27efd9389ce48ac0d347c46d6205, type: 3}
   interactionName: Zeitungsartikel
   interactionLocation: {fileID: 93569721}
-  conditionCollections: []
-  defaultReactionCollection: {fileID: 2122927854}
+  conditionCollections:
+  - {fileID: 106097913}
+  defaultReactionCollection: {fileID: 35715088}
 --- !u!114 &431159755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,6 +736,7 @@ Transform:
   m_Children:
   - {fileID: 93569721}
   - {fileID: 2122927853}
+  - {fileID: 35715087}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -810,6 +884,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!114 &682876449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Nur ein uninteressanter Zeitungsartikel.
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &767238405
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +1044,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4870768212258628, guid: a62a56806ec4bbb41b2b0f6d7e39b29f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1233,6 +1321,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: AvaArtefaktVersteckDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &1246729871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1432,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1372127922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 2
+  gameObject: {fileID: 431159753}
+  activeState: 0
 --- !u!1001 &1407175855
 Prefab:
   m_ObjectHideFlags: 0
@@ -2933,6 +3036,10 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: f3f74724e679b2944b891c9fb5090a10, type: 3}
+--- !u!1 &1407175868 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: f3f74724e679b2944b891c9fb5090a10, type: 3}
+  m_PrefabInternal: {fileID: 1407175855}
 --- !u!1 &1494702076
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3185,34 @@ MonoBehaviour:
   message: "Da ist ja die zweite H\xE4lfte!"
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &2095236212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8076d8ed34b18f948831c26424e34fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+  gameObject: {fileID: 1407175868}
+  activeState: 0
+--- !u!114 &2106950096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: knowsAvaArtefactLocation
+  satisfied: 1
+  hash: -1065343907
 --- !u!1 &2113747195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,7 +3252,7 @@ GameObject:
   - component: {fileID: 2122927853}
   - component: {fileID: 2122927854}
   m_Layer: 0
-  m_Name: DefaultReaction
+  m_Name: LookingForArticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3153,3 +3288,5 @@ MonoBehaviour:
   - {fileID: 1685401269}
   - {fileID: 76340828}
   - {fileID: 362157245}
+  - {fileID: 1372127922}
+  - {fileID: 2095236212}

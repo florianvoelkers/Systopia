@@ -6,6 +6,13 @@ public class GameObjectManager : MonoBehaviour {
 
 	[SerializeField] private GameObjectData [] changeableGameObjects;
 	[SerializeField] private AllConditions allConditions;
+	[SerializeField] private DollyCameraController dollyCamera;
+
+	private StreetCameraSaver streetCameraSaver;
+
+	private void Awake () {
+		streetCameraSaver = Resources.Load <StreetCameraSaver> ("StreetCameraSaver");
+	}
 
 	// Use this for initialization
 	private IEnumerator Start () {
@@ -19,6 +26,9 @@ public class GameObjectManager : MonoBehaviour {
 				}
 			}
 		}
+
+		if (dollyCamera != null)
+			dollyCamera.SetPosition (streetCameraSaver.position, streetCameraSaver.rotation); 
 	}
 
 }

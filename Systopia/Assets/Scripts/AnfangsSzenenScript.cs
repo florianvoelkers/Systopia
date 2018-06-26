@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnfangsSzenenScript : MonoBehaviour {
 
     private TextManager textmanager;
-	private SceneController sceneController;
+	private GameStateManager gameStateManager;
     private Color red;
     private Color green;
     private Color green2;
@@ -25,7 +25,7 @@ public class AnfangsSzenenScript : MonoBehaviour {
         yellow = new Color(0.9f, 0.95f, 0.5f);
 
         textmanager = FindObjectOfType<TextManager>();
-		sceneController = FindObjectOfType<SceneController> ();
+		gameStateManager = FindObjectOfType<GameStateManager> ();
 
         textmanager.DisplayMessage("Wie könnt ihr diese Diktatur nur gutheißen ?", red, 0.5f);
         textmanager.DisplayMessage("Die Technokraten verlangen von uns unsere Freiheit und unsere Individualität aufzugeben.", red, 2f);
@@ -67,7 +67,7 @@ public class AnfangsSzenenScript : MonoBehaviour {
     void StartGame() {
 		if (!startedGame) {
 			startedGame = true;
-			sceneController.StartGame ();
+			gameStateManager.StartGame ();
 		}
     }
 }

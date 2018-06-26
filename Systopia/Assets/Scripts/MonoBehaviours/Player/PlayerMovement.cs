@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour {
 	private void Start () {
 		agent.updateRotation = false; // player will be rotated by this script so the nav mesh agent should not rotate it
 		inputHoldWait = new WaitForSeconds (inputHoldDelay);
-
 		string startingPositionName = playerLocation.startingPositionName;
 		Transform startingPosition = StartingPosition.FindStartingPosition (startingPositionName);
 		if (startingPosition == null)
@@ -43,6 +42,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		transform.position = startingPosition.position;
 		transform.rotation = startingPosition.rotation;
+
 		destinationPosition = transform.position;
 	}
 

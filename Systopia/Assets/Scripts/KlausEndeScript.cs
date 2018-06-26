@@ -12,13 +12,14 @@ public class KlausEndeScript : MonoBehaviour {
     public GameObject streetAmbience;
     private bool playedVideo = false;
     private bool finishedDialog = false;
-
+	private GameStateManager gameStateManager;
 	private GameObject backgroundMusic;
 
     // Use this for initialization
     void Start()
     {
-
+		gameStateManager = FindObjectOfType<GameStateManager> ();
+		gameStateManager.HideIcons ();
         textmanager = FindObjectOfType<TextManager>();
 		backgroundMusic = GameObject.Find ("BackgroundMusic");
 		backgroundMusic.SetActive (false);
@@ -46,15 +47,13 @@ public class KlausEndeScript : MonoBehaviour {
         textmanager.DisplayMessage(" Hiermit löse ich die Gruppierungen auf und erkläre den Krieg für beendet.", Color.white, 199f);
 
     }
-    //textmanager.DisplayMessage(message,textColor,delay);
-    //sceneController.StartGame ();
+
     // Update is called once per frame
     void Update()
     {
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {
-            Debug.Log("keinezeit left");
             if (!playedVideo)
             {
                 StartVideo();
@@ -71,7 +70,6 @@ public class KlausEndeScript : MonoBehaviour {
 
 
     void StartVideo() {
-        Debug.Log("Start video");
         videoPlayer.SetActive(true);
         crowd.SetActive(false);
         streetAmbience.SetActive(false);

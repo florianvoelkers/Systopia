@@ -368,6 +368,7 @@ MonoBehaviour:
   playerQuests: {fileID: 11400000, guid: 1c994f106db14914f9383d4f1cda22e6, type: 2}
   playerStats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  streetCameraSaver: {fileID: 11400000, guid: 3acf8a442be38384896459c41779400b, type: 2}
   menu: {fileID: 1264067135}
   continueStartButtonText: {fileID: 1264067136}
   settingsIcon: {fileID: 1264067138}

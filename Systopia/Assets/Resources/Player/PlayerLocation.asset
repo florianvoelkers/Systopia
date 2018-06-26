@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce562d55fbb528246bf7ca1f6908e71f, type: 3}
   m_Name: PlayerLocation
   m_EditorClassIdentifier: 
-  startingPositionName: 
+  startingPositionName: BibRuineDoor
+  currentPositionSet: 0
   currentPosition: {x: 0, y: 0, z: 0}
-  currentSceneName: 
+  currentRotation: {x: 0, y: -0.61301196, z: 0, w: 0.79007363}
+  currentSceneName: "Stra\xDFe"
