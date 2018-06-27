@@ -3837,20 +3837,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 126306886}
   m_Mesh: {fileID: 4301152, guid: 27f4643af4adadf47a35dbdd28885281, type: 3}
---- !u!114 &126438124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 549207594}
-  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
-  delay: 0
 --- !u!1 &128386719
 GameObject:
   m_ObjectHideFlags: 0
@@ -15606,8 +15592,6 @@ MonoBehaviour:
   reactions:
   - {fileID: 1380089678}
   - {fileID: 35587686}
-  - {fileID: 616337327}
-  - {fileID: 126438124}
 --- !u!4 &516629840
 Transform:
   m_ObjectHideFlags: 0
@@ -18976,20 +18960,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 613322165}
   m_Mesh: {fileID: 4300676, guid: 27f4643af4adadf47a35dbdd28885281, type: 3}
---- !u!114 &616337327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 0
-  item: {fileID: 11400000, guid: 973b629d71f883845b949f37a412ce9a, type: 2}
-  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &620905539
 GameObject:
   m_ObjectHideFlags: 0
@@ -42066,7 +42036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Unsere Auswahl an Waffen ist beeindruckend. Hier eine Sniper Rifle.
+  message: Unsere Auswahl an Waffen ist beeindruckend.
   textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
   delay: 0
 --- !u!1 &1385998442
@@ -58870,6 +58840,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: TechnoWaffenlagerDoor
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!1 &1941229161
 GameObject:
   m_ObjectHideFlags: 0

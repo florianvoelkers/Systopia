@@ -19,6 +19,8 @@ public class FightManager : MonoBehaviour {
 	[SerializeField] private GameObject targetButtonParent;
 	[SerializeField] private GameObject targetButton;
 	[SerializeField] private GameObject loadScreen;
+	[SerializeField] private ReactionCollection technoWinReaction;
+	[SerializeField] private ReactionCollection avaWinReaction;
 	[Header ("Scene Objects")]
 	[SerializeField] private SceneController sceneController;
 	[Header ("Sounds")]
@@ -54,6 +56,7 @@ public class FightManager : MonoBehaviour {
 	private int partyMemberOnTurn;
 	private bool continueRound;
 	private bool playerDead;
+	private bool isEndFight;
 
 	public void StartFight (FightReaction fight) {
 		loadScreen.SetActive (true);
@@ -73,6 +76,16 @@ public class FightManager : MonoBehaviour {
 		currentFightStage = FightStages.Wait;
 		continueRound = true;
 		playerDead = false;
+		if (previousSceneName == "TechnoHQ") {
+			winReaction = technoWinReaction;
+			lossReaction = avaWinReaction;
+		}
+
+		if (previousSceneName == "AvaHQ") {
+			winReaction = avaWinReaction;
+			lossReaction = technoWinReaction;
+		}
+
 		sceneController.FadeAndLoadFightScene (fight.fightSceneName, BeginFight);
 	}
 
@@ -129,7 +142,25 @@ public class FightManager : MonoBehaviour {
 	}
 
 	public void Heal () {
+		EventSystem.current.SetSelectedGameObject (null);
+		playerButtons.SetActive (false);
+		if (player.Heal ()) {
+			UpdatePlayerHealthBar ();
+			comments.text = player.GetPlayerName () + " erholt sich durch ein kaltes Bier.";
+			FinishHeal ();
+		} else {
+			currentFightStage = FightStages.PlayerAttack;
+		}
+	}
 
+	private void FinishHeal () {
+		continueRound = false;
+		fightComments.SetActive (true);
+		if (party.Count > 0) {
+			currentFightStage = FightStages.PartyAttack;
+		} else {
+			currentFightStage = FightStages.EnemyAttack;
+		}
 	}
 
 	private void EndFightScene () {

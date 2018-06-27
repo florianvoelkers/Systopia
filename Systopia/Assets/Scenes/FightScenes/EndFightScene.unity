@@ -34850,6 +34850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
+  playerInventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
   stats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   strength: {fileID: 114958683150792074, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   dexterity: {fileID: 114096672639918392, guid: 0d242641c7dce8d4a875b7b1418bd812,

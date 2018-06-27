@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 
 	[Header ("Items")]
 	[SerializeField] private PlayerEquipment playerEquipment;
+	[SerializeField] private PlayerInventory playerInventory;
 	[Header ("Stats")]
 	[SerializeField] private PlayerStats stats;
 	[SerializeField] private Stat strength;
@@ -49,6 +50,19 @@ public class Player : MonoBehaviour {
 			return damage.GetValue ();
 		}
 		return 0;
+	}
+
+	public bool Heal () {
+		for (int i = 0; i < playerInventory.items.Count; i++) {
+			if (playerInventory.items [i].name == "Beer") {
+				if (playerInventory.items [i].Use ()) {
+					playerInventory.items.Remove (playerInventory.items [i]);
+					return true;
+				}
+				return false;
+			}
+		}
+		return false;
 	}
 
 	public bool TakeDamage (int amount) {
