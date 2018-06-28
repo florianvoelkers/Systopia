@@ -1028,6 +1028,7 @@ GameObject:
   - component: {fileID: 4165406048981550}
   - component: {fileID: 95730099396933604}
   - component: {fileID: 82119670192985306}
+  - component: {fileID: 208002585377802088}
   m_Layer: 0
   m_Name: Avangardist2
   m_TagString: Untagged
@@ -2924,7 +2925,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2946,7 +2947,7 @@ Animator:
   m_GameObject: {fileID: 1646658365073502}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 69bc54eee0cd86a498c5dcde1b083d61, type: 3}
-  m_Controller: {fileID: 9100000, guid: fd7bbc3add2fb3e49839d3eb8608aec3, type: 2}
+  m_Controller: {fileID: 9100000, guid: ae86c5cd65a42d948b67968f5705915f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3155,3 +3156,18 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0007404089, y: -0.11941695, z: 0.07715875}
     m_Extent: {x: 2.5373693, y: 3.347825, z: 0.6797057}
   m_DirtyAABB: 0
+--- !u!208 &208002585377802088
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646658365073502}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1, y: 3.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3.5, z: 0}
+  m_TimeToStationary: 0.5
