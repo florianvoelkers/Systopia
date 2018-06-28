@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class FightManager : MonoBehaviour {
 
 	[Header ("UI")]
+	[SerializeField] private GameObject fightCanvas;
 	[SerializeField] private GameObject fightCharacterUI;
 	[SerializeField] private GameObject enemiesObject;
 	[SerializeField] private GameObject partyObject;
@@ -103,7 +104,7 @@ public class FightManager : MonoBehaviour {
 		SetupEnemyUI ();
 		SetupPartyUI ();
 		SetupPlayerUI ();
-
+		fightCanvas.SetActive (true);
 		loadScreen.SetActive (false);
 	}
 
@@ -164,6 +165,7 @@ public class FightManager : MonoBehaviour {
 	}
 
 	private void EndFightScene () {
+		fightCanvas.SetActive (false);
 		Destroy (playerUI);
 		playerUI = null;
 		player = null;

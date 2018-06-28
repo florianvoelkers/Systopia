@@ -62,7 +62,6 @@ public class GameStateManager : MonoBehaviour {
 
 	void EndReached (VideoPlayer vp) {
 		vp.enabled = false;
-		backgroundMusic.Play ();
 		sceneController.StartCutscene ("AnfangsScene");
 		Time.timeScale = 1;
 	}
@@ -143,7 +142,7 @@ public class GameStateManager : MonoBehaviour {
 	}
 
 	public void ExitGame () {
-		SaveGame ();
+		//SaveGame ();
 		Application.Quit ();
 	}
 

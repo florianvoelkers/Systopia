@@ -38,6 +38,10 @@ public class QuestReactionEditor : ReactionEditor {
 			}
 		}
 
+		EditorGUILayout.PropertyField (questProperty);
+		EditorGUILayout.PropertyField (stateProperty);
+
+		/*
 		selectedQuest = EditorGUILayout.Popup (selectedQuest, allQuestTitle);
 		questProperty.objectReferenceValue = allQuests [selectedQuest];
 
@@ -59,7 +63,7 @@ public class QuestReactionEditor : ReactionEditor {
 		}
 
 		selectedState = EditorGUILayout.Popup (selectedState, allStateTitle);
-		stateProperty.objectReferenceValue = allQuests [selectedQuest].states [selectedState];
+		stateProperty.objectReferenceValue = allQuests [selectedQuest].states [selectedState];*/
 	}
 
 	protected override string GetFoldoutLabel () {

@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 7e3507b567dd08f499ddeacdef73039b, type: 2}
-  state: {fileID: 114797423161115964, guid: 7e3507b567dd08f499ddeacdef73039b, type: 2}
+  state: {fileID: 114777750541629340, guid: 7e3507b567dd08f499ddeacdef73039b, type: 2}
 --- !u!1 &664159691
 GameObject:
   m_ObjectHideFlags: 0

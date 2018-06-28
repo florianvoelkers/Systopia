@@ -740,7 +740,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1237534482744150
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -749,7 +749,6 @@ GameObject:
   - component: {fileID: 223451350337010196}
   - component: {fileID: 114895049712541430}
   - component: {fileID: 114777004497090978}
-  - component: {fileID: 114710469239866066}
   - component: {fileID: 82187509660459978}
   m_Layer: 5
   m_Name: FightCanvas
@@ -757,7 +756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1244343471127478
 GameObject:
   m_ObjectHideFlags: 1
@@ -2272,6 +2271,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1780688293726046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4663799778176964}
+  - component: {fileID: 114406661179693720}
+  m_Layer: 0
+  m_Name: FightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1781579873459478
 GameObject:
   m_ObjectHideFlags: 1
@@ -2997,10 +3012,24 @@ Transform:
   - {fileID: 224286533793426240}
   - {fileID: 224039166273004012}
   - {fileID: 224429809799906758}
-  - {fileID: 224438001674458940}
+  - {fileID: 4663799778176964}
   - {fileID: 224899876606454196}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4663799778176964
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780688293726046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224438001674458940}
+  m_Father: {fileID: 4311223249102508}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &82187509660459978
 AudioSource:
@@ -5438,6 +5467,38 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Avantgardisten Waffenlager
+--- !u!114 &114406661179693720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780688293726046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a63a69227389045b8c985cfc1d5798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fightCanvas: {fileID: 1237534482744150}
+  fightCharacterUI: {fileID: 1600740631926880, guid: fd745588bfb81ed4ebbc3848d285b3bd,
+    type: 2}
+  enemiesObject: {fileID: 1964266128622598}
+  partyObject: {fileID: 1695976085747372}
+  fightComments: {fileID: 1423208355776290}
+  comments: {fileID: 114872974127074660}
+  playerButtons: {fileID: 1936857428854966}
+  settingsIcon: {fileID: 1085615902971634}
+  tabletIcon: {fileID: 1428418444601022}
+  playerIcon: {fileID: 21300000, guid: 9cf80a0d4ebca1d478b8e020530b380b, type: 3}
+  targetButtonParent: {fileID: 1536991043036728}
+  targetButton: {fileID: 1501327236722196, guid: 42f4c7e642d18a044955e8a739bcf2c9,
+    type: 2}
+  loadScreen: {fileID: 1955224887794284}
+  technoWinReaction: {fileID: 114593763659150102}
+  avaWinReaction: {fileID: 114737211295073200}
+  sceneController: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  soundEffects: {fileID: 82187509660459978}
+  fightWon: {fileID: 8300000, guid: 65e2b2a101911da41ac7497de5ab99c8, type: 3}
 --- !u!114 &114406815927456398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6536,7 +6597,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -6736,7 +6797,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -7453,37 +7514,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: CharacterName
---- !u!114 &114710469239866066
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1237534482744150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95a63a69227389045b8c985cfc1d5798, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fightCharacterUI: {fileID: 1600740631926880, guid: fd745588bfb81ed4ebbc3848d285b3bd,
-    type: 2}
-  enemiesObject: {fileID: 1964266128622598}
-  partyObject: {fileID: 1695976085747372}
-  fightComments: {fileID: 1423208355776290}
-  comments: {fileID: 114872974127074660}
-  playerButtons: {fileID: 1936857428854966}
-  settingsIcon: {fileID: 1085615902971634}
-  tabletIcon: {fileID: 1428418444601022}
-  playerIcon: {fileID: 21300000, guid: 9cf80a0d4ebca1d478b8e020530b380b, type: 3}
-  targetButtonParent: {fileID: 1536991043036728}
-  targetButton: {fileID: 1501327236722196, guid: 42f4c7e642d18a044955e8a739bcf2c9,
-    type: 2}
-  loadScreen: {fileID: 1955224887794284}
-  technoWinReaction: {fileID: 114593763659150102}
-  avaWinReaction: {fileID: 114737211295073200}
-  sceneController: {fileID: 0}
-  backgroundMusic: {fileID: 0}
-  soundEffects: {fileID: 82187509660459978}
-  fightWon: {fileID: 8300000, guid: 65e2b2a101911da41ac7497de5ab99c8, type: 3}
 --- !u!114 &114710933861934704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7616,7 +7646,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114710469239866066}
+      - m_Target: {fileID: 114406661179693720}
         m_MethodName: Heal
         m_Mode: 1
         m_Arguments:
@@ -8547,7 +8577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114710469239866066}
+      - m_Target: {fileID: 114406661179693720}
         m_MethodName: ShowTargets
         m_Mode: 1
         m_Arguments:
@@ -8599,7 +8629,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114710469239866066}
+      - m_Target: {fileID: 114406661179693720}
         m_MethodName: Escape
         m_Mode: 1
         m_Arguments:
@@ -9187,7 +9217,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114710469239866066}
+      - m_Target: {fileID: 114406661179693720}
         m_MethodName: ContinueRound
         m_Mode: 1
         m_Arguments:
@@ -12091,8 +12121,8 @@ RectTransform:
   - {fileID: 224850124208924784}
   - {fileID: 224391438464305664}
   - {fileID: 224141443023209004}
-  m_Father: {fileID: 4311223249102508}
-  m_RootOrder: 4
+  m_Father: {fileID: 4663799778176964}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
