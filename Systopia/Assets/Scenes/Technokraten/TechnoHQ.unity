@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 22230161}
-  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  audioClip: {fileID: 8300000, guid: da95bdb55310a834eb6f5ebcff08445e, type: 3}
   delay: 0
 --- !u!114 &129875455
 MonoBehaviour:
@@ -4539,21 +4539,6 @@ MonoBehaviour:
   description: tookTheAvaArmoury
   satisfied: 1
   hash: 1415460208
---- !u!114 &927812225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: "Alles ist vorbereitet f\xFCr den finalen Kampf. Wir treffen uns auf der
-    Stra\xDFe vor dem Hauptquartier."
-  textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
-  delay: 0
 --- !u!1 &932232482
 GameObject:
   m_ObjectHideFlags: 0
@@ -7074,7 +7059,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 1793016734}
   - {fileID: 129827719}
-  - {fileID: 927812225}
+  - {fileID: 2104859299}
 --- !u!1 &1615537654
 GameObject:
   m_ObjectHideFlags: 0
@@ -10114,6 +10099,33 @@ Transform:
   m_Father: {fileID: 2035151591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &2104859299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Technokraten-Hauptmann
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - "Anh\xE4nger des gro\xDFen Frunobulax! Es ist an der Zeit die Avantgardisten
+      ein f\xFCr alle Mal zu vernichten."
+    - "Es ist an der Zeit diesen Schandfleck der Menschheit auszul\xF6schen. Es ist
+      an der Zeit, dass wir, die Technokraten, die Welt auf eine neue Ebene, die ultimative
+      Ebene heben."
+    - "Der Kampf um Hamburg, der Kampf um die Welt, wird jetzt entschieden. Ihr Anf\xFChrer
+      befindet sich in unseren H\xE4nden."
+    - "Die Avantgardisten stehen mit dem R\xFCcken zur Wand. Heute werden wir es beenden.
+      Heute werden wir sie beenden!"
+    - "Folgt mir in den Kampf - F\xFCr unseren Anf\xFChrer Frunobulax, f\xFCr eine
+      perfekte Welt, f\xFCr die Technokratie!"
+    options: []
 --- !u!114 &2107843403
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -59,6 +59,7 @@ public class QuestManager : MonoBehaviour {
 	}
 
 	private void SelectQuest (int index, int objectIndex) {
+		questDescription.text = "";
 		for (int i = 0; i < currentQuests.Count; i++) {
 			currentQuests [i].GetComponent<Image> ().sprite = questSprite;
 		}

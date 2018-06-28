@@ -41,10 +41,10 @@ public class KlausEndeScript : MonoBehaviour {
         textmanager.DisplayMessage("Wegen uns sind jetzt so viele Menschen tot… ", Color.white, 165f);
         textmanager.DisplayMessage("Aber wir haben alles getan, um unseren Fehler wieder auszubügeln.", Color.white, 170f);
         textmanager.DisplayMessage("Und heute haben wir es geschafft!!", Color.white, 175f);
-        textmanager.DisplayMessage("Die KI ist wieder zusammengefügt", Color.white, 179f);
+        textmanager.DisplayMessage("Die KI ist wieder zusammengefügt.", Color.white, 179f);
         textmanager.DisplayMessage("Ihre gespaltenen Programme haben die Führung der Technokraten und der Avantgardisten übernommen.", Color.white, 185f);
         textmanager.DisplayMessage("Dieser Fehler ist nun behoben.", Color.white, 191f);
-        textmanager.DisplayMessage(" Hiermit löse ich die Gruppierungen auf und erkläre den Krieg für beendet.", Color.white, 199f);
+        textmanager.DisplayMessage("Hiermit löse ich die Gruppierungen auf und erkläre den Krieg für beendet.", Color.white, 199f);
 
     }
 

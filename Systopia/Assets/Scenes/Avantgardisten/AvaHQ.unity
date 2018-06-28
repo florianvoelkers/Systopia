@@ -386,6 +386,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1180496152}
   - {fileID: 134298061}
+--- !u!114 &125508274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Na los! Die machen wir platt.
+  textColor: {r: 0.7294118, g: 0, b: 0, a: 1}
+  delay: 0
 --- !u!114 &134298061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,6 +915,20 @@ MonoBehaviour:
   delay: 0
   item: {fileID: 11400000, guid: ae799ea0155122f46893cc7ad23a4238, type: 2}
   inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
+--- !u!114 &381911428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedAvantgardistenFinale
+  satisfied: 1
+  hash: -1029403381
 --- !u!114 &385813326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,7 +1151,7 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 166676985}
   - {fileID: 1716431519}
-  reactionCollection: {fileID: 0}
+  reactionCollection: {fileID: 1166480981}
 --- !u!114 &490497538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,6 +1982,21 @@ MonoBehaviour:
   - {fileID: 2143311797}
   - {fileID: 2145954928}
   - {fileID: 297908205}
+--- !u!114 &763989588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: finaleStarted
+  requiredConditions:
+  - {fileID: 381911428}
+  reactionCollection: {fileID: 1867896571}
 --- !u!1 &770187920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,6 +2704,20 @@ MonoBehaviour:
   description: startedQuest1-3
   satisfied: 0
   hash: -821680506
+--- !u!114 &991159266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 255262617}
+  audioClip: {fileID: 8300000, guid: 3d9d34880316d4a4c9fc0ff3eecb81da, type: 3}
+  delay: 0
 --- !u!114 &1006784015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3208,6 +3265,7 @@ MonoBehaviour:
   - {fileID: 2132242001}
   - {fileID: 774905139}
   - {fileID: 1311768953}
+  - {fileID: 763989588}
   defaultReactionCollection: {fileID: 1307147601}
 --- !u!114 &1222856972
 MonoBehaviour:
@@ -3308,6 +3366,7 @@ Transform:
   - {fileID: 1397125206}
   - {fileID: 46260652}
   - {fileID: 749672793}
+  - {fileID: 1867896570}
   m_Father: {fileID: 260530957}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3326,7 +3385,7 @@ MonoBehaviour:
   requiredConditions:
   - {fileID: 442251162}
   - {fileID: 1939332700}
-  reactionCollection: {fileID: 82815377}
+  reactionCollection: {fileID: 1227780275}
 --- !u!1 &1225253175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +5030,49 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1867896569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1867896570}
+  - component: {fileID: 1867896571}
+  m_Layer: 0
+  m_Name: startedFinaleReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867896570
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867896569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1222856974}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1867896571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1867896569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 125508274}
+  - {fileID: 991159266}
 --- !u!114 &1869519151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,8 +5410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  audioClip: {fileID: 0}
+  audioSource: {fileID: 255262617}
+  audioClip: {fileID: 8300000, guid: d2cbc8d157745e744a036c838fc79a1b, type: 3}
   delay: 0
 --- !u!114 &1965394383
 MonoBehaviour:
@@ -5459,8 +5561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d08eddef5503a648b3864776bbf972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  message: Gute Arbeit! Sie sollte uns nicht mehr verraten.
+  textColor: {r: 0.7294118, g: 0, b: 0, a: 1}
   delay: 0
 --- !u!1 &1996547924
 GameObject:
@@ -9917,11 +10019,11 @@ MonoBehaviour:
     sentences:
     - "Wir m\xFCssen sicherstellen, dass unsere Kommunikationswege nicht mehr von
       den Technokraten beeinflusst werden."
-    - "Da sie schon immeralle technischen Wege \xFCberwacht haben, haben wir die letzten
-      Jahre \xFCber Kunstwerke kommuniziert, die vom H\xE4ndler in der Taverne verkauft
-      worden sind."
-    - "Finde heraus, was er wei\xDF und erinnere ihn daran, dass es besser f\xFCr
-      seine Gesundheit ist, es sich nicht mit uns zu verscherzen!"
+    - "Da sie schon immer alle technischen Wege \xFCberwacht haben, haben wir die
+      letzten Jahre \xFCber Kunstwerke kommuniziert, die vom H\xE4ndler in der Taverne
+      verkauft worden sind."
+    - "Finde heraus, was sie wei\xDF und erinnere sie daran, dass es besser f\xFCr
+      ihre Gesundheit ist, es sich nicht mit uns zu verscherzen!"
     - Bist du dazu bereit?
     options:
     - text: Ich bin schon unterwegs.

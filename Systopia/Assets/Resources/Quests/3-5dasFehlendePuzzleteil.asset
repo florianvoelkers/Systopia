@@ -35,7 +35,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: 3-5started
   stateDescription: "Eventuell hat die H\xE4ndlerin in der Taverne eine CPU."
-  isStateFinished: 0
+  isStateFinished: 1
 --- !u!114 &114695890613126496
 MonoBehaviour:
   m_ObjectHideFlags: 0

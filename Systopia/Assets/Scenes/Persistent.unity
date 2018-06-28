@@ -308,6 +308,32 @@ Prefab:
       propertyPath: gameStateManager
       value: 
       objectReference: {fileID: 839349392}
+    - target: {fileID: 1108179314466514, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072812237110802, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244675262816126, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940098186193260, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224290133597998902, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 224362838724093906, guid: 902f8768af34a0a4289768c61b55229b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 902f8768af34a0a4289768c61b55229b, type: 2}
   m_IsPrefabParent: 0
@@ -611,7 +637,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1abb1168473a00b45b567a1b15082b78, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

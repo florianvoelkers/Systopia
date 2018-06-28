@@ -15,7 +15,7 @@ MonoBehaviour:
   questDescription: "Der alte Mann hat erfahren, dass sich die zweite H\xE4lfte des
     Zeitungsartikels im Besitz der Avantgardisten befinden soll. Jedoch wissen nur
     Avantgardisten vom Versteck f\xFCr Artefakte."
-  isQuestFinished: 0
+  isQuestFinished: 1
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
   states:
   - {fileID: 114211525977433678}
@@ -37,7 +37,7 @@ MonoBehaviour:
   stateName: 3-3started
   stateDescription: Um herauszufinden, wo sich das Versteck befindet, sollte ich mit
     einem Avantgardisten in der Taverne sprechen.
-  isStateFinished: 0
+  isStateFinished: 1
 --- !u!114 &114345712712381772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   stateName: 3-3knowsLocation
   stateDescription: "Ich wei\xDF, wo sich das Versteck befindet. Ich sollte dort hingehen
     und die zweite H\xE4lfte des Zeitungsartikels suchen."
-  isStateFinished: 0
+  isStateFinished: 1
 --- !u!114 &114986103402976444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,4 +81,4 @@ MonoBehaviour:
   stateDescription: "Ich habe die zweite H\xE4lfte des Zeitungsartikels gefunden.
     Der Titel lautet \"Zwei Professoren der HAW Hamburg arbeiten gemeinsam an weltver\xE4ndernder
     K.I.\". Sehr interessant!"
-  isStateFinished: 0
+  isStateFinished: 1

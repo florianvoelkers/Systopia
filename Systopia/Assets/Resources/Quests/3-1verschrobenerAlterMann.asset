@@ -16,12 +16,11 @@ MonoBehaviour:
     ein Buch zu finden. Es soll sich in der Bibliotheksruine befinden und den Titel
     "Professoren und Dozenten der HAW Hamburg von 2010 bis 2020" tragen. Mal sehen,
     ob an der Geschichte etwas Wahres dran ist.
-  isQuestFinished: 0
+  isQuestFinished: 1
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
   states:
   - {fileID: 114119892585654072}
   - {fileID: 114445702029949642}
-  - {fileID: 114370967522515422}
   rewards:
   - {fileID: 114176766440699288}
 --- !u!114 &114119892585654072
@@ -38,7 +37,7 @@ MonoBehaviour:
   stateName: 3-1started
   stateDescription: Ich sollte die alten Bibliotheksruine aufsuchen und versuchen
     das Buch zu finden.
-  isStateFinished: 0
+  isStateFinished: 1
 --- !u!114 &114176766440699288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,22 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   experienceRewarded: 100
   playerExperience: {fileID: 11400000, guid: 88bb7f4795249454d9c2ce9fd1e0578d, type: 2}
---- !u!114 &114370967522515422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267a2dff40132694094da2ad16f469ee, type: 3}
-  m_Name: 3-1readBook
-  m_EditorClassIdentifier: 
-  stateName: 3-1readBook
-  stateDescription: "Ich habe doch tats\xE4chlich Bilder von Wogapowi und Frunobulax
-    im Buch gefunden. Aber sie sehen genauso aus wie jetzt. Wie kann das sein? Vielleicht
-    hat der alte Mann Antworten."
-  isStateFinished: 0
 --- !u!114 &114445702029949642
 MonoBehaviour:
   m_ObjectHideFlags: 0

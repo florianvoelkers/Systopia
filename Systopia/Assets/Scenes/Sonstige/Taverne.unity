@@ -8264,6 +8264,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 434949596}
   m_Mesh: {fileID: 4300160, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &435052160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: afterQuest1-5
+  requiredConditions:
+  - {fileID: 1246831168}
+  - {fileID: 1328665563}
+  reactionCollection: {fileID: 566177853}
 --- !u!114 &435886936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18095,6 +18111,7 @@ MonoBehaviour:
   - {fileID: 887098125}
   - {fileID: 1642011432}
   - {fileID: 445982432}
+  - {fileID: 435052160}
   defaultReactionCollection: {fileID: 145596652}
 --- !u!114 &971060813
 MonoBehaviour:
@@ -18825,9 +18842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: startedQuest3-5
+  description: startedQuest1-5
   satisfied: 0
-  hash: 635525085
+  hash: 644187059
 --- !u!1 &1016210714
 GameObject:
   m_ObjectHideFlags: 0
@@ -23111,6 +23128,20 @@ MonoBehaviour:
   description: hasFirstPartOfTechnokratenMap
   satisfied: 0
   hash: 1176861128
+--- !u!114 &1246831168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: joinedAvantgardisten
+  satisfied: 1
+  hash: -1311437708
 --- !u!4 &1247928235 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400072, guid: 5bf6e39cc69d60248a72e3eaa5739f3d, type: 3}
@@ -24598,6 +24629,20 @@ MonoBehaviour:
   message: 'Dieses Schwein hat eiskalt meinen lieben Tim umgebracht. '
   textColor: {r: 0, g: 0.95686275, b: 0.28235295, a: 1}
   delay: 0
+--- !u!114 &1328665563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: ensuredMerchantsAvaLoyal
+  satisfied: 1
+  hash: 123800328
 --- !u!1 &1331669566
 GameObject:
   m_ObjectHideFlags: 0
@@ -24935,7 +24980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 64098e9408da91f478c2928298a176ea, type: 2}
-  state: {fileID: 114370967522515422, guid: 64098e9408da91f478c2928298a176ea, type: 2}
+  state: {fileID: 114445702029949642, guid: 64098e9408da91f478c2928298a176ea, type: 2}
 --- !u!114 &1348621274
 MonoBehaviour:
   m_ObjectHideFlags: 0

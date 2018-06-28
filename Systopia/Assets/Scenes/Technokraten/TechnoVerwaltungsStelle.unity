@@ -196,6 +196,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95685041449371676, guid: f8a560f5fa4cd3e4dbcd8587e4adbb59,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: be50f84af4d393548bcd2b24b34c1451, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8a560f5fa4cd3e4dbcd8587e4adbb59, type: 2}
   m_IsPrefabParent: 0
@@ -495,23 +500,23 @@ MonoBehaviour:
       reactionCollection: {fileID: 0}
     - text: Nein.
       destinationNodeId: -1
-      reactionCollection: {fileID: 602749468}
+      reactionCollection: {fileID: 0}
   - nodeId: 1
     sentences:
     - Was sagt der eine Scheemann zum anderen Schneemann?
     options:
     - text: Was geht?
       destinationNodeId: -1
-      reactionCollection: {fileID: 602749468}
+      reactionCollection: {fileID: 0}
     - text: Riecht wie Karotten.
       destinationNodeId: 2
       reactionCollection: {fileID: 459968091}
     - text: "Wei\xDF ich nicht."
       destinationNodeId: -1
-      reactionCollection: {fileID: 602749468}
+      reactionCollection: {fileID: 0}
     - text: Nichts.
       destinationNodeId: -1
-      reactionCollection: {fileID: 602749468}
+      reactionCollection: {fileID: 0}
   - nodeId: 2
     sentences:
     - Richtig. Schau dich ruhig um!

@@ -14,7 +14,7 @@ MonoBehaviour:
   questTitle: Waffenlager der Technokraten
   questDescription: Ich soll das Waffenlager der Technokraten erobern. Ich sollte
     jedoch mit Widerstand rechnen und mir Hilfe bei meinen Kameraden suchen.
-  isQuestFinished: 0
+  isQuestFinished: 1
   fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
   states:
   - {fileID: 114461814199885616}
@@ -48,7 +48,7 @@ MonoBehaviour:
   stateName: 1-2tookTheTechnoArmoury
   stateDescription: Wir haben die Technokraten erfolgreich in die Flucht geschlagen
     und ihr Waffenlager erfolgreich erobert. Ich sollte dem Hauptmann Bericht erstatten.
-  isStateFinished: 0
+  isStateFinished: 1
 --- !u!114 &114461814199885616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,4 +63,4 @@ MonoBehaviour:
   stateName: 1-2questStarted
   stateDescription: 'Ich sollte zum Waffenlager der Technokraten aufbrechen, um diesen
     Techno-Affen zu zeigen, was wir Avantgardisten draufhaben. '
-  isStateFinished: 0
+  isStateFinished: 1
