@@ -82,6 +82,7 @@ MonoBehaviour:
   - {fileID: 114857952649993698}
   - {fileID: 114941809276166254}
   - {fileID: 114672608095698230}
+  - {fileID: 114613712638872350}
 --- !u!114 &114004959837663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,6 +671,20 @@ MonoBehaviour:
   description: startedQuest2-4
   satisfied: 0
   hash: 1394871676
+--- !u!114 &114613712638872350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: administrationGuardAngry
+  m_EditorClassIdentifier: 
+  description: administrationGuardAngry
+  satisfied: 0
+  hash: 1468490637
 --- !u!114 &114625007438565306
 MonoBehaviour:
   m_ObjectHideFlags: 0

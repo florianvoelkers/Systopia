@@ -100,9 +100,9 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 1
-    agentHeight: 2
-    agentSlope: 30
-    agentClimb: 0.7
+    agentHeight: 6
+    agentSlope: 45
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -1169,6 +1169,57 @@ MonoBehaviour:
     sentences:
     - "Komm wieder, falls du es dir doch anders \xFCberlegt hast."
     options: []
+--- !u!114 &96320210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3120ddc1323fd8a4a88894386dea411f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nPCName: Yae
+  dialogueNodes:
+  - nodeId: 0
+    sentences:
+    - Ich war den Avantgardisten immer treu und habe niemanden verraten. Das muss
+      ein Zufall gewesen sein.
+    options:
+    - text: Wir haben aber Beweise!
+      destinationNodeId: 1
+      reactionCollection: {fileID: 0}
+    - text: Na gut, ich glaube dir!
+      destinationNodeId: -1
+      reactionCollection: {fileID: 0}
+  - nodeId: 1
+    sentences:
+    - "Na gut, vielleicht habe ich f\xFCr den richtigen Preis die Kunstwerke auch
+      mal an die Technokraten verkauft."
+    - "Aber ich schw\xF6re ich hab den Technokraten nie etwas erz\xE4hlt."
+    options:
+    - text: "Wie konntest du nur? (w\xFCtend)"
+      destinationNodeId: 2
+      reactionCollection: {fileID: 0}
+    - text: Dann hast du dir ja nichts zu Schulden kommen lassen.
+      destinationNodeId: -1
+      reactionCollection: {fileID: 0}
+  - nodeId: 2
+    sentences:
+    - Es tut mir wirklich sehr leid! Ich verspreche es wird nicht wieder vorkommen!
+    - Ich hoffe du glaubst mir.
+    options:
+    - text: Sollte es nochmal vorkommen, bist du dran!
+      destinationNodeId: 3
+      reactionCollection: {fileID: 1287517132}
+    - text: "Na gut, du kommst nochmal haarscharf an einer Tracht Pr\xFCgel vorbei."
+      destinationNodeId: 3
+      reactionCollection: {fileID: 1287517132}
+  - nodeId: 3
+    sentences:
+    - Hier als Zeichen meines guten Willens! (Gibt dir eine Waffe)
+    options: []
 --- !u!1 &97408857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1447,20 @@ Transform:
   m_Father: {fileID: 1353596512}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102658544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: ensuredMerchantsAvaLoyal
+  satisfied: 0
+  hash: 123800328
 --- !u!1 &104079072
 GameObject:
   m_ObjectHideFlags: 0
@@ -5726,6 +5791,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327215407}
   m_Mesh: {fileID: 4300566, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &330975106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 330975107}
+  - component: {fileID: 330975108}
+  m_Layer: 0
+  m_Name: HasQuest1-5Reaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &330975107
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330975106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1287517131}
+  m_Father: {fileID: 971060811}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &330975108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330975106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 96320210}
+  - {fileID: 1683713898}
 --- !u!114 &333939723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8300,6 +8409,22 @@ MonoBehaviour:
   - {fileID: 700377302}
   - {fileID: 2090172530}
   reactionCollection: {fileID: 1083387467}
+--- !u!114 &445982432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c8c7e43009c443a128797daa8c6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: HasQuest1-5
+  requiredConditions:
+  - {fileID: 1138411187}
+  - {fileID: 102658544}
+  reactionCollection: {fileID: 330975108}
 --- !u!1 &445992555
 GameObject:
   m_ObjectHideFlags: 0
@@ -11992,6 +12117,7 @@ MonoBehaviour:
   sceneName: "Stra\xDFe"
   startingPointInLoadedScene: DoorToTaverne
   playerLocation: {fileID: 11400000, guid: 04d1559129f0c87499f24eb7b567c26e, type: 2}
+  camera: {fileID: 0}
 --- !u!114 &636057261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12272,6 +12398,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 1628600618}
   - {fileID: 595714180}
+--- !u!114 &648956689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 734033515}
+  audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
+  delay: 0
 --- !u!1 &649080604
 GameObject:
   m_ObjectHideFlags: 0
@@ -15198,6 +15338,19 @@ MonoBehaviour:
   description: hasPaintings
   satisfied: 0
   hash: 1894377727
+--- !u!114 &803819051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746713c3d7c8eb14d8e647c412b42d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: f5680ca0673864348957a6e485edff64, type: 2}
+  state: {fileID: 114917417461177342, guid: f5680ca0673864348957a6e485edff64, type: 2}
 --- !u!1 &807469611
 GameObject:
   m_ObjectHideFlags: 0
@@ -16450,6 +16603,20 @@ MonoBehaviour:
   audioSource: {fileID: 734033515}
   audioClip: {fileID: 8300000, guid: e5df1eb0424e90746ba7ff5b43f8d07a, type: 3}
   delay: 1
+--- !u!114 &882244760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cdd8f5a9efb0e48bdc57a4cf79693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  item: {fileID: 11400000, guid: c2b716e676b2eab40bd4da259dbf27f7, type: 2}
+  inventory: {fileID: 11400000, guid: adafdf73f37a15b4498d890db1509495, type: 2}
 --- !u!1 &885818570
 GameObject:
   m_ObjectHideFlags: 0
@@ -17902,6 +18069,7 @@ Transform:
   - {fileID: 1669670288}
   - {fileID: 566177852}
   - {fileID: 3533883}
+  - {fileID: 330975107}
   m_Father: {fileID: 1566580974}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17926,6 +18094,7 @@ MonoBehaviour:
   - {fileID: 736005300}
   - {fileID: 887098125}
   - {fileID: 1642011432}
+  - {fileID: 445982432}
   defaultReactionCollection: {fileID: 145596652}
 --- !u!114 &971060813
 MonoBehaviour:
@@ -20798,6 +20967,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1134970767}
   m_Mesh: {fileID: 4300198, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!114 &1138411187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e61bf88f9919641a6c0a4b4895175e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: startedQuest1-5
+  satisfied: 1
+  hash: 644187059
 --- !u!1 &1141414742
 GameObject:
   m_ObjectHideFlags: 0
@@ -23585,6 +23768,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275433012}
   m_Mesh: {fileID: 4300556, guid: 745ad0e1311a1a145a0979b35355094a, type: 3}
+--- !u!1 &1287517130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1287517131}
+  - component: {fileID: 1287517132}
+  m_Layer: 0
+  m_Name: ensuredLoyaltyReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1287517131
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287517130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 330975107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287517132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287517130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a167d91a5fd247bb6e9d574f98a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 803819051}
+  - {fileID: 1623137792}
+  - {fileID: 882244760}
+  - {fileID: 648956689}
 --- !u!1 &1289507918
 GameObject:
   m_ObjectHideFlags: 0
@@ -28972,6 +29200,7 @@ MonoBehaviour:
     condition: {fileID: 114890354378819950, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
       type: 2}
   allConditions: {fileID: 11400000, guid: cba7b54aaf4cdf546bdf0a560b7f6c62, type: 2}
+  dollyCamera: {fileID: 0}
 --- !u!1 &1609470807
 GameObject:
   m_ObjectHideFlags: 0
@@ -29435,6 +29664,20 @@ MonoBehaviour:
   reactions:
   - {fileID: 614144488}
   - {fileID: 1766228711}
+--- !u!114 &1623137792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a55ef94a04b66d4bb93424ad8546d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114333036213136840, guid: cba7b54aaf4cdf546bdf0a560b7f6c62,
+    type: 2}
+  satisfied: 1
 --- !u!1 &1625836263
 GameObject:
   m_ObjectHideFlags: 0
@@ -30478,6 +30721,20 @@ MonoBehaviour:
   description: hasFirstPartOfArticle
   satisfied: 1
   hash: 678893951
+--- !u!114 &1683713898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d40c99157367ac478a37e6be9ae9351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2027245621}
+  audioClip: {fileID: 8300000, guid: e8f0835236535e34d89b1013e341f611, type: 3}
+  delay: 0
 --- !u!114 &1686770971
 MonoBehaviour:
   m_ObjectHideFlags: 0

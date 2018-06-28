@@ -100,7 +100,7 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 6
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -56956,6 +56956,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19f1a9ca33b3f614292fbd1cc11f254f, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1883640741 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100076, guid: 19f1a9ca33b3f614292fbd1cc11f254f, type: 3}
+  m_PrefabInternal: {fileID: 1883640740}
+--- !u!208 &1883640742
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883640741}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 3, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1885693091
 GameObject:
   m_ObjectHideFlags: 0
