@@ -36271,6 +36271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerEquipment: {fileID: 11400000, guid: bd5b8bc4533a09840b03e39e5832fa4c, type: 2}
+  playerInventory: {fileID: 0}
   stats: {fileID: 11400000, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   strength: {fileID: 114958683150792074, guid: 0d242641c7dce8d4a875b7b1418bd812, type: 2}
   dexterity: {fileID: 114096672639918392, guid: 0d242641c7dce8d4a875b7b1418bd812,
@@ -71261,7 +71262,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954544582}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 04dfce9c3b0168246a049a585ba14664, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 381f1ade27d15b641a641b0d86f91fe9, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 628148445}
@@ -71275,7 +71276,7 @@ VideoPlayer:
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 1905472542}
+  - {fileID: 1420978532}
   m_DirectAudioVolumes:
   - 1
   m_Url: 

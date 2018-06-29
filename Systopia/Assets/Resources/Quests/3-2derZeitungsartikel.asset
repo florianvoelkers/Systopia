@@ -16,7 +16,7 @@ MonoBehaviour:
     und Frunobulax zu kennen. Er sprach von einem Zeitungsartikel, der \xFCber eine
     Erfindung der beiden berichten soll. Er glaubt, dass dieser im Lager f\xFCr wertvolle
     Artefakte sein soll."
-  isQuestFinished: 1
+  isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
   states:
   - {fileID: 114414851154300966}
@@ -52,7 +52,7 @@ MonoBehaviour:
     Sie zeigt diesen Prof. Willaschek an einem Computer. Jemand ist bei ihm. Aber
     es ist wirklich verbl\xFCffend wie \xE4hnlich Wogapowi diesem Prof. Willaschek
     sieht."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114414851154300966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,4 +67,4 @@ MonoBehaviour:
   stateName: 3-2started
   stateDescription: "Ich sollte mir dar\xFCber Gedanken machen wie ich in das Lager
     f\xFCr wertvolle Artefakte komme. "
-  isStateFinished: 1
+  isStateFinished: 0

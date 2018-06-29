@@ -15,7 +15,7 @@ MonoBehaviour:
   questDescription: "Ich soll ein verschollenes technisches Ger\xE4t wiederfinden.
     Es solll sich in den alten Ruinen der HAW Hamburg befinden. Es k\xF6nnte uns zum
     endg\xFCltigen Sieg \xFCber die Technokraten helfen."
-  isQuestFinished: 1
+  isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
   states:
   - {fileID: 114367301701873042}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: 1-4questStarted
   stateDescription: Ich sollte mich auf dem Weg zu den Ruinen machen.
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114519345037491494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
   stateName: 1-4inTheRuins
   stateDescription: "Anscheinend sind uns die Technokraten zuvor gekommen. Eventuell
     kann ich aber trotzdem noch etwas N\xFCtzliches hier finden."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114935121731124858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,4 +79,4 @@ MonoBehaviour:
   stateName: 1-4foundArmorDesigns
   stateDescription: "Ich habe zumindest interessante Designs f\xFCr eine R\xFCstung
     gefunden. Diese sollte ich im Hauptquartier abliefern."
-  isStateFinished: 1
+  isStateFinished: 0

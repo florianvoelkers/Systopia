@@ -36,7 +36,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: 2-3started
   stateDescription: Ich sollte mich auf dem Weg zu den Ruinen machen.
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114624506830381528
 MonoBehaviour:
   m_ObjectHideFlags: 0

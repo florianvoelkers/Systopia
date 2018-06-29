@@ -58687,7 +58687,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a9871ecf807f4d24b917e20e94cb4780, type: 2}
   playersParty:
   - {fileID: 11400000, guid: 326edb518d6e92b409638664f4e82b8b, type: 2}
-  - {fileID: 11400000, guid: 0daa66056c7927149b07e1438cf4920e, type: 2}
+  - {fileID: 11400000, guid: dcb149d021ad33a429db0878e9cf88ed, type: 2}
   sceneName: TechnoWaffenLager
   fightSceneName: TechnoWaffenlagerFight
   winReaction: {fileID: 1697912189}

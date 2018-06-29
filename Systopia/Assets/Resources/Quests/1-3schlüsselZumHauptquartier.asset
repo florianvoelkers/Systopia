@@ -15,7 +15,7 @@ MonoBehaviour:
   questDescription: "Ich soll in die Verwaltungsstelle der Technokraten eindringen
     und mir dort einen gef\xE4lschten Ausweis erstellen, damit ich in das Hauptquartier
     der Technokraten gelangen kann. "
-  isQuestFinished: 1
+  isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
   states:
   - {fileID: 114913319865142814}
@@ -37,7 +37,7 @@ MonoBehaviour:
   stateName: 1-3hasCredentials
   stateDescription: 'Ich habe nun den Ausweis, mit dem ich in das Hauptquartier der
     Technokraten gelangen kann, um Wogapowi zu befreien. '
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114578643488058100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,4 +81,4 @@ MonoBehaviour:
   stateDescription: "Ich sollte zur Verwaltungsstelle aufbrechen und einen Weg finden
     den W\xE4chter dort zu \xFCberlisten, um so wenig Aufmerksamkeit wie m\xF6glich
     auf mich zu lenken."
-  isStateFinished: 1
+  isStateFinished: 0

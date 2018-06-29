@@ -15,7 +15,7 @@ MonoBehaviour:
   questDescription: "Der alte Mann hat den Studenten auf dem Bild vom Zeitungsartikel
     erkannt und meint, dass ich ihn in den alten Kellergew\xF6lben der HAW finden
     k\xF6nnte."
-  isQuestFinished: 1
+  isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: 68e749e6d3a26f74e854df3ed4b555b7, type: 2}
   states:
   - {fileID: 114203246990219866}
@@ -36,7 +36,7 @@ MonoBehaviour:
   stateName: 3-4hasAccessToLaboratory
   stateDescription: "Ich habe nun den Zugangscode zum Labor, in dem sich der ehemalige
     Student befinden soll. Ich hoffe er hat Antworten f\xFCr mich."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114203246990219866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   stateName: 3-4started
   stateDescription: "Ich sollte den ehemaligen Studenten versuchen zu finden. Das
     Kellergew\xF6lbe soll sich in der N\xE4he der Bibliothek befinden."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114667140553634194
 MonoBehaviour:
   m_ObjectHideFlags: 0

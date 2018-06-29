@@ -16,7 +16,7 @@ MonoBehaviour:
     unsere Kommunikation genutzt haben, uns an die Technokraten verraten hat. Ich
     soll herausfinden, was er ihnen gesagt hat und ihm klar machen, wem er loyal sein
     sollte."
-  isQuestFinished: 1
+  isQuestFinished: 0
   fromFaction: {fileID: 11400000, guid: cd25f5f68a5a98547902ca6f8c40b940, type: 2}
   states:
   - {fileID: 114917417461177342}
@@ -38,7 +38,7 @@ MonoBehaviour:
   stateDescription: "Der H\xE4ndler hat mir alles erz\xE4hlt, was er wei\xDF. Leider
     war das nicht viel. Aber er hat mir als Zeichen seiner Loyalit\xE4t eine sehr
     starke Waffe geschenkt."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114917417461177342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   stateName: 1-5questStarted
   stateDescription: "Der H\xE4ndler befindet sich in der Taverne. Ich sollte jedoch
     keine Gewalt anwenden, da dies zu auff\xE4llig w\xE4re."
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114935965603942532
 MonoBehaviour:
   m_ObjectHideFlags: 0

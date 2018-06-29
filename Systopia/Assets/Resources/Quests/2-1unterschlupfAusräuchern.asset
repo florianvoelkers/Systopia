@@ -66,7 +66,7 @@ MonoBehaviour:
   stateName: 2-1started
   stateDescription: Ich sollte nicht mit viel Widerstand rechnen, da sich der Unterschlupf
     auf unserer Seite der Stadt befindet.
-  isStateFinished: 1
+  isStateFinished: 0
 --- !u!114 &114937674529842762
 MonoBehaviour:
   m_ObjectHideFlags: 0
